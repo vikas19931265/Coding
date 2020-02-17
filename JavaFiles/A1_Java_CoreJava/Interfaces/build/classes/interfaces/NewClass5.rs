@@ -1,0 +1,3 @@
+Showable
+Printable
+TestInterface3

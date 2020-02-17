@@ -1,0 +1,8 @@
+A
+SampleAdapter
+CreationalDesignPattern_FactoryDesign.A
+ImplementationClass
+Sample
+CreationalDesignPattern_FactoryDesign.Sample
+CreationalDesignPattern_FactoryDesign.SampleAdapter
+CreationalDesignPattern_FactoryDesign.ImplementationClass

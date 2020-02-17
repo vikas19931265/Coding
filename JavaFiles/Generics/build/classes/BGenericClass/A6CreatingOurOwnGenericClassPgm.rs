@@ -1,0 +1,2 @@
+BGenericClass.GenDemo
+BGenericClass.Gen

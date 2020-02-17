@@ -1,0 +1,5 @@
+ObjectCloning.Cat
+ObjectCloning.Dogs11
+ObjectCloning.Dog
+ObjectCloning.Cats11
+ObjectCloning.Shallowcloning

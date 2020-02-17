@@ -1,0 +1,1 @@
+InterruptingThread.SlideRotator

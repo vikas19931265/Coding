@@ -1,0 +1,12 @@
+{
+    "elements": {
+        "marquee": {},
+        "h2": {},
+        "h3": {}
+    },
+    "attributes": {
+        "cols": {
+            "context": "frameset"
+        }
+    }
+}

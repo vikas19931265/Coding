@@ -1,0 +1,1 @@
+BGenericClass.Test2

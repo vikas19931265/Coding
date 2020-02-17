@@ -1,0 +1,16 @@
+CollectionBasics.LinkedHashSet
+CollectionBasics.List
+CollectionBasics.LinkedList
+CollectionBasics.ArrayDeque
+CollectionBasics.Iterable
+CollectionBasics.ArrayList
+CollectionBasics.Deque
+CollectionBasics.Stack
+CollectionBasics.Queue
+CollectionBasics.HashSet
+CollectionBasics.PriorityQueue
+CollectionBasics.SortedSet
+CollectionBasics.TreeSet
+CollectionBasics.Set
+CollectionBasics.Vector
+CollectionBasics.Collection

@@ -1,0 +1,7 @@
+BGenericClass.Test0
+BGenericClass.Test00
+BGenericClass.Test01
+BGenericClass.Test02
+BGenericClass.Test000
+BGenericClass.Demo2
+BGenericClass.Demo
