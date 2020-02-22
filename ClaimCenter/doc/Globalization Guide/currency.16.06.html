@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Currency Amount Data Types</title>
+    <link rel="StyleSheet" href="css/currency.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Globalization Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-national.html#3103174">National Formats and Data Configuration</a> : <a class="WebWorks_Breadcrumb_Link" href="currency.16.01.html#3103174">Configuring Currencies</a> : <a class="WebWorks_Breadcrumb_Link" href="currency.16.04.html#3103174">Monetary Amounts in the Data Model and in Gosu</a> : Currency Amount Data Types</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h4 class="H2B_-_Heading_2_Break"><a name="3103174">Currency Amount Data Types</a></h4>
+      <div class="B_-_Body"><a name="3103175">Guidewire provides a number of </a><span class="cv_-_computer_voice">currencyamount</span> data types that extend the <span class="cv_-_computer_voice">money</span> data types to specify the currency of monetary amounts. The primary purpose of the <span class="cv_-_computer_voice">currencyamount</span> data types is for use in multicurrency configurations.</div>
+      <div class="B_-_Body"><a name="3103176">The following list describes the Guidewire base configuration of the </a><span class="cv_-_computer_voice">currencyamount</span> data types.</div>
+      <div class="T_-_Table"><a name="3103194">&nbsp;</a></div>
+      <table class="withHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="3103179">Currency amount data type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="3103181">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="3103183">currencyamount</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="3103185">Permits positive, zero, and negative.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="3103187">nonnegativecurrencyamount</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="3103189">Permits only positive and zero values.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="3103191">positivecurrencyamount</a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="3103193">Permits only positive values.</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="B_-_Body"><a name="3103195">In both Gosu and Java code, a </a><span class="cv_-_computer_voice">currencyamount</span> property returns a <span class="cv_-_computer_voice">CurrencyAmount</span> object, which associates a <span class="cv_-_computer_voice">BigDecimal</span> monetary amount with a particular <span class="cv_-_computer_voice">Currency</span> typekey. ClaimCenter persists the <span class="cv_-_computer_voice">BigDecimal</span> amount to the database. You can configure the <span class="cv_-_computer_voice">Currency</span> value for that particular column.</div>
+      <div class="B_-_Body"><a name="3103199">To specify the currency for amounts that are stored in a column, use the </a><span class="cv_-_computer_voice">&lt;columnParam&gt;</span> element on that column to set a <span class="cv_-_computer_voice">currencyProperty</span> value. The <span class="cv_-_computer_voice">currencyProperty</span> parameter points to a property on the entity that returns the <span class="cv_-_computer_voice">Currency</span> for the column. This property can be either of the following:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="3103200">A virtual property, which you typically define in an enhancement class</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="3103201">A </a><span class="cv_-_computer_voice">Currency</span> column on the entity, which stores a <span class="cv_-_computer_voice">Currency</span> typekey value</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="3103202">If the property is a virtual property, it usually looks up the relevant </a><span class="cv_-_computer_voice">Currency</span> from a parent entity, such as a <span class="cv_-_computer_voice">Claim</span>. </div>
+      <div class="B_-_Body"><a name="3103203">For example, in ClaimCenter, if you want to store a monetary amount in the same currency as the claim, then you can use </a><span class="cv_-_computer_voice">ClaimCurrency</span> as the currency property.</div>
+      <PRE class="CF_-_Code_First_Line"><a name="3103204">&lt;column name="SomeAmount" type="currencyamount" ...&gt; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103205">&nbsp;&nbsp;&lt;columnParam name="currencyProperty" value="ClaimCurrency"/&gt; </a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="3103206">&lt;/column&gt;</a></PRE>
+      <div class="B_-_Body"><a name="3103210">See also </a><a href="javascript:WWHClickedPopup('app', 'multicurrency.41.1.html#4743339', '');" title="Multiple Currencies">“Multiple Currencies” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('app', 'multicurrency.41.1.html#4743339', '');" title="Multiple Currencies">Application Guide</a></span>.</div>
+      <div class="B_-_Body"><a name="3103211">In the base configuration, Guidewire provides a definition for the </a><span class="cv_-_computer_voice">ClaimCurrency</span> property on many entities, either in Java or through a Gosu enhancement class. If it does not exist, you can define it in an enhancement class on that particular entity type.</div>
+      <div class="B_-_Body"><a name="3103212">If you define a currency property, you must ensure that it does not throw a </a><span class="cv_-_computer_voice">NullPointerException</span> if the entity is not yet linked to its parent. Instead of throwing an exception, have the currency property return <span class="cv_-_computer_voice">null</span> if the entity that stores the currency value is not reachable. This is a relatively simple task in Gosu, because of the null-safety of entity path expressions. The following sample ClaimCenter code illustrates how to construct a null-safe <span class="cv_-_computer_voice">ClaimCurrency</span> property:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="3103213">enhancement GWWorkStatusEnhancement : entity.WorkStatus {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103214">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103215">&nbsp;&nbsp;&nbsp;&nbsp;/**</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103216">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Retrieves the currency of the claim associated with this WorkStatus object</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103217">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103218">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* @return The associated Claim's currency, if any. Is null if the Claim is not</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103219">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*   currently reachable (for example, if the necessary entity connections have</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103220">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*   not yet been made).</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103221">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103222">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;property get ClaimCurrency() : Currency {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103223">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return this.EmploymentData.ClaimCurrency</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103224">&nbsp;&nbsp;&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103225">&nbsp;&nbsp;&nbsp;&nbsp;....</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="3103226">}</a></PRE>
+      <div class="B_-_Body"><a name="3103227">It is possible to create a column that contains a multicurrency value that could potentially contain any </a><span class="cv_-_computer_voice">Currency</span>. In this case, you need to define another extension column on the entity to store the <span class="cv_-_computer_voice">Currency</span> value and reference that in the <span class="cv_-_computer_voice">currencyProperty</span> <span class="cv_-_computer_voice">&lt;columnParam&gt;</span> element. For example:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="3103228">&lt;typekey name="SomeCurrency" nullok="false" typelist="Currency" …/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103229">&lt;column name="SomeAmount" type="currencyamount" ...&gt; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103230">&nbsp;&nbsp;&lt;columnParam name="currencyProperty" value="SomeCurrency"/&gt; </a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="3103231">&lt;/column&gt;</a></PRE>
+      <div class="B_-_Body"><a name="3103232">It is not mandatory to provide the </a><span class="cv_-_computer_voice">currencyProperty</span> in a <span class="cv_-_computer_voice">&lt;columnParam&gt;</span>. If you do not, then ClaimCenter defaults to using the value that you set for <span class="cv_-_computer_voice">DefaultApplicationCurrency</span> in <span class="cv_-_computer_voice">config.xml</span>.</div>
+      <h6 class="HS_-_Head_Sub"><a name="3103236">Exceptions Whenever Coercing </a><span class="cvh_-_computer_voice_in_heading">BigDecimal</span> Values to <span class="cvh_-_computer_voice_in_heading">CurrencyAmount</span> Values</h6>
+      <div class="B_-_Body"><a name="3103237">If you attempt to coerce a value from </a><span class="cv_-_computer_voice">BigDecimal</span> to <span class="cv_-_computer_voice">CurrencyAmount</span>, the default application behavior creates a <span class="cv_-_computer_voice">CurrencyAmount</span> with a null <span class="cv_-_computer_voice">Currency</span> property. The base configuration sets the application server to strict currency mode, which typically generates exceptions for currency amounts with no designated currency. Guidewire recommends that you be aware of this issue and take steps to mitigate it.</div>
+      <div class="B_-_Body"><a name="3103238">The following sample Gosu code illustrates how coercing a </a><span class="cv_-_computer_voice">BigDecimal</span> value to a <span class="cv_-_computer_voice">CurrencyAmount</span> value can cause an exception.</div>
+      <PRE class="CF_-_Code_First_Line"><a name="3103239">var lineItem = new TransactionLineItem()</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103240">var bigDecimalAmount = new java.math.BigDecimal("1.23")</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103241">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103242">lineItem.setTransactionAmountAndUpdate(bigDecimalAmount) // Method takes a CurrencyAmount argument, so</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="3103243">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gosu coereces the BigDecimal value to a </a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="3103244">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CurrencyAmount with a null Currency. </a></PRE>
+      <h6 class="HS_-_Head_Sub"><a name="3103245">See also</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'entities.19.16.html#2649596', '');" title="&lt;column&gt;" name="3103249">“&lt;column&gt;” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('config', 'entities.19.16.html#2649596', '');" title="&lt;column&gt;">Configuration Guide</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'entities.19.16.html#2663746', '');" title="&lt;column&gt;" name="3103253">“&lt;columnParam&gt; Subelement” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('config', 'entities.19.16.html#2663746', '');" title="&lt;column&gt;">Configuration Guide</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Policy Location Search Plugin</title>
+    <link rel="StyleSheet" href="css/cc-pc-integration.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Integration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-policycontacts.html#2754377">Policy and Contact Integrations</a> : <a class="WebWorks_Breadcrumb_Link" href="cc-pc-integration.38.01.html#2754377">Claim and Policy Integration</a> : Policy Location Search Plugin</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="2754377">Policy Location Search Plugin</a></h3>
+      <div class="B_-_Body"><a name="2754378">To perform a policy location search, ClaimCenter calls methods of the </a><span class="cv_-_computer_voice">PolicyLocationSearchPlugin</span> plugin interface. Each return result has properties to represent the policy number, the address, the latitude, the longitude, product code, and insured value.</div>
+      <div class="B_-_Body"><a name="2754379">ClaimCenter include a default implementation of this plugin interface that makes a web service call to PolicyCenter to search policy locations. The default implementation is:</a></div>
+      <div class="CS_-_Code_Single_Line"><a name="2754380">gw.plugin.pcintegration.pc</a><span class="pc_-_parameter_in_code">VERSION</span>.location.PolicyLocationSearchPluginImpl </div>
+      <div class="B_-_Body"><a name="2754381">The default implementation uses this related class for encapsulating the return results:</a></div>
+      <div class="CS_-_Code_Single_Line"><a name="2754382">gw.plugin.pcintegration.pc</a><span class="pc_-_parameter_in_code">VERSION</span>.location.CCPolicyLocationInfoImpl</div>
+      <div class="B_-_Body"><a name="2754383">If you use PolicyCenter, you may want to edit those files to make your own modifications, or base a new version of the plugin on this version.</a></div>
+      <div class="B_-_Body"><a name="2754384">If you use a different policy system, write your own implementation of this plugin. Next, update the plugin registry in Studio to use your implementation instead of the default plugin implementation.</a></div>
+      <div class="B_-_Body"><a name="2754385">There is only one method in this interface:</a></div>
+      <div class="CS_-_Code_Single_Line"><a name="2754386">CCPolicyLocationInfo[] findPolicyLocationsWithinBoundingBox(PolicyLocationSearchCriteria criteria)</a></div>
+      <div class="B_-_Body"><a name="2754387">This method finds policy locations within a bounding box, as well as other search criteria defined by </a><span class="cv_-_computer_voice">PolicyLocationSearchCriteria</span>. Properties include:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2754388">EffDate</a></span> – effective date, as <span class="cv_-_computer_voice">Date</span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2754389">ProductCodes</a></span> – product codes, as an array of <span class="cv_-_computer_voice">String</span> objects</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2754390">TopLeftLat</a></span>, <span class="cv_-_computer_voice">TopLeftLong</span>, <span class="cv_-_computer_voice">BottomRightLat</span>, <span class="cv_-_computer_voice">BottomRightLong</span> – bounding box in latitude and longitude</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2754391">Handle</a></span> – The handle, which is used for returning multiple requests of results for the same query, as a <span class="cv_-_computer_voice">String</span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2754393">StartingOffset</a></span> – the starting offset in the results, for large result sets, as an <span class="cv_-_computer_voice">int</span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2754394">Count</a></span> – the number of items to return in this search</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2754909">In your version of the </a><span class="cv_-_computer_voice">findPolicyLocationsWithinBoundingBox</span> method, use the properties in the <span class="cv_-_computer_voice">PolicyLocationSearchCriteria</span> to initiate a query in the external policy system. </div>
+      <div class="B_-_Body"><a name="2755030">To support large result sets and paged results, the plugin supports multiple queries to the same result set using a unique value called the </a><span class="e_-_emphasis">handle</span>. The handle is in the search criteria object as the <span class="cv_-_computer_voice">Handle</span> property. The handle identifies a single persistent query. The <span class="cv_-_computer_voice">StartingOffset</span> number in the search criteria is the index within the result set to start returning more results. ClaimCenter increases the value of <span class="cv_-_computer_voice">StartingOffset</span> on each request to get the next batch of results. </div>
+      <div class="B_-_Body"><a name="2755664">In the default implementation, PolicyCenter retrieves all results in memory on the first request with that handle value. PolicyCenter caches the results and reuses them for additional requests with the same handle value.</a></div>
+      <div class="B_-_Body"><a name="2756230">If you write your own implementation of this plugin, follow a similar pattern. Cache search results and store the handle value on external system so subsequent search queries with the same handle return results quickly.</a></div>
+      <div class="B_-_Body"><a name="2754396">Return the results in an array of </a><span class="cv_-_computer_voice">gw.plugin.policy.location.CCPolicyLocationInfo</span> objects. The <span class="cv_-_computer_voice">CCPolicyLocationInfo</span> interface defines the set of properties on the object. In Studio, you can view the interface directly. Alternatively, in Studio, look at the <span class="cv_-_computer_voice">CCPolicyLocationInfoImpl</span> implementation class mentioned earlier for how to implement that class in Gosu and to review the list of properties on the results.</div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

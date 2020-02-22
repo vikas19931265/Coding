@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<entity
+  xmlns="http://guidewire.com/datamodel"
+  desc="Calim entity storing some claim information based upon the batch job run"
+  edgeTable="true"
+  entity="ClaimData"
+  table="claimdata"
+  type="retireable">
+  <column
+    name="ClaimNumber"
+    nullok="true"
+    type="varchar">
+    <columnParam
+      name="size"
+      value="60"/>
+  </column>
+  <column
+    name="CreateDate"
+    nullok="true"
+    type="dateonly"/>
+  <typekey
+    name="EmployerType"
+    nullok="true"
+    typelist="EmployerType"/>
+</entity>

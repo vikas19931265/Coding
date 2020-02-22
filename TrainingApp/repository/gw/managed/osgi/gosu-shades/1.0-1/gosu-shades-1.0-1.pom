@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>gw.managed.osgi</groupId>
+    <artifactId>parent</artifactId>
+    <version>10</version>
+    <relativePath>../parent/pom.xml</relativePath>
+  </parent>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <commons.cli.version>1.0</commons.cli.version>
+    <commons.collections.version>3.2.1</commons.collections.version>
+    <commons.logging.version>1.1.1</commons.logging.version>
+    <asm.version>3.1</asm.version>
+    <antlr.version>3.4</antlr.version>
+    <xerces.version>2.11.0</xerces.version>
+    <jetty.version>6.1.26RC0</jetty.version>
+  </properties>
+  
+  <artifactId>gosu-shades</artifactId>
+  <version>1.0-1</version>
+  <packaging>bundle</packaging>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.gosu-lang.gosu.managed</groupId>
+      <artifactId>gw-commons-cli</artifactId>
+      <version>${commons.cli.version}-3</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.gosu-lang.gosu.managed</groupId>
+      <artifactId>gw-antlr-runtime</artifactId>
+      <version>${antlr.version}-3</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.gosu-lang.gosu.managed</groupId>
+      <artifactId>gw-asm</artifactId>
+      <version>${asm.version}-3</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.gosu-lang.gosu.managed</groupId>
+      <artifactId>gw-asm-analysis</artifactId>
+      <version>${asm.version}-3</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.gosu-lang.gosu.managed</groupId>
+      <artifactId>gw-asm-commons</artifactId>
+      <version>${asm.version}-3</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.gosu-lang.gosu.managed</groupId>
+      <artifactId>gw-asm-tree</artifactId>
+      <version>${asm.version}-3</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.gosu-lang.gosu.managed</groupId>
+      <artifactId>gw-asm-util</artifactId>
+      <version>${asm.version}-3</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.gosu-lang.gosu.managed</groupId>
+      <artifactId>gw-commons-collections</artifactId>
+      <version>${commons.collections.version}-3</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.gosu-lang.gosu.managed</groupId>
+      <artifactId>gw-xercesImpl</artifactId>
+      <version>${xerces.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.gosu-lang.gosu.managed</groupId>
+      <artifactId>gw-commons-logging</artifactId>
+      <version>${commons.logging.version}-3</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.gosu-lang.gosu.managed</groupId>
+      <artifactId>gw-jetty</artifactId>
+      <version>${jetty.version}-4</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.gosu-lang.gosu.managed</groupId>
+      <artifactId>gw-jetty-util</artifactId>
+      <version>${jetty.version}-4</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <repositories>
+    <repository>
+      <id>gosu-lang.org-gosu</id>
+      <name>Official Gosu website (gosu)</name>
+      <url>http://gosu-lang.org/nexus/content/repositories/gosu</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+
+    <repository>
+      <id>gosu-lang.org-snapshots</id>
+      <name>Official Gosu website (snapshots)</name>
+      <url>http://gosu-lang.org/nexus/content/repositories/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+</project>

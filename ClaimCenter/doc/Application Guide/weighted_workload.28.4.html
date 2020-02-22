@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Calculating Weights</title>
+    <link rel="StyleSheet" href="css/weighted_workload.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Application&nbsp;Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-components.html#1139093">Additional Features of ClaimCenter</a> : <a class="WebWorks_Breadcrumb_Link" href="weighted_workload.28.1.html#1139093">Weighted Workload</a> : Calculating Weights</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="1139093">Calculating Weights</a></h3>
+      <div class="B_-_Body"><a name="1140152">ClaimCenter uses weighted workload balancing to first match a classification to an assignable object and gives the assignable object the weight of the associated classification. It then proceeds to assign the object to the most suitable user in a group, using weighted workload calculations.</a></div>
+      <div class="B_-_Body"><a name="1143420">This topic describes the different types of weights used by ClaimCenter to calculate the workload of a user.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="1144572">Classification Weight</a></h4>
+      <div class="B_-_Body"><a name="1144599">The weight of a predefined workload classification.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="1143543">Total Weight</a></h4>
+      <div class="B_-_Body"><a name="1143576">The total weight of an assignable object, calculated as shown below:</a></div>
+      <div class="B_-_Body"><a name="1143577">Total Weight = (Workload Classification Weight or Default Global Workload Weight) + Supplemental Weight</a></div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="1143578">The Default Global Workload Weight is used if a claim or exposure does not match any existing workload classification.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="1144169">Supplemental Weight</a></h4>
+      <div class="B_-_Body"><a name="1148166">An additional integer value specified by the supervisor for an individual claim or exposure that further refines the level of effort required. Supervisors can define the supplemental weight for a claim, for example, in the <br /></a><span class="ui_-_UI_element">Summary</span> <span class="ui_-_UI_element">→ Status</span> screen under the <span class="ui_-_UI_element">Workload</span> section. The corresponding <span class="cv_-_computer_voice">SupplementalWorkloadWeight</span> field on the <span class="cv_-_computer_voice">Claim</span> entity can also be used in rules.</div>
+      <div class="B_-_Body"><a name="1144669">Supplemental weight values can be positive or negative. A positive value increases the level of difficulty of the assignable object, and a negative value reduces it.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="1143934">Default Weight</a></h4>
+      <div class="B_-_Body"><a name="1143954">The default weight is defined in configuration and is only used when an assignable object does not match any existing classification.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="1143228">Adjusted Weight</a></h4>
+      <div class="B_-_Body"><a name="1143540">The adjusted weight is used for users within a group before assignment. This type of weight calculation takes into account the load factor of the group.</a></div>
+      <div class="B_-_Body"><a name="1143800">The adjusted weight of a user within a group is calculated as follows:</a></div>
+      <div class="B_-_Body"><a name="1143858">Adjusted Weight = (Total Weight * 100)/Load Factor</a></div>
+      <div class="B_-_Body"><a name="1149099">In the base configuration, the adjusted weight is used in the default assignment strategy.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="1143567">Group Weight</a></h4>
+      <div class="B_-_Body"><a name="1143568">A user’s </a><span class="e_-_emphasis">Group</span> <span class="e_-_emphasis">weight</span> is the sum of the weights of all of the user’s assigned claims and exposures in a given group. The group weight is the default weight value used by the weighted workload engine to determine assignment</div>
+      <h4 class="H2_-_Heading_2"><a name="1142604">Absolute Weight</a></h4>
+      <div class="B_-_Body"><a name="1142706">A user’s </a><span class="e_-_emphasis">absolute</span> <span class="e_-_emphasis">weight</span> is the total weight of the user’s assigned claims and exposures across all of ClaimCenter. The absolute weight is unaffected by group associations.</div>
+      <div class="B_-_Body"><a name="1142708">In the case of users in multiple groups, the absolute weight is the sum of all of a user’s group weights.</a></div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Configuring the Heat Map</title>
+    <link rel="StyleSheet" href="css/config_catastrophe_dashboard.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Configuration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-ClaimCenter.html#4934035">Guidewire ClaimCenter Configuration</a> : <a class="WebWorks_Breadcrumb_Link" href="config_catastrophe_dashboard.49.1.html#4934035">Configuring the Catastrophe Dashboard</a> : Configuring the Heat Map</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="4934035">Configuring the Heat Map</a></h3>
+      <div class="B_-_Body"><a name="4936090">This topic presents some of the configuration points you can use to configure the heat map.</a></div>
+      <div class="B_-_Body"><a name="4936222">This topic includes:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'config_catastrophe_dashboard.49.3.html#4934784', '');" title="Configuring the Heat Map" name="4936226">Common Configuration Use Cases</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'config_catastrophe_dashboard.49.3.html#4934055', '');" title="Configuring the Heat Map" name="4936240">Advanced Configuration</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'config_catastrophe_dashboard.49.3.html#4934075', '');" title="Configuring the Heat Map" name="4936247">Bing Maps Limitations</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'config_catastrophe_dashboard.49.3.html#4934081', '');" title="Configuring the Heat Map" name="4936253">Working with a Different Map Service</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'config_catastrophe_dashboard.49.3.html#4934104', '');" title="Configuring the Heat Map" name="4936259">Ajax-style Extensions to the Heat Map</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4934784">Common Configuration Use Cases</a></h4>
+      <div class="B_-_Body"><a name="4934036">The following table lists some typical configurations and describes the configuration points for each one.</a></div>
+      <div class="T_-_Table"><a name="4934261">&nbsp;</a></div>
+      <table class="withHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="4934270">Configuration</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="4934272">How to do it</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4934274">Add a map view.</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4934382">In </a><span class="cvt_-_computer_voice_table">CatastropheHeatMapViews.gs</span>:</div>
+            <div class="LST_-_List_Start_Table_outer" style="margin-left: 0pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="LST_-_List_Start_Table_inner" style="width: 9.36pt; white-space: nowrap">
+                      <span class="s_-_strong">1. 	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="LST_-_List_Start_Table_inner"><a name="4934383">Define a new instance of </a><span class="cvt_-_computer_voice_table">CatastropheHeatMapView</span> similar to <span class="cvt_-_computer_voice_table">ClaimCountsView</span>.</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="LIT_-_List_Item_Table_outer" style="margin-left: 0pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="LIT_-_List_Item_Table_inner" style="width: 9.36pt; white-space: nowrap">
+                      <span class="s_-_strong">2. 	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="LIT_-_List_Item_Table_inner"><a name="4934384">Add the view name to </a><span class="cvt_-_computer_voice_table">AvailableViews</span>. If the view shows claims or policies or both, add the view name to <span class="cvt_-_computer_voice_table">ClaimViews</span> or <span class="cvt_-_computer_voice_table">PolicyLocationViews</span> or both.</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4934278">Show additional data in the policy location table.</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4934405">Modify the query in </a><span class="cvt_-_computer_voice_table">CatastropheSearchCriteria.performHeatMapPolicyLocationSearch</span> and <span class="cvt_-_computer_voice_table">PolicyLocationSearchResultsLV.pcf</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4934282">Modify tooltips.</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4934446">Modify the code in </a><span class="cvt_-_computer_voice_table">getToolTip</span> in <span class="cvt_-_computer_voice_table">CatastropheHeatMap.gs</span>. The tooltip is represented as an HTML fragment.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4934468">Modify the selection message.</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4934470">The heat map shows the selection message when the user set the selection rectangle on the map, such as, </a><span class="cvt_-_computer_voice_table">“56 claims and 112 policy locations selected”</span>.</div>
+            <div class="TT_-_Table_Text"><a name="4934471">The selection message varies depending on the map view. See the code for each map view in </a><span class="cvt_-_computer_voice_table">SelectionMessage</span> in <span class="cvt_-_computer_voice_table">CatastropheHeatMapViews.gs</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4934290">Change heat map colors and legend labels.</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4934292">In </a><span class="cvt_-_computer_voice_table">CatastropheHeatMapViews.gs</span>, pass the heat map colors to the constructor for <span class="cvt_-_computer_voice_table">RangeColorMap</span>, which initializes the labels appropriately. You can change the labels after calling the constructor, as is done for <span class="cvt_-_computer_voice_table">policyColorMap</span>. Each dataset is associated with one color map.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4934294">Show amounts on the map rather than counts.</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4934296">In the dataset class, define a </a><span class="cvt_-_computer_voice_table">getWeight</span> method that returns the amount. The amount must be an <span class="cvt_-_computer_voice_table">int</span> and greater than or equal to zero. To show a marker on the map for a zero value, subclass <span class="cvt_-_computer_voice_table">RangeColorMap</span> and override <span class="cvt_-_computer_voice_table">getColorForValue</span> as is done in <span class="cvt_-_computer_voice_table">AmountColorMap</span> in <span class="cvt_-_computer_voice_table">CatastropheHeatMapViews.gs</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4934298">Set the map size.</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4934300">You can change the height by changing the </a><span class="cvt_-_computer_voice_table">setSize</span> call in the constructor for <span class="cvt_-_computer_voice_table">CatastropheHeatMap.gs</span>. The HTML code specifies using all the available width. To use a specified width instead, change <span class="cvt_-_computer_voice_table">CatastropheHeatMapHTML.gst</span>, replacing the string <span class="cvt_-_computer_voice_table">“width:100%”</span> in two places with <span class="cvt_-_computer_voice_table">“width:${ requestedWidth }px”</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4934302">Other configurations.</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4934304">Refer to the Gosu API reference for the relevant classes, as described at </a><a href="javascript:WWHClickedPopup('gosu', 'intro.03.15.html#1519043', '');" title="Gosu Generated Documentation (‘gosudoc’)">“Gosu Generated Documentation (‘gosudoc’)” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('gosu', 'intro.03.15.html#1519043', '');" title="Gosu Generated Documentation (‘gosudoc’)">Gosu Reference Guide</a></span>.</div>
+          </td>
+        </tr>
+      </table>
+      <h4 class="H2_-_Heading_2"><a name="4934055">Advanced Configuration</a></h4>
+      <div class="B_-_Body"><a name="4939574">The configuration techniques described in this topic are advanced and are not a typical part of configuration. They are included in case you need to perform these particular configurations.</a></div>
+      <div class="B_-_Body"><a name="4939837">This topic includes:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'config_catastrophe_dashboard.49.3.html#4939527', '');" title="Configuring the Heat Map" name="4939868">Extending the JavaScript</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'config_catastrophe_dashboard.49.3.html#4934075', '');" title="Configuring the Heat Map" name="4939881">Bing Maps Limitations</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'config_catastrophe_dashboard.49.3.html#4934081', '');" title="Configuring the Heat Map" name="4939886">Working with a Different Map Service</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'config_catastrophe_dashboard.49.3.html#4934104', '');" title="Configuring the Heat Map" name="4939891">Ajax-style Extensions to the Heat Map</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4939527">Extending the JavaScript</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="cv_-_computer_voice"><a name="4934056">BingMap.js</a></span> is organized to enable you to extend it without modifying <span class="cv_-_computer_voice">BingMap.js</span> itself. For example, you can use additional Bing capabilities such as showing push-pin markers or displaying a mini-map within the main map.</div>
+      <h6 class="HS_-_Head_Sub"><a name="4934058">To extend BingMap.js:</a></h6>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="4934059">Create a new JavaScript file in the same directory as </a><span class="cv_-_computer_voice">BingMap.js</span>. You can subclass <span class="cv_-_computer_voice">HeatMap</span> and override methods by following JavaScript conventions. Structure your file like this:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <PRE class="CF_-_Code_First_Line"><a name="4934061">function MyExtension() { }</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4934062">&nbsp;&nbsp;MyExtension.prototype = new HeatMap();</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4934063">&nbsp;&nbsp;MyExtension.prototype.superclass = HeatMap;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4934064">&nbsp;&nbsp;MyExtension.prototype.constructor = MyExtension;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4934065">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4934066">&nbsp;&nbsp;// put your code here, such as:</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4934067">&nbsp;&nbsp;MyExtension.prototype.MyFunction() {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4934068">&nbsp;&nbsp;&nbsp;&nbsp;// your code here</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4934069">&nbsp;&nbsp;};</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4934070">&nbsp;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="4934071">&nbsp;&nbsp;heatMap = new MyExtension();</a></PRE>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="4934073">Subclass </a><span class="cv_-_computer_voice">BingMaps.gs</span> and override <span class="cv_-_computer_voice">javaScriptFileNames</span> to include your JavaScript file after the <span class="cv_-_computer_voice">BingMaps.js</span> file. Change the <span class="cv_-_computer_voice">HeatMapServiceTemplate</span> parameter in <span class="cv_-_computer_voice">config.xml</span> to use the fully-qualified subclass name.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4934075">Bing Maps Limitations</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4934076">The Bing Maps control puts the International Date Line only at the left or right edge of the map. The date line cannot be in the middle. This requirement has two effects: </a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4934077">If the set of map points spans the date line, the points will be split up in an inconvenient or even misleading way. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4934078">On large scale maps, the requested center point, such as from computing a bounding box for the map points, might not appear in the center of the map.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4934079">Like most map services, Bing Maps is limited to showing points with latitudes between roughly -86 to +86 degrees, which provides a square map of the world. The map projection from the sphere of the earth onto a plane puts the north and south poles at infinity, which is impractical to display.</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4934081">Working with a Different Map Service</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4934082">You might be able to interface with other mapping services by replacing </a><span class="cv_-_computer_voice">BingMap.gs</span>, <span class="cv_-_computer_voice">BingMap.js</span>, and BingMapJavaScript.gst.</div>
+      <div class="B_-_Body"><span class="cv_-_computer_voice"><a name="4934084">HeatMapGenerator</a></span> assumes that map tiles are 256 x 256 pixels in size. It accepts overlay tile requests that use Bing- or Google-style tile identifiers. Your code replacing <span class="cv_-_computer_voice">BingMap.gst</span> would need to return one of these types of tile identifiers. The tile parameter in the HTTP request identifies which tile to return, as shown in the following table:</div>
+      <div class="T_-_Table"><a name="4934086">&nbsp;</a></div>
+      <table class="withHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="4935101">Map Service</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="4935103">Example</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="4935105">General Form</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4935107">Bing</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4935109">0321.png</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4935111">[0-3]+\.png</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4935113">Google</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4935115">tile_9_21_35.png</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4935117">tile_([0-9]+)_([0-9]+)_([0-9]+)\.png</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="B_-_Body"><a name="4934094">Bing uses quad tree-based keys. At the lowest zoom level, the entire world, the map is divided into four tiles, each identified by a single-digit number, </a><span class="cv_-_computer_voice">0..3</span>. At the next zoom level, each tile is subdivided into four subtiles, identified as <span class="cv_-_computer_voice">00</span>, <span class="cv_-_computer_voice">01</span>, <span class="cv_-_computer_voice">02</span>, <span class="cv_-_computer_voice">03</span>, <span class="cv_-_computer_voice">10</span>, <span class="cv_-_computer_voice">11</span>, <span class="cv_-_computer_voice">12</span>, <span class="cv_-_computer_voice">13</span>, and so on. See <span class="cv_-_computer_voice"><a href="http://msdn.microsoft.com/en-us/library/bb259689.aspx" target="external_window">http://msdn.microsoft.com/en-us/library/bb259689.aspx</a></span> for a full description.</div>
+      <div class="B_-_Body"><a name="4934096">The numbers in the Google identifier are the zoom level, the </a><span class="cv_-_computer_voice">x</span> coordinate, and the <span class="cv_-_computer_voice">y</span> coordinate. See the following web pages for a full description:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a href="http://code.google.com/apis/maps/documentation/javascript/v2/overlays.html#Tile_Overlays" target="external_window" name="4934097">http://code.google.com/apis/maps/documentation/javascript/v2/overlays.html#Tile_Overlays</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a href="http://code.google.com/apis/maps/documentation/javascript/v2/overlays.html#Custom_Map_Types" target="external_window" name="4934099">http://code.google.com/apis/maps/documentation/javascript/v2/overlays.html#Custom_Map_Types</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4934102">You might find it helpful to use Firefox and the Firebug debugger to develop the interface to a new map service. Firebug can display all messages sent to and from the browser.</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4934104">Ajax-style Extensions to the Heat Map</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4934105">By overriding </a><span class="cv_-_computer_voice">HeatMapGenerator.handleRequest</span> and modifying or extending <span class="cv_-_computer_voice">BingMap.js</span>, you can add additional Ajax-style interactions between the browser and the server to the heat map. See the <span class="cv_-_computer_voice">handleRequest</span> method in <span class="cv_-_computer_voice">CatastropheHeatMap.gs</span> for an example. Be sure to include a call to <span class="cv_-_computer_voice">super.handleRequest</span>. See the Gosu API reference for information on <span class="cv_-_computer_voice">HeatMapGeneratorBase.handleRequest</span>. To use this reference, see <a href="javascript:WWHClickedPopup('gosu', 'intro.03.15.html#1519043', '');" title="Gosu Generated Documentation (‘gosudoc’)">“Gosu Generated Documentation (‘gosudoc’)” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('gosu', 'intro.03.15.html#1519043', '');" title="Gosu Generated Documentation (‘gosudoc’)">Gosu Reference Guide</a></span>.</div>
+      <div class="B_-_Body"><a name="4934107">To send UTF-8 encoded text, use code like this:</a></div>
+      <PRE class="CF_-_Code_First_Line"><a name="4934109">servletResponse.setHeader("Content-Type", "text/plain")    </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4934110">// use StreamUtil.toBytes() to handle UTF-8 characters correctly</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="4905887">servletResponse.getOutputStream().write(StreamUtil.toBytes(TextMessage))</a></PRE>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

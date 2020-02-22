@@ -1,0 +1,1 @@
+This directory is a repository for example files referenced in training materials that are not normally saved by Studio (such as Gosu Tester script files). 

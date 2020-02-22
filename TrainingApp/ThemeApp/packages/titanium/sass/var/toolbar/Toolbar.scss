@@ -1,0 +1,49 @@
+//vars that are used on groups of elements
+$gwBlackTextColor:                          #232323 !default;
+$gwOffWhiteColor:                           #f4f3f0 !default;
+$gwBaseColorBlue:                           #0067AC !default;
+$gwActiveTab:                               $gwBaseColorBlue !default;
+$gwNavHoverBlue:                            #90d3ff !default;
+$gwSelectedTab:                             #0067ac !default;
+$gwTabNavBgHover:                           #005893 !default;
+$gwTabNavHoverColor:                        #ffffff !default;
+$gwBorder:                                  1px solid silver !default;
+$gwNavHoverLtBlue:                          #edf5ff !default;
+
+//Standard theme E17
+$toolbar-horizontal-spacing:                7px !default;
+$toolbar-top-tabs-background-color:         $gwOffWhiteColor !default;    //bg color for non-active top-tabs
+$toolbar-top-tabs-active-background-color:  $gwActiveTab !default;        //bg color for active tab
+$toolbar-top-tabs-active-inner-color:       $gwOffWhiteColor !default;    //text color for active top-tabs
+$toolbar-top-tabs-btn-inner-color:          $gwBlackTextColor !default;   //text color for non-active top-tabs
+
+$toolbar-top-tabs-btn-inner-disabled-color: #BBBBBB !default;             //text color for top-tabs disabled: light gray
+$toolbar-top-tabs-btn-inner-font-size:      12px !default;                //top-tabs btn text font-size
+$toolbar-top-tabs-btn-inner-font-weight:    normal !default;              //top-tabs btn text font-weight
+$toolbar-top-tabs-btn-inner-over:           #fff !default;                //top-tabs over text-color
+
+$toolbar-top-tabs-plain-menu-background-color:   $gwTabNavBgHover !default; //top-tabs bgColor when menu-active
+
+$toolbar-top-tabs-btn-inner-border-right:   $gwNavHoverBlue !default;
+
+$toolbar-top-links-background-color:        #f4f3f0 !default;             //top-tabs link bg color
+
+$toolbar-top-links-btn-over-background-color: $gwTabNavBgHover !default;  //top-tabs link btn-over bg color
+$toolbar-top-links-btn-menu-active-bg-color:  $gwTabNavBgHover !default;   //top-tabs link btn-menu-over bg color
+
+$toolbar-sm-btn-over-textColor:             $toolbar-top-tabs-btn-inner-over !default;  //top-tabs over text color
+$toolbar-sm-btn-over-bgColor:               $gwTabNavBgHover !default;    //top-tabs over bg-color
+$toolbar-sm-btn-over-border-color:          $toolbar-top-tabs-active-background-color !default;
+$toolbar-sm-btn-border-color:               $toolbar-top-tabs-background-color !default;
+
+$container-top-nav-bgColor:                 $toolbar-top-tabs-background-color; //Container top nav container.Container.scss
+$product-logo-bgColor:                      $container-top-nav-bgColor;      //product-logo icon bg color
+
+$infobar-over-bgColor:                      #2987c6 !default;  //info
+$infobar-text-color:                        $gwNavHoverBlue !default; //infobar text color = text-color for active tab
+
+$toolbar-top-info-btn-inner-color:          $infobar-text-color; //text-color for info-bar .btn-inner
+$toolbar-top-info-background-color:         #505050 !default;  //info bar background     0067AC
+$toolbar-top-info-background-gradient:      color-stops(#363636, #505050 20%) !default;   //info bar bg gradient
+
+$dv-highlight-color:                        #fff8d7; // Color for highlighted/inline DVs

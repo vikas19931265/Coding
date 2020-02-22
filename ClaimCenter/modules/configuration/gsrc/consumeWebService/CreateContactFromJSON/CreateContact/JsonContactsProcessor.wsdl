@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<wsdl:definitions targetNamespace="http://example.com/Practise_WEBSERVICE/JSONMapper/JsonContactsProcessor" name="JsonContactsProcessor" xmlns:gwsoap="http://guidewire.com/ws/soapheaders" xmlns:gwwsdl="http://guidewire.com/pl/wsdl" xmlns:pogo="http://example.com/Practise_WEBSERVICE/JSONMapper" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://example.com/Practise_WEBSERVICE/JSONMapper/JsonContactsProcessor" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema targetNamespace="http://example.com/Practise_WEBSERVICE/JSONMapper/JsonContactsProcessor" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://guidewire.com/ws/soapheaders" schemaLocation="soapheaders.xsd"/>
+      <xs:import namespace="http://example.com/Practise_WEBSERVICE/JSONMapper"/>
+      <xs:element name="addContact">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="req" type="xs:string" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="addContactResponse">
+        <xs:complexType/>
+      </xs:element>
+      <xs:element name="WebServiceException">
+        <xs:complexType/>
+      </xs:element>
+      <xs:element name="WsiAuthenticationException">
+        <xs:complexType/>
+      </xs:element>
+      <xs:element name="setContact">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="req" minOccurs="0" type="pogo:JSONRequest"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="setContactResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" minOccurs="0" type="pogo:JsonResponse"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema targetNamespace="http://example.com/Practise_WEBSERVICE/JSONMapper" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="JSONRequest">
+        <xs:sequence>
+          <xs:element name="addressLine1" type="xs:string" minOccurs="0"/>
+          <xs:element name="age" type="xs:string" minOccurs="0"/>
+          <xs:element name="city" type="xs:string" minOccurs="0"/>
+          <xs:element name="country" type="xs:string" minOccurs="0"/>
+          <xs:element name="dob" type="xs:string" minOccurs="0"/>
+          <xs:element name="emailAddress" type="xs:string" minOccurs="0"/>
+          <xs:element name="firstName" type="xs:string" minOccurs="0"/>
+          <xs:element name="gender" type="xs:string" minOccurs="0"/>
+          <xs:element name="lastName" type="xs:string" minOccurs="0"/>
+          <xs:element name="licenseNumber" type="xs:string" minOccurs="0"/>
+          <xs:element name="maritalStatus" type="xs:string" minOccurs="0"/>
+          <xs:element name="mobileNumber" type="xs:string" minOccurs="0"/>
+          <xs:element name="postalCode" type="xs:string" minOccurs="0"/>
+          <xs:element name="state" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="JsonResponse">
+        <xs:sequence/>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:portType name="JsonContactsProcessorPortType">
+    <wsdl:operation name="addContact">
+      <wsdl:input name="addContact" message="tns:addContact"/>
+      <wsdl:output name="addContactResponse" message="tns:addContactResponse"/>
+      <wsdl:fault name="WebServiceException" message="tns:WebServiceException"/>
+      <wsdl:fault name="WsiAuthenticationException" message="tns:WsiAuthenticationException"/>
+    </wsdl:operation>
+    <wsdl:operation name="setContact">
+      <wsdl:input name="setContact" message="tns:setContact"/>
+      <wsdl:output name="setContactResponse" message="tns:setContactResponse"/>
+      <wsdl:fault name="WebServiceException" message="tns:WebServiceException"/>
+      <wsdl:fault name="WsiAuthenticationException" message="tns:WsiAuthenticationException"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="JsonContactsProcessorSoap12Binding" type="tns:JsonContactsProcessorPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="addContact">
+      <soap12:operation soapActionRequired="false" style="document"/>
+      <wsdl:input name="addContact">
+        <soap12:body use="literal"/>
+        <soap12:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap12:header message="tns:gw-locale" part="gw-locale" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addContactResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WebServiceException">
+        <soap12:fault name="WebServiceException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap12:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setContact">
+      <soap12:operation soapActionRequired="false" style="document"/>
+      <wsdl:input name="setContact">
+        <soap12:body use="literal"/>
+        <soap12:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap12:header message="tns:gw-locale" part="gw-locale" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setContactResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WebServiceException">
+        <soap12:fault name="WebServiceException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap12:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="JsonContactsProcessorSoap11Binding" type="tns:JsonContactsProcessorPortType">
+    <soap11:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="addContact">
+      <soap11:operation style="document"/>
+      <wsdl:input name="addContact">
+        <soap11:body use="literal"/>
+        <soap11:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap11:header message="tns:gw-locale" part="gw-locale" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addContactResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WebServiceException">
+        <soap11:fault name="WebServiceException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap11:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setContact">
+      <soap11:operation style="document"/>
+      <wsdl:input name="setContact">
+        <soap11:body use="literal"/>
+        <soap11:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap11:header message="tns:gw-locale" part="gw-locale" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setContactResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WebServiceException">
+        <soap11:fault name="WebServiceException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap11:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="JsonContactsProcessor">
+    <wsdl:port name="JsonContactsProcessorSoap12Port" binding="tns:JsonContactsProcessorSoap12Binding">
+      <soap12:address location="http://localhost:8880/ab/ws/Practise_WEBSERVICE/JSONMapper/JsonContactsProcessor"/>
+      <gwwsdl:address location="${ab}/ws/Practise_WEBSERVICE/JSONMapper/JsonContactsProcessor"/>
+    </wsdl:port>
+    <wsdl:port name="JsonContactsProcessorSoap11Port" binding="tns:JsonContactsProcessorSoap11Binding">
+      <soap11:address location="http://localhost:8880/ab/ws/Practise_WEBSERVICE/JSONMapper/JsonContactsProcessor/soap11"/>
+      <gwwsdl:address location="${ab}/ws/Practise_WEBSERVICE/JSONMapper/JsonContactsProcessor/soap11"/>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:message name="addContact">
+    <wsdl:part name="parameters" element="tns:addContact"/>
+  </wsdl:message>
+  <wsdl:message name="addContactResponse">
+    <wsdl:part name="parameters" element="tns:addContactResponse"/>
+  </wsdl:message>
+  <wsdl:message name="WebServiceException">
+    <wsdl:part name="WebServiceException" element="tns:WebServiceException"/>
+  </wsdl:message>
+  <wsdl:message name="WsiAuthenticationException">
+    <wsdl:part name="WsiAuthenticationException" element="tns:WsiAuthenticationException"/>
+  </wsdl:message>
+  <wsdl:message name="setContact">
+    <wsdl:part name="parameters" element="tns:setContact"/>
+  </wsdl:message>
+  <wsdl:message name="setContactResponse">
+    <wsdl:part name="parameters" element="tns:setContactResponse"/>
+  </wsdl:message>
+  <wsdl:message name="gw-authentication">
+    <wsdl:part name="gw-authentication" element="gwsoap:authentication"/>
+  </wsdl:message>
+  <wsdl:message name="gw-locale">
+    <wsdl:part name="gw-locale" element="gwsoap:locale"/>
+  </wsdl:message>
+</wsdl:definitions>

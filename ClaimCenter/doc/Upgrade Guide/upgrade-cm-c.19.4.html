@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Manually Upgrading the ContactManager Configuration</title>
+    <link rel="StyleSheet" href="css/upgrade-cm-c.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Upgrade Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="part-basicupgrade_2.html#2136690">Upgrading from 6.0.x</a> : <a class="WebWorks_Breadcrumb_Link" href="upgrade-cm-c.19.1.html#2136690">Upgrading ContactManager from 6.0.x</a> : Manually Upgrading the ContactManager Configuration</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="2136690">Manually Upgrading the ContactManager Configuration</a></h3>
+      <div class="B_-_Body"><a name="2246015">Because ContactManager has changed a number of the files used to integrate with the Guidewire applications, it is likely that you will need to manually update configuration files. In particular, you will need to make manual updates:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2246065">If you have made changes to the </a><span class="cv_-_computer_voice">ABContact</span> data model.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2246077">If you have changed any of the configuration files that are listed in the table in </a><a href="javascript:WWHClickedPopup('upgrade', 'upgrade-cm-c.19.3.html#2265265', '');" title="Configuration File Changes">“Configuration File Changes”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h6 class="HS_-_Head_Sub"><a name="2246087">In general, the steps for upgrading ContactManager are:</a></h6>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="2246018">Run the configuration upgrade tool and perform an automatic upgrade of the ContactManager configuration. See </a><a href="javascript:WWHClickedPopup('upgrade', 'procedure-config-c.16.01.html#1842075', '');" title="Upgrading the ClaimCenter 6.0.x Configuration">“Upgrading the ClaimCenter 6.0.x Configuration”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2246022">If you are using geocoding, before running the database upgrade, see </a><a href="javascript:WWHClickedPopup('upgrade', 'upgrade-cm-c.19.4.html#2249396', '');" title="Manually Upgrading the ContactManager Configuration">Geocoding Updates</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2249232">Run the database upgrade tool to upgrade the ContactManager database. See</a><a href="javascript:WWHClickedPopup('upgrade', 'procedure-db-c.17.01.html#1864662', '');" title="Upgrading the ClaimCenter 6.0.x Database">“Upgrading the ClaimCenter 6.0.x Database”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2246024">Manually configure files in ContactManager—the subject of this topic.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2246029">Upgrade ClaimCenter as described at </a><a href="javascript:WWHClickedPopup('upgrade', 'upgrade-cc-cm-c.18.1.html#2216450', '');" title="Upgrading ClaimCenter from 6.0.x for ContactManager">“Upgrading ClaimCenter from 6.0.x for ContactManager”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2250352">This topic includes:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('upgrade', 'upgrade-cm-c.19.4.html#2246116', '');" title="Manually Upgrading the ContactManager Configuration" name="2250366">Mapping Your Contact Extensions</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('upgrade', 'upgrade-cm-c.19.4.html#2248799', '');" title="Manually Upgrading the ContactManager Configuration" name="2250384">Additional Search Files</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('upgrade', 'upgrade-cm-c.19.4.html#2249348', '');" title="Manually Upgrading the ContactManager Configuration" name="2250399">Minimum Search Criteria</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('upgrade', 'upgrade-cm-c.19.4.html#2249367', '');" title="Manually Upgrading the ContactManager Configuration" name="2250414">Definitive and Potential Matching Files</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('upgrade', 'upgrade-cm-c.19.4.html#2249396', '');" title="Manually Upgrading the ContactManager Configuration" name="2250429">Geocoding Updates</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="2246116">Mapping Your Contact Extensions</a></h4>
+      <div class="B_-_Body"><a name="2246104">If you have extended an </a><span class="cv_-_computer_voice">ABContact</span> entity or subentity with a new field or you have added a new <span class="cv_-_computer_voice">ABContact</span> subentity, you must update the ContactManager class <span class="cv_-_computer_voice">gw.contactmapper.ab800.ContactMapper</span>. The files you use to map these extensions to ClaimCenter have changed, and if you want to map your extensions, you must update these new files. For an overview of these mapping files, see <a href="javascript:WWHClickedPopup('upgrade', 'upgrade-cm-c.19.3.html#2265265', '');" title="Configuration File Changes">“Configuration File Changes”</a>. </div>
+      <div class="B_-_Body"><a name="2256257">The </a><span class="cv_-_computer_voice">ContactMapper</span> class maps entities to XML to send to core applications, and it maps them from the XML sent from core applications. You must map all fields that you want to receive from core applications or send to them.</div>
+      <h4 class="H2_-_Heading_2"><a name="2248799">Additional Search Files</a></h4>
+      <div class="B_-_Body"><a name="2256455">This topic applies if you have extended </a><span class="cv_-_computer_voice">ABContactSearchCriteria.etx</span> with your own entries. For example, you extended an <span class="cv_-_computer_voice">ABContact</span> entity or subentity and you wanted to support the new fields in searches initiated by the Guiders core applications. The following new Gosu files support searches by Guidewire core applications:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2256456">gw.webservice.ab.ab800.abcontactapi.ABContactAPISearchCriteria</a></span> – Provides search criteria as a web service to Guidewire applications. A Guidewire application uses this web service to determine which criteria to use in a contact Search.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2249160">gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult</a></span> – Defines search results sent to Guidewire applications as a web service. A Guidewire application uses this web service to interpret Search results that ContactManager returns after a search request from the application.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="2249187">If you added your own entries to </a><span class="cv_-_computer_voice">search-config.xml</span><span style="font-family: Arial; font-size: 8.0pt"> </span>in ContactCenter 6.0.x, accept the file in the configuration tool to copy it to the ContactManager 8.0.x configuration. There are no additional files related to this XML configuration file.</div>
+      <h6 class="HS_-_Head_Sub"><a name="2256475">See also</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2256488">“ContactManager Support for Contact Searches” on page 2 in the Contact Management Guide</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="2249348">Minimum Search Criteria</a></h4>
+      <div class="B_-_Body"><a name="2249349">This topic applies if you previously specified that a </a><span class="cv_-_computer_voice">Contact</span> entity field was required in a search in the <span class="cv_-_computer_voice">AdditionalPrimaryABContactSearchCriteria</span> element in <span class="cv_-_computer_voice">config.xml</span>. This configuration parameter is no longer valid. Instead, you must make new entries in <span class="cv_-_computer_voice">ValidateABContactSearchCriteriaPluginImpl</span>.</div>
+      <h6 class="HS_-_Head_Sub"><a name="2256536">See also</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'search.07.3.html#2773983', '');" title="ContactManager Support for Contact Searches" name="2256513">“Local ContactManager Search Criteria” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('contact', 'search.07.3.html#2773983', '');" title="ContactManager Support for Contact Searches">Contact Management Guide</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="2249367">Definitive and Potential Matching Files</a></h4>
+      <div class="B_-_Body"><a name="2249505">If you added entries to the file </a><span class="cv_-_computer_voice">definitive-match-config.xml</span>, you need to make new entries in at least one of the following files:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2249506">ValidateABContactCreationPluginImpl</a></span> – A plugin implementation that enables you to provide your own logic for creating new users. In the base implementation, all contacts are required to have a contact tag. The base plugin implementation provides a set of more relaxed minimum creation requirements.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2255957">FindDuplicatesPlugin</a></span> – Attempts to find exact and potential matches for the subtype of ABContact that is passed to it. If no Duplicate Finder exists for the subtype, the plugin implementation traverses the <span class="cv_-_computer_voice">ABContact</span> tree to find a parent type it can use in the search. The plugin implementation uses a set of Duplicate Finder classes, which define potential and exact match logic for a set of <span class="cv_-_computer_voice">ABContact</span> subtypes. For more information, see <a href="javascript:WWHClickedPopup('contact', 'cm-integration.16.09.html#2509916', '');" title="IFindDuplicatesPlugin Plugin Interface">“IFindDuplicatesPlugin Plugin Interface” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('contact', 'cm-integration.16.09.html#2509916', '');" title="IFindDuplicatesPlugin Plugin Interface">Contact Management Guide</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2249573">If you added entries to the file </a><span class="cv_-_computer_voice">potential-match-config.xml</span>, you need to make new entries in <span class="cv_-_computer_voice">FindDuplicatesPlugin</span>. As described previously, this class attempts to find exact and potential matches for the subtype of <span class="cv_-_computer_voice">ABContact</span> that is passed to it. </div>
+      <h6 class="HS_-_Head_Sub"><a name="2256560">See also</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'cm-integration.16.10.html#2511157', '');" title="ValidateABContactCreationPlugin Plugin Interface" name="2256563">“ValidateABContactCreationPlugin Plugin Interface” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('contact', 'cm-integration.16.10.html#2511157', '');" title="ValidateABContactCreationPlugin Plugin Interface">Contact Management Guide</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'cm-integration.16.09.html#2509988', '');" title="IFindDuplicatesPlugin Plugin Interface" name="2256575">“Duplicate Finder Classes” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('contact', 'cm-integration.16.09.html#2509988', '');" title="IFindDuplicatesPlugin Plugin Interface">Contact Management Guide</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="2249396">Geocoding Updates</a></h4>
+      <div class="B_-_Body"><a name="2250746">ContactManager provides a new implementation of the </a><span class="cv_-_computer_voice">GeocodePlugin</span> that connects with the Microsoft Bing Maps Geocode Service. In the default installation of ContactManager, the <span class="cv_-_computer_voice">GeocodePlugin</span> is disabled but is configured to use the <span class="cv_-_computer_voice">BingMapsPlugin</span> implementation. You must obtain a Bing Maps application key from Microsoft to use as credentials for this implementation. </div>
+      <div class="B_-_Body"><a name="2249191">In addition, the </a><span class="cv_-_computer_voice">Address</span> entity has a new <span class="cv_-_computer_voice">BatchGeocode</span> property that is used in combination with the <span class="cv_-_computer_voice">GeocodeStatus</span> property to determine if an address needs to be geocoded.</div>
+      <div class="B_-_Body"><a name="2250842">For a description of geocoding with Bing Maps, see </a><a href="javascript:WWHClickedPopup('contact', 'search.07.4.html#2386829', '');" title="ClaimCenter Support for Contact Searches">“Geocoding and Proximity Searches for Vendor Contacts” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('contact', 'search.07.4.html#2386829', '');" title="ClaimCenter Support for Contact Searches">Contact Management Guide</a></span>. That topic describes the Bing Maps plugin and the <span class="cv_-_computer_voice">BatchGeocode</span> field.</div>
+      <div class="B_-_Body"><a name="2250671">To upgrade to support these geocoding changes:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2250926">If you already use geocoding, run the geocode process before upgrading to geocode all addresses that are not yet geocoded.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2250810">If you used geocoding in the past and want to use geocoding after you upgrade, write logic to set the </a><span class="cv_-_computer_voice">BatchGeocode</span> field. You can use the <span class="cv_-_computer_voice">IDatabaseUpgrade</span> plugin described at <a href="javascript:WWHClickedPopup('upgrade', 'procedure-db-c.17.17.html#2010587', '');" title="Using the IDatamodelUpgrade Plugin">“Running Custom Version Checks and Triggers”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2250761">Before deploying to a production server, upgrade your Microsoft MapPoint account to a Bing Maps account and edit the </a><span class="cv_-_computer_voice">GeocodePlugin</span> registry to use the <span class="cv_-_computer_voice">BingMapsPlugin</span> implementation.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

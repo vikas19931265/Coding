@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebWorksHelpTOC version="5.0" xmlns="urn:WebWorks-Help-TOC-Schema">
+  <i t="About ClaimCenter Documentation" l="1">
+    <i t="Conventions in This Document" l="1#2121726" />
+    <i t="Support" l="1#2121769" />
+  </i>
+  <i t="Basic Configuration" l="2">
+    <i t="The config.xml File" l="3" />
+    <i t="The database-config.xml File" l="4" />
+    <i t="Defining the Application Server Environment" l="5">
+      <i t="Setting Java Virtual Machine (JVM) Options" l="5#1936382" />
+      <i t="Specifying Environment Properties in the &lt;registry&gt; Element" l="5#1179772" />
+      <i t="Calculating Environment Property Values" l="5#1185112" />
+      <i t="Specifying Parameters by Environment" l="5#1184960" />
+    </i>
+    <i t="Enabling Catastrophe Search and Heat Maps" l="6" />
+    <i t="Using the Geocoding Feature" l="7">
+      <i t="Working with the Geocode Plugin" l="7#1972849" />
+      <i t="Working with the Geocode Distributed Work Queue" l="7#1972862" />
+      <i t="Configuring Geocoding" l="7#1972885" />
+      <i t="Geocode Status" l="7#1973160" />
+    </i>
+    <i t="Configuring an Email Server for Notifications" l="8" />
+    <i t="Changing the Unrestricted User" l="9" />
+  </i>
+  <i t="Configuring Logging" l="10">
+    <i t="Logging Overview" l="11" />
+    <i t="Specifying Location of Log Files for the View Logs Page" l="12" />
+    <i t="Configuring Logging in a Multiple Instance Environment" l="13" />
+    <i t="Logging Levels" l="14" />
+    <i t="Logging Successfully Archived Claims" l="15" />
+    <i t="Logs for Additional System Components" l="16" />
+    <i t="Configuring Information in Log Messages" l="17">
+      <i t="Formatting Log Messages" l="17#1261162" />
+    </i>
+    <i t="Listing Logger Categories" l="18" />
+    <i t="Making Dynamic Logging Changes without Redeploying" l="19">
+      <i t="Reloading the Logging Configuration" l="19#1273367" />
+      <i t="Temporarily Changing a Logging Level" l="19#1273461" />
+    </i>
+  </i>
+  <i t="Configuring and Maintaining the ClaimCenter Database" l="20">
+    <i t="Database Best Practices" l="21" />
+    <i t="Guidewire Database Direct Update Policy" l="22" />
+    <i t="Configuring Connection Pool Parameters" l="23" />
+    <i t="Backing up the ClaimCenter Database" l="24" />
+    <i t="Setting Search Parameters for Oracle" l="25" />
+    <i t="Using Oracle Materialized Views for Claim Searches" l="26" />
+    <i t="Understanding and Authorizing Database Upgrades" l="27" />
+    <i t="Checking Database Consistency" l="28">
+      <i t="Running Consistency Checks from ClaimCenter" l="28#1265044" />
+      <i t="Running Consistency Checks with System Tools" l="28#1217462" />
+      <i t="Running Consistency Checks when the Server Starts" l="28#1261898" />
+    </i>
+    <i t="Configuring Database Statistics" l="29">
+      <i t="Commands for Updating Database Statistics" l="30" />
+      <i t="Configuring Database Statistics Generation" l="31" />
+      <i t="Checking the Database Statistics Updating Process" l="32" />
+      <i t="Canceling the Database Statistics Updating Process" l="33" />
+    </i>
+    <i t="Purging Old Workflows and Workflow Logs" l="34" />
+    <i t="Purging Unwanted Claims" l="35" />
+    <i t="Recalculating Financial Summaries" l="36" />
+    <i t="Rebuilding Contact Associations" l="37" />
+    <i t="Resizing Columns" l="38" />
+  </i>
+  <i t="Managing ClaimCenter Servers" l="39">
+    <i t="Stopping the ClaimCenter Application" l="40" />
+    <i t="Server Modes and Run Levels" l="41">
+      <i t="Setting the Server Mode" l="41#1690306" />
+      <i t="Determining Server Mode" l="41#1690095" />
+      <i t="Setting the Server Run Level" l="41#1690055" />
+      <i t="Determining the Server Run Level" l="41#1645455" />
+      <i t="Using the Maintenance Run Level" l="41#1370656" />
+    </i>
+    <i t="Server Startup Tests" l="42" />
+    <i t="Monitoring the Servers" l="43">
+      <i t="Monitoring with WebSphere" l="43#1731233" />
+    </i>
+    <i t="Monitoring and Managing Event Messages" l="44">
+      <i t="How ClaimCenter Processes Messages" l="44#1731297" />
+      <i t="Working with the Destinations Page" l="44#1731376" />
+      <i t="Configuring Message Destinations" l="44#1731398" />
+      <i t="Tuning Message Handling" l="44#1731414" />
+    </i>
+    <i t="System Users" l="45" />
+    <i t="Configuring Minimum and Maximum Password Length" l="46" />
+    <i t="Configuring Client Session Timeout" l="47" />
+    <i t="Avoiding Session Replication" l="48" />
+    <i t="Application Server Caching" l="49">
+      <i t="Cache Management" l="49#1612338" />
+      <i t="Caching and Stickiness" l="49#1644205" />
+      <i t="Concurrent Data Change Prevention" l="49#1612511" />
+      <i t="Caching and Clustering" l="49#1612527" />
+      <i t="Performance Impact" l="49#1612584" />
+      <i t="Analyzing and Tuning the Application Server Cache" l="49#1612944" />
+      <i t="Special Caches for Rarely Changing Objects" l="49#1649906" />
+    </i>
+    <i t="Analyzing Server Memory Management" l="50">
+      <i t="Memory Usage Logging" l="50#1666636" />
+      <i t="Enabling Garbage Collection" l="50#1618450" />
+      <i t="Analyzing a Possible Memory Leak" l="50#1654485" />
+      <i t="Profiling" l="50#1618414" />
+      <i t="Tracking Large Objects" l="50#1659065" />
+    </i>
+  </i>
+  <i t="Clustering Application Servers" l="51">
+    <i t="Overview of Clustering" l="52">
+      <i t="Special Considerations Regarding ClaimCenter Batch Servers" l="52#1339232" />
+    </i>
+    <i t="Configuring a Cluster" l="53">
+      <i t="Enabling and Disabling Clustering" l="54" />
+      <i t="Configuring the Registry Element for Clustering" l="55" />
+      <i t="Setting the Multicast Address" l="56" />
+      <i t="Specifying the Key Range" l="57" />
+      <i t="Configuring Separate Logging Environments" l="58" />
+    </i>
+    <i t="Managing a Cluster" l="59">
+      <i t="Starting Clustered Servers" l="60" />
+      <i t="Checking Node Health" l="61" />
+      <i t="Adding a Server to a Cluster" l="62" />
+      <i t="Checking Server Run Level" l="63" />
+      <i t="Server Failures and Removing a Server" l="64" />
+      <i t="Running Administrative Commands" l="65" />
+      <i t="Updating Clustered Servers" l="66" />
+    </i>
+  </i>
+  <i t="Securing ClaimCenter Communications" l="67">
+    <i t="Using SSL with ClaimCenter" l="68">
+      <i t="Overview of the Steps" l="68#1272081" />
+      <i t="Editing the httpd.conf File" l="68#1272086" />
+      <i t="Editing the httpd-ssl.conf File" l="68#1272111" />
+      <i t="Editing the server.xml File" l="68#1475187" />
+    </i>
+    <i t="Accessing a ClaimCenter Server Through SSL" l="69">
+      <i t="Handling Browser Security Warnings" l="69#1023674" />
+    </i>
+  </i>
+  <i t="Securing Access to ClaimCenter Objects" l="70">
+    <i t="Understanding the Object Access Infrastructure" l="71">
+      <i t="Understanding the Different Permission Types" l="71#1286999" />
+      <i t="The Security Dictionary" l="71#1287038" />
+      <i t="Adding a System Permission" l="71#1287063" />
+      <i t="Beyond Roles and Permissions to Access Control" l="71#1287095" />
+    </i>
+    <i t="Key Access Control Configuration Files" l="72" />
+    <i t="Controlling Access to Claim Objects" l="73">
+      <i t="Specifying Security Types" l="73#1137111" />
+      <i t="Mapping Access Types to Permissions" l="73#1140449" />
+      <i t="Creating Claim Access Profiles" l="73#1110636" />
+      <i t="Examples of Claim Access Profiles" l="73#1142163" />
+    </i>
+    <i t="How ClaimCenter Applies Claim ACL Changes" l="74" />
+    <i t="Controlling Exposure Security" l="75">
+      <i t="What Exposure Security Controls" l="75#1170604" />
+      <i t="How to Use Exposure Security" l="75#1170598" />
+      <i t="Static Versus Claim-based Exposure Security" l="75#1138982" />
+    </i>
+    <i t="Controlling Document Security" l="76">
+      <i t="Example of Controlling Document Security" l="76#1292282" />
+    </i>
+  </i>
+  <i t="Importing and Exporting Administrative Data" l="77">
+    <i t="Understanding Data Import and Export" l="78">
+      <i t="What Mechanisms are Available to Import and Export Data?" l="78#1461038" />
+      <i t="The ClaimCenter Data Model" l="78#1461352" />
+      <i t="Public ID Prefix" l="78#1029592" />
+    </i>
+    <i t="Importing Administrative Data from the Command Line" l="79">
+      <i t="Creating a CSV File for Import" l="79#1055125" />
+      <i t="Using CSV Files with Different Character Sets" l="79#1596461" />
+      <i t="Maintaining Data Integrity While Importing" l="79#1310353" />
+    </i>
+    <i t="Importing and Exporting Administrative Data from ClaimCenter" l="80">
+      <i t="Creating an XML File for Import" l="80#1644799" />
+      <i t="Importing Data From the User Interface" l="80#1644833" />
+      <i t="Exporting Data from the User Interface" l="80#1654706" />
+    </i>
+    <i t="Other Import Functions" l="81">
+      <i t="Importing a Table from an External Database" l="81#1310501" />
+    </i>
+    <i t="The import Directory" l="82">
+      <i t="Configuring Roles and Privileges" l="82#1460950" />
+      <i t="Managing Authority Limit Profiles" l="82#1672814" />
+      <i t="Configuring Security Zones" l="82#1672840" />
+    </i>
+    <i t="Updating ICD Codes" l="83">
+      <i t="Importing New ICD Codes" l="83#1672874" />
+      <i t="Updating ICD Code Descriptions" l="83#1672934" />
+      <i t="Expiring Invalid ICD Codes" l="83#1672953" />
+    </i>
+  </i>
+  <i t="Batch Processes and Work Queues" l="84">
+    <i t="Batch Processes" l="85" />
+    <i t="Distributable Work Queues" l="86" />
+    <i t="Running Batch Processes and Work Queues" l="87">
+      <i t="Starting Batch Processes and Work Queues from ClaimCenter" l="87#1801664" />
+      <i t="Starting Batch Processes and Work Queues from the Command Line" l="87#1801777" />
+      <i t="Terminating Batch Processes and Work Queues from the Command Line" l="87#1802857" />
+    </i>
+    <i t="Performing Custom Actions After Work Queue Completion" l="88" />
+    <i t="Configuring Distributable Work Queues" l="89" />
+    <i t="List of Batch Processes and Distributable Work Queues" l="90">
+      <i t="Activity Escalation" l="90#2025172" />
+      <i t="Aggregate Limit Calculations" l="90#2025175" />
+      <i t="Archiving Item Writer" l="90#2040203" />
+      <i t="Bulk Claim Validation" l="90#2025219" />
+      <i t="Bulk Invoice Escalation" l="90#2025228" />
+      <i t="Bulk Invoice Submission" l="90#2025232" />
+      <i t="Bulk Invoice Workflow Monitor" l="90#2025237" />
+      <i t="BulkPurge" l="90#2025240" />
+      <i t="Catastrophe Claim Finder" l="90#2025243" />
+      <i t="Catastrophe Policy Location Download" l="90#2025262" />
+      <i t="Claim Contacts Calculations" l="90#2025282" />
+      <i t="Claim Exception" l="90#2025307" />
+      <i t="Claim Health Calculations" l="90#2025315" />
+      <i t="Claim Validation" l="90#2025325" />
+      <i t="ContactAutoSync" l="90#2025329" />
+      <i t="Contact Retire" l="90#2025346" />
+      <i t="Dashboard Statistics" l="90#2025364" />
+      <i t="Data Distribution" l="90#2025367" />
+      <i t="Database Statistics" l="90#2025377" />
+      <i t="DBConsistencyCheck" l="90#2025394" />
+      <i t="DeferredUpgradeTasks" l="90#2060481" />
+      <i t="Encryption Upgrade" l="90#2025422" />
+      <i t="Exchange Rate" l="90#2025454" />
+      <i t="Financials Calculations" l="90#2025463" />
+      <i t="Financials Escalation" l="90#2025490" />
+      <i t="Geocode Writer" l="90#2025501" />
+      <i t="Group Exception" l="90#2025508" />
+      <i t="Idle Claim Exception" l="90#2025515" />
+      <i t="Idle Closed Claim Exception" l="90#2039460" />
+      <i t="IncrementalDBStats" l="90#2025523" />
+      <i t="Phone Number Normalizer" l="90#2039934" />
+      <i t="PopulateSearchColumns" l="90#2025536" />
+      <i t="Process Completion Monitor" l="90#2025545" />
+      <i t="ProcessHistoryPurge" l="90#2025551" />
+      <i t="Purge Failed Work Items" l="90#2025557" />
+      <i t="Purge Message History" l="90#2025560" />
+      <i t="Purge Profiler Data" l="90#2025563" />
+      <i t="Purge Workflow" l="90#2025566" />
+      <i t="Purge Workflow Logs" l="90#2025570" />
+      <i t="Rebuild Aggregate Limits" l="90#2028782" />
+      <i t="Recalculate Claim Metrics" l="90#2028772" />
+      <i t="Retired Policy Graph Disconnector" l="90#2025581" />
+      <i t="ReviewSync" l="90#2025597" />
+      <i t="Statistics" l="90#2025605" />
+      <i t="Solr Data Import" l="90#2085161" />
+      <i t="TAccounts Escalation" l="90#2025608" />
+      <i t="User Exception" l="90#2025614" />
+      <i t="User Workload Update" l="90#2037332" />
+      <i t="Workflow" l="90#2025621" />
+      <i t="Work Queue Instrumentation Purge" l="90#2025628" />
+    </i>
+    <i t="Scheduling Batch Processes and Work Queues" l="91">
+      <i t="Determining if a Batch Process Can Be Scheduled" l="91#1733442" />
+      <i t="Defining a Schedule Specification" l="91#1055160" />
+      <i t="Determining the Current Schedule" l="91#1825945" />
+      <i t="Scheduling Batch Processes Sequentially to Avoid Problems" l="91#1915776" />
+      <i t="Scheduling Batch Processes for Specific Environments" l="91#1916420" />
+      <i t="Disabling the ClaimCenter Scheduler" l="91#1918320" />
+    </i>
+    <i t="Using Events and Messaging with Batch Processes" l="92" />
+    <i t="Troubleshooting Batch Processes and Work Queues" l="93">
+      <i t="Tuning Your Batch Process Schedule" l="93#1455900" />
+      <i t="Running Batch Processes from the Command Line" l="93#1055204" />
+      <i t="Monitoring Batch Processes" l="93#1023663" />
+      <i t="Troubleshooting Distributable Work Queues" l="93#1630324" />
+    </i>
+    <i t="Interactions Between ClaimCenter and Specific Processes" l="94">
+      <i t="Activity Escalations" l="94#2022781" />
+      <i t="Claim Exception Checking" l="94#2026093" />
+      <i t="Issuing Scheduled Payments" l="94#2026123" />
+      <i t="Calculating User Statistics" l="94#2026133" />
+    </i>
+  </i>
+  <i t="Configuring Guidewire Document Assistant" l="95">
+    <i t="Enabling Guidewire Document Assistant" l="96" />
+    <i t="Support for Document Management Systems" l="97" />
+    <i t="Client Configuration Requirements" l="98">
+      <i t="Creating a Deployment Rule Set" l="98#1950206" />
+      <i t="Creating an Exception Site List" l="98#1950664" />
+      <i t="Setting Security Levels in the Java Control Panel" l="98#1951078" />
+    </i>
+    <i t="Guidewire Document Assistant Configuration Parameters" l="99" />
+    <i t="Document Assistant Supported File Types" l="100" />
+    <i t="Customizing Document Assistant" l="101">
+      <i t="Document Assistant Resource Jar Contents" l="101#1953693" />
+    </i>
+    <i t="Disabling Guidewire Document Assistant" l="102" />
+  </i>
+  <i t="Using Server and Internal Tools" l="103">
+    <i t="Using the Server Tools" l="104">
+      <i t="Overview of Server Tools" l="104#1584176" />
+      <i t="Batch Process Info" l="105" />
+      <i t="Work Queue Info" l="106" />
+      <i t="Metro Reports" l="107" />
+      <i t="Management Beans" l="108" />
+      <i t="Guidewire Profiler" l="109" />
+      <i t="Cache Info" l="110" />
+      <i t="Startable Plugin" l="111" />
+      <i t="Set Log Level" l="112" />
+      <i t="View Logs" l="113" />
+      <i t="Info Pages" l="114" />
+      <i t="Cluster Info" l="115" />
+    </i>
+    <i t="Using the Internal Tools" l="116">
+      <i t="Reload" l="117" />
+      <i t="CC Sample Data" l="118" />
+    </i>
+  </i>
+  <i t="ClaimCenter Administrative Commands" l="119">
+    <i t="Administration Tools Overview" l="120" />
+    <i t="FNOL Mapper Command" l="121">
+      <i t="FNOL Mapper Options" l="121#1868309" />
+    </i>
+    <i t="Import Tools Command" l="122">
+      <i t="Import Tools Options" l="122#1025830" />
+    </i>
+    <i t="Maintenance Tools Command" l="123">
+      <i t="Maintenance Tools Options" l="123#1666046" />
+    </i>
+    <i t="Messaging Tools Command" l="124">
+      <i t="Messaging Tools Options" l="124#1158360" />
+    </i>
+    <i t="System Tools Command" l="125">
+      <i t="System Tools Options" l="125#1782400" />
+    </i>
+    <i t="Table Import Command" l="126">
+      <i t="Table Import Options" l="126#1075470" />
+    </i>
+    <i t="Template Tools Command" l="127">
+      <i t="Template Tools Options" l="127#1860717" />
+    </i>
+    <i t="Usage Tools Command" l="128">
+      <i t="Usage Tools Options" l="128#1860782" />
+    </i>
+    <i t="Zone Import Command" l="129">
+      <i t="Importing a Zone Data File" l="129#1888965" />
+      <i t="Zone Import Options" l="129#1724879" />
+      <i t="Zone Data Files Supplied by Guidewire" l="129#1889122" />
+      <i t="Zone Data Files That You Create" l="129#1889145" />
+    </i>
+  </i>
+  <i t="Free-text Batch Load Command" l="130">
+    <i t="When to Run the Free-text Batch Load Command" l="131" />
+    <i t="Prerequisites for Running the Free-text Batch Load Command" l="132" />
+    <i t="Running the Free-text Batch Load Command" l="133" />
+    <i t="Clean-up Tasks after Running the Free-text Batch Load Command" l="134" />
+    <i t="Free-text Batch Load Command and Native SQL" l="135" />
+  </i>
+</WebWorksHelpTOC>

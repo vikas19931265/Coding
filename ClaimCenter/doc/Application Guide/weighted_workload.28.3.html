@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Weighted Workload Classifications</title>
+    <link rel="StyleSheet" href="css/weighted_workload.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Application&nbsp;Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-components.html#1133091">Additional Features of ClaimCenter</a> : <a class="WebWorks_Breadcrumb_Link" href="weighted_workload.28.1.html#1133091">Weighted Workload</a> : Weighted Workload Classifications</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="1133091">Weighted Workload Classifications</a></h3>
+      <div class="B_-_Body"><a name="1130958">Each claim, exposure, or other assignable object needs to have an associated weight value, a non-negative integer, for weighted workload balancing. ClaimCenter uses predefined workload </a><span class="e_-_emphasis">classifications</span>, based on the complexity of the job, whose values are then matched to the assignable objects.</div>
+      <div class="B_-_Body"><a name="1136142">For example, if you have a new personal auto claim, and the </a><span class="ui_-_UI_element">Personal</span> <span class="ui_-_UI_element">Auto</span> <span class="ui_-_UI_element">Claim</span> classification has a weighted value of <span class="it_-_input_text">8</span>, the claim is given a weight <span class="it_-_input_text">8</span>. If an assignable object does not match any existing classification, it is assigned the default global workload weight, which is defined in <span class="cv_-_computer_voice">config</span>.<span class="cv_-_computer_voice">xml</span>.</div>
+      <div class="B_-_Body"><a name="1136199">Classifications are managed in the </a><span class="ui_-_UI_element">Administration</span> <span class="ui_-_UI_element">→</span> <span class="ui_-_UI_element">Business Settings →</span> <span class="ui_-_UI_element">Weighted</span> <span class="ui_-_UI_element">Workload</span> <span class="ui_-_UI_element">→</span> <span class="ui_-_UI_element">Weighted</span> <span class="ui_-_UI_element">Workload</span> <span class="ui_-_UI_element">Classifications</span> screen. You require the appropriate permissions to view and manage classifications. See <a href="javascript:WWHClickedPopup('config', 'configuring_weighted_workload.47.2.html#1136365', '');" title="Enabling Weighted Workload">“Weighted Workload Permissions” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('config', 'configuring_weighted_workload.47.2.html#1136365', '');" title="Enabling Weighted Workload">Configuration Guide</a></span>.</div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="1139120">Weighted workload balancing must be enabled in configuration for these screens to be available.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="1136143">Adding Classifications</a></h4>
+      <div class="B_-_Body"><a name="1136188">In the base configuration, you can create weighted workload classifications for two types of assignable objects, claims and exposures.</a></div>
+      <div class="B_-_Body"><a name="1136863">Use the following steps to create a new claim workload classification:</a></div>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="1136572">In </a><span class="ui_-_UI_element">Administration</span> <span class="ui_-_UI_element">→</span> <span class="ui_-_UI_element">Business Settings →</span> <span class="ui_-_UI_element">Weighted</span> <span class="ui_-_UI_element">Workload</span> <span class="ui_-_UI_element">→</span> <span class="ui_-_UI_element">Weighted</span> <span class="ui_-_UI_element">Workload</span> <span class="ui_-_UI_element">Classifications</span>, select <br /><span class="ui_-_UI_element">Add</span> <span class="ui_-_UI_element">Classification</span> <span class="ui_-_UI_element">→</span> <span class="ui_-_UI_element">Add Claim Classification</span> or <span class="ui_-_UI_element">Add</span> <span class="ui_-_UI_element">Exposure</span> <span class="ui_-_UI_element">Classification</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1136694">The </a><span class="ui_-_UI_element">General</span> section provides basic information on the classification, including the <span class="ui_-_UI_element">Name</span>, <span class="ui_-_UI_element">Description</span>, and whether or not the classification is <span class="ui_-_UI_element">Active</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="1137074">Additionally, enter the following:</a></div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><span class="ui_-_UI_element"><a name="1137110">Rank</a></span> – A non-negative integer that represents the priority given to the assignable. The <span class="ui_-_UI_element">Rank</span> is used only when a claim matches more than one classification, and the lower the <span class="ui_-_UI_element">Rank</span>, the higher the priority assigned to the claim.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><span class="ui_-_UI_element"><a name="1137116">Weight</a></span> – A non-negative integer.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1137071">Enter </a><span class="ui_-_UI_element">Criteria</span> for potential matches. Criteria can be restrictive, requiring an exact match on specified fields, or non-restrictive, where at least one value must match.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="1137877">Enter the following restrictive criteria:</a></div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><span class="ui_-_UI_element"><a name="1137974">Claim</a></span> <span class="ui_-_UI_element">Loss</span> <span class="ui_-_UI_element">Type</span> – This is a required field.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><span class="ui_-_UI_element"><a name="1137997">Claim</a></span> <span class="ui_-_UI_element">Line</span> <span class="ui_-_UI_element">of</span> <span class="ui_-_UI_element">Business</span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><span class="ui_-_UI_element"><a name="1138602">Claim</a></span> <span class="ui_-_UI_element">Policy</span> <span class="ui_-_UI_element">Type</span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="1140019">Enter the following non-restrictive criteria:</a></div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="1140020">Exposures – Select </a><span class="ui_-_UI_element">All,</span> or select <span class="ui_-_UI_element">Restrict</span> <span class="ui_-_UI_element">to</span> <span class="ui_-_UI_element">any</span> <span class="ui_-_UI_element">of</span> <span class="ui_-_UI_element">the</span> <span class="ui_-_UI_element">following</span>, click <span class="ui_-_UI_element">Add,</span> and enter a <span class="it_-_input_text">Coverage</span> <span class="it_-_input_text">Type</span>, <span class="it_-_input_text">Coverage</span> <span class="it_-_input_text">Subtype</span>, and <span class="it_-_input_text">Loss</span> <span class="it_-_input_text">Party</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="1138068">Claim/Exposure Segments – Select </a><span class="ui_-_UI_element">All, </span>or select <span class="ui_-_UI_element">Restrict</span> <span class="ui_-_UI_element">to</span> <span class="ui_-_UI_element">any</span> <span class="ui_-_UI_element">of</span> <span class="ui_-_UI_element">the</span> <span class="ui_-_UI_element">following</span>, click <span class="ui_-_UI_element">Add</span>, and enter a <span class="it_-_input_text">Segment</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="1138084">Claim Loss Causes/Exposure Incident Severities– Select </a><span class="ui_-_UI_element">All</span> or <span class="ui_-_UI_element">Restrict</span> <span class="ui_-_UI_element">to</span> <span class="ui_-_UI_element">any</span> <span class="ui_-_UI_element">of</span> <span class="ui_-_UI_element">the</span> <span class="ui_-_UI_element">following</span>. If you select the latter, select <span class="ui_-_UI_element">Add</span> and enter a <span class="it_-_input_text">Loss</span> <span class="it_-_input_text">Cause</span> or <span class="it_-_input_text">Incident</span> <span class="it_-_input_text">Severity</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="1138103">Service Tiers/Exposure Jurisdictions– Select </a><span class="ui_-_UI_element">All</span> or <span class="ui_-_UI_element">Restrict</span> <span class="ui_-_UI_element">to</span> <span class="ui_-_UI_element">any</span> <span class="ui_-_UI_element">of</span> <span class="ui_-_UI_element">the</span> <span class="ui_-_UI_element">following</span>. If you select the latter, select <span class="ui_-_UI_element">Add</span> and enter a <span class="it_-_input_text">Service</span> <span class="it_-_input_text">Tier</span> or <span class="it_-_input_text">Jurisdiction</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1137968">Click </a><span class="ui_-_UI_element">Update</span>. ClaimCenter displays a message indicating that to apply this newly created classification to existing open claims and exposures, you need to run the Weighted Workload batch process. Click <span class="ui_-_UI_element">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="1139053">Editing Existing Classifications</a></h4>
+      <div class="B_-_Body"><a name="1139338">You can edit an existing workload classification using the steps below.</a></div>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="1139411">In </a><span class="ui_-_UI_element">Administration</span> <span class="ui_-_UI_element">→</span> <span class="ui_-_UI_element">Business Settings →</span> <span class="ui_-_UI_element">Weighted</span> <span class="ui_-_UI_element">Workload</span> <span class="ui_-_UI_element">→</span> <span class="ui_-_UI_element">Weighted</span> <span class="ui_-_UI_element">Workload</span> <span class="ui_-_UI_element">Classifications</span>, select a classification name from the list.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1139492">Select </a><span class="ui_-_UI_element">Edit</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1139520">Make the necessary changes and click </a><span class="ui_-_UI_element">Update</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="1139090">It is recommended that changes to workload classifications be made early in the planning stages of implementation. Once assignable objects such as claims and exposure are created, any subsequent changes will need to be manually adjusted by executing the </a><span class="ui_-_UI_element">User</span> <span class="ui_-_UI_element">Workload</span> <span class="ui_-_UI_element">Update</span> batch process. See <a href="javascript:WWHClickedPopup('admin', 'batch.11.07.html#2037332', '');" title="List of Batch Processes and Distributable Work Queues">“User Workload Update” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('admin', 'batch.11.07.html#2037332', '');" title="List of Batch Processes and Distributable Work Queues">System Administration Guide</a></span>.</div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

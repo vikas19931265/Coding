@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebWorksHelpBook version="5.0" name="Application Guide" context="app" locale="en" xmlns="urn:WebWorks-Help-Book-Files-Schema">
+  <CommonWordsToSkip minlen="2">
+    a about after all also am an and another any are as at
+    be because been before being between both but by
+    came can come copyright corp corporation could
+    did do does
+    each etc
+    for from
+    get goes got
+    had has have he her here him himself his how
+    if in inc into is it its
+    let like
+    make many me might more most much must my
+    never nor not now
+    of off on one only or other our out over own
+    reserved rights
+    said same see set shall she should since so some still such
+    take than that the their them then there these they this those though through to too
+    under us use
+    very
+    was way we well were what when where which while who why will with would
+    yes yet you your
+   </CommonWordsToSkip>
+  <ScoringPrefs>
+    <meta name="keywords" weight="100" />
+    <meta name="description" weight="50" />
+    <meta name="summary" weight="50" />
+    <title weight="20" />
+    <h1 weight="200" />
+    <h2 weight="150" />
+    <caption weight="1" />
+    <h3 weight="50" />
+    <th weight="1" />
+    <h4 weight="15" />
+    <h5 weight="10" />
+    <h6 weight="5" />
+    <h7 weight="5" />
+  </ScoringPrefs>
+  <DocumentInfo>
+    <Document title="Guidewire ClaimCenter®" href="cover-app.html" />
+    <Document title="About ClaimCenter Documentation" href="about.html" />
+    <Document title="Introduction" href="p_intro.html" />
+    <Document title="Introduction to ClaimCenter" href="intro.html" />
+    <Document title="Claims Overview" href="claimoverview.05.01.html" />
+    <Document title="Claim Contents" href="claimoverview.05.02.html" />
+    <Document title="Claim Summary Screens" href="claimoverview.05.03.html" />
+    <Document title="Activities" href="claimoverview.05.04.html" />
+    <Document title="Workplan Screen" href="claimoverview.05.05.html" />
+    <Document title="Loss Details Screens" href="claimoverview.05.06.html" />
+    <Document title="Incident Tracking" href="claimoverview.05.07.html" />
+    <Document title="Exposures Screen" href="claimoverview.05.08.html" />
+    <Document title="Reinsurance Screen" href="claimoverview.05.09.html" />
+    <Document title="Parties Involved Screens" href="claimoverview.05.10.html" />
+    <Document title="Policy Screen" href="claimoverview.05.11.html" />
+    <Document title="Financials Screens" href="claimoverview.05.12.html" />
+    <Document title="New Claim Wizard" href="claimoverview.05.13.html" />
+    <Document title="Notes Screen" href="claimoverview.05.14.html" />
+    <Document title="Documents Screen" href="claimoverview.05.15.html" />
+    <Document title="Plan of Action Screens" href="claimoverview.05.16.html" />
+    <Document title="Services Screen" href="claimoverview.05.17.html" />
+    <Document title="Litigation Menu Link" href="claimoverview.05.18.html" />
+    <Document title="History Screen" href="claimoverview.05.19.html" />
+    <Document title="FNOL Snapshot Screens" href="claimoverview.05.20.html" />
+    <Document title="Calendar Screens" href="claimoverview.05.21.html" />
+    <Document title="ClaimCenter User Interface" href="p-ui.html" />
+    <Document title="Navigating ClaimCenter" href="ui.07.1.html" />
+    <Document title="Logging in to ClaimCenter" href="ui.07.2.html" />
+    <Document title="Setting Preferences" href="ui.07.3.html" />
+    <Document title="Viewing Statistics" href="ui.07.4.html" />
+    <Document title="Selecting International Settings in ClaimCenter" href="ui.07.5.html" />
+    <Document title="Common Areas in the ClaimCenter User Interface" href="ui.07.6.html" />
+    <Document title="ClaimCenter Tabs" href="ui.07.7.html" />
+    <Document title="Saving Your Work" href="ui.07.8.html" />
+    <Document title="Claim Search" href="claim_search.08.1.html" />
+    <Document title="Simple Search" href="claim_search.08.2.html" />
+    <Document title="Advanced Search" href="claim_search.08.3.html" />
+    <Document title="Search by Contact" href="claim_search.08.4.html" />
+    <Document title="Search by Contact User Interface" href="claim_search.08.5.html" />
+    <Document title="Working with Free-Text Search" href="claim_search.08.6.html" />
+    <Document title="QuickJump" href="quickjump.09.1.html" />
+    <Document title="QuickJump Overview" href="quickjump.09.2.html" />
+    <Document title="Configuring QuickJump" href="quickjump.09.3.html" />
+    <Document title="Working With Claims" href="p-claims.html" />
+    <Document title="Claim Creation" href="fnol.11.1.html" />
+    <Document title="New Claim Wizard Overview" href="fnol.11.2.html" />
+    <Document title="New Claim Wizard Steps" href="fnol.11.3.html" />
+    <Document title="New Claim Wizard and the Lines of Business" href="fnol.11.4.html" />
+    <Document title="Working with Policies in Claims" href="policy.12.01.html" />
+    <Document title="Verified and Unverified Policies" href="policy.12.02.html" />
+    <Document title="Validating Policies" href="policy.12.03.html" />
+    <Document title="Working with Policies in ClaimCenter" href="policy.12.04.html" />
+    <Document title="Searching for Candidate Policies" href="policy.12.05.html" />
+    <Document title="Creating an Unverified Policy" href="policy.12.06.html" />
+    <Document title="Retrieving the Correct Policy" href="policy.12.07.html" />
+    <Document title="Editing a Policy Copy in ClaimCenter" href="policy.12.08.html" />
+    <Document title="Refreshing the Policy Snapshot on a Claim" href="policy.12.09.html" />
+    <Document title="Replacing a Policy on a Claim" href="policy.12.10.html" />
+    <Document title="Adding Coverages to a Policy" href="policy.12.11.html" />
+    <Document title="Configuring Policy Menu Links" href="policy.12.12.html" />
+    <Document title="Verifying Coverage" href="policy.12.13.html" />
+    <Document title="Aggregate Limits" href="policy.12.14.html" />
+    <Document title="Policies and the Data Model" href="policy.12.15.html" />
+    <Document title="Claim Policies and the Policy Administration System" href="policy.12.16.html" />
+    <Document title="Accounts and Service Tiers" href="account_handling.13.1.html" />
+    <Document title="Accounts" href="account_handling.13.2.html" />
+    <Document title="Account Manager Permissions" href="account_handling.13.3.html" />
+    <Document title="Working with Accounts" href="account_handling.13.4.html" />
+    <Document title="Service Tiers" href="account_handling.13.5.html" />
+    <Document title="Special Handling" href="special_handling.14.1.html" />
+    <Document title="Adding Special Handling Instructions" href="special_handling.14.2.html" />
+    <Document title="Claim History" href="histories.15.1.html" />
+    <Document title="Content of a Claim History" href="histories.15.2.html" />
+    <Document title="Adding History Events" href="histories.15.3.html" />
+    <Document title="Archiving" href="archiving.16.1.html" />
+    <Document title="ClaimCenter Preparations for Archiving" href="archiving.16.2.html" />
+    <Document title="Archiving Item Writer Batch Process" href="archiving.16.3.html" />
+    <Document title="Claims and Claim Entities that are not Archived" href="archiving.16.4.html" />
+    <Document title="Searching for Archived Claims" href="archiving.16.5.html" />
+    <Document title="Retrieving Archived Claims" href="archiving.16.6.html" />
+    <Document title="Purging Archived Claims" href="archiving.16.7.html" />
+    <Document title="Configuring Claim Archiving" href="archiving.16.8.html" />
+    <Document title="More Information on Archiving" href="archiving.16.9.html" />
+    <Document title="Validation" href="validation.17.1.html" />
+    <Document title="Field-level Validation" href="validation.17.2.html" />
+    <Document title="Validation Rules" href="validation.17.3.html" />
+    <Document title="Claim Fraud" href="fraud.18.1.html" />
+    <Document title="Fraud Detection Overview" href="fraud.18.2.html" />
+    <Document title="How Rules Can Evaluate Risk Potential" href="fraud.18.3.html" />
+    <Document title="How Question Sets Evaluate Risk Potential" href="fraud.18.4.html" />
+    <Document title="Evaluating the Special Investigations Score" href="fraud.18.5.html" />
+    <Document title="Using the Special Investigation Details Screen" href="fraud.18.6.html" />
+    <Document title="Assessments" href="assessments.19.1.html" />
+    <Document title="Assessment Overview" href="assessments.19.2.html" />
+    <Document title="Working with Assessments" href="assessments.19.3.html" />
+    <Document title="Data Model for Assessments" href="assessments.19.4.html" />
+    <Document title="Catastrophes and Disasters" href="catastrophes.20.1.html" />
+    <Document title="Catastrophe Overview" href="catastrophes.20.2.html" />
+    <Document title="Working with Catastrophes" href="catastrophes.20.3.html" />
+    <Document title="Catastrophe Bulk Association" href="catastrophes.20.4.html" />
+    <Document title="Associating a Claim with a Catastrophe" href="catastrophes.20.5.html" />
+    <Document title="Catastrophe Dashboard" href="catastrophes.20.6.html" />
+    <Document title="Service Provider Performance Reviews" href="serviceprovidermgmt.html" />
+    <Document title="ClaimCenter Lines of Business" href="p-lobs.html" />
+    <Document title="Homeowners Line of Business" href="homeowners.23.1.html" />
+    <Document title="Homeowners Screens" href="homeowners.23.2.html" />
+    <Document title="Homeowners Coverage Types" href="homeowners.23.3.html" />
+    <Document title="Personal Travel Line of Business" href="travel.24.1.html" />
+    <Document title="Personal Travel Insurance Overview" href="travel.24.2.html" />
+    <Document title="Working with the Personal Travel Line of Business" href="travel.24.3.html" />
+    <Document title="Personal Travel Screens" href="travel.24.4.html" />
+    <Document title="Personal Travel Coverage Types" href="travel.24.5.html" />
+    <Document title="Workers’ Compensation Line of Business" href="workers_comp.25.1.html" />
+    <Document title="Workers’ Compensation Overview" href="workers_comp.25.2.html" />
+    <Document title="Workers’ Compensation Screens" href="workers_comp.25.3.html" />
+    <Document title="Compensability Decision" href="workers_comp.25.4.html" />
+    <Document title="Finding Injured Workers" href="workers_comp.25.5.html" />
+    <Document title="Jurisdictional Benefit Calculation Management" href="workers_comp.25.6.html" />
+    <Document title="Workers’ Compensation Administration" href="workers_comp.25.7.html" />
+    <Document title="Workers’ Compensation Coverage Types" href="workers_comp.25.8.html" />
+    <Document title="Additional Features of ClaimCenter" href="p-components.html" />
+    <Document title="Work Assignment" href="assignments.27.1.html" />
+    <Document title="How Assignment Models the Way a Carrier Distributes Work" href="assignments.27.2.html" />
+    <Document title="Assignable Work" href="assignments.27.3.html" />
+    <Document title="How Work is Assigned" href="assignments.27.4.html" />
+    <Document title="Assignment Methods" href="assignments.27.5.html" />
+    <Document title="Queues" href="assignments.27.6.html" />
+    <Document title="Weighted Workload" href="weighted_workload.28.1.html" />
+    <Document title="Weighted Workload Overview" href="weighted_workload.28.2.html" />
+    <Document title="Weighted Workload Classifications" href="weighted_workload.28.3.html" />
+    <Document title="Calculating Weights" href="weighted_workload.28.4.html" />
+    <Document title="Weighted Workload Assignment" href="weighted_workload.28.5.html" />
+    <Document title="Viewing Weights" href="weighted_workload.28.6.html" />
+    <Document title="Claim Segmentation" href="segmentations.29.1.html" />
+    <Document title="Automated Claim Setup" href="segmentations.29.2.html" />
+    <Document title="Segmentation Rules" href="segmentations.29.3.html" />
+    <Document title="Comparing Strategy to Segmentation" href="segmentations.29.4.html" />
+    <Document title="Uses of Segmentation" href="segmentations.29.5.html" />
+    <Document title="Working with Activities" href="activities.30.1.html" />
+    <Document title="Activities Overview" href="activities.30.2.html" />
+    <Document title="Viewing Activities" href="activities.30.3.html" />
+    <Document title="Understanding Activity Patterns" href="activities.30.4.html" />
+    <Document title="Activity Calendars" href="activities.30.5.html" />
+    <Document title="Activities and the Data Model" href="activities.30.6.html" />
+    <Document title="Email" href="email.31.1.html" />
+    <Document title="Working with Email in Claims" href="email.31.2.html" />
+    <Document title="How Emails are Sent" href="email.31.3.html" />
+    <Document title="Incidents" href="incidents.32.1.html" />
+    <Document title="Incident Overview" href="incidents.32.2.html" />
+    <Document title="Incidents, Exposures, and Claims" href="incidents.32.3.html" />
+    <Document title="The Incident Entity and Its Subtypes" href="incidents.32.4.html" />
+    <Document title="Creating Incidents" href="incidents.32.5.html" />
+    <Document title="Incident-Only Claims" href="incidents.32.6.html" />
+    <Document title="Legal Matters" href="matters.33.1.html" />
+    <Document title="Legal Matters Overview" href="matters.33.2.html" />
+    <Document title="Working with Matters" href="matters.33.3.html" />
+    <Document title="Notes" href="notes.34.1.html" />
+    <Document title="Differences Between Notes and Documents" href="notes.34.2.html" />
+    <Document title="Working with Notes" href="notes.34.3.html" />
+    <Document title="Notes Security" href="notes.34.4.html" />
+    <Document title="Configuring Notes and Note Templates" href="notes.34.5.html" />
+    <Document title="Holidays and Business Weeks" href="holidays.35.1.html" />
+    <Document title="Specifying Holiday Dates" href="holidays.35.2.html" />
+    <Document title="Working with Holidays, Weekends, and Business Weeks" href="holidays.35.3.html" />
+    <Document title="Using Gosu Methods to Work with Holidays" href="holidays.35.4.html" />
+    <Document title="Business Weeks and Business Hours" href="holidays.35.5.html" />
+    <Document title="Holiday Permissions" href="holidays.35.6.html" />
+    <Document title="Vacation Status" href="vacations.html" />
+    <Document title="Question Sets" href="questionset.37.1.html" />
+    <Document title="Service Provider Question Sets" href="questionset.37.2.html" />
+    <Document title="Fraud Question Sets and Points" href="questionset.37.3.html" />
+    <Document title="Working with Question Sets" href="questionset.37.4.html" />
+    <Document title="Question Set Entities" href="questionset.37.5.html" />
+    <Document title="Subrogation" href="subrogations.38.1.html" />
+    <Document title="Working With Subrogation" href="subrogations.38.2.html" />
+    <Document title="Enabling Subrogation" href="subrogations.38.3.html" />
+    <Document title="Subrogation Data Model" href="subrogations.38.4.html" />
+    <Document title="ClaimCenter Financials" href="p-financials.html" />
+    <Document title="Claim Financials" href="financials.40.01.html" />
+    <Document title="Financial Overview" href="financials.40.02.html" />
+    <Document title="Transactions" href="financials.40.03.html" />
+    <Document title="Reserves" href="financials.40.04.html" />
+    <Document title="Reserve Lines" href="financials.40.05.html" />
+    <Document title="Payments" href="financials.40.06.html" />
+    <Document title="Checks" href="financials.40.07.html" />
+    <Document title="Electronic Funds Transfer (EFT)" href="financials.40.08.html" />
+    <Document title="Recoveries and Recovery Reserves" href="financials.40.09.html" />
+    <Document title="Working With Transactions and Checks" href="financials.40.10.html" />
+    <Document title="How Transactions Affect Financial Values" href="financials.40.11.html" />
+    <Document title="Lifecycles of Financial Objects" href="financials.40.12.html" />
+    <Document title="Lifecycles of Transactions" href="financials.40.13.html" />
+    <Document title="Lifecycles of Checks" href="financials.40.14.html" />
+    <Document title="Financial Holds" href="financials.40.15.html" />
+    <Document title="Integration with External Financial Systems" href="financials.40.16.html" />
+    <Document title="ClaimCenter Financial Calculations" href="financials.40.17.html" />
+    <Document title="Financial Transactions Outside the User Interface" href="financials.40.18.html" />
+    <Document title="Financials Data Model" href="financials.40.19.html" />
+    <Document title="Transaction Business Rules" href="financials.40.20.html" />
+    <Document title="Financial Permissions and Authority Limits" href="financials.40.21.html" />
+    <Document title="Multiple Currencies" href="multicurrency.41.1.html" />
+    <Document title="Multicurrency Overview" href="multicurrency.41.2.html" />
+    <Document title="Multicurrency Display" href="multicurrency.41.3.html" />
+    <Document title="Multicurrency Reserving" href="multicurrency.41.4.html" />
+    <Document title="Multicurrency Financial Summaries" href="multicurrency.41.5.html" />
+    <Document title="Examples" href="multicurrency.41.6.html" />
+    <Document title="Exchange Rates" href="multicurrency.41.7.html" />
+    <Document title="Foreign Exchange Adjustments" href="multicurrency.41.8.html" />
+    <Document title="Deductible Handling" href="deductible_handling.42.1.html" />
+    <Document title="Deductible Handling Overview" href="deductible_handling.42.2.html" />
+    <Document title="Working with Deductibles" href="deductible_handling.42.3.html" />
+    <Document title="Viewing Deductibles" href="deductible_handling.42.4.html" />
+    <Document title="Applying Deductibles" href="deductible_handling.42.5.html" />
+    <Document title="Editing Deductibles" href="deductible_handling.42.6.html" />
+    <Document title="Waiving Deductibles" href="deductible_handling.42.7.html" />
+    <Document title="Setting Up Deductibles" href="deductible_handling.42.8.html" />
+    <Document title="Bulk Invoices" href="bulkinvoice.43.01.html" />
+    <Document title="Bulk Invoice Overview" href="bulkinvoice.43.02.html" />
+    <Document title="Bulk Invoice Process Flow" href="bulkinvoice.43.03.html" />
+    <Document title="Using the Bulk Invoice Screens" href="bulkinvoice.43.04.html" />
+    <Document title="Working with Bulk Invoice Line Items" href="bulkinvoice.43.05.html" />
+    <Document title="Stopping or Voiding a Bulk Invoice" href="bulkinvoice.43.06.html" />
+    <Document title="Bulk Invoice Validation" href="bulkinvoice.43.07.html" />
+    <Document title="Bulk Invoice Approval" href="bulkinvoice.43.08.html" />
+    <Document title="Invoice Line Item Validation" href="bulkinvoice.43.09.html" />
+    <Document title="Bulk Invoice Checks" href="bulkinvoice.43.10.html" />
+    <Document title="Bulk Invoice Escalation" href="bulkinvoice.43.11.html" />
+    <Document title="Lifecycle of a Bulk Invoice and its Line Items" href="bulkinvoice.43.12.html" />
+    <Document title="Bulk Invoice Events and Acknowledgements" href="bulkinvoice.43.13.html" />
+    <Document title="Bulk Invoices and Multicurrency" href="bulkinvoice.43.14.html" />
+    <Document title="Bulk Invoice Financial Permissions and Authority Limits" href="bulkinvoice.43.15.html" />
+    <Document title="Bulk Invoice Web Service API" href="bulkinvoice.43.16.html" />
+    <Document title="Bulk Invoice Data Model" href="bulkinvoice.43.17.html" />
+    <Document title="ClaimCenter Services" href="p-services.html" />
+    <Document title="Services" href="services.45.01.html" />
+    <Document title="Services Overview" href="services.45.02.html" />
+    <Document title="Creating a Service Request" href="services.45.03.html" />
+    <Document title="Viewing Service Requests" href="services.45.04.html" />
+    <Document title="Promoting Service Requests" href="services.45.05.html" />
+    <Document title="Canceling or Declining Service Requests" href="services.45.06.html" />
+    <Document title="Assigning Service Requests" href="services.45.07.html" />
+    <Document title="Service Request Documents" href="services.45.08.html" />
+    <Document title="Making Payments" href="services.45.09.html" />
+    <Document title="Lifecycle of a Service Request" href="services.45.10.html" />
+    <Document title="Service Request Metrics" href="services.45.11.html" />
+    <Document title="Configuring Service Requests" href="services.45.12.html" />
+    <Document title="ClaimCenter Management" href="p-management.html" />
+    <Document title="Claim Performance Monitoring" href="claim_perf_monitor.47.1.html" />
+    <Document title="Claim Health Metrics" href="claim_perf_monitor.47.2.html" />
+    <Document title="Aggregated Metric Data" href="claim_perf_monitor.47.3.html" />
+    <Document title="Claim Summary" href="claim_perf_monitor.47.4.html" />
+    <Document title="Claim Status Screen" href="claim_perf_monitor.47.5.html" />
+    <Document title="Administering Metrics and Thresholds" href="claim_perf_monitor.47.6.html" />
+    <Document title="Team Management" href="team.48.1.html" />
+    <Document title="Team Management Overview" href="team.48.2.html" />
+    <Document title="My Groups on the Team Tab" href="team.48.3.html" />
+    <Document title="Groups on the Team Tab" href="team.48.4.html" />
+    <Document title="Group Members on the Team Tab" href="team.48.5.html" />
+    <Document title="Using Flags" href="team.48.6.html" />
+    <Document title="Administering the Team Tab" href="team.48.7.html" />
+    <Document title="Dashboard" href="dashboard.html" />
+    <Document title="Integrations" href="p-key-integrations.html" />
+    <Document title="ClaimCenter Integration Points" href="key_integrations.html" />
+    <Document title="Policy Administration System Integration" href="pas.52.1.html" />
+    <Document title="Policy Administration System Integration Overview" href="pas.52.2.html" />
+    <Document title="Retrieving a Policy in ClaimCenter" href="pas.52.3.html" />
+    <Document title="Viewing Policies in a Policy Administration System (PAS)" href="pas.52.4.html" />
+    <Document title="Large Loss Notifications" href="pas.52.5.html" />
+    <Document title="Permissions for Working with Policies" href="pas.52.6.html" />
+    <Document title="Coverage Term Mapping Between ClaimCenter and PolicyCenter" href="pas.52.7.html" />
+    <Document title="ClaimCenter Contacts" href="contacts.53.1.html" />
+    <Document title="Types of Contacts" href="contacts.53.2.html" />
+    <Document title="ContactManager Integration" href="contacts.53.3.html" />
+    <Document title="Working with Contacts in ClaimCenter and ContactManager" href="contacts.53.4.html" />
+    <Document title="Document Management" href="documents.54.1.html" />
+    <Document title="Document Security" href="documents.54.2.html" />
+    <Document title="Working with Documents" href="documents.54.3.html" />
+    <Document title="Configuring Document Management" href="documents.54.4.html" />
+    <Document title="Document Management Integration" href="documents.54.5.html" />
+    <Document title="Metropolitan Reports" href="metro_reports.55.1.html" />
+    <Document title="Metropolitan Reports Overview" href="metro_reports.55.2.html" />
+    <Document title="Working with Metropolitan Reports" href="metro_reports.55.3.html" />
+    <Document title="Configuring Metropolitan Reports" href="metro_reports.55.4.html" />
+    <Document title="Metropolitan Report Workflow" href="metro_reports.55.5.html" />
+    <Document title="ISO and Claims" href="iso.56.1.html" />
+    <Document title="How ISO Interacts with Claims and Exposures" href="iso.56.2.html" />
+    <Document title="How ISO Works with ClaimCenter" href="iso.56.3.html" />
+    <Document title="ISO Permissions" href="iso.56.4.html" />
+    <Document title="Reinsurance Management" href="p-reinsurance.html" />
+    <Document title="Reinsurance Management Concepts" href="reinsurance-concepts.58.1.html" />
+    <Document title="Reinsurance General Overview" href="reinsurance-concepts.58.2.html" />
+    <Document title="Reinsurance Management in ClaimCenter" href="reinsurance.59.1.html" />
+    <Document title="Reinsurance in ClaimCenter" href="reinsurance.59.2.html" />
+    <Document title="Setting up Reinsurance Users and Groups" href="reinsurance.59.3.html" />
+    <Document title="Working with Reinsurance Agreements and Transactions" href="reinsurance.59.4.html" />
+    <Document title="Marking a Claim as Reinsurance Reportable" href="reinsurance.59.5.html" />
+    <Document title="Associating Claims" href="reinsurance.59.6.html" />
+    <Document title="ClaimCenter Administration" href="p-administering.html" />
+    <Document title="Users, Groups, and Regions" href="groups_users_queues.61.1.html" />
+    <Document title="Understanding Groups" href="groups_users_queues.61.2.html" />
+    <Document title="Understanding Users" href="groups_users_queues.61.3.html" />
+    <Document title="Understanding Roles" href="groups_users_queues.61.4.html" />
+    <Document title="Understanding Assignment Queues" href="groups_users_queues.61.5.html" />
+    <Document title="Understanding Regions" href="groups_users_queues.61.6.html" />
+    <Document title="Security: Roles, Permissions, and Access Controls" href="securityrole.62.01.html" />
+    <Document title="Role-Based Security" href="securityrole.62.02.html" />
+    <Document title="Data-based Security and Claim Access Control" href="securityrole.62.03.html" />
+    <Document title="Access Control for Documents and Notes" href="securityrole.62.04.html" />
+    <Document title="Access Control for Exposures" href="securityrole.62.05.html" />
+    <Document title="Working with Exposure Security" href="securityrole.62.06.html" />
+    <Document title="User Login and Passwords" href="securityrole.62.07.html" />
+    <Document title="Security Dictionary" href="securityrole.62.08.html" />
+    <Document title="Configuration Files for Access Control Profiles" href="securityrole.62.09.html" />
+    <Document title="Security for Contacts" href="securityrole.62.10.html" />
+    <Document title="Administering ClaimCenter" href="administration.63.01.html" />
+    <Document title="Personal Administration Settings and Views" href="administration.63.02.html" />
+    <Document title="Administration Tab" href="administration.63.03.html" />
+    <Document title="Managing Accounts" href="administration.63.04.html" />
+    <Document title="Managing Users and Groups" href="administration.63.05.html" />
+    <Document title="Managing Activity Patterns" href="administration.63.06.html" />
+    <Document title="Managing Attributes" href="administration.63.07.html" />
+    <Document title="Managing Catastrophes" href="administration.63.08.html" />
+    <Document title="Managing Authority Limit Profiles" href="administration.63.09.html" />
+    <Document title="Managing Roles" href="administration.63.10.html" />
+    <Document title="Managing Regions" href="administration.63.11.html" />
+    <Document title="Managing Holidays" href="administration.63.12.html" />
+    <Document title="Managing Messages Queues" href="administration.63.13.html" />
+    <Document title="Managing Script Parameters" href="administration.63.14.html" />
+    <Document title="Managing Workflows" href="administration.63.15.html" />
+    <Document title="Managing Importing and Exporting Data" href="administration.63.16.html" />
+    <Document title="Managing Security Zones" href="administration.63.17.html" />
+    <Document title="Creating and Managing Reference Tables" href="administration.63.18.html" />
+    <Document title="Managing Coverage Verification" href="administration.63.19.html" />
+    <Document title="Managing WC Parameters" href="administration.63.20.html" />
+    <Document title="Managing Reinsurance Thresholds" href="administration.63.21.html" />
+    <Document title="Managing ICD Codes" href="administration.63.22.html" />
+    <Document title="Managing Metrics and Thresholds" href="administration.63.23.html" />
+    <Document title="Managing Business Weeks" href="administration.63.24.html" />
+  </DocumentInfo>
+  <TopicMap>
+    <Topic name="Documents_and_Their_Management" href="documents.54.1.html" />
+  </TopicMap>
+</WebWorksHelpBook>

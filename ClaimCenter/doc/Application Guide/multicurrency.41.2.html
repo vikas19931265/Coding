@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Multicurrency Overview</title>
+    <link rel="StyleSheet" href="css/multicurrency.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Application&nbsp;Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-financials.html#4742541">ClaimCenter Financials</a> : <a class="WebWorks_Breadcrumb_Link" href="multicurrency.41.1.html#4742541">Multiple Currencies</a> : Multicurrency Overview</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="4742541">Multicurrency Overview</a></h3>
+      <div class="B_-_Body"><a name="4880479">You can configure ClaimCenter financials to display as well as use multiple currencies. If you enable multicurrency display, you can write checks, create reserves and recovery reserves, and make payments in more than one currency in a single claim. However, in all calculations, the secondary transaction currency is effectively converted to the claim’s currency. Using multiple currencies, in this case, serves more as a convenience for users who need to use different currencies on a short-term basis.</a></div>
+      <div class="B_-_Body"><a name="4867756">If you enable multicurrency reserving, you can create and manage reserves and recoveries, write checks, and make payments in multiple currencies. You can track and erode reserves in the currency of choice, thus avoiding exchange rate fluctuations and their potential impact on reserve amounts.</a></div>
+      <div class="B_-_Body"><a name="4880475">ClaimCenter can be configured in three different modes for currency:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4886375">Single currency mode – All money amounts use one currency. All currency drop-down menus and exchange rate information is hidden, since only one currency is allowed.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="4886376">Configuration:</a></div>
+      <div class="LP_-_List_Para"><span class="cv_-_computer_voice"><a name="4886464">MulticurrencyDisplayMode</a></span> = <span class="cv_-_computer_voice">SINGLE</span>. </div>
+      <div class="LP_-_List_Para"><span class="cv_-_computer_voice"><a name="4886368">DefaultApplicationCurrency</a></span> is set to the one currency to use.</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4880198">Multicurrency Display</a></span> – Determines if ClaimCenter shows multiple currencies. With multicurrency display enabled, you can:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="4880199">Create reserves or recovery reserves in the claim currency. Although these transactions can be created in a non-claim currency, the totals are tracked in the claim currency only.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="4880236">Create payments and recoveries in any currency.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="4880241">Track these transactions as part of the financial calculations and summary. It must be noted that with this configuration, creating reserves in a different transaction currency is a convenience. Reserves are always converted and tracked in the claim currency. Payments and recoveries erode reserves in the claim currency.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="4880424">Reserves will be converted and tracked in the claim's currency.</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4869459">Multicurrency Reserving</a></span> – Determines if you can track reserves and recovery reserves in multiple currencies on a claim. With multicurrency reserving enabled, you can:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="4880397">Create and track reserves and recovery reserves in any currency. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="4880406">Create Payments and Recoveries in any currency. They erode reserves and recovery reserves respectively in the currency the reserve was created. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="4880413">Track these transactions as part of the financial calculations and summary. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="4880287">As reserves are tracked in the currency they were created in, exchange rate fluctuations do not impact the remaining amount on a reserve.</a></div>
+      <div class="NI_-_Note_Important">
+        <span class="n_-_note">IMPORTANT   </span><a name="4868049">In the base configuration, multicurrency display and reserving are disabled, and ClaimCenter tracks all financial transactions in the default application currency.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="4860883">Currency Types</a></h4>
+      <div class="B_-_Body"><a name="4860884">ClaimCenter supports a single, main, or default currency, as well as currency types based on the policy, transaction, and reserve line. They are defined as follows: </a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4860885">Default currency</a></span> – The main or base currency for the system, defined in the <span class="cv_-_computer_voice">config.xml</span> file. The terms server currency, reporting currency, and main currency all refer to this default currency. This currency is used application-wide mainly for reporting purposes. For example, a carrier based in London would have its reports printed in their default currency, GBP. The <span class="cv_-_computer_voice">ReportingAmount</span> field is on the <span class="cv_-_computer_voice">TransactionLineItem</span> entity. It returns the reporting amount of a transaction, which is the equivalent of the transaction amount in the reporting currency.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4860886">Claim currency</a></span> – The currency associated with the claim. The claim inherits the currency from its policy, so it is also known as the policy currency. The <span class="cv_-_computer_voice">ClaimAmount</span> field on the <span class="cv_-_computer_voice">TransactionLineItem</span> entity stores the claim amount of a transaction, which is the equivalent of the transaction amount in the claim currency. See <a href="javascript:WWHClickedPopup('app', 'multicurrency.41.2.html#4866119', '');" title="Multicurrency Overview">“Claim Currency and Policy Currency”</a> for more information.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4863030">Reserving</a></span> <span class="ri_-_run_in_header">currency</span> – The designated currency of a reserve line. This currency type can be defined only when multicurrency reserving is enabled, otherwise, it defaults to the claim currency. You can specify a reserving currency if you need to create and track reserves in a non-claim currency. Payments erode reserves in this currency. The <span class="cv_-_computer_voice">ReservingAmount</span> field is on the <span class="cv_-_computer_voice">TransactionLineItem</span> entity.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4880632">Transaction currency</a></span> – The currency of the transaction amount, which is the primary amount for a transaction, from which other amounts are calculated. For payments, this is the currency in which the actual payment was made. The <span class="cv_-_computer_voice">TransactionAmount</span> field is on the <span class="cv_-_computer_voice">TransactionLineItem</span> entity.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4860895">Each multicurrency transaction can have up to four amounts in each of these currencies associated with it. In the base configuration, for a single transaction, all four of these amounts will always be the same. If multicurrency display is enabled, the transaction, claim, and reporting currency amounts can be different for a transaction. The reserving currency, however, is the same as the claim currency. If multicurrency reserving is enabled, all four currency amounts can be different for a transaction. See </a><a href="javascript:WWHClickedPopup('config', 'multicurrency_reserving.45.3.html#4886463', '');" title="Multicurrency Data Model">“Multicurrency Data Model” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('config', 'multicurrency_reserving.45.3.html#4886463', '');" title="Multicurrency Data Model">Configuration Guide</a></span> to understand the relationships.</div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="4880606">ClaimCenter has a list of all of the currencies in the system in the </a><span class="cv_-_computer_voice">Currency</span> typelist, along with their current exchange rates. However, this typelist is configurable and you can specify the currencies you want to use in ClaimCenter. For more information, see <a href="javascript:WWHClickedPopup('app', 'multicurrency.41.7.html#4885660', '');" title="Exchange Rates">“Exchange Rates”</a>. </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4866119">Claim Currency and Policy Currency</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4881311">When multicurrency display is enabled, ClaimCenter supports policies and claims that do not use the default application currency. The </a><span class="cv_-_computer_voice">Policy</span> and <span class="cv_-_computer_voice">Claim</span> entities have a <span class="cv_-_computer_voice">Currency</span> field. The policy’s currency determines the initial value for the <span class="cv_-_computer_voice">Currency</span> field in the <span class="cv_-_computer_voice">Policy</span> entity and is set up in the policy search adapter for verified policies. For unverified policies, the currency is defined when the policy details are added in the New Claim wizard.</div>
+      <div class="B_-_Body"><a name="4881313">The claim currency is equal to the policy’s currency and is determined when the policy is retrieved to create the claim. The </a><span class="cv_-_computer_voice">Claim</span> entity’s <span class="cv_-_computer_voice">Currency</span> field is equal to the same field in the <span class="cv_-_computer_voice">Policy</span> entity. Changes to the policy’s currency field are always copied to the <span class="cv_-_computer_voice">Claim</span>.<span class="cv_-_computer_voice">Currency</span> field. </div>
+      <div class="B_-_Body"><a name="4866121">If there are transactions on a claim, you cannot change the claim currency, as this would impact the transactions and financials calculations.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="4868521">Configuring Multiple Currencies</a></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="4868522">Use the following parameters in the </a><span class="cv_-_computer_voice">config.xml</span> file to configure the multicurrency feature in ClaimCenter:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4868523">DefaultApplicationCurrency</a></span> – Specify the default currency to be used across the application. You are required to set this value, regardless of the values of the other two parameters.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4868524">MulticurrencyDisplayMode</a></span> – Specify if you want ClaimCenter to support multiple currencies. Valid values are <span class="cv_-_computer_voice">SINGLE</span> and <span class="cv_-_computer_voice">MULTIPLE</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4868657">EnableMultiCurrencyReserving</a></span> – Specify if you want ClaimCenter to support multicurrency reserving. If you enable this parameter, <span class="cv_-_computer_voice">MulticurrencyDisplayMode</span> must be set to <span class="cv_-_computer_voice">MULTIPLE</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4886180">In the base configuration, ClaimCenter sets </a><span class="cv_-_computer_voice">MulticurrencyDisplayMode</span> to <span class="cv_-_computer_voice">SINGLE</span> and <span class="cv_-_computer_voice">EnableMultiCurrencyReserving</span> to <span class="cv_-_computer_voice">false</span>.</div>
+      <div class="NI_-_Note_Important">
+        <span class="n_-_note">IMPORTANT   </span><a name="4890826">The </a><span class="cv_-_computer_voice">MultiCurrencyDisplayMode</span> parameter setting is permanent. After you change the value of <span class="cv_-_computer_voice">MultiCurrencyDisplayMode</span> to <span class="cv_-_computer_voice">MULTIPLE</span> and then start the server, you cannot change the value back to <span class="cv_-_computer_voice">SINGLE</span> again. The <span class="cv_-_computer_voice">MultiCurrencyDisplayMode</span> parameter is in <span class="cv_-_computer_voice">config.xml</span>.</div>
+      <div class="B_-_Body"><a name="4886214">ClaimCenter financial transactions are handled differently, based on whether multicurrency reserving is enabled or disabled.</a></div>
+      <div class="B_-_Body"><a name="4870313">The following table illustrates the differences:</a></div>
+      <table class="withHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="4870266">ClaimCenter Operation</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="4870268">Multicurrency Reserving Disabled</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="4870270">Multicurrency Reserving Enabled</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4870272">Create checks and payments</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4870274">Use any currency. Payments are converted to the claim currency and erode reserves in the claim currency.</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4886594">Use any currency, preferably matching the </a><span class="cvt_-_computer_voice_table">ReservingCurrency</span> on the <span class="cvt_-_computer_voice_table">ReserveLine</span>. Payments erode reserves in the reserving currency.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4870278">Create reserves and recovery reserves</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4870280">Use the currency calculator to create and view reserves in an alternate currency. Amounts are converted to the claim currency when reserves are updated and managed.</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4870282">Use any currency. Reserves are created and managed in this reserving currency.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4870284">Create bulk invoice payments and write associated checks</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4870286">Use any currency. Payments are converted to the claim currency and erode reserves in the claim currency.</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4870288">Use any currency. Payments are made in this currency and erode reserves in the reserving currency.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4870290">Integrate transactions into financial totals</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4870292">Transactions are converted to the claim currency and incorporated into financial totals.</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4870294">Transactions are tracked in reserving <br />currencies.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4870296">View financial summaries that include all transactions</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4870298">View all financial summaries in the claim currency.</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4870300">View summaries by reserving currency, in addition to the usual summary views.</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="4878905">When you use more than one currency, ClaimCenter performs necessary conversions using automatic or manual exchange rates. See </a><a href="javascript:WWHClickedPopup('app', 'multicurrency.41.7.html#4885660', '');" title="Exchange Rates">“Exchange Rates”</a>.</div>
+      <h4 class="H2_-_Heading_2"><a name="4856608">Preferred Currency on Contacts</a></h4>
+      <div class="B_-_Body"><a name="4856609">The </a><span class="cv_-_computer_voice">Contact</span> entity has a <span class="cv_-_computer_voice">Preferred</span> <span class="cv_-_computer_voice">Currency</span> field that indicates the currency in which that contact would prefer to receive checks. You can assign a Preferred Currency to a contact when you create or edit it. After you specify the payee while writing a check, ClaimCenter defaults the check’s currency to the preferred currency of the payee, if one is specified.</div>
+      <div class="B_-_Body"><a name="4872814">The following points are all configurable.</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4474999">Single payee checks</a></span> – ClaimCenter changes the check currency from the default to the <span class="ui_-_UI_element">Preferred Currency</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4475003">Joint payee checks</a></span> – ClaimCenter makes the same change based on the first joint payee. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4475007">Multi-payee checks</a></span> – ClaimCenter considers only the preferred currency of the primary payee, not secondary payees. All the checks in a check group use the same currency.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4856622">Checks, Payments, and Recoveries</a></h4>
+      <div class="B_-_Body"><a name="4882435">If you enable multicurrency display in ClaimCenter, you can create checks and recoveries in any currency. The system defines a default currency for the check or recovery according to the following conditions:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4882436">If the payee for a check or a payer for a recovery has a preferred currency, the check or recovery defaults to this currency.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4882427">If there is no preferred currency specified, the check or recovery currency defaults to the currency of the reserve.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4882584">You have the option of overriding the default system currency. Payments and recoveries erode reserves in the currency of the reserve.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="4745291">Reserves and Recovery Reserves</a></h4>
+      <div class="B_-_Body"><a name="4883008">If multicurrency reserving is enabled, you can create and track reserves in multiple currencies. If multicurrency reserving is disabled, you can still create reserves in different currencies, but only as a convenience. They are essentially converted to and tracked in the claim currency.</a></div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1326 @@
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_VALIDATIONISSUE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_validationissue [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMABSTRACTVIEW" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimabstractview [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_UPGRADEEXECUTIONTIMETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_upgradeexecutiontimetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CURRENCY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_currency [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CHECKHANDLINGINSTRUCTIONS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_checkhandlinginstructions [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMASSOCTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimassoctype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RECOVCLASSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_recovclasstype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMTIER" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimtier [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONTACT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_contact [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_QUESTIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_questiontype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RULESETTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_rulesettype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_TABLEUPDATESTATSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_tableupdatestatstype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_FINANCIALSEARCHFIELD" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_financialsearchfield [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WORKFLOWACTIVESTATE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_workflowactivestate [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_COVTERMMODELAGG" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_covtermmodelagg [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_REGIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_regiontype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_USEREXPERIENCETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_userexperiencetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WORKFLOWSTATE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_workflowstate [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LOCATIONOFTHEFT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_locationoftheft [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_STORAGETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_storagetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MERGECONFLICTRESOLUTION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_mergeconflictresolution [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_FINANCIALCRITERION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_financialcriterion [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONTACTMATCHRESULTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_contactmatchresulttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CHECKTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_checktype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RITRANSACTION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_ritransaction [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_METROREPORTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_metroreporttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMINFOCRITERIA" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claiminfocriteria [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MATTERRISKTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_matterrisktype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SERVICEREQMETRICLIMITTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_servicereqmetriclimittype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DATACHANGESTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_datachangestatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_EXPOSUREABSTRACTVIEW" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_exposureabstractview [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_TRANSACTIONSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_transactionstatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_BATCHPROCESSTYPEUSAGE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_batchprocesstypeusage [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONDITIONFILTER" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_conditionfilter [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PHONECOUNTRYCODE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_phonecountrycode [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_REVIEWCATEGORY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_reviewcategory [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WCBENEFITFACTORCATEGORY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_wcbenefitfactorcategory [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MESSAGEDESTINATIONSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_messagedestinationstatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SALVAGESTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_salvagestatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ICDBODYSYSTEM" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_icdbodysystem [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_FUTUREMEDICALACTIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_futuremedicalactiontype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LOADCOMMANDTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_loadcommandtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_VEHICLETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_vehicletype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SERVICEREQUESTMETRIC" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_servicerequestmetric [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_UPDATEOP" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_updateop [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PROFILERCONFIG" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_profilerconfig [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MAJORPERILS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_majorperils [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WORKFLOWLOGENTRY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_workflowlogentry [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_OWNERTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_ownertype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SERVICEREQUESTOPERATION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_servicerequestoperation [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ASSESSMENTCONTENTACTION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_assessmentcontentaction [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SERVICEREQUESTSTATEMENT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_servicerequeststatement [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_STORAGECATEGORY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_storagecategory [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONTACTREL" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_contactrel [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_BOATTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_boattype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_JURISDICTIONALFORMULA" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_jurisdictionalformula [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONTACTCHANGERES" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_contactchangeres [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_VENDORTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_vendortype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_COSTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_costtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_STATE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_state [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_OFFROADVEHICLESTYLE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_offroadvehiclestyle [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LOCALETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_localetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONTACTROLE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_contactrole [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MATTERMETHODSERVED" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_mattermethodserved [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SPECIALHANDLING" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_specialhandling [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONTACTSEARCHRESULTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_contactsearchresulttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_REINSURANCETREATYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_reinsurancetreatytype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_EXPOSUREMETRICLIMIT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_exposuremetriclimit [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_OFFICIALTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_officialtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PROVIDERTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_providertype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CALENDARCONTEXT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_calendarcontext [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SEARCHCONTACTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_searchcontacttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLASSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_classtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RADIUSCHOICE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_radiuschoice [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONTACTAPPROVALSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_contactapprovalstatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CUSTOMCONDITIONRETURNTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_customconditionreturntype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SYSTEMUSERTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_systemusertype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMSECURITYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimsecuritytype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ISOSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_isostatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_INCLUDEDAYSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_includedaystype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SETTLEMENTSPEED" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_settlementspeed [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_EXPOSURETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_exposuretype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MEDICALTREATMENTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_medicaltreatmenttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_TRANSACTIONSET" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_transactionset [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_INSTRUCTIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_instructiontype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_VACATIONSTATUSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_vacationstatustype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_AUTOSYNC" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_autosync [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SERVICEREQUESTKIND" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_servicerequestkind [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_VEHICLEPOLICYSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_vehiclepolicystatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_INCIDENT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_incident [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RISKUNIT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_riskunit [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RECOVCONDTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_recovcondtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMREOPENEDREASON" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimreopenedreason [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LOSSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_losstype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_NAMEPREFIX" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_nameprefix [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_FIRSTFINALREPORTEDAGENCY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_firstfinalreportedagency [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LOADERCALLBACKTIMETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_loadercallbacktimetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_BULKINVOICEITEMSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_bulkinvoiceitemstatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MATTERVIEW" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_matterview [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ZONETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_zonetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DAYSINWEEKTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_daysinweektype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMMETRIC" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimmetric [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_QUICKCLAIMDEFAULT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_quickclaimdefault [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LINECATEGORY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_linecategory [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_COVTERM" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_covterm [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LIMITSINDICATOR" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_limitsindicator [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MATTERCOURTDISTRICT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_mattercourtdistrict [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_POLICYRATINGPLAN" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_policyratingplan [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ASSESSMENTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_assessmenttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_VEHICLEMANUFACTURER" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_vehiclemanufacturer [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ASSIGNMENTSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_assignmentstatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SPRINKRETSERV" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_sprinkretserv [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_OCCUPANCYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_occupancytype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LOSSOCCURED" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_lossoccured [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ALARMTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_alarmtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ACTIVITYCATEGORY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_activitycategory [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_AGGLIMITCALCCRITERIA" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_agglimitcalccriteria [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ARCHIVESTATE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_archivestate [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_REVIEWSERVICETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_reviewservicetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ASSESSMENTEVENT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_assessmentevent [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ASSIGNMENTSELECTIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_assignmentselectiontype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DEDUCTIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_deductiontype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_OTHERRECOVERABLESTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_otherrecoverablestatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_COVERAGETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_coveragetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLOSEREOPENINFO" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_closereopeninfo [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_POLICYTAB" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_policytab [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMPROGRESSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimprogresstype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONSISTENCYCHECKTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_consistencychecktype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ADDRESSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_addresstype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WEATHERTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_weathertype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_HOLIDAYTAGCODE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_holidaytagcode [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ESTDAMAGETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_estdamagetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ASSESSMENTSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_assessmentstatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_NOTETOPICTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_notetopictype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SPECIALTYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_specialtytype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RESCONTRIBUTINGFACTORS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_rescontributingfactors [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_STATUTELIMITATIONSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_statutelimitationstype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SERVICEREQUESTMESSAGETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_servicerequestmessagetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_COVEREDPARTYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_coveredpartytype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_BODYPARTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_bodyparttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMINDICATOR" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimindicator [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONTACTCLASS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_contactclass [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ASSESSMENTSOURCE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_assessmentsource [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SUBROGATIONSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_subrogationstatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ADVERSEPARTYDENIALREASON" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_adversepartydenialreason [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WITNESSPOSITION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_witnessposition [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SERVICEREQINVOICESTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_servicereqinvoicestatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DOCUMENTSECTION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_documentsection [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_EXPOSUREPROGRESSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_exposureprogresstype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_EXPOSUREMETRIC" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_exposuremetric [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SYSTEMPERMISSIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_systempermissiontype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_AGGREGATETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_aggregatetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_GENDERTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_gendertype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MATTERTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_mattertype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MERGECONFLICTSTRATEGY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_mergeconflictstrategy [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONTENTLINEITEMCATEGORY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_contentlineitemcategory [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_OFFICIALIDTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_officialidtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DISABLEDDUETOACCIDENT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_disabledduetoaccident [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DOCUMENTSTATUSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_documentstatustype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WCMEDICALTREATMENTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_wcmedicaltreatmenttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_BULKINVOICESTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_bulkinvoicestatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ARCHIVESOURCESTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_archivesourcestatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_IMPORTANCELEVEL" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_importancelevel [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SIUSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_siustatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_AUTHORITYLIMITTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_authoritylimittype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MANAGEWORKFLOWACTIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_manageworkflowactiontype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_OTHERRISKTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_otherrisktype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RETROPERIODTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_retroperiodtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PROXIMITYSEARCHSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_proximitysearchstatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_NAMESUFFIX" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_namesuffix [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_EXTERNALTOOLTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_externaltooltype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_COLLISIONPOINT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_collisionpoint [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SPRINKLERTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_sprinklertype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SUBROCLASSIFICATION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_subroclassification [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MATTERCOURTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_mattercourttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PRIORITY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_priority [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PHONETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_phonetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SUBROSCHEDRECOVERYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_subroschedrecoverytype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_TRANSACTIONSEARCHVIEW" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_transactionsearchview [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LOBCODE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_lobcode [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_REPORTABILITYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_reportabilitytype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RIAGREEMENT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_riagreement [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONTACTTAGTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_contacttagtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_COMPONENTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_componenttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ADJUDICATIVEDOMAIN" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_adjudicativedomain [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CUSTOMHISTORYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_customhistorytype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_METROREPORTSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_metroreportstatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_TRANSACTIONLIFECYCLESTATE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_transactionlifecyclestate [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONTACTLINKSTATUSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_contactlinkstatustype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ACCIDENTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_accidenttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_INSURANCELINE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_insuranceline [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_HISTORYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_historytype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_VEHICLEDIRECTION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_vehicledirection [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMSTATE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimstate [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DELIVERYMETHOD" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_deliverymethod [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_COVTERMPATTERN" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_covtermpattern [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_UPGRADEDBSTORAGESETTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_upgradedbstoragesettype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RESOURCECONTEXT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_resourcecontext [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_TRANSPORTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_transporttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMANTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimanttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RESOLUTIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_resolutiontype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MARITALSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_maritalstatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PRIMARYPHONETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_primaryphonetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_COVERAGE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_coverage [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SECCONTRIBUTINGFACTORS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_seccontributingfactors [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_INTERNALPOLICYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_internalpolicytype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMMETRICCATEGORY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimmetriccategory [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_USERATTRIBUTETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_userattributetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SETTLEMETHOD" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_settlemethod [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONTACTBIDIREL" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_contactbidirel [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_TACCOUNTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_taccounttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MATTERSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_matterstatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ENTITYSOURCETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_entitysourcetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ROOFMATERIAL" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_roofmaterial [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LARGELOSSNOTIFICATIONSTAT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_largelossnotificationstat [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DETAILEDBODYPARTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_detailedbodyparttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_FINANCIALTHRESHOLD" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_financialthreshold [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_VEHICLESTYLE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_vehiclestyle [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SOURCESYSTEM" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_sourcesystem [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LITIGATIONSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_litigationstatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DATAGENSTATUSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_datagenstatustype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_EXTWALLMAT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_extwallmat [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_INSURANCESUBLINE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_insurancesubline [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ONPREMISESTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_onpremisestype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SQLSTATEMENTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_sqlstatementtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WCBODYPARTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_wcbodyparttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMSEARCHTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimsearchtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DASHBOARDSTATTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_dashboardstattype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMTEXTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimtexttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_REINSURANCEFLAGGEDSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_reinsuranceflaggedstatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_VENUETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_venuetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_COMPENSABILITYDECISION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_compensabilitydecision [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_NOTETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_notetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RIARRANGEMENTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_riarrangementtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_GEOCODESTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_geocodestatus [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LOSSAREA" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_lossarea [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_VEHICLELINEITEMCATEGORY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_vehiclelineitemcategory [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ACTIVITYVIEW" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_activityview [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CHECKRECURRENCE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_checkrecurrence [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_GROUPTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_grouptype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_JURISDICTIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_jurisdictiontype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_FAULTRATING" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_faultrating [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LEDGERSIDE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_ledgerside [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PAYMENTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_paymenttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ETLSTRINGS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_etlstrings [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_COVTERMMODELREST" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_covtermmodelrest [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_INFOSOURCE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_infosource [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LOSTWAGESBENEFITTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_lostwagesbenefittype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WEEKDAYS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_weekdays [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_COVTERMMODELVAL" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_covtermmodelval [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMMETRICLIMIT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimmetriclimit [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PAYMENTFREQUENCYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_paymentfrequencytype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RIAGREEMENTCOVERAGETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_riagreementcoveragetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_GEOGRAPHICALREGION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_geographicalregion [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DATAGENACTIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_datagenactiontype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SHAPETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_shapetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_STATEABBREVIATION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_stateabbreviation [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SAMPLETHEME" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_sampletheme [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PARAMETERTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_parametertype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LEGALSPECIALTY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_legalspecialty [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PAYMENTMETHOD" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_paymentmethod [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_EXPOSUREREOPENEDREASON" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_exposurereopenedreason [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SERVICEREQUESTPROGRESS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_servicerequestprogress [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RECURRENCEDAY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_recurrenceday [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LOADFACTORTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_loadfactortype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_EXPOSURECLOSEDOUTCOMETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_exposureclosedoutcometype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_BAGGAGETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_baggagetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_IMETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_imetype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_TRANSACTIONVIEW" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_transactionview [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WAITINGPERIODTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_waitingperiodtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_STARTUPPAGE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_startuppage [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_COVERAGESUBTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_coveragesubtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_FLAGGEDTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_flaggedtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ROOMTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_roomtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_BIVALIDATIONALERTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_bivalidationalerttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_AGGREGATELIMITTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_aggregatelimittype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_NUMBEROFCLAIMS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_numberofclaims [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_METROAGENCYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_metroagencytype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_NEGOTIATIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_negotiationtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MATTERREOPENEDREASON" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_matterreopenedreason [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CITATIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_citationtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SEARCHOBJECTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_searchobjecttype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PRIMARYCOLOR" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_primarycolor [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DBUPDATESTATSRUNNERTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_dbupdatestatsrunnertype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMLIFECYCLESTATE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimlifecyclestate [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SHNOTIFICATIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_shnotificationtype [42102-147]
+05-29 14:13:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_STARTPOINTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_startpointtype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WORKFLOWHANDLER" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_workflowhandler [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_VALIDATIONLEVEL" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_validationlevel [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_COVERAGEFORM" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_coverageform [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_BATCHPROCESSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_batchprocesstype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_TIMEZONETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_timezonetype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DEPENDENTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_dependenttype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_USERROLE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_userrole [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ACTIVITYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_activitytype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ORASQLTUNINGSETCAPTUREOPT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_orasqltuningsetcaptureopt [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WORKCAPACITY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_workcapacity [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WCDETAILEDBODYPARTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_wcdetailedbodyparttype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WORKITEMSTATUSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_workitemstatustype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DOCUMENTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_documenttype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PROPERTYLINEITEMCATEGORY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_propertylineitemcategory [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_REPORTINGDATE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_reportingdate [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_HOWREPORTEDTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_howreportedtype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_TRANSACTION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_transaction [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SPECIALISTCOMMMETHOD" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_specialistcommmethod [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ARCHIVEFINALSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_archivefinalstatus [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_YESNO" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_yesno [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LOADSTEPTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_loadsteptype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ORGANIZATIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_organizationtype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SUBROSTRATEGY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_subrostrategy [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SERVICEREQUESTQUOTESTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_servicerequestquotestatus [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PAIDONTIME" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_paidontime [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_BUSINESSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_businesstype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_INBOUNDHISTORY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_inboundhistory [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WCINJURYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_wcinjurytype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DATEFIELDSTOSEARCHTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_datefieldstosearchtype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_POLICYSUMMARYRISKUNIT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_policysummaryriskunit [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SUBROCLOSEDOUTCOME" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_subroclosedoutcome [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PERSONRELATIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_personrelationtype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DATESEARCHTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_datesearchtype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WORKITEMSETSTATE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_workitemsetstate [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DOCUMENTSECURITYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_documentsecuritytype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONTENTLINEITEMSCHEDULE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_contentlineitemschedule [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_EMPLOYMENTSTATUSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_employmentstatustype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SERVICEREQUESTTIER" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_servicerequesttier [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LOADERRORTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_loaderrortype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WORKLOADCLASSIFICATION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_workloadclassification [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PAYPERIODTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_payperiodtype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RECURRENCEWEEK" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_recurrenceweek [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LOSSCAUSE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_losscause [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_BANKACCOUNTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_bankaccounttype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_POLICYPERIODTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_policyperiodtype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_INJURYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_injurytype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_METRICUNIT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_metricunit [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_FINANCIALSCALCULATIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_financialscalculationtype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_VALIDATIONISSUETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_validationissuetype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PERCENTAGEDRIVEN" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_percentagedriven [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_UNITOFDISTANCE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_unitofdistance [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_OUTCOME" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_outcome [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_STRINGCRITERIONMODE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_stringcriterionmode [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_COVERAGEBASIS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_coveragebasis [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMSOURCE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimsource [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_EFFDATEDCHANGETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_effdatedchangetype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_TAXSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_taxstatus [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LOSSPARTYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_losspartytype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_QUESTIONFORMAT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_questionformat [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_USERROLECONSTRAINT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_userroleconstraint [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PRIMARYCAUSETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_primarycausetype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ESSENTIALSERVICETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_essentialservicetype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_REASONFORUSE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_reasonforuse [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_BENEFITENDREASONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_benefitendreasontype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RIAGREEMENTSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_riagreementstatus [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_FREETEXTCLAIMSEARCHTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_freetextclaimsearchtype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_TYPEOFPROPERTY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_typeofproperty [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DATADISTRIBUTIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_datadistributiontype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_EXPOSURETIER" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_exposuretier [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MATTERVENUERATING" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_mattervenuerating [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_NOTESECURITYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_notesecuritytype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_POLICYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_policytype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WORKFLOWACTIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_workflowactiontype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ASSIGNMENTSEARCHTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_assignmentsearchtype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CHECKBATCHING" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_checkbatching [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SUBROGOVERNMENTINVOLVED" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_subrogovernmentinvolved [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMSEGMENT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimsegment [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ASSESSMENTACTION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_assessmentaction [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SCRIPTPARAMETERTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_scriptparametertype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CUSTOMERSERVICETIER" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_customerservicetier [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DATEBINDATATYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_datebindatatype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_JURISDICTION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_jurisdiction [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LARGELOSSNOTIFICATIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_largelossnotificationtype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SYNCHSTATE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_synchstate [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_INSTRUCTIONCATEGORY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_instructioncategory [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMSEARCHNAMESEARCHTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimsearchnamesearchtype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RECOVERYCATEGORY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_recoverycategory [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WCBENEFITFACTORTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_wcbenefitfactortype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONTACTROLECATEGORY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_contactrolecategory [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_COUNTRY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_country [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_AUTOMATEDHANDLER" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_automatedhandler [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_APPROVEDTREATMENT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_approvedtreatment [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_POLICYSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_policystatus [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_USERDETAILASSIGNABLE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_userdetailassignable [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MATTERTEXTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_mattertexttype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WCDETAILEDINJURYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_wcdetailedinjurytype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMSTRATEGY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimstrategy [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_UNDERWRITINGCOMPANYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_underwritingcompanytype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LOSTPROPERTYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_lostpropertytype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_UNDERWRITINGGROUPTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_underwritinggrouptype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SEVERITYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_severitytype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MEDICALTREATMENTSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_medicaltreatmentstatus [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CUSTOMCONDITIONPARAMTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_customconditionparamtype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WORKFLOW" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_workflow [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ACTIVITYSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_activitystatus [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_MEDICALACTIONTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_medicalactiontype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SEARCHRESULT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_searchresult [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DEDUCTIBLESTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_deductiblestatus [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SUITTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_suittype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ACTIVITYCLASS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_activityclass [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_COSTCATEGORY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_costcategory [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_POLICYSOURCE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_policysource [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_TAXFILINGSTATUSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_taxfilingstatustype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_PRICONTRIBUTINGFACTORS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_pricontributingfactors [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMACCESSTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimaccesstype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_TREATMENTOUTCOME" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_treatmentoutcome [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CATASTROPHETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_catastrophetype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ACTIVITYSUBJECTSEARCHTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_activitysubjectsearchtype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DETAILEDINJURYTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_detailedinjurytype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMCLOSEDOUTCOMETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimclosedoutcometype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SORTBYRANGE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_sortbyrange [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_DATERANGECHOICETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_daterangechoicetype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_EXPOSURESTATE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_exposurestate [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_FRETXTCLMSRCHNAMESRCHTYP" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_fretxtclmsrchnamesrchtyp [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_EXPOSURETEXTTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_exposuretexttype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WATERSOURCE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_watersource [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLASSIFICATIONCONDITION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_classificationcondition [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_VEHCONDTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_vehcondtype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_APPROVALSTATUS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_approvalstatus [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_QUESTIONSETTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_questionsettype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SAMPLECOLOR" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_samplecolor [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_BANKACCOUNT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_bankaccount [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_HISTORY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_history [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ROLETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_roletype [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_FINANCIALTRIGGERCAUSE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_financialtriggercause [42102-147]
+05-29 14:13:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMRECENTVIEW" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimrecentview [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONTACTSEARCHTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_contactsearchtype [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LOSSCATEGORY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_losscategory [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_OFFICIALID" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_officialid [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_FREETEXTCLAIMSEARCHENTITY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_freetextclaimsearchentity [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SERVICEREQUESTMETRICLIMIT" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_servicerequestmetriclimit [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_SERVICEREQINSTRUCTIONSVC" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_servicereqinstructionsvc [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_BULKINVOICEJOBTYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_bulkinvoicejobtype [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_WORKFLOWWORKITEM" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_workflowworkitem [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LANGUAGETYPE" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_languagetype [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CLAIMINDICATORCRITERION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_claimindicatorcriterion [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_RITRANSACTIONSET" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_ritransactionset [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_LODGINGPROVIDER" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_lodgingprovider [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ACTIVITY" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_activity [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CONTACTRELCONS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_contactrelcons [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_FXRATEMARKET" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_fxratemarket [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ACTIVITYCALENDARVIEW" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_activitycalendarview [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_OTHERINSTRUCTION" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_otherinstruction [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_CHECKVIEW" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_checkview [42102-147]
+05-29 14:13:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "CCTL_ADDRESS" not found; SQL statement:
+SELECT ID, TYPECODE FROM cctl_address [42102-147]

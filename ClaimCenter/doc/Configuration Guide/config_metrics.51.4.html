@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Adding a New Claim Metric</title>
+    <link rel="StyleSheet" href="css/config_metrics.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Configuration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-ClaimCenter.html#1307586">Guidewire ClaimCenter Configuration</a> : <a class="WebWorks_Breadcrumb_Link" href="config_metrics.51.1.html#1307586">Configuring Claim Health Metrics</a> : Adding a New Claim Metric</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="1307586">Adding a New Claim Metric</a></h3>
+      <div class="B_-_Body"><a name="1307405">You can create a new claim metric. The general steps are to create a subtype of an existing metric and then add the implementation code. </a></div>
+      <div class="B_-_Body"><a name="1308274">You do not need to add the metric to the typelist. This addition occurs automatically. If you add a new subtype, the platform layer automatically adds a new member to the associated typelist. For example, if you add a new subtype of </a><span class="cv_-_computer_voice">ClaimMetric,</span> the system adds a new member to the <span class="cv_-_computer_voice">ClaimMetric</span> typelist. Adding a new subtype is the <span class="e_-_emphasis">only</span> way of adding new members to this typelist.</div>
+      <h6 class="HS_-_Head_Sub"><a name="1307407">To add a new claim metric in Guidewire Studio</a></h6>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="1305290">Extend the ClaimCenter data model by adding a new subtype of the entity </a><span class="cv_-_computer_voice">ClaimMetric. </span>One way to do this is to extend one of the pre-supplied claim metric classes. In Studio, navigate to <span class="ui_-_UI_element">configuration</span> → <span class="ui_-_UI_element">Data Model Extensions</span> → <span class="ui_-_UI_element">metadata</span> → <span class="ui_-_UI_element">cc</span> to see the following claim metric classes:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt; margin-bottom: 2.0pt; margin-top: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="1337752">DecimalClaimMetric.eti</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt; margin-bottom: 2.0pt; margin-top: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="1337753">IntegerClaimMetric.eti</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt; margin-bottom: 2.0pt; margin-top: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="1337754">MoneyClaimMetric.eti </a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt; margin-bottom: 2.0pt; margin-top: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="1337755">PercentClaimMetric.eti</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt; margin-bottom: 2.0pt; margin-top: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="1337756">TimeBasedClaimMetric.eti</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="1337862">Your selection depends on the type of quantity the metric is tracking. </a></div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="1337843">You can add a direct implementation of </a><span class="cv_-_computer_voice">ClaimMetric</span> rather than subtyping one of the pre-supplied claim metric classes. Doing so is appropriate if the value of the metric does not fall into any of the pre-supplied types—integer, decimal, percent, money or time based. It is also possible to add arbitrary new data fields to your subtype if your metric needs them.</div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1337806">You can create a new metric based on </a><span class="cv_-_computer_voice">TimeBasedMetric</span> as follows:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LS2A_-_List_Start_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS2A_-_List_Start_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">a.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS2A_-_List_Start_002c_Level_2_Alpha_inner"><a name="1337813">Navigate to </a><span class="ui_-_UI_element">configuration</span> → <span class="ui_-_UI_element">Data Model Extensions</span> → <span class="ui_-_UI_element">extensions</span> and right-click <span class="ui_-_UI_element">extensions</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">b.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="1337814">Enter the file name </a><span class="it_-_input_text">ExampleClaimMetric.eti</span> and click <span class="ui_-_UI_element">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">c.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="1337815">Enter the following entity definition. If you copy and paste the following code, delete any leading spaces before the first line of code.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <PRE class="CF_-_Code_First_Line"><a name="1337816">&nbsp;&nbsp;&lt;?xml version="1.0"?&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1337817">&nbsp;&nbsp;&lt;subtype desc="Example Claim Metric" entity="ExampleClaimMetric"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1337818">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final="false" priority="1" supertype="TimeBasedClaimMetric"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1337819">&nbsp;&nbsp;&nbsp;&nbsp;&lt;implementsInterface</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1337820">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iface="gw.api.metric.MetricMethods"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1337821">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;impl="gw.claim.metric.general.ExampleClaimMetricMethodsImpl"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1337822">&nbsp;&nbsp;&nbsp;&nbsp;&lt;implementsInterface</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1337823">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iface="gw.api.claim.metric.RecalculateMetrics"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1337824">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;impl="gw.claim.metric.general.ExampleClaimMetricMethodsImpl"/&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="1337825">&nbsp;&nbsp;&lt;/subtype&gt;</a></PRE>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="1337827">You must use the first </a><span class="cv_-_computer_voice">implementsInterface</span> element and specify your own implementation class for the <span class="cv_-_computer_voice">impl</span> attribute. The implementation class name is, by convention, <span class="e_-_emphasis" style="font-family: &quot;Lucida Sans Typewriter&quot;; font-size: 8.0pt">SubtypeName</span><span class="cv_-_computer_voice">MethodsImpl.</span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="1337828">The second </a><span class="cv_-_computer_voice">implementsInterface</span> element makes it possible for the Recalculate Claim Metrics batch job to recalculate this metric. You rarely need to implement <span class="cv_-_computer_voice">RecalculateMetrics</span>. If you do so, you must also implement this interface in the class you specify in the <span class="cv_-_computer_voice">impl</span> attribute, which is the same class in the previous <span class="cv_-_computer_voice">implementsInterface</span> element. For more information, see <a href="javascript:WWHClickedPopup('config', 'config_metrics.51.4.html#1335868', '');" title="Adding a New Claim Metric">step 6</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">d.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="1337885">Save the file.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1337786">Close Studio, and then restart it to automatically add a typekey for your new subtype to the </a><span class="cv_-_computer_voice">ClaimMetric</span> typelist. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1338502">You can configure the new typecode by navigating to </a><span class="ui_-_UI_element">configuration</span> → <span class="ui_-_UI_element">Typelists</span> → <span class="ui_-_UI_element">ClaimMetric</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="1337962">If you do not see the new typecode in the </a><span class="cv_-_computer_voice">ClaimMetric</span> typelist, there is probably an error in your entity definition. Check your definition and make sure that it is correct.</div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1310206">Click the new typecode to edit it. If you see a message asking if you want to edit the file, click </a><span class="ui_-_UI_element">Yes</span>. Set the following values:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="T_-_Table"><a name="1335343">&nbsp;</a></div>
+      <table class="withHeadingIndent" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1335447">Code</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1335449">Name</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1335451">Description</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1335453">Priority</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1335455">Retired</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="itt_-_input_text_in_table"><a name="1335457">ExampleClaimMetric</a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="itt_-_input_text_in_table"><a name="1335459">Example</a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="itt_-_input_text_in_table"><a name="1335461">Example Claim Metric</a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="itt_-_input_text_in_table"><a name="1335463">4</a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="itt_-_input_text_in_table"><a name="1335465">false</a></span></div>
+          </td>
+        </tr>
+      </table>
+      <div class="LP_-_List_Para"><a name="1310200">The </a><span class="ui_-_UI_element">Name</span> of the typecode element is the name that appears in the user interface for this type of metric. You can localized this name. The <span class="ui_-_UI_element">Priority</span> determines the ordering of the metric in the Claim Metrics user interface. It appears after any metrics with priority less than 4 and before any with priority more than 4.</div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1335868">Extend one of the following classes:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt; margin-bottom: 2.0pt; margin-top: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="1337944">gw.api.claim.metric.DecimalClaimMetricMethodsImpl</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt; margin-bottom: 2.0pt; margin-top: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="1337945">gw.api.claim.metric.IntegerClaimMetricMethodsImpl</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt; margin-bottom: 2.0pt; margin-top: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="1337946">gw.api.claim.metric.MoneyClaimMetricMethodsImpl</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt; margin-bottom: 2.0pt; margin-top: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="1337947">gw.api.claim.metric.PercentClaimMetricMethodsImpl</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt; margin-bottom: 2.0pt; margin-top: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="1337948">gw.api.claim.metric.TimeBasedClaimMetricMethodsImpl</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="1309653">Since you are subtyping from one of the entities listed in </a><a href="javascript:WWHClickedPopup('config', 'config_metrics.51.4.html#1305290', '');" title="Adding a New Claim Metric">step 1</a>, you can extend a matching Gosu class, which does a lot of the work for you. For the example in <a href="javascript:WWHClickedPopup('config', 'config_metrics.51.4.html#1337806', '');" title="Adding a New Claim Metric">step 2</a>, you need to implement <span class="cv_-_computer_voice">TimeBasedClaimMetricMethodsImpl</span>.</div>
+      <div class="LP_-_List_Para"><a name="1337911">If your metric does not match any of these classes, you can extend the </a><span class="cv_-_computer_voice">MetricMethodsImpl</span> class. To see this class, navigate to <span class="ui_-_UI_element">configuration</span> → <span class="ui_-_UI_element">Classes</span> → <span class="ui_-_UI_element">gw</span> → <span class="ui_-_UI_element">api</span> → <span class="ui_-_UI_element">metric</span> → <span class="ui_-_UI_element">MetricMethodsImpl</span>.</div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="1336184">If your metric requires periodic recalculating, you must implement </a><span class="cv_-_computer_voice">gw.api.claim.metric.RecalculateMetrics</span>. Implementing this interface makes it possible for the Recalculate Claim Metrics batch job to run on this metric object. For example, a metric that provides a count of overdue activities could require recalculating if existing activities become overdue. In this case, there is no database update to trigger the <span class="cv_-_computer_voice">update</span> method, so recalculation happens only if the batch job runs.</div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1336157">When you extend one of the claim metric classes, you must create a class with a constructor and an override of the </a><span class="cv_-_computer_voice">updateMetricValue</span> method. The following class extends the <span class="cv_-_computer_voice">TimeBasedClaimMetricMethodsImpl</span> class and, additionally, implements the <span class="cv_-_computer_voice">RecalculateMetrics</span> interface. When you implement this interface, you must also override the <span class="cv_-_computer_voice">recalculate</span><span style="font-family: &quot;Lucida Sans Typewriter&quot;; font-size: 7.0pt"> </span>method: </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <PRE class="CF_-_Code_First_Line"><a name="1335650">package gw.claim.metric</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1336314">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1336333">uses gw.api.claim.metric.TimeBasedClaimMetricMethodsImpl</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1336315">uses gw.api.metric.MetricUpdateHelper</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1336316">uses gw.api.claim.metric.RecalculateMetrics</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1336317">uses java.util.Date</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1336318">@Export</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1336319">class ExampleClaimMetricMethodsImpl extends TimeBasedClaimMetricMethodsImpl</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1336340">&nbsp;&nbsp;&nbsp;&nbsp;implements RecalculateMetrics { </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1309423">&nbsp;&nbsp;construct(exampleClaimMetric : ExampleClaimMetric) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1309425">&nbsp;&nbsp;&nbsp;&nbsp;super(exampleClaimMetric, ClaimMetricCategory.TC_OVERALLCLAIMMETRICS)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1309426">&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1309428">&nbsp;&nbsp;override function updateMetricValue(helper : MetricUpdateHelper) : Date {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1309429">&nbsp;&nbsp;&nbsp;&nbsp;Metric.StartTime = Metric.Claim.ReportedDate</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1309430">&nbsp;&nbsp;&nbsp;&nbsp;handleClaimStateChange()</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1309431">&nbsp;&nbsp;&nbsp;&nbsp;return null</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1309432">&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1336356">&nbsp;&nbsp;override function recalculate() : Date {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1338415">&nbsp;&nbsp;&nbsp;&nbsp;var result = recalculateValue()</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1338416">&nbsp;&nbsp;&nbsp;&nbsp;updateMetricLimitReachedTimes()</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1338417">&nbsp;&nbsp;&nbsp;&nbsp;return result</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1336358">&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="1309389">}</a></PRE>
+      <div class="LP_-_List_Para"><a name="1337997">This example is time-based. It extends the provided </a><span class="cv_-_computer_voice">TimeBasedClaimMetricMethodsImpl</span> class, which gives access to time specific fields like <span class="cv_-_computer_voice">Metric.StartTime</span>. The class also provides the <span class="cv_-_computer_voice">handleClaimStateChange</span> method for updating the metric state if the claim opens or closes. Additionally, the <span class="cv_-_computer_voice">recalculate</span> method updates the limit reached times if the new metric value has caused it to pass a limit. The method returns the time when you want to metric to be recalculated.</div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="1338610">This example is somewhat artificial, because as long as the metric is open, its value changes with time. You typically use </a><span class="cv_-_computer_voice">RecalculateMetrics</span> with a metric that is not time-based and whose value might change due to some known future event that does not affect the database. For example, a metric that provides a count of overdue activities must be recalculated by the batch job when an existing activity becomes overdue.</div>
+      <div class="NI_-_Note_Important">
+        <span class="n_-_note">IMPORTANT   </span><a name="1305601">All implementation classes must have a constructor that takes one parameter of the actual metric type. The </a><span class="cv_-_computer_voice">implementsInterface</span> mechanism requires this constructor because the object is created whenever the metric is read from the database. </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	8.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1308774">If you need to do something only when the metric is first created, you can add a constructor like the following one: </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <PRE class="CF_-_Code_First_Line"><a name="1306148">construct(exampleClaimMetric : ExampleClaimMetric) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1306149">&nbsp;&nbsp;super(exampleClaimMetric, ClaimMetricCategory.TC_OVERALLCLAIMMETRICS)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1306150">&nbsp;&nbsp;if (exampleMetric.New) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1306151">&nbsp;&nbsp;&nbsp;&nbsp;// Do your initialization here</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1306152">&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="1306126">}</a></PRE>
+      <div class="LP_-_List_Para"><a name="1306181">The constructor also determines the category of the metric and hands it as a parameter to the superclass constructor.</a></div>
+      <div class="LP_-_List_Para"><a name="1306137">The </a><span class="cv_-_computer_voice">updateMetricValue</span> method evaluates the current state of the associated claim and updates the metric accordingly. The method in the example is simple. Other update methods might compute more complex values. You can use the <span class="cv_-_computer_voice">MetricUpdateHelper</span> passed to the update method to find out if relevant entities changed. For example: </div>
+      <PRE class="CF_-_Code_First_Line"><a name="1306243">if (helper.updateContainsChangesOfType(History)) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1306244">&nbsp;&nbsp;// A history event was added, updated or removed</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1306245">&nbsp;&nbsp;// You can access the changed items by using </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1338049">&nbsp;&nbsp;// Metric.Bundle.getAllModifiedBeansOfType(History).</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="1310042">    }</a></PRE>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	9.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1355369">If you want to apply the new claim metric or indicator to claims that already have metrics, you must enable the </a><span class="ui_-_UI_element">ClaimException</span> rule <span class="ui_-_UI_element">CER04000 Recalculate claim metrics</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LS2A_-_List_Start_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS2A_-_List_Start_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">a.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS2A_-_List_Start_002c_Level_2_Alpha_inner"><a name="1355379">Navigate to </a><span class="ui_-_UI_element">configuration</span> → <span class="ui_-_UI_element">Rule Sets</span> → <span class="ui_-_UI_element">Exception</span> → <span class="ui_-_UI_element">ClaimExceptionRules</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">b.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="1355380">Right click </a><span class="ui_-_UI_element">CER04000 Recalculate claim metrics</span>, and click <span class="ui_-_UI_element">Active</span>. If you see a message asking if you want to edit the file, click <span class="ui_-_UI_element">Yes</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="1355381">This rule verifies that all claim metrics, exposure metrics, and claim indicators are created on every claim. If there are any missing metrics or indicators in a claim, ClaimCenter adds them to the claim. </a></div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	10.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1310050">Save your work in Studio </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	11.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1310579">If ClaimCenter is running, stop it. At the command prompt open to </a><span class="cv_-_computer_voice">ClaimCenter\bin</span>, press <span class="it_-_input_text">CTRL+C</span>, wait for the prompt, <span class="it_-_input_text">Terminate batch job (Y/N)?</span>, and then enter the following commands:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <PRE class="CF_-_Code_First_Line"><a name="1338077">y</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="1338087">gwcc dev-stop</a></PRE>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	12.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1310580">To ensure that your data model changes are correct, regenerate the data dictionary. At the command prompt, enter:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="CS_-_Code_Single_Line"><a name="1338104">gwcc regen-dictionary</a></div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	13.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1338117">Restart the server. At the command prompt, enter:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="CS_-_Code_Single_Line"><a name="1338118">gwcc dev-start</a></div>
+      <div class="NI_-_Note_Important">
+        <span class="n_-_note">IMPORTANT   </span><a name="1355393">Before users start creating new claims or processing of existing claims begins, you must perform the following steps in each environment to which you deploy the new configuration. For example, environments might include a development environment, UAT, and production.</a></div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	14.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1310044">Log in as an administrator, such as user name </a><span class="it_-_input_text">su</span> with password <span class="it_-_input_text">gw</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	15.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1338164">Click the </a><span class="ui_-_UI_element">Administration</span> tab and then click <span class="ui_-_UI_element">Metrics and Thresholds</span> in the left info bar. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	16.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1338184">Click </a><span class="ui_-_UI_element">Edit</span> and, on the <span class="ui_-_UI_element">Claim Metric Limits</span> tab, add limits for your new metric type. For more information, see <a href="javascript:WWHClickedPopup('app', 'administration.63.23.html#4686923', '');" title="Managing Metrics and Thresholds">“Managing Metrics and Thresholds” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('app', 'administration.63.23.html#4686923', '');" title="Managing Metrics and Thresholds">Application Guide</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	17.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1310045">Run batch processes as follows:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LS2A_-_List_Start_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS2A_-_List_Start_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">a.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS2A_-_List_Start_002c_Level_2_Alpha_inner"><a name="1338209">Press </a><span class="it_-_input_text">ALT+SHIFT+T</span> to open the <span class="ui_-_UI_element">Server Tools </span>tab.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">b.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="1338246">Click </a><span class="ui_-_UI_element">Batch Process Info</span> in the left Sidebar.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">c.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="1338219">Run the </a><span class="ui_-_UI_element">Claim Health Calculations</span> batch process to populate metrics on claims that have never had any metrics. Running this batch process does not add the new metric to claims that already have metrics.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">d.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="1355457">If you have any metrics that implement </a><span class="cv_-_computer_voice">RecalculateMetrics</span>, set <span class="ui_-_UI_element">Recalculate Claim Metrics</span> batch process to run on a regular basis. You can also run it directly for testing. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">e.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="1355506">If you enabled the </a><span class="ui_-_UI_element">Recalculate claim metrics</span> rule previously in <a href="javascript:WWHClickedPopup('config', 'config_metrics.51.4.html#1355369', '');" title="Adding a New Claim Metric">step 9</a>, click <span class="ui_-_UI_element">Work Queue Info</span> in the left Sidebar. Then run the ClaimException batch process writer to begin processing existing claims and adding the new metric.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP2_-_List_Para_002c_Level_2"><a name="1355467">For more information on batch processes, see </a><a href="javascript:WWHClickedPopup('admin', 'batch.11.01.html#1030690', '');" title="Batch Processes and Work Queues">“Batch Processes and Work Queues” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('admin', 'batch.11.01.html#1030690', '');" title="Batch Processes and Work Queues">System Administration Guide</a></span>.</div>
+      <div class="NI_-_Note_Important">
+        <span class="n_-_note">IMPORTANT   </span><a name="1355489">If you retire a metric limit by using Gosu or the database without replacing it with a new limit, new claims will continue to use the retired metric limit.</a></div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

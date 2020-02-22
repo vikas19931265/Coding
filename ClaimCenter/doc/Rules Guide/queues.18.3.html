@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Using a Queue to Handle FNOL Claims: Example</title>
+    <link rel="StyleSheet" href="css/queues.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Rules Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-rules_advanced.html#7390307">Advanced Topics</a> : <a class="WebWorks_Breadcrumb_Link" href="queues.18.1.html#7390307">Working with Queues</a> : Using a Queue to Handle FNOL Claims: Example</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="7390307">Using a Queue to Handle FNOL Claims: Example</a></h3>
+      <div class="B_-_Body"><a name="7391755">The following example illustrates how to use a queue to handle FNOL claims. If a claim enters ClaimCenter as an FNOL (First Notification of Loss), it triggers the ClaimCenter Global Assignment rules. However, in this example, the assignment rules do not assign the claim. Instead, these rules generate review activities, which are queued for response by a team of people who will manually assign the incoming claims. </a></div>
+      <div class="B_-_Body"><a name="7391762">ClaimCenter associates every queue with a single group, or potentially with a group and its subgroups. ClaimCenter automatically creates a default FNOL queue for each group in the hierarchy. This queue is not visible to the subgroups, by default.</a></div>
+      <div class="B_-_Body"><a name="7391521">In this example, there are five rules:</a></div>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="7391518">The first rule assigns the incoming FNOL claim to an intake group that will make the assignment decision on that claim. See </a><a href="javascript:WWHClickedPopup('rules', 'queues.18.3.html#7391450', '');" title="Using a Queue to Handle FNOL Claims: Example">“Assign Claim to an Intake Group”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="7391531">The second rule then assigns the claim to the group’s supervisor. This “parks” the claim until the final assignment determination. See </a><a href="javascript:WWHClickedPopup('rules', 'queues.18.3.html#7391211', '');" title="Using a Queue to Handle FNOL Claims: Example">“Assign Claim to the Group Supervisor”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="7391532">The third rule creates the FNOL review activity. See </a><a href="javascript:WWHClickedPopup('rules', 'queues.18.3.html#7390178', '');" title="Using a Queue to Handle FNOL Claims: Example">“Create FNOL Review Activity”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="7391533">The next rule assigns the FNOL review activity to the intake group designated in the first assignment rule. See </a><a href="javascript:WWHClickedPopup('rules', 'queues.18.3.html#7390179', '');" title="Using a Queue to Handle FNOL Claims: Example">“Assign FNOL Review Activity to Intake Group”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="7391534">The final rule places the review activity on the FNOL queue of the designated intake group, from which members of the group will pull a review activity. See </a><a href="javascript:WWHClickedPopup('rules', 'queues.18.3.html#7391340', '');" title="Using a Queue to Handle FNOL Claims: Example">“Assign FNOL Review Activity to Queue”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="7391450">Assign Claim to an Intake Group</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="7391150">The Global Claim Assignment rule ASGCDefault - Assign to Claim Intake Units assigns an incoming claim to a specific group or groups. This group consists of users who will make the assignment decisions. This example uses two groups:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="7391154">FNOL Review Group - WC</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="7391165">FNOL Review Group - GL</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="7391397">There are no conditions for this rule, so the rule fires for every claim that comes into ClaimCenter.</a></div>
+      <h6 class="HS_-_Head_Sub"><a name="7390233">Conditions</a></h6>
+      <div class="CS_-_Code_Single_Line"><a name="7390234">true</a></div>
+      <h6 class="HS_-_Head_Sub"><a name="7390235">Actions</a></h6>
+      <PRE class="CF_-_Code_First_Line"><a name="7390651">gw.api.util.Logger.logInfo(  "In Claim No. : " + Claim.Claimnumber + " - In " </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7504591">&nbsp;&nbsp;+ actions.getRuleSet() + " - In Rule " +actions.getRule() )</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390653">&nbsp;&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7391196">if (claim.LossType == "WC" ) { </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7391198">&nbsp;&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390654">&nbsp;&nbsp;if (Claim.CurrentAssignment.assignGroup( Group( "cc:94" /* FNOL Review Group - WC */ ) ) ) { </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390655">&nbsp;&nbsp;&nbsp;&nbsp;gw.api.util.Logger.logInfo(  claim.ClaimNumber+ " was assigned to FNOL Review Group - WC" )</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390656">&nbsp;&nbsp;&nbsp;&nbsp;actions.exit() } </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390657">&nbsp;&nbsp;} else { </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390658">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (Claim.CurrentAssignment.assignGroup( Group( "cc:95" /* FNOL Review Group - GL */ ) )) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7391208">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gw.api.util.Logger.logInfo( claim.ClaimNumber+ " was assigned to FNOL Review Group - GL"  )</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390660">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;acions.exit()</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390661">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="7390242">}</a></PRE>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="7391211">Assign Claim to the Group Supervisor</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="7391212">The Default Group Claim Assignment rule ASDGCDefault - Assign to Claim Group Supervisor assigns the claim to the supervisor of the group. There are no conditions for this rule, so the rule fires for every claim that comes into ClaimCenter.</a></div>
+      <h6 class="HS_-_Head_Sub"><a name="7390248">Conditions</a></h6>
+      <div class="CS_-_Code_Single_Line"><a name="7390249">true</a></div>
+      <h6 class="HS_-_Head_Sub"><a name="7390250">Actions</a></h6>
+      <PRE class="CF_-_Code_First_Line"><a name="7390709">gw.api.util.Logger.logInfo( "In Claim No. : "+ Claim.Claimnumber + " - In " </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7504592">&nbsp;&nbsp;+ actions.getRuleSet() + " - In Rule " + actions.getRule() )</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7391231">&nbsp;&nbsp;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="7390251">claim.CurrentAssignment.assignUser(claim.assignedgroup.supervisor)</a></PRE>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="7390178">Create FNOL Review Activity </a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="7390729">The Claim Workplan rule WPWC03 - FNOL Review creates the review activity to be queued. This activity tells the user to review and assign the claim. There are no conditions for this rule, so the rule fires for every claim that comes into ClaimCenter.</a></div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="7390731">This rule assumes that activity pattern </a><span class="cv_-_computer_voice">fnol_review</span> is defined already. If it does not exist, then you must create it through the ClaimCenter <span class="ui_-_UI_element">Administration</span> interface by adding it to the <span class="ui_-_UI_element">Activity Patterns</span> page.</div>
+      <h6 class="HS_-_Head_Sub"><a name="7390259">Conditions</a></h6>
+      <div class="CS_-_Code_Single_Line"><a name="7390260">true</a></div>
+      <h6 class="HS_-_Head_Sub"><a name="7390261">Actions</a></h6>
+      <PRE class="CF_-_Code_First_Line"><a name="7390750">gw.api.util.Logger.logInfo( "In Claim No. : "+ Claim.Claimnumber + " - In " </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7504593">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ actions.getRuleSet() + " - In Rule " +actions.getRule() )</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390751">claim.createActivityFromPattern( null,  </a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="7730486">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ActivityPattern.finder.getActivityPatternByCode( "fnol_review" ) )</a></PRE>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="7390179">Assign FNOL Review Activity to Intake Group</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="7391289">The Global Activity Assignment rule ASGA30 - FNOL Review Assignments assigns the activity to the group that has already been assigned to the claim. The rule condition ensures that only this specific type of activity is assigned. Otherwise, ClaimCenter would assign all activities that hit this rule to the queue. Note that the activity assignment happens as part of the </a><span class="cv_-_computer_voice">if</span> condition, which returns <span class="cv_-_computer_voice">true</span> if successful.</div>
+      <h6 class="HS_-_Head_Sub"><a name="7390270">Conditions</a></h6>
+      <div class="CS_-_Code_Single_Line"><a name="7390271">Activity.ActivityPattern.Code == "fnol_review" </a></div>
+      <h6 class="HS_-_Head_Sub"><a name="7390272">Actions</a></h6>
+      <PRE class="CF_-_Code_First_Line"><a name="7390779">if ( Activity.CurrentAssignment.assignGroup( activity.claim.AssignedGroup ) ) { </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390780">&nbsp;&nbsp;gw.api.util.Logger.logInfo( "In Claim No. : "+ Activity.Claim.Claimnumber + " - In Activity :" </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390802">&nbsp;&nbsp;&nbsp;&nbsp;+ Activity.ActivityPattern.Subject + " - In " + actions.getRuleSet() </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390811">&nbsp;&nbsp;&nbsp;&nbsp;+ " - In Rule " +actions.getRule() + " - Assigning to " + activity.claim.AssignedGroup.Name )</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390782">&nbsp;&nbsp;actions.exit() </a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="7390273">}</a></PRE>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="7391340">Assign FNOL Review Activity to Queue</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="7391341">The Default Group Activity Assignment rule ASDGA01 - Assign New Claim Activity to Queue adds the review activity to the queue. This rule condition also specifies the correct activity type. </a></div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="7811231">ClaimCenter defines the default FNOL queue as </a><span class="cv_-_computer_voice">AssignableQueues[0]</span>.</div>
+      <h6 class="HS_-_Head_Sub"><a name="7390281">Conditions</a></h6>
+      <div class="CS_-_Code_Single_Line"><a name="7390825">Activity.ActivityPattern.Code == "fnol_review" </a></div>
+      <h6 class="HS_-_Head_Sub"><a name="7390283">Actions</a></h6>
+      <PRE class="CF_-_Code_First_Line"><a name="7390838">gw.api.util.Logger.logInfo( "In Claim No. : "+ Activity.Claim.Claimnumber + " - In " </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390854">&nbsp;&nbsp;+ actions.getRuleSet() + " - In Rule " + actions.getRule() + " - In " </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390861">&nbsp;&nbsp;+ activity.AssignedGroup.AssignableQueues[0].Name )</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390840">&nbsp;&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390841">activity.CurrentAssignment.assignActivityToQueue( activity.AssignedGroup.AssignableQueues[0] )</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="7390284">actions.exit()</a></PRE>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1d08709f-45bc-4536-8dc3-89ee89a9fb00" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/configuration/gsrc/LABS/a_MessaingIntro" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\Git\CodingData\ClaimCenter\.idea\settings\system\log\threadDumps-20190919-175544-Studio-8.0\20190919-200049-5\threadDump-20190919-200049.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\Git\CodingData\ClaimCenter\.idea\settings\system\log\threadDumps-20190925-105825-Studio-8.0\20190925-115651-25\threadDump-20190925-115651.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\Git\CodingData\ClaimCenter\.idea\settings\system\log\threadDumps-20190925-105825-Studio-8.0\20190925-115651-25\threadDump-20190925-115656.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\Git\CodingData\ClaimCenter\.idea\settings\system\log\threadDumps-20190925-105825-Studio-8.0\20190925-115651-25\threadDump-20190925-115702.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\Git\CodingData\ClaimCenter\.idea\settings\system\log\threadDumps-20190925-105825-Studio-8.0\20190925-115651-25\threadDump-20190925-115707.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\Git\CodingData\ClaimCenter\.idea\settings\system\log\threadDumps-20190925-105825-Studio-8.0\20190925-115651-25\threadDump-20190925-115712.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\Git\CodingData\ClaimCenter\.idea\settings\system\log\threadDumps-20190925-213526-Studio-8.0\20190926-003824-10\threadDump-20190926-003824.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\Git\CodingData\ClaimCenter\.idea\settings\system\log\threadDumps-20190925-213526-Studio-8.0\20190926-003824-10\threadDump-20190926-003830.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\Git\CodingData\ClaimCenter\.idea\settings\system\log\threadDumps-20190930-210836-Studio-8.0\20190930-221633-5\threadDump-20190930-221633.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\Git\CodingData\ClaimCenter\.idea\settings\system\log\threadDumps-20191001-225049-Studio-8.0\20191002-023731\threadDump-20191002-023731.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\Git\CodingData\ClaimCenter\.idea\settings\system\tmp\jna\jna4207776807818927137.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\Git\CodingData\ClaimCenter\.idea\settings\system\tmp\jna\jna4207776807818927137.dll.x" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\Git\CodingData\TrainingApp\.idea\settings\system\tmp\jna\jna1818913030669200638.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\Git\CodingData\TrainingApp\.idea\settings\system\tmp\jna\jna1818913030669200638.dll.x" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\Git\CodingData\TrainingApp\modules\configuration\gsrc\LABS\Messaing" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex.keystream.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex.keystream.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex_i" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex_inputs.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex_inputs.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex_inputs" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex_inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.method.name/Gosu.method.name.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.method.name/Gosu.method.name.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.method.name/Gosu.method.name" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.method.name/Gosu.method.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex" afterPath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex_i" afterPath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex_inputs.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex_inputs.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex_inputs" afterPath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex_inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs_inputs.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs_inputs.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs_inputs" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs_inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/todoindex/TodoIndex.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/todoindex/TodoIndex.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/todoindex/TodoIndex" afterPath="$PROJECT_DIR$/.idea/settings/system/index/todoindex/TodoIndex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/todoindex/TodoIndex_inputs.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/todoindex/TodoIndex_inputs.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/todoindex/TodoIndex_inputs" afterPath="$PROJECT_DIR$/.idea/settings/system/index/todoindex/TodoIndex_inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/xmlnamespaces/XmlNamespaces.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/xmlnamespaces/XmlNamespaces.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/xmlnamespaces/XmlNamespaces" afterPath="$PROJECT_DIR$/.idea/settings/system/index/xmlnamespaces/XmlNamespaces" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/attrib.dat.storageData" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/attrib.dat.storageData" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/attrib.dat.storageData" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/attrib.dat.storageData" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/attrib.dat.storageRecordIndex" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/attrib.dat.storageRecordIndex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/attrib.dat.storageRecordIndex" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/attrib.dat.storageRecordIndex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/LocalHistory/changes.storageData" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/LocalHistory/changes.storageData" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/LocalHistory/changes.storageData" afterPath="$PROJECT_DIR$/.idea/settings/system/LocalHistory/changes.storageData" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/LocalHistory/changes.storageRecordIndex" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/LocalHistory/changes.storageRecordIndex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/LocalHistory/changes.storageRecordIndex" afterPath="$PROJECT_DIR$/.idea/settings/system/LocalHistory/changes.storageRecordIndex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/content.dat.storageData" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/content.dat.storageData" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/content.dat.storageData" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/content.dat.storageData" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/content.dat.storageRecordIndex" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/content.dat.storageRecordIndex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/content.dat.storageRecordIndex" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/content.dat.storageRecordIndex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes_inputs.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes_inputs.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes_inputs" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes_inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/compiler/claimcenter.d4b1b70d/.caches/gosu-dependencies.dat" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/compiler/claimcenter.d4b1b70d/.caches/gosu-dependencies.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/compiler/trainingapp.e7d38643/.caches/gosu-dependencies.dat" afterPath="$PROJECT_DIR$/.idea/settings/system/compiler/trainingapp.e7d38643/.caches/gosu-dependencies.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.super/gosu.class.super.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.super/gosu.class.super.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.super/gosu.class.super" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.super/gosu.class.super" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.extlist/java.class.extlist.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.extlist/java.class.extlist.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.extlist/java.class.extlist" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.extlist/java.class.extlist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn.values" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname.values" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/names.dat.keystream.len" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/names.dat.keystream.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat.keystream.len" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat.keystream.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/names.dat.keystream" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/names.dat.keystream" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat.keystream" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat.keystream" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/names.dat" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/names.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat_i.len" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat_i.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/names.dat_i" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/names.dat_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat_i" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/compiler/output_roots.dat.values" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/compiler/output_roots.dat.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/compiler/output_roots.dat.values" afterPath="$PROJECT_DIR$/.idea/settings/system/compiler/output_roots.dat.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/compiler/output_roots.dat" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/compiler/output_roots.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/compiler/output_roots.dat" afterPath="$PROJECT_DIR$/.idea/settings/system/compiler/output_roots.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/records.dat.len" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/records.dat.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/records.dat.len" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/records.dat.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/records.dat" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/caches/records.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/records.dat" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/records.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.0" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.112" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.112" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.125" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.125" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/stat/unit.127" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/stat/unit.127" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.127" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.127" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/stat/unit.159" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/stat/unit.159" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.159" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.159" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.230" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.230" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.436" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.436" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/stat/unit.45" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/stat/unit.45" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.462" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.462" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.537" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.537" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/stat/unit.540" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/stat/unit.540" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.540" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.540" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/stat/unit.727" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/stat/unit.727" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.751" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.751" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/stat/unit.805" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/stat/unit.805" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/stat/unit.817" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/stat/unit.817" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/messaging/bank/BankAccountVerificationRequest.gs" afterPath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/messaging/bank/BankAccountVerificationRequest.gs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/index/gosutypenames/ClaimCenter$d4b1b70d$_globalModule$SOAPTypeLoader$index.txt" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/index/gosutypenames/ClaimCenter$d4b1b70d$_globalModule$SOAPTypeLoader$index.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/conversion/ClaimCenterd4b1b70d.xml" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/conversion/ClaimCenterd4b1b70d.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Guidewire/ClaimcenterQueries.sql" afterPath="$PROJECT_DIR$/../Guidewire/ClaimcenterQueries.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/tmp/DatagramServerClients.ser" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/tmp/DatagramServerClients.ser" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/tmp/DatagramServerClients.ser" afterPath="$PROJECT_DIR$/.idea/settings/system/tmp/DatagramServerClients.ser" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex.keystream" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex.keystream" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/gosutypenames/TrainingApp$e7d38643$_jre_module_$GosuClassTypeLoader$index.txt" afterPath="$PROJECT_DIR$/.idea/settings/system/index/gosutypenames/TrainingApp$e7d38643$_jre_module_$GosuClassTypeLoader$index.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/gosutypenames/TrainingApp$e7d38643$configuration$GosuClassTypeLoader$index.txt" afterPath="$PROJECT_DIR$/.idea/settings/system/index/gosutypenames/TrainingApp$e7d38643$configuration$GosuClassTypeLoader$index.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/conversion/TrainingAppe7d38643.xml" afterPath="$PROJECT_DIR$/.idea/settings/system/conversion/TrainingAppe7d38643.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/appComponentVersions.xml" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/appComponentVersions.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/appComponentVersions.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/appComponentVersions.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/feature.usage.statistics.xml" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/feature.usage.statistics.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/feature.usage.statistics.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/feature.usage.statistics.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/ide.general.xml" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/ide.general.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/ide.general.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/ide.general.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/log/idea.log" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/system/log/idea.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/log/idea.log" afterPath="$PROJECT_DIR$/.idea/settings/system/log/idea.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/idea.properties" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/idea.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/idea.properties" afterPath="$PROJECT_DIR$/.idea/settings/idea.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/jdk.table.xml" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/jdk.table.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/jdk.table.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/jdk.table.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/componentVersions/moduleconfiguration62aeb883.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/componentVersions/moduleconfiguration62aeb883.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/componentVersions/moduleconfiguration97fed74d.xml" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/componentVersions/moduleconfiguration97fed74d.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/notifications.xml" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/notifications.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/notifications.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/notifications.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/options.xml" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/options.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/options.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/options.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/other.xml" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/other.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/other.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/other.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/compiler/trainingapp.e7d38643/.caches/paths_to_delete.dat" afterPath="$PROJECT_DIR$/.idea/settings/system/compiler/trainingapp.e7d38643/.caches/paths_to_delete.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/port" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/port" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JavaFiles/FileHandling/nbproject/private/private.xml" afterPath="$PROJECT_DIR$/../JavaFiles/FileHandling/nbproject/private/private.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JavaFiles/Programs/nbproject/private/private.xml" afterPath="$PROJECT_DIR$/../JavaFiles/Programs/nbproject/private/private.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/componentVersions/projectd4b1b70d.xml" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/componentVersions/projectd4b1b70d.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/componentVersions/projecte7d38643.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/componentVersions/projecte7d38643.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/runner.layout.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/runner.layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/statistics.application.usages.xml" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/statistics.application.usages.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/statistics.application.usages.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/statistics.application.usages.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/window.manager.xml" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/settings/config/options/window.manager.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ClaimCenter/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ClaimCenter/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="TrainingApp.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/a.dummy" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1572275510122" ignored="false" />
+    <file path="/ContactsResponse.gs" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1569821192996" ignored="false" />
+    <file path="/ContactsRequest.gs" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1569483765368" ignored="false" />
+    <file path="/Gosu Scratchpad.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571078273086" ignored="false" />
+    <file path="/CalculatorResponse.gs" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1569475958723" ignored="false" />
+    <file path="/CalculatorProcessor.gs" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1569438031773" ignored="false" />
+    <file path="/CalculatorRequest.gs" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1569432148153" ignored="false" />
+    <file path="/transient_program.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1570871323025" ignored="false" />
+    <file path="/ContactsProcessor.gs" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1569821291773" ignored="false" />
+    <file path="/a.gs" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1569562334373" ignored="false" />
+    <file path="/ABContact_INJECTED__Entity_DisplayName_EntityName_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1569857541576" ignored="false" />
+    <file path="/Gosu_Frag.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1572595955920" ignored="false" />
+    <file path="/JSONReader.gs" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571070537768" ignored="false" />
+    <file path="/fragment.java" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1570871316874" ignored="false" />
+    <file path="/JSONRequest.gs" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571077185494" ignored="false" />
+    <file path="/JsonResponse.gs" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571070428578" ignored="false" />
+    <file path="/TestBundle.gs" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571037833559" ignored="false" />
+    <file path="/pcf.NewContact_INJECTED__PCF_Page_ScreenRef_def_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1570887460501" ignored="false" />
+    <file path="/pcf.NewContact_INJECTED__PCF_Page_Code_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1570887467256" ignored="false" />
+    <file path="/pcf.NewContact_INJECTED__PCF_Page_Variable_type_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1570887470972" ignored="false" />
+    <file path="/pcf.NewContact_INJECTED__PCF_Page_startInEditMode_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1570887467256" ignored="false" />
+    <file path="/pcf.NewContact_INJECTED__PCF_Page_afterCommit_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1570887467256" ignored="false" />
+    <file path="/pcf.NewContact_INJECTED__PCF_Page_parent_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1570887467256" ignored="false" />
+    <file path="/pcf.NewContact_INJECTED__PCF_Page_afterCancel_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1570887467256" ignored="false" />
+    <file path="/pcf.NewContact_INJECTED__PCF_Page_canEdit_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1570887467256" ignored="false" />
+    <file path="/pcf.NewContact_INJECTED__PCF_Page_title_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1570887467256" ignored="false" />
+    <file path="/pcf.NewContact_INJECTED__PCF_Page_canVisit_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1570887467256" ignored="false" />
+    <file path="/pcf.NewContact_INJECTED__PCF_Page_Variable_initialValue_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1570887467256" ignored="false" />
+    <file path="/pcf.NewContact_INJECTED__PCF_Page_afterEnter_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1570887467256" ignored="false" />
+    <file path="/JsonContactsProcessor.gs" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571216629279" ignored="false" />
+    <file path="/pcf.ABContactSummaryPage_INJECTED__PCF_Page_Screen_PanelRef_def_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571070918948" ignored="false" />
+    <file path="/pcf.ABContactSummaryDV_INJECTED__PCF_DetailViewPanel_InputColumn_InputSetRef_def_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571070976624" ignored="false" />
+    <file path="/pcf.AddressOwnerInputSet_INJECTED__PCF_InputSet_InputSetRef_mode_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571070969671" ignored="false" />
+    <file path="/pcf.AddressOwnerInputSet_INJECTED__PCF_InputSet_InputSetRef_def_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571070969671" ignored="false" />
+    <file path="/pcf.GlobalAddressInputSet_BigToSmall_INJECTED__PCF_InputSet_TypeKeyInput_available_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571070981829" ignored="false" />
+    <file path="/pcf.GlobalAddressInputSet_BigToSmall_INJECTED__PCF_InputSet_TypeKeyInput_editable_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571070981829" ignored="false" />
+    <file path="/pcf.GlobalAddressInputSet_BigToSmall_INJECTED__PCF_InputSet_TypeKeyInput_label_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571070981829" ignored="false" />
+    <file path="/pcf.GlobalAddressInputSet_BigToSmall_INJECTED__PCF_InputSet_TypeKeyInput_value_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571070981829" ignored="false" />
+    <file path="/pcf.GlobalAddressInputSet_BigToSmall_INJECTED__PCF_InputSet_TypeKeyInput_required_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571070981829" ignored="false" />
+    <file path="/pcf.GlobalAddressInputSet_BigToSmall_INJECTED__PCF_InputSet_TypeKeyInput_visible_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571070981829" ignored="false" />
+    <file path="/pcf.GlobalAddressInputSet_BigToSmall_INJECTED__PCF_InputSet_TypeKeyInput_showConfirmMessage_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571070981829" ignored="false" />
+    <file path="/pcf.GlobalAddressInputSet_BigToSmall_INJECTED__PCF_InputSet_TypeKeyInput_confirmMessage_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571070981829" ignored="false" />
+    <file path="/pcf.GlobalAddressInputSet_BigToSmall_INJECTED__PCF_InputSet_Code_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571070984513" ignored="false" />
+    <file path="/pcf.GlobalAddressInputSet_BigToSmall_INJECTED__PCF_InputSet_Require_type_editor.gsp" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1571070984513" ignored="false" />
+    <file path="/Dummy.txt" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1573113804017" ignored="false" />
+    <file path="/Messaing" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1572272944476" ignored="false" />
+    <file path="/BankAccountVerificationRequest.gs" changelist="1d08709f-45bc-4536-8dc3-89ee89a9fb00" time="1572275792684" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="USE_COMPILE_SERVER" value="false" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/modules/configuration/config/rules/EventMessage/EventFired_dir/BAEF1000BankAccountVerification_dir/BAEF1100BankAccount.gr" line="7" class="rules.EventMessage.EventFired_dir.BAEF1000BankAccountVerification_dir.BAEF1100BankAccount" package="rules.EventMessage.EventFired_dir.BAEF1000BankAccountVerification_dir">
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="&#13;rules.EventMessage.EventFired_dir.BAEF1000BankAccountVerification_dir.,gw.lang.,entity.,typekey.,com.guidewire.pl.system.integration.plugins.gosu.EntityFactory,gw.plugin.PluginRegistry&#13;GosuCode" />
+        <option name="LOG_MESSAGE" value="&#13;rules.EventMessage.EventFired_dir.BAEF1000BankAccountVerification_dir.,gw.lang.,entity.,typekey.,com.guidewire.pl.system.integration.plugins.gosu.EntityFactory,gw.plugin.PluginRegistry&#13;GosuCode" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/modules/configuration/config/rules/EventMessage/EventFired_dir/BAEF1000BankAccountVerification.gr" line="18" class="rules.EventMessage.EventFired_dir.BAEF1000BankAccountVerification" package="rules.EventMessage.EventFired_dir">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="&#13;&#13;GosuCode" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;GosuCode" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/modules/configuration/gsrc/Practise_WEBSERVICE/JSONMapper/JsonContactsProcessor.gs" line="62" class="Practise_WEBSERVICE.JSONMapper.JsonContactsProcessor" package="Practise_WEBSERVICE.JSONMapper">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/modules/configuration/gsrc/Practise_WEBSERVICE/JSONMapper/JsonContactsProcessor.gs" line="53" class="Practise_WEBSERVICE.JSONMapper.JsonContactsProcessor" package="Practise_WEBSERVICE.JSONMapper">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/modules/configuration/gsrc/Practise_WEBSERVICE/JSONMapper/JsonContactsProcessor.gs" line="49" class="Practise_WEBSERVICE.JSONMapper.JsonContactsProcessor" package="Practise_WEBSERVICE.JSONMapper">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/modules/configuration/config/rules/EventMessage/EventFired_dir/BAEF1000BankAccountVerification.gr" line="8" class="rules.EventMessage.EventFired_dir.BAEF1000BankAccountVerification" package="rules.EventMessage.EventFired_dir">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/modules/configuration/config/rules/EventMessage/EventFired_dir/BAEF1000BankAccountVerification_dir/BAEF1100BankAccount.gr" line="16" class="rules.EventMessage.EventFired_dir.BAEF1000BankAccountVerification_dir.BAEF1100BankAccount" package="rules.EventMessage.EventFired_dir.BAEF1000BankAccountVerification_dir">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/modules/configuration/config/rules/EventMessage/EventFired_dir/BAEF1000BankAccountVerification_dir/BAEF1100BankAccount_dir/BAEF1110AddedChanged.gr" line="17" class="rules.EventMessage.EventFired_dir.BAEF1000BankAccountVerification_dir.BAEF1100BankAccount_dir.BAEF1110AddedChanged" package="rules.EventMessage.EventFired_dir.BAEF1000BankAccountVerification_dir.BAEF1100BankAccount_dir">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/modules/configuration/config/rules/EventMessage/EventFired_dir/MessageGeneratorDemo.gr" line="21" class="rules.EventMessage.EventFired_dir.MessageGeneratorDemo" package="rules.EventMessage.EventFired_dir">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/modules/configuration/config/rules/EventMessage/EventFired_dir/BAEF1000BankAccountVerification_dir/BAEF1100BankAccount_dir/BAEF1110AddedChanged_dir/BAEF1111FieldChanged.gr" line="20" class="rules.EventMessage.EventFired_dir.BAEF1000BankAccountVerification_dir.BAEF1100BankAccount_dir.BAEF1110AddedChanged_dir.BAEF1111FieldChanged" package="rules.EventMessage.EventFired_dir.BAEF1000BankAccountVerification_dir.BAEF1100BankAccount_dir.BAEF1110AddedChanged_dir">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/modules/configuration/config/rules/EventMessage/EventFired_dir/BAEF1000BankAccountVerification_dir/BAEF1100BankAccount_dir/BAEF1110AddedChanged_dir/BAEF1111FieldChanged.gr" line="27" class="rules.EventMessage.EventFired_dir.BAEF1000BankAccountVerification_dir.BAEF1100BankAccount_dir.BAEF1110AddedChanged_dir.BAEF1111FieldChanged" package="rules.EventMessage.EventFired_dir.BAEF1000BankAccountVerification_dir.BAEF1100BankAccount_dir.BAEF1110AddedChanged_dir">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/messaging/bank/BankAccountVerificationRequest.gs" line="38" class="acme.ta.messaging.bank.BankAccountVerificationRequest" package="acme.ta.messaging.bank">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/modules/configuration/config/rules/EventMessage/EventFired_dir/BAEF1000BankAccountVerification_dir/BAEF1100BankAccount_dir/BAEF1110AddedChanged_dir/BAEF1111FieldChanged.gr" line="35" class="rules.EventMessage.EventFired_dir.BAEF1000BankAccountVerification_dir.BAEF1100BankAccount_dir.BAEF1110AddedChanged_dir.BAEF1111FieldChanged" package="rules.EventMessage.EventFired_dir.BAEF1000BankAccountVerification_dir.BAEF1100BankAccount_dir.BAEF1110AddedChanged_dir">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/messaging/bank/BankAccountVerificationRequest.gs" line="39" class="acme.ta.messaging.bank.BankAccountVerificationRequest" package="acme.ta.messaging.bank">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="TrainingApp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="JsonContactsProcessor.gs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/configuration/gsrc/Practise_WEBSERVICE/JSONMapper/JsonContactsProcessor.gs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="0" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventFired.grs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/configuration/config/rules/EventMessage/EventFired.grs">
+          <provider selected="true" editor-type-id="IJRuleEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageContextCoreExtMethods.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/repository/com/guidewire/ab/ab/1.0-SNAPSHOT/ab-1.0-SNAPSHOT.jar!/com/guidewire/ab/domain/messaging/impl/MessageContextCoreExtMethods.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="40" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RuleSetBase.gs" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/repository/com/guidewire/pl/pl/1.0-SNAPSHOT/pl-1.0-SNAPSHOT.jar!/gw/rules/RuleSetBase.gs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="125" column="0" selection-start="4327" selection-end="4327" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messaging-config.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/configuration/config/messaging/messaging-config.xml">
+          <provider selected="true" editor-type-id="IJMessagingEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BankAccountVerificationTransport.gs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/messaging/bank/BankAccountVerificationTransport.gs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="33" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BankAccountVerificationRequest.gwp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/configuration/config/plugin/registry/BankAccountVerificationRequest.gwp">
+          <provider selected="true" editor-type-id="IJPluginsEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BankAccountVerificationRequest.gs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/messaging/bank/BankAccountVerificationRequest.gs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="0" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GosuPluginProxy.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/repository/com/guidewire/pl/pl/1.0-SNAPSHOT/pl-1.0-SNAPSHOT.jar!/com/guidewire/pl/system/integration/plugins/GosuPluginProxy.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="26" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/WEBSERVICES/CaculatorAPI/CalculatorResponse.gs" />
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/WEBSERVICES/FetchContactsAPI/ContactsProcessor.gs" />
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/WEBSERVICES/FetchContactsAPI/ContactsRequest.gs" />
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/WEBSERVICES/FetchContactsAPI/ContactsResponse.gs" />
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/Practise_WEBSERVICE/FetchContactsAPI/ContactsResponse.gs" />
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/Practise_WEBSERVICE/FetchContactsAPI/ContactsProcessor.gs" />
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/Practise_WEBSERVICE/TripExcercise/ReadJSON.gs" />
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/Practise_WEBSERVICE/TripExcercise/JSONReader.gs" />
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/Practise_WEBSERVICE/Test/TestBundle.gs" />
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/Practise_WEBSERVICE/JSONMapper/JSONReader.gs" />
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/Practise_WEBSERVICE/JSONMapper/JSONRequest.gs" />
+        <option value="$USER_HOME$/AppData/Local/Temp/7550bd0c/Gosu Scratchpad.gsp" />
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/Practise_WEBSERVICE/JSONMapper/JsonResponse.gs" />
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/Practise_WEBSERVICE/JSONMapper/JsonContactsProcessor.gs" />
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/LABS/Messaing" />
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/messaging/bank/BankAccountVerificationRequest.gs" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="@M2_REPO@" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1942" />
+    <option name="height" value="1042" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrainingApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrainingApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configuration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrainingApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configuration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gsrc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrainingApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configuration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gsrc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LABS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrainingApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configuration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gsrc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrainingApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configuration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.guidewire.configcenter.tree.FakeDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrainingApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configuration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.guidewire.configcenter.tree.FakeDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rules" />
+              <option name="myItemType" value="com.guidewire.configcenter.tree.FakeDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrainingApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configuration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.guidewire.configcenter.tree.FakeDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rules" />
+              <option name="myItemType" value="com.guidewire.configcenter.tree.FakeDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EventMessage" />
+              <option name="myItemType" value="com.guidewire.configcenter.tree.FakeDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Practise_WEBSERVICE.JSONMapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Server">
+    <configuration default="false" name="Gosu Scratchpad.gsp" type="GosuProgramRunConfiguration" factoryName="Gosu Program" temporary="true">
+      <module name="" />
+      <setting name="path" value="$USER_HOME$/AppData/Local/Temp/7550bd0c/Gosu Scratchpad.gsp" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$USER_HOME$/AppData/Local/Temp/7550bd0c" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GosuProgramRunConfiguration" factoryName="Gosu Program">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="C:\Guidewire\Guidewire\TrainingApp" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="SmokeTestRunConfigurationExtension">false,false,false</extension>
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-Xms500m -Xmx1500m -XX:MaxPermSize=300m -Dgw.ab.env=h2mem -Dgw.bc.env=h2mem -Dgw.cc.env=h2mem -Dgw.pc.env=h2mem -Dgw.ph.env=h2mem -Dgw.px.env=h2mem -Dgw.th.env=h2mem -ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Server" />
+      <item index="1" class="java.lang.String" itemvalue="Gosu Program.Gosu Scratchpad.gsp" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Gosu Program.Gosu Scratchpad.gsp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="true">C:\Users\Vikas.Gautam\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51557094" sideWeight="0.6248666" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51557094" sideWeight="0.3751334" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3256617" sideWeight="0.57257205" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.71820176" sideWeight="0.7473684" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11632871" sideWeight="0.48442906" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.48442906" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/modules/configuration/config/phone/PhoneNumberMetaData.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6420" column="51" selection-start="211011" selection-end="211011" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/gsrc/Practise_WEBSERVICE/FetchContactsAPI/ContactsRequest.gs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="12" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/gsrc/Practise_WEBSERVICE/FetchContactsAPI/ContactsResponse.gs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="20" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/gsrc/Practise_WEBSERVICE/FetchContactsAPI/ContactsProcessor.gs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="3" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/e7d38643/Gosu Scratchpad.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/gsrc/LABS/a_MessaingIntro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="35" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/config/messaging/messaging-config.xml">
+      <provider selected="true" editor-type-id="IJMessagingEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/config/rules/EventMessage/EventFired_dir/MessageGeneratorDemo.gr">
+      <provider selected="true" editor-type-id="IJRuleEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/repository/com/guidewire/pl/pl/1.0-SNAPSHOT/pl-1.0-SNAPSHOT.jar!/com/guidewire/pl/system/integration/plugins/GosuPluginProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="26" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/config/plugin/registry/BankAccountVerificationRequest.gwp">
+      <provider selected="true" editor-type-id="IJPluginsEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/gsrc/Practise_WEBSERVICE/JSONMapper/JsonContactsProcessor.gs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/repository/com/guidewire/ab/ab/1.0-SNAPSHOT/ab-1.0-SNAPSHOT.jar!/com/guidewire/ab/domain/messaging/impl/MessageContextCoreExtMethods.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="40" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/repository/com/guidewire/pl/pl/1.0-SNAPSHOT/pl-1.0-SNAPSHOT.jar!/gw/rules/RuleSetBase.gs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="0" selection-start="4327" selection-end="4327" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/messaging/bank/BankAccountVerificationTransport.gs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="33" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/messaging/bank/BankAccountVerificationRequest.gs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/config/rules/EventMessage/EventFired.grs">
+      <provider selected="true" editor-type-id="IJRuleEditor">
+        <state />
+      </provider>
+    </entry>
+  </component>
+</project>
+

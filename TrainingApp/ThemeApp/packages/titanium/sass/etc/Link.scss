@@ -1,0 +1,65 @@
+/* space between a link and the element to its left */
+* + .g-link {
+  margin-left: 5px
+}
+
+// Specifically target breadcrumb links to ensure they don't line-wrap
+.g-link {
+  white-space: nowrap;
+}
+
+.g-actionable .x-form-display-field, /* action on a readonly value field */
+.x-form-field-wrap > .g-actionable,
+.x-form-twin-triggers > .g-actionable,
+.x-form-item-body .g-actionable,
+.x-form-item > .g-actionable,  /* helper icon for input field */
+TD.x-grid-cell > DIV > .g-actionable, /* hyperlink in cell*/
+DIV.x-form-item-cell > .g-actionable, /* hyperlink in DV cell*/
+.altVal > .g-actionable /*link under alt value*/
+{
+  color: #0067ac;
+  cursor: pointer;
+}
+.g-actionable {
+  img{
+    margin: 3px 0 0 3px;
+  }
+}
+
+
+.x-after-input-cell .g-link-button{
+  //display: block;
+  margin-left: 3px;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  padding: 0px 3px;
+  border-radius: 2px;
+  border: 1px solid #0086ac;
+  background-color: #0086ac;
+  text-decoration: none;
+}
+.x-after-input-cell .g-link-button:hover{
+  background-color: #016a88;
+}
+
+.x-after-input-cell .g-actionable{
+  text-decoration: none;
+}
+/* Style used by Links with styleClass="bold" */
+span.bold, a.bold {
+  font-weight: bold;
+}
+
+.g-helper-cell-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap !important;
+  min-height: inherit;
+}
+
+.g-helper-cell-icon {
+  float: right;
+}
+

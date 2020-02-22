@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebWorksHelpTOC version="5.0" xmlns="urn:WebWorks-Help-TOC-Schema">
+  <i t="About ClaimCenter Documentation" l="1">
+    <i t="Conventions in This Document" l="1#2121726" />
+    <i t="Support" l="1#2121769" />
+  </i>
+  <i t="Planning the Upgrade" l="2#1034444">
+    <i t="Planning Your ClaimCenter Upgrade" l="3">
+      <i t="Supported Starting Version" l="4" />
+      <i t="Roadmap for Planning the Upgrade" l="5" />
+      <i t="Upgrade Assessment" l="6" />
+      <i t="Preparing for the Upgrade" l="7" />
+      <i t="Project Inception" l="8" />
+      <i t="Design and Development" l="9" />
+      <i t="System Test" l="10" />
+      <i t="Deployment and Support" l="11" />
+    </i>
+  </i>
+  <i t="Upgrading from 8.0.0" l="12#1340660">
+    <i t="Upgrading the ClaimCenter 8.0.x Configuration" l="13">
+      <i t="Overview of ContactManager Upgrade" l="14" />
+      <i t="Obtaining Configurations and Tools" l="15">
+        <i t="Viewing Differences Between Base and Target Releases" l="15#1916581" />
+        <i t="Specifying Configuration and Tool Locations" l="15#1916603" />
+      </i>
+      <i t="Creating a Configuration Backup" l="16" />
+      <i t="Removing Patches and Hot Fixes" l="17" />
+      <i t="Updating Infrastructure" l="18" />
+      <i t="Launching the ClaimCenter 8.0.1 Configuration Upgrade Tool" l="19">
+        <i t="Restarting the Configuration Upgrade Tool" l="19#1916833" />
+      </i>
+      <i t="Configuration Upgrade Tool Automated Steps" l="20">
+        <i t="Copying Custom Rules and Adding ClaimCenter 8.0.1 Default Rules" l="20#1916894" />
+      </i>
+      <i t="Using the ClaimCenter 8.0.1 Upgrade Tool Interface" l="21">
+        <i t="Filters" l="21#1916950" />
+        <i t="Configuration File Tree" l="21#1917142" />
+        <i t="File Details Panel" l="21#1917144" />
+        <i t="Accepting Files that Do Not Require Merging" l="21#1917175" />
+        <i t="Merging and Accepting Files" l="21#1917185" />
+      </i>
+      <i t="Configuration Merging Guidelines" l="22" />
+      <i t="Data Model Merging Guidelines" l="23">
+        <i t="Merging Typelists – Overview" l="23#1917228" />
+        <i t="Merging Typelists – Simple Typelists" l="23#1917238" />
+        <i t="Merging Typelists – Complex Typelists" l="23#1917259" />
+        <i t="Merging Lines of Business" l="23#1917290" />
+        <i t="Merging Entity Extensions" l="23#1917294" />
+        <i t="Reviewing Custom Extensions" l="23#1917317" />
+        <i t="Reconciling the Database with Custom Extensions" l="23#1917332" />
+      </i>
+      <i t="Merging Display Properties" l="24" />
+      <i t="Upgrading Rules to ClaimCenter 8.0.1" l="25" />
+      <i t="Installing Language Modules" l="26" />
+      <i t="Translating New Display Properties and Typecodes" l="27" />
+      <i t="Modifying PCF files, Rules and Libraries for Unused Contact Subtypes" l="28" />
+      <i t="Validating the ClaimCenter 8.0.1 Configuration" l="29">
+        <i t="Using Studio to Verify Files" l="29#1917543" />
+        <i t="Starting ClaimCenter and Resolving Errors" l="29#1917557" />
+      </i>
+      <i t="Building and Deploying ClaimCenter 8.0.1" l="30" />
+    </i>
+    <i t="Upgrading the ClaimCenter 8.0.x Database" l="31">
+      <i t="Upgrading Administration Data for Testing" l="32" />
+      <i t="Identifying Data Model Issues" l="33" />
+      <i t="Verifying Batch Process and Work Queue Completion" l="34">
+        <i t="Running Contact Auto Sync and Clearing the Work Item Table" l="34#1862864" />
+      </i>
+      <i t="Purging Data Prior to Upgrade" l="35">
+        <i t="Purging Old Messages from the Database" l="35#1900941" />
+        <i t="Purging Address Correction Records" l="35#1900967" />
+        <i t="Purging Completed Workflows and Workflow Logs" l="35#1900987" />
+      </i>
+      <i t="Reassign Data for Inactive Users" l="36" />
+      <i t="Validating the Database Schema" l="37" />
+      <i t="Checking Database Consistency" l="38" />
+      <i t="Creating a Data Distribution Report" l="39" />
+      <i t="Generating Database Statistics" l="40" />
+      <i t="Creating a Database Backup" l="41" />
+      <i t="Updating Database Infrastructure" l="42" />
+      <i t="Preparing the Database for Upgrade" l="43">
+        <i t="Ensuring Adequate Free Space" l="43#1901751" />
+        <i t="Disabling Replication" l="43#1901753" />
+        <i t="Assigning Default Tablespace (Oracle only)" l="43#1901755" />
+        <i t="Using Proper Clock Settings" l="43#1901761" />
+      </i>
+      <i t="Setting Linguistic Search Collation" l="44" />
+      <i t="Using the IDatamodelUpgrade Plugin" l="45">
+        <i t="Running Custom Version Checks and Triggers" l="45#1901178" />
+        <i t="Example Version Triggers" l="45#1901515" />
+        <i t="Upgrading Archived Entities" l="45#1901605" />
+      </i>
+      <i t="Disabling the Scheduler" l="46" />
+      <i t="Suspending Message Destinations" l="47" />
+      <i t="Configuring the Database Upgrade" l="48">
+        <i t="Adjusting Commit Size for Encryption" l="48#1901782" />
+        <i t="Configuring Version Trigger Elements" l="48#1901797" />
+        <i t="Deferring Creation of Archive Indexes" l="48#1901886" />
+        <i t="Configuring the Upgrade on Oracle" l="48#1901898" />
+        <i t="Configuring the Upgrade on SQL Server" l="48#1901976" />
+        <i t="Downloading Database Upgrade Instrumentation Details" l="48#1845518" />
+      </i>
+      <i t="Starting the Server to Begin Automatic Database Upgrade" l="49">
+        <i t="Test the Database Upgrade" l="49#1902015" />
+        <i t="Integrations and Starting the Server" l="49#1902024" />
+        <i t="Understanding the Automatic Database Upgrade" l="49#1902030" />
+        <i t="Version Trigger Descriptions" l="49#1902049" />
+      </i>
+      <i t="Viewing Detailed Database Upgrade Information" l="50" />
+      <i t="Dropping Unused Columns on Oracle" l="51" />
+      <i t="Exporting Administration Data for Testing" l="52" />
+      <i t="Final Steps After The Database Upgrade is Complete" l="53">
+        <i t="Checking that Contacts Have Unique Addresses" l="53#1888838" />
+        <i t="Completing Deferred Upgrade" l="53#1885327" />
+        <i t="Running Key Batch Processes" l="53#1882585" />
+        <i t="Backing up the Database After Upgrade" l="53#1500506" />
+      </i>
+    </i>
+    <i t="Upgrading ClaimCenter from 8.0.x for ContactManager" l="54">
+      <i t="Manually Upgrading ClaimCenter to Integrate with ContactManager" l="55" />
+      <i t="File and PCF Changes in ClaimCenter Related to ContactManager" l="56">
+        <i t="Web Service Version Changes" l="56#2264226" />
+        <i t="Driver’s License State Now Uses Jurisdiction.ttx" l="56#2264666" />
+      </i>
+    </i>
+    <i t="Upgrading ContactManager from 8.0.x" l="57">
+      <i t="Manually Upgrading the ContactManager Configuration" l="58">
+        <i t="Manually Configuring Changed Files" l="58#2272626" />
+        <i t="BillingCenter Web Services Version Change" l="58#2272836" />
+        <i t="Driver’s License State Field Now Uses Jurisdiction.ttx" l="58#2273022" />
+      </i>
+    </i>
+  </i>
+  <i t="Upgrading from 7.0.x" l="59#1340660">
+    <i t="Upgrading the ClaimCenter 7.0.x Configuration" l="60">
+      <i t="Overview of ContactManager Upgrade" l="61" />
+      <i t="Obtaining Configurations and Tools" l="62">
+        <i t="Viewing Differences Between Base and Target Releases" l="62#1922218" />
+        <i t="Specifying Configuration and Tool Locations" l="62#1922240" />
+      </i>
+      <i t="Creating a Configuration Backup" l="63" />
+      <i t="Removing Patches and Hot Fixes" l="64" />
+      <i t="Updating Infrastructure" l="65" />
+      <i t="Uninstalling Language Modules" l="66" />
+      <i t="Launching the ClaimCenter 8.0.1 Configuration Upgrade Tool" l="67">
+        <i t="Restarting the Configuration Upgrade Tool" l="67#1922470" />
+      </i>
+      <i t="Configuration Upgrade Tool Automated Steps" l="68">
+        <i t="Removing Template Pages" l="68#1922550" />
+        <i t="Updating PCF Files" l="68#1922558" />
+        <i t="Upgrading Work Queue Configuration" l="68#1922718" />
+        <i t="Upgrading Database Configuration" l="68#1922728" />
+        <i t="Splitting Localization.xml into Separate Files for each Locale" l="68#1922789" />
+        <i t="Splitting address-config.xml into Separate Files for each Country" l="68#1922797" />
+        <i t="Splitting zone-config.xml into Separate Files for each Country" l="68#1922805" />
+        <i t="Splitting currencies.xml into Separate Files for each Currency" l="68#1922813" />
+        <i t="Moving Country-based Field Validator Definition Files" l="68#1922818" />
+        <i t="Moving Rules Files up One Directory" l="68#1922820" />
+        <i t="Reformatting Rules for Display in Studio Rules Editor" l="68#1922822" />
+        <i t="Copying Custom Rules and Adding ClaimCenter 8.0.1 Default Rules" l="68#1922830" />
+        <i t="Renaming SOAP Web Services from XML to RWS" l="68#1922846" />
+        <i t="Renaming Plugins from XML to GWP" l="68#1922848" />
+        <i t="Renaming Display Names Files from XML to EN" l="68#1922850" />
+        <i t="Upgrading Display Keys" l="68#1922853" />
+        <i t="Adding nullok=&quot;true&quot; to Entity and Extension Foreign Key Columns" l="68#1922874" />
+        <i t="Removing deletefk Attribute from Entity and Extension Foreign Key Columns" l="68#1922879" />
+        <i t="Setting XML Namespace on Metadata Files" l="68#1922881" />
+        <i t="Upgrading Document Assistant Parameters" l="68#1922894" />
+        <i t="Separating Entities and Typelists" l="68#1922908" />
+        <i t="Upgrading aggregatelimitconfig-used.xml" l="68#1922910" />
+      </i>
+      <i t="Using the ClaimCenter 8.0.1 Upgrade Tool Interface" l="69">
+        <i t="Filters" l="69#1922958" />
+        <i t="Configuration File Tree" l="69#1923150" />
+        <i t="File Details Panel" l="69#1923152" />
+        <i t="Accepting Files that Do Not Require Merging" l="69#1923183" />
+        <i t="Merging and Accepting Files" l="69#1923193" />
+      </i>
+      <i t="Configuration Merging Guidelines" l="70" />
+      <i t="Data Model Merging Guidelines" l="71">
+        <i t="Merging Typelists – Overview" l="71#1923236" />
+        <i t="Merging Typelists – Simple Typelists" l="71#1923246" />
+        <i t="Merging Typelists – Complex Typelists" l="71#1923267" />
+        <i t="Merging Lines of Business" l="71#1923298" />
+        <i t="Merging Entity Extensions" l="71#1923302" />
+        <i t="Reviewing Custom Extensions" l="71#1923360" />
+        <i t="Reconciling the Database with Custom Extensions" l="71#1923375" />
+        <i t="Removing Obsolete Attributes" l="71#1923377" />
+        <i t="Updating Extractable Edge Foreign Keys" l="71#1923379" />
+      </i>
+      <i t="Changes to the Logging API" l="72">
+        <i t="Conceptual Changes to Logging" l="72#1923517" />
+        <i t="Instantiating Loggers" l="72#1923574" />
+        <i t="Logging Messages" l="72#1923604" />
+        <i t="Passing Loggers as Parameters" l="72#1923617" />
+      </i>
+      <i t="Merging Auto Death Benefit and Auto Disability Benefit" l="73" />
+      <i t="Adding DDL Configuration Options to database-config.xml" l="74" />
+      <i t="Merging Changes to Field Validators" l="75" />
+      <i t="Renaming PCF files According to Their Modes" l="76" />
+      <i t="Using ReserveLineInputSet in Payment and Recovery Screens" l="77" />
+      <i t="Reviewing Replacement of Fields and Roles with Service Requests" l="78" />
+      <i t="Reviewing Change to Aggregate Limits Screen" l="79" />
+      <i t="Merging Display Properties" l="80" />
+      <i t="Merging Other Files" l="81" />
+      <i t="Fixing Gosu Case-Sensitivity and Equality Operator Issues" l="82" />
+      <i t="Upgrading Rules to ClaimCenter 8.0.1" l="83">
+        <i t="Claim PreUpdate Reinsurance Rules" l="83#1924169" />
+        <i t="Rules Required for Key 8.0 Features" l="83#1924210" />
+      </i>
+      <i t="Installing Language Modules" l="84" />
+      <i t="Translating New Display Properties and Typecodes" l="85" />
+      <i t="Modifying PCF files, Rules and Libraries for Unused Contact Subtypes" l="86" />
+      <i t="Validating the ClaimCenter 8.0.1 Configuration" l="87">
+        <i t="Using Studio to Verify Files" l="87#1924396" />
+        <i t="Starting ClaimCenter and Resolving Errors" l="87#1924410" />
+      </i>
+      <i t="Building and Deploying ClaimCenter 8.0.1" l="88" />
+    </i>
+    <i t="Upgrading the ClaimCenter 7.0.x Database" l="89">
+      <i t="Upgrading Administration Data for Testing" l="90" />
+      <i t="Identifying Data Model Issues" l="91" />
+      <i t="Verifying Batch Process and Work Queue Completion" l="92">
+        <i t="Running Contact Auto Sync and Clearing the Work Item Table" l="92#1862864" />
+      </i>
+      <i t="Purging Data Prior to Upgrade" l="93">
+        <i t="Purging Old Messages from the Database" l="93#1914105" />
+        <i t="Purging Address Correction Records" l="93#1914131" />
+        <i t="Purging Completed Workflows and Workflow Logs" l="93#1914151" />
+      </i>
+      <i t="Reassign Data for Inactive Users" l="94" />
+      <i t="Validating the Database Schema" l="95" />
+      <i t="Checking Database Consistency" l="96" />
+      <i t="Creating a Data Distribution Report" l="97" />
+      <i t="Generating Database Statistics" l="98" />
+      <i t="Creating a Database Backup" l="99" />
+      <i t="Updating Database Infrastructure" l="100" />
+      <i t="Preparing the Database for Upgrade" l="101">
+        <i t="Ensuring Adequate Free Space" l="101#1914356" />
+        <i t="Disabling Replication" l="101#1914358" />
+        <i t="Assigning Default Tablespace (Oracle only)" l="101#1914360" />
+        <i t="Using Proper Clock Settings" l="101#1914366" />
+      </i>
+      <i t="Setting Linguistic Search Collation" l="102" />
+      <i t="Using the IDatamodelUpgrade Plugin" l="103">
+        <i t="Running Custom Version Checks and Triggers" l="103#1914522" />
+        <i t="Example Version Triggers" l="103#1914859" />
+        <i t="Upgrading Archived Entities" l="103#1914949" />
+      </i>
+      <i t="Disabling the Scheduler" l="104" />
+      <i t="Suspending Message Destinations" l="105" />
+      <i t="Configuring the Database Upgrade" l="106">
+        <i t="Adjusting Commit Size for Encryption" l="106#1915124" />
+        <i t="Configuring Version Trigger Elements" l="106#1915139" />
+        <i t="Deferring Creation of Archive Indexes" l="106#1915228" />
+        <i t="Configuring the Upgrade on Oracle" l="106#1915240" />
+        <i t="Configuring the Upgrade on SQL Server" l="106#1915318" />
+        <i t="Downloading Database Upgrade Instrumentation Details" l="106#1845518" />
+      </i>
+      <i t="Starting the Server to Begin Automatic Database Upgrade" l="107">
+        <i t="Test the Database Upgrade" l="107#1915414" />
+        <i t="Integrations and Starting the Server" l="107#1915423" />
+        <i t="Understanding the Automatic Database Upgrade" l="107#1915429" />
+        <i t="Version Trigger Descriptions" l="107#1915448" />
+      </i>
+      <i t="Viewing Detailed Database Upgrade Information" l="108" />
+      <i t="Dropping Unused Columns on Oracle" l="109" />
+      <i t="Exporting Administration Data for Testing" l="110" />
+      <i t="Upgrading Phone Numbers" l="111" />
+      <i t="Final Steps After The Database Upgrade is Complete" l="112">
+        <i t="Checking that Contacts Have Unique Addresses" l="112#1889639" />
+        <i t="Completing Deferred Upgrade" l="112#1885327" />
+        <i t="Running Key Batch Processes" l="112#1882585" />
+        <i t="Backing up the Database After Upgrade" l="112#1500506" />
+      </i>
+    </i>
+    <i t="Upgrading ClaimCenter from 7.0.x for ContactManager" l="113">
+      <i t="Configuration File Changes in ClaimCenter" l="114" />
+      <i t="Manually Upgrading ClaimCenter to Integrate with ContactManager" l="115">
+        <i t="Mapping Your Contact Extensions" l="115#2260247" />
+        <i t="Parameter transactionId Removed from ContactManager Web Services" l="115#2261203" />
+      </i>
+    </i>
+    <i t="Upgrading ContactManager from 7.0.x" l="116">
+      <i t="Database Upgrade Steps in ContactManager" l="117">
+        <i t="Preserving MatchSetKey Column Data" l="117#2271909" />
+        <i t="Ensuring that LinkID Is Unique" l="117#2271944" />
+      </i>
+      <i t="Configuration File Changes in ContactManager" l="118">
+        <i t="Manually Configuring Changed Files" l="118#2251100" />
+      </i>
+    </i>
+  </i>
+  <i t="Upgrading from 6.0.x" l="119#1340660">
+    <i t="Upgrading the ClaimCenter 6.0.x Configuration" l="120">
+      <i t="Overview of ContactManager Upgrade" l="121" />
+      <i t="Obtaining Configurations" l="122">
+        <i t="Viewing Differences Between Base and Target Releases" l="122#1888709" />
+        <i t="Specifying Configuration Locations for ClaimCenter 7.0 Upgrade Tool" l="122#1888724" />
+      </i>
+      <i t="Creating a Configuration Backup" l="123" />
+      <i t="Removing Patches and Hot Fixes" l="124" />
+      <i t="Updating Infrastructure" l="125" />
+      <i t="Upgrading the ClaimCenter 6.0 Configuration to 7.0" l="126">
+        <i t="Launching the ClaimCenter 7.0 Configuration Upgrade Tool" l="126#1889011" />
+        <i t="Restarting the Configuration Upgrade Tool" l="126#1889033" />
+      </i>
+      <i t="ClaimCenter 7.0 Upgrade Tool Automated Steps" l="127">
+        <i t="Moving Typelist Localizations into typelist.properties Files" l="127#1936427" />
+        <i t="Removing Redundant TTX Files" l="127#1936444" />
+        <i t="Removing searchTypeVisible Attribute from DateCriterionChoiceInputNode" l="127#1936451" />
+        <i t="Copying Display Properties Files into Target Configuration" l="127#1936453" />
+        <i t="Copying Custom Rules and Adding ClaimCenter 8.0.1 Default Rules" l="127#1936469" />
+        <i t="Referencing XSD Files" l="127#1936489" />
+        <i t="Removing AdminTable Delegate from Custom Extensions" l="127#1936494" />
+        <i t="Converting sessiontimeoutsecs Security Element to Parameter" l="127#1936497" />
+        <i t="Removing Redundant Batch Server Parameter" l="127#1936503" />
+        <i t="Combining EditableReservesLV PCF Files" l="127#1936510" />
+        <i t="Renaming Account Field in policyperiod-config.xml" l="127#1936515" />
+        <i t="Updating NewPaymentInstructionsDV.pcf" l="127#1936521" />
+      </i>
+      <i t="Configuring the ClaimCenter 8.0 Upgrade Tool" l="128" />
+      <i t="Launching the ClaimCenter 8.0 Configuration Upgrade Tool" l="129">
+        <i t="Restarting the Configuration Upgrade Tool" l="129#1889774" />
+      </i>
+      <i t="ClaimCenter 8.0.1 Configuration Upgrade Tool Automated Steps" l="130">
+        <i t="Removing Template Pages" l="130#1935447" />
+        <i t="Updating PCF Files" l="130#1935455" />
+        <i t="Upgrading Work Queue Configuration" l="130#1935615" />
+        <i t="Upgrading Database Configuration" l="130#1935625" />
+        <i t="Splitting Localization.xml into Separate Files for each Locale" l="130#1935686" />
+        <i t="Splitting address-config.xml into Separate Files for each Country" l="130#1935694" />
+        <i t="Splitting zone-config.xml into Separate Files for each Country" l="130#1935702" />
+        <i t="Splitting currencies.xml into Separate Files for each Currency" l="130#1935710" />
+        <i t="Moving Country-based Field Validator Definition Files" l="130#1935715" />
+        <i t="Moving Rules Files up One Directory" l="130#1935717" />
+        <i t="Reformatting Rules for Display in Studio Rules Editor" l="130#1935719" />
+        <i t="Copying Custom Rules and Adding ClaimCenter 8.0.1 Default Rules" l="130#1935727" />
+        <i t="Renaming SOAP Web Services from XML to RWS" l="130#1935743" />
+        <i t="Renaming Plugins from XML to GWP" l="130#1935745" />
+        <i t="Renaming Display Names Files from XML to EN" l="130#1935747" />
+        <i t="Upgrading Display Keys" l="130#1935750" />
+        <i t="Adding nullok=&quot;true&quot; to Entity and Extension Foreign Key Columns" l="130#1935771" />
+        <i t="Removing deletefk Attribute from Entity and Extension Foreign Key Columns" l="130#1935776" />
+        <i t="Setting XML Namespace on Metadata Files" l="130#1935778" />
+        <i t="Upgrading Document Assistant Parameters" l="130#1935791" />
+        <i t="Separating Entities and Typelists" l="130#1935805" />
+        <i t="Upgrading aggregatelimitconfig-used.xml" l="130#1935807" />
+      </i>
+      <i t="Using the ClaimCenter 8.0.1 Upgrade Tool Interface" l="131">
+        <i t="Filters" l="131#1935165" />
+        <i t="Configuration File Tree" l="131#1935357" />
+        <i t="File Details Panel" l="131#1935359" />
+        <i t="Accepting Files that Do Not Require Merging" l="131#1935390" />
+        <i t="Merging and Accepting Files" l="131#1935400" />
+      </i>
+      <i t="Configuration Merging Guidelines" l="132" />
+      <i t="Data Model Merging Guidelines" l="133">
+        <i t="Merging Typelists – Overview" l="133#1936034" />
+        <i t="Merging Typelists – Simple Typelists" l="133#1936044" />
+        <i t="Merging Typelists – Complex Typelists" l="133#1936065" />
+        <i t="Merging Lines of Business" l="133#1936096" />
+        <i t="Merging Entity Extensions" l="133#1936100" />
+        <i t="Reviewing Custom Extensions" l="133#1936158" />
+        <i t="Reconciling the Database with Custom Extensions" l="133#1936173" />
+        <i t="Removing Obsolete Attributes" l="133#1936175" />
+        <i t="Updating Extractable Edge Foreign Keys" l="133#1936177" />
+      </i>
+      <i t="Changes to the Logging API" l="134">
+        <i t="Conceptual Changes to Logging" l="134#1937341" />
+        <i t="Instantiating Loggers" l="134#1937398" />
+        <i t="Logging Messages" l="134#1937428" />
+        <i t="Passing Loggers as Parameters" l="134#1937441" />
+      </i>
+      <i t="Merging Files Related to ContactManager Integration" l="135" />
+      <i t="Merging Contact Entities That Have Foreign Key or Array Extensions" l="136" />
+      <i t="Changes to Lines of Business" l="137" />
+      <i t="Changes to Risk Units" l="138" />
+      <i t="Description Field for Risk Units" l="139" />
+      <i t="Linking Lienholders to Location-based Risk Units" l="140" />
+      <i t="Capturing Location-based Risks Other than Buildings" l="141">
+        <i t="Updating PolicyLocation" l="141#1936884" />
+        <i t="Updated Risk Unit User Interface" l="141#1936889" />
+      </i>
+      <i t="Merging Customized EditableReservesLV PCF Files" l="142" />
+      <i t="Updating Customized Check Wizard" l="143" />
+      <i t="Changes to ClaimInfoSearchView Entity" l="144" />
+      <i t="Changes to Iterators in PCF Files" l="145" />
+      <i t="Updating Namespace on Files Loaded by GX Models" l="146" />
+      <i t="Changes to HistoryType Typelist" l="147" />
+      <i t="Adding DDL Configuration Options to database-config.xml" l="148" />
+      <i t="Merging Changes to Field Validators" l="149" />
+      <i t="Renaming PCF files According to Their Modes" l="150" />
+      <i t="Using ReserveLineInputSet in Payment and Recovery Screens" l="151" />
+      <i t="Reviewing Replacement of Fields and Roles with Service Requests" l="152" />
+      <i t="Reviewing Change to Aggregate Limits Screen" l="153" />
+      <i t="Merging compatibility-xsd.xml" l="154" />
+      <i t="Merging Display Properties" l="155" />
+      <i t="Merging Other Files" l="156" />
+      <i t="Fixing Gosu Case-Sensitivity and Equality Operator Issues" l="157" />
+      <i t="Upgrading Rules to ClaimCenter 8.0.1" l="158">
+        <i t="Claim PreUpdate Reinsurance Rules" l="158#1937134" />
+        <i t="Rules Required for Key 8.0 Features" l="158#1937175" />
+      </i>
+      <i t="Running PCF Iterator Upgrade" l="159" />
+      <i t="Installing Language Modules" l="160" />
+      <i t="Translating New Display Properties and Typecodes" l="161" />
+      <i t="Modifying PCF files, Rules and Libraries for Unused Contact Subtypes" l="162" />
+      <i t="Validating the ClaimCenter 8.0.1 Configuration" l="163">
+        <i t="Using Studio to Verify Files" l="163#1936681" />
+        <i t="Starting ClaimCenter and Resolving Errors" l="163#1936695" />
+      </i>
+      <i t="Building and Deploying ClaimCenter 8.0.1" l="164" />
+    </i>
+    <i t="Upgrading the ClaimCenter 6.0.x Database" l="165">
+      <i t="Upgrading Administration Data for Testing" l="166" />
+      <i t="Identifying Data Model Issues" l="167" />
+      <i t="Verifying Batch Process and Work Queue Completion" l="168">
+        <i t="Running Contact Auto Sync and Clearing the Work Item Table" l="168#2015845" />
+      </i>
+      <i t="Purging Data Prior to Upgrade" l="169">
+        <i t="Purging Old Messages from the Database" l="169#2010352" />
+        <i t="Purging Orphaned Policies from the Database" l="169#2010378" />
+        <i t="Purging Address Correction Records" l="169#2010383" />
+        <i t="Purging Completed Workflows and Workflow Logs" l="169#2010403" />
+        <i t="Truncating cc_TmpAggLimitRpt" l="169#2010448" />
+      </i>
+      <i t="Reassign Data for Inactive Users" l="170" />
+      <i t="Validating the Database Schema" l="171" />
+      <i t="Checking Database Consistency" l="172" />
+      <i t="Creating a Data Distribution Report" l="173" />
+      <i t="Generating Database Statistics" l="174" />
+      <i t="Creating a Database Backup" l="175" />
+      <i t="Updating Database Infrastructure" l="176" />
+      <i t="Preparing the Database for Upgrade" l="177">
+        <i t="Ensuring Adequate Free Space" l="177#2011160" />
+        <i t="Disabling Replication" l="177#2011162" />
+        <i t="Assigning Default Tablespace (Oracle only)" l="177#2011164" />
+        <i t="Using Proper Clock Settings" l="177#2011170" />
+      </i>
+      <i t="Creating Extensions to Preserve Coverage Term Fields" l="178" />
+      <i t="Enabling Migration to 64-bit IDs (SQL Server Only)" l="179" />
+      <i t="Setting Linguistic Search Collation" l="180" />
+      <i t="Using the IDatamodelUpgrade Plugin" l="181">
+        <i t="Running Custom Version Checks and Triggers" l="181#2010587" />
+        <i t="Example Version Triggers" l="181#2010924" />
+        <i t="Upgrading Archived Entities" l="181#2011014" />
+      </i>
+      <i t="Disabling the Scheduler" l="182" />
+      <i t="Suspending Message Destinations" l="183" />
+      <i t="Configuring the Database Upgrade" l="184">
+        <i t="Adjusting Commit Size for Encryption" l="184#2011191" />
+        <i t="Configuring Version Trigger Elements" l="184#2011206" />
+        <i t="Deferring Creation of Archive Indexes" l="184#2011295" />
+        <i t="Configuring the Upgrade on Oracle" l="184#2011307" />
+        <i t="Configuring the Upgrade on SQL Server" l="184#2011385" />
+        <i t="Downloading Database Upgrade Instrumentation Details" l="184#1845518" />
+      </i>
+      <i t="Starting the Server to Begin Automatic Database Upgrade" l="185">
+        <i t="Test the Database Upgrade" l="185#2011436" />
+        <i t="Integrations and Starting the Server" l="185#2011445" />
+        <i t="Understanding the Automatic Database Upgrade" l="185#2011451" />
+        <i t="Version Trigger Descriptions" l="185#2011470" />
+      </i>
+      <i t="Viewing Detailed Database Upgrade Information" l="186" />
+      <i t="Dropping Unused Columns on Oracle" l="187" />
+      <i t="Exporting Administration Data for Testing" l="188" />
+      <i t="Upgrading Phone Numbers" l="189" />
+      <i t="Final Steps After The Database Upgrade is Complete" l="190">
+        <i t="Checking that Contacts Have Unique Addresses" l="190#1940313" />
+        <i t="Completing Deferred Upgrade" l="190#1933739" />
+        <i t="Running Key Batch Processes" l="190#1897960" />
+        <i t="Backing up the Database After Upgrade" l="190#1500506" />
+      </i>
+    </i>
+    <i t="Upgrading ClaimCenter from 6.0.x for ContactManager" l="191">
+      <i t="Configuration File Changes" l="192" />
+      <i t="Manually Upgrading ClaimCenter to Integrate with ContactManager" l="193">
+        <i t="Mapping Your Contact Extensions" l="193#2250446" />
+        <i t="Working with the New Search Files" l="193#2256929" />
+      </i>
+    </i>
+    <i t="Upgrading ContactManager from 6.0.x" l="194">
+      <i t="Database Upgrade Steps in ContactManager" l="195">
+        <i t="Preserving MatchSetKey Column Data" l="195#2265284" />
+      </i>
+      <i t="Configuration File Changes" l="196" />
+      <i t="Manually Upgrading the ContactManager Configuration" l="197">
+        <i t="Mapping Your Contact Extensions" l="197#2246116" />
+        <i t="Additional Search Files" l="197#2248799" />
+        <i t="Minimum Search Criteria" l="197#2249348" />
+        <i t="Definitive and Potential Matching Files" l="197#2249367" />
+        <i t="Geocoding Updates" l="197#2249396" />
+      </i>
+    </i>
+    <i t="Upgrading Integrations and Gosu from 6.0.x" l="198">
+      <i t="Overview of Upgrading Integration Plugins and Code" l="199" />
+      <i t="Tasks Required Before Starting the Server" l="199#2211359" />
+      <i t="Tasks Required Before Deploying a Production Server" l="199#2136086" />
+      <i t="Tasks Required Before the Next Upgrade" l="199#2136692" />
+    </i>
+  </i>
+</WebWorksHelpTOC>

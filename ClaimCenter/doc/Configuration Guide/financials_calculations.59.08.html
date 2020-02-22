@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Forming Composite Custom Expressions</title>
+    <link rel="StyleSheet" href="css/financials_calculations.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Configuration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-ClaimCenter_financials.html#5011228">Guidewire ClaimCenter Financials</a> : <a class="WebWorks_Breadcrumb_Link" href="financials_calculations.59.01.html#5011228">ClaimCenter Financial Calculations</a> : Forming Composite Custom Expressions</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="5011228">Forming Composite Custom Expressions</a></h3>
+      <div class="B_-_Body"><a name="5011229">Some of the </a><span class="cv_-_computer_voice">FinancialCalculationsUtil</span> methods end in <span class="cv_-_computer_voice">Expression</span>. These methods always return a <span class="cv_-_computer_voice">FinancialsExpression</span> object. You can combine the supplied <span class="cv_-_computer_voice">FinancialsExpression</span> instances to form composite custom expressions. For example, if ClaimCenter did not supply a <span class="cv_-_computer_voice">TotalIncurredNetRecoveryReserves</span> expression, you could create such an expression in either of the following ways: </div>
+      <PRE class="CF_-_Code_First_Line"><a name="5011233">//Example 1</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011234">gw.api.financials.FinancialsCalculationUtil.getTotalIncurredNetRecoveriesExpression()</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011235">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.minus(gw.api.financials.FinancialsCalculationUtil.getOpenRecoveryReservesExpression() )</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011236">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011237">//Example 2</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011238">gw.api.financials.FinancialsCalculationUtil.getGrossTotalIncurredExpression()</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011239">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.minus(gw.api.financials.FinancialsCalculationUtil.getTotalRecoveryReservesExpression() )</a></PRE>
+      <div class="B_-_Body"><a name="5011240">In either case, the method returns a new </a><span class="cv_-_computer_voice">FinancialsExpression</span> instance that is equivalent to the <span class="cv_-_computer_voice">TotalIncurredNetRecoveryReserves</span> expression.</div>
+      <div class="B_-_Body"><a name="5011241">However, to be useful, you need to obtain a calculated value for the financial expression. To do this, you must generate an instance of a </a><span class="cv_-_computer_voice">FinancialCalculator</span> object that is backed by this custom expression. This is done with a specialized method on <span class="cv_-_computer_voice">gw.api.financials.FinancialsCalculations</span> that returns the required <span class="cv_-_computer_voice">FinancialCalculator</span> object: </div>
+      <PRE class="CF_-_Code_First_Line"><a name="5011244">gw.api.financials.FinancialsCalculations.getFinancialsCalculation(FinancialExpression)</a></PRE>
+      <div class="B_-_Body"><a name="5011245">Thus, to generate a </a><span class="cv_-_computer_voice">FinancialCalculation</span> for the example <span class="cv_-_computer_voice">FinancialExpression</span>, you would use: </div>
+      <PRE class="CF_-_Code_First_Line"><a name="5011246">uses gw.api.financials.*</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011247">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011248">var TotalIncurredNetRecoveryReserves = FinancialsCalculations</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011249">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.getFinancialsCalculation(FinancialsCalculationUtil</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011250">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.getGrossTotalIncurredExpression()</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011251">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.minus(FinancialsCalculationUtil</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="5011252">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.getOpenRecoveryReservesExpression() ) )</a></PRE>
+      <h4 class="H2_-_Heading_2"><a name="5011255">Creating Custom Financial Gosu Classes</a></h4>
+      <div class="B_-_Body"><a name="5011256">Clearly, having to repeat this long string each time that you want to make use of a custom calculation is very tedious. It is also error prone and inefficient from a performance point of view. Instead, Guidewire recommends that you create a custom Gosu utility class that contains all your custom financial calculations, which insures that they are all defined in one location. You can then reference these calculations each place that you reference Gosu code (rules, Gosu classes and enhancements, and PCF files). </a></div>
+      <div class="B_-_Body"><a name="5011257">For example, to construct a custom version of </a><span class="cv_-_computer_voice">TotalIncurredGross</span>, you can do something similar to the following:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="5011258">package util.financials;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011259">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011260">uses gw.api.financials.FinancialsCalculation</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011261">uses gw.api.financials.FinancialsCalculationUtil</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011262">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011263">@Export</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011264">class CustomCalcs {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011265">&nbsp;&nbsp;construct() {  }</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011266">&nbsp;&nbsp;private static var calcMyTotalIncurredNet = </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011267">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FinancialsCalculationUtil.getFinancialsCalculation(FinancialsCalculationUtil</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011268">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.getGrossTotalIncurredExpression()</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011269">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.minus( FinancialsCalculationUtil.getTotalRecoveryReservesExpression() ))</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011270">  </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011271">&nbsp;&nbsp;public static property get MyTotalIncurredNet() : FinancialsCalculation {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011272">&nbsp;&nbsp;&nbsp;&nbsp;return calcMyTotalIncurredNet</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011273">&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="5011274">}</a></PRE>
+      <div class="B_-_Body"><a name="5011275">This Gosu class defines the custom calculation as a static property. As such, you need to access the property on the class itself, not an instance of the class. In other words, you do not need to construct an instance of the class using the </a><span class="cv_-_computer_voice">new</span> operator to access the property. In fact, any attempt to do so is a mistake.</div>
+      <div class="B_-_Body"><a name="5011276">You reference the example class by using the following syntax: </a></div>
+      <div class="CS_-_Code_Single_Line"><a name="5011277">var amt = util.financials.CustomCalcs.MyTotalIncurredNet.getAmount(claim)</a></div>
+      <div class="B_-_Body"><a name="5011278">The base configuration sample rules show an example usage of the Guidewire-provided </a><span class="cv_-_computer_voice">util.financials.CustomCalcs</span> class in the Transaction Approval rule set. Since <span class="cv_-_computer_voice">MyTotalIncurredNet</span> is merely an instance of a <span class="cv_-_computer_voice">FinancialCalculator</span> object, the <span class="cv_-_computer_voice">getAmount</span> method works as described previously for the predefined calculations. Guidewire disables the sample rule that uses the <span class="cv_-_computer_voice">CustomCalcs</span> class in the base configuration.</div>
+      <h6 class="HS_-_Head_Sub"><a name="5011280">Condition</a></h6>
+      <div class="CS_-_Code_Single_Line"><a name="5011281">TransactionSet.Subtype == "CheckSet" </a></div>
+      <h6 class="HS_-_Head_Sub"><a name="5011282">Actions</a></h6>
+      <PRE class="CF_-_Code_First_Line"><a name="5011283">var totalIncurredAmt = util.financials.CustomCalcs.MyTotalIncurredNet.getAmount(transactionSet.Claim)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011284">var exceedAmount = gw.api.financials.CurrencyAmount.getStrict(20000, totalIncurredAmt.Currency)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011285">if (totalIncurredAmt &gt; exceedAmount) { transactionSet.requireApproval(</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011286">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;displaykey.Rules.TransactionApproval.LimitExceeded.TotalIncurredOnClaimExceedsN(</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="5011287">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gw.api.util.CurrencyUtil.renderAsCurrency(exceedAmount)))</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="5011290">}</a></PRE>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

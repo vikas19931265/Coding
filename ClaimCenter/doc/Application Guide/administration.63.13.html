@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Managing Messages Queues</title>
+    <link rel="StyleSheet" href="css/administration.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Application&nbsp;Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-administering.html#4440282">ClaimCenter Administration</a> : <a class="WebWorks_Breadcrumb_Link" href="administration.63.01.html#4440282">Administering ClaimCenter</a> : Managing Messages Queues</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="4440282">Managing Messages Queues</a></h3>
+      <div class="B_-_Body"><a name="4766723">This topic provides a brief overview of ClaimCenter messaging. For detailed descriptions, see:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('integration', 'eventsmessaging.27.01.html#4197044', '');" title="Messaging and Events" name="4782090">“Messaging and Events” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('integration', 'eventsmessaging.27.01.html#4197044', '');" title="Messaging and Events">Integration Guide</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('admin', 'mngservers.06.06.html#1731271', '');" title="Monitoring and Managing Event Messages" name="4782096">“Monitoring and Managing Event Messages” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('admin', 'mngservers.06.06.html#1731271', '');" title="Monitoring and Managing Event Messages">System Administration Guide</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4440286">After certain events occur, ClaimCenter can send a message to an external system to notify it of the event. Every message is related to a specific claim and has a particular external destination. Event messages could be sent to an email server, to the Metro Bureau, to a payment system, or to ContactManager to synchronize a contact. For example, when a payment is ready to be made on a claim, ClaimCenter sends a message to your accounts payable system to have it issue a check.</a></div>
+      <div class="B_-_Body"><a name="4438805">After ClaimCenter sends a message, the message is said to be </a><span class="e_-_emphasis">pending</span> or <span class="e_-_emphasis">in flight</span> until the external system acknowledges receipt of the message. Only one message for a given claim and destination can be in flight at one time. Messages are ordered as first-in-first-out because one message can depend on reception of another message. This ordering is called <span class="e_-_emphasis">safe-ordered</span> messaging. Messages that relate to more than one claim are called <span class="e_-_emphasis">non-safe-ordered</span> messages. They can be sent at any time and can enter the FIFO queue in any position. The distinction between safe- and non-safe-ordered messages is important when you try to re-send a message that has failed because of an error.</div>
+      <div class="B_-_Body"><a name="4438621">To monitor and manage the message queues that ClaimCenter uses to send messages to these systems, navigate to </a><span class="ui_-_UI_element">Administration</span> tab<span class="ui_-_UI_element"> → Monitoring → Message Queues</span>. You can manage re-sending failed messages and suspending, resuming, and restarting the messaging system.</div>
+      <h6 class="HS_-_Head_Sub"><a name="4840719">See also</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('app', 'administration.63.03.html#4433586', '');" title="Administration Tab" name="4840731">“Administration Tab”</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4438824">Monitoring Message Queues</a></h4>
+      <div class="B_-_Body"><a name="4854011">To monitor message queues, navigate to </a><span class="ui_-_UI_element">Administration</span> tab<span class="ui_-_UI_element"> → Monitoring → Message Queues</span>. The <span class="ui_-_UI_element">Message Queues</span> screen can show several summary tables of messages:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4854012">The summary table lists all external destinations for ClaimCenter messages and the ID and status of each message queue. It also shows the traffic statistics—the number of failed, retryable error, in flight, unsent (queued), and batched messages, and messages awaiting retry.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4438980">You can click a destination name to open the </a><span class="ui_-_UI_element">Destination</span> screen and see similar statistics for a single destination. This screen shows statistics for messages relating to each claim, as well as all non-ordered messages to that destination. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="4854023">Use the filter to search for claims with failed messages, unfinished messages, or messages needing retry. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="4854024">If the non-safe-ordered messages link is listed, you can click it to view the list of non-safe-ordered messages by claim. The </a><span class="ui_-_UI_element">Non-safe-ordered messages</span> screen does not show any safe-ordered messages.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4438861">Suspending and Resuming Messaging</a></h4>
+      <div class="B_-_Body"><a name="4438827">If you know that a message destination is not available, you can temporarily suspend sending messages to that destination. Messages are put in a queue during the time that their destination is suspended. You can later resume sending messages to the destination, and the queued messages are sent in the proper order. You can:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4438895">Suspend messaging to a specific destination</a></span> – Select the check box for the destination in the <span class="ui_-_UI_element">Message Queues</span> screen, and then click <span class="ui_-_UI_element">Suspend</span>. The <span class="ui_-_UI_element">Status</span> for that destination changes to <span class="ui_-_UI_element">Suspended</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4438905">Resume messaging to a single destination</a></span> – Select the check box for the destination in the <span class="ui_-_UI_element">Message Queues</span> screen, and then click <span class="ui_-_UI_element">Resume</span>. The <span class="ui_-_UI_element">Status</span> for that destination changes to <span class="ui_-_UI_element">Started</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4438911">Restart messaging to all destinations</a></span> – Click the <span class="ui_-_UI_element">Restart Messaging Engine</span> button to resume sending messages to all destinations.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4439021">Skip a message</a></span> – Click the destination name for the message in the <span class="ui_-_UI_element">Message Queues</span> screen to open the <span class="ui_-_UI_element">Destination</span> screen. If you know that a message cannot reach its destination or is no longer relevant, you can skip it by selecting it and clicking <span class="ui_-_UI_element">Skip first</span>. ClaimCenter stops trying to send it to the destination. Once you skip a message, you cannot retry it. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4439061">Skip all messages</a></span> – Click the destination name for the messages in the <span class="ui_-_UI_element">Message Queues</span> screen to open the <span class="ui_-_UI_element">Destination</span> screen. Choose all messages by selecting the check box in the table header and then click <span class="ui_-_UI_element">Skip</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4439010">Retrying Messages</a></h4>
+      <div class="B_-_Body"><a name="4439055">In any message destination screen, clicking the check box to select a message from a single destination activates the </a><span class="ui_-_UI_element">Retry</span> button. Click it to resend the message. To resend all retryable messages to a single destination, select them all before clicking <span class="ui_-_UI_element">Retry</span>.</div>
+      <div class="B_-_Body"><a name="4439073">ClaimCenter distinguishes between retryable and failed messages. The </a><span class="ui_-_UI_element">Retry</span> button is not available for a failed message.</div>
+      <h4 class="H2_-_Heading_2"><a name="4439013">Synchronizing Contacts with ContactManager</a></h4>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="4439042">This feature works only if you have integrated ContactManager with ClaimCenter. See </a><a href="javascript:WWHClickedPopup('contact', 'integrate.06.1.html#2078890', '');" title="Integrating ContactManager with Guidewire Core Applications">“Integrating ContactManager with Guidewire Core Applications” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('contact', 'integrate.06.1.html#2078890', '');" title="Integrating ContactManager with Guidewire Core Applications">Contact Management Guide</a></span>.</div>
+      <div class="B_-_Body"><a name="4766680">If you choose the </a><span class="ui_-_UI_element">Contact Auto Sync Failure</span> destination and select one contact, a <span class="ui_-_UI_element">Sync</span> button appears. Use it to copy all changes and additions made on that ClaimCenter contact to ContactManager. If you select the check box above all the new or changed ClaimCenter contacts, clicking the <span class="ui_-_UI_element">Sync</span> button updates all contacts in ContactManager.</div>
+      <h6 class="HS_-_Head_Sub"><a name="4782168">See also</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'syncing.12.1.html#1821757', '');" title="Linking and Synchronizing Contacts" name="4782178">“Linking and Synchronizing Contacts” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('contact', 'syncing.12.1.html#1821757', '');" title="Linking and Synchronizing Contacts">Contact Management Guide</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

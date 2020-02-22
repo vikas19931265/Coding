@@ -1,0 +1,5 @@
+com.guidewire.pl.system.rule.rule
+gw.lang.SystemProperties
+com.guidewire.commons.jetty.jetty.log4j
+com.guidewire.pl.system.scheduler.quartz
+log4j

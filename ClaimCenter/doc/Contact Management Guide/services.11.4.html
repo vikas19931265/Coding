@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Vendor Services Data Model</title>
+    <link rel="StyleSheet" href="css/services.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>Guidewire Contact Management Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="services.11.1.html#2814663">Vendor Services</a> : Vendor Services Data Model</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="2814663">Vendor Services Data Model</a></h3>
+      <div class="B_-_Body"><a name="2814664">There are two aspects to the Services data model in ContactManager:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2800625">The tree-structured Services directory, which is composed of </a><span class="cv_-_computer_voice">SpecialistService</span> entities, each of which can have child and parent <span class="cv_-_computer_voice">SpecialistService</span> entities. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2800638">The data model for connecting the </a><span class="cv_-_computer_voice">ABContact</span> entity to <span class="cv_-_computer_voice">SpecialistService</span> entities.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2818878">This topic includes:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'services.11.4.html#2800739', '');" title="Vendor Services Data Model" name="2818893">“Vendor Services Directory Data Model”</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'services.11.4.html#2813208', '');" title="Vendor Services Data Model" name="2818902">“ABContact and SpecialistService Entity Relationships”</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="2800739">Vendor Services Directory Data Model</a></h4>
+      <div class="B_-_Body"><a name="2800774">The data model for the vendor services directory consists of a hierarchy of parent services, or </a><span class="e_-_emphasis">categories</span>, and child services. Each node of the directory is an instance of a <span class="cv_-_computer_voice">SpecialistService</span> entity. This data model supports a tree-structured directory that is used in ContactManager screens in which you select services to add to or remove from a vendor contact. In those screens, the services you can add and remove are terminal nodes, also known as <span class="e_-_emphasis">leaf nodes</span>, that are not parents of other nodes.</div>
+      <div class="B_-_Body"><a name="2817720">Additionally, the vendor services directory enables ContactManager to show the category, subcategory, and service for each service that has been added to a contact.</a></div>
+      <div class="B_-_Body"><a name="2813885">In the base configuration, the Services Directory tree has three levels as shown in the following figure: </a></div>
+      <div class="F_-_Figure"><a name="2805087"><img class="Default" src="images/services.11.4.1.png" style="display: inline; float: none; left: 0.0; top: 0.0" alt="" /></a></div>
+      <div class="B_-_Body"><a name="2819440">A leaf node, a </a><span class="e_-_emphasis">Service</span> in the figure, can appear at any level. </div>
+      <div class="B_-_Body"><a name="2822439">A node without a parent can be useful as a general service category, such as the Service Category node in the figure. It becomes a top level node in the tree.</a></div>
+      <div class="B_-_Body"><a name="2821013">A single service or category can have only one immediate parent. If you want a service or category to be listed in the tree under two different parents, you must create it twice and give each instance a separate parent.</a></div>
+      <div class="B_-_Body"><a name="2819441">You can create a tree with more than three levels, but you also have to configure PCF files to support the extra levels.</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2805519">Specialist Services Directory Example</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2813916">For example, you might want to categorize some services at the top level as Auto and Property. The Auto category in this example, has one subcategory, Inspect/Repair, with two services, Audio Equipment and Auto Body. The Property category has two subcategories, Inspection and Construction Services. The Inspection subcategory has one child, the service Independent Appraisal. The Construction Services subcategory has two children, General Contractor and Carpentry.</a></div>
+      <div class="B_-_Body"><a name="2802390">The following table shows this set of categories and services. The Services column shows leaf nodes, services that can be assigned to a contact.</a></div>
+      <div class="T_-_Table"><a name="2802428">&nbsp;</a></div>
+      <table class="BulletListDoubleCol" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2802393">Category</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2802395">Subcategory</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2802397">Services</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2802399">Auto</a></div>
+          </td>
+          <td style="border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2802401">Inspect/Repair</a></div>
+          </td>
+          <td style="border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2802403">Audio Equipment</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2802405">&nbsp;</a></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2802407">&nbsp;</a></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2802409">Auto Body</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2802411">Property</a></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2802413">Inspection</a></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2802415">Independent appraisal</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2802417">&nbsp;</a></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2802419">Construction services</a></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2802421">General contractor</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2802423">&nbsp;</a></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2802425">&nbsp;</a></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2802427">Carpentry</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="B_-_Body"><a name="2802126">When you import the service tree XML file, ContactManager creates </a><span class="cv_-_computer_voice">SpecialistService</span> entities based on the definitions in the XML file and sets properties like parent, name, description, and public ID. </div>
+      <div class="NI_-_Note_Important">
+        <span class="n_-_note">IMPORTANT   </span><a name="2803834">You must import the same service tree XML file in both ContactManager and ClaimCenter so the service definitions match exactly. The base configuration provides a </a><span class="cv_-_computer_voice">vendorservicetree.xml</span> file with a set of services predefined. You can define your own services by using this file as an example, and then import it into ContactManager and ClaimCenter.</div>
+      <div class="B_-_Body"><a name="2803831">The XML for the previous example is as follows:</a></div>
+      <PRE class="CF_-_Code_First_Line"><a name="2803412">&lt;?xml version="1.0"?&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803413">&lt;import&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803414">&lt;SpecialistService public-id="svc:aut"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803415">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803416">    &lt;Code&gt;auto&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803417">    &lt;Description&gt;Auto&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803418">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803419">    &lt;Name&gt;Auto&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803420">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803421">    &lt;Parent/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803422">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803423">&lt;SpecialistService public-id="svc:aut_ins"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803424">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803425">    &lt;Code&gt;autoinsprepair&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803426">    &lt;Description&gt;Auto - Inspect / Repair&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803427">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803428">    &lt;Name&gt;Inspect / Repair&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803429">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803430">    &lt;Parent public-id="svc:aut"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803431">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803432">&lt;SpecialistService public-id="svc:aut_ins_aud"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803433">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803434">    &lt;Code&gt;autoinsprepairaudio&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803435">    &lt;Description&gt;Auto - Inspect / Repair - Audio equipment&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803436">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803437">    &lt;Name&gt;Audio Equipment&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803438">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803439">    &lt;Parent public-id="svc:aut_ins"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803440">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803441">&lt;SpecialistService public-id="svc:aut_ins_bod"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803442">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803443">    &lt;Code&gt;autoinsprepairbody&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803444">    &lt;Description&gt;Auto - Inspect / Repair - Auto body&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803445">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803446">    &lt;Name&gt;Auto body&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803447">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803448">    &lt;Parent public-id="svc:aut_ins"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803449">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803450">&lt;SpecialistService public-id="svc:pro"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803451">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803452">    &lt;Code&gt;prop&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803453">    &lt;Description&gt;Property&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803454">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803455">    &lt;Name&gt;Property&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803456">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803457">    &lt;Parent/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803458">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803459">&lt;SpecialistService public-id="svc:pro_ins"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803460">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803461">    &lt;Code&gt;propinspect&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803462">    &lt;Description&gt;Property - Inspection&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803463">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803464">    &lt;Name&gt;Inspection&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803465">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803466">    &lt;Parent public-id="svc:pro"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803467">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803468">&lt;SpecialistService public-id="svc:pro_ins_ind"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803469">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803470">    &lt;Code&gt;propinspectindependent&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803471">    &lt;Description&gt;Property - Inspection - Independent appraisal&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803472">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803473">    &lt;Name&gt;Independent appraisal&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803474">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803475">    &lt;Parent public-id="svc:pro_ins"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803476">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803477">&lt;SpecialistService public-id="svc:pro_con"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803478">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803479">    &lt;Code&gt;propconstrserv&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803480">    &lt;Description&gt;Property - Construction services&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803481">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803482">    &lt;Name&gt;Construction services&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803483">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803484">    &lt;Parent public-id="svc:pro"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803485">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803486">&lt;SpecialistService public-id="svc:pro_con_gen"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803487">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803488">    &lt;Code&gt;propconstrservgencontractor&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803489">    &lt;Description&gt;Property - Construction services - General contractor&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803490">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803491">    &lt;Name&gt;General contractor&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803492">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803493">    &lt;Parent public-id="svc:pro_con"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803494">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803495">&lt;SpecialistService public-id="svc:pro_con_car"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803496">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803497">    &lt;Code&gt;propconstrservcarpentry&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803498">    &lt;Description&gt;Property - Construction services - Carpentry&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803499">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803500">    &lt;Name&gt;Carpentry&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803501">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803502">    &lt;Parent public-id="svc:pro_con"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2803503">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2803504">&lt;/import&gt;</a></PRE>
+      <div class="B_-_Body"><a name="2819510">This XML creates a </a><span class="cv_-_computer_voice">SpecialistService</span> instance for each <span class="cv_-_computer_voice">&lt;SpecialistService&gt;</span> XML entry. Each entity definition has a public ID, a code, a name, a description, and, if the service has a parent, a pointer to the parent. The following figure shows the entity instances that would be created in ContactManager for the Auto portion of the XML in the previous example.</div>
+      <div class="F_-_Figure"><a name="2819511"><img class="Default" src="images/services.11.4.2.png" style="display: inline; float: none; left: 0.0; top: 0.0" alt="" /></a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><span class="cvh_-_computer_voice_in_heading"><a name="2819512">SpecialistService</a></span> XML Syntax</h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2805610">This topic defines the XML syntax for a </a><span class="cv_-_computer_voice">SpecialistService</span> entity. You can specify all the persistent <span class="cv_-_computer_voice">SpecialistService</span> fields in XML. There are also virtual properties, like <span class="cv_-_computer_voice">Leaf</span>, that are determined after ContactManager constructs the entire tree. </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="2810252">You define vendor services in an XML file and import the file into ContactManager and ClaimCenter. For a sample file, you can open the </a><span class="cv_-_computer_voice">vendorservicetree.xml</span> file. See <a href="javascript:WWHClickedPopup('contact', 'services.11.4.html#2805519', '');" title="Vendor Services Data Model">“Specialist Services Directory Example”</a>.</div>
+      <div class="B_-_Body"><a name="2809681">The following sample code shows the beginning of the file and the definition of an Auto category, to help you identify the elements described in this topic.</a></div>
+      <PRE class="CF_-_Code_First_Line"><a name="2809885">&lt;?xml version="1.0"?&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809886">&lt;import&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809887">&lt;SpecialistService public-id="svc:aut"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809888">&nbsp;&nbsp;&lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809889">&nbsp;&nbsp;&lt;Code&gt;auto&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809890">&nbsp;&nbsp;&lt;Description&gt;Auto&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809891">&nbsp;&nbsp;&lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809892">&nbsp;&nbsp;&lt;Name&gt;Auto&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809893">&nbsp;&nbsp;&lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809894">&nbsp;&nbsp;&lt;Parent/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809895">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809908">...</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2809913">&lt;/import&gt;</a></PRE>
+      <h6 class="HS_-_Head_Sub" style="color: #000000; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="2806494">&lt;import&gt;</a></span></h6>
+      <div class="B_-_Body"><a name="2806512">Specifies that the enclosed XML uses the administrative data import XSD files </a><span class="cv_-_computer_voice">ab_import.xsd</span> and <span class="cv_-_computer_voice">ab_entities.xsd</span>. </div>
+      <div class="B_-_Body"><a name="2821725">When you export this file from ContactManager, the Administrative Export feature populates the following two attributes:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2821513">xmlns</a></span> – The namespace for this XML file. The default values is <span class="cv_-_computer_voice">"http://guidewire.com/ab/exim/import"</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2821514">version</a></span> – A version assigned to this XML file. For example, <span class="cv_-_computer_voice">"p5.62.a10.225.26"</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2821841">Both attributes are optional. It is not necessary to maintain these attributes in your files.</a></div>
+      <div class="B_-_Body"><a name="2821842">If you want to see the XSD files, you can generate them as follows:</a></div>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="2821843">At a command prompt open in the </a><span class="cv_-_computer_voice">ContactManager</span>/<span class="cv_-_computer_voice">bin</span> directory, enter the following command:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="CS_-_Code_Single_Line"><a name="2806893">gwab regen-xsd</a></div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2806895">ContactManager generates the XSD files in the following directory</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="CS_-_Code_Single_Line"><a name="2806611">ContactManager/build/xsd</a></div>
+      <h6 class="HS_-_Head_Sub" style="color: #000000; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="2807076">&lt;SpecialistService&gt;</a></span></h6>
+      <div class="B_-_Body"><a name="2807077">Specifies the name of the entity, </a><span class="cv_-_computer_voice">SpecialistService</span>.</div>
+      <div class="B_-_Body"><a name="2807195">This element takes the attribute </a><span class="cv_-_computer_voice">public-id</span>. In the <span class="cv_-_computer_voice">SpecialistService</span> entity, the value of the <span class="cv_-_computer_voice">public-id</span> attribute becomes the value of the <span class="cv_-_computer_voice">PublicID</span> field.</div>
+      <h6 class="HS_-_Head_Sub"><a name="2799183">Elements of </a><span class="cvh_-_computer_voice_in_heading">&lt;SpecialistService&gt;</span></h6>
+      <div class="B_-_Body"><a name="2808267">The following table describes the elements of the </a><span class="cv_-_computer_voice">&lt;SpecialistService&gt;</span> XML element.</div>
+      <div class="T_-_Table"><a name="2808390">&nbsp;</a></div>
+      <table class="withHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2808337">XML Element</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><span class="cvh_-_computer_voice_in_heading"><a name="2808339">SpecialistService</a></span> Field</div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2808341">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2808343">Active</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2808345">Active</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2808347">Indicates if the service is available to be used in new service requests. Setting this element to </a><span class="cvt_-_computer_voice_table">false</span> is a way to make the service unavailable in the user interface if you no longer use it. You cannot delete a service from the database without dropping the database.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2808349">Code</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2808351">Code</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2808353">A unique string identifying the service. Used by ContactManager code to reference the service instance.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2808355">Description</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2808357">Description</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2808359">Text describing the service.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2808361">Description_L10N_ARRAY</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2808363">Description</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2808365">Use this element to provide the description in one or more specified languages. See </a><a href="javascript:WWHClickedPopup('contact', 'services.11.4.html#2808955', '');" title="Vendor Services Data Model">“Specifying Localized Languages for a SpecialistService Instance”</a>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2808367">Name</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2808369">Name</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2808371">The display name of the service, used in the service tree in contact editing screens and as the name of a service for a contact in a contact’s </a><span class="ui_-_UI_element">Services</span> card.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2808488">Name_L10N_ARRAY</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2808490">Name</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2808492">Use this element to provide the element name in one or more specified languages. See </a><a href="javascript:WWHClickedPopup('contact', 'services.11.4.html#2808955', '');" title="Vendor Services Data Model">“Specifying Localized Languages for a SpecialistService Instance”</a>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2808379">Parent</a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2808381">Parent</a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2808383">The parent </a><span class="cvt_-_computer_voice_table">SpecialistService</span> for this entity instance. If the XML tag is defined as empty, <span class="cvt_-_computer_voice_table">&lt;Parent/&gt;</span>, the Parent field is <span class="cvt_-_computer_voice_table">null</span>, and the service is a top-level category or service in the Services Directory.</div>
+          </td>
+        </tr>
+      </table>
+      <h6 class="HS_-_Head_Sub"><a name="2808955">Specifying Localized Languages for a </a><span class="cvh_-_computer_voice_in_heading">SpecialistService</span> Instance</h6>
+      <div class="B_-_Body"><a name="2809063">You can use </a><span class="cv_-_computer_voice">&lt;Language&gt;</span> elements with a <span class="cv_-_computer_voice">SpecialistService</span> entity if you require that the service have a different name or description depending on the user's preferred language. </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="2811920">You do not provide a language for the </a><span class="cv_-_computer_voice">&lt;Code&gt;</span> element because it is used only in code and is not visible to the ContactManager user.</div>
+      <div class="B_-_Body"><a name="2810722">The following XML definition for the Auto category provides Peruvian Spanish and German alternatives for the </a><span class="cv_-_computer_voice">Name</span> and <span class="cv_-_computer_voice">Description</span> fields.</div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="2822969">Before importing this file, you might have to open Guidewire Studio and add the typecodes </a><span class="cv_-_computer_voice">de_DE</span> and <span class="cv_-_computer_voice">es_PE</span> to the <span class="cv_-_computer_voice">LanguageType</span> typelist. See <a href="javascript:WWHClickedPopup('global', 'understanding.04.3.html#2305323', '');" title="User Selection of Language and Regional Formats">“User Selection of Language and Regional Formats” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('global', 'understanding.04.3.html#2305323', '');" title="User Selection of Language and Regional Formats">Globalization Guide</a></span>. See also <a href="javascript:WWHClickedPopup('global', 'language_packs.06.02.html#2331442', '');" title="Understanding Display Languages">“Understanding Display Languages” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('global', 'language_packs.06.02.html#2331442', '');" title="Understanding Display Languages">Globalization Guide</a></span>.</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2808956">&lt;SpecialistService public-id="svc:aut"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2822618">&nbsp;&nbsp;&lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2822619">&nbsp;&nbsp;&lt;Code&gt;auto&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2808958">&nbsp;&nbsp;&lt;Description&gt;Auto&lt;/Description&gt; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809408">&nbsp;&nbsp;&lt;Description_L10N_ARRAY&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809409">&nbsp;&nbsp;&nbsp;&nbsp;&lt;SpecialistService_Description_L10N public-id="svc:autd1"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809410">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Language&gt;es_PE&lt;/Language&gt; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809411">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Owner public-id="svc:aut"/&gt; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809412">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Value&gt;Vehículo&lt;/Value&gt; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809413">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/SpecialistService_Description_L10N&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2811599">&nbsp;&nbsp;&nbsp;&nbsp;&lt;SpecialistService_Description_L10N public-id="svc:autd2"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2811600">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Language&gt;de_DE&lt;/Language&gt; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2811839">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Owner public-id="svc:aut"/&gt; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2811840">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Value&gt;Kraftfahrt&lt;/Value&gt; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2811841">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/SpecialistService_Description_L10N&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2811604">&nbsp;&nbsp;&lt;/Description_L10N_ARRAY&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2808959">&nbsp;&nbsp;&lt;Name&gt;Auto&lt;/Name&gt; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2809549">&nbsp;&nbsp;&lt;Name_L10N_ARRAY&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2808961">&nbsp;&nbsp;&nbsp;&nbsp;&lt;SpecialistService_Name_L10N public-id="svc:autn1"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2808962">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Language&gt;es_PE&lt;/Language&gt; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2808963">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Owner public-id="svc:aut" /&gt; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2808964">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Value&gt;Vehículo&lt;/Value&gt; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2808965">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/SpecialistService_Name_L10N&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2811691">&nbsp;&nbsp;&nbsp;&nbsp;&lt;SpecialistService_Name_L10N public-id="svc:autn2"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2811692">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Language&gt;de_DE&lt;/Language&gt; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2811693">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Owner public-id="svc:aut" /&gt; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2811694">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Value&gt;Kraftfahrt&lt;/Value&gt; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2811695">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/SpecialistService_Name_L10N&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2808966">&nbsp;&nbsp;&lt;/Name_L10N_ARRAY&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2822631">&nbsp;&nbsp;&lt;Parent/&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2810818">&lt;/SpecialistService&gt;</a></PRE>
+      <div class="B_-_Body"><a name="2813207">The </a><span class="cv_-_computer_voice">public-id</span> values must be unique for each instance of an entity type, including any existing entities of that type in the application. See <a href="javascript:WWHClickedPopup('integration', 'overview.04.8.html#2193723', '');" title="Public IDs and Integration Code">“Public IDs and Integration Code” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('integration', 'overview.04.8.html#2193723', '');" title="Public IDs and Integration Code">Integration Guide</a></span>.</div>
+      <div class="B_-_Body"><a name="2822909">Three types of entities defined in the XML code are </a><span class="cv_-_computer_voice">SpecialistService</span>, <span class="cv_-_computer_voice">SpecialistService_Description_L10N</span>, and <span class="cv_-_computer_voice">SpecialistService_Name_L10N</span>, each of which has instances with their own sets of unique <span class="cv_-_computer_voice">public-id</span> values.</div>
+      <div class="B_-_Body"><a name="2822912">Each L10N instance sets its </a><span class="cv_-_computer_voice">Owner</span> element to <span class="cv_-_computer_voice">svc:aut</span> to indicate that it is connected to the Auto <span class="cv_-_computer_voice">SpecialistService</span> instance.</div>
+      <h4 class="H2_-_Heading_2"><span class="cvh_-_computer_voice_in_heading"><a name="2813208">ABContact</a></span> and <span class="cvh_-_computer_voice_in_heading">SpecialistService</span> Entity Relationships</h4>
+      <div class="B_-_Body"><a name="2813209">ContactManager can link an array of specialist services to an </a><span class="cv_-_computer_voice">ABContact</span>. As described previously, a contact must have a Vendor tag for you to be able to add a service to it in the contact editing screen. After you add services, the contact references the services as an array, as shown in the following figure.</div>
+      <div class="F_-_Figure"><a name="2811938"><img class="Default" src="images/services.11.4.3.png" style="display: inline; float: none; left: 0.0; top: 0.0" alt="" /></a></div>
+      <h6 class="HS_-_Head_Sub"><a name="2810848">See also</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'extending.09.2.html#2868315', '');" title="Overview of Contact Entities" name="2812020">“ABContact Data Model”</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

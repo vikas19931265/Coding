@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Entity
+  name="User">
+  <Columns>
+    <DisplayNameColumn
+      beanPath="User.Contact"
+      displayName="true"
+      name="Contact"
+      sortOrder="0"/>
+    <Column
+      beanPath="User.VacationStatus"
+      name="VacationStatus"/>
+  </Columns>
+  <DisplayName><![CDATA[
+  if (VacationStatus == "atwork")
+	return Contact
+  else
+    return Contact + " ( Update this with Vacation Status using the DisplayName + )"]]></DisplayName>
+</Entity>

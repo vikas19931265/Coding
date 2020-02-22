@@ -1,0 +1,1479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Difference Display Objects</title>
+    <link rel="StyleSheet" href="css/cc-pc-integration.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Integration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-policycontacts.html#2722222">Policy and Contact Integrations</a> : <a class="WebWorks_Breadcrumb_Link" href="cc-pc-integration.38.01.html#2722222">Claim and Policy Integration</a> : <a class="WebWorks_Breadcrumb_Link" href="cc-pc-integration.38.14.html#2722222">Policy Refresh Policy Comparison Display</a> : Difference Display Objects</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h4 class="H2B_-_Heading_2_Break"><a name="2722222">Difference Display Objects</a></h4>
+      <div class="B_-_Body"><a name="2722223">At a programming level, the main mechanism for configuring both how ClaimCenter displays differences on the policy refresh Policy Comparison screen is the </a><span class="cv_-_computer_voice">DiffDisplay</span> interface. Each entity type has a corresponding object that implements <span class="cv_-_computer_voice">DiffDisplay</span> to display differences for objects of that type. Objects that implement this interface are called <span class="e_-_emphasis">difference display objects</span> or simply <span class="cv_-_computer_voice">DiffDisplay</span> objects.</div>
+      <div class="B_-_Body"><a name="2722224">Difference display objects are also the mechanism for generating warnings, errors, or informational messages as a result of any differences. See </a><a href="javascript:WWHClickedPopup('integration', 'cc-pc-integration.38.15.html#2722343', '');" title="Difference Display Objects">“Policy Refresh Errors, Warnings, and Informational Messages”</a>. Any errors actually block policy refresh from proceeding.</div>
+      <div class="B_-_Body"><a name="2722228">There are different types of </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> classes that display entity-level information for each type of entity in the policy graph, and a single <span class="cv_-_computer_voice">PropertyDiffDisplay</span> class. The following summarizes the differences:</div>
+      <div class="T_-_Table"><a name="2722245">&nbsp;</a></div>
+      <table class="withHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2722231">Class</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2722233">Purpose</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="pst_-_parameter_in_code_snippets_table"><a name="2722235">entity</a></span><span class="cvt_-_computer_voice_table">DiffDisplay</span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722237">Each </a><span class="e_-_emphasis">entity difference display class</span> (an object with name <span class="pst_-_parameter_in_code_snippets_table">entity</span><span class="cvt_-_computer_voice_table">DiffDisplay</span>) defines how to display difference information for that entity type as well as what refresh messages to display, if any. Every <span class="pst_-_parameter_in_code_snippets_table">entity</span><span class="cvt_-_computer_voice_table">DiffDisplay</span> class extends <span class="cvt_-_computer_voice_table">EntityDiffDisplayBase&lt;T&gt;</span>.</div>
+            <div class="TT_-_Table_Text"><a name="2722238">For any entity type that appears in the policy graph but for which there is no specific </a><span class="pc_-_parameter_in_code">entity</span><span class="cvt_-_computer_voice_table">DiffDisplay</span> class, ClaimCenter uses the entity difference display base class called <span class="cvt_-_computer_voice_table">EntityDiffDisplayBase</span>. In practice, for the defaults ClaimCenter relies on <span class="cvt_-_computer_voice_table">KeyableBeanDiffDisplay</span>, which extends <span class="cvt_-_computer_voice_table">EntityDiffDisplayBase</span>.</div>
+            <div class="TT_-_Table_Text"><a name="2722239">In the default configuration, ClaimCenter defines custom difference display objects for the following entity types: </a><span class="cvt_-_computer_voice_table">Policy</span>, <span class="cvt_-_computer_voice_table">RUCoverage</span>, <span class="cvt_-_computer_voice_table">PolicyCoverage</span>, <span class="cvt_-_computer_voice_table">ClassCode</span>, and <span class="cvt_-_computer_voice_table">PropertyItem</span>. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2722241">PropertyDiffDisplay</a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722243">The property difference display class (</a><span class="cvt_-_computer_voice_table">PropertyDiffDisplay</span>) displays property-level information for all properties. This class identifies how to display difference information for properties, regardless of the entity to which the property belongs. There is only one class with this name. Unlike the naming pattern of entity difference display classes, property difference display objects are not multiple variants of the name for each entity type or property name</div>
+            <div class="TT_-_Table_Text"><span class="s_-_strong"><a name="2722244">Note:</a></span> The class <span class="cvt_-_computer_voice_table">gw.plugin.policy.refresh.ui.PropertyDiffDisplay</span> class is an internal Java class that you cannot modify. </div>
+          </td>
+        </tr>
+      </table>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2722246">Adding Difference Display Objects (or Modifying Mappings)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h6 class="HS_-_Head_Sub"><a name="2722247">To configure how ClaimCenter displays an entity</a></h6>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="2722248">If an </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> class exists for that entity, then modify that existing <span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> class.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2722249">If no </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> class exists for that entity, then do both of the following:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LS2A_-_List_Start_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS2A_-_List_Start_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">a.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS2A_-_List_Start_002c_Level_2_Alpha_inner"><a name="2722250">Create a new </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> class that extends <span class="cv_-_computer_voice">EntityDiffDisplayBase&lt;T&gt;</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">b.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="2722251">Add an appropriate map element to the </a><span class="cv_-_computer_voice">DiffDisplayTypes</span> getter to the <span class="cv_-_computer_voice">PolicyRefreshConfiguration</span> object that you are using, or modify the built-in <span class="cv_-_computer_voice">PolicyRefreshConfigurationBase</span> class.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2722252">To see the mapping in the base configuration, see the </a><span class="cv_-_computer_voice">PolicyRefreshConfigurationBase</span> Gosu class in the <span class="cv_-_computer_voice">DiffDisplayTypes</span> property getter. </div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722253">In the base configuration, ClaimCenter defines </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> classes for the following:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="2722254">Policy</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="2722255">Coverage</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="2722256">PolicyCoverage</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="2722257">RUCoverage</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="2722258">ClassCode</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="2722259">PolicyLocation</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="2722260">PropertyItem</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2722261">In the base configuration, the code for this getter looks similar to the following:</a></div>
+      <PRE class="CF_-_Code_First_Line"><a name="2722262">override property get DiffDisplayTypes() : Map&lt;IEntityType, Class&lt;DiffDisplay&gt;&gt; {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722263">&nbsp;&nbsp;return { ClassCode -&gt; ClassCodeDiffDisplay,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722264">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KeyableBean -&gt;KeyableBeanDiffDisplay,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722265">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Policy -&gt; PolicyDiffDisplay,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722266">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PolicyCoverage -&gt; PolicyCoverageDiffDisplay,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722267">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PropertyItem -&gt; PropertyItemDiffDisplay,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722268">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RUCoverage -&gt; RUCoverageDiffDisplay</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722269">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722270">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* Custom DiffDisplay for Policy to illustrate one way to customize the hierarchy</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722271">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* that gets displayed.  For demo purposes, currently unregistered in this</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722272">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* configuration file. </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722273">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* If you use this, comment out the entry for PolicyDiffDisplay above. </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722274">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722275">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Policy -&gt; CustomPolicyDiffDisplay</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722276">&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722277">&nbsp;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2722278">}</a></PRE>
+      <div class="B_-_Body"><a name="2722279">If the map does not list a specific policy graph entity type, then ClaimCenter uses the </a><span class="cv_-_computer_voice">KeyableBeanDiffDisplay</span> class as the default, which extends <span class="cv_-_computer_voice">EntityDiffDisplayBase</span> as the default.</div>
+      <h6 class="HS_-_Head_Sub"><a name="2722280">See also</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('integration', 'cc-pc-integration.38.14.html#2722180', '');" title="Policy Refresh Policy Comparison Display" name="2722284">“Policy Refresh Policy Comparison Display”</a> for details on how to configure the way in which ClaimCenter renders the <span class="ui_-_UI_element">Policy Comparison</span> screen.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2722285">Getting the Difference Object from an Entity Difference Display Object</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722286">Every </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> class inherits a <span class="cv_-_computer_voice">Diff</span> property from the <span class="cv_-_computer_voice">EntityDiffDisplayBase</span> class that it extends. Use the <span class="cv_-_computer_voice">Diff</span> property to access the related <span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">Diff</span> instance:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722287">Use </a><span class="cv_-_computer_voice">Diff.SourceValue</span> to access fields on the current policy.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722288">Use </a><span class="cv_-_computer_voice">Diff.CompareValue</span> to access fields on the new policy.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2722289">For example, the following code determines if the effective date on the new policy differs from the effective date on the current policy by more than seven days. If so, the code generates an error message to that effect.</a></div>
+      <PRE class="CF_-_Code_First_Line"><a name="2722290">if( Diff.CompareValue.EffectiveDate != Diff.SourceValue.EffectiveDate ) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722291">&nbsp;&nbsp;if (Diff.SourceValue.EffectiveDate.daysBetween(Diff.CompareValue.EffectiveDate) &gt; 7 ) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722292">&nbsp;&nbsp;&nbsp;&nbsp;messages.add(UIMessage.error("The effective date has changed by more than 7 days.")) </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722293">&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2722294">}</a></PRE>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2722295">Getting the Type of Difference from an Entity Difference Display Object</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722296">Every </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> class inherits a <span class="cv_-_computer_voice">Type</span> property from the <span class="cv_-_computer_voice">EntityDiffDisplayBase</span> class that it extends. This property specifies the type of difference involved between the current and new entity instances. The different values of <span class="cvt_-_computer_voice_table">Type</span> have the following meanings:</div>
+      <div class="T_-_Table"><a name="2722325">&nbsp;</a></div>
+      <table class="withoutHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2722299">Type&nbsp;property&nbsp;value&nbsp;&nbsp;&nbsp;</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2722301">Meaning</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2722303">ADDED </a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722305">The entity instance appears only in the new policy.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2722307">REMOVED </a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722309">The entity instance appears only in the existing or current policy.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2722311">CHANGED </a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722313">The entity instance appears in both policies, but its properties and/or child entities are not the same.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2722315">UNCHANGED </a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722317">The entity instance appears in both policies and its properties and/or child entities are the same.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2722319">MOVED_TO<br />MOVED_FROM </a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722321">The entity instance appears in both the new and the existing policies. However, it does not have the same parent in each policy. </a></div>
+            <div class="TT_-_Table_Text"><a name="2722322">This situation can occur if you move a single child from one parent to another. For example, suppose a business has several garage locations and several vehicles. Between two versions of the policy, it is possible for a single vehicle to appear garaged in one location on the current policy. It can then appear in a different location in the new policy. The entity thus appears twice in the comparison tree:</a></div>
+            <div class="BIT_-_Bullet_Item_Table_outer" style="margin-left: 2.16pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="BIT_-_Bullet_Item_Table_inner" style="width: 7.199999999999999pt; white-space: nowrap">
+                      <span class="but_-_bullet_in_table">•	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="BIT_-_Bullet_Item_Table_inner"><a name="2722323">The entity will have the </a><span class="cvt_-_computer_voice_table">MOVED_FROM</span> type status on the old parent and will appear in the comparison tree using the <span class="cvt_-_computer_voice_table">REMOVED</span> icon.</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="BIT_-_Bullet_Item_Table_outer" style="margin-left: 2.16pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="BIT_-_Bullet_Item_Table_inner" style="width: 7.199999999999999pt; white-space: nowrap">
+                      <span class="but_-_bullet_in_table">•	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="BIT_-_Bullet_Item_Table_inner"><a name="2722324">The entity will also have the </a><span class="cvt_-_computer_voice_table">MOVED_TO</span> type status on the new parent and will appear in the comparison tree using the <span class="cv_-_computer_voice">ADDED</span> icon.</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722326">For example, the following code from </a><span class="cv_-_computer_voice">PolicyDiffDisplay</span> looks at the current and new versions of the policy and determines if the currency changed on the policy. If so, it generates either an error or a warning, depending on whether the currency on the policy is editable. In general, a policy is editable if the claim associated with this policy does not have any transactions.</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2722327">if(Type==CHANGED) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722328">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722329">&nbsp;&nbsp;if(Diff.SourceValue.Currency!=Diff.CompareValue.Currency) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722330">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722331">&nbsp;&nbsp;&nbsp;&nbsp;if(not Diff.SourceValue.CurrencyEditable) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722332">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;messages.add(UIMessage.error(displaykey.PolicyRefresh.DiffDisplay.Policy.CurrencyChange))</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722333">&nbsp;&nbsp;&nbsp;&nbsp;} </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722334">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722335">&nbsp;&nbsp;&nbsp;&nbsp;else {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722336">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;messages.add(UIMessage.warning(displaykey.PolicyRefresh.DiffDisplay.Policy.CurrencyChange))</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722337">&nbsp;&nbsp;&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722338">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722339">&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722340">&nbsp;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2722341">}</a></PRE>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2722343">Policy Refresh Errors, Warnings, and Informational Messages</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2722344">Each </a><span class="cv_-_computer_voice">DiffDisplay</span> object is responsible for generating any messages for that entity type by returning a list of messages in its <span class="cv_-_computer_voice">getMessages</span> method. Policy refresh messages include error, warning, or information messages. ClaimCenter encapsulates each message in an object of type <span class="cv_-_computer_voice">gw.api.web.UIMessage</span>. </div>
+      <div class="B_-_Body"><a name="2722345">Generally speaking, a difference display object makes messages that are related only to the entity for which the given </a><span class="cv_-_computer_voice">DiffDisplay</span> object is responsible.</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722346">An </a><span class="cv_-_computer_voice">ERROR</span> message is the only message type that actually blocks the policy refresh from completing. Define these for incompatible changes that cannot be resolved automatically using existing mechanisms. Avoid throwing exceptions from within the policy refresh process unless you cannot represent them at the user interface level by an appropriate <span class="cv_-_computer_voice">ERROR</span> message. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="NI_-_Note_Important">
+        <span class="n_-_note">IMPORTANT   </span><a name="2722347">If ClaimCenter identifies an error condition, it removes the </a><span class="ui_-_UI_element">Finish</span> button from the <span class="ui_-_UI_element">Policy Comparison</span> screen. This prevents the policy refresh from completing.</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2722348">WARNING</a></span> messages define issues that might pose a problem, but are not automatically conditions that block policy refresh.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2722349">INFO</a></span> messages define any other informative message or suggested action as a result of the policy refresh. In the base configuration, there are no information messages generated for built-in entity types.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2722350">ClaimCenter lists all messages in order of severity. In other words, ClaimCenter lists all errors first, followed by warnings, and then by info messages.</a></div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722351">You can configure all message types. In configuring messages:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722352">Construct each policy refresh message as an instance of </a><span class="cv_-_computer_voice">gw.api.web.UIMessage</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722353">Group a set of </a><span class="cv_-_computer_voice">UIMessage</span> objects through the use of <span class="cv_-_computer_voice">gw.api.web.UIMessageList</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722354">Use the method </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay.getMessages</span> to construct the <span class="cv_-_computer_voice">UIMessageList</span> object, which ClaimCenter renders in the user interface as the set of error, warning, and informational messages.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2722355">Creating a Policy Refresh Message</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722356">To create a policy refresh message, a difference display object creates a </a><span class="cv_-_computer_voice">UIMessage</span> object.</div>
+      <div class="B_-_Body"><a name="2722357">Use the following syntax to call static methods on the </a><span class="cv_-_computer_voice">UIMessage</span> class:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2722358">UIMessage.error(msgText)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722359">UIMessage.warning(msgText)</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2722360">UIMessage.info(msgText)</a></PRE>
+      <div class="B_-_Body"><a name="2722361">Always use a display key for the message text. For example:</a></div>
+      <PRE class="CF_-_Code_First_Line"><a name="2722362">UIMessage.warning(displaykey.PolicyRefresh.DiffDisplay.Policy.PolicySystemPeriodIDChange))</a></PRE>
+      <div class="B_-_Body"><a name="2722363">In addition to being shown in the policy comparison screen, error messages also block the refresh process. There is no additional functionality associated with warning or info messages.</a></div>
+      <div class="B_-_Body"><a name="2722364">In the base configuration, there are a few </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> classes that do not create messages. One, for example, is the <span class="cv_-_computer_voice">PolicyCoverageDiffDisplay</span> class. However, of the classes that do create messages, most of these classes create messages directly in the <span class="cv_-_computer_voice">getMessages</span> method. The one exception is the <span class="cv_-_computer_voice">CoverageDiffDisplay</span> class, which merely calls a <span class="cv_-_computer_voice">performValidation</span> method from within the <span class="cv_-_computer_voice">getMessages</span> method. ClaimCenter actually creates the messages within this <span class="cv_-_computer_voice">performValidation</span> method, which exists in <span class="cv_-_computer_voice">gw.plugin.policy.refresh.CoverageValidator</span>.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2722365">Returning a Policy Refresh Message List to Encapsulate Messages</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722366">ClaimCenter encapsulates a set of </a><span class="cv_-_computer_voice">UIMessage</span> objects to show to the user in a <span class="cv_-_computer_voice">UIMessageList</span> object. </div>
+      <h6 class="HS_-_Head_Sub"><a name="2722367">To construct a UI message list object</a></h6>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="2722368">Create a new </a><span class="cv_-_computer_voice">UIMessageList</span> object using the <span class="cv_-_computer_voice">new</span> operator, for example:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="CS_-_Code_Single_Line"><a name="2722369">messages = new UIMessageList()</a></div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2722370">Define the condition to use for comparing the two policy versions, for example:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="CS_-_Code_Single_Line"><a name="2722371">Type==CHANGED</a></div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2722372">Compare the new and current entities or properties that are of interest, for example:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="CS_-_Code_Single_Line"><a name="2722373">Diff.SourceValue.Currency!=Diff.CompareValue.Currency</a></div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2722374">Construct a </a><span class="cv_-_computer_voice">UIMessage</span> object and add it to the <span class="cv_-_computer_voice">UIMessageList</span> object using the list’s <span class="cv_-_computer_voice">add</span> method.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2722375">To illustrate:</a></div>
+      <PRE class="CF_-_Code_First_Line"><a name="2722376">var messages = new UIMessageList()</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722377">if(Type==CHANGED) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722378">&nbsp;&nbsp;if( Diff.SourceValue.Currency!=Diff.CompareValue.Currency) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722379">&nbsp;&nbsp;&nbsp;&nbsp;messages.add(UIMessage.error(displaykey.PolicyRefresh.DiffDisplay.Policy.CurrencyChange))</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722380">&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722381">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722382">}</a></PRE>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722383">For each entity type that can require a message, you must override the corresponding </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay.getMessages</span> method. The <span class="cv_-_computer_voice">getMessages</span> method receives a <span class="cv_-_computer_voice">PolicyRefreshMessageContext</span> object, discussed later in this topic. The <span class="cv_-_computer_voice">getMessages</span> method returns a <span class="cv_-_computer_voice">UIMessageList</span> that is either empty or contains one or more messages to show within ClaimCenter.</div>
+      <div class="B_-_Body"><a name="2722384">The </a><span class="cv_-_computer_voice">PolicyRefreshMessageContext</span> object provides context for the difference display object code to construct errors and warning related to a policy refresh. A <span class="cv_-_computer_voice">PolicyRefreshMessageContext</span> object has two methods that are useful in policy refresh message logic that each returns the set of non-policy claim entities linked to a given entity:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722385">The </a><span class="cv_-_computer_voice">findClaimEntitiesLinkedTo</span> method returns all non-policy claim entities</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722386">The </a><span class="cv_-_computer_voice">findClaimEntitiesOfTypeLinkedTo</span>&nbsp;method filters for entities of a specific type.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2722387">For example, the following code appears in the base configuration </a><span class="cv_-_computer_voice">PropertyItemDiffDisplay</span> class:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2722388">if (this.Type==REMOVED) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722389">&nbsp;&nbsp;if (ctx.findClaimEntitiesOfTypeLinkedTo(Diff.SourceValue, PropertyContentsScheduledItem).</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722390">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HasElements) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722391">&nbsp;&nbsp;&nbsp;&nbsp;result.add(UIMessage.warning(displaykey.PolicyRefresh.DiffDisplay.PropertyItem.</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722392">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MissingPropertyItem(Diff.SourceValue)))</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722393">&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722394">&nbsp;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2722395">}</a></PRE>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722396">The logic for this code is the following:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722397">If this property item is on the current policy, but not on the new policy...</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722398">And, if there are any entities of type </a><span class="cv_-_computer_voice">PropertyContentsScheduledItem</span> on the claim that are linked to the property item on the current version of the policy...</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722399">Then, add the following warning message: </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="CS_-_Code_Single_Line"><a name="2722400">The PropertyItem {0} has been removed from the policy and is referenced by the claim.</a></div>
+      <div class="LP_-_List_Para"><a name="2722401">In the display key string, </a><span class="cv_-_computer_voice">{0}</span> is the display name for the property item.</div>
+      <h4 class="H2_-_Heading_2"><a name="2722402">Configuring Visibility in the Comparison Tree</a></h4>
+      <div class="B_-_Body"><a name="2722403">ClaimCenter uses a </a><span class="cv_-_computer_voice">RowTree</span> PCF widget to generate the policy comparison tree in the <span class="ui_-_UI_element">Policy Comparison</span> screen. The policy comparison tree displays differences between a current and new policy as a collapsible hierarchy of objects. You can expand or collapse the hierarchy through the use of the +/- controls to expand or collapse a portion of the tree. ClaimCenter shows the +/- controls for entities with child entities only.</div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722404">It is possible for the leaves of the policy comparison tree (the entries that do not have +/- controls) to be either properties or entities. In the base ClaimCenter application, you can identify which is an entity or which is a property in the following ways:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722405">The label format for entities is </a><span class="p_-_parameter">entityType</span>:<span class="p_-_parameter">DisplayName</span>, with a colon. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722406">The label format for properties is simply </a><span class="p_-_parameter">DisplayName</span>. The ClaimCenter base configuration does not use colons for properties.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722407">The visual indicator for changed entities is to use an icon to indicate the change. The ClaimCenter base configuration shows visual indicators for added or removed entities only.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722408">The visual indicator for changed properties is to simply show the actual difference, for example, the two different cancellation dates.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h6 class="HS_-_Head_Sub"><a name="2722409">Setting Visibility</a></h6>
+      <div class="B_-_Body"><a name="2722410">ClaimCenter uses the </a><span class="e_-_emphasis">entity</span><span class="cv_-_computer_voice">DiffDisplay.isChildVisible</span> method to determine what to show in the policy comparison tree. In the base ClaimCenter configuration, Guidewire provides an overridden definition of this method in class <span class="cv_-_computer_voice">EntityDiffDisplayBase</span>:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722411">If you want to globally modify the logic for displaying children, modify the </a><span class="cv_-_computer_voice">isChildVisible</span> method in <span class="cv_-_computer_voice">EntityDiffDisplayBase</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722412">If you want to modify the logic for displaying children for a specific type of entity, then override the </a><span class="cv_-_computer_voice">isChildVisible</span> method in the <span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> class for that entity. For example, if you want to override the logic for displaying coverages in the policy comparison tree, then you need to modify the <span class="cv_-_computer_voice">isChildVisable</span> method in <span class="cv_-_computer_voice">CoverageDiffDisplay</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722413">ClaimCenter automatically excludes several sets of properties from the policy comparison tree:</a></div>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="2722414">ClaimCenter automatically excludes properties used to track an object internally, for example, </a><span class="cv_-_computer_voice">ID</span>, <span class="cv_-_computer_voice">CreateTime</span>, and <span class="cv_-_computer_voice">CreateUser</span>. This behavior occurs in internal code and you cannot configure it.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2722415">ClaimCenter programmatically excludes additional properties that you specify through the </a><span class="cv_-_computer_voice">PolicyRefreshConfigurationBase.EntityPropertiesToIgnoreForComparison</span> getter. You configure this getter to identify additional properties to always omit from the tree. In the base application, ClaimCenter excludes the following properties:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt; margin-bottom: 2.0pt; margin-top: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="2722416">Contact.AutoSync</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt; margin-bottom: 2.0pt; margin-top: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="2722417">ClaimContact.ClaimantFlag</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt; margin-bottom: 2.0pt; margin-top: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="2722418">ClaimContactRole.PartyNumber</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="2722419">Construction of the Policy Comparison Tree</a></h4>
+      <div class="B_-_Body"><a name="2722420">To construct the policy comparison tree, ClaimCenter does the following:</a></div>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="2722421">ClaimCenter instantiates an </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">Diff</span> object for the following:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="2722422">One for every matched pairs of entities</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="2722423">One for every unmatched entity</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="2722424">ClaimCenter uses logic from the matcher classes to determine if one entity matches another. See </a><a href="javascript:WWHClickedPopup('integration', 'cc-pc-integration.38.12.html#2721840', '');" title="Policy Refresh Entity Matcher Details">“Policy Refresh Entity Matcher Details”</a> for details.</div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2722428">ClaimCenter organizes the </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">Diff</span> instances into a tree structure, using the <span class="cv_-_computer_voice">PolicyRefreshConfigurationBase.DisplayTree</span> getter. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="2722429">ClaimCenter uses the </a><span class="cv_-_computer_voice">DisplayTree</span> getter to convert the policy graph into a one-to-many hierarchy for viewing in the ClaimCenter interface. In actuality, the policy data model, and, therefore, the graph of <span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">Diff</span> objects, is not a tree. However, ClaimCenter uses a <span class="cv_-_computer_voice">RowTree</span> widget to display the information in the ClaimCenter interface. The <span class="cv_-_computer_voice">DisplayTree</span> property transforms the graph of <span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">Diff</span> objects into a tree for viewing purposes. See <a href="javascript:WWHClickedPopup('integration', 'cc-pc-integration.38.14.html#2722190', '');" title="Policy Refresh Policy Comparison Display">“Difference Objects”</a> for more information.</div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2722433">ClaimCenter instantiates an </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> object for each <span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">Diff</span> object. The <span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> object specifies how to display the entity differences:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="2722434">Each </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> determines whether to display its data, and if so, how to display the data.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="2722435">Each </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> has a type, which is typically set to <span class="cv_-_computer_voice">ADDED</span>, <span class="cv_-_computer_voice">CHANGED</span>, or <span class="cv_-_computer_voice">REMOVED</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="2722436">Each </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> is responsible for generating warning or error messages at the top of the <span class="ui_-_UI_element">Policy Comparison</span> screen. There are no messages for <span class="cv_-_computer_voice">PropertyDiffDisplay</span>. ClaimCenter only generates messages at the <span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> level.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="2722437">Class </a><span class="cv_-_computer_voice">PropertyDiffDisplay</span> exists in the <span class="cv_-_computer_voice">gw.plugin.policy.refresh.ui</span> package. It is an internal Java class that you cannot modify.</div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2722438">ClaimCenter renders the policy comparison tree based on the logic defined by the </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span>instances.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h6 class="HS_-_Head_Sub"><a name="2722439">Defining the Tree Using the Display Tree Property Getter</a></h6>
+      <div class="B_-_Body"><a name="2722440">The </a><span class="cv_-_computer_voice">PolicyRefreshConfigurationBase</span> class&nbsp;contains the <span class="cv_-_computer_voice">DisplayTree</span> property getter. The <span class="cv_-_computer_voice">DisplayTree</span> getter builds the policy comparison tree using multiple <span class="cv_-_computer_voice">addOneTo...</span> methods to build the tree by connecting child <span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">Diff</span> objects to parent <span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">Diff</span> objects.</div>
+      <div class="B_-_Body"><a name="2722441">The only thing you can configure in the </a><span class="cv_-_computer_voice">DisplayTree</span> getter is the mapping from a given parent to a given child. You cannot create relationships that do not already exist in the policy graph. For example, you cannot display vehicle coverages as the child of a contact.</div>
+      <div class="B_-_Body"><a name="2722442">The </a><span class="cv_-_computer_voice">DisplayTree</span> getter logic uses the following important methods:</div>
+      <div class="T_-_Table"><a name="2722452">&nbsp;</a></div>
+      <table class="withoutHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2722445">addOneToMany</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722447">Adds one-to-many child elements to a given parent element</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2722449">addOneToOne</a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722451">Adds a single child element to a given parent element</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="B_-_Body"><a name="2722453">These methods have three parameters, which you use to specify a parent/child relationship in the policy comparison tree:</a></div>
+      <div class="T_-_Table"><a name="2722467">&nbsp;</a></div>
+      <table class="withoutHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2722456">parentType</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722458"> An </a><span class="cvt_-_computer_voice_table">IEntityType</span> for the parent entity type to which the <span class="pst_-_parameter_in_code_snippets_table">entity</span><span class="cvt_-_computer_voice_table">Diff</span> object refers.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2722460">propertyName</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722462"> A String for the property name of the parent property that points to the child.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2722464">childType</a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722466"> An </a><span class="cvt_-_computer_voice_table">IEntityType</span> for the child entity type to which the <span class="pst_-_parameter_in_code_snippets_table">entity</span><span class="cvt_-_computer_voice_table">Diff</span> object refers.</div>
+          </td>
+        </tr>
+      </table>
+      <div class="B_-_Body"><a name="2722468">The </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">Diff</span> graph consists of a number of <span class="e_-_emphasis">nodes</span> (the objects in the graph) and <span class="e_-_emphasis">edges</span> (the connections between pairs of related nodes). To construct the tree, ClaimCenter traverses the entire <span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">Diff</span> graph. In doing so, ClaimCenter compares every connection between the tree nodes to the list of relationships specified in the <span class="cv_-_computer_voice">addOneToMany</span> and <span class="cv_-_computer_voice">addOneToOne</span> methods.</div>
+      <div class="B_-_Body"><a name="2722469">In performing the comparison:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722470">If ClaimCenter finds a relationship in which all parameters match, then it creates an </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> instance from the child <span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">Diff</span> and attaches it to the tree at the appropriate point. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722471">If ClaimCenter does not find a relationship in which all parameters match, then it does not create an </a><span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> for that edge or connection.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722472">Guidewire recommends that you pay close attention to how you modify the </a><span class="cv_-_computer_voice">DisplayTree</span> getter, as minor errors can result in ClaimCenter not displaying nodes in the tree. For example, ClaimCenter does not create an <span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> instance and does not display the information in the policy comparison tree if you do the following:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722473">If you identify the wrong </a><span class="cv_-_computer_voice">IEntityType</span> for the parent or for the child</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722474">If you misspell the name of the relationship</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="NW_-_Note_Warning">
+        <span class="w_-_warning">WARNING  </span><a name="2722475">Pay close attention to how you modify the </a><span class="cv_-_computer_voice">DisplayTree</span> getter, as minor errors can result in ClaimCenter not displaying nodes in the tree.</div>
+      <h4 class="H2_-_Heading_2"><a name="2722476">Configuring Labels and Display Order</a></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722477">It is possible to configure the following items in the policy comparison tree:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722478">Entity and property labels</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722479">Entity and property display order</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2722480">Configuring Entity Labels</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2722481">In the base configuration, ClaimCenter uses the following format for entity labels:</a></div>
+      <div class="CS_-_Code_Single_Line"><span class="pc_-_parameter_in_code"><a name="2722482">entityType</a></span>:<span class="pc_-_parameter_in_code">DisplayName</span></div>
+      <div class="B_-_Body"><a name="2722483">Use </a><span class="cv_-_computer_voice">entity.</span><span class="p_-_parameter">EntityName</span> display keys to format the entity type.</div>
+      <div class="B_-_Body"><a name="2722484">Alternatively, you can configure how ClaimCenter displays an entity label by overriding the </a><span class="cv_-_computer_voice">Label</span> getter in the appropriate <span class="pc_-_parameter_in_code">entity</span><span class="cv_-_computer_voice">DiffDisplay</span> class. For example, to change how ClaimCenter displays the label for the policy root in the policy comparison tree, add code similar to the following to <span class="cv_-_computer_voice">PolicyDisplayDiff</span>:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2722485">override property get Label() : String {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722486">&nbsp;&nbsp;return “Policy (ID: ” + Diff.SourceValue.PolicyNumber “ “)”</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2722487">}</a></PRE>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2722488">Configuring Property Labels</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2722489">ClaimCenter generates property labels through an internal lookup search for a display key with the following format:</a></div>
+      <div class="CS_-_Code_Single_Line"><a name="2722490">entity.</a><span class="pc_-_parameter_in_code">entityType</span>.<span class="pc_-_parameter_in_code">propertyName</span></div>
+      <div class="B_-_Body"><a name="2722491">Thus, you configure property labels by changing the value of the display key. For example, suppose that you want to change the label </a><span class="ui_-_UI_element">Policy System Period ID</span> to <span class="ui_-_UI_element">Policy Period ID</span>. You need merely find the correct display key, in this case, <span class="cv_-_computer_voice">entity.Policy.PolicySystemPeriodID</span>, and change it to the desired value.</div>
+      <div class="T_-_Table"><a name="2722505">&nbsp;</a></div>
+      <table class="withHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2722494">Display key</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2722496">Value</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2722498">entity.Policy.PolicySystemPeriodID</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722500">Policy System Period ID</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2722502">entity.Policy.PolicyPeriodID</a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722504">Policy Period ID</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2722506">Configuring Display Order</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722507">The policy comparison tree </a><span class="cv_-_computer_voice">RowTree</span> widget controls property and entity display order. In the base application:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722508">ClaimCenter lists properties first, in alphabetical order by sort expression.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722509">ClaimCenter lists entities next, in alphabetical order by sort expression.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2722510">For example:</a></div>
+      <div class="B_-_Body" style="color: #000000; font-style: italic; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="e_-_emphasis"><a name="2722511">Policy: 54-847654<br />&nbsp;&nbsp;Cancellation Date<br />&nbsp;&nbsp;Policy System Period ID<br />&nbsp;&nbsp;Producer Code<br />&nbsp;&nbsp;Covered Vehicle:Honda GX<br />&nbsp;&nbsp;Person:Allen Robertson<br />&nbsp;&nbsp;Person: Karen Egertson</a></span></div>
+      <div class="B_-_Body"><a name="2722512">Notice that properties labels do not contain colons.</a></div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722513">Within the </a><span class="ui_-_UI_element">Policy Comparison</span> screen, ClaimCenter labels the left-most column as <span class="ui_-_UI_element">Entity or Property</span> and provides a small triangular sort icon. This column maps to the <span class="cv_-_computer_voice">RowTree</span> widget on the <span class="cv_-_computer_voice">PolicyComparisonScreen</span> PCF. Within the <span class="cv_-_computer_voice">RowTree</span> widget, this column maps to the left-most widget cell, with an <span class="cv_-_computer_voice">ID</span> of <span class="cv_-_computer_voice">LabelField</span>. This cell contains the following sorting-related properties:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="2722514">sortBy</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="2722515">sortDirection</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="2722516">sortOrder</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722517">You use the </a><span class="cv_-_computer_voice">sortBy</span> property on the <span class="cv_-_computer_voice">PolicyComparisonScreen</span> PCF to define logic for dynamically generating a sort value for each child element. ClaimCenter then sorts the child elements based on their sort values. </div>
+      <div class="B_-_Body"><a name="2722518">You set the </a><span class="cv_-_computer_voice">sortBy</span> property by adding a <span class="cv_-_computer_voice">getSortBy</span> function and defining that function on the <span class="ui_-_UI_element">Code</span> tab. In the base configuration, the <span class="cv_-_computer_voice">getSortBy</span> function looks similar to the following:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2722519">uses gw.plugin.policy.refresh.ui.DiffDisplay</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722520">uses gw.plugin.policy.refresh.ui.EntityDiffDisplay</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722521">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722522">function getSortBy (diff : DiffDisplay) : String {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722523">&nbsp;&nbsp;return ((diff typeis EntityDiffDisplay) ? "B:" : "A:") + diff.Label</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2722524">}</a></PRE>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722525">In the base configuration, this function checks to see if the child element is of type </a><span class="cv_-_computer_voice">EntityDiffDisplay</span> or not:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722526">If the child element is an </a><span class="cv_-_computer_voice">EntityDiffDisplay</span>, then its sort expression is “B:” plus the label.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722527">If the child element is not an </a><span class="cv_-_computer_voice">EntityDiffDisplay</span>, then it is a <span class="cv_-_computer_voice">PropertyDiffDisplay</span> and its sort expression is “A:” plus the label. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722528">As a consequence:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722529">ClaimCenter sorts all the properties first as they all start with “A:” and then orders the properties by their label value.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722530">ClaimCenter sorts all the entities afterwards as they all start with “B:” and then orders the entities by their label values.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2722531">Be aware that the strings “A:” and “B:” are somewhat arbitrary. It is possible to replace these strings with other strings that sort the properties and entities in the desired way (such as “1 “, “2 “, “3 “...).</a></div>
+      <div class="B_-_Body"><a name="2722532">To modify the sort order for properties or entities, you need to modify the </a><span class="cv_-_computer_voice">getSortBy</span> function defined on the <span class="ui_-_UI_element">Code</span> tab of the <span class="cv_-_computer_voice">PolicyComparisonScreen</span> PCF. To access the <span class="ui_-_UI_element">Code</span> tab, you need to select the entire PCF.</div>
+      <div class="B_-_Body"><a name="2722533">For example, suppose that you want to configure the sort order so that ClaimCenter displays the Producer Code property before any other property. To do so, modify the </a><span class="cv_-_computer_voice">getSortBy</span> function in the following manner:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2722534">function getSortBy (diff : DiffDisplay) : String {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722535">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722536">&nbsp;&nbsp;if (diff.Label == “Producer Code”) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722537">&nbsp;&nbsp;&nbsp;&nbsp;return “A:Producer Code”</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722538">&nbsp;&nbsp;} </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722539">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722540">&nbsp;&nbsp;else {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722541">&nbsp;&nbsp;&nbsp;&nbsp;return ( (diff typeis EntityDiffDisply) ? “C:” : “B:”) + diff.Label</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722542">&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2722543">}</a></PRE>
+      <h4 class="H2_-_Heading_2"><a name="2722544">Changing Icons for Added, Removed, Unchanged, and Changed</a></h4>
+      <div class="B_-_Body"><a name="2722545">You can change the icons that ClaimCenter displays for added, removed, unchanged, or changed (updated) differences. Change the appropriate display keys that reference file names in the images folder:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="2722546">Web.PolicyRefresh.PolicyComparisonScreen.IconFieldFileName.Added</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="2722547">Web.PolicyRefresh.PolicyComparisonScreen.IconFieldFileName.Removed</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="2722548">Web.PolicyRefresh.PolicyComparisonScreen.IconFieldFileName.Unchanged</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="2722549">Web.PolicyRefresh.PolicyComparisonScreen.IconFieldFileName.Changed </a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

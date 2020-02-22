@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Miscellaneous Parameters</title>
+    <link rel="StyleSheet" href="css/params.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Configuration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-basics.html#5027864">ClaimCenter Configuration Basics</a> : <a class="WebWorks_Breadcrumb_Link" href="params.05.01.html#5027864">Application Configuration Parameters</a> : Miscellaneous Parameters</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="5027864">Miscellaneous Parameters</a></h3>
+      <div class="B_-_Body"><a name="5677629">Guidewire provides the following configuration parameters in the </a><span class="cv_-_computer_voice">config.xml</span> file that relate to various miscellaneous application features.</div>
+      <div class="B_-_Body"><a name="6349062">For information on editing </a><span class="cv_-_computer_voice">config.xml</span> and setting configuration parameters, see <a href="javascript:WWHClickedPopup('config', 'params.05.02.html#1142941', '');" title="Working with Configuration Parameters">“Working with Configuration Parameters”</a>.</div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading" style="color: #387dab; font-family: Calibri; font-size: 14.0pt; font-weight: normal"><a name="6969406">ClaimLossDateDemarcation</a></span></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="6969407">Default time for a claim’s loss date when it is not specified in the FNOL. Set this to match the default time at which the policy administration system sets the effective date of the policy.</a></div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969408">Default:</a></span> <span class="cv_-_computer_voice">12:00 AM<br /></span><span class="ri_-_run_in_header">Set for Environment:</span> Yes</div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6608443">ConsistencyCheckerThreads</a></span></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="6608444">Number of threads to use when running the consistency checker.</a></div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6608445">Default:</a></span> 1</div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6969415">EnableClaimNumberGeneration</a></span></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="6969416">Whether to enable automatic claim number generation (through an external plugin). If you enable claim number generation, then you must also provide an external Claim Number Generator plugin. If enabled, claim number generation must succeed in order for a claim to be added through either the New Claim wizard or the integration tools. This does not affect claims added through staging tables.</a></div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969417">Default:</a></span> <span class="cv_-_computer_voice">True</span></div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6969420">EnableClaimSnapshot</a></span></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="6969421">Whether to create snapshots for imported and created claims. The claim snapshot contains a version of the claim data before any automated processing by ClaimCenter. </a></div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969422">Default:</a></span> <span class="cv_-_computer_voice">True</span></div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6969425">EnableStatCoding</a></span></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="6969426">Whether to enable statistical coding support.</a></div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969427">Default:</a></span> <span class="cv_-_computer_voice">True</span></div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6604112">JGroupsClusterChannel</a></span></h4>
+      <div class="B_-_Body"><a name="6604113">Whether to use JGroups based cluster channel.</a></div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6604114">Default:</a></span> <span class="cv_-_computer_voice">true</span></div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="5028959">ListViewPageSizeDefault</a></span></h4>
+      <div class="B_-_Body"><a name="5024419">The default number of entries that ClaimCenter displays in each page in a list view, if the page does not explicitly specify this value. This integer value must be at least 1. </a></div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="5024420">Default:</a></span> 15<br /><span class="ri_-_run_in_header">Minimum:</span> 1</div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6969434">MaintainPolicyValidationLevelOnPolicyChange</a></span></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="6969435">If </a><span class="cv_-_computer_voice">true</span>, any time that you change or refresh the policy for a claim, ClaimCenter validates the new policy at the level of the old policy. If <span class="cv_-_computer_voice">false</span>, ClaimCenter validates the new policy at the <span class="cv_-_computer_voice">newloss</span> level. In either case, a validation failure causes ClaimCenter to revert the policy refresh or change.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969436">Default:</a></span> <span class="cv_-_computer_voice">True</span></div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6969438">MaxCachedClaimSnapshots</a></span></h4>
+      <div class="B_-_Body"><a name="6969439">Limits the number of claim snapshots that ClaimCenter caches in memory. This integer value must be zero (0) or greater, but less than ten (10).</a></div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969440">Default:</a></span> 3<br /><span class="ri_-_run_in_header">Minimum:</span> 0<br /><span class="ri_-_run_in_header">Maximum:</span> 10</div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6969443">MaxStatCodesInDropdown</a></span></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="6969444">Maximum number of statistics codes to show in the statistics code picker drop-down.</a></div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969445">Default:</a></span> <span class="cv_-_computer_voice">20</span></div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="5024492">ProfilerDataPurgeDaysOld</a></span></h4>
+      <div class="B_-_Body"><a name="5024496">Number of days to keep profiler data before ClaimCenter deletes it.</a></div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="5024497">Default:</a></span> 30</div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6969450">VendorNotificationAPIRetryTime</a></span></h4>
+      <div class="B_-_Body"><a name="6969451">Amount of time (in seconds) to wait before attempting to retry a Vendor Notification Message that failed validation.</a></div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969452">Default:</a></span> 10<br /><span class="ri_-_run_in_header">Set For Environment:</span> Yes</div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6606588">TransactionIdPurgeDaysOld</a></span></h4>
+      <div class="B_-_Body"><a name="6606589">Number of days to keep external transaction ID records before they can be deleted.</a></div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6606590">Default:</a></span> 30</div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

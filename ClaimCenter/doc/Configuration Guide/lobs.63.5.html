@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Editing LOB Typelists and Typecodes</title>
+    <link rel="StyleSheet" href="css/lobs.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Configuration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-lob.html#4767200">Guidewire ClaimCenter Lines of Business</a> : <a class="WebWorks_Breadcrumb_Link" href="lobs.63.1.html#4767200">Configuring Lines of Business</a> : Editing LOB Typelists and Typecodes</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="4767200">Editing LOB Typelists and Typecodes</a></h3>
+      <div class="B_-_Body"><a name="4767439">To work with lines of business, you navigate in the </a><span class="ui_-_UI_element">Project</span> window to <span class="ui_-_UI_element">configuration</span> → <span class="ui_-_UI_element">config </span>→ <span class="ui_-_UI_element">Extensions </span>→ <span class="ui_-_UI_element">Typelist</span> and double-click one of the following typelists:</div>
+      <div class="T_-_Table"><a name="4789407">&nbsp;</a></div>
+      <table class="withHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="4789396">LossType.ttx</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="4789398">LOBCode.ttx</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="4789400">PolicyType.ttx</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="4789402">CoverageType.ttx</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="4789404">CoverageSubtype.ttx</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="4789406">ExposureType.ttx</a></span></div>
+          </td>
+        </tr>
+      </table>
+      <div class="B_-_Body"><a name="4789408">You can also search for and open typelists by pressing </a><span class="cv_-_computer_voice">Ctrl+Shift+N</span>, typing the name of the typelist, and double-clicking the <span class="cv_-_computer_voice">.ttx</span> version of the typelist in the search results. </div>
+      <div class="B_-_Body"><a name="4800453">Double-clicking an LOB typelist opens the Typelists editor and automatically selects the </a><span class="ui_-_UI_element">LOB</span> tab for the tree on the left side of the editor. This tab of the editor is where you do most of your work on LOB typelists. To work in this editor, you can click a typecode or typelist node to edit its properties. You can also right-click a node to do things like adding new typecodes and children of typecodes.</div>
+      <div class="B_-_Body"><a name="4800434">Because the </a><span class="ui_-_UI_element">LOB</span> tab shows the current typelist’s typecodes and all the LOB descendants, you can perform most LOB operations by editing the top-level LOB typelist, <span class="cv_-_computer_voice">LossType</span>. You can view the entire LOB structure by expanding successive folders of children.</div>
+      <div class="B_-_Body"><a name="4799686">This topic includes:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4789390', '');" title="Editing LOB Typelists and Typecodes" name="4788489">LOB Typelists Editor Tabs</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4789381', '');" title="Editing LOB Typelists and Typecodes" name="4788507">LOB Typelists Editor Right-click Menu</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4780424', '');" title="Editing LOB Typelists and Typecodes" name="4788522">Editing an LOB Typelist</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4757696', '');" title="Editing LOB Typelists and Typecodes" name="4788537">Editing an LOB Typecode</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4757717', '');" title="Editing LOB Typelists and Typecodes" name="4794380">Adding a Child LOB Typecode</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4790798', '');" title="Editing LOB Typelists and Typecodes" name="4794397">Adding a Non-LOB Typecode</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4794200', '');" title="Editing LOB Typelists and Typecodes" name="4794412">Adding a Parent to an LOB Typecode</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4761544', '');" title="Editing LOB Typelists and Typecodes" name="4794384">Removing an LOB Typecode</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4778818', '');" title="Editing LOB Typelists and Typecodes" name="4794388">Retiring an LOB Typecode</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4778820', '');" title="Editing LOB Typelists and Typecodes" name="4788598">Removing an LOB Typecode from Its Parent</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4762699', '');" title="Editing LOB Typelists and Typecodes" name="4788613">Exporting an LOB Typecode or Typelist</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4781612', '');" title="Editing LOB Typelists and Typecodes" name="4788628">Localizing an LOB Typelist</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h6 class="HS_-_Head_Sub"><a name="4788415">See also</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.2.html#4424548', '');" title="LOB Typelists" name="4788419">LOB Typelists</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="zChapterTopic_outer" style="margin-left: 57.6pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="zChapterTopic_inner" style="width: 9.899999999999998pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="zChapterTopic_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.3.html#4798228', '');" title="Relationships Among LOB Typelists" name="4788423">Relationships Among LOB Typelists</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="zChapterTopic_outer" style="margin-left: 57.6pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="zChapterTopic_inner" style="width: 9.899999999999998pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="zChapterTopic_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.4.html#4771868', '');" title="Relationships Between LOB Typelists and Other Typelists" name="4788427">Relationships Between LOB Typelists and Other Typelists</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="zChapterTopic_outer" style="margin-left: 57.6pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="zChapterTopic_inner" style="width: 9.899999999999998pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="zChapterTopic_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.6.html#4757624', '');" title="Coverages and Policies" name="4788431">Coverages and Policies</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="zChapterTopic_outer" style="margin-left: 57.6pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="zChapterTopic_inner" style="width: 9.899999999999998pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="zChapterTopic_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.7.html#4787211', '');" title="Adding a New LossType Typecode" name="4788435">Adding a New LossType Typecode</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="zChapterTopic_outer" style="margin-left: 57.6pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="zChapterTopic_inner" style="width: 9.899999999999998pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="zChapterTopic_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.8.html#4787267', '');" title="Adding a New ExposureType Typecode" name="4789388">Adding a New ExposureType Typecode</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4789390">LOB Typelists Editor Tabs</a></h4>
+      <div class="B_-_Body"><a name="4789391">When you open an LOB typelist, the tree list has the following tabs at the bottom that show different types of information and support editing in different ways:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ui_-_UI_element"><a name="4776578">LOB</a></span> – A navigable tree of LOB typecodes that shows the relationships to typecodes in the other LOB typelists and maintains those relationships. This tab shows LOB typecodes with their typelist names, like <span class="cv_-_computer_voice">LOBCode</span>, <span class="cv_-_computer_voice">PolicyType</span>, and <span class="cv_-_computer_voice">CoverageType</span>. When you select a typecode, its <span class="ui_-_UI_element">Parents</span> and <span class="ui_-_UI_element">Children</span> folders show the hierarchical relationships to typecodes from the LOB typelists. The <span class="ui_-_UI_element">Other Categories</span> folder shows outgoing typecode references from this typecode to typecodes in non-LOB typelists. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="4761745">Use the </a><span class="ui_-_UI_element">LOB</span> tab when working with LOB typelists. This tab updates parent and child typecodes as necessary when you edit existing typecodes.</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ui_-_UI_element"><a name="4759141">Typelist</a></span> – The current typelist simply as a tree list of the typecodes in the current typelist, along with any other elements present in the typelist XML files. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ui_-_UI_element"><a name="4759385">Incoming Categories</a></span> – Typecodes that reference typecodes in this typelist. This tab is useful for identifying typelists that refer to typecodes in the current typelist. It includes both LOB and non-LOB typelists.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ui_-_UI_element"><a name="4759511">Outgoing Categories</a></span> – Typecodes that are referenced from this typelist. This information is also available under the LOB and Typelist tabs. However, this view is organized by the typecodes that are being referred to, rather than by the typecodes in this typelist. This tab is useful for identifying typelists that a typecode references. It includes both LOB and non-LOB typelists.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="4772354">If you select the </a><span class="ui_-_UI_element">LOB</span> tab and navigate to a typecode’s <span class="ui_-_UI_element">Other Categories</span> folder, you see all the non-LOB typelists that the typecode references. Because this folder shows only non-LOB outgoing typelist references, it can be more useful than the <span class="ui_-_UI_element">Outgoing Categories</span> tab. That tab shows all typelist references, including LOB typelist references. See <a href="javascript:WWHClickedPopup('config', 'lobs.63.4.html#4771868', '');" title="Relationships Between LOB Typelists and Other Typelists">“Relationships Between LOB Typelists and Other Typelists”</a>.</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ui_-_UI_element"><a name="4789379">XML</a></span> – The typelist as XML. This view is read-only.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4789381">LOB Typelists Editor Right-click Menu</a></h4>
+      <div class="B_-_Body"><a name="4789382">Right-clicking a node in the tree list of the Typelists editor opens a drop-down menu of editing commands specific to the node. For example, you can right-click an </a><span class="cv_-_computer_voice">LOBCode</span> typecode and do things like adding a new <span class="cv_-_computer_voice">PolicyType</span> child or removing the selected typecode from its parent. Or, in that same typelist, you can right-click the root node of the tree, which represents the typelist itself, and add a new <span class="cv_-_computer_voice">LOBCode</span> typecode to the typelist.</div>
+      <div class="B_-_Body"><a name="4779301">The right-click menu provides the following commands:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ui_-_UI_element"><a name="4779377">Add new</a></span> – Add a new typecode, category, or category list. See <a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4757717', '');" title="Editing LOB Typelists and Typecodes">“Adding a Child LOB Typecode”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><span class="p_-_parameter"><a name="4789346">LOB-typelist-name</a></span> – Add a typecode of the typelist <span class="p_-_parameter">LOB-typelist-name</span>. You see this command only if you can add a child to the selected node. The editor displays the appropriate typelist for the node you right-click. For example, if you are editing the <span class="cv_-_computer_voice">CoverageType</span> typelist and you click the top node in the tree, <span class="cv_-_computer_voice">CoverageType</span>, you can add a <span class="cv_-_computer_voice">CoverageType</span> typecode to this typelist. In the same tree, if you select any <span class="cv_-_computer_voice">CoverageType</span> typecode, such as <span class="ui_-_UI_element">Baggage</span>, you can add a <span class="cv_-_computer_voice">CoverageSubtype</span> typecode as a child. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><span class="ui_-_UI_element"><a name="4790328">Category</a></span> – Add a category to refer to a typecode that is not an LOB typelist child or parent of this typecode. This command is useful for adding a reference to a non-LOB typelist.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><span class="ui_-_UI_element"><a name="4790561">Categorylist</a></span> – This command associates this typecode with all the typecodes in the specified typelist. It does not affect the LOB relationships. Category lists are described in <a href="javascript:WWHClickedPopup('config', 'studio_typelist.25.12.html#3604319', '');" title="Dynamic Filters">“Dynamic Filters”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ui_-_UI_element"><a name="4780588">Duplicate</a></span> – Create a copy of the selected typecode. The copy has a number appended to its code and name that distinguishes it from the original. This command is not available for the root node, which represents the typelist itself.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ui_-_UI_element"><a name="4779507">Remove</a></span> – This command can cause errors for object that reference the typecode. Guidewire recommends that instead of removing a typecode, you change its <span class="cv_-_computer_voice">retired</span> property to <span class="cv_-_computer_voice">true</span>. This command is not available for the root node, which represents the typelist itself. See <a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4761544', '');" title="Editing LOB Typelists and Typecodes">“Removing an LOB Typecode”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ui_-_UI_element"><a name="4779522">Remove from parent</a></span> – Remove the typecode from its parent. You must be editing the parent typelist or another typelist higher in the LOB hierarchy, and then navigate from the parent to the child to see this menu command. See <a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4778820', '');" title="Editing LOB Typelists and Typecodes">“Removing an LOB Typecode from Its Parent”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ui_-_UI_element"><a name="4781105">Cut, Copy, Paste</a></span> – You do not typically use these commands when working with LOB typelists.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ui_-_UI_element"><a name="4781243">Export Branch</a></span> – Exports the tree to a CSV file or an HTML file. The currently selected node is the root of the exported LOB hierarchy tree. See <a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4762699', '');" title="Editing LOB Typelists and Typecodes">“Exporting an LOB Typecode or Typelist”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4780424">Editing an LOB Typelist</a></h4>
+      <div class="B_-_Body"><a name="4780427">For information on opening an LOB typelist for editing, see </a><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4767200', '');" title="Editing LOB Typelists and Typecodes">“Editing LOB Typelists and Typecodes”</a>. The top level LOB typelist is <span class="cv_-_computer_voice">LossType.ttx</span>. You can open this typelist to get a top-down view of all the associated LOB typelists. Typically, you open the typelist you want to work with. For example, if you want to remove a coverage type from one of its parent policy types, you could open <span class="cv_-_computer_voice">CoverageType.ttx</span> to make the change.</div>
+      <div class="B_-_Body"><a name="4770494">If you want to edit properties of the typelist itself, open that typelist and click the root node, which represents the typelist. The only practical edit you can make to the properties is to change the </a><span class="ui_-_UI_element">desc</span> property.</div>
+      <div class="B_-_Body"><a name="4780436">If you right-click the root node, which represents the typelist itself, you can click </a><span class="ui_-_UI_element">Add new</span> to add new typecodes to the typelist. There are additional commands on this right-click menu, described at <a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4789381', '');" title="Editing LOB Typelists and Typecodes">“LOB Typelists Editor Right-click Menu”</a>.</div>
+      <h6 class="HS_-_Head_Sub"><a name="4790644">See also</a></h6>
+      <div class="B_-_Body"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4757717', '');" title="Editing LOB Typelists and Typecodes" name="4790648">“Adding a Child LOB Typecode”</a>.</div>
+      <h4 class="H2_-_Heading_2"><a name="4757696">Editing an LOB Typecode</a></h4>
+      <div class="B_-_Body"><a name="4757697">To edit typecodes of an LOB typelist, open the typelist in the editor and click the </a><span class="ui_-_UI_element">LOB</span> tab. You can navigate up and down the tree in the <span class="ui_-_UI_element">LOB</span> tab, editing parents and children of the current typecode. Your changes affect all the related LOB typelists. You can select a typecode and edit its properties, or you can right-click a typecode and add a new child, a new category, or a new category list.</div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="4781861">For information on opening an LOB typelist for editing, see </a><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4767200', '');" title="Editing LOB Typelists and Typecodes">“Editing LOB Typelists and Typecodes”</a>.</div>
+      <div class="B_-_Body"><a name="4771638">If you select a typecode in the tree, you see the properties of the typecode on the right, and you can edit them. For example, you can edit a typecode’s </a><span class="ui_-_UI_element">code</span>, <span class="ui_-_UI_element">name</span>, <span class="ui_-_UI_element">desc</span>, <span class="ui_-_UI_element">priority</span>, and <span class="ui_-_UI_element">retired</span> fields. </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4757698">If you edit the </a><span class="ui_-_UI_element">name</span> property, Studio updates the typecode name in the tree. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4795676">If you edit the </a><span class="ui_-_UI_element">code</span> property, Studio updates any related typecodes in LOB typelists, such as parent and children typecodes. However, you must manually update any non-LOB typecodes that reference this one or that this one references.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4795677">If you select </a><span class="ui_-_UI_element">retired</span>, the typecode is no longer available in the user interface, nor is it available to new instances of objects in the ClaimCenter server. However, existing objects, such as existing claims, that already reference the typecode can continue to do so. Setting this property is almost always preferable to removing the typecode.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4757717">Adding a Child LOB Typecode</a></h4>
+      <div class="B_-_Body"><a name="4757718">Use the </a><span class="ui_-_UI_element">Add new</span> right-click menu command to add a new child typecode to a typecode in a typelist. </div>
+      <h6 class="HS_-_Head_Sub"><a name="4794537">Note:</a></h6>
+      <div class="LP_-_List_Para"><a name="4794665">You can also use </a><span class="ui_-_UI_element">Add new</span> to add a category or category list and to add a typecode to a typelist. See:</div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4789381', '');" title="Editing LOB Typelists and Typecodes" name="4794704">LOB Typelists Editor Right-click Menu</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4780424', '');" title="Editing LOB Typelists and Typecodes" name="4794722">Editing an LOB Typelist</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4790798', '');" title="Editing LOB Typelists and Typecodes" name="4794712">Adding a Non-LOB Typecode</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4795374">This menu command is available for a typecode only if you can add additional children to it. For example, the parent-child relationship for some typelists is one-to-one, and if there is already a child, you cannot add another. For </a><span class="cv_-_computer_voice">ExposureType</span>, no children are supported. See <a href="javascript:WWHClickedPopup('config', 'lobs.63.3.html#4798228', '');" title="Relationships Among LOB Typelists">“Relationships Among LOB Typelists”</a>.</div>
+      <div class="B_-_Body"><a name="4795378">Clicking </a><span class="ui_-_UI_element">Add new</span> enables you to add the child typecode appropriate for the selected typecode, such as adding a child <span class="cv_-_computer_voice">LOBCode</span> to <span class="cv_-_computer_voice">LossType</span> or adding a child <span class="cv_-_computer_voice">CoverageType</span> to <span class="cv_-_computer_voice">PolicyType</span>. For example, if you right-click one of the <span class="cv_-_computer_voice">LossType</span> typecodes, such as <span class="ui_-_UI_element">Auto</span>, clicking <span class="ui_-_UI_element">Add new</span> → <span class="cvh_-_computer_voice_in_heading" style="font-family: &quot;Arial Narrow&quot;; font-size: 8.5pt; font-weight: bold">LOBCode</span> enables you to add a child <span class="cv_-_computer_voice">LOBCode</span> typecode. This command opens a dialog that you use to select an existing typecode from a typelist or enter values for a new typecode. In the dialog, click either the <span class="ui_-_UI_element">New typecode</span> tab to add a new typecode or the <span class="ui_-_UI_element">Select typecode</span> tab to add an existing typecode.</div>
+      <div class="B_-_Body"><a name="4786863">If there are existing child elements in the child typelist, the </a><span class="ui_-_UI_element">Select typecode</span> tab is available in the dialog. If there are no more existing child typecodes, the <span class="ui_-_UI_element">Select typecode</span> tab is disabled. In this case, you must use the <span class="ui_-_UI_element">New typecode</span> tab to define a new typecode. </div>
+      <div class="B_-_Body"><a name="4795142">When you add a new child, the editor creates a new typecode in the typelist in the next level down, and it sets up the parent-child relationship. A new typecode cannot have the same code as an existing typecode in the same typelist. Studio checks for this condition and prevents you from performing this action in the editor.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="4790798">Adding a Non-LOB Typecode</a></h4>
+      <div class="B_-_Body"><a name="4790821">As described in </a><a href="javascript:WWHClickedPopup('config', 'lobs.63.4.html#4771868', '');" title="Relationships Between LOB Typelists and Other Typelists">“Relationships Between LOB Typelists and Other Typelists”</a>, an LOB typecode can reference a typecode in a non-LOB typelist. To add a reference to a non-LOB typecode:</div>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="4791028">Open an LOB typelist for editing. See </a><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4767200', '');" title="Editing LOB Typelists and Typecodes">“Editing LOB Typelists and Typecodes”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="4791101">Right-click the typecode to which you want to add the reference and choose </a><span class="ui_-_UI_element">Add new</span> → <span class="ui_-_UI_element">Category</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="4791223">The editor opens the typecode’s </a><span class="ui_-_UI_element">Other Categories</span> folder and adds a new node to it named <span class="ui_-_UI_element">&lt;empty&gt;</span>. You also see an error. The error will go away after you enter the code and typelist of the new typecode.</div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="4791220">Click the new </a><span class="ui_-_UI_element">&lt;empty&gt;</span> node so you can edit its properties.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="4791461">Enter the </a><span class="ui_-_UI_element">typelist</span> and the typecode’s <span class="ui_-_UI_element">code</span> for the non-LOB typelist. If you begin typing a name in the <span class="ui_-_UI_element">typelist</span> field, the list changes to narrow your choices. If you first select the typelist name from the list of typelists, you can then use the <span class="ui_-_UI_element">code</span> drop-down list to select the code. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="4792095">When you set the properties for the non-LOB typelist, the Typelists editor changes the name of the node and the errors go away.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="4794200">Adding a Parent to an LOB Typecode</a></h4>
+      <div class="B_-_Body"><a name="4794201">You can add a parent to an LOB typecode that supports one or more parents by opening the parent typelist and adding the typecode as a child. See </a><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4757717', '');" title="Editing LOB Typelists and Typecodes">“Adding a Child LOB Typecode”</a>.</div>
+      <h4 class="H2_-_Heading_2"><a name="4761544">Removing an LOB Typecode</a></h4>
+      <div class="B_-_Body"><a name="4761545">While the </a><span class="ui_-_UI_element">Remove</span> command is available for typecodes in a typelist, Guidewire recommends that you not remove a typecode. Existing objects that reference the typecode, such as claims, can become invalid as a result. Additionally, removing a typecode can make typecodes it references into orphans if those typecodes have no other parents. </div>
+      <div class="B_-_Body"><a name="4779161">A circumstance in which you can safely remove a typecode is during development of new typecodes that have not gone into production. Even in that case, you must clean up all references to the typecode in other typelists, PCF files, and Gosu code.</a></div>
+      <div class="B_-_Body"><a name="4778930">Instead of removing a typecode, you can retire it or remove it from its parent. See:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4778818', '');" title="Editing LOB Typelists and Typecodes" name="4779017">“Retiring an LOB Typecode”</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4778820', '');" title="Editing LOB Typelists and Typecodes" name="4779036">“Removing an LOB Typecode from Its Parent”</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4778818">Retiring an LOB Typecode</a></h4>
+      <div class="B_-_Body"><a name="4781947">If you no longer want to use a typecode, set its </a><span class="cv_-_computer_voice">retired</span> property to <span class="cv_-_computer_voice">true</span> as described in <a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4780424', '');" title="Editing LOB Typelists and Typecodes">“Editing an LOB Typelist”</a>. When you retire a typecode, it is no longer used by any PCF files or Gosu code that reference it. Retiring a typecode is the preferred way to cleanly remove entire policy types, coverages, coverage subtypes, and so on.</div>
+      <h4 class="H2_-_Heading_2"><a name="4778820">Removing an LOB Typecode from Its Parent</a></h4>
+      <div class="B_-_Body"><a name="4778821">You can remove a child LOB typecode from its parent typelist. You typically do so because you want to remove the functionality the typecode represents from that particular parent typelist. Typically, both the child and the parent would have multiple children. Removing the typecode from its parent does not remove the typecode itself—it just removes the reference to the child from the parent. </a></div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="4787111">If you want to actually remove a typecode, retire it. See </a><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4778818', '');" title="Editing LOB Typelists and Typecodes">“Retiring an LOB Typecode”</a>.</div>
+      <div class="B_-_Body"><a name="4785085">Use the right-click menu command </a><span class="ui_-_UI_element">Remove typecode from parent </span>to remove a typecode from its parent. To see this menu command, you must first be editing a typelist that is higher in the LOB hierarchy than the typecode you want to remove from its parent. With the parent typelist or higher level typelist open in the editor, navigate from the parent LOB typecode to the child typecode. Then right-click the child typecode. For a hierarchical list of typelists, see <a href="javascript:WWHClickedPopup('config', 'lobs.63.3.html#4798228', '');" title="Relationships Among LOB Typelists">“Relationships Among LOB Typelists”</a>.</div>
+      <div class="B_-_Body"><a name="4783781">For example, you want to remove Arkansas personal injury protection coverage from your business auto policy type, but not from your personal auto policy type. You remove the </a><span class="cv_-_computer_voice">CoverageType</span> typecode PIP - Arkansas, code <span class="cv_-_computer_voice">PAPIP_AR</span>, from its parent <span class="cv_-_computer_voice">PolicyType</span> typecode Commercial Auto, code <span class="cv_-_computer_voice">BusinessAuto,</span>as follows:</div>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="4789363">Navigate to </a><span class="ui_-_UI_element">configuration</span> → <span class="ui_-_UI_element">config</span> → <span class="ui_-_UI_element">Extensions</span> → <span class="ui_-_UI_element">Typelist</span> and double-click <span class="cv_-_computer_voice">PolicyType.ttx</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="4789370">In the Typelists editor, navigate to </a><span class="ui_-_UI_element">Commercial Auto</span> → <span class="ui_-_UI_element">Children</span> → <span class="ui_-_UI_element">PIP - Arkansas</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="4789371">Right-click </a><span class="ui_-_UI_element">PIP - Arkansas</span>, and then, in the drop-down menu, click <span class="ui_-_UI_element">Remove typecode from parent</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="4784988">The coverage is removed from Business Auto, but remains a coverage for Personal Auto. The coverage type therefore still has a parent. It also continues to be a typecode in the </a><span class="cv_-_computer_voice">CoverageType</span> typelist.</div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="4787202">This example removes a typecode from one of two parents. For a typecode with only one parent, such as Bobtail Liability, removing it from its parent would orphan the typecode, leaving it without a parent in the </a><span class="cv_-_computer_voice">CoverageType</span> typelist.</div>
+      <h4 class="H2_-_Heading_2"><a name="4762699">Exporting an LOB Typecode or Typelist </a></h4>
+      <div class="B_-_Body"><a name="4781610">You can right-click a node of an LOB typelist and choose </a><span class="ui_-_UI_element">Export Branch</span> to export the current typecode or typelist and the entire LOB tree below it to a file. You can select whether to export the selected LOB typecode hierarchy as HTML or as CSV. These two commands, available at all levels, export the tree either to an HTML file or to a CSV file. Studio exports the tree in a tabular format. You can print the tree or work with it as a spreadsheet, as follows:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4781695">To print the tree, export it to HTML and use a web browser to print it out. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4781701">To use the tree in a spreadsheet editor like Microsoft Excel, export it to CSV.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4781612">Localizing an LOB Typelist</a></h4>
+      <div class="B_-_Body"><a name="4757767">To see the US English localized LOB typecodes, navigate to </a><span class="ui_-_UI_element">configuration</span> → <span class="ui_-_UI_element">config</span> → <span class="ui_-_UI_element">Localizations</span> → <span class="ui_-_UI_element">en_US</span> and double-click <span class="cv_-_computer_voice">typelist.properties</span>. For more information on localizing typecodes, see <a href="javascript:WWHClickedPopup('global', 'localization_strings.08.2.html#3839541', '');" title="Understanding String Resources">“Typecodes” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('global', 'localization_strings.08.2.html#3839541', '');" title="Understanding String Resources">Globalization Guide</a></span>.</div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

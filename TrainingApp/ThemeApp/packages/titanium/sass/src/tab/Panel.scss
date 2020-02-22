@@ -1,0 +1,75 @@
+//.#{$prefix}tab-top {
+//  @include box-shadow($tab-box-shadow);
+//}
+
+//Tabpanel inside a list-details view
+.#{$prefix}list-details-tabpanel {
+  border-top: 3px solid #FFF;
+  > .#{$prefix}tab-bar {
+    border-top: 1px solid $panel-border-color !important;
+  }
+}
+
+.#{$prefix}tab-bar-strip-default-top {
+  border-width: 1px 0 0 0;
+  height: 2px;
+}
+.#{$prefix}tab-default-top{
+  padding-top:5px;
+  padding-bottom: 4px;
+  border-radius: 0;
+  margin-right: 5px;
+}
+.#{$prefix}tab-default-top-over{
+  text-decoration: underline;
+  color: $gwSelectedTab;
+}
+.#{$prefix}tab-default{
+  background-color: #f9f9f7;
+  .#{$prefix}tab-inner{
+    color: $gwSelectedTab;
+  };
+}
+.#{$prefix}tab-bar-default-top {
+  padding: 0px;
+  background-color: #f9f9f7;
+}
+.#{$prefix}tab-default-active {
+  background-color: #ffffff !important;
+  border-left: 1px solid silver !important;
+  border-top: 1px solid silver !important;
+  border-right: 1px solid silver !important;
+
+  .#{$prefix}tab-inner{
+    color: $gwSelectedTab;
+  }
+}
+.#{$prefix}tab-default-top-over.#{$prefix}tab-default-active{
+  text-decoration: none;
+}
+.#{$prefix}tab-bar-body{
+  border-top:1px solid silver;
+}
+.x-tab-bar-default {
+  .x-tabbar-scroll-left{
+    //background-image: url(images/tab-bar/default-plain-scroll-left.png);
+    background-image: url(images/grid/page-prev.png);
+    background-position: 50%;
+    height: 28px;
+    border-right: 1px solid silver;
+    //border-top: 1px solid silver;
+    //border-bottom: 1px solid silver;
+  }
+  .x-tabbar-scroll-right{
+    //background-image: url(images/tab-bar/default-plain-scroll-right.png);
+    background-image: url(images/grid/page-next.png);
+    background-position: 50%;
+    height: 28px;
+    border-left: 1px solid silver;
+    //border-top: 1px solid silver;
+    //border-bottom: 1px solid silver;
+  }
+  .x-box-scroller{
+    opacity: .9;
+  }
+}

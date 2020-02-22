@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Technical Design</title>
+    <link rel="StyleSheet" href="css/config_catastrophe_dashboard.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Configuration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-ClaimCenter.html#4936069">Guidewire ClaimCenter Configuration</a> : <a class="WebWorks_Breadcrumb_Link" href="config_catastrophe_dashboard.49.1.html#4936069">Configuring the Catastrophe Dashboard</a> : Technical Design</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="4936069">Technical Design</a></h3>
+      <div class="B_-_Body"><a name="4936070">This topic describes the technical features, including classes, PCF files, and web services, used to generate the Catastrophe Dashboard.</a></div>
+      <div class="B_-_Body"><a name="4935998">This topic includes:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'config_catastrophe_dashboard.49.2.html#4904956', '');" title="Technical Design" name="4936020">Heat Map Generation and Components</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'config_catastrophe_dashboard.49.2.html#4905205', '');" title="Technical Design" name="4936030">Server, Browser, and Service Interactions</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'config_catastrophe_dashboard.49.2.html#4906037', '');" title="Technical Design" name="4936036">Principal Heat Map Classes and Files</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'config_catastrophe_dashboard.49.2.html#4906076', '');" title="Technical Design" name="4936042">Datasets and Map Data Points</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'config_catastrophe_dashboard.49.2.html#4906084', '');" title="Technical Design" name="4936077">Datasets and Caching</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'config_catastrophe_dashboard.49.2.html#4906104', '');" title="Technical Design" name="4936083">Datasets and Filtering</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'config_catastrophe_dashboard.49.2.html#4906112', '');" title="Technical Design" name="4940241">DBA Scripts to Improve Oracle and SQL Server Performance</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4904956">Heat Map Generation and Components</a></h4>
+      <div class="B_-_Body"><a name="4935806">The browser generates the heat map graphic by combining map images from a map service with an overlay image generated by the Guidewire server. The overlay image shows the map data points in color. The base configuration can use the Bing Maps service. Map images and the overlay are organized into 256 x 256 pixel tiles.</a></div>
+      <div class="B_-_Body"><a name="4904958">Following is an example showing, left to right, the map tile, the overlay tile, and the combined image. By default, the overlay image is opaque where there is color, with a semitransparent background. The default background color is white and 30% opaque to make the map colors slightly washed out so the overlay colors stand out better.</a></div>
+      <div class="F_-_Figure"><a name="4904952"><img class="Default" src="images/heatmap-overlay-components.png" style="display: inline; float: none; left: 0.0; top: 0.0" alt="" /></a></div>
+      <div class="B_-_Body"><a name="4905076">The components used to generate the heat map are:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4905077">Map service</a></span> – An external service that provides the map control and map images, such as Bing Maps.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4905078">Geocoding service</a></span> – An external service that provides the latitude and longitude for map points from the street address. Geocoding is done separately through a batch process, which saves latitude and longitude information with each geocoded address.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4905079">Image generation code</a></span> – Code that generates overlay tiles, responds to browser requests, and maintains graphic state information.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4905072">Data definition code</a></span> – Code that defines datasets, queries, and the data associated with latitude and longitude pairs. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="4905209">For large amounts of data, there is a caching mechanism that reduces the amount of memory used and the load on the database. Caching provides an in-memory buffer for the dataset, one copy per cluster member, which is shared between all users. Without caching, each user has an independent in-memory buffer.</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4905210">HeatMapLegend.gs</a></span> – Generates the image for the map legend.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4905211">Map template</a></span> – The map template, such as <span class="cv_-_computer_voice">BingMap.gs</span>, used to generate HTML and JavaScript sent to the browser.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4905205">Server, Browser, and Service Interactions</a></h4>
+      <div class="B_-_Body"><a name="4905568">The following figure shows the interactions between the Guidewire server, the browser, and the external geocoding and map services. The geocoding operation runs separately from catastrophe mapping.</a></div>
+      <div class="F_-_Figure"><a name="4905470"><img class="Default" src="images/config_catastrophe_dashboard.49.2.2.png" style="display: inline; float: none; left: 0.0; top: 0.0" alt="" /></a></div>
+      <div class="B_-_Body"><a name="4905891">Locations need to be geocoded before they can be shown on the map. A geocoding service provides the latitude and longitude from the street address, which are saved in the database. In ClaimCenter, a claim preupdate rule, </a><span class="ui_-_UI_element">CPU19000 - Geocode Catastrophe Claims</span>, schedules geocoding if needed for a claim that is associated with a catastrophe.</div>
+      <div class="B_-_Body"><a name="4905893">When the user requests to view a page containing a heat map, the following steps take place to show the web page:</a></div>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="4905894">For datasets that use caching, the first reference by any user loads the in-memory cache. Subsequent users reuse the cache entry, one per cluster member. For datasets that do not use caching, the server queries the database and puts the result into a map point buffer specific to that heat map. The buffer can be retained for the life of the session. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="4905895">The server substitutes values into the map template associated with </a><span class="cv_-_computer_voice">BingMap.gs</span>, such as the center point of the map.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="4905896">The server generates map legend images.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="4905897">The server sends the browser the HTML for the screen. The map itself is in an </a><span class="cv_-_computer_voice">&lt;iframe&gt;</span>, which refers to the substituted map template. The map template in turn refers to the map control on the map service website.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="4905898">After the map control is loaded, it requests map and overlay tiles based on the size of the map in the browser, the center point, and the zoom settings. </a><span class="cv_-_computer_voice">HeatMapGenerator</span> creates overlay tiles on demand from the map point data in the buffer.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4905900">When the user pans or zooms in the map, the map control requests and displays the appropriate map and overlay tiles. The map template sends the new zoom level and center point to the server immediately, preserving this state information if the user navigates away from the map and later returns.</a></div>
+      <div class="B_-_Body"><a name="4905902">When the user selects an area on the map by dragging a rectangle, the map template sends the coordinates of the rectangle to the server immediately. </a><span class="cv_-_computer_voice">HeatMapGenerator</span> returns the <span class="cv_-_computer_voice">SelectionMessage</span> property, which the map template displays in the screen in the PCF <span class="cv_-_computer_voice">Input</span> widget with the <span class="cv_-_computer_voice">ID</span> property equal to <span class="cv_-_computer_voice">HeatMapGenerator.SelectionMessageID</span>. If <span class="cv_-_computer_voice">HeatMapGenerator.RefreshUponSelection</span> is <span class="cv_-_computer_voice">true</span>, the page is refreshed to update the PCF file elements.</div>
+      <h4 class="H2_-_Heading_2"><a name="4906037">Principal Heat Map Classes and Files</a></h4>
+      <div class="B_-_Body"><a name="4906038">You can see documentation for these methods and fields in ClaimCenter Studio by opening the class they are in. Alternatively, you can access the Gosu API documentation as described at </a><a href="javascript:WWHClickedPopup('gosu', 'intro.03.15.html#1519043', '');" title="Gosu Generated Documentation (‘gosudoc’)">“Gosu Generated Documentation (‘gosudoc’)” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('gosu', 'intro.03.15.html#1519043', '');" title="Gosu Generated Documentation (‘gosudoc’)">Gosu Reference Guide</a></span>.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4906040">Classes and Template Files Not Specific to the Catastrophe Heat Map</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4906041">The following classes and template files are available both in ClaimCenter and in PolicyCenter 7.0.3 and later unless designated ClaimCenter only.</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4919212">HeatMapGenerator.gs</a></span> – Base class for defining a heat map. The fully qualified name is <span class="cv_-_computer_voice">gw.api.heatmap.HeatMapGenerator</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4919213">HeatMapDataSet.java</a></span> – Abstract class defining a dataset, its query, and caching. The fully qualified name is <span class="cv_-_computer_voice">gw.api.heatmap.HeatMapDataSet</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4936484">LatLong.java</a></span> – Base class that holds the latitude and longitude for a map point. The fully qualified name is <span class="cv_-_computer_voice">gw.api.heatmap.LatLong</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4936594">HeatMapCacheBase.java</a></span> – Abstract base class to define a cache for a single data set (ClaimCenter only). The fully qualified name is <span class="cv_-_computer_voice">gw.api.heatmap.HeatMapCacheBase</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4936620">HeatMapCacheEntry.java</a></span> – Interface for a cache entry that has status information and blocking and non-blocking load methods (ClaimCenter only). The fully qualified name is <span class="cv_-_computer_voice">gw.api.heatmap.HeatMapCacheEntry</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4936688">HeatMapCachePlugin.gs</a></span> – Plugin that initializes caches (ClaimCenter only). The fully qualified name is <span class="cv_-_computer_voice">gw.api.heatmap.impl.HeatMapCachePlugin</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4936689">BingMap.gs</a></span> – Provides settings to use with Bing Maps. The fully qualified name is <span class="cv_-_computer_voice">gw.api.heatmap.BingMap</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4936696">HeatMapHTML.gst</a></span> – HTML template for the map control and legend. The fully qualified name is <span class="cv_-_computer_voice">gw.api.heatmap.HeatMapHTML</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4936720">BingMapJavaScript.gst</a></span> – JavaScript template for passing parameters to <span class="cv_-_computer_voice">BingMap.js</span>. The fully qualified name is <span class="cv_-_computer_voice">gw.api.heatmap.BingMapJavaScript</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4936690">BingMap.js</a></span> – JavaScript code for the heat map. In ClaimCenter Studio, navigate in the <span class="ui_-_UI_element">Resources</span> pane to <span class="ui_-_UI_element">configuration</span> → <span class="ui_-_UI_element">Web Resources</span> → <span class="ui_-_UI_element">resources</span> → <span class="ui_-_UI_element">javascript</span> → <span class="ui_-_UI_element">heatmap</span> → <span class="ui_-_UI_element">BingMap.js</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4937068">HeatMapLegend.gs</a></span> – Generates a map legend. The fully qualified name is <span class="cv_-_computer_voice">gw.api.heatmap.HeatMapLegend</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4937123">HeatMapColorMap.java</a></span> – Interface or mapping from the count or value for a pixel to a color for a single dataset. Holds the legend labels. The fully qualified name is <span class="cv_-_computer_voice">gw.api.heatmap.HeatMapColorMap</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4937136">RangeColorMap.java</a></span> – Color map that assigns a range of values to a color. For example <span class="cv_-_computer_voice">1-1000</span> is the first color. The fully qualified name is <span class="cv_-_computer_voice">gw.api.heatmap.RangeColorMap</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4906059">Classes and Other Files Specific to the Catastrophe Heat Map</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4938851">The following classes, PCF file, and template file are available only in ClaimCenter. The classes are all in the package </a><span class="cv_-_computer_voice">gw.api.heatmap</span>. You can navigate to these files in ClaimCenter studio by pressing <span class="it_-_input_text">CTRL+N</span> and entering the file name without the extension. Alternatively, for the class and template files, you can navigate in the <span class="ui_-_UI_element">Resources</span> pane to <span class="ui_-_UI_element">configuration</span> → <span class="ui_-_UI_element">Classes</span> → <span class="ui_-_UI_element">gw</span> → <span class="ui_-_UI_element">api</span> → <span class="ui_-_UI_element">heatmap</span>.</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4906060">CatastropheSearchScreen.pcf</a></span> – The Catastrophe Search screen. To edit this file, in ClaimCenter Studio, navigate in the <span class="ui_-_UI_element">Resources</span> pane to <span class="ui_-_UI_element">configuration</span> → <span class="ui_-_UI_element">Page Configuration (PCF)</span> → <span class="ui_-_UI_element">search</span> → <span class="ui_-_UI_element">claims</span> → <span class="ui_-_UI_element">CatastropheSearchScreen</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4937164">CatastropheSearchCriteria.gs</a></span> – GUI logic for the Catastrophe Search screen. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4937195">CatastropheHeatMapViews.gs</a></span> – Defines map views shown in the Catastrophe Search screen. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4937222">CatastropheHeatMap.gs</a></span> – This subclass of <span class="cv_-_computer_voice">HeatMapGenerator</span> is the main class that uses the various classes of the map control. This class renders the map and provides the legend icons and tooltips. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4937587">CatastropheClaimDataSet.gs</a></span> – Subclass of <span class="cv_-_computer_voice">HeatMapDataSet</span> that provides claim data for the catastrophe heat map. Uses <span class="cv_-_computer_voice">CatastropheClaimHeatMapCache</span> to share the buffer among all users.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4937561">CatastropheClaimLatLong.gs</a></span> – Subclass of <span class="cv_-_computer_voice">LatLong</span> representing a single claim on the heat map.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4937849">CatastropheClaimHeatMapCache.gs</a></span> – Subclass of <span class="cv_-_computer_voice">HeatMapCacheBase</span> that caches claim information associated with a catastrophe for the catastrophe heat map. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4937623">CatastrophePolicyLocationDataSet.gs</a></span> – Subclass of <span class="cv_-_computer_voice">HeatMapDataSet</span> that provides policy location data for the catastrophe heat map. Uses <span class="cv_-_computer_voice">CatastrophePolicyLocationHeatMapCache</span> to share the buffer among all users. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4937635">CatastrophePolicyLocationLatLong.gs</a></span> – Subclass of <span class="cv_-_computer_voice">LatLong</span> representing a single policy location on the heat map. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4937647">CatastrophePolicyLocationHeatMapCache.gs</a></span> – Subclass of <span class="cv_-_computer_voice">HeatMapCacheBase</span> that caches policy location information associated with a catastrophe for the catastrophe heat map. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4906067">CatastropheHeatMapHTML.gst</a></span> – HTML template that replaces <span class="cv_-_computer_voice">HeatMapHTML.gst</span> to provide support for two legend icons. Located with the other heat map classes. To see this template, in ClaimCenter studio, navigate in the <span class="ui_-_UI_element">Resources</span> pane to <span class="ui_-_UI_element">configuration</span> → <span class="ui_-_UI_element">Classes</span> → <span class="ui_-_UI_element">gw</span> → <span class="ui_-_UI_element">api</span> → <span class="ui_-_UI_element">heatmap</span> → <span class="ui_-_UI_element">CatastropheHeatMapHTML</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4906076">Datasets and Map Data Points</a></h4>
+      <div class="B_-_Body"><a name="4906078">Heat map data is organized into one or more datasets, which represent points on the map with </a><span class="cv_-_computer_voice">LatLong</span> objects. The base <span class="cv_-_computer_voice">LatLong</span> class has only the latitude and longitude. Generally you will want to subclass <span class="cv_-_computer_voice">LatLong</span> for each dataset to include additional data for filtering. For example, <span class="cv_-_computer_voice">CatastropheClaimLatLong.gs</span> includes the database <span class="cv_-_computer_voice">ID</span> of the claim it represents, total incurred value, and values used for filtering the claims that are shown on the map.</div>
+      <div class="B_-_Body"><a name="4906080">Heat map data points are stored in an in-memory buffer that improves performance for displaying the map. Since the buffer can use a significant amount of memory, the best practice is to keep </a><span class="cv_-_computer_voice">LatLong</span> objects as small as possible. For example, each <span class="cv_-_computer_voice">CatastropheClaimLatLong</span> object might be around 100 bytes, so 50,000 of these objects will use 5 megabytes. </div>
+      <div class="B_-_Body"><a name="4919496">Be sure to use database keys such as the claim </a><span class="cv_-_computer_voice">ID</span> to refer to entities rather than including the entities directly in <span class="cv_-_computer_voice">LatLong</span>. Referring to a large object like a claim or a policy directly in a <span class="cv_-_computer_voice">LatLong</span> will increase memory usage for the map and make the map point query take longer. Fields that are used only in tooltips or the claim and policy location tables do not need to be part of the <span class="cv_-_computer_voice">LatLong</span> object. The heat map code does separate queries using the claim <span class="cv_-_computer_voice">ID</span> or policy location <span class="cv_-_computer_voice">ID</span> to get this data.</div>
+      <div class="B_-_Body"><a name="4906082">To link datasets to your heat map, set </a><span class="cv_-_computer_voice">HeatMapGenerator.DataSets</span> to the list of datasets. Each active dataset uses 256 KB of temporary memory per user when generating overlay tiles.</div>
+      <h4 class="H2_-_Heading_2"><a name="4906084">Datasets and Caching</a></h4>
+      <div class="B_-_Body"><a name="4906085">Buffering for each dataset can be done either with a simple per-user buffer or with a somewhat more complex per-cluster member buffer that runs faster and uses less memory. The catastrophe heat map uses the per-cluster member technique. A non-clustered server will use a single buffer for the dataset.</a></div>
+      <div class="B_-_Body"><a name="4906087">To use a per-user buffer for a dataset:</a></div>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="4906088">Put the database query in the </a><span class="cv_-_computer_voice">mapPointQuery</span> method in your subclass of <span class="cv_-_computer_voice">HeatMapDataSet</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="4906089">Do not override the </a><span class="cv_-_computer_voice">get</span> <span class="cv_-_computer_voice">MapPoints</span> property.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="4906090">Optionally, set </a><span class="cv_-_computer_voice">HeatMapGenerator.MapPointsTimeout</span>, which has a default of 60 minutes. The buffer is released when the user logs out or when the buffer has not been used for the specified interval. The heat map does a new query the next time the buffer is needed.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4906092">To use a per-cluster member buffer for a dataset:</a></div>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="4919556">Use code similar to </a><span class="cv_-_computer_voice">CatastropheHeatClaimDataSet.gs</span> and <span class="cv_-_computer_voice">CatstropheClaimHeatMapCache.gs</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="4906093">In the dataset class, a subclass of </a><span class="cv_-_computer_voice">HeatMapDataSet.java</span>, do the following:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="4906094">Define the query in a static method in the dataset, such as in the method </a><span class="cv_-_computer_voice">findClaimsForCatastrophe</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="4906095">Define </a><span class="cv_-_computer_voice">mapPointQuery</span> to get the value for the cache entry.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="4906096">Define </a><span class="cv_-_computer_voice">get</span> <span class="cv_-_computer_voice">MapPoints</span> to refer to <span class="cv_-_computer_voice">mapPointQuery</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="4906097">Do not set </a><span class="cv_-_computer_voice">MapPoints</span> in your code.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="4906098">In the cache class, a subclass of </a><span class="cv_-_computer_voice">HeatMapCacheBase.java</span>, do the following:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="4906099">Set the timeout interval for the cache in the constructor call to </a><span class="cv_-_computer_voice">super</span>. The query is repeated after this interval. If the cache value is not fetched for two intervals, the buffer is released.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="4906100">Define a load method that calls the query method in the dataset class.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="4906101">Define </a><span class="cv_-_computer_voice">createAndPreload</span> to create the cache and optionally preload. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP2_-_List_Para_002c_Level_2"><a name="4939463">Preloading executes the query and loads the buffer when the server comes up. Otherwise, the first user to reference the cache entry triggers the query, which might cause a long wait. Note that </a><span class="cv_-_computer_voice">HeatMapCacheEntry</span> has status information and both blocking and non-blocking load methods.</div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="4906102">In </a><span class="cv_-_computer_voice">HeatMapCachePlugin.gs</span>, add a line to the <span class="cv_-_computer_voice">createCaches</span> method that calls <span class="cv_-_computer_voice">createAndPreload</span> in the cache class.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4906104">Datasets and Filtering</a></h4>
+      <div class="B_-_Body"><a name="4906105">The catastrophe heat map provides filters that enable the user to dynamically control the data that is included in the map. The filters include the claim status, reported date, and assigned to group. For quicker updates when the user changes the filter, the catastrophe heat map does the filtering from the map buffer contents rather than making them part of the database query. Using the map buffer contents avoids having to do a new query for each filter change. This approach is essential when using a per-cluster member buffer, since all the users on the cluster member share the same buffer but can have different filter settings.</a></div>
+      <h6 class="HS_-_Head_Sub"><a name="4906107">To use or add filters in a dataset:</a></h6>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="4906108">Add the values needed for filtering to your </a><span class="cv_-_computer_voice">LatLong</span> subclass. To keep memory use down and make the filter condition evaluate quickly, you can precompute complex filter conditions and reduce them to simple variables saved in the <span class="cv_-_computer_voice">LatLong</span> subclass.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="4906109">Add the necessary data to the query for your dataset. If you are using an Oracle materialized view for the query, you must update the materialized view definition.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="4906110">Define a filter method in the dataset class. Because the filter is evaluated very frequently, make the function as simple and quick as possible. Avoid lengthy loops and database queries.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4906112">DBA Scripts to Improve Oracle and SQL Server Performance</a></h4>
+      <div class="B_-_Body"><a name="4906113">The scripts described in this section give better performance for the query that loads claims into the per-cluster member cache. Ask your DBA to apply them.</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4932955">Oracle Script</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4940017">You can find a copy of the following sample Oracle script at the following location:</a></div>
+      <div class="CS_-_Code_Single_Line"><a name="4940122">modules/pl/deploy/oracle/</a><span class="s_-_strong">catmapmv.sql</span></div>
+      <div class="B_-_Body"><a name="4906115">The script creates a materialized view for Oracle. You must set some parameters on the claims query to take advantage of the materialized view. Setting these parameters is similar to setting up the </a><span class="cv_-_computer_voice">query</span> parameter of the <span class="cv_-_computer_voice">enableMaterializedView</span> method in <span class="cv_-_computer_voice">CatastropheClaimDataSet.findClaimsForCatastrophe</span>.</div>
+      <PRE class="CF_-_Code_First_Line"><a name="4906117">create materialized view log on cc_claim initrans 8 tablespace CC_OP with PRIMARY KEY (</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933010">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CatastropheID,retired, state, AssignedGroupID, reportedDate),</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933021">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rowid including new values;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906118">create materialized view log on cc_address initrans 8 tablespace CC_OP with PRIMARY KEY (</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933033">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retired, latitude, longitude), rowid including new values;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906119">create materialized view log on cc_claimrpt initrans 8 tablespace CC_OP with PRIMARY KEY (</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933044">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ClaimID, retired, OpenReservesRprtng, TotalPaymentsRprtng, TotalRecoveriesRprtng),</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933055">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rowid including new values;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906120">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906121">alter session set "_optimizer_compute_index_stats"=false;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906122">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906123">create index i_mlog_claim on MLOG$_CC_CLAIM(XID$$, M_ROW$$)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933066">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tablespace cc_index initrans 8;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906124">create index i_mlog_address on MLOG$_CC_ADDRESS(XID$$, M_ROW$$)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933078">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tablespace cc_index initrans 8;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906125">create index i_mlog_claimrpt on MLOG$_CC_CLAIMRPT(XID$$, M_ROW$$)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933090">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tablespace cc_index initrans 8;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906126">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906127">exec dbms_stats.UNLOCK_TABLE_STATS(user, 'MLOG$_CC_CLAIM');</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906128">exec dbms_stats.UNLOCK_TABLE_STATS(user, 'MLOG$_CC_ADDRESS');</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906129">exec dbms_stats.UNLOCK_TABLE_STATS(user, 'MLOG$_CC_CLAIMRPT');</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906130">exec dbms_stats.gather_table_stats(user, 'MLOG$_CC_CLAIM', cascade=&gt;true);</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906131">exec dbms_stats.gather_table_stats(user, 'MLOG$_CC_ADDRESS', cascade=&gt;true);</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906132">exec dbms_stats.gather_table_stats(user, 'MLOG$_CC_CLAIMRPT', cascade=&gt;true);</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906133">exec dbms_stats.LOCK_TABLE_STATS(user, 'MLOG$_CC_CLAIM');</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906134">exec dbms_stats.LOCK_TABLE_STATS(user, 'MLOG$_CC_ADDRESS');</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906135">exec dbms_stats.LOCK_TABLE_STATS(user, 'MLOG$_CC_CLAIMRPT');</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906136">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906137">CREATE materialized view catmapmv</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906138">tablespace cc_op initrans 4</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906139">USING INDEX tablespace cc_index initrans 4</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906140">refresh fast on commit</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906141">-- start with sysdate next sysdate + 1/48</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906142">WITH Primary Key</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906143">enable query rewrite</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906144">AS</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906145">SELECT</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906146">&nbsp;&nbsp;c.ID ClaimID, c.State ClaimState, c.AssignedGroupID ClaimAssignedGroupID,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906147">&nbsp;&nbsp;c.ReportedDate ClaimReportedDate, c.CatastropheID CatastropheID, c.rowid ClaimRowID,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906148">&nbsp;&nbsp;c.Retired ClaimRetired, a.Retired AddressRetired, a.ID AddressID,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933126">&nbsp;&nbsp;a.rowid AddressRowID, a.Latitude AddressLatitude, a.Longitude AddressLongitude,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933131">&nbsp;&nbsp;r.rowid ClaimRptRowID, r.ID ClaimRptID, r.Retired ClaimRptRetired,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933132">&nbsp;&nbsp;r.ClaimID ClaimRptClaimID, r.OpenReservesRprtng OpenReserves, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933139">&nbsp;&nbsp;r.TotalPaymentsRprtng TotalPayments, r.TotalRecoveriesRprtng TotalRecoveries</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906153">FROM</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906154">&nbsp;&nbsp;cc_claim c, cc_address a, cc_claimrpt r</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906155">WHERE</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906156">&nbsp;&nbsp;a.ID = c.LossLocationID AND c.ID = r.ClaimID;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906157">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906158">create index i_catmapmv on catmapmv(CATASTROPHEID, CLAIMRETIRED, ADDRESSRETIRED, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933151">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLAIMRPTRETIRED, ADDRESSLATITUDE, ADDRESSLONGITUDE, CLAIMID, CLAIMSTATE, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933162">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLAIMASSIGNEDGROUPID, CLAIMREPORTEDDATE, OPENRESERVES, TOTALPAYMENTS, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933173">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTALRECOVERIES) tablespace cc_index initrans 3;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906159">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906160">create unique index rowidc on catmapmv(ClaimRowID) tablespace cc_index initrans 2;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906161">create unique index rowida on catmapmv(AddressRowID) tablespace cc_index initrans 2;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906162">create unique index idc on catmapmv(ClaimID) tablespace cc_index initrans 2;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906163">create unique index ida on catmapmv(AddressID) tablespace cc_index initrans 2;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906164">create unique index rowidr on catmapmv(ClaimRptRowID) tablespace cc_index initrans 2;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906165">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906166">exec dbms_stats.gather_table_stats(user, 'catmapmv', cascade =&gt; true, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933184">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;estimate_percent =&gt; dbms_stats.auto_sample_size);</a></PRE>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4906167">SQL Server Script</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4940144">You can find a copy of the following sample SQL Server script at the following location:</a></div>
+      <div class="CS_-_Code_Single_Line"><a name="4940145">modules/pl/deploy/sqlserver/</a><span class="s_-_strong">catmapindexview.sql</span> </div>
+      <div class="B_-_Body"><a name="4906169">The script creates an indexed view for SQL Server:</a></div>
+      <PRE class="CF_-_Code_First_Line"><a name="4906171">IF EXISTS (SELECT * </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906172">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM  dbo.sysobjects </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906173">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE id = Object_id(N'[dbo].[catmapiv]') </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906174">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AND Objectproperty(id, N'IsView') = 1) </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906175">&nbsp;&nbsp;DROP VIEW [dbo].[catmapiv] </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906176">GO </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906177">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906178">--Index view for catastrophe heat map queries</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906179">CREATE VIEW [dbo].catmapiv </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906180">WITH SCHEMABINDING </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906181">AS </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906182">&nbsp;&nbsp;SELECT c.id          claimid, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906183">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.state         claimstate, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906184">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.assignedgroupid    claimassignedgroupid, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906185">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.reporteddate     claimreporteddate, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906186">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.catastropheid     catastropheid, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906187">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.retired        claimretired, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906188">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.retired        addressretired, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906189">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.id          addressid, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906190">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.latitude       addresslatitude, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906191">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.longitude       addresslongitude, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906192">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r.id          claimrptid, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906193">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r.retired        claimrptretired, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906194">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r.claimid        claimrptclaimid, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906195">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r.openreservesrprtng  openreserves, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906196">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r.totalpaymentsrprtng  totalpayments, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906197">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r.totalrecoveriesrprtng totalrecoveries </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906198">&nbsp;&nbsp;FROM [dbo].cc_claim c, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906199">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[dbo].cc_address a, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[dbo].cc_claimrpt r </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906201">&nbsp;&nbsp;WHERE a.id = c.losslocationid </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906202">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AND c.id = r.claimid; </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906203">GO</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906204">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906205">CREATE UNIQUE CLUSTERED INDEX i_catmapmv </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906206">&nbsp;&nbsp;ON catmapiv(catastropheid, claimretired, addressretired, claimrptretired,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933529">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;addresslatitude, addresslongitude, claimid, claimstate,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933599">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;claimassignedgroupid, claimreporteddate,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933566">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;openreserves, totalpayments, totalrecoveries); </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906209">GO</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906210">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933631">CREATE UNIQUE INDEX idc </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933632">&nbsp;&nbsp;ON catmapiv(claimid); </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4933633">GO</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906214">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906215">CREATE UNIQUE INDEX ida </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4906216">&nbsp;&nbsp;ON catmapiv(addressid); </a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="4933974">GO</a></PRE>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

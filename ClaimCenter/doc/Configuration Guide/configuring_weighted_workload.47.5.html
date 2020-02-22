@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Weighted Workload Configuration</title>
+    <link rel="StyleSheet" href="css/configuring_weighted_workload.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Configuration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-ClaimCenter.html#1149667">Guidewire ClaimCenter Configuration</a> : <a class="WebWorks_Breadcrumb_Link" href="configuring_weighted_workload.47.1.html#1149667">Configuring Weighted Workload Assignment</a> : Weighted Workload Configuration</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="1149667">Weighted Workload Configuration</a></h3>
+      <div class="B_-_Body"><a name="1149668">Weighted workload assignment is not enabled in the base configuration, and you will need to enable it in config.xml. See </a><a href="javascript:WWHClickedPopup('config', 'configuring_weighted_workload.47.2.html#1123417', '');" title="Enabling Weighted Workload">“Enabling Weighted Workload”</a>.</div>
+      <div class="B_-_Body"><a name="1149894">In addition to the configuration parameters, weighted workload configuration is comprised of the following two components:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="1149895">Weight Computation – If weighted workload is enabled in configuration, corresponding Preupdate rules are triggered for the assignable entity to compute the workload weight.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="1149896">User Assignment API – If weighted workload parameters and default assignment rules are enabled in configuration, user assignment is implemented using the default workload assignment strategy.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="1150352">These components are described in further detail in this topic.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="1150420">Workload Weight Computation</a></h4>
+      <div class="B_-_Body"><a name="1150454">The first step in using weighted workload assignment is to enable this feature in configuration. See </a><a href="javascript:WWHClickedPopup('config', 'configuring_weighted_workload.47.2.html#1123417', '');" title="Enabling Weighted Workload">“Enabling Weighted Workload”</a>.</div>
+      <div class="B_-_Body"><a name="1177101">Once weighted workload is enabled, associated </a><span class="cv_-_computer_voice">Preupdate</span> rules for <span class="cv_-_computer_voice">Workload</span> <span class="cv_-_computer_voice">Assignment</span> <span class="cv_-_computer_voice">Balancing</span> are activated. Any time relevant changes occur to workload-aware assignable objects, these rules are triggered to calculate the workload weight. Some events that activate these rules include the creation of a new claim or exposure, reassigning of a claim or exposure, and so on.</div>
+      <div class="B_-_Body"><a name="1177098">In the base configuration, the following rules are included:</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><span class="cvh_-_computer_voice_in_heading"><a name="1146784">ClaimPreupdate</a></span> Rules</h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="T_-_Table"><a name="1147002">&nbsp;</a></div>
+      <table class="BulletListDoubleCol" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1147280">Rule</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1147282">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><span class="cvt_-_computer_voice_table"><a name="1147284">CPU30000</a></span> – <span class="cvt_-_computer_voice_table">Workload Assignment Balancing</span></div>
+          </td>
+          <td style="border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1147286">This parent rule and its child rules are activated only if weighted workload assignment is enabled in configuration.</a></div>
+            <div class="TT_-_Table_Text"><a name="1147652">Checks </a><span class="cvt_-_computer_voice_table">gw</span>.<span class="cvt_-_computer_voice_table">api</span>.<span class="cvt_-_computer_voice_table">system</span>.<span class="cvt_-_computer_voice_table">CCConfigParameters</span>.<span class="cvt_-_computer_voice_table">WeightedAssignmentEnabled</span>.<span class="cvt_-_computer_voice_table">Value</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><span class="cvt_-_computer_voice_table"><a name="1147288">CPU30100</a></span> – <span class="cvt_-_computer_voice_table">Claim Closed</span></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1147290">Updates the weighted workload value when a claim is closed.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><span class="cvt_-_computer_voice_table"><a name="1147292">CPU30200</a></span> – <span class="cvt_-_computer_voice_table">Claim Reassignment</span></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1147294">Updates the weighted workload value when the assigned user on a claim changes.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><span class="cvt_-_computer_voice_table"><a name="1147296">CPU30300</a></span> – <span class="cvt_-_computer_voice_table">Claim Reopened</span></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1147298">Updates the weighted workload value when a claim status changes from “closed” to “open.”</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><span class="cvt_-_computer_voice_table"><a name="1147300">CPU30400</a></span> – <span class="cvt_-_computer_voice_table">New Claim</span></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1147302">Calculates the weighted workload value on a new claim.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><span class="cvt_-_computer_voice_table"><a name="1147304">CPU30500</a></span> – <span class="cvt_-_computer_voice_table">Claim Workload Affected</span></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1147306">Updates the weighted workload value when a claim field that impacts workload is altered. See </a><a href="javascript:WWHClickedPopup('config', 'configuring_weighted_workload.47.3.html#1141175', '');" title="Workload Weight Recalculation">“Workload Weight Recalculation”</a>.</div>
+          </td>
+        </tr>
+      </table>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="1146875">ExposurePreupdate Rules</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="1148314">Use these rules to manage weighted workload assignment when specific changes take place in the assignable object, in this case, the exposure.</a></div>
+      <div class="T_-_Table"><a name="1148252">&nbsp;</a></div>
+      <table class="BulletListDoubleCol" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1148258">Rule</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1148260">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><span class="cvt_-_computer_voice_table"><a name="1148262">EPU10000</a></span> – <span class="cvt_-_computer_voice_table">Workload Assignment Balancing</span></div>
+          </td>
+          <td style="border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1148264">This parent rule and its child rules are activated only if weighted workload assignment is enabled in configuration.</a></div>
+            <div class="TT_-_Table_Text"><a name="1148265">Checks </a><span class="cvt_-_computer_voice_table">gw</span>.<span class="cvt_-_computer_voice_table">api</span>.<span class="cvt_-_computer_voice_table">system</span>.<span class="cvt_-_computer_voice_table">CCConfigParameters</span>.<span class="cvt_-_computer_voice_table">WeightedAssignmentEnabled</span>.<span class="cvt_-_computer_voice_table">Value</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><span class="cvt_-_computer_voice_table"><a name="1148267">EPU10100</a></span> – <span class="cvt_-_computer_voice_table">Exposure Closed</span></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1148269">Updates the weighted workload value when an exposure is closed.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><span class="cvt_-_computer_voice_table"><a name="1148271">EPU10200</a></span> – <span class="cvt_-_computer_voice_table">Exposure Reassignment</span></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1148273">Updates the weighted workload value when the assigned user on an exposure changes.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><span class="cvt_-_computer_voice_table"><a name="1148275">EPU10300</a></span> – <span class="cvt_-_computer_voice_table">Exposure Reopened</span></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1148277">Updates the weighted workload value when the status of an exposure changes from “closed” to “open.”</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><span class="cvt_-_computer_voice_table"><a name="1148279">EPU10400</a></span> – <span class="cvt_-_computer_voice_table">New Exposure</span></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1148281">Calculates the weighted workload value on a new exposure.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><span class="cvt_-_computer_voice_table"><a name="1148283">EPU10500</a></span> – <span class="cvt_-_computer_voice_table">Exposure Workload Affected</span></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1148285">Updates the weighted workload value when a field on the exposure that impacts workload is altered. See </a><a href="javascript:WWHClickedPopup('config', 'configuring_weighted_workload.47.3.html#1141175', '');" title="Workload Weight Recalculation">“Workload Weight Recalculation”</a>.</div>
+          </td>
+        </tr>
+      </table>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="1148589">Global Workload Assignment Rules</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="1148585">In order to use weighted workload assignment, you need to implement global assignment rules that utilize the Weighted Workload API commands. </a></div>
+      <div class="B_-_Body"><a name="1148680">In the base configuration, a set of sample global assignment rules using workload-aware assignment methods are provided. By default, these rules are disabled. Enable these rules or create your own to activate weighted workload assignment.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="1151077">User Assignment API</a></h4>
+      <div class="B_-_Body"><a name="1151312">In the base configuration, sample rules are provided for user assignment within a group. The user assignment API uses the default workload assignment strategy. You can customize both the methods and the assignment strategies used, as needed. See </a><a href="javascript:WWHClickedPopup('config', 'configuring_weighted_workload.47.5.html#1144777', '');" title="Weighted Workload Configuration">“Weighted Workload Assignment Strategies”</a>.</div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="1152031">The sample rules for user assignment using weighted workload are disabled in the base configuration. You must activate them in order to start assigning claims and exposures based on workloads.</a></div>
+      <div class="B_-_Body"><a name="1151545">The following default rules are available.</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="1151598">Default Group Claim Assignment Rules</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="T_-_Table"><a name="1151542">&nbsp;</a></div>
+      <table class="BulletListDoubleCol" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1152652">Rule Set</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1152643">Rule</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1152645">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1152654">DefaultGroupClaimAssignmentRules</a></div>
+          </td>
+          <td style="border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><span class="cvt_-_computer_voice_table"><a name="1152647">DGC00500</a></span> – <span class="cvt_-_computer_voice_table">Balanced workload within group</span></div>
+          </td>
+          <td style="border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1152649">This rule is activated only if weighted workload assignment is enabled in configuration.</a></div>
+            <div class="TT_-_Table_Text"><a name="1152650">Assigns the claim to the most suitable user, that is, the user with the appropriate status, membership, and the lowest workload. Uses the default assignment strategy, </a><span class="cvt_-_computer_voice_table">GroupUserWorkloadAssignmentStrategy</span>.</div>
+          </td>
+        </tr>
+      </table>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="1151886">Default Group Exposure Assignment Rules</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="T_-_Table"><a name="1151897">&nbsp;</a></div>
+      <table class="BulletListDoubleCol" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1152756">Rule Set</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1152758">Rule</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1152760">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1152762">DefaultGroupExposureAssignmentRules</a></div>
+          </td>
+          <td style="border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><span class="cvt_-_computer_voice_table"><a name="1152764">DGC00500</a></span> – <span class="cvt_-_computer_voice_table">Balanced workload within group</span></div>
+          </td>
+          <td style="border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1152766">This rule is activated only if weighted workload assignment is enabled in configuration.</a></div>
+            <div class="TT_-_Table_Text"><a name="1152767">Assigns the exposure to the most suitable user, that is, the user with the appropriate status, membership, and the lowest workload. Uses the default assignment strategy, </a><span class="cvt_-_computer_voice_table">GroupUserWorkloadAssignmentStrategy</span>.</div>
+          </td>
+        </tr>
+      </table>
+      <h4 class="H2_-_Heading_2"><a name="1144777">Weighted Workload Assignment Strategies</a></h4>
+      <div class="B_-_Body"><a name="1144831">Weighted workload assignment defines and uses dynamic assignment strategies to process and make decisions on how workload-enabled assignable objects must be assigned. Assignment strategies include support for workload-based and load factor-based assignment. Assignment strategies are located in </a><span class="cv_-_computer_voice">gw</span>.<span class="cv_-_computer_voice">assignment</span>.<span class="cv_-_computer_voice">workload</span>.<span class="cv_-_computer_voice">strategies</span>.</div>
+      <div class="B_-_Body"><a name="1144968">In the base configuration, ClaimCenter contains four default assignment strategies for specific use with weighted workload:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="1144835">GroupUserWorkloadAssignmentStrategy</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="1145018">GroupUserByAttributeWorkloadAssignmentStrategy</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="1145027">UserWorkloadAssignmentStrategy</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="1145036">UserByAttributeWorkloadAssignmentStrategy</a></span> </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="1144827">These four assignment strategies provide basic weighted workload assignment support, and you can choose to use or modify to fit your own requirements. Alternately, you can use these as a reference if you decide to implement you own strategies. These strategies fully support subgroup recursion.</a></div>
+      <h6 class="HS_-_Head_Sub"><span class="cvh_-_computer_voice_in_heading"><a name="1144859">GroupUserWorkloadAssignmentStrategy</a></span> (Default)</h6>
+      <div class="B_-_Body"><span class="cv_-_computer_voice"><a name="1144861">GroupUserWorkloadAssignmentStrategy</a></span> chooses from among a set of candidate <span class="cv_-_computer_voice">GroupUser</span> objects the group user who has the lowest workload weight and is the winner of ties, if any. In the base configuration, this is the default strategy used by the sample weighted workload assignment methods provided.</div>
+      <h6 class="HS_-_Head_Sub" style="color: #000000; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="1144862">GroupUserByAttributeWorkloadAssignmentStrategy</a></span></h6>
+      <div class="B_-_Body"><span class="cv_-_computer_voice"><a name="1144864">GroupUserByAttributeWorkloadAssignmentStrategy</a></span> is functionally identical to <span class="cv_-_computer_voice">GroupUserWorkloadAssignmentStrategy</span>, but allows the caller to specify user attribute criteria to filter down the list of candidate users before the decision-making process begins.</div>
+      <h6 class="HS_-_Head_Sub" style="color: #000000; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="1144865">UserWorkloadAssignmentStrategy</a></span></h6>
+      <div class="B_-_Body"><span class="cv_-_computer_voice"><a name="1144867">UserWorkloadAssignmentStrategy</a></span> chooses from among a set of candidates the group user who has the least weight and who is the winner of ties, if any. This selection is based on the absolute weight of the group user rather than the group weight. See <a href="javascript:WWHClickedPopup('app', 'weighted_workload.28.4.html#1139093', '');" title="Calculating Weights">“Calculating Weights” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('app', 'weighted_workload.28.4.html#1139093', '');" title="Calculating Weights">Application Guide</a></span>.</div>
+      <div class="B_-_Body"><a name="1176527">Unlike </a><span class="cv_-_computer_voice">GroupUserWorkloadAssignmentStrategy</span>, the user's calculated weight across the entire system is taken into account rather than just within a particular group.</div>
+      <h6 class="HS_-_Head_Sub"><a name="1144868">UserByAttributeWorkloadAssignmentStrategy</a></h6>
+      <div class="B_-_Body"><span class="cv_-_computer_voice"><a name="1148698">UserByAttributeWorkloadAssignmentStrategy</a></span> is functionally identical to <span class="cv_-_computer_voice">UserWorkloadAssignmentStrategy</span>, but allows the caller to specify user attribute criteria to filter down the list of candidate users before the decision-making process begins. </div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

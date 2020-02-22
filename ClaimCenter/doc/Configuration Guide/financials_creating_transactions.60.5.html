@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Creating Recovery Transactions</title>
+    <link rel="StyleSheet" href="css/financials_creating_transactions.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Configuration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-ClaimCenter_financials.html#4981616">Guidewire ClaimCenter Financials</a> : <a class="WebWorks_Breadcrumb_Link" href="financials_creating_transactions.60.1.html#4981616">Creating ClaimCenter Financial Transactions</a> : Creating Recovery Transactions</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="4981616">Creating Recovery Transactions</a></h3>
+      <div class="B_-_Body"><a name="4981617">Guidewire provides methods to create recoveries on the following objects:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="4981618">Claim</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="4981619">Exposure</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="4981620">RecoverySet</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4981621">Claim Objects</a></h4>
+      <div class="B_-_Body"><a name="4981622">The following example illustrates how to create a recovery on a claim. You need to define or retrieve values for each of the supplied parameters. Also, you need to supply only those parameters that meet your business needs.</a></div>
+      <PRE class="CF_-_Code_First_Line"><a name="4981623">claim.createRecovery( payer, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981624">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;costType, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981625">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;costCategory,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981626">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;recoveryCategory, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981627">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lineCategory,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981628">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;recoveryAmount,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981629">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;recoveryCurrency, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981630">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exchangeRateOverride, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981631">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;customExchangeRateDescription, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981632">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;claimAmountOverride,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981633">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reportingAmountOverride, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981634">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comments, </a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="4981635">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;requestingUser )</a></PRE>
+      <h4 class="H2_-_Heading_2"><a name="4981636">Exposure Objects</a></h4>
+      <div class="B_-_Body"><a name="4981637">The following example illustrates how to create a recovery on an exposure.</a></div>
+      <PRE class="CF_-_Code_First_Line"><a name="4981638">exp.createRecovery( payer,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981639">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;costType, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981640">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;costCategory, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981641">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;recoveryCategory, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981642">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lineCategory,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981643">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;recoveryAmount, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981644">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comments,</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="4981645">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;requestingUser )</a></PRE>
+      <h4 class="H2_-_Heading_2"><a name="4981646">Creating Recoveries Directly</a></h4>
+      <div class="B_-_Body"><a name="4981648">ClaimCenter provides an API that you can use to create recoveries directly. This API is more flexible than those listed earlier in this topic. The methods include the following:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="4981649">Claim.newRecoverySet()</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="4981650">RecoverySet.newRecovery( exposure, costType, costCategory )</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="4981651">RecoverySet.prepareForCommit()</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4981652">For example:</a></div>
+      <PRE class="CF_-_Code_First_Line"><a name="4981653">var claim : Claim</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981654">var exposure : Exposure</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981655">var costType : CostType</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981656">var costCategory : CostCategory</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981657">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981658">var recoverySet = claim.newRecoverySet()</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981659">var recovery = recoverySet.newRecovery(exposure, costType, costCategory)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981660">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981661">// Modify the new Recovery transaction as you want – for example:</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981662">recovery.Currency = Currency.TC_EUR</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981663">recovery.RecoveryCategory = RecoveryCategory.TC_SALVAGE</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981664">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981665">// Set the amount to 100 EUR.</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981666">// A Recovery transaction must have at least one TransactionLineItem.</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981667">recovery.addNewLineItem( gw.api.financials.CurrencyAmount.getStrict( </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981668">&nbsp;&nbsp;&nbsp;&nbsp;100, Currency.TC_EUR) , null, null)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981669">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981670">// Add more recovery transactions if required</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981671">&nbsp;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="4981672">recoverySet.prepareForCommit()</a></PRE>
+      <div class="B_-_Body"><a name="4981673">The </a><span class="cv_-_computer_voice">newRecovery</span> method returns the new transaction entity so that you can modify it. At minimum, you must call the <span class="cv_-_computer_voice">addNewLineItem</span> method to add a <span class="cv_-_computer_voice">TransactionLineItem</span> with the <span class="cv_-_computer_voice">Amount</span> of the transaction. You can also create a multicurrency <span class="cv_-_computer_voice">Recovery</span> transaction by modifying the <span class="cv_-_computer_voice">Currency</span> field on the transaction.</div>
+      <div class="B_-_Body"><a name="4981674">After you finish creating transactions, call the </a><span class="cv_-_computer_voice">RecoverySet.prepareForCommit</span> method to submit the recovery set for approval and to update the financial calculations. After calling the <span class="cv_-_computer_voice">prepareForCommit</span> method, it is not possible to modify the transaction amount, currency, exchange rates, or other key fields on the transaction.</div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

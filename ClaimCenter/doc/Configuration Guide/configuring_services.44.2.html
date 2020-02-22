@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Importing Services</title>
+    <link rel="StyleSheet" href="css/configuring_services.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Configuration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-ClaimCenter.html#1123417">Guidewire ClaimCenter Configuration</a> : <a class="WebWorks_Breadcrumb_Link" href="configuring_services.44.1.html#1123417">Configuring Services</a> : Importing Services</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="1123417">Importing Services</a></h3>
+      <div class="B_-_Body"><a name="1123418">A </a><span class="e_-_emphasis">service</span> can be defined as any action that can be requested from a third-party vendor or internal provider. A service request summarizes the instruction sent to the vendor detailing the service to be performed. Each service request is associated with one claim.</div>
+      <div class="B_-_Body"><a name="1124935">Vendor information is presented in ClaimCenter in the form of a vendor directory, from which you can make a selection based on the type of service required. The services vendor directory is organized in a tree structure, where folder nodes represent service categories and leaf nodes represent specialized services. The services performed by a specialist vendor can be configured in Guidewire Contact Manager.</a></div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="1125045">Guidewire recommends that you install Guidewire Contact Manager and integrate it with Guidewire ClaimCenter before importing services information.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="1124309">Vendor Service Tree</a></h4>
+      <div class="B_-_Body"><a name="1124310">Vendor services are described in the </a><span class="cv_-_computer_voice">vendorservicetree</span>.<span class="cv_-_computer_voice">xml</span> data file. The vendor service tree is imported and used by both ClaimCenter and Contact Manager. It is assumed that both applications are integrated and will maintain identical service trees. You can accomplish this by using the data import feature in both ClaimCenter and Contact Manager to load the same, customized service tree XML file.</div>
+      <div class="B_-_Body"><a name="1127266">The structure of the vendor service tree is outlined below:</a></div>
+      <div class="F_-_Figure"><a name="1127270"><img class="Default" src="images/configuring_services.44.2.1.png" style="display: block; float: none; left: 0.0; top: 0.0" alt="" /></a></div>
+      <div class="B_-_Body"><a name="1129210">At the topmost level of the tree, the folder nodes represent service categories. Under these, you can define service subcategories or service types. The leaf nodes of the tree represent the specialized services grouped into each category.</a></div>
+      <div class="B_-_Body"><a name="1129206">The format of the </a><span class="cv_-_computer_voice">vendorservicetree</span>.<span class="cv_-_computer_voice">xml</span> file needs to conform to a corresponding structure. The following example file defines Auto and Property categories, along with subcategories and services.</div>
+      <PRE class="CF_-_Code_First_Line"><a name="1126013">&lt;?xml version="1.0"?&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126014">&lt;import&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126015">&lt;SpecialistService public-id="svc:aut"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126016">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126017">    &lt;Code&gt;auto&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126018">    &lt;Description&gt;Auto&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126019">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126020">    &lt;Name&gt;Auto&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126021">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126022">    &lt;Parent/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126023">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126042">&lt;SpecialistService public-id="svc:aut_ins"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126043">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126044">    &lt;Code&gt;autoinsprepair&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126045">    &lt;Description&gt;Auto - Inspect / Repair&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126046">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126047">    &lt;Name&gt;Inspect / Repair&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126048">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126049">    &lt;Parent public-id="svc:aut"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126050">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126051">&lt;SpecialistService public-id="svc:aut_ins_aud"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126052">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126053">    &lt;Code&gt;autoinsprepairaudio&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126054">    &lt;Description&gt;Auto - Inspect / Repair - Audio equipment&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126055">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126056">    &lt;Name&gt;Audio equipment&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126057">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126058">    &lt;Parent public-id="svc:aut_ins"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126059">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126060">&lt;SpecialistService public-id="svc:aut_ins_bod"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126061">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126062">    &lt;Code&gt;autoinsprepairbody&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126063">    &lt;Description&gt;Auto - Inspect / Repair - Auto body&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126064">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126065">    &lt;Name&gt;Auto body&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126066">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126067">    &lt;Parent public-id="svc:aut_ins"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126068">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126132">&lt;SpecialistService public-id="svc:pro"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126133">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126134">    &lt;Code&gt;prop&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126135">    &lt;Description&gt;Property&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126136">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126137">    &lt;Name&gt;Property&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126138">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126139">    &lt;Parent/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126140">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126141">&lt;SpecialistService public-id="svc:pro_ins"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126142">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126143">    &lt;Code&gt;propinspect&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126144">    &lt;Description&gt;Property - Inspection&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126145">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126146">    &lt;Name&gt;Inspection&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126147">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126148">    &lt;Parent public-id="svc:pro"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126149">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126159">&lt;SpecialistService public-id="svc:pro_ins_ind"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126160">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126161">    &lt;Code&gt;propinspectindependent&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126162">    &lt;Description&gt;Property - Inspection - Independent appraisal&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126163">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126164">    &lt;Name&gt;Independent appraisal&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126165">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126166">    &lt;Parent public-id="svc:pro_ins"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126167">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126177">&lt;SpecialistService public-id="svc:pro_con"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126178">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126179">    &lt;Code&gt;propconstrserv&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126180">    &lt;Description&gt;Property - Construction services&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126181">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126182">    &lt;Name&gt;Construction services&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126183">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126184">    &lt;Parent public-id="svc:pro"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126185">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126186">&lt;SpecialistService public-id="svc:pro_con_gen"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126187">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126188">    &lt;Code&gt;propconstrservgencontractor&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126189">    &lt;Description&gt;Property - Construction services - General contractor&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126190">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126191">    &lt;Name&gt;General contractor&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126192">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126193">    &lt;Parent public-id="svc:pro_con"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126194">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126195">&lt;SpecialistService public-id="svc:pro_con_car"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126196">    &lt;Active&gt;true&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126197">    &lt;Code&gt;propconstrservcarpentry&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126198">    &lt;Description&gt;Property - Construction services - Carpentry&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126199">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126200">    &lt;Name&gt;Carpentry&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126201">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126202">    &lt;Parent public-id="svc:pro_con"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1126203">&lt;/SpecialistService&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="1127323">&lt;/import&gt;</a></PRE>
+      <div class="B_-_Body"><a name="1127877">In this example, </a><span class="ui_-_UI_element">Auto</span> is defined as a service category, <span class="ui_-_UI_element">Inspect/Repair</span> is a subcategory, and <span class="ui_-_UI_element">Auto</span> <span class="ui_-_UI_element">body</span> a service type. The services that can be performed by a vendor are configured in Guidewire ContactManager.</div>
+      <div class="B_-_Body"><a name="1127873">In this vendor service tree example, the following services are defined:</a></div>
+      <div class="T_-_Table"><a name="1127362">&nbsp;</a></div>
+      <table class="BulletListDoubleCol" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1127327">Category</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1127329">Subcategory</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="1127331">Service Type</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1127333">Auto</a></div>
+          </td>
+          <td style="border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1127335">Inspect/Repair</a></div>
+          </td>
+          <td style="border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1127337">Audio equipment</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1127339">&nbsp;</a></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1127341">&nbsp;</a></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1127343">Auto body</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1127345">Property</a></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1127347">Inspection</a></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1127349">Independent appraisal</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1127351">&nbsp;</a></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1127353">Construction services</a></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1127355">General contractor</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1127357">&nbsp;</a></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1127359">&nbsp;</a></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="1127361">Carpentry</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="B_-_Body"><a name="1127363">Using this structure, you can customize the vendor service hierarchy as needed, based on your business needs. When customizing the service tree, note the following:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="1127539">In the base configuration and sample data, the services are organized into categories and subcategories, but this nomenclature is specific to this configuration. You can alter the naming structure as well as the depth of the tree, which only has three levels in the base configuration. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="1134298">If you change the depth of the vendor services tree, you will need to update the corresponding PCF file, </a><span class="cv_-_computer_voice">InstructionServicesLV_default</span>.<span class="cv_-_computer_voice">pcf</span>, to show the correct number of columns.</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="1123349">A leaf node can appear anywhere in the tree hierarchy, but each leaf node can have only one parent node. If a leaf node needs to be associated with more than one parent node, duplicate it so that it has, at most, one parent in each occurrence.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="1123350">Vendor Service Details</a></h4>
+      <div class="B_-_Body"><a name="1123351">In addition to the vendor service tree XML file, you need a second data file, </a><span class="cv_-_computer_voice">vendorservicedetails</span>.<span class="cv_-_computer_voice">xml</span>, for ClaimCenter. The vendor service details file associates each service with a compatible incident type and service request type.</div>
+      <div class="B_-_Body"><a name="1136079">Unlike </a><span class="cv_-_computer_voice">vendorservicetree</span>.<span class="cv_-_computer_voice">xml</span>, the service details XML file is imported only into ClaimCenter. It contains instances of entities that exist only in ClaimCenter, not ContactManager.</div>
+      <div class="B_-_Body"><a name="1123352">The </a><span class="cv_-_computer_voice">vendorservicedetails</span>.<span class="cv_-_computer_voice">xml</span> file must conform to a format like the example below:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="1128143">&lt;?xml version="1.0"?&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128144">&lt;import&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128233">&lt;SpecialistServiceCompatibleServiceRequestKind public-id="cc:23"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128234">    &lt;Kind&gt;quoteonly&lt;/Kind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128235">    &lt;Service public-id="svc:pro_ins_ind"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128236">&lt;/SpecialistServiceCompatibleServiceRequestKind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128257">&lt;SpecialistServiceCompatibleServiceRequestKind public-id="cc:29"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128258">    &lt;Kind&gt;quoteandservice&lt;/Kind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128259">    &lt;Service public-id="svc:aut_ins_bod"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128260">&lt;/SpecialistServiceCompatibleServiceRequestKind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128261">&lt;SpecialistServiceCompatibleServiceRequestKind public-id="cc:30"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128262">    &lt;Kind&gt;quoteonly&lt;/Kind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128263">    &lt;Service public-id="svc:aut_ins_bod"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128264">&lt;/SpecialistServiceCompatibleServiceRequestKind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128265">&lt;SpecialistServiceCompatibleServiceRequestKind public-id="cc:31"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128266">    &lt;Kind&gt;unmanaged&lt;/Kind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128267">    &lt;Service public-id="svc:aut_ins_bod"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128268">&lt;/SpecialistServiceCompatibleServiceRequestKind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128285">&lt;SpecialistServiceCompatibleServiceRequestKind public-id="cc:36"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128286">    &lt;Kind&gt;quoteandservice&lt;/Kind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128287">    &lt;Service public-id="svc:aut_ins_aud"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128288">&lt;/SpecialistServiceCompatibleServiceRequestKind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128289">  &lt;SpecialistServiceCompatibleServiceRequestKind public-id="cc:37"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128290">    &lt;Kind&gt;quoteonly&lt;/Kind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128291">    &lt;Service public-id="svc:aut_ins_aud"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128292">  &lt;/SpecialistServiceCompatibleServiceRequestKind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128441">&lt;SpecialistServiceCompatibleServiceRequestKind public-id="cc:75"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128442">    &lt;Kind&gt;quoteandservice&lt;/Kind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128443">    &lt;Service public-id="svc:pro_con_gen"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128444">&lt;/SpecialistServiceCompatibleServiceRequestKind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128445">&lt;SpecialistServiceCompatibleServiceRequestKind public-id="cc:76"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128446">    &lt;Kind&gt;quoteonly&lt;/Kind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128447">    &lt;Service public-id="svc:pro_con_gen"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128448">&lt;/SpecialistServiceCompatibleServiceRequestKind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128449">&lt;SpecialistServiceCompatibleServiceRequestKind public-id="cc:77"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128450">    &lt;Kind&gt;quoteandservice&lt;/Kind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128451">    &lt;Service public-id="svc:pro_con_car"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128452">&lt;/SpecialistServiceCompatibleServiceRequestKind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128453">&lt;SpecialistServiceCompatibleServiceRequestKind public-id="cc:78"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128454">    &lt;Kind&gt;quoteonly&lt;/Kind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128455">    &lt;Service public-id="svc:pro_con_car"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128456">&lt;/SpecialistServiceCompatibleServiceRequestKind&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128465">&lt;SpecialistServiceCompatibleIncidentType public-id="cc:1"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128466">    &lt;IncidentType&gt;Incident&lt;/IncidentType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128467">    &lt;Service public-id="svc:aut"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128468">&lt;/SpecialistServiceCompatibleIncidentType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128469">&lt;SpecialistServiceCompatibleIncidentType public-id="cc:2"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128470">    &lt;IncidentType&gt;Incident&lt;/IncidentType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128471">    &lt;Service public-id="svc:pro"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128472">&lt;/SpecialistServiceCompatibleIncidentType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128493">&lt;SpecialistServiceCompatibleIncidentType public-id="cc:8"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128494">    &lt;IncidentType&gt;MobilePropertyIncident&lt;/IncidentType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128495">    &lt;Service public-id="svc:aut"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128496">&lt;/SpecialistServiceCompatibleIncidentType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128501">&lt;SpecialistServiceCompatibleIncidentType public-id="cc:10"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128502">    &lt;IncidentType&gt;VehicleIncident&lt;/IncidentType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128503">    &lt;Service public-id="svc:aut"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1129051">&lt;/SpecialistServiceCompatibleIncidentType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1129056">&lt;SpecialistServiceCompatibleIncidentType public-id="cc:12"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128510">    &lt;IncidentType&gt;FixedPropertyIncident&lt;/IncidentType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128511">    &lt;Service public-id="svc:pro"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128512">&lt;/SpecialistServiceCompatibleIncidentType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128521">&lt;SpecialistServiceCompatibleIncidentType public-id="cc:15"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128522">    &lt;IncidentType&gt;PropertyIncident&lt;/IncidentType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128523">    &lt;Service public-id="svc:aut"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128524">&lt;/SpecialistServiceCompatibleIncidentType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128525">&lt;SpecialistServiceCompatibleIncidentType public-id="cc:16"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128526">    &lt;IncidentType&gt;PropertyIncident&lt;/IncidentType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128527">    &lt;Service public-id="svc:pro"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128528">&lt;/SpecialistServiceCompatibleIncidentType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128541">&lt;SpecialistServiceCompatibleIncidentType public-id="cc:20"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128542">    &lt;IncidentType&gt;OtherStructureIncident&lt;/IncidentType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128543">    &lt;Service public-id="svc:pro"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128544">&lt;/SpecialistServiceCompatibleIncidentType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128553">&lt;SpecialistServiceCompatibleIncidentType public-id="cc:23"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128554">    &lt;IncidentType&gt;DwellingIncident&lt;/IncidentType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128555">    &lt;Service public-id="svc:pro"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1128556">&lt;/SpecialistServiceCompatibleIncidentType&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="1128139">&lt;/import&gt;</a></PRE>
+      <div class="B_-_Body"><a name="1124316">The </a><span class="cv_-_computer_voice">Service</span> <span class="cv_-_computer_voice">public-id</span> value in this file must be set to the <span class="cv_-_computer_voice">SpecialistService</span> <span class="cv_-_computer_voice">public-id</span> from the vendor service tree file. For example, an <span class="cv_-_computer_voice">InjuryIncident</span> type can be mapped to an <span class="cv_-_computer_voice">Auto</span> service and a <span class="cv_-_computer_voice">quoteandservice</span> request type.</div>
+      <div class="B_-_Body"><a name="1127658">When customizing the </a><span class="cv_-_computer_voice">vendorservicedetails</span>, the following constraints apply:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="1128025">Every root </a><span class="cv_-_computer_voice">SpecialistService</span> (a service without a parent) must have at least one linked compatible incident type.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="1128026">Every leaf </a><span class="cv_-_computer_voice">SpecialistService</span> (a service without any children) must have at least one linked compatible <span class="cv_-_computer_voice">ServiceRequestKind</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="1133989">Configuring Services – Steps</a></h4>
+      <div class="B_-_Body"><a name="1133990">Services are imported into ClaimCenter using two predefined XML files:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="1133991">Vendor Service Tree (</a><span class="cv_-_computer_voice">vendorservicetree</span>.<span class="cv_-_computer_voice">xml</span>) – Lists the services by category. This file is used by both ClaimCenter and ContactManager.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="1133992">Vendor Service Details (</a><span class="cv_-_computer_voice">vendorservicedetails</span>.<span class="cv_-_computer_voice">xml</span>) – Associates services to incidents and service request types. This data file is only used in ClaimCenter.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="1133993">In the base configuration, samples of these files are provided to you in the </a><span class="cv_-_computer_voice">config/sampledata</span> directory. Use the steps below to add services:</div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1133994">Customize the sample XML files to tailor them to your business requirements.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1133995">Import the </a><span class="cv_-_computer_voice">vendorservicetree</span>.<span class="cv_-_computer_voice">xml</span> file into ClaimCenter and ContactManager using the <span class="ui_-_UI_element">Administration</span> tab.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1133996">Import the </a><span class="cv_-_computer_voice">vendorservicedetails</span>.<span class="cv_-_computer_voice">xml</span> file only into ClaimCenter using the <span class="ui_-_UI_element">Administration</span> tab.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1133999">Once data load is complete, run database consistency checks (DBCC). See </a><a href="javascript:WWHClickedPopup('admin', 'database.05.09.html#1199437', '');" title="Checking Database Consistency">“Checking Database Consistency” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('admin', 'database.05.09.html#1199437', '');" title="Checking Database Consistency">System Administration Guide</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="1134001">Ensure that ClaimCenter and ContactManager contain identical vendor service directories. In other words, use the same </a><span class="cv_-_computer_voice">vendorservicetree</span>.<span class="cv_-_computer_voice">xml</span> for both these applications.</div>
+      <h6 class="HS_-_Head_Sub"><a name="1134002">See also</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('install', 'quickstart.5.8.html#2133136', '');" title="Installing Sample Data" name="1134006">“Installing Sample Data” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('install', 'quickstart.5.8.html#2133136', '');" title="Installing Sample Data">Installation Guide</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="1129257">Editing Services</a></h4>
+      <div class="B_-_Body"><a name="1130977">Once the Services XML data is imported into the applications, you cannot edit it using the application user interface. Instead, edit the corresponding XML file, as needed, and import it back into ClaimCenter and ContactManager.</a></div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="1136192">You are recommended to always choose to overwrite changes, if prompted during import, so the service tree in your database exactly matches the imported XML file.</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="1130978">Deleting Services</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="1130979">You cannot delete a service from the vendor service tree, once it is created in the XML file. However, you can mark it as inactive and import the tree back into the applications. The service is then no longer available in the application user interface.</a></div>
+      <div class="B_-_Body"><a name="1129975">In the following example, the </a><span class="ui_-_UI_element">Auto - Adjudicate claim</span> service is disabled.</div>
+      <PRE class="CF_-_Code_First_Line"><a name="1129933">&lt;SpecialistService public-id="svc:aut_adj"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1129934">    &lt;Active&gt;false&lt;/Active&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1129935">    &lt;Code&gt;autoadjudicate&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1129936">    &lt;Description&gt;Auto - Adjudicate claim&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1129937">    &lt;Description_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1129938">    &lt;Name&gt;Adjudicate claim&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1129939">    &lt;Name_L10N_ARRAY/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1129940">    &lt;Parent public-id="svc:aut"/&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="1129929">&lt;/SpecialistService&gt;</a></PRE>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

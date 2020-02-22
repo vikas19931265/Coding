@@ -1,0 +1,1584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Configuring Service Provider Performance Reviews</title>
+    <link rel="StyleSheet" href="css/cc-vendorperformreviews.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>Guidewire Contact Management Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="cc-vendorperformreviews.14.1.html#2225031">ClaimCenter Service Provider Performance Reviews</a> : Configuring Service Provider Performance Reviews</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="2225031">Configuring Service Provider Performance Reviews</a></h3>
+      <div class="B_-_Body"><a name="2225033">ClaimCenter provides one </a><span class="cv_-_computer_voice">ReviewType</span> in its sample data, which is available if you have imported sample data as described under <a href="javascript:WWHClickedPopup('install', 'quickstart.5.8.html#2133136', '');" title="Installing Sample Data">“Installing Sample Data” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('install', 'quickstart.5.8.html#2133136', '');" title="Installing Sample Data">Installation Guide</a></span>. To work with review types and their associated entities, you must log in as an administrator and export <span class="ui_-_UI_element">Questions</span> data. The exported XML file includes sample entities for <span class="cv_-_computer_voice">ReviewCategoryQuestionSet</span>, <span class="cv_-_computer_voice">QuestionSet</span>, <span class="cv_-_computer_voice">Question</span>, <span class="cv_-_computer_voice">QuestionChoice</span>, <span class="cv_-_computer_voice">QuestionFilter</span>, and <span class="cv_-_computer_voice">ReviewType</span>. You can make your changes in the exported XML file and import the changed file. </div>
+      <div class="B_-_Body"><a name="2225037">In addition to working with reviews, you can also create or reuse categories and associate them with </a><span class="cv_-_computer_voice">ReviewType</span>s and <span class="cv_-_computer_voice">QuestionSet</span>s.</div>
+      <div class="B_-_Body"><a name="2226051">This topic includes:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2225039', '');" title="Configuring Service Provider Performance Reviews" name="2226058">Exporting and Importing Questions and Review Types</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2225055', '');" title="Configuring Service Provider Performance Reviews" name="2227740">Configuring Review Types</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2225106', '');" title="Configuring Service Provider Performance Reviews" name="2227744">Configuring Categories</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2225121', '');" title="Configuring Service Provider Performance Reviews" name="2227757">Configuring Review Service Type and Review Category Typecodes</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2227623', '');" title="Configuring Service Provider Performance Reviews" name="2227748">Configuring Question Sets, Questions, Question Choices, and Question Filters</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2230014', '');" title="Configuring Service Provider Performance Reviews" name="2226190">About Scoring</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2225318', '');" title="Configuring Service Provider Performance Reviews" name="2226205">Review Permissions</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="2225039">Exporting and Importing Questions and Review Types</a></h4>
+      <div class="B_-_Body"><a name="2225040">Review types are grouped with questions in the administration </a><span class="ui_-_UI_element">Import/Export Data</span> screen. To work with questions, categories and review types, you must export them as a unit and then import them.</div>
+      <h6 class="HS_-_Head_Sub"><a name="2225041">To export a review type and a set of questions and categories</a></h6>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="2225042">Log in to ClaimCenter as an administrator. For example, log in with username </a><span class="it_-_input_text">su</span> and password <span class="it_-_input_text">gw</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2225043">Click the </a><span class="ui_-_UI_element">Administration</span> tab, and then click <span class="ui_-_UI_element">Utilities → Export Data</span> in the sidebar.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2225044">At the top of the screen under </a><span class="ui_-_UI_element">Import Administrative Data</span>, click <span class="ui_-_UI_element">Export</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2225045">Click </a><span class="ui_-_UI_element">Data to Export</span> and choose <span class="ui_-_UI_element">Questions</span> from the drop-down list, and then click <span class="ui_-_UI_element">Export</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2225046">If there is a prompt to save </a><span class="cv_-_computer_voice">questions.xml</span>, choose <span class="ui_-_UI_element">Save</span>, and then choose a directory to save it to. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="2225047">You must import the file from this directory if you make changes to the file.</a></div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2225048">Open the saved file in an editor. The sample Auto Repair Service review type is at the bottom of the file, after the question and category definitions. The XML code for this element is:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="CS_-_Code_Single_Line"><a name="2348748">&lt;ReviewType public-id="SPMReviewType:1"&gt;</a></div>
+      <h6 class="HS_-_Head_Sub"><a name="2225050">To import a review type and sets of questions and categories</a></h6>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="2225051">Log in to ClaimCenter as an administrator. For example, log in with username </a><span class="it_-_input_text">su</span> and password <span class="it_-_input_text">gw</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2348778">Click the </a><span class="ui_-_UI_element">Administration</span> tab, and then click <span class="ui_-_UI_element">Utilities → Import Data</span> in the sidebar.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2225053">On the </a><span class="ui_-_UI_element">Import Administrative Data</span> screen, click <span class="ui_-_UI_element">Browse</span> and navigate to the <span class="cv_-_computer_voice">questions.xml</span> file that you previously exported, and then click <span class="ui_-_UI_element">Open</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2225054">Click </a><span class="ui_-_UI_element">Finish</span> to import the file.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="2225055">Configuring Review Types</a></h4>
+      <div class="B_-_Body"><a name="2225058">After you export the </a><span class="cv_-_computer_voice">questions.xml</span> file as described in <a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2225039', '');" title="Configuring Service Provider Performance Reviews">“Exporting and Importing Questions and Review Types”</a>, you can add new review types to the file. </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="2225060">If you want to change an existing review type, you must retire it and add a new review type. </a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2225061">Adding a Review Type</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2225062">Find a </a><span class="cv_-_computer_voice">ReviewType</span> in the <span class="cv_-_computer_voice">questions.xml</span> file and copy it. For example, the following review type is the sample Auto Repair Service review type definition:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <PRE class="CF_-_Code_First_Line"><a name="2225063">&lt;ReviewType public-id="SPMReviewType:1"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225064">&nbsp;&nbsp;&lt;ContactSubtype&gt;AutoRepairShop&lt;/ContactSubtype&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225065">&nbsp;&nbsp;&lt;Description&gt;Sample Review Type for Auto Repair Shops&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225066">&nbsp;&nbsp;&lt;Name&gt;Auto Repair Service&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225067">&nbsp;&nbsp;&lt;ShouldRetireFromImportXML&gt;false&lt;/ShouldRetireFromImportXML&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2225068">&lt;/ReviewType&gt;</a></PRE>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2225069">Give the </a><span class="cv_-_computer_voice">ReviewType</span> a public ID, a name, and a description, and specify the vendor contact subtypes to which it applies. For example, the following review type defines a review for an auto towing company:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <PRE class="CF_-_Code_First_Line"><a name="2225070">&lt;ReviewType public-id="SPMReviewType:2"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225071">&nbsp;&nbsp;&lt;ContactSubtype&gt;AutoTowingAgcy&lt;/ContactSubtype&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225072">&nbsp;&nbsp;&lt;Description&gt;Review Type for Auto Towing Agencies&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225073">&nbsp;&nbsp;&lt;Name&gt;Auto Towing Agency&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225074">&nbsp;&nbsp;&lt;ShouldRetireFromImportXML&gt;false&lt;/ShouldRetireFromImportXML&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2225075">&lt;/ReviewType&gt;</a></PRE>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2225076">Open ClaimCenter Studio and ContactManager studio, and add new </a><span class="cv_-_computer_voice">ReviewCategory</span> or <span class="cv_-_computer_voice">ReviewServiceType</span> typecodes or both, as needed. For more information on adding these typecodes, see <a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2225121', '');" title="Configuring Service Provider Performance Reviews">“Configuring Review Service Type and Review Category Typecodes”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2225080">Use administrative file import to add the XML file containing the </a><span class="cv_-_computer_voice">ReviewType</span> to your installation. See <a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2225050', '');" title="Configuring Service Provider Performance Reviews">“To import a review type and sets of questions and categories”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2225084">For a list of vendor contact subtypes in the ClaimCenter base application, see </a><a href="javascript:WWHClickedPopup('contact', 'extending.09.2.html#2928557', '');" title="Overview of Contact Entities">“Guidewire Core Application and ContactManager Contact Entity Hierarchy”</a>.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2225086">Retiring a Review Type</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2225087">If you no longer need a review type, or if you want to change an existing one, you must retire it. You cannot delete or change an existing review type because there might be existing reviews that use it. </a></div>
+      <div class="B_-_Body"><a name="2227782">To change a review type, you must retire it and add a new review type with a new public ID. After importing the XML file containing the retired review type, you can no longer use it to create new reviews in ClaimCenter. However, existing reviews that use the type continue to work.</a></div>
+      <div class="NI_-_Note_Important">
+        <span class="n_-_note">IMPORTANT   </span><a name="2225088">You can retire only review types. Do not retire </a><span class="cv_-_computer_voice">QuestionSet</span>, <span class="cv_-_computer_voice">Question</span>, <span class="cv_-_computer_voice">QuestionChoice</span>, or <span class="cv_-_computer_voice">QuestionFilter</span> entities because existing reviews might still be using them.</div>
+      <h6 class="HS_-_Head_Sub"><a name="2225089">To retire an existing review type:</a></h6>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="2225090">Open the exported </a><span class="cv_-_computer_voice">questions.xml</span> file.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2225091">Find the review type you want to retire. For example, the following review type is the sample Auto Repair Service review type definition:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <PRE class="CF_-_Code_First_Line"><a name="2225092">&lt;ReviewType public-id="SPMReviewType:1"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225093">&nbsp;&nbsp;&lt;ContactSubtype&gt;AutoRepairShop&lt;/ContactSubtype&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225094">&nbsp;&nbsp;&lt;Description&gt;Sample Review Type for Auto Repair Shops&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225095">&nbsp;&nbsp;&lt;Name&gt;Auto Repair Service&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225096">&nbsp;&nbsp;&lt;ShouldRetireFromImportXML&gt;false&lt;/ShouldRetireFromImportXML&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2225097">&lt;/ReviewType&gt;</a></PRE>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2225098">Change the setting of </a><span class="cv_-_computer_voice">&lt;ShouldRetireFromImportXML&gt;</span> to <span class="cv_-_computer_voice">true</span><span style="font-family: &quot;Lucida Sans Typewriter&quot;; font-size: 7.0pt">.</span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <PRE class="CF_-_Code_First_Line"><a name="2225099">&lt;ReviewType public-id="SPMReviewType:1"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225100">&nbsp;&nbsp;&lt;ContactSubtype&gt;AutoRepairShop&lt;/ContactSubtype&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225101">&nbsp;&nbsp;&lt;Description&gt;Sample Review Type for Auto Repair Shops&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225102">&nbsp;&nbsp;&lt;Name&gt;Auto Repair Service&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line" style="font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="2225103">&nbsp;&nbsp;&lt;ShouldRetireFromImportXML&gt;true&lt;/ShouldRetireFromImportXML&gt;</a></span></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2225104">&lt;/ReviewType&gt;</a></PRE>
+      <h4 class="H2_-_Heading_2"><a name="2225106">Configuring Categories</a></h4>
+      <div class="B_-_Body"><a name="2225107">A </a><span class="cv_-_computer_voice">ReviewCategoryQuestionSet</span> entity connects a review type to a question set and applies a review category typecode to the question set. The typecode, defined in the <span class="ui_-_UI_element">ReviewCategory</span> typelist, enables you to associate sets of questions with a category. ClaimCenter can then produce category scores for these sets of questions. </div>
+      <div class="B_-_Body"><a name="2227982">You can apply the same </a><span class="ui_-_UI_element">ReviewCategory</span> typecode to more than one set of questions by defining multiple <span class="cv_-_computer_voice">ReviewCategoryQuestionSet</span> entities. You cannot apply more than one <span class="ui_-_UI_element">ReviewCategory</span> typecode to any single question set, however. If you want to use the same question set in another review, you must duplicate the question set and rename it. Then create a <span class="cv_-_computer_voice">ReviewCategoryQuestionSet</span> that specifies the review type, the review category, and the new question set.</div>
+      <div class="B_-_Body"><a name="2227975">For more information on defining </a><span class="ui_-_UI_element">ReviewCategory</span> typecodes, see <a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2225121', '');" title="Configuring Service Provider Performance Reviews">“Configuring Review Service Type and Review Category Typecodes”</a>.</div>
+      <div class="B_-_Body"><a name="2228008">A </a><span class="cv_-_computer_voice">ReviewCategoryQuestionSet</span> entity has the following elements:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2228009">ReviewType</a></span> – The review type that uses this review category and question set. A <span class="cv_-_computer_voice">ReviewCategoryQuestionSet</span> can reference one review type. If you want to use a <span class="ui_-_UI_element">ReviewCategory</span> with more than one <span class="cv_-_computer_voice">ReviewType</span>, define separate <span class="cv_-_computer_voice">ReviewCategoryQuestionSet</span> entities.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2225110">QuestionSet</a></span> – The question set to which the review category applies. A <span class="cv_-_computer_voice">ReviewCategoryQuestionSet</span> can reference one question set. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2225111">ReviewCategory</a></span> – A typecode defined in the <span class="ui_-_UI_element">ReviewCategory</span> typelist. Assigning a review category to a question set enables the question set to be scored and the category score to be averaged.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2225112">ElementOrder</a></span> – An integer that determines the order in which the categories appear in the <span class="cv_-_computer_voice">ReviewType</span>. Numbering starts at 0. You do not have to number categories sequentially, but doing so makes them easier to read and maintain.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2225114">The following code sample shows the XML definition of a </a><span class="cv_-_computer_voice">ReviewCategoryQuestionSet</span> entity used in the sample review type definition. This entity applies the <span class="ui_-_UI_element">ReviewCategory</span> typecode <span class="cv_-_computer_voice">timeliness</span> to the question set <span class="cv_-_computer_voice">QuestionSetSPM:1</span> and adds it to the review type <span class="cv_-_computer_voice">SPMReviewType:1</span>. Additionally, the category has an element order of 1, making it the first category in the list.</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2225115">&lt;ReviewCategoryQuestionSet public-id="ReviewCatQSet:1"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225116">&nbsp;&nbsp;&lt;ElementOrder&gt;1&lt;/ElementOrder&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225117">&nbsp;&nbsp;&lt;QuestionSet public-id="QuestionSetSPM:1" /&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225118">&nbsp;&nbsp;&lt;ReviewCategory&gt;timeliness&lt;/ReviewCategory&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225119">&nbsp;&nbsp;&lt;ReviewType public-id="SPMReviewType:1" /&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2225120">&lt;/ReviewCategoryQuestionSet&gt;</a></PRE>
+      <h4 class="H2_-_Heading_2"><a name="2225121">Configuring Review Service Type and Review Category Typecodes</a></h4>
+      <div class="B_-_Body"><a name="2226632">There are two typelists in ClaimCenter and ContactManager in which you define typecodes that affect service provider reviews, </a><span class="cv_-_computer_voice">ReviewServiceType</span> and <span class="cv_-_computer_voice">ReviewCategory</span>. </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2226702">ReviewCategory</a></span> – Typecodes assigned by the <span class="cv_-_computer_voice">ReviewCategoryQuestionSet</span> entity to a question set, enabling the system to calculate category scores for that question set.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2226712">ReviewServiceType</a></span> – Typecodes used in a drop-down list on the review screen to enable you to choose the kind of service being provided by the service provider. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="2226695">You must define the same typecodes in both ClaimCenter and ContactManager.</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2226736">Configuring Review Category Typecodes</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="cv_-_computer_voice"><a name="2226751">ReviewCategory</a></span> typecodes are categories that you assign to question sets to enable category scores to be calculated for reviews. You assign a typecode to a question set in a <span class="cv_-_computer_voice">ReviewCategoryQuestionSet</span> XML element, as described in <a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2225106', '');" title="Configuring Service Provider Performance Reviews">Configuring Categories</a>. Before importing a review that uses a new typecode, add the typecode to ClaimCenter and ContactManager.</div>
+      <h6 class="HS_-_Head_Sub"><a name="2226830">To define a ReviewCategory typecode:</a></h6>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="2226840">Start ClaimCenter studio.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="2226871">At a command prompt, navigate to the </a><span class="cv_-_computer_voice">ClaimCenter</span>/<span class="cv_-_computer_voice">bin</span> directory and enter:</div>
+      <div class="CS_-_Code_Single_Line"><a name="2226875">gwcc studio</a></div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2226887">In the </a><span class="ui_-_UI_element">Project</span> window, navigate to <span class="ui_-_UI_element">configuration</span> → <span class="ui_-_UI_element">config</span> → <span class="ui_-_UI_element">Extensions</span> → <span class="ui_-_UI_element">Typelist</span> and double-click <span class="cv_-_computer_voice">ReviewCategory.ttx</span> to open it in the Typelist editor.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2226945">Right-click an existing typecode and choose </a><span class="ui_-_UI_element">Add new</span> → <span class="ui_-_UI_element">typecode</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2226952">Give the typecode a </a><span class="ui_-_UI_element">code</span>, which you use for the <span class="cv_-_computer_voice">ReviewCategory</span> in a <span class="cv_-_computer_voice">ReviewCategoryQuestionSet</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="2227085">For example, there is a typecode for </a><span class="cv_-_computer_voice">timeliness</span>. The sample auto repair shop review associates this category with a question set containing questions that ask how quickly the auto repair shop was able to schedule and complete repairs.</div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2226986">Give the typecode a </a><span class="ui_-_UI_element">name</span> and a <span class="ui_-_UI_element">desc</span>, a description. ClaimCenter uses the <span class="ui_-_UI_element">name</span> in screens that show category scores. The description is useful in deciding which categories to apply to question sets.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2227020">Start ContactManager studio.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="2227021">At a command prompt, navigate to the </a><span class="cv_-_computer_voice">ContactManager</span>/<span class="cv_-_computer_voice">bin</span> directory and enter:</div>
+      <div class="CS_-_Code_Single_Line"><a name="2349716">gwab studio</a></div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2349723">Add the same typecode you added for ClaimCenter, as described previously in </a><a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2226887', '');" title="Configuring Service Provider Performance Reviews">step 2</a> through <a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2226986', '');" title="Configuring Service Provider Performance Reviews">step 5</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	8.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2349725">Restart ClaimCenter and ContactManager.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="2230365">Adding or changing a typecode is a data model change, and therefore requires a restart of the applications.</a></div>
+      <div class="LS2A_-_List_Start_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS2A_-_List_Start_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">a.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS2A_-_List_Start_002c_Level_2_Alpha_inner"><a name="2227126">If necessary, stop ClaimCenter. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP2_-_List_Para_002c_Level_2"><a name="2352477">Open a command prompt in the </a><span class="cv_-_computer_voice">ClaimCenter/bin</span> directory and then enter the following command:</div>
+      <div class="CS_-_Code_Single_Line"><a name="2227132">&nbsp;&nbsp;&nbsp;&nbsp;gwcc dev-stop</a></div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">b.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="2227142">Regenerate the ClaimCenter data dictionary to ensure that your changes are correctly formatted:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="CS_-_Code_Single_Line"><a name="2349338">&nbsp;&nbsp;&nbsp;&nbsp;gwcc regen-dictionary</a></div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">c.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="2352511">Open a command prompt in the </a><span class="cv_-_computer_voice">ContactManager/bin</span> directory and then enter the following command:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="CS_-_Code_Single_Line"><a name="2349341">&nbsp;&nbsp;&nbsp;&nbsp;gwab dev-stop</a></div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">d.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="2227153">Regenerate the ContactManager data dictionary to ensure that your changes are correctly formatted:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="CS_-_Code_Single_Line"><a name="2227154">&nbsp;&nbsp;&nbsp;&nbsp;gwab regen-dictionary</a></div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">e.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="2227155">Start the ContactManager application:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="CS_-_Code_Single_Line"><a name="2227156">&nbsp;&nbsp;&nbsp;&nbsp;gwab dev-start</a></div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">f.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="2349431">In ClaimCenter Studio, refresh the WSDL for the ContactManager review summary web service as follows:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP2_-_List_Para_002c_Level_2"><a name="2349441">In the </a><span class="ui_-_UI_element">Project</span> window, navigate to <span class="ui_-_UI_element">configuration</span> → <span class="ui_-_UI_element">config</span> → <span class="ui_-_UI_element">RPC-Encoded Web Services</span> and double-click <span class="cv_-_computer_voice">ABReviewSummary.rws</span>. </div>
+      <div class="LP2_-_List_Para_002c_Level_2"><a name="2227223">Next, click the </a><span class="ui_-_UI_element">Refresh</span> button near the top of the editor, to the right of the <span class="ui_-_UI_element">URL</span> field. </div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">g.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="2227206">Start the ClaimCenter application:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="CS_-_Code_Single_Line"><a name="2227210">&nbsp;&nbsp;&nbsp;&nbsp;gwcc dev-start</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2226783">Configuring Review Service Type Typecodes</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="cv_-_computer_voice"><a name="2226784">ReviewServiceType</a></span> typecodes display in the <span class="ui_-_UI_element">Service Type</span> drop-down list on the ClaimCenter review screen for new or incomplete reviews. This drop-down list enables the user to choose the kind of service performed by the service provider. If a service provider performs only one type of service, there might be no need to set up these typecodes for your review.</div>
+      <div class="B_-_Body"><a name="2227249">Part of defining one of these typecodes is specifying the contact subtype that the typecode applies to. You specify the contact subtype in the typecode’s </a><span class="ui_-_UI_element">Category</span>. The category is a typecode from the <span class="cv_-_computer_voice">Contact</span> typelist, and it matches the <span class="cv_-_computer_voice">ContactSubtype</span> defined in the associated <span class="cv_-_computer_voice">ReviewType</span>. The application then uses this typecode category to determine which typecodes to show in the <span class="ui_-_UI_element">Service Type</span> list for a specific review. For a sample review type definition showing a <span class="cv_-_computer_voice">ContactSubtype</span>, see <a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2225055', '');" title="Configuring Service Provider Performance Reviews">“Configuring Review Types”</a>. </div>
+      <div class="B_-_Body"><a name="2227511">For example, when you start an auto repair shop review, the </a><span class="ui_-_UI_element">Service Type</span> list shows six service types, <span class="ui_-_UI_element">Body</span>, <span class="ui_-_UI_element">Brakes</span>, <span class="ui_-_UI_element">Other</span>, <span class="ui_-_UI_element">Paint</span>, <span class="ui_-_UI_element">Suspension</span>, and <span class="ui_-_UI_element">Transmission and Engine</span>. All these service types are defined as typecodes in the <span class="cv_-_computer_voice">ReviewServiceType</span> typelist, and the <span class="ui_-_UI_element">Category</span> for each of them is the <span class="ui_-_UI_element">Contact </span>typecode<span class="ui_-_UI_element"> AutoRepairShop</span>.</div>
+      <h6 class="HS_-_Head_Sub"><a name="2227264">To define a Review Service Type typecode:</a></h6>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="2227265">Start ClaimCenter studio.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="2227266">At a command prompt, navigate to the </a><span class="cv_-_computer_voice">ClaimCenter</span>/<span class="cv_-_computer_voice">bin</span> directory and enter:</div>
+      <div class="CS_-_Code_Single_Line"><a name="2227270">gwcc studio</a></div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2349905">In the </a><span class="ui_-_UI_element">Project</span> window, navigate to <span class="ui_-_UI_element">configuration</span> → <span class="ui_-_UI_element">config</span> → <span class="ui_-_UI_element">Extensions</span> → <span class="ui_-_UI_element">Typelist</span> and double-click <span class="cv_-_computer_voice">ReviewServiceType.ttx</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2349909">Right-click an existing typecode and choose </a><span class="ui_-_UI_element">Add new</span> → <span class="ui_-_UI_element">typecode</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2349910">Give the typecode a </a><span class="ui_-_UI_element">code</span>, used internally to reference the typecode.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="2349931">For example, the service is wheel service, so the code can be </a><span class="cv_-_computer_voice">wheels</span>.</div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2349921">Give the typecode a </a><span class="ui_-_UI_element">name</span> and a <span class="ui_-_UI_element">desc</span>, a description. ClaimCenter shows the name in the drop-down list of service types on the review screen. The description is useful for documenting the typecode.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="2350032">For example, name the service </a><span class="it_-_input_text">Wheels</span>. and give it the description <span class="it_-_input_text">Alignment,</span> <span class="it_-_input_text">balancing,</span> <span class="it_-_input_text">tires</span>.</div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2349925">Right-click the new typecode and choose </a><span class="ui_-_UI_element">Add new</span> → <span class="ui_-_UI_element">Add Categories</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2349926">.In the </a><span class="ui_-_UI_element">Add Categories</span> dialog box, choose the typecode you just added and click <span class="ui_-_UI_element">Next</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="2350240">For example, choose </a><span class="cv_-_computer_voice">wheels</span> and click <span class="ui_-_UI_element">Next</span>.</div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	8.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2227596">For </a><span class="ui_-_UI_element">Typelist</span>, choose <span class="it_-_input_text">Contact</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	9.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2350349">Choose a contact subtype that matches the </a><span class="cv_-_computer_voice">ContactSubtype</span> defined in the associated <span class="cv_-_computer_voice">ReviewType</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="2350478">For example, choose </a><span class="cv_-_computer_voice">AutoRepairShop</span>.</div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	10.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2227629">Click </a><span class="ui_-_UI_element">Finish</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	11.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2350505">Start ContactManager studio.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="2227630">At a command prompt, navigate to the </a><span class="cv_-_computer_voice">ContactManager</span>/<span class="cv_-_computer_voice">bin</span> directory and enter:</div>
+      <div class="CS_-_Code_Single_Line"><a name="2227631">gwab studio</a></div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	12.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2227638">Add the same typecode you added for ClaimCenter, as described previously in </a><a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2349905', '');" title="Configuring Service Provider Performance Reviews">step 2</a> through <a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2349921', '');" title="Configuring Service Provider Performance Reviews">step 5</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="2227931">You do not need to add categories for these typecodes in ContactManager, so </a><a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2349925', '');" title="Configuring Service Provider Performance Reviews">step 6</a> through <a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2227629', '');" title="Configuring Service Provider Performance Reviews">step 10</a> are not necessary.</div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	13.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2227639">Generate the data dictionaries for ClaimCenter and ContactManager to ensure that the changes you made are correct.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	14.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2350649">Restart ContactManager and ClaimCenter, and then refresh the WSDL for </a><span class="cv_-_computer_voice">ABReviewSummary</span> in ClaimCenter studio. For details, see <a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2349725', '');" title="Configuring Service Provider Performance Reviews">step 8</a>, <a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2349725', '');" title="Configuring Service Provider Performance Reviews">“Restart ClaimCenter and ContactManager.”</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="2227623">Configuring Question Sets, Questions, Question Choices, and Question Filters</a></h4>
+      <div class="B_-_Body"><a name="2225124">For a full descriptions of question sets, questions, question choices, and question filters, see </a><a href="javascript:WWHClickedPopup('app', 'questionset.37.1.html#4371112', '');" title="Question Sets">“Question Sets” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('app', 'questionset.37.1.html#4371112', '');" title="Question Sets">Application Guide</a></span>. That topic provides a full, generic description of these entities. </div>
+      <div class="B_-_Body"><a name="2232998">This topic presents these entities from the viewpoint of service provider reviews and provides examples from the auto repair shop sample review.</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2225126">Configuring Question Sets</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2225127">A </a><span class="cv_-_computer_voice">QuestionSet</span> provides a way to group <span class="cv_-_computer_voice">Question</span> entities and is part of the mechanism for setting up review categories. A question set does not point to its member questions. Instead, each question in the set designates the question set it belongs to.</div>
+      <div class="B_-_Body"><a name="2225128">To enable a </a><span class="cv_-_computer_voice">QuestionSet</span> to work with service provider reviews, you must set its <span class="cv_-_computer_voice">QuestionSetType</span> to <span class="cv_-_computer_voice">spmreview</span>. This type is not the only one—ClaimCenter also uses other question set types in other areas.</div>
+      <div class="B_-_Body"><a name="2225129">Additionally, to improve readability, you can:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2225130">Make the </a><span class="cv_-_computer_voice">Name</span> match the <span class="cv_-_computer_voice">ReviewCategory</span> in the corresponding <span class="cv_-_computer_voice">ReviewCategoryQuestionSet</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2225131">Set the </a><span class="cv_-_computer_voice">Priority</span> to be the same as the <span class="cv_-_computer_voice">ElementOrder</span> defined in the corresponding <span class="cv_-_computer_voice">ReviewCategoryQuestionSet</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="2228030">The following code samples are in the exported file </a><span class="cv_-_computer_voice">questions.xml</span>. See <a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2225039', '');" title="Configuring Service Provider Performance Reviews">“Exporting and Importing Questions and Review Types”</a>.</div>
+      <div class="B_-_Body"><a name="2350850">For example, the following question set is in the sample auto repair shop review:</a></div>
+      <PRE class="CF_-_Code_First_Line"><a name="2225133">&lt;QuestionSet public-id="QuestionSetSPM:1"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225134">&nbsp;&nbsp;&lt;Name&gt;Timeliness&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225135">&nbsp;&nbsp;&lt;Priority&gt;1&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225136">&nbsp;&nbsp;&lt;QuestionSetType&gt;spmreview&lt;/QuestionSetType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225137">&nbsp;&nbsp;&lt;ShouldRetireFromImportXML&gt;false&lt;/ShouldRetireFromImportXML&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2225138">&lt;/QuestionSet&gt;</a></PRE>
+      <div class="B_-_Body"><a name="2225139">The </a><span class="cv_-_computer_voice">ReviewCategoryQuestionSet</span> example <span class="cv_-_computer_voice">ReviewCatQSet:1</span> references this question set and sets the question set’s review category to the typecode <span class="cv_-_computer_voice">timeliness</span>. </div>
+      <PRE class="CF_-_Code_First_Line"><a name="2350815">&lt;ReviewCategoryQuestionSet public-id="ReviewCatQSet:1"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2350816">&nbsp;&nbsp;&lt;ElementOrder&gt;1&lt;/ElementOrder&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2350817">&nbsp;&nbsp;&lt;QuestionSet public-id="QuestionSetSPM:1" /&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2350818">&nbsp;&nbsp;&lt;ReviewCategory&gt;timeliness&lt;/ReviewCategory&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2350819">&nbsp;&nbsp;&lt;ReviewType public-id="SPMReviewType:1" /&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2350820">&lt;/ReviewCategoryQuestionSet&gt;</a></PRE>
+      <div class="B_-_Body"><a name="2350811">For this example, see </a><a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2225106', '');" title="Configuring Service Provider Performance Reviews">“Configuring Categories”</a>.</div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="2228065">If you want to use the same question set in more than one review, you must duplicate the question set and rename it. Then define a </a><span class="cv_-_computer_voice">ReviewCategoryQuestionSet</span> that specifies the review type, the review category, and the new question set.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2225143">Configuring Questions and Question Choices</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2225144">Service provider reviews do not require special characteristics for defining questions and question choices. However, you typically use certain features of these entities for service provider reviews. </a></div>
+      <div class="B_-_Body"><a name="2225145">Service provider reviews are typically scored. Therefore, each question belongs to a question set and designates the question set it belongs to. Additionally, to enable scoring, each question typically has a question type of </a><span class="cv_-_computer_voice">choice</span>, which requires a set of <span class="cv_-_computer_voice">QuestionChoice</span> answers. Each <span class="cv_-_computer_voice">QuestionChoice</span> designates which question it answers. </div>
+      <div class="B_-_Body"><a name="2225146">Naming conventions can make it clear that the questions and question choices are for service provider reviews. For example, you might give the questions IDs like </a><span class="cv_-_computer_voice">QuestionSPM:1</span>, the choices IDs like <span class="cv_-_computer_voice">QuestionChoiceSPM:1</span>, and so on.</div>
+      <div class="B_-_Body"><a name="2225147">The question set from the previous topic, </a><span class="cv_-_computer_voice">QuestionSetSPM:1</span>, has a set of questions associated with it that ask about the timeliness of an auto repair. </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="2350937">The following code sample is in the exported file </a><span class="cv_-_computer_voice">questions.xml</span>. See <a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2225039', '');" title="Configuring Service Provider Performance Reviews">“Exporting and Importing Questions and Review Types”</a>.</div>
+      <div class="B_-_Body"><a name="2350931">The following code defines the first question in this set and its answers, its </a><span class="cv_-_computer_voice">QuestionChoices</span>:</div>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225148">&lt;Question public-id="QuestionSPM:1"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225149">&nbsp;&nbsp;&lt;DefaultAnswer/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225150">&nbsp;&nbsp;&lt;Indent&gt;0&lt;/Indent&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225151">&nbsp;&nbsp;&lt;Priority&gt;0&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225152">&nbsp;&nbsp;&lt;QuestionFormat/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225153">&nbsp;&nbsp;&lt;QuestionSet public-id="QuestionSetSPM:1"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225154">&nbsp;&nbsp;&lt;QuestionType&gt;Choice&lt;/QuestionType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225155">&nbsp;&nbsp;&lt;Required&gt;false&lt;/Required&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225156">&nbsp;&nbsp;&lt;ShouldRetireFromImportXML&gt;false&lt;/ShouldRetireFromImportXML&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225157">&nbsp;&nbsp;&lt;Text&gt;How quickly was the service provider able to schedule the repair?&lt;/Text&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225158">&lt;/Question&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225159">&nbsp;&nbsp;&lt;QuestionChoice public-id="QuestionChoiceSPM:1"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225160">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Code&gt;win1day&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225161">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Description&gt;Within 1 day of initial contact&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225162">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Name&gt;Within 1 day of initial contact&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225163">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Priority&gt;1&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225164">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Question public-id="QuestionSPM:1"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225165">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Score&gt;100&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225166">&nbsp;&nbsp;&lt;/QuestionChoice&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225167">&nbsp;&nbsp;&lt;QuestionChoice public-id="QuestionChoiceSPM:2"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225168">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Code&gt;win3day&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225169">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Description&gt;Within 3 days of initial contact&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225170">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Name&gt;Within 3 days of initial contact&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225171">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Priority&gt;2&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225172">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Question public-id="QuestionSPM:1"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225173">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Score&gt;50&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225174">&nbsp;&nbsp;&lt;/QuestionChoice&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225175">&nbsp;&nbsp;&lt;QuestionChoice public-id="QuestionChoiceSPM:3"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225176">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Code&gt;more3days&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225177">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Description&gt;More than 3 days from initial contact&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225178">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Name&gt;More than 3 days from initial contact&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225179">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Priority&gt;3&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225180">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Question public-id="QuestionSPM:1"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225181">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Score&gt;0&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225182">&nbsp;&nbsp;&lt;/QuestionChoice&gt;</a></PRE>
+      <div class="B_-_Body"><a name="2225183">This question, </a><span class="cv_-_computer_voice">How quickly was the service provider able to schedule the repair?</span>, has a <span class="cv_-_computer_voice">Priority</span> of <span class="cv_-_computer_voice">0</span>. This priority causes ClaimCenter to put the question at the top of the list when it shows the question set. Since its <span class="cv_-_computer_voice">QuestionType</span> is <span class="cv_-_computer_voice">Choice</span>, the question can be scored and has a series of <span class="cv_-_computer_voice">QuestionChoice</span> answers defined for it that have the scores <span class="cv_-_computer_voice">100</span>, <span class="cv_-_computer_voice">50</span>, and <span class="cv_-_computer_voice">0</span>. The answers display in order according to their <span class="cv_-_computer_voice">Priority</span> values.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2225184">Configuring Question Filters</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2225188">Question filters are a way to conditionally show questions based on the answer to another question. </a></div>
+      <div class="B_-_Body"><a name="2225189">In the sample auto repair shop review, there are two filters that show additional questions if the answer to </a><span class="cv_-_computer_voice">QuestionSPM:11</span> is <span class="cv_-_computer_voice">yes</span>. That question asks if there were any requotes from the auto repair shop for an auto repair. If the answer is no, this question’s score is 100 and no further questions are shown. If the answer is yes, this question’s score is 0, and the user sees <span class="cv_-_computer_voice">QuestionSPM:12</span> and <span class="cv_-_computer_voice">QuestionSPM:13</span>, in that order. These questions ask how many requotes there were and the percentage of additional cost. The answers are choices, with better scores for a lower number of requotes and for a lower percentage of additional cost.</div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="2350960">The following code sample is in the exported file </a><span class="cv_-_computer_voice">questions.xml</span>. See <a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2225039', '');" title="Configuring Service Provider Performance Reviews">“Exporting and Importing Questions and Review Types”</a>.</div>
+      <div class="B_-_Body"><a name="2225190">The following XML code shows the two filters followed by the three questions and their answers:</a></div>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225191">&lt;QuestionFilter public-id="SPMQFilter:1"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225192">&nbsp;&nbsp;&lt;Answer&gt;yes&lt;/Answer&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225193">&nbsp;&nbsp;&lt;FilterQuestion public-id="QuestionSPM:11"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225194">&nbsp;&nbsp;&lt;Question public-id="QuestionSPM:12"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225195">&lt;/QuestionFilter&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225196">&lt;QuestionFilter public-id="SPMQFilter:2"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225197">&nbsp;&nbsp;&lt;Answer&gt;yes&lt;/Answer&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225198">&nbsp;&nbsp;&lt;FilterQuestion public-id="QuestionSPM:11"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225199">&nbsp;&nbsp;&lt;Question public-id="QuestionSPM:13"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225200">&lt;/QuestionFilter&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225201">&lt;!-- ... --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225202">&lt;Question public-id="QuestionSPM:11"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225203">&nbsp;&nbsp;&lt;DefaultAnswer/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225204">&nbsp;&nbsp;&lt;Indent&gt;0&lt;/Indent&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225205">&nbsp;&nbsp;&lt;Priority&gt;0&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225206">&nbsp;&nbsp;&lt;QuestionFormat/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225207">&nbsp;&nbsp;&lt;QuestionSet public-id="QuestionSetSPM:5"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225208">&nbsp;&nbsp;&lt;QuestionType&gt;Choice&lt;/QuestionType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225209">&nbsp;&nbsp;&lt;Required&gt;false&lt;/Required&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225210">&nbsp;&nbsp;&lt;ShouldRetireFromImportXML&gt;false&lt;/ShouldRetireFromImportXML&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225211">&nbsp;&nbsp;&lt;Text&gt;Were there any requotes?&lt;/Text&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225212">&lt;/Question&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225213">&nbsp;&nbsp;&lt;QuestionChoice public-id="QuestionChoiceSPM:34"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225214">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Code&gt;no&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225215">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Description&gt;No&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225216">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Name&gt;No&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225217">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Priority&gt;1&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225218">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Question public-id="QuestionSPM:11"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225219">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Score&gt;100&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225220">&nbsp;&nbsp;&lt;/QuestionChoice&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225221">&nbsp;&nbsp;&lt;QuestionChoice public-id="QuestionChoiceSPM:35"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225222">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Code&gt;yes&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225223">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Description&gt;Yes&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225224">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Name&gt;Yes&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225225">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Priority&gt;2&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225226">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Question public-id="QuestionSPM:11"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225227">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Score&gt;0&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225228">&nbsp;&nbsp;&lt;/QuestionChoice&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2350995">&lt;!-- ... --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225230">&lt;Question public-id="QuestionSPM:12"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225231">&nbsp;&nbsp;&lt;DefaultAnswer/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225232">&nbsp;&nbsp;&lt;Indent&gt;0&lt;/Indent&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225233">&nbsp;&nbsp;&lt;Priority&gt;1&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225234">&nbsp;&nbsp;&lt;QuestionFormat/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225235">&nbsp;&nbsp;&lt;QuestionSet public-id="QuestionSetSPM:5"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225236">&nbsp;&nbsp;&lt;QuestionType&gt;Choice&lt;/QuestionType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225237">&nbsp;&nbsp;&lt;Required&gt;false&lt;/Required&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225238">&nbsp;&nbsp;&lt;ShouldRetireFromImportXML&gt;false&lt;/ShouldRetireFromImportXML&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225239">&nbsp;&nbsp;&lt;Text&gt;How many requotes?&lt;/Text&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225240">&lt;/Question&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225241">&nbsp;&nbsp;&lt;QuestionChoice public-id="QuestionChoiceSPM:36"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225242">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Code&gt;one&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225243">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Description&gt;1&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225244">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Name&gt;1&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225245">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Priority&gt;1&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225246">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Question public-id="QuestionSPM:12"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225247">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Score&gt;25&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225248">&nbsp;&nbsp;&lt;/QuestionChoice&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225249">&nbsp;&nbsp;&lt;QuestionChoice public-id="QuestionChoiceSPM:37"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225250">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Code&gt;twothree&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225251">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Description&gt;2 to 3&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225252">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Name&gt;2 to 3&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225253">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Priority&gt;2&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225254">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Question public-id="QuestionSPM:12"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225255">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Score&gt;10&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225256">&nbsp;&nbsp;&lt;/QuestionChoice&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225257">&nbsp;&nbsp;&lt;QuestionChoice public-id="QuestionChoiceSPM:38"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225258">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Code&gt;morethan3&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225259">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Description&gt;More than 3&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225260">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Name&gt;More than 3&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225261">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Priority&gt;3&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225262">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Question public-id="QuestionSPM:12"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225263">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Score&gt;0&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225264">&nbsp;&nbsp;&lt;/QuestionChoice&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2351011">&lt;!-- ... --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225266">&lt;Question public-id="QuestionSPM:13"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225267">&nbsp;&nbsp;&lt;DefaultAnswer/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225268">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Indent&gt;0&lt;/Indent&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225269">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Priority&gt;2&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225270">&nbsp;&nbsp;&nbsp;&nbsp;&lt;QuestionFormat/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225271">&nbsp;&nbsp;&nbsp;&nbsp;&lt;QuestionSet public-id="QuestionSetSPM:5"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225272">&nbsp;&nbsp;&nbsp;&nbsp;&lt;QuestionType&gt;Choice&lt;/QuestionType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225273">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Required&gt;false&lt;/Required&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225274">&nbsp;&nbsp;&nbsp;&nbsp;&lt;ShouldRetireFromImportXML&gt;false&lt;/ShouldRetireFromImportXML&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225275">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text&gt;% of difference between initial quote and final payment?&lt;/Text&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225276">&nbsp;&nbsp;&lt;/Question&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225277">&nbsp;&nbsp;&lt;QuestionChoice public-id="QuestionChoiceSPM:39"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225278">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Code&gt;atmost5&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225279">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Description&gt;Within 5% of original quote&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225280">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Name&gt;Within 5% of original quote&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225281">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Priority&gt;1&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225282">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Question public-id="QuestionSPM:13"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225283">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Score&gt;25&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225284">&nbsp;&nbsp;&lt;/QuestionChoice&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225285">&nbsp;&nbsp;&lt;QuestionChoice public-id="QuestionChoiceSPM:40"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225286">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Code&gt;fiveten&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225287">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Description&gt;Between 5% and 10%&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225288">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Name&gt;Between 5% and 10%&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225289">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Priority&gt;2&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225290">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Question public-id="QuestionSPM:13"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225291">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Score&gt;10&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225292">&nbsp;&nbsp;&lt;/QuestionChoice&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225293">&nbsp;&nbsp;&lt;QuestionChoice public-id="QuestionChoiceSPM:41"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225294">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Code&gt;tentwenty&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225295">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Description&gt;Between 10% and 20%&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225296">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Name&gt;Between 10% and 20%&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225297">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Priority&gt;3&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225298">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Question public-id="QuestionSPM:13"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225299">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Score&gt;5&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225300">&nbsp;&nbsp;&lt;/QuestionChoice&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225301">&nbsp;&nbsp;&lt;QuestionChoice public-id="QuestionChoiceSPM:42"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225302">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Code&gt;over20&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225303">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Description&gt;Greater than 20%&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225304">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Name&gt;Greater than 20%&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225305">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Priority&gt;4&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225306">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Question public-id="QuestionSPM:13"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225307">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Score&gt;0&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2225308">&nbsp;&nbsp;&lt;/QuestionChoice&gt;</a></PRE>
+      <h4 class="H2_-_Heading_2"><a name="2230014">About Scoring</a></h4>
+      <div class="B_-_Body"><a name="2230015">After the completion of a service, typically, the insured and the claimant provide information to the claims adjuster or another user, who answers the questions in the performance review. This process results in a scored review that evaluates the services provided by a vendor on a single claim. Each review can have several scores. There is a total score and a score for each category of questions it contains. ClaimCenter scores the review and attaches it to the claim. A claim can have multiple reviews attached to it.</a></div>
+      <div class="B_-_Body"><a name="2230016">If you have set up the ClaimCenter scheduler to run the </a><span class="cv_-_computer_voice">ReviewSync</span> batch process, ClaimCenter queues the review’s scores to send to ContactManager when the review is complete. Additionally, if you have set up the ContactManager scheduler to run the <span class="cv_-_computer_voice">ABContactScoring</span> batch process, ContactManager processes reviews it receives. See <a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.3.html#2217371', '');" title="Using Service Provider Performance Reviews">“Scheduling Reviews for Processing by ContactManager”</a>.</div>
+      <div class="B_-_Body"><a name="2230020">ContactManager creates vendor scores consisting of the average total score and average score for each category for all reviews from all claims for which the vendor provided services. These vendor scores are the main tool for managing categories of service providers. </a></div>
+      <div class="B_-_Body"><a name="2230021">The questions in the sample review have answers that range from zero to one hundred points. Scores, simple averages of the answered questions, are also in this range.</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2230022">Review Scoring</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2230023">ClaimCenter provides two mechanism to score individual reviews, one to score sets of questions—categories—and another to score the entire review. These scoring mechanisms are similar. Both are simple arithmetic averages, with each answered question given equal weight.</a></div>
+      <div class="B_-_Body"><a name="2230024">The overall score of an individual review is the arithmetic average of all answered questions. Unanswered questions do not affect this average. To make particular questions always affect the score, you can define those questions as mandatory and provide default answers for them. Similarly, each category score of a single review is the average of all answered questions in that category. </a></div>
+      <div class="B_-_Body"><a name="2230025">ClaimCenter scores an incomplete review each time it saves the review. After you complete and submit the review by clicking </a><span class="ui_-_UI_element">Complete Selected</span>, ClaimCenter scores the review and sends it to ContactManager. ClaimCenter also attaches the completed review to the claim and never rescores it, and the review becomes uneditable.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2230026">Contact Scoring</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2230027">Like reviews themselves, ContactManager can give each vendor two kinds of scores, an </a><span class="e_-_emphasis">overall</span> score and a set of <span class="e_-_emphasis">category</span> scores.</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="2230028">Overall score</a></span> – The arithmetic average of all overall scores from reviews pertaining to that contact. To be included, a review must be associated with the individual contact.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="2230029">Category scores</a></span> – The average of all scores from the same category in individual reviews that pertain to that contact.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="2230030">Since different review types can reuse the same categories, this average can include category scores taken from all review types that include the category. For example, you might have review types for auto glass repair and for auto repair, both of which have the category of glass installation. A vendor’s category scores are the averages of the same categories from all reviews.</a></div>
+      <div class="B_-_Body"><a name="2230031">Unlike review scores, which ClaimCenter attaches to the claim when the user makes the review complete, aggregated vendor scores update asynchronously through either a batch process or an API call.</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2225310">Configuring Scores</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2225312">By default, ClaimCenter scores are arithmetic means with each question given an equal weight. If you want to weight questions differently, you can either include unanswered questions in the scoring or calculate overall or category scores other than as arithmetic averages. </a></div>
+      <div class="B_-_Body"><a name="2312369">To configure scoring differently, you must write your own implementation of the </a><span class="cv_-_computer_voice">IContactReviewPlugin</span> plugin interface in ClaimCenter. The base configuration provides the plugin implementation <span class="cv_-_computer_voice">gw.plugin.spm.ab800.ContactReviewPlugin</span>. For more information, see <a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.6.html#2228079', '');" title="Service Provider Review Plugin Reference">“Service Provider Review Plugin Reference”</a>.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2225316">Using Gosu to Configure Service Provider Performance Reviews</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2225317">ClaimCenter provides an API that enables you to use Gosu in rules to customize this feature. For example, you can write rules implementing logic such as: </a><span class="e_-_emphasis">If the overall vendor score for a particular review type is greater than a threshold, set its Preferred Vendor field</span>.</div>
+      <h4 class="H2_-_Heading_2"><a name="2225318">Review Permissions</a></h4>
+      <div class="B_-_Body"><a name="2225319">The following permissions are the primary ones associated with service provider reviews in ClaimCenter: </a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2225320">reviewviewlist</a></span> – Permission to view the list of reviews in the <span class="ui_-_UI_element">Address Book</span> tab </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2225321">reviewviewdetail</a></span> – Permission to view the details of reviews in ClaimCenter</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2225322">reviewedit</a></span> – Permission to edit the <span class="ui_-_UI_element">Review</span> screen that shows the scores for each claim</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2225323">reviewcreate</a></span> – Permission to create a new review</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2225324">reviewdeletecompleted</a></span> – Permission to delete a completed review that has been sent to ContactManager for calculation</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2225325">reviewdeleteincomplete</a></span> – Permission to delete a review that has not been not completed</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2225326">ContactManager has the following review summary permissions:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2351224">r</a><span class="cv_-_computer_voice">evsumviewdetail</span> – Permission to view the <span class="ui_-_UI_element">Review Summary</span> screen and see category scores for each summarized review.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="2351323">revsumviewlist</a></span> – Permission to view the list of review summaries and to see the <span class="ui_-_UI_element">Reviews</span> card for a contact.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2225327">Permissions for Contacts</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2225328">If you need more granular control over who gets to view, edit, create, and delete contacts, do not use the simple view and edit permissions. For example, you can designate users to be contact managers that manage certain subtypes of contacts. For this purpose, you would want the system to enforce permissions at the contact subtype level. You can also enforce permissions at the contact tag level. For more information, see </a><a href="javascript:WWHClickedPopup('contact', 'security.08.1.html#5559811', '');" title="Securing Access to Contact Information">“Securing Access to Contact Information”</a>.</div>
+      <h6 class="HS_-_Head_Sub"><a name="2225528">See also</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'security.08.1.html#5559811', '');" title="Securing Access to Contact Information" name="2225332">“Securing Access to Contact Information”</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.2.html#2161992', '');" title="Service Provider Performance Reviews" name="2225575">“Service Provider Performance Reviews”</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.3.html#2162033', '');" title="Using Service Provider Performance Reviews" name="2225599">“Using Service Provider Performance Reviews”</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.4.html#2216023', '');" title="Data Model for Service Provider Performance Reviews" name="2228167">“Data Model for Service Provider Performance Reviews”</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.6.html#2228079', '');" title="Service Provider Review Plugin Reference" name="2229861">“Service Provider Review Plugin Reference”</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

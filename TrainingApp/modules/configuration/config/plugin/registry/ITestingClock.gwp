@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<plugin
+  name="ITestingClock">
+  <plugin-osgi
+    servicepid="com.guidewire.pl.clock.internal.OffsetTestingClock"
+    temporaryBundle="false"/>
+</plugin>

@@ -1,0 +1,1901 @@
+<html>
+<head>
+<title>Transaction</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">Transaction <span class="entityname">(cc_transaction) (delegates to <A HREF="EventAware.html" TARGET="tableFrame">EventAware</A>, <A HREF="Extractable.html" TARGET="tableFrame">Extractable</A>, <A HREF="Retireable.html" TARGET="tableFrame">Retireable</A>, <A HREF="TransactionTAccountOperationsDelegate.html" TARGET="tableFrame">TransactionTAccountOperationsDelegate</A>)</span></div>
+<div class="desc">
+<span id="reflink_2337" class="reftext" onclick='showAndHideRefBox("refbox_2337", "reflink_2337")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_2337" class="refbox_inner" style="display:none;">
+<ul><li>Reserve - expected payments</li><li>Payment - money paid out or liability incurred</li>
+        <li> RecoveryReserve - expected recoveries</li><li>Recovery - credit or money received</li></ul>
+        <p>
+        Every transaction is made against a single ReserveLine. It contains a non-null
+        array of TransactionLineItem entities holding the amount(s) of the transaction. Checks
+        are not transactions. A single transaction will affect multiple T-accounts.
+    
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">Transaction</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Abstract<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Abstract</b><br>The entity is a supertype, but all instances of it must be one of its subtypes. That is, you cannot instantiate the supertype entity itself. An abstract entity is appropriate when the supertype serves only to collect logic or common fields, but does not make sense to exist on its own.')">?</span></sup>, Editable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Editable</b><br>The related database table contains rows that are editable by application users based on roles and permissions. An Editable table manages additional fields that represent an audit trail of an entity in the table (for example, who created it and when, who last edited it and when).')">?</span></sup>, Exportable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>, Extendable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Extendable</b><br>Can be extended with additional custom fields added to it.')">?</span></sup>, Keyed<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Keyed</b><br>Has a related database table that has a primary key. Each row in a Keyed table has an integer primary key named ID. IDs are managed internally by the application, and the system ensures that no two rows in a keyed table have the same ID. In addition to the internal key, an external primary key can be associated with each row in a table.')">?</span></sup>, Loadable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Loadable</b><br>Can be loaded via the staging tables.')">?</span></sup>, Sourceable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Sourceable</b><br>Contains entities that are linked to an external source. Each row in a Sourceable entity\'s table has additional fields to identify the external system and store the ID of the Sourceable entity in the external system.')">?</span></sup>, Supertype<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Supertype</b><br>A single table that represents multiple types of entities, called subtypes. Each subtype shares application logic and a majority of their fields. Each subtype may also define fields that are particular to it.')">?</span></sup>, Versionable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Versionable</b><br>Has a version number that increases every time the entity is changed. This allows the cache to identify when entities have been updated.')">?</span></sup></span>
+</div>
+</div>
+<b>Messaging Events:</b> The application will generate these events for this entity:<ul><li>TransactionRemoved</li><li>TransactionAdded</li><li>TransactionChanged</li></ul><i>Integration programmers can write Event Fired rules to perform actions on these events. Refer
+ to the <b>Integration Guide</b> for the complete list of events for all entities. Remember to
+ configure a new or existing messaging destination in Studio to listen for desired events. </i><div class="refbox biglist odd">
+<span id="reflink_2338" class="reftext" onclick='showAndHideRefBox("refbox_2338", "reflink_2338")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_2338" class="refbox_inner" style="display:none;">
+<A HREF="../full/TransactionEditWrapper.html" TARGET="tableFrame">TransactionEditWrapper.Transaction</A><br><A HREF="../full/TransactionLineItem.html" TARGET="tableFrame">TransactionLineItem.Transaction</A><br><A HREF="../full/TransactionOffset.html" TARGET="tableFrame">TransactionOffset.Offset</A><br><A HREF="../full/TransactionOffset.html" TARGET="tableFrame">TransactionOffset.Transaction</A><br><A HREF="../full/TransactionOnset.html" TARGET="tableFrame">TransactionOnset.Onset</A><br><A HREF="../full/TransactionOnset.html" TARGET="tableFrame">TransactionOnset.Transaction</A><br><A HREF="../full/TransactionView.html" TARGET="tableFrame">TransactionView.Transaction</A>
+</div>
+</span>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_2339" class="reftext" onclick='showAndHideRefBox("refbox_2339", "reflink_2339")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_2339" class="refbox_inner" style="display:none;">
+<A HREF="../full/Claim.html" TARGET="tableFrame">Claim.Transactions</A><br><A HREF="../full/Exposure.html" TARGET="tableFrame">Exposure.Transactions</A>
+</div>
+</span>
+</div>
+<span class="showhidelink"><a id="showAllElements" href="#" onClick="return showAllUIDetails()">Show user interface details on all fields</a></span>
+
+<br>
+<a name=subtypes></a>
+<br/>
+<span class="filtertitle">Subtypes</span>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>
+Payment</td>
+<td><A HREF="#Payment" TARGET="tableFrame">Payment</A></td>
+</tr>
+<tr>
+<td>
+Recovery</td>
+<td><A HREF="#Recovery" TARGET="tableFrame">Recovery</A></td>
+</tr>
+<tr>
+<td>
+RecoveryReserve</td>
+<td><A HREF="#RecoveryReserve" TARGET="tableFrame">RecoveryReserve</A></td>
+</tr>
+<tr>
+<td>
+Reserve</td>
+<td><A HREF="#Reserve" TARGET="tableFrame">Reserve</A></td>
+</tr>
+</table>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="transaction_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "key")'>key</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="transaction_amount"></a>
+<p class="column">
+<span class="coltitle">Amount</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.math.BigDecimal</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Equivalent to TransactionAmount. Provided for backwards
+compatibility on SINGLE currency mode servers.</span>
+<a name="transaction_claim"></a>
+<p class="column">
+<span class="coltitle">Claim</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="Claim.html" TARGET="tableFrame">Claim</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: ClaimID)&nbsp;&nbsp;&nbsp;&nbsp;(export as id)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>export as id</b><br>Causes the system to create an appropriate identifier for the referenced entity: for example, ClaimIdentifier if the foreign key points to the claim table.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The foreign key is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The related claim.<p>Setting the claim also sets this transaction's currency to the claim's currency if it is null.</span>
+<a name="transaction_claimamount"></a>
+<p class="column">
+<span class="coltitle">ClaimAmount</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.financials.CurrencyAmount</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the Claim amount of this transaction, which is the equivalent of
+transaction amount in the claim currency. The amount is determined by
+summing the claim amounts of all TransactionLineItems that belong to the
+transaction.  Returns zero if the transaction has no line items.</span>
+<a name="transaction_claimtoreportingexchangerate"></a>
+<p class="column">
+<span class="coltitle">ClaimToReportingExchangeRate</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="ExchangeRate.html" TARGET="tableFrame">ExchangeRate</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The foreign key is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ExchangeRate to use when converting ClaimAmount to ReportingAmount. Setting this value updates the reporting amounts.</span>
+<a name="transaction_comments"></a>
+<p class="column">
+<span class="coltitle">Comments</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The column can be loaded via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Comments about the transaction, such as a reason.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_0 onclick='showAndHideUIDetails("UITable_0", "showhideUI_0")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_0' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>CheckTransferPaymentsLV.pcf:61</td>
+<td>LV.Financials.CheckTransferPayments.Comments</td>
+<td>Payment.Comments</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditTransactionInputSet.pcf:20</td>
+<td>NVV.Financials.SubView.EditTransaction.Transaction.Comments</td>
+<td>payment.Comments</td>
+<td>true</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableMultiCurrencyRecoveryReservesLV.pcf:95</td>
+<td>LV.Financials.RecoveryReserveSet.MulticurrencyRecoveryReserves.Comments</td>
+<td>RecoveryReserveWrapper.Transaction.Comments</td>
+<td>true</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableMultiCurrencyReservesLV.pcf:104</td>
+<td>LV.Financials.ReserveSet.MulticurrencyReserves.Comments</td>
+<td>ReserveWrapper.Transaction.Comments</td>
+<td>true</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableRecoveryReservesLV.pcf:155</td>
+<td>NVV.Financials.SubView.EditRecoveryReserve.Transaction.Comments</td>
+<td>RecoveryReserveWrapper.Transaction.Comments</td>
+<td>true</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableReservesLV.pcf:198</td>
+<td>LV.Financials.ReserveSet.Reserves.Comments</td>
+<td>ReserveWrapper.Transaction.Comments</td>
+<td>true</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>NewCheckPaymentsLV.pcf:59</td>
+<td>LV.Financials.NewCheckPayments.Payments.Comments</td>
+<td>Payment.Comments</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>NewOnsetPaymentsLV.pcf:58</td>
+<td>LV.Financials.NewCheckPayments.Payments.Comments</td>
+<td>Payment.Comments</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>NewPaymentDetailDV.default.pcf:54</td>
+<td>NVV.Financials.NewPaymentDetail.Transaction.Comments</td>
+<td>Payment.Comments</td>
+<td>true</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>PaymentBasicsInputSet.pcf:52</td>
+<td>NVV.Financials.SubView.PaymentBasics.Payment.Comments</td>
+<td>Payment.Comments</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>QuickCheckBasicsDV.pcf:269</td>
+<td>NVV.Financials.NewPaymentDetail.Transaction.Comments</td>
+<td>Payment.Comments</td>
+<td>Payment.New</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>RecodeRecovery.pcf:51</td>
+<td>Web.Claim.RecodeRecovery.Comments</td>
+<td>onsetRecovery.Comments</td>
+<td>true</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>RecoveryBasicsInputSet.pcf:50</td>
+<td>NVV.Financials.SubView.RecoveryBasics.Transaction.Comments</td>
+<td>Transaction.Comments</td>
+<td>true</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>RecoveryDetailDV.pcf:66</td>
+<td>NVV.Financials.RecoveryDetail.Recovery.Comments</td>
+<td>Recovery.Comments</td>
+<td>true</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>RecoveryReserveBasicsInputSet.pcf:40</td>
+<td>NVV.Financials.SubView.RecoveryReserveBasics.Transaction.Comments</td>
+<td>Transaction.Comments</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>TransactionBasicsInputSet.pcf:36</td>
+<td>NVV.Financials.SubView.TransactionBasics.Transaction.Comments</td>
+<td>Transaction.Comments</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>TransferRecovery.pcf:68</td>
+<td>Web.Claim.TransferRecovery.Comments</td>
+<td>onsetRecovery.Comments</td>
+<td>true</td>
+<td>
+</td>
+</tr>
+</table>
+</div></div>
+<a name="transaction_costcategory"></a>
+<p class="column">
+<span class="coltitle">CostCategory</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/CostCategory_tl.html" TARGET="tableFrame">CostCategory</A> using key filters <A HREF="../typelist/CostType_tl.html" TARGET="tableFrame">CostType</A>, <A HREF="../typelist/CoverageType_tl.html" TARGET="tableFrame">Exposure.PrimaryCoverage</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The typekey is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The CostCategory for this transaction.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_1 onclick='showAndHideUIDetails("UITable_1", "showhideUI_1")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_1' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>ApprovalDetailDV.RecoverySet.pcf:43</td>
+<td>NVV.Financials.RecoverySetSummary.Recovery.CostCategory</td>
+<td>(Activity.TransactionSet as RecoverySet).Recoveries[0].CostCategory</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>CheckSummaryPaymentsLV.pcf:45</td>
+<td>LV.Financials.Payments.CostCategory</td>
+<td>Payment.CostCategory</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>CheckTransferPaymentsLV.pcf:52</td>
+<td>LV.Financials.CheckTransferPayments.CostCategory</td>
+<td>Payment.CostCategory</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableMultiCurrencyRecoveryReservesLV.pcf:44</td>
+<td>LV.Financials.RecoveryReserveSet.MulticurrencyRecoveryReserves.CostCategories</td>
+<td>EditWrapper.Transaction.CostCategory</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableMultiCurrencyReservesLV.pcf:44</td>
+<td>LV.Financials.ReserveSet.MulticurrencyReserves.CostCategory</td>
+<td>EditWrapper.Transaction.CostCategory</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableRecoveryReservesLV.pcf:82</td>
+<td>LV.Financials.RecoveryReserveSet.CostCategory</td>
+<td>RecoveryReserveWrapper.Transaction.CostCategory</td>
+<td>WizardHelper.isTransactionFullyEditable(RecoveryReserveWrapper.Transaction)</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableReservesLV.pcf:94</td>
+<td>LV.Financials.ReserveSet.Reserves.CostCategories</td>
+<td>ReserveWrapper.Transaction.CostCategory</td>
+<td>WizardHelper.isTransactionFullyEditable(ReserveWrapper.Transaction)</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>NewCheckPaymentsLV.pcf:40</td>
+<td>LV.Financials.NewCheckPayments.Payments.CostCategory</td>
+<td>Payment.CostCategory</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>NewOnsetPaymentsLV.pcf:39</td>
+<td>LV.Financials.NewCheckPayments.Payments.CostCategory</td>
+<td>Payment.CostCategory</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>PaymentBasicsInputSet.pcf:35</td>
+<td>NVV.Financials.SubView.PaymentBasics.Payment.CostCategory</td>
+<td>Payment.CostCategory</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>RecoveryBasicsInputSet.pcf:36</td>
+<td>NVV.Financials.SubView.RecoveryBasics.Transaction.CostCategory</td>
+<td>Transaction.CostCategory</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>RecoveryReserveBasicsInputSet.pcf:27</td>
+<td>NVV.Financials.SubView.RecoveryReserveBasics.Transaction.CostCategory</td>
+<td>Transaction.CostCategory</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>RecoveryReserveSetLV.pcf:42</td>
+<td>LV.Financials.RecoveryReserveSet.CostCategory</td>
+<td>RecoveryReserve.CostCategory</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>ReserveSetLV.pcf:45</td>
+<td>LV.Financials.ReserveSet.Reserves.CostCategories</td>
+<td>Reserve.CostCategory</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>TransactionBasicsInputSet.pcf:27</td>
+<td>NVV.Financials.SubView.TransactionBasics.Transaction.CostCategory</td>
+<td>Transaction.CostCategory</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+</table>
+</div></div>
+<a name="transaction_costtype"></a>
+<p class="column">
+<span class="coltitle">CostType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/CostType_tl.html" TARGET="tableFrame">CostType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The typekey is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Type of cost (for example, claim cost or adjusting overhead).</span>
+<div class='screenrefbody'>
+<span id=showhideUI_2 onclick='showAndHideUIDetails("UITable_2", "showhideUI_2")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_2' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>ApprovalDetailDV.RecoverySet.pcf:39</td>
+<td>NVV.Financials.RecoverySetSummary.Recovery.CostType</td>
+<td>(Activity.TransactionSet as RecoverySet).Recoveries[0].CostType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>CheckSummaryPaymentsLV.pcf:41</td>
+<td>LV.Financials.Payments.CostType</td>
+<td>Payment.CostType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>CheckTransferPaymentsLV.pcf:48</td>
+<td>LV.Financials.CheckTransferPayments.CostType</td>
+<td>Payment.CostType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableMultiCurrencyRecoveryReservesLV.pcf:37</td>
+<td>LV.Financials.RecoveryReserveSet.MulticurrencyRecoveryReserves.CostType</td>
+<td>EditWrapper.Transaction.CostType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableMultiCurrencyReservesLV.pcf:37</td>
+<td>LV.Financials.ReserveSet.MulticurrencyReserves.CostType</td>
+<td>EditWrapper.Transaction.CostType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableRecoveryReservesLV.pcf:70</td>
+<td>LV.Financials.RecoveryReserveSet.CostType</td>
+<td>RecoveryReserveWrapper.Transaction.CostType</td>
+<td>WizardHelper.isTransactionFullyEditable(RecoveryReserveWrapper.Transaction)</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableReservesLV.pcf:80</td>
+<td>LV.Financials.ReserveSet.Reserves.CostType</td>
+<td>ReserveWrapper.Transaction.CostType</td>
+<td>WizardHelper.isTransactionFullyEditable(ReserveWrapper.Transaction)</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>NewCheckPaymentsLV.pcf:36</td>
+<td>LV.Financials.NewCheckPayments.Payments.CostType</td>
+<td>Payment.CostType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>NewOnsetPaymentsLV.pcf:35</td>
+<td>LV.Financials.NewCheckPayments.Payments.CostType</td>
+<td>Payment.CostType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>PaymentBasicsInputSet.pcf:31</td>
+<td>NVV.Financials.SubView.PaymentBasics.Payment.CostType</td>
+<td>Payment.CostType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>RecoveryBasicsInputSet.pcf:32</td>
+<td>NVV.Financials.SubView.RecoveryBasics.Transaction.CostType</td>
+<td>Transaction.CostType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>RecoveryReserveBasicsInputSet.pcf:23</td>
+<td>NVV.Financials.SubView.RecoveryReserveBasics.Transaction.CostType</td>
+<td>Transaction.CostType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>RecoveryReserveSetLV.pcf:38</td>
+<td>LV.Financials.RecoveryReserveSet.CostType</td>
+<td>RecoveryReserve.CostType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>ReserveSetLV.pcf:41</td>
+<td>LV.Financials.ReserveSet.Reserves.CostType</td>
+<td>Reserve.CostType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>TransactionBasicsInputSet.pcf:23</td>
+<td>NVV.Financials.SubView.TransactionBasics.Transaction.CostType</td>
+<td>Transaction.CostType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+</table>
+</div></div>
+<a name="transaction_createtime"></a>
+<p class="column">
+<span class="coltitle">CreateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was created</span>
+<div class='screenrefbody'>
+<span id=showhideUI_3 onclick='showAndHideUIDetails("UITable_3", "showhideUI_3")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_3' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>TransactionTrackingInputSet.pcf:26</td>
+<td>NVV.Financials.SubView.TransactionTracking.Transaction.CreateTime</td>
+<td>Transaction.CreateTime</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+</table>
+</div></div>
+<a name="transaction_createuser"></a>
+<p class="column">
+<span class="coltitle">CreateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CreateUserID)</span>
+<br>
+<span class="desc">User who created the object</span>
+<a name="transaction_currency"></a>
+<p class="column">
+<span class="coltitle">Currency</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The typekey is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The Currency of the transaction amount.</span>
+<a name="transaction_deletable"></a>
+<p class="column">
+<span class="coltitle">Deletable</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns true if this Transaction can be deleted. For Payments, Check.Deleteable should normally be used instead,
+since, after a Check has been created, its Payments cannot be deleted individually--the entire Check must be
+deleted.</span>
+<a name="transaction_deleteable"></a>
+<p class="column">
+<span class="coltitle">Deleteable</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">Returns true if this Transaction can be deleted. For Payments, Check.Deleteable should normally be used instead,
+since, after a Check has been created, its Payments cannot be deleted individually--the entire Check must be
+deleted.</span>
+<a name="transaction_detailpagetitle"></a>
+<p class="column">
+<span class="coltitle">DetailPageTitle</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the title to use for the detail page that displays detail of is transaction - different transaction types
+use different titles, such as "Payment Details", "Recovery Details" and so on.</span>
+<a name="transaction_editable"></a>
+<p class="column">
+<span class="coltitle">Editable</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns whether or not a Transaction can be directly edited versus
+needing to offset the transaction or void/recreate the transaction.
+For all Transaction subtypes, returns true if the status is null.
+For Reserves and RecoveryReserves, returns true if the transaction is
+unapproved or rejected and its exposure is not closed. For Payments and
+Recoveries, returns true if the transaction has not been submitted.</span>
+<a name="transaction_exposure"></a>
+<p class="column">
+<span class="coltitle">Exposure</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="Exposure.html" TARGET="tableFrame">Exposure</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: ExposureID)&nbsp;&nbsp;&nbsp;&nbsp;(export as id)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>export as id</b><br>Causes the system to create an appropriate identifier for the referenced entity: for example, ClaimIdentifier if the foreign key points to the claim table.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The foreign key is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The related exposure.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_4 onclick='showAndHideUIDetails("UITable_4", "showhideUI_4")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_4' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>EditableRecoveryReservesLV.pcf:54</td>
+<td>LV.Financials.RecoveryReserveSet.Exposure</td>
+<td>RecoveryReserveWrapper.Transaction.Exposure</td>
+<td>WizardHelper.isTransactionFullyEditable(RecoveryReserveWrapper.Transaction)</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableReservesLV.pcf:61</td>
+<td>LV.Financials.ReserveSet.Reserves.Exposure</td>
+<td>ReserveWrapper.Transaction.Exposure</td>
+<td>WizardHelper.isTransactionFullyEditable(ReserveWrapper.Transaction)</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>NewCheckPaymentsLV.pcf:28</td>
+<td>LV.Financials.NewCheckPayments.Payments.Exposure</td>
+<td>Payment.Exposure</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>NewOnsetPaymentsLV.pcf:27</td>
+<td>LV.Financials.NewCheckPayments.Payments.Exposure</td>
+<td>Payment.Exposure</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+</table>
+</div></div>
+<a name="transaction_loadcommandid"></a>
+<p class="column">
+<span class="coltitle">LoadCommandID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "softentityreference")'>softentityreference</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">LoadCommand for load where row was created. If not null this object was loaded via the loader.</span>
+<a name="transaction_notapproved"></a>
+<p class="column">
+<span class="coltitle">NotApproved</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns true if the LifeCycleState indicates the transaction is unapproved or
+rejected. Specifically, if the LifeCycleState is one of the following:
+<ul>
+<li> <code>TransactionLifeCycleState.DRAFT</code>
+<li> <code>TransactionLifeCycleState.PENDINGAPPROVAL</code>
+<li> <code>TransactionLifeCycleState.REJECTED</code>
+</ul></span>
+<a name="transaction_overridetranstoclaimexchangerate"></a>
+<p class="column">
+<span class="coltitle">OverrideTransToClaimExchangeRate</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">False if the TransactionAmount to ClaimAmount ExchangeRate is a Market Rate
+(Automatic) or true if it's a user-entered custom rate for this Transaction (Manual).</span>
+<a name="transaction_overridetranstoreservingexchangerate"></a>
+<p class="column">
+<span class="coltitle">OverrideTransToReservingExchangeRate</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">False if the TransactionAmount to ReservingAmount ExchangeRate is a Market Rate
+(Automatic) or true if it's a user-entered custom rate for this Transaction (Manual).</span>
+<a name="transaction_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (20)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The column can be loaded via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="transaction_recoverycategory"></a>
+<p class="column">
+<span class="coltitle">RecoveryCategory</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/RecoveryCategory_tl.html" TARGET="tableFrame">RecoveryCategory</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The typekey is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">User-defined subcategory of a recovery.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_5 onclick='showAndHideUIDetails("UITable_5", "showhideUI_5")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_5' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>ApprovalDetailDV.RecoverySet.pcf:52</td>
+<td>NVV.Financials.RecoverySetSummary.Recovery.RecoveryCategory</td>
+<td>(Activity.TransactionSet as RecoverySet).Recoveries[0].RecoveryCategory</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableRecoveryReservesLV.pcf:148</td>
+<td>NVV.Financials.SubView.EditRecoveryReserve.Transaction.RecoveryCategory</td>
+<td>RecoveryReserveWrapper.Transaction.RecoveryCategory</td>
+<td>true</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>RecoveryBasicsInputSet.pcf:45</td>
+<td>NVV.Financials.SubView.RecoveryBasics.Transaction.RecoveryCategory</td>
+<td>Transaction.RecoveryCategory</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>RecoveryDetailDV.pcf:48</td>
+<td>NVV.Financials.RecoveryDetail.Recovery.RecoveryCategory</td>
+<td>Recovery.RecoveryCategory</td>
+<td>true</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>RecoveryReserveBasicsInputSet.pcf:36</td>
+<td>NVV.Financials.SubView.RecoveryReserveBasics.Transaction.RecoveryCategory</td>
+<td>Transaction.RecoveryCategory</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+</table>
+</div></div>
+<a name="transaction_reportingamount"></a>
+<p class="column">
+<span class="coltitle">ReportingAmount</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.financials.CurrencyAmount</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the reporting amount of this transaction, which is the equivalent of
+transaction amount in the reporting currency. The amount is determined by
+summing the reporting amounts of all TransactionLineItems that belong to the
+transaction.  Returns zero if the transaction has no line items.</span>
+<a name="transaction_reserveline"></a>
+<p class="column">
+<span class="coltitle">ReserveLine</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="ReserveLine.html" TARGET="tableFrame">ReserveLine</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: ReserveLineID)&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The foreign key is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(overwritten on load)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>overwritten on load</b><br>If also loadable, this attribute indicates the corresponding staging table contains a mapping that maps to this key. When the system loads new data from the staging tables, the loader will overwrite any data you have supplied. As a result, you should not populate data into this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The ReserveLine associated with this transaction.  For all transaction subtypes this ReserveLine will have matching Claim, Exposure, CostType and CostCategory.</span>
+<a name="transaction_reservingamount"></a>
+<p class="column">
+<span class="coltitle">ReservingAmount</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.financials.CurrencyAmount</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the Reserving amount of this transaction, which is the amount of this transaction
+in the Reserving Currency. The amount is determined by
+summing the ReservingAmounts of all TransactionLineItems that belong to the
+transaction.  Returns zero if the transaction has no line items.</span>
+<a name="transaction_reservingcurrency"></a>
+<p class="column">
+<span class="coltitle">ReservingCurrency</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The typekey is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Reserving Currency of this transaction's ReserveLine. Indicates the currency in which reserves are to be set aside and eroded.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_6 onclick='showAndHideUIDetails("UITable_6", "showhideUI_6")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_6' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>ApprovalDetailDV.RecoverySet.pcf:48</td>
+<td>NVV.Financials.RecoverySetSummary.Recovery.ReservingCurrency</td>
+<td>(Activity.TransactionSet as RecoverySet).Recoveries[0].ReservingCurrency</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>CheckSummaryPaymentsLV.pcf:50</td>
+<td>LV.Financials.Payments.ReservingCurrency</td>
+<td>Payment.ReservingCurrency</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>CheckTransferPaymentsLV.pcf:57</td>
+<td>LV.Financials.CheckTransferPayments.ReservingCurrency</td>
+<td>Payment.ReservingCurrency</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableMultiCurrencyRecoveryReservesLV.pcf:52</td>
+<td>LV.Financials.RecoveryReserveSet.MulticurrencyRecoveryReserves.ReservingCurrency</td>
+<td>EditWrapper.Transaction.ReservingCurrency</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableMultiCurrencyReservesLV.pcf:52</td>
+<td>LV.Financials.ReserveSet.MulticurrencyReserves.ReservingCurrency</td>
+<td>EditWrapper.Transaction.ReservingCurrency</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableRecoveryReservesLV.pcf:95</td>
+<td>LV.Financials.RecoveryReserveSet.ReservingCurrency</td>
+<td>RecoveryReserveWrapper.Transaction.ReservingCurrency</td>
+<td>WizardHelper.isTransactionFullyEditable(RecoveryReserveWrapper.Transaction)</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>EditableReservesLV.pcf:109</td>
+<td>LV.Financials.ReserveSet.Reserves.ReservingCurrency</td>
+<td>ReserveWrapper.Transaction.ReservingCurrency</td>
+<td>WizardHelper.isTransactionFullyEditable(ReserveWrapper.Transaction)</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>NewCheckPaymentsLV.pcf:45</td>
+<td>LV.Financials.NewCheckPayments.Payments.ReservingCurrency</td>
+<td>Payment.ReservingCurrency</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>NewOnsetPaymentsLV.pcf:44</td>
+<td>LV.Financials.NewCheckPayments.Payments.ReservingCurrency</td>
+<td>Payment.ReservingCurrency</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>PaymentBasicsInputSet.pcf:40</td>
+<td>NVV.Financials.SubView.PaymentBasics.Payment.ReservingCurrency</td>
+<td>Payment.ReservingCurrency</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>RecoveryBasicsInputSet.pcf:41</td>
+<td>NVV.Financials.SubView.RecoveryBasics.Transaction.ReservingCurrency</td>
+<td>Transaction.ReservingCurrency</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>RecoveryReserveBasicsInputSet.pcf:32</td>
+<td>NVV.Financials.SubView.RecoveryReserveBasics.Transaction.ReservingCurrency</td>
+<td>Transaction.ReservingCurrency</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>RecoveryReserveSetLV.pcf:47</td>
+<td>LV.Financials.RecoveryReserveSet.ReservingCurrency</td>
+<td>RecoveryReserve.ReservingCurrency</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>ReserveSetLV.pcf:50</td>
+<td>LV.Financials.ReserveSet.Reserves.ReservingCurrency</td>
+<td>Reserve.ReservingCurrency</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>TransactionBasicsInputSet.pcf:32</td>
+<td>NVV.Financials.SubView.TransactionBasics.Transaction.ReservingCurrency</td>
+<td>Transaction.ReservingCurrency</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+</table>
+</div></div>
+<a name="transaction_retired"></a>
+<p class="column">
+<span class="coltitle">Retired</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">True if the object has been retired from active use, false if the
+        object is active.  Retireable objects are never deleted from a
+        database table, instead they are retired by setting the retired
+        column to the same value as the ID of the object.</span>
+<a name="transaction_retired_dynprop"></a>
+<p class="column">
+<span class="coltitle">RETIRED_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="transaction_roundingmode"></a>
+<p class="column">
+<span class="coltitle">RoundingMode</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.math.RoundingMode</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Gets the rounding mode that should be used when converting amounts between
+transaction, reserving, claim, and reporting currency for this transaction.
+See also <code>CCCurrencyUtil.getRoundingMode()</code>.</span>
+<a name="transaction_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/TransactionStatus_tl.html" TARGET="tableFrame">TransactionStatus</A> using filter <A HREF="../typelist/TransactionStatus_tl.html#transaction" TARGET="tableFrame">transaction</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The typekey is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Status of the transaction. Further refines the LifeCycleState. Can only change status directly to another status in the same LifeCycleState, which does not affect Taccounts.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_7 onclick='showAndHideUIDetails("UITable_7", "showhideUI_7")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_7' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>CheckSummaryPaymentsLV.pcf:54</td>
+<td>LV.Financials.Payments.Status</td>
+<td>Payment.Status</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>TransactionTrackingInputSet.pcf:16</td>
+<td>NVV.Financials.SubView.TransactionTracking.Transaction.Status</td>
+<td>Transaction.Status</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+</table>
+</div></div>
+<a name="transaction_submitdate"></a>
+<p class="column">
+<span class="coltitle">SubmitDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The column can be loaded via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Unused. May be removed in a future release.</span>
+<a name="transaction_subtype"></a>
+<p class="column">
+<span class="coltitle">Subtype</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="#subtypes" TARGET="tableFrame">Transaction</A> subtypes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The typekey is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Identifies a particular subtype within a supertype table; each subtype of a supertype has its own unique subtype value</span>
+<a name="transaction_transactionamount"></a>
+<p class="column">
+<span class="coltitle">TransactionAmount</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.financials.CurrencyAmount</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the transaction amount of this transaction.  The currency of the transaction
+amount may differ from the Claim currency. The amount is determined by
+summing the transaction amounts of all TransactionLineItems that belong to the
+transaction.  Returns zero if the transaction has no line items.</span>
+<a name="transaction_transactionamountcomponent"></a>
+<p class="column">
+<span class="coltitle">TransactionAmountComponent</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.financials.CurrencyAmountPair</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">Returns the TransactionAmount and ClaimAmount of this transaction as a CurrencyAmountPair.</span>
+<a name="transaction_transactionamountdirectlylineitem"></a>
+<p class="column">
+<span class="coltitle">TransactionAmountDirectlyLineItem</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning <A HREF="TransactionLineItem.html" TARGET="tableFrame">TransactionLineItem</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Ensures there is one and only one line item, ala setAmountDirectly, and then returns
+that TransactionLineItem.  Only works for editable transactions.</span>
+<a name="transaction_transactionamountreservingamountpair"></a>
+<p class="column">
+<span class="coltitle">TransactionAmountReservingAmountPair</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.financials.IPairedMoney</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the TransactionAmount and ReservingAmount of this transaction as an IPairedMoney.</span>
+<a name="transaction_transactiondate"></a>
+<p class="column">
+<span class="coltitle">TransactionDate</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.Date</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the date of this transaction.  For any Transaction subtype other than
+Payment, this is simply the CreateTime.  For Payments, it is the IssueDate of
+the Payment's associated Check, if not null, otherwise it it the ScheduledSendDate
+of the check.</span>
+<a name="transaction_transactionset"></a>
+<p class="column">
+<span class="coltitle">TransactionSet</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="TransactionSet.html" TARGET="tableFrame">TransactionSet</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: TransactionSetID)&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The foreign key is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(triggers validation)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>triggers validation</b><br>Changes to the entity pointed to by this foreign key trigger validation.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Set that groups together one or more transactions for approval.</span>
+<a name="transaction_transactiontypename"></a>
+<p class="column">
+<span class="coltitle">TransactionTypeName</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the type of the transaction subtype: Payment, Reserve, Recovery, RecoveryReserve.
+Value is localized.</span>
+<a name="transaction_transtoclaimexchangerate"></a>
+<p class="column">
+<span class="coltitle">TransToClaimExchangeRate</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="ExchangeRate.html" TARGET="tableFrame">ExchangeRate</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The foreign key is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ExchangeRate to use when converting TransactionAmount to ClaimAmount. Setting this value updates the claim and reporting amounts. Also sets the same ExchangeRate as TransToReservingExchangeRate if ClaimCurrency and ReservingCurrency are equal.</span>
+<a name="transaction_transtoclaimexchangeraterate"></a>
+<p class="column">
+<span class="coltitle">TransToClaimExchangeRateRate</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.math.BigDecimal</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Get the TransToClaimExchangeRate entity and check that it matches the current Currency,
+or lookup the current Market Exchange Rate entity. Return the ER entity's Rate.
+Or return ONE if it's null and/or in SINGLE currency mode.</span>
+<a name="transaction_transtoreservingexchangerate"></a>
+<p class="column">
+<span class="coltitle">TransToReservingExchangeRate</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="ExchangeRate.html" TARGET="tableFrame">ExchangeRate</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The foreign key is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ExchangeRate to use when converting TransactionAmount to ReservingAmount. Setting this value updates the reserving amounts. Also sets the same ExchangeRate as TransToClaimExchangeRate if ClaimCurrency and ReservingCurrency are equal.</span>
+<a name="transaction_transtoreservingexchangeraterate"></a>
+<p class="column">
+<span class="coltitle">TransToReservingExchangeRateRate</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.math.BigDecimal</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Get the TransToReservingExchangeRate entity and check that it matches the current Currency,
+or lookup the current Market Exchange Rate entity. Return the ER entity's Rate.
+Or return ONE if it's null and/or in SINGLE currency mode.</span>
+<a name="transaction_updatetime"></a>
+<p class="column">
+<span class="coltitle">UpdateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was last updated</span>
+<a name="transaction_updateuser"></a>
+<p class="column">
+<span class="coltitle">UpdateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: UpdateUserID)</span>
+<br>
+<span class="desc">User who last updated the object</span>
+<a name="Arrays"></a><div class="arraysbox">Arrays</div>
+<a name="transaction_lineitems"></a>
+<p class="column">
+<span class="coltitle">LineItems</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="TransactionLineItem.html" TARGET="tableFrame">TransactionLineItem</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(triggers validation)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>triggers validation</b><br>Changes to the entity pointed to by this array trigger validation.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Set of line items that further categorize the transaction amount.</span>
+<a name="transaction_offsets"></a>
+<p class="column">
+<span class="coltitle">Offsets</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="TransactionOffset.html" TARGET="tableFrame">TransactionOffset</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(triggers validation)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>triggers validation</b><br>Changes to the entity pointed to by this array trigger validation.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Transactions that offset this transaction. A transaction should have at most one item in this array. This array is applicable only to a payment or recovery.</span>
+<a name="transaction_onsets"></a>
+<p class="column">
+<span class="coltitle">Onsets</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="TransactionOnset.html" TARGET="tableFrame">TransactionOnset</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(triggers validation)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>triggers validation</b><br>Changes to the entity pointed to by this array trigger validation.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Transactions that onset this transaction. This array is applicable only to a payment or recovery.</span>
+<a name="transaction_taccounttransactions"></a>
+<p class="column">
+<span class="coltitle">TAccountTransactions</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="TAccountTransaction.html" TARGET="tableFrame">TAccountTransaction</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Set of T-account transactions that make up the lifecycle of this Transaction.</span>
+<a name="Unique Keys for Transaction"></a><div class="arraysbox">Unique Keys for Transaction</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>transaction5</td>
+<td>CreateUserID, Retired, Subtype, CreateTime, ClaimID, ID</td></tr>
+<tr><td>transaction9</td>
+<td>LifeCycleState, Subtype, Retired, ID</td></tr>
+<tr><td>transaction1a</td>
+<td>PublicID, Retired</td></tr>
+</table>
+<a name="Subtypes"></a><div class="arraysbox">Subtypes</div>
+<div class='subtypebox'>
+<a name=Payment></a>
+<div class="titlebox">
+<div class="filtertitle">Payment <span class='supername'>(subtype of <A HREF="Transaction.html" TARGET="tableFrame">Transaction</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_2340" class="reftext" onclick='showAndHideRefBox("refbox_2340", "reflink_2340")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_2340" class="refbox_inner" style="display:none;">
+<p>Payments can be eroding or non-eroding. Eroding payments deplete Reserves on the same ReserveLine. A payment
+    can be manually set to non-eroding so it does not deplete reserves. Some customers use non-eroding payments
+    exclusively. Others may not allow non-eroding payments at all, except for supplemental payments.
+    <p>Payments can be of three types: Partial, Final, and Supplemental. A partial payment is eroding. A Final payment
+    is eroding, and sets the reserves on its ReserveLine to zero when its send date is reached. A Supplemental payment
+    is made after the payment's Exposure or Claim has been closed, and is non-eroding.
+    
+</div>
+</span>
+</div>
+<div class="desc">Attributes: Final<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Final</b><br>This entity cannot be subtyped.')">?</span></sup></div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_2341" class="reftext" onclick='showAndHideRefBox("refbox_2341", "reflink_2341")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_2341" class="refbox_inner" style="display:none;">
+<A HREF="../full/PaymentReserve.html" TARGET="tableFrame">PaymentReserve.Payment</A>
+</div>
+</span>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_2342" class="reftext" onclick='showAndHideRefBox("refbox_2342", "reflink_2342")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_2342" class="refbox_inner" style="display:none;">
+<A HREF="../full/Check.html" TARGET="tableFrame">Check.Payments</A>
+</div>
+</span>
+</div>
+<a name="payment_applieddeductible"></a>
+<p class="column">
+<span class="coltitle">AppliedDeductible</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning <A HREF="Deductible.html" TARGET="tableFrame">Deductible</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the deductible applied to a line item on this payment, if one exists.
+If a value would be returned, it is the same as SharedDeductible.
+If no such deductible exists, a UserDisplayableException is thrown.</span>
+<a name="payment_check"></a>
+<p class="column">
+<span class="coltitle">Check</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="Check.html" TARGET="tableFrame">Check</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CheckID)&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The foreign key is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(triggers validation)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>triggers validation</b><br>Changes to the entity pointed to by this foreign key trigger validation.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Check that paid this payment.</span>
+<a name="payment_claimforexadjustmentamount"></a>
+<p class="column">
+<span class="coltitle">ClaimForExAdjustmentAmount</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.financials.CurrencyAmount</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the foreign-exchange adjustment made to this payment's claim currency amount.</span>
+<a name="payment_closeclaim"></a>
+<p class="column">
+<span class="coltitle">CloseClaim</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The column can be loaded via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">If this transaction is a final payment, this indicates whether it should or did close its associated claim.</span>
+<a name="payment_closeexposure"></a>
+<p class="column">
+<span class="coltitle">CloseExposure</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The column can be loaded via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">If this transaction is a final payment, this indicates whether it should or did close its associated exposure.</span>
+<a name="payment_doesnoterodereserves"></a>
+<p class="column">
+<span class="coltitle">DoesNotErodeReserves</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The column can be loaded via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Indicates whether this payment should not erode reserves for its ReserveLine.  This field can only be set in the CheckWizard UI.  Otherwise, one of the setAsEroding() or setAsNonEroding() methods must be called from a rule to change whether a payment erodes reserves.</span>
+<a name="payment_erodesreserves"></a>
+<p class="column">
+<span class="coltitle">ErodesReserves</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Whether this payment should erode reserves for its ReserveLine.
+This property is merely the negation of the <code>DoesNotErodeReserves</code> property.
+
+NOTE: This property must only be set in the CheckWizard UI. Anywhere else, use
+<a href='../typelist/#payment_aseroding'>AsEroding</a> or <a href='../typelist/#payment_asnoneroding'>AsNonEroding</a>.</span>
+<a name="payment_exceedsavailablereserves"></a>
+<p class="column">
+<span class="coltitle">ExceedsAvailableReserves</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns true if any of the payment's line items exceeds its available reserves.</span>
+<a name="payment_firstlineitem"></a>
+<p class="column">
+<span class="coltitle">FirstLineItem</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning <A HREF="TransactionLineItem.html" TARGET="tableFrame">TransactionLineItem</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Retrieves or creates the first line item in this payment's array of line-items. The
+line item's linecategory is set to null as a side-effect.  Note that array
+order may be non-deterministic, so this will only have consistent behavior
+if there is zero or one line item.</span>
+<a name="payment_futurepayment"></a>
+<p class="column">
+<span class="coltitle">FuturePayment</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Tests if this payment has a check and that check's scheduled
+send date is in the future.</span>
+<a name="payment_matter"></a>
+<p class="column">
+<span class="coltitle">Matter</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="Matter.html" TARGET="tableFrame">Matter</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The foreign key is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Foreign key to Matter</span>
+<div class='screenrefbody'>
+<span id=showhideUI_8 onclick='showAndHideUIDetails("UITable_8", "showhideUI_8")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_8' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>PaymentBasicsInputSet.pcf:27</td>
+<td>NVV.Financials.SubView.PaymentBasics.Payment.Matter</td>
+<td>Payment.Matter</td>
+<td>true</td>
+<td>
+</td>
+</tr>
+</table>
+</div></div>
+<a name="payment_offsetpayment"></a>
+<p class="column">
+<span class="coltitle">OffsetPayment</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Tests whether this payment offsets another payment.</span>
+<a name="payment_offsettingreserve"></a>
+<p class="column">
+<span class="coltitle">OffsettingReserve</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning <A HREF="Transaction.html#Reserve" TARGET="tableFrame">Reserve</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the offsetting reserve associated with this payment if one exists.</span>
+<a name="payment_onset"></a>
+<p class="column">
+<span class="coltitle">Onset</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning <A HREF="Transaction.html#Payment" TARGET="tableFrame">Payment</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the onset payment associated with this payment if one exists.  An onset exists for payments
+that have been recoded, transferred, or uncanceled (i.e., voided or stopped, but then eventually
+issued and/or cleared)</span>
+<a name="payment_onsetoriginpayment"></a>
+<p class="column">
+<span class="coltitle">OnsetOriginPayment</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning <A HREF="Transaction.html#Payment" TARGET="tableFrame">Payment</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">If this is an onset payment, retrieves the payment from which this onset was originally copied.
+If this is not an onset payment, returns NULL.
+<p/>
+<b>Note:</b> When used in the UI, it is recommended that this method only be used from a single payment's
+detail screen, rather than a listview of payments or transactions, as it may require a direct query to 
+the database to find the original payment.</span>
+<a name="payment_onsetpayment"></a>
+<p class="column">
+<span class="coltitle">OnsetPayment</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Tests whether this payment is the onset for another payment.</span>
+<a name="payment_paymentbeingoffset"></a>
+<p class="column">
+<span class="coltitle">PaymentBeingOffset</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning <A HREF="Transaction.html#Payment" TARGET="tableFrame">Payment</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">If this is an offset payment, retrieves the payment that is being offset.  If this is not
+an offset payment, returns NULL.</span>
+<a name="payment_paymenttype"></a>
+<p class="column">
+<span class="coltitle">PaymentType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/PaymentType_tl.html" TARGET="tableFrame">PaymentType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The typekey is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Type of the payment.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_9 onclick='showAndHideUIDetails("UITable_9", "showhideUI_9")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_9' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>CheckSummaryPaymentsLV.pcf:58</td>
+<td>LV.Financials.Payments.PaymentType</td>
+<td>Payment.PaymentType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>NewCheckPaymentsLV.pcf:55</td>
+<td>LV.Financials.NewCheckPayments.Payments.PaymentType</td>
+<td>Payment.PaymentType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>NewOnsetPaymentsLV.pcf:54</td>
+<td>LV.Financials.NewCheckPayments.Payments.PaymentType</td>
+<td>Payment.PaymentType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>NewPaymentDetailDV.default.pcf:36</td>
+<td>NVV.Financials.NewPaymentDetail.Payment.PaymentType</td>
+<td>Payment.PaymentType</td>
+<td>true</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>PaymentBasicsInputSet.pcf:44</td>
+<td>NVV.Financials.SubView.PaymentBasics.Payment.PaymentType</td>
+<td>Payment.PaymentType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>PaymentTransferDV.pcf:23</td>
+<td>NVV.Financials.PaymentTransfer.Payment.PaymentType</td>
+<td>Payment.PaymentType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>QuickCheckBasicsDV.pcf:251</td>
+<td>NVV.Financials.NewPaymentDetail.Payment.PaymentType</td>
+<td>Payment.PaymentType</td>
+<td>Payment.New</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>RecodePaymentDV.pcf:25</td>
+<td>NVV.Financials.RecodePayment.Payment.PaymentType</td>
+<td>Payment.PaymentType</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+</table>
+</div></div>
+<a name="payment_recodeable"></a>
+<p class="column">
+<span class="coltitle">Recodeable</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Only submitted payments that have not been recoded, and are not already
+the offset for a different payment, can be recoded.</span>
+<a name="payment_recoded"></a>
+<p class="column">
+<span class="coltitle">Recoded</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Tests whether this payment has been recoded.</span>
+<a name="payment_recodingoffset"></a>
+<p class="column">
+<span class="coltitle">RecodingOffset</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Tests whether this payment is the offset for a recoded payment.</span>
+<a name="payment_recodingonset"></a>
+<p class="column">
+<span class="coltitle">RecodingOnset</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Tests whether this Payment is the onset for a recoded payment.</span>
+<a name="payment_reportingforexadjustmentamount"></a>
+<p class="column">
+<span class="coltitle">ReportingForExAdjustmentAmount</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.financials.CurrencyAmount</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the foreign-exchange adjustment made to this payment's reporting currency amount.</span>
+<a name="payment_requiredpaymenttype"></a>
+<p class="column">
+<span class="coltitle">RequiredPaymentType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.PaymentType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Checks if there is just one appropriate payment type based on a CostType
+and characteristics of an exposure such as its state, open reserve value,
+etc. For example, for a closed exposure the only appropriate payment type
+is "Supplement".</span>
+<a name="payment_reservingforexadjustmentamount"></a>
+<p class="column">
+<span class="coltitle">ReservingForExAdjustmentAmount</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.financials.CurrencyAmount</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the foreign-exchange adjustment made to this payment's reserving currency amount.</span>
+<a name="payment_shareddeductible"></a>
+<p class="column">
+<span class="coltitle">SharedDeductible</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning <A HREF="Deductible.html" TARGET="tableFrame">Deductible</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns this payment's exposure's coverage's deductible
+(which will be identical for all payments that have the same exposure)
+if it exists. Note that the deductible returned, if paid,
+may not necessarily be paid by this payment. The returned value may be null.</span>
+<a name="payment_stopoffset"></a>
+<p class="column">
+<span class="coltitle">StopOffset</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Tests whether this payment is the offset for a stopped payment.</span>
+<a name="payment_stopped"></a>
+<p class="column">
+<span class="coltitle">Stopped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Tests whether this payment has been stopped.</span>
+<a name="payment_stopvoidonset"></a>
+<p class="column">
+<span class="coltitle">StopVoidOnset</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Tests whether this payment exists as an offset for a payment for which a stop or void was attempted but
+failed. Specifically, the associated check was stopped or voided through the ClaimCenter UI, but then marked as
+<a href='../typelist/TransactionStatus_tl.html#issued'>issued</a> or <a href='../typelist/TransactionStatus_tl.html#cleared'>cleared</a> via an API call.</span>
+<a name="payment_supplement"></a>
+<p class="column">
+<span class="coltitle">Supplement</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Tests whether this is a supplement payment (i.e., its payment type is 'supplement').</span>
+<a name="payment_transferoffset"></a>
+<p class="column">
+<span class="coltitle">TransferOffset</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Tests whether this payment is the offset for a transferred payment.</span>
+<a name="payment_transferonset"></a>
+<p class="column">
+<span class="coltitle">TransferOnset</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Tests whether this Payment is the onset for a transferred payment.</span>
+<a name="payment_transferred"></a>
+<p class="column">
+<span class="coltitle">Transferred</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">True if this payment has been transferred.</span>
+<a name="payment_valid"></a>
+<p class="column">
+<span class="coltitle">Valid</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Used in the UI to determine if a given payment should be allowed. Returns true if
+<ul>
+<li>The payment does not exceed reserves OR
+<li>The payment's exposure is null (not set up yet) OR
+<li>The financials configuration allows payments to exceed reserves OR
+<li>The payment's paymenttype is Supplement OR
+<li>The given payment belongs to a manual check OR
+<li>The payment's exposure does not have Reserves that belong to it
+<li>
+</ul>
+<p>
+Otherwise returns false.
+</p></span>
+<a name="payment_validexposures"></a>
+<p class="column">
+<span class="coltitle">ValidExposures</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning <A HREF="Exposure.html" TARGET="tableFrame">Exposure</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Retrieves the complete set of valid exposures for this payment (as an array).
+<ol>
+<li>If payment is for a manual check, then all Exposures on the claim are valid</li>
+<li>If payment is not for a manual check, then only exposures against which a payment
+can be made are included.  This includes:
+<ul>
+<li> Exposure is closed and previous payments have been made on it
+<li> Exposure is open and global PaymentExceedsReserves = true
+<li> Exposure is open and no reserves have been created for the exposure
+<li> Exposure is open and has available reserves on any costtype
+</ul>
+</li>
+</ol></span>
+<a name="payment_voided"></a>
+<p class="column">
+<span class="coltitle">Voided</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Tests whether this payment has been voided.</span>
+<a name="payment_voidoffset"></a>
+<p class="column">
+<span class="coltitle">VoidOffset</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Tests whether this payment is the offset for a voided payment.</span>
+<a name="Unique Keys for Payment"></a><div class="arraysbox">Unique Keys for Payment</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>transaction5</td>
+<td>CreateUserID, Retired, Subtype, CreateTime, ClaimID, ID</td></tr>
+<tr><td>transaction9</td>
+<td>LifeCycleState, Subtype, Retired, ID</td></tr>
+<tr><td>transaction1a</td>
+<td>PublicID, Retired</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=Recovery></a>
+<div class="titlebox">
+<div class="filtertitle">Recovery <span class='supername'>(subtype of <A HREF="Transaction.html" TARGET="tableFrame">Transaction</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_2343" class="reftext" onclick='showAndHideRefBox("refbox_2343", "reflink_2343")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_2343" class="refbox_inner" style="display:none;">
+
+      Records money that reduces a claim's liability, received from such sources as subrogation, salvage, other
+      insurance, copayments, or deductibles. Equivalent to a negative Payment. A subtype of Transaction.
+    
+</div>
+</span>
+</div>
+<div class="desc">Attributes: Final<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Final</b><br>This entity cannot be subtyped.')">?</span></sup></div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_2344" class="reftext" onclick='showAndHideRefBox("refbox_2344", "reflink_2344")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_2344" class="refbox_inner" style="display:none;">
+<A HREF="../full/RecToRecReserves.html" TARGET="tableFrame">RecToRecReserves.Owner</A><br><A HREF="../full/TransactionSearchView.html#RecoverySearchView" TARGET="tableFrame">RecoverySearchView.Recovery</A>
+</div>
+</span>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_2345" class="reftext" onclick='showAndHideRefBox("refbox_2345", "reflink_2345")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_2345" class="refbox_inner" style="display:none;">
+<A HREF="../full/TransactionSet.html#RecoverySet" TARGET="tableFrame">RecoverySet.Recoveries</A>
+</div>
+</span>
+</div>
+<a name="recovery_claimcontact"></a>
+<p class="column">
+<span class="coltitle">ClaimContact</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="ClaimContact.html" TARGET="tableFrame">ClaimContact</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: ClaimContactID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The foreign key is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(triggers validation)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>triggers validation</b><br>Changes to the entity pointed to by this foreign key trigger validation.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Person or company from whom the recovery was obtained.</span>
+<a name="recovery_oboclaimcontact"></a>
+<p class="column">
+<span class="coltitle">OBOClaimContact</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="ClaimContact.html" TARGET="tableFrame">ClaimContact</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: OBOClaimContactID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(loadable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>loadable</b><br>The foreign key is loadable via the staging tables.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(triggers validation)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>triggers validation</b><br>Changes to the entity pointed to by this foreign key trigger validation.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Person or company responsible for paying.</span>
+<a name="recovery_offsetrecovery"></a>
+<p class="column">
+<span class="coltitle">OffsetRecovery</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">If this recovery is offsetting another recovery, returns true.</span>
+<a name="recovery_offsettingrecoveryreserve"></a>
+<p class="column">
+<span class="coltitle">OffsettingRecoveryReserve</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="Transaction.html#RecoveryReserve" TARGET="tableFrame">RecoveryReserve</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">The RecoveryReserve, if any, that exists as a direct offset for this Recovery.</span>
+<a name="recovery_onbehalfof"></a>
+<p class="column">
+<span class="coltitle">OnBehalfOf</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning <A HREF="Contact.html" TARGET="tableFrame">Contact</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Payer. Shortcut for ClaimContact.Contact.</span>
+<a name="recovery_payer"></a>
+<p class="column">
+<span class="coltitle">Payer</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning <A HREF="Contact.html" TARGET="tableFrame">Contact</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Payer. Shortcut for ClaimContact.Contact.</span>
+<a name="recovery_payerdenorm"></a>
+<p class="column">
+<span class="coltitle">PayerDenorm</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="Contact.html" TARGET="tableFrame">Contact</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: PayerDenormID)&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Payer FK denorm.</span>
+<a name="recovery_recodeable"></a>
+<p class="column">
+<span class="coltitle">Recodeable</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns true iff all the following conditions for this recovery hold:
+This recovery is not new.
+This recovery has neither an onset nor an offset recovery.
+This recovery is not an offset for another recovery.
+This recovery has a status of SUBMITTING or SUBMITTED.</span>
+<a name="recovery_recoverybeingoffset"></a>
+<p class="column">
+<span class="coltitle">RecoveryBeingOffset</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning <A HREF="Transaction.html#Recovery" TARGET="tableFrame">Recovery</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">If this is an offset recovery, retrieves the recovery that is being offset.  If this is not
+an offset recovery, returns NULL.</span>
+<a name="recovery_resubmittable"></a>
+<p class="column">
+<span class="coltitle">Resubmittable</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">True if this recovery is resubmittable. Specifically, its status is one of the following:
+<ul>
+<li><a href='../typelist/TransactionStatus_tl.html#denied'>denied</a>
+</ul>
+and it is not an offset recovery.</span>
+<a name="recovery_transferable"></a>
+<p class="column">
+<span class="coltitle">Transferable</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns true iff all the following conditions for this recovery hold:
+This recovery is not new.
+This recovery has neither an onset nor an offset recovery.
+This recovery is not an offset for another recovery.
+This recovery has a status of SUBMITTING or SUBMITTED.</span>
+<a name="recovery_userecoveryreserves"></a>
+<p class="column">
+<span class="coltitle">UseRecoveryReserves</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">True if the system is configured to use recovery reserves.</span>
+<a name="recovery_voidable"></a>
+<p class="column">
+<span class="coltitle">Voidable</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"><p>
+Identifies whether a <code>Recovery</code> entity is voidable or not.  An entity is voidable if it is not a an offset
+recovery and its <code>TransactionStatus</code> status is <code>SUBMITTING</code> or <code>SUBMITTED</code>.</span>
+<a name="Unique Keys for Recovery"></a><div class="arraysbox">Unique Keys for Recovery</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>transaction5</td>
+<td>CreateUserID, Retired, Subtype, CreateTime, ClaimID, ID</td></tr>
+<tr><td>transaction9</td>
+<td>LifeCycleState, Subtype, Retired, ID</td></tr>
+<tr><td>transaction1a</td>
+<td>PublicID, Retired</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=RecoveryReserve></a>
+<div class="titlebox">
+<div class="filtertitle">RecoveryReserve <span class='supername'>(subtype of <A HREF="Transaction.html" TARGET="tableFrame">Transaction</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_2346" class="reftext" onclick='showAndHideRefBox("refbox_2346", "reflink_2346")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_2346" class="refbox_inner" style="display:none;">
+
+      A subtype of Transaction that indicates money expected to be recovered. These reserves are depleted by Recovery
+      transactions. Not commonly used, and ClaimCenter can be globally configured to not use RecoveryReserves at all.
+      However, if ClaimCenter is configured to use them, and a Recovery is created with an amount that exceeds the open
+      recovery reserves (total Recovery Reserves minus Total Recoveries) on that particular ReserveLine, then a
+      RecoveryReserve in the proper amount is automatically created to keep open recovery reserves from becoming negative.
+
+</div>
+</span>
+</div>
+<div class="desc">Attributes: Final<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Final</b><br>This entity cannot be subtyped.')">?</span></sup></div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_2347" class="reftext" onclick='showAndHideRefBox("refbox_2347", "reflink_2347")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_2347" class="refbox_inner" style="display:none;">
+<A HREF="../full/RecToRecReserves.html" TARGET="tableFrame">RecToRecReserves.ForeignEntity</A><br><A HREF="../full/Transaction.html#Recovery" TARGET="tableFrame">Recovery.OffsettingRecoveryReserve</A>
+</div>
+</span>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_2348" class="reftext" onclick='showAndHideRefBox("refbox_2348", "reflink_2348")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_2348" class="refbox_inner" style="display:none;">
+<A HREF="../full/TransactionSet.html#RecoveryReserveSet" TARGET="tableFrame">RecoveryReserveSet.RecoveryReserves</A>
+</div>
+</span>
+</div>
+<a name="Unique Keys for RecoveryReserve"></a><div class="arraysbox">Unique Keys for RecoveryReserve</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>transaction5</td>
+<td>CreateUserID, Retired, Subtype, CreateTime, ClaimID, ID</td></tr>
+<tr><td>transaction9</td>
+<td>LifeCycleState, Subtype, Retired, ID</td></tr>
+<tr><td>transaction1a</td>
+<td>PublicID, Retired</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=Reserve></a>
+<div class="titlebox">
+<div class="filtertitle">Reserve <span class='supername'>(subtype of <A HREF="Transaction.html" TARGET="tableFrame">Transaction</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_2349" class="reftext" onclick='showAndHideRefBox("refbox_2349", "reflink_2349")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_2349" class="refbox_inner" style="display:none;">
+
+      A subtype of <code>Transaction</code> that sets aside money to cover expected costs. Like every <code>Transaction</code>,
+      a <code>Reserve</code> has a <code>ReserveLine</code>, for which the <code>Reserve</code> transaction increases reserves.
+      Reserves are depleted by eroding payments. To get the total reserves, open reserves, remaining reserves or available reserves, 
+      use the <code>FinancialsCalculationUtil</code> class.
+    
+</div>
+</span>
+</div>
+<div class="desc">Attributes: Final<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Final</b><br>This entity cannot be subtyped.')">?</span></sup></div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_2350" class="reftext" onclick='showAndHideRefBox("refbox_2350", "reflink_2350")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_2350" class="refbox_inner" style="display:none;">
+<A HREF="../full/CheckSetReserve.html" TARGET="tableFrame">CheckSetReserve.Reserve</A><br><A HREF="../full/PaymentReserve.html" TARGET="tableFrame">PaymentReserve.Reserve</A>
+</div>
+</span>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_2351" class="reftext" onclick='showAndHideRefBox("refbox_2351", "reflink_2351")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_2351" class="refbox_inner" style="display:none;">
+<A HREF="../full/TransactionSet.html#ReserveSet" TARGET="tableFrame">ReserveSet.Reserves</A>
+</div>
+</span>
+</div>
+<a name="reserve_groupedreserves"></a>
+<p class="column">
+<span class="coltitle">GroupedReserves</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning <A HREF="Transaction.html#Reserve" TARGET="tableFrame">Reserve</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Retrieves all Reserves from this reserve's TransactionSet, regardless of whether the reserves are part of a ReserveSet,
+or if they are instead associated with a CheckSet (as CheckSetReserves).</span>
+<a name="reserve_matchingpendingreserves"></a>
+<p class="column">
+<span class="coltitle">MatchingPendingReserves</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.financials.CurrencyAmount</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">The total claim amount of pending approval reserves that match this reserve on this reserve's
+Claim, Exposure, CostType and CostCategory.</span>
+<a name="reserve_offsetpayment"></a>
+<p class="column">
+<span class="coltitle">OffsetPayment</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning <A HREF="Transaction.html#Payment" TARGET="tableFrame">Payment</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">If this Reserve exists to offset a payment directly, because the payment exceeds reserves, this method
+returns the payment being offset.  If no such payment exists, this method returns NULL.</span>
+<a name="reserve_totalincurredgross"></a>
+<p class="column">
+<span class="coltitle">TotalIncurredGross</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.financials.CurrencyAmount</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">The Total Incurred Gross calculation for the ReserveLine of this reserve.</span>
+<a name="reserve_zeroingoffset"></a>
+<p class="column">
+<span class="coltitle">ZeroingOffset</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns whether this reserve is a zeroing offset, i.e. if its offset payment is not null.</span>
+<a name="Unique Keys for Reserve"></a><div class="arraysbox">Unique Keys for Reserve</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>transaction5</td>
+<td>CreateUserID, Retired, Subtype, CreateTime, ClaimID, ID</td></tr>
+<tr><td>transaction9</td>
+<td>LifeCycleState, Subtype, Retired, ID</td></tr>
+<tr><td>transaction1a</td>
+<td>PublicID, Retired</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<script language="JavaScript">
+function showAllUIDetails() {
+showUIDetails('UITable_0', 'showhideUI_0');
+showUIDetails('UITable_1', 'showhideUI_1');
+showUIDetails('UITable_2', 'showhideUI_2');
+showUIDetails('UITable_3', 'showhideUI_3');
+showUIDetails('UITable_4', 'showhideUI_4');
+showUIDetails('UITable_5', 'showhideUI_5');
+showUIDetails('UITable_6', 'showhideUI_6');
+showUIDetails('UITable_7', 'showhideUI_7');
+showUIDetails('UITable_8', 'showhideUI_8');
+showUIDetails('UITable_9', 'showhideUI_9');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Hide user interface details on all fields';
+  link.onclick = hideAllUIDetails;
+  return false;
+}
+function hideAllUIDetails() {
+hideUIDetails('UITable_0', 'showhideUI_0');
+hideUIDetails('UITable_1', 'showhideUI_1');
+hideUIDetails('UITable_2', 'showhideUI_2');
+hideUIDetails('UITable_3', 'showhideUI_3');
+hideUIDetails('UITable_4', 'showhideUI_4');
+hideUIDetails('UITable_5', 'showhideUI_5');
+hideUIDetails('UITable_6', 'showhideUI_6');
+hideUIDetails('UITable_7', 'showhideUI_7');
+hideUIDetails('UITable_8', 'showhideUI_8');
+hideUIDetails('UITable_9', 'showhideUI_9');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Show user interface details on all fields';
+  link.onclick = showAllUIDetails;
+  return false;
+}
+</script>
+
+</body>
+</html>

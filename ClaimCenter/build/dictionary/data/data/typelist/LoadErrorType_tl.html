@@ -1,0 +1,693 @@
+<html>
+<head>
+<title>LoadErrorType</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox"
+<div><span class="pagetitle">LoadErrorType</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="entityname">(cctl_loaderrortype)</span>
+</div>
+<div class="desc">Types of load error events</div>
+</div>
+<table cellpadding="3" cellspacing="0" border="0" height="20" width="100%">
+<tr>
+<td nowrap="true" class="attrbox" height="20">
+<span class="attrtitle">Attributes: 
+Final
+</span>
+</td>
+</tr>
+</table>
+<br/>
+<div class="refbox biglist odd">
+<span id="reflink_6046" class="reftext" onclick='showAndHideRefBox("refbox_6046", "reflink_6046")'><img src="../../res/blackup.gif" border="0"><b>Referenced by: </b></span>
+<div id="refbox_6046" class="refbox_inner" style="display:none;">
+<A HREF="../full/LoadError.html" TARGET="tableFrame">LoadError.LoadErrorType</A><br><A HREF="../full/LoadIntegrityCheck.html" TARGET="tableFrame">LoadIntegrityCheck.LoadIntegrityCheckType</A>
+</div>
+</span>
+</div>
+<a id='TOC'></a>
+<a name="Typecodes"></a><div class="arraysbox">Typecodes</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+<td>Description</td>
+<td>Priority</td>
+<td>Internal</td>
+<td>Retired</td>
+</tr>
+<tr valign="top">
+<td><a href=#abstractdatatype>abstractdatatype</a></td>
+<td>Abstract data type</td>
+<td>Rows found in staging table with values that violate rules of an abstract data type</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#badassignable>badassignable</a></td>
+<td>Invalid assignable</td>
+<td>Rows found in staging table that violate rules for assignable objects</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#checkconstraint>checkconstraint</a></td>
+<td>Check constraint</td>
+<td>Rows found in staging table that violate a check constraint</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#consistchildren1>consistchildren1</a></td>
+<td>Consistent children failure within staging tables</td>
+<td>Consistent children failure found within staging tables</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#consistchildren2>consistchildren2</a></td>
+<td>Consistent children failure between staging and sourcetables</td>
+<td>Consistent children failure found between staging and source tables</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#dtordering>dtordering</a></td>
+<td>Date time ordering</td>
+<td>Rows found in staging table that violate a date time ordering</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#edgeforeignkey>edgeforeignkey</a></td>
+<td>Non-nullable edge foreign key</td>
+<td>Not exactly one row found in table for non-nullable edge foreign key relationships</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#foreignkey>foreignkey</a></td>
+<td>Invalid foreign key</td>
+<td>Rows found in table with invalid values for a foreign key column</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#foreignkeynonadmin>foreignkeynonadmin</a></td>
+<td>Invalid foreign key to non-admin row</td>
+<td>Rows found in table with foreign key references to existing row in a non-admin table when only existing rows in admin tables can be referenced</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#foreignkeysub>foreignkeysub</a></td>
+<td>Foreign references incorrect subtype</td>
+<td>Rows found in table with foreign key references to incorrect subtype</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#monetaryamount>monetaryamount</a></td>
+<td>MonetaryAmount inconsistent</td>
+<td>One or the other of the amount and currency column for a monetary amount contains null when the other does not.</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#nomatchlvquery>nomatchlvquery</a></td>
+<td>Verify query returns 0 rows</td>
+<td>Rows found in staging table by query that should return 0 rows</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#nonull>nonull</a></td>
+<td>Null in non-nullable column</td>
+<td>Rows found in table with null values for one or more non-nullable columns in the source table</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#nonullsubtype>nonullsubtype</a></td>
+<td>Null in non-nullable column for subtype</td>
+<td>Rows found in table with null values for one or more non-nullable columns for the subtype in the source table</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#onetoone>onetoone</a></td>
+<td>Non-nullable one-to-one</td>
+<td>Not exactly one row found in table for non-nullable one-to-one relationships</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#ppeerror>ppeerror</a></td>
+<td>PostPopulateExecutor failure</td>
+<td>PostPopulateExecutors failures detected after populating source tables</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#reftoexistingreffedrow>reftoexistingreffedrow</a></td>
+<td>Illegal reference to already referenced existing row</td>
+<td>Rows found in table with foreign key references to an existing row in a source table that is already referenced from other existing rows, when such references are not allowed</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#reftoexistingrow>reftoexistingrow</a></td>
+<td>Illegal reference to existing row</td>
+<td>s are not allowed</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#requiredmatch>requiredmatch</a></td>
+<td>Required match</td>
+<td>Rows found in staging table with required referencing rows in array table</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#subtype>subtype</a></td>
+<td>Subtype</td>
+<td>Rows found in table with invalid values for a subtype column</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#subtypespec>subtypespec</a></td>
+<td>Non-nulls in subtype-specific columns</td>
+<td>Rows found in table with non-null values for one or more subtype-specific columns for a different subtype</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#typekey>typekey</a></td>
+<td>Invalid typekey</td>
+<td>Rows found in table with invalid values for a typekey column</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#typekeyinset>typekeyinset</a></td>
+<td>Verify typekey in set</td>
+<td>Rows found in table include typekey values that are invalid when loading via the staging tables</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#typekeynotinset>typekeynotinset</a></td>
+<td>Verify typekey not in set</td>
+<td>Rows found in table include typekey values that are invalid when loading via the staging tables</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#uniqconstraint1>uniqconstraint1</a></td>
+<td>Unique constraint within staging table</td>
+<td>Rows found in staging table that violate a unique constraint</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#uniqconstraint2>uniqconstraint2</a></td>
+<td>Unique constraint between source and staging table</td>
+<td>Rows found in staging table that match rows in source table on all columns of a unique index</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#zerolengthstring>zerolengthstring</a></td>
+<td>0-length varchar</td>
+<td>Rows found in table with 0-length strings in varchar columns</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<div class='subtypebox'>
+<a name=abstractdatatype></a>
+<div class="titlebox">
+<div class="filtertitle">abstractdatatype <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6047" class="reftext" onclick='showAndHideRefBox("refbox_6047", "reflink_6047")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6047" class="refbox_inner" style="display:none;">
+Rows found in staging table with values that violate rules of an abstract data type
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=badassignable></a>
+<div class="titlebox">
+<div class="filtertitle">badassignable <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6048" class="reftext" onclick='showAndHideRefBox("refbox_6048", "reflink_6048")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6048" class="refbox_inner" style="display:none;">
+Rows found in staging table that violate rules for assignable objects
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=checkconstraint></a>
+<div class="titlebox">
+<div class="filtertitle">checkconstraint <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6049" class="reftext" onclick='showAndHideRefBox("refbox_6049", "reflink_6049")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6049" class="refbox_inner" style="display:none;">
+Rows found in staging table that violate a check constraint
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=consistchildren1></a>
+<div class="titlebox">
+<div class="filtertitle">consistchildren1 <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6050" class="reftext" onclick='showAndHideRefBox("refbox_6050", "reflink_6050")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6050" class="refbox_inner" style="display:none;">
+Consistent children failure found within staging tables
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=consistchildren2></a>
+<div class="titlebox">
+<div class="filtertitle">consistchildren2 <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6051" class="reftext" onclick='showAndHideRefBox("refbox_6051", "reflink_6051")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6051" class="refbox_inner" style="display:none;">
+Consistent children failure found between staging and source tables
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=dtordering></a>
+<div class="titlebox">
+<div class="filtertitle">dtordering <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6052" class="reftext" onclick='showAndHideRefBox("refbox_6052", "reflink_6052")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6052" class="refbox_inner" style="display:none;">
+Rows found in staging table that violate a date time ordering
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=edgeforeignkey></a>
+<div class="titlebox">
+<div class="filtertitle">edgeforeignkey <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6053" class="reftext" onclick='showAndHideRefBox("refbox_6053", "reflink_6053")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6053" class="refbox_inner" style="display:none;">
+Not exactly one row found in table for non-nullable edge foreign key relationships
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=foreignkey></a>
+<div class="titlebox">
+<div class="filtertitle">foreignkey <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6054" class="reftext" onclick='showAndHideRefBox("refbox_6054", "reflink_6054")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6054" class="refbox_inner" style="display:none;">
+Rows found in table with invalid values for a foreign key column
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=foreignkeynonadmin></a>
+<div class="titlebox">
+<div class="filtertitle">foreignkeynonadmin <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6055" class="reftext" onclick='showAndHideRefBox("refbox_6055", "reflink_6055")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6055" class="refbox_inner" style="display:none;">
+Rows found in table with foreign key references to existing row in a non-admin table when only existing rows in admin tables can be referenced
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=foreignkeysub></a>
+<div class="titlebox">
+<div class="filtertitle">foreignkeysub <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6056" class="reftext" onclick='showAndHideRefBox("refbox_6056", "reflink_6056")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6056" class="refbox_inner" style="display:none;">
+Rows found in table with foreign key references to incorrect subtype
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=monetaryamount></a>
+<div class="titlebox">
+<div class="filtertitle">monetaryamount <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6057" class="reftext" onclick='showAndHideRefBox("refbox_6057", "reflink_6057")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6057" class="refbox_inner" style="display:none;">
+One or the other of the amount and currency column for a monetary amount contains null when the other does not.
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=nomatchlvquery></a>
+<div class="titlebox">
+<div class="filtertitle">nomatchlvquery <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6058" class="reftext" onclick='showAndHideRefBox("refbox_6058", "reflink_6058")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6058" class="refbox_inner" style="display:none;">
+Rows found in staging table by query that should return 0 rows
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=nonull></a>
+<div class="titlebox">
+<div class="filtertitle">nonull <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6059" class="reftext" onclick='showAndHideRefBox("refbox_6059", "reflink_6059")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6059" class="refbox_inner" style="display:none;">
+Rows found in table with null values for one or more non-nullable columns in the source table
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=nonullsubtype></a>
+<div class="titlebox">
+<div class="filtertitle">nonullsubtype <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6060" class="reftext" onclick='showAndHideRefBox("refbox_6060", "reflink_6060")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6060" class="refbox_inner" style="display:none;">
+Rows found in table with null values for one or more non-nullable columns for the subtype in the source table
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=onetoone></a>
+<div class="titlebox">
+<div class="filtertitle">onetoone <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6061" class="reftext" onclick='showAndHideRefBox("refbox_6061", "reflink_6061")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6061" class="refbox_inner" style="display:none;">
+Not exactly one row found in table for non-nullable one-to-one relationships
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=ppeerror></a>
+<div class="titlebox">
+<div class="filtertitle">ppeerror <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6062" class="reftext" onclick='showAndHideRefBox("refbox_6062", "reflink_6062")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6062" class="refbox_inner" style="display:none;">
+PostPopulateExecutors failures detected after populating source tables
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=reftoexistingreffedrow></a>
+<div class="titlebox">
+<div class="filtertitle">reftoexistingreffedrow <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6063" class="reftext" onclick='showAndHideRefBox("refbox_6063", "reflink_6063")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6063" class="refbox_inner" style="display:none;">
+Rows found in table with foreign key references to an existing row in a source table that is already referenced from other existing rows, when such references are not allowed
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=reftoexistingrow></a>
+<div class="titlebox">
+<div class="filtertitle">reftoexistingrow <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6064" class="reftext" onclick='showAndHideRefBox("refbox_6064", "reflink_6064")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6064" class="refbox_inner" style="display:none;">
+s are not allowed
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=requiredmatch></a>
+<div class="titlebox">
+<div class="filtertitle">requiredmatch <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6065" class="reftext" onclick='showAndHideRefBox("refbox_6065", "reflink_6065")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6065" class="refbox_inner" style="display:none;">
+Rows found in staging table with required referencing rows in array table
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=subtype></a>
+<div class="titlebox">
+<div class="filtertitle">subtype <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6066" class="reftext" onclick='showAndHideRefBox("refbox_6066", "reflink_6066")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6066" class="refbox_inner" style="display:none;">
+Rows found in table with invalid values for a subtype column
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=subtypespec></a>
+<div class="titlebox">
+<div class="filtertitle">subtypespec <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6067" class="reftext" onclick='showAndHideRefBox("refbox_6067", "reflink_6067")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6067" class="refbox_inner" style="display:none;">
+Rows found in table with non-null values for one or more subtype-specific columns for a different subtype
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=typekey></a>
+<div class="titlebox">
+<div class="filtertitle">typekey <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6068" class="reftext" onclick='showAndHideRefBox("refbox_6068", "reflink_6068")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6068" class="refbox_inner" style="display:none;">
+Rows found in table with invalid values for a typekey column
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=typekeyinset></a>
+<div class="titlebox">
+<div class="filtertitle">typekeyinset <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6069" class="reftext" onclick='showAndHideRefBox("refbox_6069", "reflink_6069")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6069" class="refbox_inner" style="display:none;">
+Rows found in table include typekey values that are invalid when loading via the staging tables
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=typekeynotinset></a>
+<div class="titlebox">
+<div class="filtertitle">typekeynotinset <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6070" class="reftext" onclick='showAndHideRefBox("refbox_6070", "reflink_6070")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6070" class="refbox_inner" style="display:none;">
+Rows found in table include typekey values that are invalid when loading via the staging tables
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=uniqconstraint1></a>
+<div class="titlebox">
+<div class="filtertitle">uniqconstraint1 <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6071" class="reftext" onclick='showAndHideRefBox("refbox_6071", "reflink_6071")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6071" class="refbox_inner" style="display:none;">
+Rows found in staging table that violate a unique constraint
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=uniqconstraint2></a>
+<div class="titlebox">
+<div class="filtertitle">uniqconstraint2 <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6072" class="reftext" onclick='showAndHideRefBox("refbox_6072", "reflink_6072")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6072" class="refbox_inner" style="display:none;">
+Rows found in staging table that match rows in source table on all columns of a unique index
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=zerolengthstring></a>
+<div class="titlebox">
+<div class="filtertitle">zerolengthstring <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_6073" class="reftext" onclick='showAndHideRefBox("refbox_6073", "reflink_6073")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_6073" class="refbox_inner" style="display:none;">
+Rows found in table with 0-length strings in varchar columns
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+</body>
+</html>

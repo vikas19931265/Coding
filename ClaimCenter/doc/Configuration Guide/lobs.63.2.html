@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>LOB Typelists</title>
+    <link rel="StyleSheet" href="css/lobs.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Configuration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-lob.html#4424548">Guidewire ClaimCenter Lines of Business</a> : <a class="WebWorks_Breadcrumb_Link" href="lobs.63.1.html#4424548">Configuring Lines of Business</a> : LOB Typelists</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="4424548">LOB Typelists</a></h3>
+      <div class="B_-_Body"><a name="4797673">ClaimCenter uses a set of typelists, the </a><span class="e_-_emphasis">line of business</span> typelists, to configure the screens you see when entering a new claim and working with existing ones. You can see these typelists in ClaimCenter Studio by navigating in the <span class="ui_-_UI_element">Project</span> window to <span class="ui_-_UI_element">configuration</span> → <span class="ui_-_UI_element">config </span>→ <span class="ui_-_UI_element">Extensions </span>→ <span class="ui_-_UI_element">Typelist</span>. </div>
+      <div class="B_-_Body"><a name="4797689">Because the six typelists have a hierarchical relationship, the </a><span class="ui_-_UI_element">LOB</span> tab of the Typelists editor displays the values of the typelists as a tree. For example, with the <span class="ui_-_UI_element">LossType</span> typelist open in the editor, the <span class="ui_-_UI_element">LOB</span> tab displays a number of <span class="cv_-_computer_voice">LOBCode</span> children for each <span class="cv_-_computer_voice">LossType</span> typecode. Each <span class="cv_-_computer_voice">LOBCode</span> child has <span class="cv_-_computer_voice">PolicyType</span> children, and so on. </div>
+      <div class="B_-_Body"><a name="4738406">In the base configuration, ClaimCenter provides the following LOB typelists, listed in hierarchical order: </a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4766524">LossType.ttx</a></span> – A category of activity that is an industry standard for insurance activity, such as Auto, Liability, Property, or Workers’ Compensation. Selecting a loss type is one of the early steps in defining a claim. It is a way of grouping your lines of business together. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="4768745">A </a><span class="cv_-_computer_voice">LossType</span> typecode does not have a parent, but it can have multiple children that are <span class="cv_-_computer_voice">LOBCode</span> typecodes. The relationship of <span class="cv_-_computer_voice">LossType</span> to <span class="cv_-_computer_voice">LOBCode</span> is one to many.</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4758228">LOBCode.ttx</a></span> – A type of work handled by one business unit of an insurance company. In many cases, a claim's <span class="cv_-_computer_voice">LOBCode</span> is uniquely determined by the combination of its <span class="cv_-_computer_voice">LossType</span> and <span class="cv_-_computer_voice">PolicyType</span>. If it is not, the <span class="cv_-_computer_voice">LOBCode</span> can be selected in the <span class="ui_-_UI_element">Loss Details</span> screen of the New Claim wizard and the claim. More than one LOB can handle the same type of loss. For example, both personal and commercial auto LOBs sell policies covering losses from vehicles, the Auto loss type.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="4768751">An </a><span class="cv_-_computer_voice">LOBCode</span> typecode can have multiple children from the <span class="cv_-_computer_voice">PolicyType</span> typelist, but only one parent, a <span class="cv_-_computer_voice">LossType</span> typecode. The relationship of <span class="cv_-_computer_voice">LOBCode</span> to <span class="cv_-_computer_voice">LossType</span> to is many-to-one.</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4769394">PolicyType.ttx</a></span> – A product—policy—sold by an LOB unit. A policy pays damages for certain defined loss events. One business unit can sell many types of policies. A given policy can be sold by many LOBs, so <span class="cv_-_computer_voice">PolicyType</span> and <span class="cv_-_computer_voice">LOBCode</span> have a many-to-many relationship in the data model.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4769395">CoverageType.ttx</a></span> – A subdivision of a policy that deals with one kind of loss covered by the policy. For example, a personal injury protection (PIP) policy could have medical, lost wages, and death coverages, so you can associate many coverages with a specific policy. These coverages define the product that is sold. Also, a particular type of coverage can be allowed for many policies. Thus, <span class="cv_-_computer_voice">PolicyType</span> and <span class="cv_-_computer_voice">CoverageType</span> are related in a many-to-many relationship.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4758197">CoverageSubtype.ttx</a></span> – Specifies an <span class="cv_-_computer_voice">ExposureType</span> that is compatible with a <span class="cv_-_computer_voice">CoverageType</span>. An <span class="cv_-_computer_voice">ExposureType</span> is a set of information collected in the ClaimCenter user interface when creating a exposure. A <span class="cv_-_computer_voice">CoverageSubtype</span> typecode acts like a join between <span class="cv_-_computer_voice">CoverageType</span> and <span class="cv_-_computer_voice">ExposureType</span>. When the ClaimCenter user selects a <span class="cv_-_computer_voice">CoverageSubtype</span> as part of creating an exposure, they are really setting the <span class="cv_-_computer_voice">ExposureType</span>. The <span class="cv_-_computer_voice">CoverageSubtype</span> the user selects becomes a property of the <span class="cv_-_computer_voice">Exposure</span> and not the <span class="cv_-_computer_voice">Coverage</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="4796450">This typelist effectively relates each </a><span class="cv_-_computer_voice">CoverageType</span> to one or more <span class="cv_-_computer_voice">ExposureType</span> typecodes. <span class="cv_-_computer_voice">CoverageSubtype</span> has many-to-one relationships to both <span class="cv_-_computer_voice">CoverageType</span> and <span class="cv_-_computer_voice">ExposureType</span>, so it effectively creates a many-to-many relationship between <span class="cv_-_computer_voice">CoverageType</span> and <span class="cv_-_computer_voice">ExposureType</span>. By convention, if a <span class="cv_-_computer_voice">CoverageType</span> is compatible only with one <span class="cv_-_computer_voice">ExposureType</span>, then the <span class="cv_-_computer_voice">CoverageSubtype</span> linking them is named after the <span class="cv_-_computer_voice">CoverageType</span>. Otherwise, its name is a concatenation of the <span class="cv_-_computer_voice">CoverageType</span> and a string indicating the <span class="cv_-_computer_voice">ExposureType</span>. </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4758183">ExposureType.ttx</a></span> – <span class="cv_-_computer_voice">ExposureType</span> controls the mode of the screen used to create, display, or edit an exposure. This use of modes enables a relatively small number of user interface elements to be shared by exposures with a much larger number of possible coverage subtypes. In a claim, exposures relate coverages to claimants, and an exposure is a unique combination of a coverage and a claimant. For example, an auto accident claim would typically have an exposure for the owner of each vehicle damaged, as well as one for each person injured. An <span class="cv_-_computer_voice">ExposureType</span> cannot have any children. It has a one-to-many relationship with its parent typelist, <span class="cv_-_computer_voice">CoverageSubtype</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h6 class="HS_-_Head_Sub"><a name="4797933">See also</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.3.html#4798228', '');" title="Relationships Among LOB Typelists" name="4797937">Relationships Among LOB Typelists</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="zChapterTopic_outer" style="margin-left: 57.6pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="zChapterTopic_inner" style="width: 9.899999999999998pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="zChapterTopic_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.4.html#4771868', '');" title="Relationships Between LOB Typelists and Other Typelists" name="4797941">Relationships Between LOB Typelists and Other Typelists</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="zChapterTopic_outer" style="margin-left: 57.6pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="zChapterTopic_inner" style="width: 9.899999999999998pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="zChapterTopic_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4767200', '');" title="Editing LOB Typelists and Typecodes" name="4797945">Editing LOB Typelists and Typecodes</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="zChapterTopic_outer" style="margin-left: 57.6pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="zChapterTopic_inner" style="width: 9.899999999999998pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="zChapterTopic_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.6.html#4757624', '');" title="Coverages and Policies" name="4797949">Coverages and Policies</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="zChapterTopic_outer" style="margin-left: 57.6pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="zChapterTopic_inner" style="width: 9.899999999999998pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="zChapterTopic_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.7.html#4787211', '');" title="Adding a New LossType Typecode" name="4797953">Adding a New LossType Typecode</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="zChapterTopic_outer" style="margin-left: 57.6pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="zChapterTopic_inner" style="width: 9.899999999999998pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="zChapterTopic_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.8.html#4787267', '');" title="Adding a New ExposureType Typecode" name="4797957">Adding a New ExposureType Typecode</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4769813">LOB Typelists and Policies</a></h4>
+      <div class="B_-_Body"><a name="4769471">Information about the </a><span class="cv_-_computer_voice">LossType</span>, <span class="cv_-_computer_voice">LOBCode</span>, <span class="cv_-_computer_voice">PolicyType</span>, <span class="cv_-_computer_voice">CoverageType</span>, and <span class="cv_-_computer_voice">CoverageSubtype</span> is ultimately determined by the policy administration system, such as Guidewire PolicyCenter. ClaimCenter maintains local information about the structure of a policy, but this information maps to equivalent information in the policy administration system. When ClaimCenter retrieves a policy from the policy administration system, ClaimCenter uses its local information to interpret and store the policy information.</div>
+      <div class="B_-_Body"><a name="4769472">Information about </a><span class="cv_-_computer_voice">ExposureType</span> is unique to ClaimCenter. <span class="cv_-_computer_voice">ExposureType</span> is a mechanism used to streamline the gathering of information about a loss. Therefore, there is no analog to exposure type in the policy administration system.</div>
+      <h4 class="H2_-_Heading_2"><a name="4797858">LOB Typelists and Incidents</a></h4>
+      <div class="B_-_Body"><a name="4797901">While not technically part of the LOB model, the </a><span class="cv_-_computer_voice">Incident</span> typelist, which represents subclasses of the <span class="cv_-_computer_voice">Incident</span> entity, also relates to the LOB typelists. Every non-final entity type automatically has a corresponding typelist with the same name whose values represent each of the subclasses of the entity. For <span class="cv_-_computer_voice">entity.Incident</span>, there is <span class="cv_-_computer_voice">typekey.Incident,</span> which has typecodes like <span class="cv_-_computer_voice">TripIncident</span>, <span class="cv_-_computer_voice">InjuryIncident</span>, and so on. </div>
+      <div class="B_-_Body"><a name="4798120">There is a many-to-one relationship between </a><span class="cv_-_computer_voice">ExposureType</span> and the <span class="cv_-_computer_voice">Incident</span> typelist. Every instance of <span class="cv_-_computer_voice">Exposure</span> refers to an instance of <span class="cv_-_computer_voice">Incident</span>, and this relationship determines the specific type of incident that it is, based on the exposure's <span class="cv_-_computer_voice">ExposureType</span>. There are differences between this relationship and the others in the core LOB model:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4797902">The categories representing this relationship are unidirectional, going only from </a><span class="cv_-_computer_voice">ExposureType</span> to <span class="cv_-_computer_voice">Incident</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4797903">Incident types do not appear as children of </a><span class="cv_-_computer_voice">ExposureTypes</span> in the LOB editor. They are non-LOB typecodes edited by using the <span class="ui_-_UI_element">Other Categories</span> folders in the <span class="ui_-_UI_element">LOB</span> editor. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h6 class="HS_-_Head_Sub"><a name="4798157">See also</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.4.html#4771868', '');" title="Relationships Between LOB Typelists and Other Typelists" name="4798159">Relationships Between LOB Typelists and Other Typelists</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'lobs.63.5.html#4790798', '');" title="Editing LOB Typelists and Typecodes" name="4798176">Adding a Non-LOB Typecode</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

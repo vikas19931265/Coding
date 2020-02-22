@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Multicurrency Display</title>
+    <link rel="StyleSheet" href="css/multicurrency.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Application&nbsp;Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-financials.html#4472616">ClaimCenter Financials</a> : <a class="WebWorks_Breadcrumb_Link" href="multicurrency.41.1.html#4472616">Multiple Currencies</a> : Multicurrency Display</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="4472616">Multicurrency Display</a></h3>
+      <div class="B_-_Body"><a name="4474554">If you enable multicurrency display in ClaimCenter configuration, then fields, buttons, and features that show currencies and exchange rates are made visible.</a></div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="4473641">If </a><span class="cv_-_computer_voice">MulticurrencyDisplayMode</span> is set to <span class="cv_-_computer_voice">MULTIPLE</span> in the <span class="cv_-_computer_voice">config.xml</span> file, you see the following in ClaimCenter:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4747858">If a transaction uses any currency besides the reserving currency, the screen shows both currency amounts. The amount in the reserving currency appears in smaller type below the amount in the transaction currency. Both amounts are formatted according to their currency.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4473630">In the </a><span class="ui_-_UI_element">Policy</span> screen, you can select the policy currency by using a drop-down list of all of values defined in the <span class="ui_-_UI_element">Currency</span> typelist. As with any policy attribute, if you edit the currency of a verified policy, the policy becomes unverified. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4883676">If you are creating a reserve or a recovery reserve, you can use the multicurrency calculator icon to view the </a><span class="ui_-_UI_element">Set</span> <span class="ui_-_UI_element">Reserve</span> <span class="ui_-_UI_element">Amount</span> <span class="ui_-_UI_element">in</span> <span class="ui_-_UI_element">Another</span> <span class="ui_-_UI_element">Currency</span> page. In this page, you can view and select an alternate transaction currency for the reserve and set its <span class="cv_-_computer_voice">TransactionAmount</span> in that currency. You can view and change the amount and exchange rate from the transaction to the claim currency.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="4883963">See </a><a href="javascript:WWHClickedPopup('app', 'multicurrency.41.7.html#4812625', '');" title="Exchange Rates">“Market and Custom Exchange Rates”</a>.</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4822795">If writing a check, bulk invoice check, or recovery, you can select an alternate currency. You can view the market exchange rate or set a custom exchange rate for the conversion from the check or recovery currency to the claim currency. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4883703">If you are searching for checks or recoveries in a monetary range, ClaimCenter presents </a><span class="ui_-_UI_element">From</span> and <span class="ui_-_UI_element">To</span> text fields formatted in the currency chosen for the search. See <a href="javascript:WWHClickedPopup('app', 'multicurrency.41.3.html#4884031', '');" title="Multicurrency Display">“Multicurrency Searches”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="4822804">Using multiple currencies requires you to also correctly set the data types for those currencies. See </a><a href="javascript:WWHClickedPopup('global', 'currency.16.04.html#2899086', '');" title="Monetary Amounts in the Data Model and in Gosu">“Monetary Amounts in the Data Model and in Gosu” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('global', 'currency.16.04.html#2899086', '');" title="Monetary Amounts in the Data Model and in Gosu">Globalization Guide</a></span>.</div>
+      <h4 class="H2_-_Heading_2"><a name="4472645">The New Check Wizard and Multicurrency</a></h4>
+      <div class="B_-_Body"><a name="4473669">You can create all types of checks in any currency. The following steps of the </a><span class="ui_-_UI_element">New Check</span> wizard use some parts of the multicurrency feature:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4473958">Step 1</a></span> – Shows the <span class="ui_-_UI_element">Preferred Currency</span> of each primary and joint payee entered. Step 1 does not show the <span class="ui_-_UI_element">Preferred Currency</span> of secondary payees.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4473962">Step 2</a></span> – Sets the check’s currency to a payee’s <span class="ui_-_UI_element">Preferred Currency</span>, if specified<span class="ui_-_UI_element">. </span>See <a href="javascript:WWHClickedPopup('app', 'multicurrency.41.2.html#4856608', '');" title="Multicurrency Overview">“Preferred Currency on Contacts”</a>. Use the <span class="ui_-_UI_element">Currency</span> drop-down menu to change the currency. You can also adjust the exchange rate. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4822373">Step 3</a></span> – Displays the <span class="ui_-_UI_element">Gross</span>, <span class="ui_-_UI_element">Net</span>, and <span class="ui_-_UI_element">Deduction</span> amounts in both the check and claim currencies.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4884025">The Auto First and Final wizard also uses multicurrency display.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="4884031">Multicurrency Searches</a></h4>
+      <div class="B_-_Body"><a name="4472388">You can create checks and recoveries in any currency, and you can search for them regardless of currency, or in any one currency. Enter currency parameters in the following screens to control these searches:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ui_-_UI_element"><a name="4472480">Search</a></span> <span class="ui_-_UI_element">→ Recoveries</span> in the <span class="ui_-_UI_element">Optional Parameters</span> section</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ui_-_UI_element"><a name="4473557">Search</a></span> <span class="ui_-_UI_element">→</span> <span class="ui_-_UI_element">Checks</span> in the <span class="ui_-_UI_element">Optional Parameters</span> section</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h6 class="HS_-_Head_Sub"><a name="4874552">Single Currency Searches</a></h6>
+      <div class="B_-_Body"><a name="4884071">Use the currency selector in the </a><span class="ui_-_UI_element">Optional Parameters</span> sections to specify a currency for searches. This drop-down list shows all the typecodes in the <span class="cv_-_computer_voice">Currency</span> typelist. </div>
+      <div class="B_-_Body"><a name="4874553">If you specify a currency, your search is restricted to items in that currency, and the </a><span class="ui_-_UI_element">From</span> and <span class="ui_-_UI_element">To</span> fields are used to specify amounts in that currency. Single-currency searches return the sum of all items found. ClaimCenter shows the following messages with the search results: </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4857615">Recovery Search</a></span> – <span class="ui_-_UI_element">The results of this recovery search may be incomplete because a specific currency is being used to limit the search</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4857663">Check Search</a></span> – <span class="ui_-_UI_element">The results of this search are limited to those checks in the specified check Total range and currency.</span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4884508">Using Multiple Currencies in Bulk Invoices</a></h4>
+      <div class="B_-_Body"><a name="4884509">Bulk Invoices can be written in any currency. The Bulk Invoice, the physical check, and the invoice item checks use this currency. See </a><a href="javascript:WWHClickedPopup('app', 'bulkinvoice.43.14.html#4792776', '');" title="Bulk Invoices and Multicurrency">“Bulk Invoices and Multicurrency”</a> for details.</div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

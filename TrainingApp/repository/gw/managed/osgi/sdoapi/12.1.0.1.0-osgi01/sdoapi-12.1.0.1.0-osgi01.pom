@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>gw.managed.osgi</groupId>
+    <artifactId>parent</artifactId>
+    <version>10</version>
+    <relativePath>../parent/pom.xml</relativePath>
+  </parent>
+
+  <artifactId>sdoapi</artifactId>
+  <version>12.1.0.1.0-osgi01</version>
+  <packaging>bundle</packaging>
+
+  <licenses>
+    <license>
+      <name>Proprietary Oracle</name>
+      <url>http://www.oracle.com/technetwork/database/options/spatial/overview/introduction/index.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <dependencies>
+    <dependency>
+      <groupId>gw.managed</groupId>
+      <artifactId>sdoapi</artifactId>
+      <version>12.1.0.1.0-prod</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+</project>

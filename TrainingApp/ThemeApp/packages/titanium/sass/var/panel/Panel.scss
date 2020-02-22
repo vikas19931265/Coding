@@ -1,0 +1,22 @@
+// default panel
+$panel-include-border-management-rules: false !default;
+$panel-header-padding: 8px 10px !default;
+$panel-header-font-size: 12px !default;
+$panel-header-background-color: #efefef !default;
+$panel-header-color: #2f3e43 !default;
+$panel-header-text-shadow: 0px 2px 2px rgba(255,255,255,0.8) !default;
+$panel-tool-background-image: 'tools/tool-sprites-dark' !default;
+
+// page panel
+$panel-page-header-background-color: #FFF !default;
+$panel-page-header-text-padding: 6px 7px !default;
+$panel-page-header-font-size: 18px !default;
+
+
+//left-nav wizard
+$embeddedwizard-grid-row-td-color: #282828 !default;
+$embeddedwizard-grid-row-td-over-bgColor: #d5e2e6 !default;
+
+//tab cards
+$tab-font-weight: normal !default;
+$tab-font-weight-active: bold !default;

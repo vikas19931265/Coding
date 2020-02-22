@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Working with Question Sets</title>
+    <link rel="StyleSheet" href="css/questionset.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Application&nbsp;Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-components.html#4850241">Additional Features of ClaimCenter</a> : <a class="WebWorks_Breadcrumb_Link" href="questionset.37.1.html#4850241">Question Sets</a> : Working with Question Sets</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="4850241">Working with Question Sets</a></h3>
+      <div class="B_-_Body"><a name="4487290">You create </a><span class="cv_-_computer_voice">QuestionSets</span> and their related entities by creating XML files and then importing them through the application.</div>
+      <h4 class="H2_-_Heading_2"><a name="4487784">Importing Question Sets and Questions</a></h4>
+      <div class="B_-_Body"><a name="4487479">With administrative permissions, you can import question sets by navigating to </a><span class="ui_-_UI_element">Administration</span> tab → <span class="ui_-_UI_element">Utilities → Import Data</span> and then choosing the file to import. See <a href="javascript:WWHClickedPopup('admin', 'importdata.10.4.html#1644791', '');" title="Importing and Exporting Administrative Data from ClaimCenter">“Importing and Exporting Administrative Data from ClaimCenter” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('admin', 'importdata.10.4.html#1644791', '');" title="Importing and Exporting Administrative Data from ClaimCenter">System Administration Guide</a></span>.</div>
+      <div class="B_-_Body"><a name="4488416">Importing a question set XML file adds the </a><span class="cv_-_computer_voice">QuestionSet</span> and its <span class="cv_-_computer_voice">Questions</span>, <span class="cv_-_computer_voice">QuestionChoices</span>, and <span class="cv_-_computer_voice">QuestionFilters</span> to your installation. The import can occur while the server is running. </div>
+      <div class="NI_-_Note_Important">
+        <span class="n_-_note">IMPORTANT   </span><a name="4850503">If you import a question set XML file, ClaimCenter creates instances of the entities defined in the file. Do not delete these instances in a production environment, because doing so will prevent ClaimCenter from starting. Additionally, while it is possible to retire entities, do not retire </a><span class="cv_-_computer_voice">QuestionSet</span>, <span class="cv_-_computer_voice">Question</span>, <span class="cv_-_computer_voice">QuestionChoice</span>, or <span class="cv_-_computer_voice">QuestionFilter</span> entities that are part of a service provider performance review. Existing reviews might still be using them. See <a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2225086', '');" title="Configuring Service Provider Performance Reviews">“Retiring a Review Type” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('contact', 'cc-vendorperformreviews.14.5.html#2225086', '');" title="Configuring Service Provider Performance Reviews">Contact Management Guide</a></span>.</div>
+      <h4 class="H2_-_Heading_2"><a name="4851031">Exporting Question Sets and Questions</a></h4>
+      <div class="B_-_Body"><a name="4851038">With administrative permissions, you can export question sets by navigating to </a><span class="ui_-_UI_element">Administration</span> tab → <span class="ui_-_UI_element">Utilities → Export Data</span> and then choosing the file to import. See <a href="javascript:WWHClickedPopup('admin', 'importdata.10.4.html#1644791', '');" title="Importing and Exporting Administrative Data from ClaimCenter">“Importing and Exporting Administrative Data from ClaimCenter” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('admin', 'importdata.10.4.html#1644791', '');" title="Importing and Exporting Administrative Data from ClaimCenter">System Administration Guide</a></span>.</div>
+      <h4 class="H2_-_Heading_2"><a name="4488425">Creating a Question Set and its Questions</a></h4>
+      <div class="B_-_Body"><a name="4487775">Each </a><span class="cv_-_computer_voice">QuestionSet</span> consists of <span class="cv_-_computer_voice">Question</span> entities, which can in turn point to the allowed set of answers to the question, a <span class="cv_-_computer_voice">QuestionChoice entity</span>. The <span class="cv_-_computer_voice">Question</span> entities you create have the following requirements:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4487776">Each </a><span class="cv_-_computer_voice">Question</span> must have a foreign key back to the <span class="cv_-_computer_voice">QuestionSet</span> it appears in.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4487777">To be scored, the </a><span class="cv_-_computer_voice">QuestionType</span> field must have the value <span class="cv_-_computer_voice">Choice</span>. You can use other values, such as <span class="cv_-_computer_voice">Boolean</span>, <span class="cv_-_computer_voice">Integer</span>, or <span class="cv_-_computer_voice">String</span>, but questions with these types will not be scored.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4683908">Any </a><span class="cv_-_computer_voice">Question</span> with its <span class="cv_-_computer_voice">Required</span> field set to <span class="cv_-_computer_voice">true</span> must be answered before the <span class="cv_-_computer_voice">QuestionSet</span> is complete.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="cv_-_computer_voice"><a name="4683909">Priority</a></span> sets the order in which the question is listed in its <span class="cv_-_computer_voice">QuestionSet</span>. The values start with zero, and count upwards.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4487780">The </a><span class="cv_-_computer_voice">QuestionFormat</span> field is optional and can be <span class="cv_-_computer_voice">ChoiceSelect</span> or <span class="cv_-_computer_voice">ChoiceRadio</span> or <span class="cv_-_computer_voice">null</span>. The field can be <span class="cv_-_computer_voice">null</span> only for a <span class="cv_-_computer_voice">QuestionType</span> other than <span class="cv_-_computer_voice">choice</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4487781">Each </a><span class="cv_-_computer_voice">Question</span> entity of type <span class="cv_-_computer_voice">Choice</span> must point to a <span class="cv_-_computer_voice">QuestionChoice</span> entity.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4487539">Define a </a><span class="cv_-_computer_voice">Question</span> in an XML file as follows:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="4487544">&lt;Question public-id="question13"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4487545">&nbsp;&nbsp;&lt;DefaultAnswer/&gt;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!-- answer to use if none is given; set to null for a blank answer --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4487546">&nbsp;&nbsp;&lt;Indent&gt;0&lt;/Indent&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- not used, but will be to indent when displayed --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4487547">&nbsp;&nbsp;&lt;Priority&gt;12&lt;/Priority&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- order in which this Question appears in the QuestionSet --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4487548">&nbsp;&nbsp;&lt;QuestionSet public-id="generalquestionset"/&gt;&nbsp;&nbsp;&nbsp;&lt;!-- points to Questionset it belongs to --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4487549">&nbsp;&nbsp;&lt;QuestionType&gt;Choice&lt;/QuestionType&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- boolean, choice, string, or integer --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4487550">&nbsp;&nbsp;&lt;Required&gt;false&lt;/Required&gt; &nbsp;&nbsp;&nbsp;&nbsp;&lt;-- if question must be answered or have non-null default --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4487551">&nbsp;&nbsp;&lt;ShouldRetireFromImportXML&gt;false&lt;/ShouldRetireFromImportXML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;-- if retired or active --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4851085">&nbsp;&nbsp;&lt;Text&gt;Did the claimant present excessive documentation?&lt;/Text&gt; &lt;!-- actual question text --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4487552">&nbsp;&nbsp;&lt;!-- If QuestionType=Choice, then ChoiceRadio displays an array of radio buttons, --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4487595">&nbsp;&nbsp;&lt;!-- and ChoiceSelectBox displays answers in a select dropdown box. --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4487596">&nbsp;&nbsp;&lt;!-- question.xml is a typelist containing all display choices --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4851120">&nbsp;&nbsp;&lt;QuestionFormat&gt;ChoiceRadio&lt;/QuestionFormat&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="4851121">&lt;/Question&gt;</a></PRE>
+      <div class="B_-_Body"><a name="4851122">Similarly, a </a><span class="cv_-_computer_voice">QuestionSet</span> looks like this:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="4488432">&lt;QuestionSet public-id="AssignValue"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4488434">&nbsp;&nbsp;&lt;Name&gt;Repair Timeliness&lt;/Name&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- the name to display --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4488435">&nbsp;&nbsp;&lt;Priority&gt;0&lt;/Priority&gt; &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- order in which this QuestionSet appears in user interface --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4488436">&nbsp;&nbsp;&lt;QuestionSetType&gt;autorepair&lt;/QuestionSetType&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- typecode of QuestionSetType.xml --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4488437">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- this typecode is used to make sure only the appropriate QuestionSets are displayed--&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4851229">&nbsp;&nbsp;&lt;ShouldRetireFromImportXML&gt;false&lt;/ShouldRetireFromImportXML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;-- if retired or active --&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="4488438">&lt;/QuestionSet&gt;</a></PRE>
+      <h4 class="H2_-_Heading_2"><a name="4487798">Creating a QuestionChoice</a></h4>
+      <div class="B_-_Body"><a name="4487617">A </a><span class="cv_-_computer_voice">QuestionChoice</span> is one of the allowed answers for a Question of <span class="cv_-_computer_voice">QuestionType=Choice</span>. You must create one of these entities for each choice of each question, as defined in XML as follows:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="4487625">&lt;QuestionChoice public-id="carquestion11yes"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4487677">&nbsp;&nbsp;&nbsp;&lt;Code&gt;Yes&lt;/Code&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- value to store in the database for this choice --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4487627">&nbsp;&nbsp;&lt;Description&gt;Yes&lt;/Description&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- not currently used in the user interface --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4487628">&nbsp;&nbsp;&lt;Name&gt;Yes&lt;/Name&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- the string shown for this choice in the user interface --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4487629">&nbsp;&nbsp;&lt;Priority&gt;0&lt;/Priority&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- the order to display this choice with other choices --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4487630">&nbsp;&nbsp;&lt;Question public-id="question11"/&gt;&nbsp;&nbsp;&lt;!-- reference to question this is a choice for --&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4487631">&nbsp;&nbsp;&lt;Score&gt;0&lt;/Score&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- the score assigned to this choice --&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="4487618">&lt;/QuestionChoice&gt;</a></PRE>
+      <h4 class="H2_-_Heading_2"><a name="4852806">Creating a Conditional Question</a></h4>
+      <div class="B_-_Body"><a name="4854046">You can create conditional follow-up questions by using a question filter. Conditional questions can be useful for tailoring a single question set to obtain information from a number of similar cases. Consider the following partial sequence of questions that determine if an auto claim needs special investigation:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4488470">Question </a><span class="cv_-_computer_voice">siucarquestion1</span>: “Was vehicle stolen?”</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="4488471">If </a><span class="cv_-_computer_voice">yes</span> to <span class="cv_-_computer_voice">siucarquestion1</span>, then conditional <span class="cv_-_computer_voice">siucarquestion2</span>: “Was vehicle purchased outside of State?”</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI2_-_Bullet_Item_002c_Level_2_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI2_-_Bullet_Item_002c_Level_2_inner"><a name="4853373">If </a><span class="cv_-_computer_voice">yes</span> to <span class="cv_-_computer_voice">siucarquestion1</span>, then conditional <span class="cv_-_computer_voice">siucarquestion3</span>: “Does the stolen vehicle have salvage title?”</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4853119">The following example is in the questions sets available if you import ClaimCenter sample data. It uses </a><span class="cv_-_computer_voice">QuestionFilter</span> elements at the bottom and shows how to code this sequence of questions:</div>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853334">&lt;Question public-id="siucarquestion3"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853335">    &lt;DefaultAnswer/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853336">    &lt;Indent&gt;20&lt;/Indent&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853337">    &lt;Priority&gt;2&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853338">    &lt;QuestionFormat&gt;ChoiceRadio&lt;/QuestionFormat&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853339">    &lt;QuestionSet public-id="siucarquestionset"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853340">    &lt;QuestionType&gt;Choice&lt;/QuestionType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853341">    &lt;Required&gt;false&lt;/Required&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853342">    &lt;ShouldRetireFromImportXML&gt;false&lt;/ShouldRetireFromImportXML&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853343">    &lt;Text&gt;Does the stolen vehicle have salvage title?&lt;/Text&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853344">  &lt;/Question&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853345">  &lt;QuestionChoice public-id="siucarquestion3no"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853346">    &lt;Code&gt;No&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853347">    &lt;Description&gt;No&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853348">    &lt;Name&gt;No&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853349">    &lt;Priority&gt;1&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853350">    &lt;Question public-id="siucarquestion3"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853351">    &lt;Score&gt;0&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853352">  &lt;/QuestionChoice&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853353">  &lt;QuestionChoice public-id="siucarquestion3yes"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853354">    &lt;Code&gt;Yes&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853355">    &lt;Description&gt;Yes&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853356">    &lt;Name&gt;Yes&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853357">    &lt;Priority&gt;0&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853358">    &lt;Question public-id="siucarquestion3"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853359">    &lt;Score&gt;1&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853186">  &lt;/QuestionChoice&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853330">&lt;Question public-id="siucarquestion2"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853187">    &lt;DefaultAnswer/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853188">    &lt;Indent&gt;20&lt;/Indent&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853189">    &lt;Priority&gt;1&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853190">    &lt;QuestionFormat&gt;ChoiceRadio&lt;/QuestionFormat&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853191">    &lt;QuestionSet public-id="siucarquestionset"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853192">    &lt;QuestionType&gt;Choice&lt;/QuestionType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853193">    &lt;Required&gt;false&lt;/Required&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853194">    &lt;ShouldRetireFromImportXML&gt;false&lt;/ShouldRetireFromImportXML&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853195">    &lt;Text&gt;Was vehicle purchased outside of State?&lt;/Text&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853196">  &lt;/Question&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853197">  &lt;QuestionChoice public-id="siucarquestion2no"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853198">    &lt;Code&gt;No&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853199">    &lt;Description&gt;No&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853200">    &lt;Name&gt;No&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853201">    &lt;Priority&gt;1&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853202">    &lt;Question public-id="siucarquestion2"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853203">    &lt;Score&gt;0&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853204">  &lt;/QuestionChoice&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853205">  &lt;QuestionChoice public-id="siucarquestion2yes"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853206">    &lt;Code&gt;Yes&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853207">    &lt;Description&gt;Yes&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853208">    &lt;Name&gt;Yes&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853209">    &lt;Priority&gt;0&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853210">    &lt;Question public-id="siucarquestion2"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853211">    &lt;Score&gt;1&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853131">  &lt;/QuestionChoice&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853223">&lt;Question public-id="siucarquestion1"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853132">    &lt;DefaultAnswer/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853133">    &lt;Indent&gt;0&lt;/Indent&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853134">    &lt;Priority&gt;0&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853135">    &lt;QuestionFormat&gt;ChoiceRadio&lt;/QuestionFormat&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853136">    &lt;QuestionSet public-id="siucarquestionset"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853137">    &lt;QuestionType&gt;Choice&lt;/QuestionType&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853138">    &lt;Required&gt;false&lt;/Required&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853139">    &lt;ShouldRetireFromImportXML&gt;false&lt;/ShouldRetireFromImportXML&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853140">    &lt;Text&gt;Was vehicle stolen?&lt;/Text&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853141">  &lt;/Question&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853142">  &lt;QuestionChoice public-id="siucarquestion1no"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853143">    &lt;Code&gt;No&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853144">    &lt;Description&gt;No&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853145">    &lt;Name&gt;No&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853146">    &lt;Priority&gt;1&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853147">    &lt;Question public-id="siucarquestion1"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853148">    &lt;Score&gt;0&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853149">  &lt;/QuestionChoice&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853150">  &lt;QuestionChoice public-id="siucarquestion1yes"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853151">    &lt;Code&gt;Yes&lt;/Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853152">    &lt;Description&gt;Yes&lt;/Description&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853153">    &lt;Name&gt;Yes&lt;/Name&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853154">    &lt;Priority&gt;0&lt;/Priority&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853155">    &lt;Question public-id="siucarquestion1"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853156">    &lt;Score&gt;0&lt;/Score&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853124">  &lt;/QuestionChoice&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853301">&lt;QuestionFilter public-id="siucarfilter1"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853302">    &lt;Answer&gt;Yes&lt;/Answer&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853303">    &lt;FilterQuestion public-id="siucarquestion1"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853304">    &lt;Question public-id="siucarquestion2"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853305">  &lt;/QuestionFilter&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853306">  &lt;QuestionFilter public-id="siucarfilter2"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853307">    &lt;Answer&gt;Yes&lt;/Answer&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853308">    &lt;FilterQuestion public-id="siucarquestion1"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4853309">    &lt;Question public-id="siucarquestion3"/&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="4853310">  &lt;/QuestionFilter&gt;</a></PRE>
+      <div class="B_-_Body"><a name="4853467">This series of questions looks like the following for an auto claim. The user navigated to the </a><span class="ui_-_UI_element">Loss Details</span> → <span class="ui_-_UI_element">Special Investigation Details</span> screen and clicked <span class="ui_-_UI_element">Edit</span> to fill out the questionnaire:</div>
+      <div class="F_-_Figure"><a name="4853746"><img class="Default" src="images/questionset-conditional-questions.png" style="display: inline; float: none; left: 0.0; top: 0.0" alt="" /></a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4853125">Reusing Questions </a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4488253">You can use the same question set in various settings. Questions can be used by only one question set. A question is associated with only one question set, and a question choice must be associated with a single question. </a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4488260">Internationalization of Question Sets</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4488261">Question sets are not internationalized. If you want to configure multiple question sets for different locales or languages, use the </a><span class="cv_-_computer_voice">gw.api.util.LocaleUtil.getCurrentUserLanguage</span> method. Then use that result to select the correct question set to use.</div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

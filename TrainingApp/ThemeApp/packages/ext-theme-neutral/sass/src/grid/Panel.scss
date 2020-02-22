@@ -1,0 +1,12 @@
+/* invalid cell: */
+TD.g-invalid-cell.g-cell-edit, .x-grid-row-alt TD.g-invalid-cell.g-cell-edit {
+  background-color: $form-field-invalid-background-color;
+  border-bottom-color: $form-field-invalid-border-color;
+}
+
+/* invalid row: */
+TR.g-invalid-row TD {
+  background-color: $form-field-invalid-background-color !important;
+  border-bottom-color: $form-field-invalid-border-color !important;
+}
+
