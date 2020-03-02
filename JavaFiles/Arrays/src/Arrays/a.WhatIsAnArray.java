@@ -1,5 +1,6 @@
 /*
-
+What is an Array???
+======================================
 1. An array is an indexed collection of homogenous data elements.
 
 2. The main advantage of arrays is we can represent huge number of values by using single variable, so that
