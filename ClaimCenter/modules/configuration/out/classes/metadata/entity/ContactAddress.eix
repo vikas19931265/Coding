@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<internalExtension xmlns="http://guidewire.com/datamodel" entityName="ContactAddress">
-  <implementsEntity name="Extractable"/>
-  <implementsEntity name="OverlapTable"/>
-</internalExtension>

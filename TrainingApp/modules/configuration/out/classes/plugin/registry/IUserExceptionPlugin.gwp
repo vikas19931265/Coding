@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<plugin
-  name="IUserExceptionPlugin">
-  <plugin-osgi
-    servicepid="com.guidewire.pl.domain.escalation.internal.RulesBasedUserExceptionPlugin"
-    temporaryBundle="false"/>
-</plugin>

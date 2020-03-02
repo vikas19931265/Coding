@@ -1,5 +1,0 @@
-GAA05100Damageditemslist
-GAA05200Contactinsuredaboutlivingexpenses
-GAA05300Getpropertyinspected
-GAA05400Getclaimantmedicalreports
-GAA05500Verifycoverage

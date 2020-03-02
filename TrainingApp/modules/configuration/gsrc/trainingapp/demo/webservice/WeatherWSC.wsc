@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<webservice-collection xmlns="http://guidewire.com/config/webservicecollection">
-  <resources>
-    <resource>
-      <url>http://ws.cdyne.com/WeatherWS/Weather.asmx?wsdl</url>
-    </resource>
-  </resources>
-</webservice-collection>

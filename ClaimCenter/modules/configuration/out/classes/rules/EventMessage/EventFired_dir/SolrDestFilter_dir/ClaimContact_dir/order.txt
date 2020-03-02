@@ -1,3 +1,0 @@
-ClaimContactAdded
-ClaimContactContactChanged
-ClaimContactRemoved

@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<plugin
-  interface="MessageTransport"
-  name="autoSyncFailureTransport">
-  <plugin-gosu
-    gosuclass="gw.plugin.messaging.impl.ConsoleMessageTransportNoAck"/>
-</plugin>

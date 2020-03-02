@@ -1,8 +1,0 @@
-CCV01000Openexposures
-CCV02000Openactivities
-CCV03000Propertychecks
-CCV04000AtFaultmustbedeterminedfornonWC
-CCV05000SubrogationStatusmustnotbeReview
-CCV06000ifThirdpartyLiabilityindicatedthen
-CCV07000Openmatters
-CCV08000OpenServiceRequests

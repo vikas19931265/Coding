@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<plugin
-  interface="IPolicyRefreshPlugin"
-  name="IPolicyRefreshPlugin">
-  <plugin-gosu
-    gosuclass="gw.plugin.policy.refresh.basic.BasicPolicyRefreshPlugin"/>
-</plugin>

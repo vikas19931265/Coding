@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<subtype xmlns="http://guidewire.com/datamodel" desc="Surplus proportional reinsurance agreement." entity="SurplusRITreaty"
-        subpackage="reinsurance"
-        supertype="ProportionalRIAgreement">
-</subtype>

@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<plugin
-  interface="MessageTransport"
-  name="policySystemNotificationTransport">
-  <plugin-gosu
-    disabled="true"
-    gosuclass="gw.plugin.policy.impl.PolicySystemNotificationMessageTransport"/>
-</plugin>

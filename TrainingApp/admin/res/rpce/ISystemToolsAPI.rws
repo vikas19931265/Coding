@@ -1,2 +1,0 @@
-<?xml version="1.0" ?>
-<endpoint name="ISystemToolsAPI" wsdl-location="http://localhost:8280/ab/soap/ISystemToolsAPI?wsdl"/>
