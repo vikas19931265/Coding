@@ -1,4 +1,6 @@
 /*
+Program
+
 System.out.println(input.replaceAll("(\\w)\\1+","$1"));
 
 This means match any word character first, keep it in group
