@@ -1,0 +1,18 @@
+What is Components in angular???
+=========================================
+
+Angular working is completely based upon creating components. Components are created so that we can make
+our complex application parts usable.
+
+How to create components???
+==========================================
+
+We can create components at folder level, by right clicking and creating a file with the extension .ts.
+This will be our new component , however we need to register the component in the module file as well.Also 
+we will need to create the html files as well as style files for the component. Instead of doing this we can
+do it using the command cli which will generate all the files needed for us.
+
+We can supply the command "ng g c component_name" to create the component.
+Once we create the component we will get the same list of file which are present in the app folder referred
+to as the root folder.
+

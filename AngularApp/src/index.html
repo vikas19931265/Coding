@@ -1,0 +1,24 @@
+<!-- 
+  Index.html is the only page which is displayed to the user. Angular is a single page application
+  therefore whatever user sees on screen is actually just one page. The page is basically a combination 
+  of number of components in one single page.
+ -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AngularApp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root> 
+<!-- In whichever typescript class ,app-root selector is present, corresponding
+to that class whatever html file is rendered will be placed here.
+app-root is the main element or root element. This  will refer to some html page,
+and inside the html page it can refer to another html page . This can keep going on
+and is called as the nesting concept.
+ -->
+</body>
+</html>
