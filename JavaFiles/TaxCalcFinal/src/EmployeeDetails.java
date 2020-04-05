@@ -16,8 +16,7 @@ public class EmployeeDetails extends javax.swing.JFrame {
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         jLabel6 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
@@ -60,10 +59,8 @@ public class EmployeeDetails extends javax.swing.JFrame {
         doj.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         doj.setText("Date Of Joining Finanical year");
 
-        dateField.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        dateField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dateFieldActionPerformed(evt);
             }
         });
@@ -72,6 +69,7 @@ public class EmployeeDetails extends javax.swing.JFrame {
         gross.setText("Gross Salary");
 
         variableField.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
+        variableField.setText("0");
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         jLabel4.setText("Do you have deductions?");
@@ -97,10 +95,8 @@ public class EmployeeDetails extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
         jButton2.setText("Continue");
-        jButton2.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
@@ -110,10 +106,8 @@ public class EmployeeDetails extends javax.swing.JFrame {
 
         stateField.setFont(new java.awt.Font("Times New Roman", 2, 12)); // NOI18N
         stateField.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Andhra Pradesh", "Andaman and Nicobar Islands", "Arunachal Pradesh", "Assam", "Bihar", "Chandigarh", "Chhattisgarh", "Dadra and Nagar Haveli", "Daman and Diu", "Delhi", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu and Kashmir", "Jharkhand", "Karnataka", "Kerala", "Lakshadweep", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Pondicherry", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal" }));
-        stateField.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        stateField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 stateFieldActionPerformed(evt);
             }
         });
@@ -160,7 +154,7 @@ public class EmployeeDetails extends javax.swing.JFrame {
                                 .addComponent(jLabel4)
                                 .addGap(108, 108, 108)
                                 .addComponent(dedField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(49, 77, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -184,7 +178,7 @@ public class EmployeeDetails extends javax.swing.JFrame {
                                 .addComponent(jLabel3)
                                 .addGap(107, 107, 107)
                                 .addComponent(variableField, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 62, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
@@ -241,7 +235,7 @@ public class EmployeeDetails extends javax.swing.JFrame {
                     .addComponent(dedField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         pack();
@@ -258,7 +252,7 @@ public class EmployeeDetails extends javax.swing.JFrame {
         String nameStatus = "";
         String companyStatus = "";
         String salNotTaxable = "no";
-        Pattern p = Pattern.compile("[a-zA-Z]");
+        Pattern p = Pattern.compile("[deductiona-zA-Z]");
         Matcher m = p.matcher(name);
         if (!name.isEmpty()) {
             if (m.find()) {
@@ -272,8 +266,24 @@ public class EmployeeDetails extends javax.swing.JFrame {
         } else {
             JOptionPane.showMessageDialog(new EmployeeDetails(), "name cannot be blank!!");
         }
-
+        String metroStatus="valid";
         if (!name.isEmpty() && nameStatus.equals("valid")) {
+            if (!metroyes.isSelected() && !metroNo.isSelected()) {
+                metroStatus="invalid";
+                JOptionPane.showMessageDialog(new EmployeeDetails(), "do u stay in metro field cannot be empty!!");
+            
+            } else {
+                if (metroyes.isSelected()) {
+                    String metro = metroyes.getText();
+                    EmployeeDetails.metroCity = metro;
+                } else {
+                    String metro = metroNo.getText();
+                    EmployeeDetails.metroCity = metro;
+                }
+            }
+            System.out.println("metro value is " + EmployeeDetails.metroCity);
+        }
+        if (!name.isEmpty() && nameStatus.equals("valid") && metroStatus.equalsIgnoreCase("valid")) {
             String company = companyField.getText();
             Pattern p1 = Pattern.compile("[a-zA-Z0-9]");
             Matcher m1 = p1.matcher(company);
@@ -293,9 +303,8 @@ public class EmployeeDetails extends javax.swing.JFrame {
         String doj = dateField.getText();
         String dateStatus = "";
         Date d = null;
-        if (nameStatus.equals("valid") && companyStatus.equals("valid")) {
+        if (nameStatus.equals("valid") && companyStatus.equals("valid") && metroStatus.equals("valid")) {
             if (!doj.isEmpty()) {
-
                 try {
                     d = new SimpleDateFormat("dd/MM/yyyy").parse(doj);
                     Calendar c = Calendar.getInstance();
@@ -304,13 +313,18 @@ public class EmployeeDetails extends javax.swing.JFrame {
                     if (year == 2019 || year == 2020 || year==2018) {
                         dateStatus = "valid";
                     } else {
+                        TaxCalculator.d.setVisible(true);
                         JOptionPane.showMessageDialog(new EmployeeDetails(), "Tax calculation applicable for FY 2018-19 and 2019-20!!");
+                        
                     }
 
                 } catch (ParseException e) {
+                    TaxCalculator.d.setVisible(true);
                     JOptionPane.showMessageDialog(new EmployeeDetails(), "Invalid date!!");
                 }
             } else {
+               
+               TaxCalculator.d.setVisible(true);
                 JOptionPane.showMessageDialog(new EmployeeDetails(), "DOJ cannot be blank!!");
             }
         }
@@ -318,43 +332,59 @@ public class EmployeeDetails extends javax.swing.JFrame {
         String allIsWell = "invalid";
         Double salary = 0d;
 
-        if (nameStatus.equals("valid") && companyStatus.equals("valid") && dateStatus.equals("valid")) {
+        if (nameStatus.equals("valid") && companyStatus.equals("valid") && dateStatus.equals("valid") && metroStatus.equals("valid")) {
             if (!grossSal.isEmpty()) {
                 try {
                     salary = Double.parseDouble(grossSal);
-
+                    allIsWell="valid";
                 } catch (NumberFormatException e) {
+                    allIsWell="invalid";
+                    TaxCalculator.d.setVisible(true);
                     JOptionPane.showMessageDialog(new EmployeeDetails(), "invalid salary");
                 }
             } else {
+                salary=0.0;
+                TaxCalculator.d.setVisible(true);
                 JOptionPane.showMessageDialog(new EmployeeDetails(), "salary cannot be empty");
             }
-
+        }
             String financialYear = (String) finField.getSelectedItem();
             finYear=financialYear;
             String genderSex = (String) genField.getSelectedItem();
             String state = (String) stateField.getSelectedItem();
-            if(metroyes.isSelected())
-            {
-                String metro=metroyes.getText();
-                EmployeeDetails.metroCity=metro;
-            }
-             if(metroNo.isSelected())
-            {
-                String metro=metroNo.getText();
-                EmployeeDetails.metroCity=metro;
-            }
-
             EmployeeDetails.state=state;
-            double variable = Double.parseDouble((String)variableField.getText());
-            EmployeeDetails.varField1=variable;
+            String VP="invalid";
+            double variable=0;
+            if (nameStatus.equals("valid") && companyStatus.equals("valid") && dateStatus.equals("valid") && metroStatus.equals("valid") && allIsWell.equals("valid")) {
+                    
+                    try {
+                        if(!variableField.getText().isEmpty())
+                        {
+                        variable = Double.parseDouble((String) variableField.getText());
+                        System.out.println("variable pay amount is " + variable);
+                        VP="valid";
+                        }
+                        else
+                        {
+                            VP="valid";
+                        }
+                    } catch (NumberFormatException e) {
+                        VP="invalid";
+                        TaxCalculator.d.setVisible(true);
+                        JOptionPane.showMessageDialog(new EmployeeDetails(), "invalid variable/bonus pay");
+                    }
+
+                    EmployeeDetails.varField1 = variable;
+                }
+            
             double profTax = professionalTaxCalculator(state, salary, genderSex, salNotTaxable, financialYear);
             if (salNotTaxable.equals("yes")) {
 
             }
-            System.out.println("nameStatus:" +nameStatus+ "companystatus: " + companyStatus+"datestatus :"+ dateStatus+" alliswell :" +allIsWell +"salnottax:" +salNotTaxable+" fin year:" +financialYear);
-            if (nameStatus.equals("valid") && companyStatus.equals("valid") && dateStatus.equals("valid") && financialYear.equals("2018-19")) {
+            System.out.println("nameStatus:" +nameStatus+ "companystatus: " + companyStatus+"datestatus :"+ dateStatus+" alliswell :" +allIsWell +"salnottax:" +salNotTaxable+" fin year:" +financialYear +"metro status " +metroStatus + "VPstatus : " +VP );
+            if (nameStatus.equals("valid") && companyStatus.equals("valid") && dateStatus.equals("valid") && financialYear.equals("2018-19") && metroStatus.equals("valid") && allIsWell.equals("valid") && VP.equals("valid")) {
 
+                System.out.println("entered insdie");
                 if (dedField.getSelectedItem().equals("No")) {
 
                     TaxCalculator.slip.setVisible(true);
@@ -379,13 +409,13 @@ public class EmployeeDetails extends javax.swing.JFrame {
                 TaxCalculator.d.setVisible(false);
             }
 
-            if (nameStatus.equals("valid") && companyStatus.equals("valid") && dateStatus.equals("valid") && financialYear.equals("2019-20")) {
+            if (nameStatus.equals("valid") && companyStatus.equals("valid") && dateStatus.equals("valid") && financialYear.equals("2019-20") && metroStatus.equals("valid") && allIsWell.equals("valid")&&VP.equals("valid")) {
 
                 if (dedField.getSelectedItem().equals("No")) {
                     if(salary-50000>500000)
                     {
                     TaxCalculator.d.setVisible(false);
-                        TaxCalculator.slip.setVisible(true);
+                    TaxCalculator.slip.setVisible(true);
 
                     SalarySlip.salary = salary;
                     SalarySlip.profTax = profTax;
@@ -408,16 +438,7 @@ public class EmployeeDetails extends javax.swing.JFrame {
                     TaxCalculator.deduction.setVisible(true);
                    // TaxCalculator.deduction.deductions();
                 }
-
-
-
-
             }
-
-
-
-        }
-
 
     }//GEN-LAST:event_jButton2ActionPerformed
 

@@ -1,5 +1,4 @@
-package superKeyword;
-
+ package superKeyword;
 /*
 
 Real time usage of super()
@@ -45,49 +44,34 @@ Real time usage of super()
 
 */
 
+class Persons {
 
- class Persons
-{
     String name;
     int age;
-    
+
     Persons(String name, int age) // call to this constructor will be make on current child object.
     {
-        this.name=name;
-        this.age=age;
+        this.name = name;
+        this.age = age;
     }
-    
-    
-    
 }
 
-
-class Students extends Persons
-{
-    
-    Students(String name, int age, int rollNo)
-    {
-        super(name,age);
-        this.rollNo=rollNo;
-        
-    }
-    
+class Students extends Persons {
     int rollNo;
+    Students(String name, int age, int rollNo) {
+        super(name, age);
+        this.rollNo = rollNo;
+    }
+    
 }
 
+class Driver13 {
 
- class Driver13
-{
-    public static void main(String[] args)
-    {
-        
-        Students s = new Students("vikas",25,4127);
-        
-        System.out.println(s.name+" "+s.age+" "+ s.rollNo);
-    
+    public static void main(String[] args) {
+        Students s = new Students("vikas", 25, 4127);
+        System.out.println(s.name + " " + s.age + " " + s.rollNo);
     }
 }
-
 /*
 $javac Driver.java
 $java -Xmx128M -Xms16M Driver

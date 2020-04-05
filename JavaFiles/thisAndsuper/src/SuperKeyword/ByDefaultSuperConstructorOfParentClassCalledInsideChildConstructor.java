@@ -8,15 +8,12 @@ by the compiler.
 
 
 package SuperKeyword;
-
-
  class Person2 {
     
      Person2()
      {
          System.out.println("hai");
      }
- 
  
  }
 
