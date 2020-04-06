@@ -415,6 +415,7 @@ public class EmployeeDetails extends javax.swing.JFrame {
                     if(salary-50000>500000)
                     {
                     TaxCalculator.d.setVisible(false);
+                    TaxCalculator.deduction.setVisible((false));
                     TaxCalculator.slip.setVisible(true);
 
                     SalarySlip.salary = salary;
@@ -436,6 +437,7 @@ public class EmployeeDetails extends javax.swing.JFrame {
                     SalarySlip.profTax = profTax;
                     SalarySlip.d = d;
                     TaxCalculator.deduction.setVisible(true);
+                    TaxCalculator.d.setVisible((false));
                    // TaxCalculator.deduction.deductions();
                 }
             }

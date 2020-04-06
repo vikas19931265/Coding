@@ -240,8 +240,8 @@ double deductionAmount=0;
             double month = cn.get(Calendar.MONTH);
             System.out.println("date" + date + "month " + month);
             if (date == 1 && (month + 1) == 4) {
-                taxableSalaryAfterStdDeduction = salary - (pfSal * 12 *2) - profTax - standardDeduction;
-                taxableSalaryAfterStdDeduction=taxableSalaryAfterStdDeduction-deductionAmount;
+                taxableSalaryAfterStdDeduction = salary - profTax - standardDeduction;
+                taxableSalaryAfterStdDeduction=taxableSalaryAfterStdDeduction-deductionAmount+EmployeeDetails.varField1;;
                 System.out.println("sal after ded " + taxableSalaryAfterStdDeduction);
                 if (taxableSalaryAfterStdDeduction > 1000000) {
 
@@ -439,8 +439,8 @@ return totalMonths1;
             double month = cn.get(Calendar.MONTH);
             System.out.println("date" + date + "month " + month);
             if (date == 1 && (month + 1) == 4) {
-                taxableSalaryAfterStdDeduction = salary - (pfSal * 12 *2) - profTax - standardDeduction;
-                taxableSalaryAfterStdDeduction=taxableSalaryAfterStdDeduction-deductionAmount;
+                taxableSalaryAfterStdDeduction = salary - profTax - standardDeduction;
+                taxableSalaryAfterStdDeduction=taxableSalaryAfterStdDeduction-deductionAmount+EmployeeDetails.varField1;;
                 System.out.println("sal after ded " + taxableSalaryAfterStdDeduction);
                 if (taxableSalaryAfterStdDeduction > 1000000) {
 
@@ -493,6 +493,7 @@ return totalMonths1;
                         daysSal = 0;
                     }
                     double monthsSal = (salary / 12) * months - (pfSal * months);
+                    System.out.println("varaible pay is " + EmployeeDetails.varField1);
                     double variablePay = EmployeeDetails.varField1;
                     double totalSal = daysSal + monthsSal + variablePay;
                     double totalYearlyPF = (pfSal / noOfDays) * noOfDaysSpent + (pfSal * months);
@@ -515,7 +516,7 @@ return totalMonths1;
 
 //  JOptionPane.showMessageDialog(new SalarySlip(),"break sal" + totalSal);
                 } catch (Exception e) {
-
+                    e.printStackTrace();
                 }
 
             }

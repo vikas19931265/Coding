@@ -280,6 +280,7 @@ public class Deductions extends javax.swing.JFrame {
          }
         else if(EmployeeDetails.finYear.equals("2019-20"))
          {
+             System.out.println("going for fin year 2019");
              SalarySlip.taxCalculatorDefaultSettingfin2019(SalarySlip.salary, SalarySlip.d, SalarySlip.pfSal);
          }
 
@@ -307,14 +308,18 @@ public class Deductions extends javax.swing.JFrame {
         if(SalarySlip.pfSal*totalMonths+otherAmount>150000)
         {
             grossSalIncludingPF=SalarySlip.salary-(150000-SalarySlip.pfSal*totalMonths);
-            deductionAmount=150000-SalarySlip.pfSal*totalMonths;
+//            deductionAmount=150000-SalarySlip.pfSal*totalMonths;
+            // correction
+            // adding new line
+            deductionAmount=150000;
 
         }
 
         else
         {
             grossSalIncludingPF=SalarySlip.salary-otherAmount;
-            deductionAmount=otherAmount;
+//            deductionAmount=otherAmount ;
+            deductionAmount=otherAmount + (SalarySlip.pfSal*totalMonths);
         }
         System.out.println("gross including pf now is" + grossSalIncludingPF);
 
