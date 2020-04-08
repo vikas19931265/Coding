@@ -27,7 +27,6 @@ public class SalarySlip extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(450, 290));
         setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
@@ -167,7 +166,7 @@ public class SalarySlip extends javax.swing.JFrame {
                     int date1 = c1.get(Calendar.DATE);
                     int month1 = c1.get(Calendar.MONTH); // here month starts from 0
                     int year1 = c1.get(Calendar.YEAR);
-                   // System.out.println("dat1" + date1 + "month" + month1 + "year" + year1);
+                   // System.out.printlnded("dat1" + date1 + "month" + month1 + "year" + year1);
                     LocalDate startDate1 = LocalDate.of(year1, month1 + 1, date1); // here month starts from 1
                    // System.out.println("stdate" + startDate1);
                     LocalDate endDate = LocalDate.of(2019, 3, 31);
@@ -240,8 +239,8 @@ double deductionAmount=0;
             double month = cn.get(Calendar.MONTH);
             System.out.println("date" + date + "month " + month);
             if (date == 1 && (month + 1) == 4) {
-                taxableSalaryAfterStdDeduction = salary - profTax - standardDeduction;
-                taxableSalaryAfterStdDeduction=taxableSalaryAfterStdDeduction-deductionAmount+EmployeeDetails.varField1;;
+                taxableSalaryAfterStdDeduction = salary - (pfSal * 12 *2) - profTax - standardDeduction;
+                taxableSalaryAfterStdDeduction=taxableSalaryAfterStdDeduction-deductionAmount + EmployeeDetails.varField1;;
                 System.out.println("sal after ded " + taxableSalaryAfterStdDeduction);
                 if (taxableSalaryAfterStdDeduction > 1000000) {
 
@@ -277,7 +276,8 @@ double deductionAmount=0;
                 }
 
                 JOptionPane.showMessageDialog(new SalarySlip(), "total tax:" + Math.round(totalTaxAfterCess) + "\n" + "approx monthly tax:" + Math.round(monthlyTax) + "\nprofessional tax(yearly):" + profTax);
-            } else {
+            }
+               else{
                 System.out.println("control reached");
                 System.out.println("salary is" + salary + "pf sal is "+pfSal);
                 Date startDate = d;
@@ -439,7 +439,7 @@ return totalMonths1;
             double month = cn.get(Calendar.MONTH);
             System.out.println("date" + date + "month " + month);
             if (date == 1 && (month + 1) == 4) {
-                taxableSalaryAfterStdDeduction = salary - profTax - standardDeduction;
+                taxableSalaryAfterStdDeduction = salary - (pfSal * 12 *2) - profTax - standardDeduction;
                 taxableSalaryAfterStdDeduction=taxableSalaryAfterStdDeduction-deductionAmount+EmployeeDetails.varField1;;
                 System.out.println("sal after ded " + taxableSalaryAfterStdDeduction);
                 if (taxableSalaryAfterStdDeduction > 1000000) {
@@ -462,7 +462,8 @@ return totalMonths1;
                 }
 
                 JOptionPane.showMessageDialog(new SalarySlip(), "total tax:" + Math.round(totalTaxAfterCess) + "\n" + "approx monthly tax:" + Math.round(monthlyTax) + "\nprofessional tax(yearly):" + profTax);
-            } else {
+            } 
+                else {
                 System.out.println("control reached");
                 Date startDate = d;
                 System.out.println("start date is " + startDate);
@@ -493,7 +494,6 @@ return totalMonths1;
                         daysSal = 0;
                     }
                     double monthsSal = (salary / 12) * months - (pfSal * months);
-                    System.out.println("varaible pay is " + EmployeeDetails.varField1);
                     double variablePay = EmployeeDetails.varField1;
                     double totalSal = daysSal + monthsSal + variablePay;
                     double totalYearlyPF = (pfSal / noOfDays) * noOfDaysSpent + (pfSal * months);
@@ -516,7 +516,7 @@ return totalMonths1;
 
 //  JOptionPane.showMessageDialog(new SalarySlip(),"break sal" + totalSal);
                 } catch (Exception e) {
-                    e.printStackTrace();
+
                 }
 
             }

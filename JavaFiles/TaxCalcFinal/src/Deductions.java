@@ -1,13 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author 714049
- */
 public class Deductions extends javax.swing.JFrame {
 
     /**
@@ -46,7 +37,6 @@ public class Deductions extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(500, 500));
         setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
@@ -280,7 +270,6 @@ public class Deductions extends javax.swing.JFrame {
          }
         else if(EmployeeDetails.finYear.equals("2019-20"))
          {
-             System.out.println("going for fin year 2019");
              SalarySlip.taxCalculatorDefaultSettingfin2019(SalarySlip.salary, SalarySlip.d, SalarySlip.pfSal);
          }
 
@@ -308,18 +297,14 @@ public class Deductions extends javax.swing.JFrame {
         if(SalarySlip.pfSal*totalMonths+otherAmount>150000)
         {
             grossSalIncludingPF=SalarySlip.salary-(150000-SalarySlip.pfSal*totalMonths);
-//            deductionAmount=150000-SalarySlip.pfSal*totalMonths;
-            // correction
-            // adding new line
-            deductionAmount=150000;
+            deductionAmount=150000-SalarySlip.pfSal*totalMonths;
 
         }
 
         else
         {
             grossSalIncludingPF=SalarySlip.salary-otherAmount;
-//            deductionAmount=otherAmount ;
-            deductionAmount=otherAmount + (SalarySlip.pfSal*totalMonths);
+            deductionAmount=otherAmount;
         }
         System.out.println("gross including pf now is" + grossSalIncludingPF);
 

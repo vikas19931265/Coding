@@ -6,13 +6,14 @@ class MonthDifference
     public static void main(String[] args)
     {
         LocalDate startDate =LocalDate.of(1993,8, 06);
-        LocalDate endDate =LocalDate.of(2019,2, 31);
+        LocalDate endDate =LocalDate.of(2019,2, 28);
         System.out.println(startDate);
         Period age=Period.between(startDate, endDate);
         int months=age.getMonths();
         months=months+1;
         int years=age.getYears();
         System.out.println(months + " " + years);
+       
     }
 }
 /*
