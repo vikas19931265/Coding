@@ -1,0 +1,42 @@
+<!-- /*
+Input from User in Array
+=====================================
+
+You can get input from user in an empty array :-
+• var geek= [ ];
+• var geek = new Array( );
+• var geek = new Array(3); // 3 is length of array
+
+*/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var noOfElements = prompt("number of elements");
+        var arrayOfElements = [];
+        for (let i = 0; i < noOfElements; i++) {
+            var enteredElements = prompt("enter elements");
+            arrayOfElements[i] = enteredElements;
+        }
+        document.write("elements entered are " + arrayOfElements);
+        arrayOfElements.forEach(function (value, name, index) {
+            document.write("value is " + value);
+        })
+    </script>
+</body>
+</html>
+
+
+<!-- 
+
+    elements entered are 1,2,3value is 1value is 2value is 3
+ -->
+

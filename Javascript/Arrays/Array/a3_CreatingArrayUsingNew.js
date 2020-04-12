@@ -1,3 +1,10 @@
+/* 
+
+This is same as creating array using the Array constructor.
+
+*/
+
+
 var employee= new Array();
 employee[0]="vikas";
 employee[1]="sachin";
