@@ -1,6 +1,18 @@
 /* 
+Concat method
+=========================
+
+
 The JavaScript array concat() method combines two or more arrays and returns a new string. 
 This method doesn't make any change in the original array.
+
+This method does not change the existing arrays, but instead returns a new array. 
+
+Return types
+=============
+
+returns a new string.
+
 */
 
 var employee1= new Array("vikas","sachin");

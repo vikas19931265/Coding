@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var elements=[10,20,30];
+         for(let i in elements)
+         {
+             console.log(i);
+         }
+         for(let i of elements)
+         {
+             console.log(i);
+         }
+         elements.forEach(function(value){console.log(value)})
+         console.log(typeof(elements));
+
+    </script>
+</body>
+</html>
+
+
+<!-- 
+0
+b4_ArrayTypeOfCheck.html:13 1
+b4_ArrayTypeOfCheck.html:13 2
+b4_ArrayTypeOfCheck.html:18 10
+b4_ArrayTypeOfCheck.html:18 20
+b4_ArrayTypeOfCheck.html:18 30
+b4_ArrayTypeOfCheck.html:21 10
+b4_ArrayTypeOfCheck.html:21 20
+b4_ArrayTypeOfCheck.html:21 30
+b4_ArrayTypeOfCheck.html:22 object
+
+ -->

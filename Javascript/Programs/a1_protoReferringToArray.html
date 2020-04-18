@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Student(name) {
+            this.name=name;
+        }
+        Student.prototype = Object.create(Array.prototype);
+        var stu= new Student("vikas");
+        console.log(new Student()._proto_); // object has __proto__ property referring to Array object
+    </script>
+</body>
+
+</html>
+
+<!-- 
+["name"]
+0: "name"
+length: 1
+__proto__: Array(0)
+length: 0
+constructor: ƒ Array()
+concat: ƒ concat()
+copyWithin: ƒ copyWithin()
+fill: ƒ fill()
+find: ƒ find()
+findIndex: ƒ findIndex()
+lastIndexOf: ƒ lastIndexOf()
+pop: ƒ pop()
+push: ƒ push()
+reverse: ƒ reverse()
+shift: ƒ shift()
+unshift: ƒ unshift()
+slice: ƒ slice()
+sort: ƒ sort()
+splice: ƒ splice()
+includes: ƒ includes()
+indexOf: ƒ indexOf()
+join: ƒ join()
+keys: ƒ keys()
+entries: ƒ entries()
+values: ƒ values()
+forEach: ƒ forEach()
+filter: ƒ filter()
+flat: ƒ flat()
+flatMap: ƒ flatMap()
+map: ƒ map()
+every: ƒ every()
+some: ƒ some()
+reduce: ƒ reduce()
+reduceRight: ƒ reduceRight()
+toLocaleString: ƒ toLocaleString()
+toString: ƒ toString()
+Symbol(Symbol.iterator): ƒ values()
+Symbol(Symbol.unscopables): {copyWithin: true, entries: true, fill: true, find: true, findIndex: true, …}
+__proto__:
+constructor: ƒ Object()
+__defineGetter__: ƒ __defineGetter__()
+__defineSetter__: ƒ __defineSetter__()
+hasOwnProperty: ƒ hasOwnProperty()
+__lookupGetter__: ƒ __lookupGetter__()
+__lookupSetter__: ƒ __lookupSetter__()
+isPrototypeOf: ƒ isPrototypeOf()
+propertyIsEnumerable: ƒ propertyIsEnumerable()
+toString: ƒ toString()
+valueOf: ƒ valueOf()
+toLocaleString: ƒ toLocaleString()
+get __proto__: ƒ __proto__()
+set __proto__: ƒ __proto__()
+
+
+ -->

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <p id="demo"></p>
+
+  <script>
+    var xhttp = new XMLHttpRequest();
+
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+      }
+    };
+    xhttp.open("GET", "policy1.xml", true);
+    xhttp.send();
+
+    function myFunction(xml) {
+      var xmlDoc = xml.responseXML;
+
+      states = ["", "AK - Alaska",
+        "AL - Alabama",
+        "AR - Arkansas",
+        "AZ - Arizona",
+        "CA - California",
+        "CO - Colorado",
+        "CT - Connecticut",
+        "DC - District of Columbia",
+        "DE - Delaware",
+        "FL - Florida",
+        "GA - Georgia",
+        "HI - Hawaii",
+        "IA - Iowa",
+        "ID - Idaho",
+        "IL - Illinois",
+        "IN - Indiana",
+        "KS - Kansas",
+        "KY - Kentucky",
+        "LA - Louisiana",
+        "MA - Massachusetts",
+        "MD - Maryland",
+        "ME - Maine",
+        "MI - Michigan",
+        "MN - Minnesota",
+        "MO - Missouri",
+        "MS - Mississippi",
+        "MT - Montana",
+        "NC - North Carolina",
+        "ND - North Dakota",
+        "NE - Nebraska",
+        "NH - New Hampshire",
+        "NJ - New Jersey",
+        "NM - New Mexico",
+        "NV - Nevada",
+        "NY - New York",
+        "OH - Ohio",
+        "OK - Oklahoma",
+        "OR - Oregon",
+        "PA - Pennsylvania",
+        "PR - Puerto Rico",
+        "RI - Rhode Island",
+        "SC - South Carolina",
+        "SD - South Dakota",
+        "TN - Tennessee",
+        "TX - Texas",
+        "UT - Utah",
+        "VA - Virginia",
+        "VT - Vermont",
+        "WA - Washington",
+        "WI - Wisconsin",
+        "WV - West Virginia",
+        "WY - Wyoming"]
+
+      console.log("policy number " + xmlDoc.getElementsByTagName("policyNumber")[0].textContent) + "<br>"
+      console.log(xmlDoc.getElementsByTagName("policyNumber")[0].textContent) + "<br>";
+      console.log(xmlDoc.getElementsByTagName("Contacts")[0].childNodes[1].textContent) + "<br>";
+      console.log(xmlDoc.getElementsByTagName("periodStartDate")[0].textContent) + "<br>";
+      console.log(xmlDoc.getElementsByTagName("periodEndDate")[0].textContent) + "<br>";
+      // first move to policy Roles node and then iterate through all the childrens
+    
+      let policyRoles=xmlDoc.getElementsByTagName("PolicyRoles")[0];
+      // now iterate through all the elements. 
+      
+
+
+      /* var ContactReferenceKey = xmlDoc.getElementsByTagName("ContactReferenceKey");
+      // for each contacts reference key iterate through all and find parent.
+      let insuredContactReferenceKey;
+      l1: for (let i = 0; i < ContactReferenceKey.length; i++) {
+        // find out the parent node
+        let parentElement = ContactReferenceKey[i].parentElement; // got policy roles
+        if (parentElement.nodeName === 'PolicyRoles') {
+          // find child of policy roles and find till roletype is found
+          let parentElementChilds = parentElement.childNodes;
+          for (let j = 0; j < parentElementChilds.length; j++) {
+            if (parentElementChilds[j].nodeName === 'roleType' && parentElementChilds[j].textContent === 'primaryNamedInsured') {
+              // then find out the contact reference key for this
+              for(let l=0;j < parentElementChilds.length; j++)
+              {
+                if (parentElementChilds[j].nodeName === 'ContactReferenceKey') {
+                  insuredContactReferenceKey=parentElementChilds[j].nodeName;
+                  break l1;
+              }
+            }
+
+          } */
+         /*  // for the parent element find out the child to see the  roletype tag
+
+          // find  the roletype
+
+          {
+            if (parentElementChilds[j].textContent === 'RoleType') {
+              // then find out the contact reference key for this
+              let contactReferenceKeyRoleType = parentElementChilds[j].getElementsByTagName("ContactReferenceKey")[0].textContent;
+              console.log("contactReferenceKeyRoleType");
+              break l1;
+
+            }
+          }
+
+
+
+        } */
+
+
+        /* let ContactReferenceKey = xmlDoc.getElementsByTagName("PolicyRoles")[0].childNodes[1].textContent;
+          var pos = 0;
+          for (let m = 0; m < xmlDoc.getElementsByTagName("Contacts").length; m++) {
+            if (xmlDoc.getElementsByTagName("Contacts")[m].childNodes[0].textContent === ContactReferenceKey) {
+              pos = m;
+              break;
+            }
+          }
+          let policyHolderElements = xmlDoc.getElementsByTagName("Contacts")[pos].childNodes;
+          for (let i = 0; i < policyHolderElements.length; i++) {
+            if (policyHolderElements[i].nodeName === 'Addresses') {
+              let addressChildElements = policyHolderElements[i].childNodes;
+              for (let j = 0; j < addressChildElements.length; j++) {
+                let addressChildElementValue = addressChildElements[j].nodeName;
+                if (addressChildElementValue.includes(":")) {
+                  let index = addressChildElementValue.indexOf(":");
+                  addressChildElementValue = addressChildElementValue.substring(index + 1, addressChildElementValue.length)
+                }
+                switch (addressChildElementValue.toLowerCase()) {
+                  case "addressline1":
+                    console.log (addressChildElements[j].textContent);
+                    break;
+                  case "addressline2":
+                    console.log(addressChildElements[j].textContent);
+                    break;
+                  case "addressline3":
+                    console.log(addressChildElements[j].textContent);
+                    break;
+                  case "city":
+                    console.log(addressChildElements[j].textContent);
+                    break;
+                  case "state":
+                    let state1 = addressChildElements[j].textContent.substring(0, 2);
+                    let setState;
+                    states.forEach(function (stat) {
+                      let state2 = stat.substring(0, 2);
+                      if (state2 === state1) {
+                        setState = stat;
+                      }
+                    })
+                    console.log(setState)
+                    // this.claim.policy.policyHolder.cdhId
+                    break;
+                  case "county":
+                   console.log(addressChildElements[j].textContent);
+                    break;
+                  case "zipcode5":
+                    console.log(addressChildElements[j].textContent);
+                    break;
+                  case "countrycode":
+                    console.log(addressChildElements[j].textContent);
+                    break;
+                }
+              }
+            }
+          } */
+      }
+  </script>
+
+</body>
+
+</html>

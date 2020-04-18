@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let rows = 2;
+        let cols = 2;
+        let emptyArray =  new Array(rows); // create 1 d array first  having 2 rows
+        // defining 2d array
+        for(let i=0 ; i<rows; i++)
+        {
+            emptyArray[i]= new Array(cols);
+            /* 
+                Iterate through each 1d array and refer it to another array holding
+                3 cols. This will create the structure of the 2d array.
+            */
+        }
+
+        for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < cols; j++) {
+                emptyArray[i][j] = prompt("enter name");
+            }
+        }
+
+        // displaying value
+        for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < cols; j++) {
+                document.write(emptyArray[i][j]+ "\t\t");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>
+

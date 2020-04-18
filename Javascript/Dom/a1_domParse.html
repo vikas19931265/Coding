@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+   <body>
+  <script>   
+
+var xhr = new XMLHttpRequest();
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+    if (xhr.readyState == XMLHttpRequest.DONE) {
+        console.log(xhr.responseText);
+    }
+}
+xhr.open('GET', "file:///C:/Users/Vikas.Gautam/Desktop/GitV2/Javascript/dom/policy.xml", true);
+console.log("the response is " + xhr.responseXML);
+</script>
+   </body>
+</html>
