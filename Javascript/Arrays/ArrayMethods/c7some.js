@@ -50,3 +50,12 @@ index : 2 val : 6 arr : 1,4,6,11,0,3
 index : 3 val : 11 arr : 1,4,6,11,0,3
 status is true
 */
+
+var values=[10,20,40,50];
+console.log(values.some((val)=> 
+{
+    console.log("valus is " + val);
+    return(val>50)
+})); 
+
+//o/p false

@@ -1,0 +1,77 @@
+<!-- 
+    Table Tag
+    ===============
+
+<table>…..</table> tags represents an HTML table.
+
+<th>….</th> tags is used to add a column heading in a column.
+    <tr>….</tr> tags represents a row in the table
+        <td>…..</td> tags are used to add data value in the column
+
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+        <table align="center" border ="1"  width ="50%" bgcolor="grey" cellpadding="7" cellspacing="1">  
+            <!-- 
+                table border is 1 inches
+                and table align is center.
+                and set table width to 60 percent. Here setting table width to 
+                60% mean thatt 60 percent of screen will be taken by table
+
+                cellpadding is for spacing  in the cell from the left right bottom  and center.
+                cellspacing is for spacing of the border of cell from the table left, right , bottom and center.
+             -->
+            <th bgcolor="red">Firstname</th>
+            <th bgcolor="red">Lastname</th>
+            <th bgcolor="red" width= "40%"> RollNo</th>
+            <!-- 
+               
+                width: to set the column width. Whatever number we give it will occupy
+                that percentage of current width.
+
+                so if there were already 3 columns then each held 33 percent of total
+                column width and here if i set 50 percent then the rest of two columns
+                will be set to 25 and 25 percentage.
+                
+             -->
+           
+            <th bgcolor="red"> Result </th>
+            <th bgcolor="red"> Address </th>
+            <tr>
+                <td align="center" colspan="2">vikas</td> <!--align table content to center-->
+                <!-- <td align="center" >gautam</td> -->
+                <!-- 
+                     Lets say if vikas dont have last name then in lastname empty will
+                     be shown so instead of showing empty we will merge the columns
+                     and show vikas only in firstname and lastname at middle.
+
+                     we need to merge here 2 columns hence show colspan=2
+
+                 -->
+                <td align ="center">412711205090</td> 
+                <td align ="center">pass</td>
+                <td align ="center" rowspan="2">7/4, kaiblar street</td>
+                <!-- 
+                    Here vikas and swati are having same address. Therefore instead
+                    of showing a record for both of them having address. We will merge
+                    the rows and show the the same address for both.
+
+                    We need to merge here two rows hence use attribute rowspan=2
+                 -->
+            <tr>
+                <td align="center">ajit</td>
+                <td align="center" >singh</td>
+                <td align ="center">412711205091</td>
+                <td align ="center">fail</td>
+            </tr>
+        </table>
+ </body>
+ </html>

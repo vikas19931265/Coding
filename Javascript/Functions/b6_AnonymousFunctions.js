@@ -60,7 +60,7 @@ var res= disp1(10);
         Here res will hold the function returned after calling the function disp
 
             res ----> function(num2) { return 10 + num2};
-            num is holding value 10 which was supplied as thea argument.
+            num is holding value 10 which was supplied as the argument.
   
   So res is holding a function expression , and in order to execute this we have to call like
   res()...since the anonymous function contains argument hence that has to be supplied as well.
