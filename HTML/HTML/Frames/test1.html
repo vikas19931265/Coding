@@ -1,0 +1,55 @@
+<!-- 
+
+    _blank
+    =========
+
+    <a href="test.html" target="_blank"> click here </a>
+
+    If we specify target as blank then content will open in new window
+
+    _top
+    ===========
+
+    If we specify the target at top then content will open in the full body.
+
+    _parent
+    =============
+
+    This is applicable for nested frames. If we specify the target as _parent then the content will open
+    in the parent frame.
+
+    _self
+    ============
+
+    This will open the conent in the same frame in which a href is triggering to . By default the target
+    field of a href is _self only.
+
+    target as framename
+    =========================
+
+    we can also set the target to framename to open the html content inside the frame.
+
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        <h2> Frame 2</h2>
+        <a href="test.html" target="ele" > click here </a>
+        <!-- 
+          
+          or target=_parent/_top/_blank/_self
+            
+          The value of target will change for different test cases.
+         -->
+</body>
+
+</html>

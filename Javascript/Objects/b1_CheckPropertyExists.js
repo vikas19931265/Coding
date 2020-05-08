@@ -1,7 +1,6 @@
 /* 
 Check Property Exists
 ===============================
-
 This can be done using typeOf operator
 
 */
@@ -35,6 +34,6 @@ var per=function Persons(pname)
 { 
     this.name=pname
 }
-var firstPerson= new per("ravi");
+var firstPerson= new per("ravi"); // Creating an object using special function which is also a constructor in js.
 console.log(firstPerson.name); // ravi
 console.log(firstPerson.hasOwnProperty("name"));

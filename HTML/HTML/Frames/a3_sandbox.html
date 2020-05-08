@@ -1,0 +1,45 @@
+<!-- 
+    Sandbox
+    ===========
+
+The restriction to the content such as disabling script or plugins given by the internal frame.
+
+An iframe with sandbox value as empty will have following restrictions: -
+
+    Forms can not be submitted
+
+    Framed document cannot navigate its top level parent
+
+    Scripts are disabled
+
+    Stops frame content from using plugins
+
+    New windows(browsing contexts) cannot be created by the framed document
+
+    Framed content will be treated from an unique origin. Hence it will not have access to data 
+    stored in earlier cookies
+
+    Disable APIs
+
+    Automatically triggered features like auto playing videos etc are blocked
+
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe src="#attribute" height="600" width="700" sandbox></iframe>
+</body>
+</html>
+
+<!-- 
+    since here we have specified sandbox with no attributes thefore all the above listed featuers
+    will be restricted.
+
+
+ -->

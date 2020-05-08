@@ -1,0 +1,30 @@
+<!-- 
+
+    Allow top navigation
+    ==========================
+
+    Allows the iframe content to navigate its top-level browsing context
+
+    There is property of anchor tag called target=top , if we specify the target like this then content to 
+    which a href tag is pointing to will open in the full body.
+
+    However if the link is inside the frame then . We need to allow this as one of property of iframe as well.
+
+    so we need to first specify in a href target property as top and sandbox property as allow same origin
+    + allow top navigation.
+
+    Please note that if we are specifying top attribute for a href then its important that if its in frame
+    then we must allow the top level navigation else it wont work.
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe src="test1.html" height="300" width="300" sandbox="allow-same-origin  allow-top-navigation"></iframe>
+</body>
+</html>
