@@ -1,0 +1,32 @@
+<!-- 
+    formmethod
+    =================
+    Defines the HTTP method for sending data to the action URL
+
+    It overrides the form method of form. It will be useful like for example
+    on press of one button we want GET type of action and one click of other
+    button we want POSt type action.
+
+ -->
+
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title> www.geekyshows.com </title>
+	</head>
+	<body>
+	
+		<form id="form1" method="GET"> 
+		
+			Name: <input type="text" name="name"><br><br>
+			Password: <input type="password" name="pass"><br><br>
+			City: <input type="text" name="city"><br><br>
+			Upload: <input type="file" name="file"><br> <br>
+			<input type="submit" value="Submit"><br><br>
+            <input type="submit" value="Admin Submit" 
+            formmethod="POST"><br><br> <!-- overrides GET -->
+			
+		</form>
+
+	</body>
+</html>

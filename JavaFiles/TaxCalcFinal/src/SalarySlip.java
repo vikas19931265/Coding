@@ -226,7 +226,7 @@ double deductionAmount=0;
            //System.out.println("salary after deduction " +salary);
         }
         if (readyForCalculation == 1) {
-            double standardDeduction = 40000;
+            double standardDeduction = TaxConstants.STANDARDDEDFIN19;
             double taxableSalaryAfterStdDeduction;
             double totalTax = 0;
             double totalTaxAfterCess = 0.0;
@@ -245,13 +245,13 @@ double deductionAmount=0;
                 if (taxableSalaryAfterStdDeduction > 1000000) {
 
                     totalTax = ((taxableSalaryAfterStdDeduction - 1000000) * (0.3)) + (500000 * (0.2)) + 12500 + cessCharges;
-                    cessCharges = (totalTax * 0.04);
+                    cessCharges = (totalTax * TaxConstants.CESSCHARGES);
                     totalTaxAfterCess = totalTax + cessCharges;
                     monthlyTax = totalTaxAfterCess / 12;
                 } else if (taxableSalaryAfterStdDeduction > 500000 && taxableSalaryAfterStdDeduction < 1000000) {
 
                     totalTax = ((taxableSalaryAfterStdDeduction - 500000) * (0.2)) + 12500 + cessCharges;
-                    cessCharges = (totalTax * 0.04);
+                    cessCharges = (totalTax * TaxConstants.CESSCHARGES);
                     totalTaxAfterCess = totalTax + cessCharges;
                     System.out.println("total tax " + totalTaxAfterCess);
                     monthlyTax = totalTaxAfterCess / 12;
@@ -266,7 +266,7 @@ double deductionAmount=0;
               {
               totalTax= (taxableSalaryAfterStdDeduction-250000)*0.05;
               }
-                    cessCharges = (totalTax * 0.04);
+                    cessCharges = (totalTax * TaxConstants.CESSCHARGES);
                     totalTaxAfterCess = totalTax + cessCharges;
                     System.out.println("total tax " + totalTaxAfterCess);
                     monthlyTax = totalTaxAfterCess / 12;
@@ -426,7 +426,7 @@ return totalMonths1;
           // System.out.println("salary after deduction " +salary);
         }
     if (readyForCalculation == 1) {
-            double standardDeduction = 50000;
+            double standardDeduction = TaxConstants.STANDARDDEDFIN20;
             double taxableSalaryAfterStdDeduction;
             double totalTax = 0;
             double totalTaxAfterCess = 0.0;
@@ -442,24 +442,35 @@ return totalMonths1;
                 taxableSalaryAfterStdDeduction = salary - (pfSal * 12 *2) - profTax - standardDeduction;
                 taxableSalaryAfterStdDeduction=taxableSalaryAfterStdDeduction-deductionAmount+EmployeeDetails.varField1;;
                 System.out.println("sal after ded " + taxableSalaryAfterStdDeduction);
-                if (taxableSalaryAfterStdDeduction > 1000000) {
-
-                    totalTax = ((taxableSalaryAfterStdDeduction - 1000000) * (0.3)) + (500000 * (0.2)) + 12500 + cessCharges;
-                    cessCharges = (totalTax * 0.04);
+                try {
+                    totalTax = Slabs.readSlabs(taxableSalaryAfterStdDeduction);
+                    System.out.println("got total tax" + totalTax);
+                    cessCharges = (totalTax * TaxConstants.CESSCHARGES);
                     totalTaxAfterCess = totalTax + cessCharges;
                     monthlyTax = totalTaxAfterCess / 12;
-                } else if (taxableSalaryAfterStdDeduction > 500000 && taxableSalaryAfterStdDeduction < 1000000) {
+                } catch (Exception e) {
 
-                    totalTax = ((taxableSalaryAfterStdDeduction - 500000) * (0.2)) + 12500 + cessCharges;
-                    cessCharges = (totalTax * 0.04);
-                    totalTaxAfterCess = totalTax + cessCharges;
-                    System.out.println("total tax " + totalTaxAfterCess);
-                    monthlyTax = totalTaxAfterCess / 12;
-
-                } else {
-                    totalTaxAfterCess = 0.0;
-                    monthlyTax = 0;
+                    e.printStackTrace();
                 }
+
+//                if (taxableSalaryAfterStdDeduction > 1000000) {
+//
+//                    totalTax = ((taxableSalaryAfterStdDeduction - 1000000) * (0.3)) + (500000 * (0.2)) + 12500 + cessCharges;
+//                    cessCharges = (totalTax * TaxConstants.CESSCHARGES);
+//                    totalTaxAfterCess = totalTax + TaxConstants.CESSCHARGES;
+//                    monthlyTax = totalTaxAfterCess / 12;
+//                } else if (taxableSalaryAfterStdDeduction > 500000 && taxableSalaryAfterStdDeduction < 1000000) {
+//
+//                    totalTax = ((taxableSalaryAfterStdDeduction - 500000) * (0.2)) + 12500 + cessCharges;
+//                    cessCharges = (totalTax * TaxConstants.CESSCHARGES);
+//                    totalTaxAfterCess = totalTax + cessCharges;
+//                    System.out.println("total tax " + totalTaxAfterCess);
+//                    monthlyTax = totalTaxAfterCess / 12;
+//
+//                } else {
+//                    totalTaxAfterCess = 0.0;
+//                    monthlyTax = 0;
+//                }
 
                 JOptionPane.showMessageDialog(new SalarySlip(), "total tax:" + Math.round(totalTaxAfterCess) + "\n" + "approx monthly tax:" + Math.round(monthlyTax) + "\nprofessional tax(yearly):" + profTax);
             } 
@@ -537,7 +548,7 @@ public static void taxCalculation18(double totalSal, double month, double TotalY
         System.out.println("profTax" + newProfTax);
         double totalMonths = month + monthsInFraction;
         System.out.println("total months including fraction " +totalMonths);
-        double standardDeduction = 40000;
+        double standardDeduction = TaxConstants.STANDARDDEDFIN19;
         System.out.println("new total sal is" + totalSal);
         double taxableSalaryAfterStdDeduction = totalSal - standardDeduction - TotalYearlyPF - (newProfTax);
         System.out.println("taxable salary after deduction" + taxableSalaryAfterStdDeduction);
@@ -548,13 +559,13 @@ public static void taxCalculation18(double totalSal, double month, double TotalY
         if (taxableSalaryAfterStdDeduction > 1000000) {
 
             totalTax = ((taxableSalaryAfterStdDeduction - 1000000) * (0.3)) + (500000 * (0.2)+12500) ;
-            cessCharges = (totalTax * 0.04);
+            cessCharges = (totalTax * TaxConstants.CESSCHARGES);
             totalTaxAfterCess = totalTax + cessCharges;
             monthlyTax = totalTaxAfterCess / totalMonths;
         } else if (taxableSalaryAfterStdDeduction > 500000 && taxableSalaryAfterStdDeduction < 1000000) {
 
             totalTax = ((taxableSalaryAfterStdDeduction - 500000) * (0.2)+12500) ;
-            cessCharges = (totalTax * 0.04);
+            cessCharges = (totalTax * TaxConstants.CESSCHARGES);
             totalTaxAfterCess = totalTax + cessCharges;
             System.out.println("total tax " + totalTaxAfterCess);
             monthlyTax = totalTaxAfterCess / totalMonths;
@@ -574,7 +585,7 @@ public static void taxCalculation18(double totalSal, double month, double TotalY
               totalTax= (taxableSalaryAfterStdDeduction-250000)*0.05;
               }
               System.out.println("total tax coming is "+ totalTax);
-              cessCharges=(totalTax*0.04);
+              cessCharges=(totalTax*TaxConstants.CESSCHARGES);
               totalTaxAfterCess=totalTax+cessCharges;
               System.out.println("total tax "+ totalTaxAfterCess);
               monthlyTax=totalTaxAfterCess/totalMonths;
@@ -615,7 +626,7 @@ public static void taxCalculation18(double totalSal, double month, double TotalY
         System.out.println("month in fractin " +monthsInFraction);
         double totalMonths = month + monthsInFraction;
         System.out.println("total months including fraction " +totalMonths);
-        double standardDeduction = 50000;
+        double standardDeduction = TaxConstants.STANDARDDEDFIN20;
         System.out.println("new total sal is" + totalSal);
         double taxableSalaryAfterStdDeduction = totalSal - standardDeduction - TotalYearlyPF - (newProfTax);
         System.out.println("taxable salary after deduction" + taxableSalaryAfterStdDeduction);
@@ -624,28 +635,39 @@ public static void taxCalculation18(double totalSal, double month, double TotalY
         double monthlyTax = 0;
         double cessCharges = 0;
 
-        if (taxableSalaryAfterStdDeduction > 1000000) {
-
-            totalTax = ((taxableSalaryAfterStdDeduction - 1000000) * (0.3)) + (500000 * (0.2)+12500);
-            cessCharges = (totalTax * 0.04);
-            totalTaxAfterCess = totalTax + cessCharges;
-            monthlyTax = totalTaxAfterCess / totalMonths;
-        } else if (taxableSalaryAfterStdDeduction > 500000 && taxableSalaryAfterStdDeduction < 1000000) {
-
-            totalTax = ((taxableSalaryAfterStdDeduction - 500000) * (0.2)+12500) ;
-            cessCharges = (totalTax * 0.04);
-            totalTaxAfterCess = totalTax + cessCharges;
-            System.out.println("total tax " + totalTaxAfterCess);
-            monthlyTax = totalTaxAfterCess / totalMonths;
-
-        }
-
-
-        else {
-            totalTax=0;
-                  totalTaxAfterCess=0;
-                  monthlyTax=0;
-        }
+           try
+           {
+          totalTax= Slabs.readSlabs(taxableSalaryAfterStdDeduction);
+          cessCharges = (totalTax * TaxConstants.CESSCHARGES);
+          totalTaxAfterCess = totalTax + cessCharges;
+          monthlyTax = totalTaxAfterCess / totalMonths;
+           }
+           catch(Exception e)
+           {
+               
+           }
+//        if (taxableSalaryAfterStdDeduction > 1000000) {
+//
+//            totalTax = ((taxableSalaryAfterStdDeduction - 1000000) * (0.3)) + (500000 * (0.2)+12500);
+//            cessCharges = (totalTax * TaxConstants.CESSCHARGES);
+//            totalTaxAfterCess = totalTax + cessCharges;
+//            monthlyTax = totalTaxAfterCess / totalMonths;
+//        } else if (taxableSalaryAfterStdDeduction > 500000 && taxableSalaryAfterStdDeduction < 1000000) {
+//
+//            totalTax = ((taxableSalaryAfterStdDeduction - 500000) * (0.2)+12500) ;
+//            cessCharges = (totalTax * 0.04);
+//            totalTaxAfterCess = totalTax + cessCharges;
+//            System.out.println("total tax " + totalTaxAfterCess);
+//            monthlyTax = totalTaxAfterCess / totalMonths;
+//
+//        }
+//
+//
+//        else {
+//            totalTax=0;
+//                  totalTaxAfterCess=0;
+//                  monthlyTax=0;
+//        }
 
         if(totalTax<0)
               {

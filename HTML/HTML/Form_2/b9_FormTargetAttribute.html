@@ -1,0 +1,35 @@
+<!-- 
+    Form Target Attribute
+    =======================
+
+    Specifies where to display the response that is received after submitting the form
+
+    blank
+    _self
+    _parent
+    _top
+    framename
+
+ -->
+
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title> www.geekyshows.com </title>
+	</head>
+	<body>
+	
+		<form id="form1" action="user.html" target="_blank">
+		
+			Name: <input type="text" name="name"><br><br>
+			Password: <input type="password" name="pass"><br><br>
+			City: <input type="text" name="city"><br><br>
+			Upload: <input type="file" name="file"><br> <br>
+			<input type="submit" value="Submit"><br><br>
+            <input type="submit" value="Admin Submit" formtarget="_self"><br><br>
+            <!-- overrides form _blank target on click of admin submit button -->
+			
+		</form>
+
+	</body>
+</html>

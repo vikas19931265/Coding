@@ -1,0 +1,34 @@
+<!-- 
+    Form Action
+    =================
+
+It contains a URL that defines where to send the data after submitting the form.
+
+It specifies the physical address of the server to which the user data should be 
+redirected at the click of the submit button.
+
+action=http://www.something.com/something.html
+action=“page.html”
+action=“gotform.php”
+action=“example.asp”
+
+If the action attribute is omitted, the action is set to the current page.
+
+ -->
+
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title> www.geekyshows.com </title>
+	</head>
+	<body>
+	
+		<form action="gotform.php" accept-charset="UTF-8">
+			Name: <input type="text" name="name"><br><br>
+			Password: <input type="password" name="pass"><br><br>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+		</form>
+
+	</body>
+</html>

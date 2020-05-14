@@ -1,0 +1,36 @@
+<!-- 
+    Enctype
+    =========
+
+    It specifies how the browser encodes the data before it sends it to the server. 
+
+    application/x-www-form-urlencoded
+        All characters are encoded before sent (spaces are converted to "+" symbols, 
+        and special characters are converted to ASCII HEX values)
+
+    multipart/form-data( frequent used)
+        No characters are encoded. This value is required when you are using
+        forms that have a file upload control
+
+    text/plain
+            Spaces are converted to "+" symbols, but no special characters are encoded
+
+ -->
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title> www.geekyshows.com </title>
+	</head>
+	<body>
+	
+		<form enctype="multipart/form-data" action="gotform.php" method="POST" accept-charset="UTF-8">
+		
+			Name: <input type="text" name="name"><br><br>
+			Password: <input type="password" name="pass"><br><br>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+			
+		</form>
+
+	</body>
+</html>

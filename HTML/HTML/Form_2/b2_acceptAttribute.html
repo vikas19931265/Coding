@@ -1,0 +1,31 @@
+<!-- 
+    Accept Attribute
+    =================
+
+    Specifies the types of files that the server accepts 
+
+    file_extensionaudio/*video/*image/*media_type
+
+    Its used with only input type of "file". When we specify this attribute that particular type
+    will be shown to upload.
+ -->
+
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title> www.geekyshows.com </title>
+	</head>
+	<body>
+	
+		<form>
+		
+			Name: <input type="text" name="name"><br><br>
+			Password: <input type="password" name="pass"><br><br>
+			City: <input type="text" name="city"><br><br>
+			Upload File: <input type="file" name="file" accept="image/*"><br><br>
+			<input type="submit" value="Submit">
+			
+		</form>
+
+	</body>
+</html>

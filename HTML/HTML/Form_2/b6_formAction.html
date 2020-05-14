@@ -1,0 +1,31 @@
+<!-- 
+    Form Action
+    =================
+
+    Specifies the URL of the file that will process the input
+    control when the form is submitted 
+
+    form action input attribute overrides the Form attribute of form.
+
+    This will be useful when in one form if we have two buttons, and one click
+    of first button we want to redirect to some place and click of other
+    we want to redirect to some other place.
+ -->
+
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title> www.geekyshows.com </title>
+	</head>
+	<body>
+		<form id="form1" action="user.html">
+		
+			Name: <input type="text" name="name"><br><br>
+			Password: <input type="password" name="pass"><br><br>
+			City: <input type="text" name="city"><br><br>
+			<input type="submit" value="Submit"><br><br>
+			<input type="submit" value="Admin Submit" formaction="admin.html"><br><br>
+		</form>
+
+	</body>
+</html>

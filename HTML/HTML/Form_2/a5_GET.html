@@ -1,0 +1,31 @@
+<!-- 
+    GET
+    ========
+
+GET sends the data as part of the URL.
+
+Appends form-data into the URL in name/value pairs
+
+The length of a URL is limited 2048 characters
+
+Never use GET method if you have password or other sensitive information to be sent to the server.
+
+Useful for form submissions where a user want to bookmark the result
+
+GET is better for non-secure data, like query strings in Google
+
+GET can't be used to send binary data, ex:-  images or word documents
+
+<form action=“some.php” method = “GET”>
+
+If we use an invalid value for the method attribute of the <form> tag, the browser will use the default value GET.
+
+If we use GET in our form and try to go back using back button then no data is lost but
+in POST the data is reset.
+
+Caching is possible.
+
+Data is visible to everyone from url.
+
+Only ASCII chars are allowed.
+ -->

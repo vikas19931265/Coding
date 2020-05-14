@@ -11,37 +11,24 @@ class Tasks implements Runnable
     
     Tasks(int num)
     {
-        
         this.num=num;
-    
     }
 
+    @Override
     public void run()
     {
-        
         double factorial=1;
-        
-                
-        
-        
           for(double i= num ; i>=1; i--)
         {
             factorial= factorial*i;
             
-            
         }
-    
           System.out.println("Factorial calculation by Thread " +Thread.currentThread().getName()+" of number  "+ num +"..."+ factorial);
-    
     }
-
-
 }
 
 class Drver
 {
-    
-    
     public static void main(String[] args)
     {
         Tasks[] task= new Tasks[10];
@@ -50,22 +37,16 @@ class Drver
         {
             task[i]= new Tasks(i);
         }
-        
-        
        // Tasks[] task= { new Tasks(5), new Tasks(4), new Tasks(100
        // )};
         
         ExecutorService service =Executors.newFixedThreadPool(10);
-        
         for( Tasks s: task)
         {
             
             service.submit(s);
         }
-    
         service.shutdown();
-    
-    
     }
 }
 

@@ -2,17 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/Vikas.Gautam/Desktop/GitV2/JavaFiles/thisAndsuper/src/thisVssuperMixed/j.SuperandThisCannotBeTakenTogether.java</file>
-            <file>file:/C:/Users/Vikas.Gautam/Desktop/GitV2/JavaFiles/thisAndsuper/src/this_keyword/a.whatisthiskeyword.java</file>
-            <file>file:/C:/Users/Vikas.Gautam/Desktop/GitV2/JavaFiles/thisAndsuper/src/thisVssuperMixed/r.superMethodInConstructorShouldMatchParentClassConstructor_Case2.java</file>
-            <file>file:/C:/Users/Vikas.Gautam/Desktop/GitV2/JavaFiles/thisAndsuper/src/thisVssuperMixed/i.SuperAndThisMethodCannotBeTakenOutsideConstructor.java</file>
-            <file>file:/C:/Users/Vikas.Gautam/Desktop/GitV2/JavaFiles/thisAndsuper/src/SuperKeyword/ByDefaultSuperConstructorOfParentClassCalledInsideChildConstructor.java</file>
-            <file>file:/C:/Users/Vikas.Gautam/Desktop/GitV2/JavaFiles/thisAndsuper/src/this_keyword/l.thisKeyword_returningInstance.java</file>
-            <file>file:/C:/Users/Vikas.Gautam/Desktop/GitV2/JavaFiles/thisAndsuper/src/thisVssuperMixed/k.CallTosuper_thisMustBeFirstStatementAfterConstructor.java</file>
-            <file>file:/C:/Users/Vikas.Gautam/Desktop/GitV2/JavaFiles/thisAndsuper/src/SuperKeyword/SuperKeyword.java</file>
-            <file>file:/C:/Users/Vikas.Gautam/Desktop/GitV2/JavaFiles/thisAndsuper/src/thisVssuperMixed/h.SuperAndThisKeywordNotApplicableToStaticArea.java</file>
-            <file>file:/C:/Users/Vikas.Gautam/Desktop/GitV2/JavaFiles/thisAndsuper/src/thisVssuperMixed/s1.RecommandedToHave1NoArgConstructorWhenChildClassContainParameterisedConst.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
