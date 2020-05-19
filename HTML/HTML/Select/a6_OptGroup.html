@@ -1,0 +1,53 @@
+<!-- 
+    OptGroup
+    ===========
+The <optgroup>….</optgroup> tag helps to group related choices, when we have a llong list of option to select from the drop-down list created using the <select> tag.
+<select>
+	<optgroup>
+		<option>……</option>
+	</optgroup>
+
+	<optgroup>
+		<option>……</option>
+	</optgroup>
+
+</select>
+ 
+Attributes
+===============
+
+disabled: specifies that an option should be disabled.
+label: specifies a label for option group.
+
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> www.geekyshows.com </title>
+	</head>
+	<body>
+	<form>	
+		Name:<input type="text" name="name"><br><br>
+		Course:<select>
+			<optgroup label="Programming">
+			<option value="Java">Java Programming</option>
+			<option value="C">C Programming</option>
+			<option value="C#">C Sharp</option>
+			<option value="C++">C++ Programming</option>
+			</optgroup>
+			<optgroup label="Web Designing">
+			<option value="HTML">HTML</option>
+			<option value="CSS">CSS</option>
+			<option value="JavaScript">JS</option>
+			<option value="PHP">PHP</option>
+			</optgroup>
+		</select>
+		<br><br><input type="submit" value="Submit">
+	</form>		
+	</body>
+</html>
+
+
+
+ 

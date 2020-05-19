@@ -1,0 +1,43 @@
+/* 
+    CSS Syntax
+    =================
+
+    Selector { Property1: property1-value; Property2: property2-value; PropertyN: propertyN-value; }
+
+Selector { 
+	Property1: property1-value; 
+	Property2: property2-value; 
+	PropertyN: propertyN-value; 
+	}
+
+Selector - 
+    The selector points to the HTML element or HTML Tag you want to style. 
+    It is used to find or select HTML elements based on their element name, id, class, attribute,
+     and more.
+
+Property – 
+    It indicates that these properties are defined for that element or selector. 
+
+Property-Value – These are values assigned to Properties.
+
+Element Selectors
+====================
+
+The element selector selects elements based on the element name.
+Syntax: - 
+Selector { Property1: property1-value; Property2: property2-value; PropertyN: propertyN-value; }
+
+Ex: -
+p { color: red; font-size: 22px;}
+h1 {color: blue; font-size: 22em;}
+
+
+    */
+
+    h6
+    {
+        font-style: italic;
+        color:burlywood;
+        font-size: 4em;
+        font-stretch: expanded;
+    }
