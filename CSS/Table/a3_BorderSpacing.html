@@ -1,0 +1,57 @@
+<!-- 
+    Border Spacing
+    =================
+
+    This property is used to set the distance between the borders of adjacent cells. 
+    This will work only when border-collapse is separated. 
+    
+    We can set this property to horizontal spacing and vertical spacing in the form of cm, px.
+ 
+Ex:- 
+table { border-collapse: separated; border-spacing: 5px 10px; }
+
+ -->
+
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Geeky Shows</title>
+    <style>
+        table,
+        th,
+        td {
+            border: solid black;
+        }
+        table
+        {
+            border-collapse: separate;
+            border-spacing: 50px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Result</th>
+        <tr>
+            <td>Rahul</td>
+            <td>101</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>Rani</td>
+            <td>102</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>Sumit</td>
+            <td>103</td>
+            <td>Pass</td>
+        </tr>
+    </table>
+</body>
+</html>

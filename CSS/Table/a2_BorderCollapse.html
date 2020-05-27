@@ -1,0 +1,61 @@
+<!-- 
+    Border Collapse
+    ================
+
+    This property sets whether the table borders are collapsed into a 
+    single border or detached. 
+    
+    We can set this property to separate (default) and collapse.
+Ex:- 
+table { border-collapse: collapse; }
+
+ -->
+
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Geeky Shows</title>
+    <style>
+        table,
+        th,
+        td {
+            border: solid black;
+        }
+        table
+        {
+            border-collapse: collapse;
+            /* 
+                border collapse property applicable only to table
+                and not to th and td
+             */
+        }
+
+      
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Result</th>
+        <tr>
+            <td>Rahul</td>
+            <td>101</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>Rani</td>
+            <td>102</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>Sumit</td>
+            <td>103</td>
+            <td>Pass</td>
+        </tr>
+    </table>
+</body>
+</html>

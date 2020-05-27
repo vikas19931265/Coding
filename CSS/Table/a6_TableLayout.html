@@ -1,0 +1,47 @@
+<!-- 
+    Table Layout
+    =============
+
+    This property is used to set table layout. We can set this property either auto (default) or fixed .
+Ex: -
+table { table-layout: fixed; }
+
+ -->
+
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    border-collapse: separate;
+	width: 100%;
+    border: 1px solid black;
+	table-layout: fixed;
+
+    /* 
+        We have given one td with to 10 and one to 90 and if table layout is fixed then
+        content will remain fixed to 10 percentage only.If any extra content is there then it
+        will be overlapped:
+
+        If auto then the td size will automatically get adjusted according to the content supplied. 
+    
+     */
+} 
+
+td {
+    border: 1px solid black;
+}
+
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <td width="10%">RahulKumarSharma</td>
+    <td width="90%">LalpurRanchi</td>
+  </tr>
+</table>
+
+</body>
+</html>

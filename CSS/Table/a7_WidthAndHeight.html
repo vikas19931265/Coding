@@ -1,0 +1,66 @@
+<!-- 
+    Table width and height
+    =========================
+
+We use width and height property to set table width and height.
+We can also set table heading (th) width and height. 
+table { width: 100% ;}
+th { height: 10px; }
+
+
+ -->
+
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Geeky Shows</title>
+    <style>
+        table,
+        th,
+        td {
+            border: solid black;
+        }
+        table
+        {
+            border-collapse: collapse;
+            /* 
+                Setting to 50  percentage will make the table occupy 50 percentage of the screen.
+             */
+        }
+       th{
+           padding: 50px;
+       }
+       td{
+            text-align: center;
+            padding: 50px;
+        }
+
+      
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Result</th>
+        <tr>
+            <td>Rahul</td>
+            <td>101</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>Rani</td>
+            <td>102</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>Sumit</td>
+            <td>103</td>
+            <td>Pass</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!-- 
+    Empty cells
+    ===============
+
+    This property is used to set whether or not to display borders and background on empty 
+    cells in a table. It will work only if the border-collapse is set to separate.
+    
+    We can set this property to show (default) or hide.
+Ex:- 
+table { empty-cells: hide; }
+
+ -->
+
+ <!DOCTYPE html>
+ <html>
+ 
+ <head>
+     <title>Geeky Shows</title>
+     <style>
+         table,
+         th,
+         td {
+             border: solid black;
+         }
+         table
+         {
+             border-collapse: separate;
+             empty-cells: hide;
+         }
+         caption{
+             caption-side: bottom;
+             /* 
+                by default caption is at the top.
+              */
+         }
+     </style>
+ </head>
+ <body>
+     <table>
+         <caption> Student Details </caption>
+         <th>Name</th>
+         <th>Roll</th>
+         <th>Result</th>
+         <tr>
+             <td>Rahul</td>
+             <td></td>
+             <td>Pass</td>
+         </tr>
+         <tr>
+             <td>Rani</td>
+             <td>102</td>
+             <td></td>
+         </tr>
+         <tr>
+             <td>Sumit</td>
+             <td>103</td>
+             <td>Pass</td>
+         </tr>
+     </table>
+ </body>
+ </html>

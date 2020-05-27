@@ -1,0 +1,59 @@
+<!-- 
+    Visibility collapse is applicable only to the table
+
+ -->
+
+ <!DOCTYPE html>
+ <html>
+     <head>
+         <title>Geeky Shows</title>
+         <style>
+             table, th, td{ 
+                 border: solid blue;
+                 border-collapse: collapse;
+                 }
+             tr.colps { visibility: collapse;}
+             /* 
+                 Rani row will get collapsed.
+              */
+              
+              td.sumit{
+                  visibility: collapse;;;
+                  /* 
+                    This is working like hidden..it will not free up space .
+                    To free up space we can use display:none to eat up the space
+                   */
+              }
+                 
+         </style>
+     </head>
+     <body>
+ 
+         <table>
+             <th>Name</th>
+             <th>Roll</th>
+             <th>Result</th>
+ 
+             <tr>
+                 <td>Rahul</td>
+                 <td>101</td>
+                 <td>Pass</td>
+             </tr>
+ 
+             <tr class="colps">
+                 <td>Rani</td>
+                 <td>102</td>
+                 <td>Pass</td>
+             </tr>
+ 
+             <tr>
+                <td>sumit</td> 
+                <td class="sumit">Sumit</td>
+                 <td>103</td>
+                 <td>Pass</td>
+             </tr>
+ 
+         </table>
+ 
+     </body>
+ </html>

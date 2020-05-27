@@ -1,0 +1,60 @@
+<!-- 
+    Block
+    ===========
+
+    block – When we set this value, element always starts on a new line and takes up the full 
+    width available (we can set width/height)
+
+
+
+ -->
+
+
+ <!-- 
+    Inline
+    ============
+
+    inline – When we set this value, the element does not start on a new line and only takes up
+    as much width as necessary (we can’t set width/height it won’t work)
+
+
+ -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         a{
+             display: block;
+             width: 10%;
+             border: 1px solid black;
+         }
+     </style>
+ </head>
+ <body>
+     <a href="#">Home</a>
+     <a href="#">About</a>
+     <a href="#">Contact Us</a>
+
+     <!-- 
+        a href is inline tag . Content in this take as much space needed and we cant set the width.
+        to set its width and height , we can force it to become block level
+
+      -->
+
+      <p>
+          I am first paragraph
+      </p>
+      <p>
+          I am second paragraph
+      </p>
+      <!-- 
+          paragraph is block level tag and hence new line will be given and width and height can be set.
+          We can change its display to inline type as well.
+       -->
+ </body>
+ </html>
