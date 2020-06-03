@@ -115,7 +115,11 @@ public class EmployeeDetails extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         jLabel2.setText("Financial Year");
 
-        finField.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2018-19", "2019-20" }));
+        finField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                finFieldActionPerformed(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         jLabel3.setText("Bonus/Variable/Incentive");
@@ -248,6 +252,7 @@ public class EmployeeDetails extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
+        
         String name = nameField.getText();
         String nameStatus = "";
         String companyStatus = "";
@@ -310,11 +315,11 @@ public class EmployeeDetails extends javax.swing.JFrame {
                     Calendar c = Calendar.getInstance();
                     c.setTime(d);
                     double year = c.get(Calendar.YEAR);
-                    if (year == 2019 || year == 2020 || year==2018) {
+                    if (year == (TaxCalculator.getCurrentDate())) {
                         dateStatus = "valid";
                     } else {
                         TaxCalculator.d.setVisible(true);
-                        JOptionPane.showMessageDialog(new EmployeeDetails(), "Tax calculation applicable for FY 2018-19 and 2019-20!!");
+                        JOptionPane.showMessageDialog(new EmployeeDetails(), "Tax calculation applicable for FY : " + TaxCalculator.getCurrentDate()+"-"+ Integer.toString(TaxCalculator.getCurrentDate()+1).substring(2,4));
                         
                     }
 
@@ -382,7 +387,7 @@ public class EmployeeDetails extends javax.swing.JFrame {
 
             }
             System.out.println("nameStatus:" +nameStatus+ "companystatus: " + companyStatus+"datestatus :"+ dateStatus+" alliswell :" +allIsWell +"salnottax:" +salNotTaxable+" fin year:" +financialYear +"metro status " +metroStatus + "VPstatus : " +VP );
-            if (nameStatus.equals("valid") && companyStatus.equals("valid") && dateStatus.equals("valid") && financialYear.equals("2018-19") && metroStatus.equals("valid") && allIsWell.equals("valid") && VP.equals("valid")) {
+            if (nameStatus.equals("valid") && companyStatus.equals("valid") && dateStatus.equals("valid")  && metroStatus.equals("valid") && allIsWell.equals("valid") && VP.equals("valid")) {
 
                 System.out.println("entered insdie");
                 if (dedField.getSelectedItem().equals("No")) {
@@ -409,7 +414,7 @@ public class EmployeeDetails extends javax.swing.JFrame {
                 TaxCalculator.d.setVisible(false);
             }
 
-            if (nameStatus.equals("valid") && companyStatus.equals("valid") && dateStatus.equals("valid") && financialYear.equals("2019-20") && metroStatus.equals("valid") && allIsWell.equals("valid")&&VP.equals("valid")) {
+            if (nameStatus.equals("valid") && companyStatus.equals("valid") && dateStatus.equals("valid") && metroStatus.equals("valid") && allIsWell.equals("valid")&&VP.equals("valid")) {
 
                 if (dedField.getSelectedItem().equals("No")) {
                     if(salary-50000>500000)
@@ -702,7 +707,7 @@ public class EmployeeDetails extends javax.swing.JFrame {
                 professionalTax = 200 * 2;
             }
         }
-        if (salNotTaxable.equals("yes") && financialYear.equals("2019-20")) {
+        if (salNotTaxable.equals("yes") ) {
             JOptionPane.showMessageDialog(new EmployeeDetails(), "your salary is not taxable!!\n professional tax(yearly): " + professionalTax);
         }
 
@@ -711,6 +716,10 @@ public class EmployeeDetails extends javax.swing.JFrame {
     private void stateFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stateFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_stateFieldActionPerformed
+
+    private void finFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_finFieldActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -744,6 +753,12 @@ public class EmployeeDetails extends javax.swing.JFrame {
             }
         });
     }
+    public javax.swing.JComboBox<String> getCombo()
+    {
+        return finField;
+    }
+    
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel company;

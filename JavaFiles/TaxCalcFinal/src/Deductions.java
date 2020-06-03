@@ -268,10 +268,8 @@ public class Deductions extends javax.swing.JFrame {
              System.out.println("going for fin year 18");
              SalarySlip.taxCalculatorDefaultSettingfin2018(SalarySlip.salary, SalarySlip.d, SalarySlip.pfSal);
          }
-        else if(EmployeeDetails.finYear.equals("2019-20"))
-         {
+       
              SalarySlip.taxCalculatorDefaultSettingfin2019(SalarySlip.salary, SalarySlip.d, SalarySlip.pfSal);
-         }
 
     }//GEN-LAST:event_ContinueActionPerformed
 

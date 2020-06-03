@@ -131,11 +131,9 @@ public class SalarySlip extends javax.swing.JFrame {
         taxCalculatorDefaultSettingfin2018(SalarySlip.salary, SalarySlip.d, SalarySlip.pfSal);
 
         }
-         if(EmployeeDetails.finYear.equals("2019-20"))
-        {
+        
         taxCalculatorDefaultSettingfin2019(SalarySlip.salary, SalarySlip.d, SalarySlip.pfSal);
 
-        }
 
 
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -369,7 +367,7 @@ public static double monthsCalculator19(double salary, Date d, double pfSal)
                    // System.out.println("dat1" + date1 + "month" + month1 + "year" + year1);
                     LocalDate startDate1 = LocalDate.of(year1, month1 + 1, date1); // here month starts from 1
                    // System.out.println("stdate" + startDate1);
-                    LocalDate endDate = LocalDate.of(2021, 3, 31);
+                    LocalDate endDate = LocalDate.of(TaxCalculator.getCurrentDate()+1, 3, 31);
                    // System.out.println(endDate);
                     Period age = Period.between(startDate1, endDate);
                     double months = age.getMonths();
@@ -489,7 +487,7 @@ return totalMonths1;
                     System.out.println("dat1" + date1 + "month" + month1 + "year" + year1);
                     LocalDate startDate1 = LocalDate.of(year1, month1 + 1, date1); // here month starts from 1
                     System.out.println("stdate" + startDate1);
-                    LocalDate endDate = LocalDate.of(2021, 3, 31);
+                    LocalDate endDate = LocalDate.of(TaxCalculator.getCurrentDate()+1, 3, 31);
                     System.out.println(endDate);
                     Period age = Period.between(startDate1, endDate);
                     double months = age.getMonths();

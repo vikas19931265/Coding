@@ -13,6 +13,10 @@ public class Slabs {
     public static double readSlabs(double amount) throws FileNotFoundException, IOException
     {
        
+       if(amount<=500000)
+       {
+           return 0.0;
+       }
         FileReader fr= new FileReader("C:\\Users\\Vikas.Gautam\\Desktop\\GitV2\\JavaFiles\\TaxCalcFinal\\src\\slabs.txt");
         BufferedReader br = new BufferedReader(fr);
         String line= br.readLine();

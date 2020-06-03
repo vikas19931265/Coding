@@ -1,0 +1,412 @@
+<!-- 
+    Absolute Position
+    ===========================
+
+    When we set absolute position for an element, element is positioned to the nearest
+     positioned ancestor. 
+     
+     If there is no positioned ancestor then it follow the normal position according to browser. 
+
+div {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid red;
+} 
+
+
+div {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid red;
+}
+
+absolute positions are used when element is inside another parent element. Like example h2 is inside div 
+In that case if we set position of h2 as absolute and set left right and top properties then the new position
+of h2 will be counted from the parent position that is div.
+
+
+ -->
+
+
+ <html>
+	<head>
+		<title>Hello CSS</title>
+		<style>
+			div{
+					position: fixed;
+					width: 400px;
+					height: 200px;
+					background-color: red;
+			}
+			h1 {
+					position: relative;
+					top: 50px;
+					
+					
+			}
+		</style>
+	</head>
+	<body>
+		<div> 
+			<h1>www.geekyshows.com</h1>
+		</div>
+		<p>This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos
+			This is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videosThis is demo paragraph. If you have any doubt related to this tutorials
+			you can ask your question in the comment section below. thank you for watching
+			my videos 
+		</p>
+	
+	</body>
+</html>
