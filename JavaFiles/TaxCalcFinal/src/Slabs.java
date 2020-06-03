@@ -17,7 +17,7 @@ public class Slabs {
        {
            return 0.0;
        }
-        FileReader fr= new FileReader("C:\\Users\\Vikas.Gautam\\Desktop\\GitV2\\JavaFiles\\TaxCalcFinal\\src\\slabs.txt");
+        FileReader fr= new FileReader("./src/slabs.txt");
         BufferedReader br = new BufferedReader(fr);
         String line= br.readLine();
         double totalAmount=0.0;
