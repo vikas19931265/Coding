@@ -1,0 +1,38 @@
+<!-- 
+    Using opacity we can make image or text transparent
+
+ -->
+
+
+ <html>							
+	<head>
+		<title>Hello CSS</title>
+		<style>	
+			div{ width: 300px;
+				 height: 200px;
+				 background-color: rgba(192, 192, 64, 0.2);
+
+                 /* 
+                    In the background color if we want to make only the color transparent and not the texxt
+                    then we have to specify like this.
+
+                    range of opacity is from 0.0 to 1.0 with 0 having least visibility and 1 is completely visible.
+                 
+                  */
+
+
+				 }
+			img {
+					width: 300px;
+					height: 200px;
+					opacity: 0.5;
+			}
+		</style>
+	</head>
+	<body>
+			<div>
+				<p>This is Paragraph This is Paragraph This is Paragraph</p>
+			</div>
+			<img src="picture.jpg"></img>
+	</body>
+</html>

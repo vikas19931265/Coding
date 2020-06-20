@@ -1,0 +1,68 @@
+<!-- 
+    Rule
+    =========
+
+    Whenever an inline element is followed by the block element it starts in new line and not in the line
+    where the block level element was flowing.
+
+    Example if we write a label after the paragraph, then paragraph is a block level element, and label is
+    inline element and hence since label is followed by block level element therefore it comes in new line.
+
+
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+       div {
+            border:1px solid black;
+            text-align: center;
+            padding:10px;
+            margin-top:20px;
+            margin-right:500px;
+            margin-left:500px;
+            background-color: orange;
+        }
+
+        input {
+            display: inline;
+        }
+        form label{
+            display:block
+            /* 
+                label is block level element now. Any element followed by this will appear in new line
+                so text field will appear in new line  . 
+                After this again label will come and since label is now block level therefore again it 
+                will come in new line following which the element will be again in new line.
+
+             */
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div>
+        <form>
+            <label>Firstname</label>
+            <input type="text"  name="first">
+            <label>Lastname</label>
+            <input type="text" name="last">
+            <label>Mobile</label>
+            <input type="text" name="mobile">
+        </form>
+    </div>
+    <!-- 
+        Label is inblock element so all the elements will be shown in one line
+
+     -->
+
+</body>
+
+</html>

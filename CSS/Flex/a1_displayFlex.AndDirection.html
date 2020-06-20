@@ -1,0 +1,78 @@
+<!-- 
+    Display- Flex
+    ==================
+
+    Display as element as block level flex container.
+
+
+    Flex Direction
+    ===================
+
+    This property is used to set the direction of flexible items. If 
+    the element is not a flexible item, the flex-direction property has no effect.
+     We can set this property to row (default), row-reverse, column, column-reverse.
+
+     Ex: - 
+div { flex-direction: column-reverse; }
+
+row - This is used to display the flexible items horizontally as row
+row-reverse - This is used to display the flexible items same as row, but in reverse order
+column - This is used to display the flexible items vertically as column	
+column-reverse - This is used to display the flexible items same as column, but in reverse order
+
+
+ -->
+
+ <html>
+	<head>
+		<title>Hello CSS</title>
+		<style>
+			#container {
+                        border: 2px solid black;
+                        display:flex;
+                        flex-direction: row-reverse;
+                        /* 
+                            If we give flex by default direction is row
+                            therefore elements will be shown in one row.
+                        */
+                        }
+                        
+						
+			.dev { 
+					text-align: center;
+					padding: 20px;
+					margin: 10px;
+					}
+					
+			#firstdiv{
+						
+						background-color: pink;
+						}
+			
+			#secdiv{
+						background-color: blue;
+						}
+			
+			#thirddiv{
+						background-color: red;
+						}
+						
+			#fourthdiv{
+						background-color: green;
+						}
+						
+			#fifthdiv{
+						background-color: orange;
+						}
+		</style>
+	</head>
+	<body>
+			<div id="container">
+				<div id="firstdiv" class="dev">1</div>
+				<div id="secdiv" class="dev">2</div>
+				<div id="thirddiv" class="dev">3</div>
+				<div id="fourthdiv" class="dev">4</div>
+				<div id="fifthdiv" class="dev">5</div>
+			</div>
+	</body>
+</html>

@@ -1,0 +1,79 @@
+<!-- 
+    Align items
+    ==============
+
+    This property is used to specify the default alignment for items inside the container. 
+    This property can be override using align-self property for each item. We can set this property to stretch (default), center, flex-start, flex-end, baseline.
+Ex: - 
+div { align-items: center; }
+
+stretch – This is used to stretch the item to fit the container
+center – This is used to position the item at the center of the container
+flex-start - This is used to position the item at the beginning of the container
+flex-end - This is used to position the item at the end of the container
+baseline - This is used to position the item at the baseline of the container
+
+
+ -->
+
+ <html>
+	<head>
+		<title>Hello CSS</title>
+		<style>
+			#container {
+						border: 2px solid black;
+						display: flex;
+						height: 300px;
+						justify-content: flex-end;
+                        align-items: center;
+                        
+                        /* 
+                            align items will work top to bottom not from left to right like in justify
+                            using both the combination of justify and align items we can place the item
+                            any where inside the div tag in screen. 
+
+                            align items align items from top to bottom.
+
+                        
+                        */
+						}
+						
+			.dev { 
+					text-align: center;
+					padding: 20px;
+					margin: 10px;
+					}
+					
+			#firstdiv{
+						
+						background-color: pink;
+						}
+			
+			#secdiv{
+						background-color: blue;
+						}
+			
+			#thirddiv{
+						background-color: red;
+						font-size: 30px;
+						}
+						
+			#fourthdiv{
+						background-color: green;
+						}
+						
+			#fifthdiv{
+						background-color: orange;
+						}
+		</style>
+	</head>
+	<body>
+			<div id="container">
+				<div id="firstdiv" class="dev">1</div>
+				<div id="secdiv" class="dev">2</div>
+				<div id="thirddiv" class="dev">3</div>
+				<div id="fourthdiv" class="dev">4</div>
+				<div id="fifthdiv" class="dev">5</div>
+			</div>
+	</body>
+</html>

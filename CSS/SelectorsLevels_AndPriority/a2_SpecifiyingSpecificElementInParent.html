@@ -1,0 +1,38 @@
+<!-- 
+/* Id = 100
+  Class = 50
+Elemeent = 10 */									   									 
+
+
+
+ -->
+
+
+ <html>								
+	<head>
+		<title>Hello CSS</title>
+		<style>
+			 #maindiv p{color: red;}
+             /* 
+                Here in maindiv tag, if p tag is found we wan to set its color to red.
+              */
+			 #maindiv .cl { color: blue;}
+             /* 
+                This is going to have more priority then above as id and class combined property is more
+                then the combined property of id and element
+              */
+			 p{ color: green;}
+
+             /* 
+                lowest priority amongst all.
+              */
+			 
+		</style>
+	</head>
+	<body>
+		<div id="maindiv">
+			<p class="cl"> This is para </p>
+			
+		</div>
+	</body>
+</html>

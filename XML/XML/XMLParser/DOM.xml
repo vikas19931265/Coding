@@ -1,0 +1,25 @@
+<!-- 
+DOM
+==================
+
+** In this lecture you will master the concepts of the DOM parser. 
+DOM stands for Document Object Model. As the name itself says, a DOM parser loads the entire 
+XML document into the system's memory and then it gives us hierarchical access to the entire XML
+document. 
+
+** The advantages of a DOM parser or when to use a DOM parser is when we need to access the
+ different parts of the XML in our application or in our program at the same time.
+
+** Also it is hierarchical. That is, we access the parent element first and then we go through 
+all the child elements within that element.
+
+** The disadvantages of DOM parser or when not to use the DOM parser is when you have strict memory
+ issues. That is, when you are using mobile devices or whenever you have whenever you don't have a 
+ lot of memory,you cannot load the entire XML document into the memory because of space reasons.That is when you shouldn't use a 
+ DOM parser. The DOM standard is defined by World Wide Web Consortium.
+
+
+ -->
+
+
+<?xml version="1.0" encoding="UTF-8"?>

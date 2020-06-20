@@ -1,0 +1,36 @@
+<!-- 
+
+JAXP
+==========
+
+
+** If you are a Java developer, parsing an XML document for your Java application, you have a lot
+of choice. Especially in the open source world,there are several parsers that are available and 
+you can use any of these parsers from Apache, Oracle,weblogic, websphere or some other third party
+which provides a new parser tomorrow.
+
+** So if your architect decides that we have to switch from our current parser which we are 
+using today to another new parser which came out in the market, we as developers cannot learn 
+the API provided by each of these parsers.
+
+** That is where JAXP comes into picture. JAXP which stands for Java API for XML Parsing,
+is a standard from Oracle. Oracle defines an API which we as developers will learn.
+And this API then is implemented by the parser implementors.
+
+** So anyone who wants to create a XML parser for the Java world will implement the JAXP standard.
+
+** The JAXP standard also defines a specification which is nothing but a set of rules
+ or guidelines in plain english for these parser implementors, so that they will not be
+ incompatible or they will be compatible with each other.
+
+** So if we switch from one parser today to another parser tomorrow which implements the JAXP standard,
+ we need not change anything in our code because we only use the JAXP API in our code.
+  We just switch the underlying parser.
+
+** The current version of JAXP is 1.6. Starting JAXP 1.4,it has the support for STAX pull based parsing. In the next few lectures,
+
+
+
+ -->
+<?xml version="1.0" encoding="UTF-8"?>
+

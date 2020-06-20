@@ -1,0 +1,68 @@
+<!-- 
+    Flex - Wrap
+    ==============
+
+    This property is used to specify whether the flexible items should wrap or not. 
+    If the elements are not flexible items, the flex-wrap property has no effect. 
+    
+    We can set this property to nowrap (default), wrap and wrap-reverse. 
+Ex: - 
+div { flex-wrap: wrap; }
+
+nowrap – It specifies that the flexible items will not wrap
+wrap – It specifies that the flexible items will wrap if necessary
+wrap-reverse – It specifies that the flexible items will wrap, if necessary, in reverse order
+
+
+ -->
+
+ <html>
+	<head>
+		<title>Hello CSS</title>
+		<style>
+			#container {
+						border: 2px solid black;
+                        display: flex;
+                        width: 100px;
+						flex-wrap: wrap;
+						}
+						
+			.dev { 
+					text-align: center;
+					padding: 20px;
+					margin: 10px;
+					height: 30px;
+					}
+					
+			#firstdiv{
+						
+						background-color: pink;
+						}
+			
+			#secdiv{
+						background-color: blue;
+						}
+			
+			#thirddiv{
+						background-color: red;
+						}
+						
+			#fourthdiv{
+						background-color: green;
+						}
+						
+			#fifthdiv{
+						background-color: orange;
+						}
+		</style>
+	</head>
+	<body>
+			<div id="container">
+				<div id="firstdiv" class="dev">1</div>
+				<div id="secdiv" class="dev">2</div>
+				<div id="thirddiv" class="dev">3</div>
+				<div id="fourthdiv" class="dev">4</div>
+				<div id="fifthdiv" class="dev">5</div>
+			</div>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	CDATA BLOCKS
+	==============
+	
+	we can include any text, any characters inside our XML document and parser will ignore it.
+	The syntax for the CDATA block
+		
+		starts with a less then symbol followed by
+		NOT, square bracket, and then text CDATA,
+		followed by
+		another square bracket.
+		And it ends with two square brackets and a greater than symbol. 
+		
+Within  square bracket , we can type in any text and the XML parser will ignore it.
+
+These CDATA blocks are usually used to give examples.
+
+We can include an entire XML document here or we can include a piece of our XML document like the DateOfIssue 
+in our case. 
+
+We can have any number of CDATA blocks within our document anywhere but we cannot nest 
+one CDATA block inside another CDATA block.
+
+ -->
+
+<DriverLicense status="suspened"> <!--This is an attribute here.  -->
+	<Number>12345</Number>
+	<Firstname>Vikas&lt;</Firstname>
+	<!-- here we are trying to use special character.  -->
+	<Lastname>Gautam</Lastname>
+	<Vehicletype></Vehicletype>
+	<DateOfBirth>06-sep-1993</DateOfBirth>
+	<DateOfIssue>01-Apr-2014</DateOfIssue>
+	<ExpirtyDate>01-Apr-2020</ExpirtyDate>
+	<Photo location="server/filename"></Photo> <!--This is empty element must have closing tag.  -->
+	
+	<![CDATA[
+			<DateOfIssue>01-Apr-2014</DateOfIssue>
+	]]>
+	
+</DriverLicense>

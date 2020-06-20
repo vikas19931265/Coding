@@ -1,0 +1,46 @@
+<!-- 
+    Adjacent Selector
+    ======================
+
+    The adjacent selector applies property to its adjacent( right ) element of specified element. 
+    Please note that it will apply the property to all its childrens and its grandchildrent.
+
+ -->
+
+ <html>							
+	<head>
+		<title>Hello CSS</title>
+		<style>
+			#maindiv p + h1 { color: red;}
+		</style>
+	</head>
+	<body>
+	
+		<div id="maindiv">
+			<h1> main Heading </h1>
+			<p> This is main para </p>
+            <h1> After p Heading </h1>
+            <!-- 
+                h1 is adjacent(right) of p so apply the property
+
+             -->
+			<p> This is main para </p>
+			<div>
+                <h1> child Heading </h1>
+                <!-- 
+                    dont apply here , h1 is adjacent but not to the right.
+                 -->
+                <p> This is child para </p>
+                <h1> child Heading </h1>
+
+                <!-- 
+                    apply the property here.
+
+                 -->
+			</div>
+			<h1> child Heading </h1>
+		</div>
+		<h2> Head</h2>
+			
+	</body>
+</html>

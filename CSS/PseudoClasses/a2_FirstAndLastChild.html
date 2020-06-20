@@ -1,0 +1,65 @@
+<!-- 
+    First Child
+    ============
+
+    This will set CSS rule to every first element of selector which is someone’s child.  
+
+    Last child
+    ===============
+
+    This will set CSS rule to every last element of selector which is someone’s child.  
+
+
+
+ -->
+
+ <!-- 
+    Here in below example to all the div tags having p element apply the first p tag color to red.
+    and last child of div having p element to red.
+
+    Please note that if first element inside the div tag is not p, then this property will not be applied.
+    In that case we have to use first of type or lastoftype.
+
+  -->
+ <html>							
+	<head>
+		<title>Hello CSS</title>
+		<style>
+			div p:first-child { color: blue;}
+			div p:last-child { color: red;}
+		</style>
+	</head>
+	<body>
+		<p>This is boyd child </p>
+		<div>
+			<p>This is 1st Child of 1st Div </p>
+			<p>This is paragraph This is paragraph This is paragraph 
+			This is paragraph This is paragraph This is paragraph
+			This is paragraph This is paragraph This is paragraph</p>
+			<p> This is last child of 1st Div </p>
+		</div>
+		<hr>
+		<div>
+			<p>This is 1st Child of 2nd Div </p>
+			<p>This is paragraph This is paragraph This is paragraph 
+			This is paragraph This is paragraph This is paragraph
+			This is paragraph This is paragraph This is paragraph</p>
+			<p> This is last child of 2nd Div </p>
+		</div>
+		<hr>
+		<div>
+			<p>This is 1st Child of 3rd Div </p>
+			<p>This is paragraph This is paragraph This is paragraph 
+			This is paragraph This is paragraph This is paragraph
+			This is paragraph This is paragraph This is paragraph</p>
+			<p> This is last child of 3rd Div </p>
+		</div>
+		<hr>
+		
+		<p>This is body </p>
+		<p>This is paragraph This is paragraph This is paragraph 
+			This is paragraph This is paragraph This is paragraph
+			This is paragraph This is paragraph This is paragraph</p>
+		<p> This is last body child </p>
+	</body>
+</html>

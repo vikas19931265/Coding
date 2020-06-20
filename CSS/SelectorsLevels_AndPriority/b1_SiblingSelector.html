@@ -1,0 +1,39 @@
+<!-- 
+    Sibling selector
+    ================
+
+    This will apply the property to sibling of specified element. For the element to be sibilng
+    it must share the same parent.
+
+
+ -->
+
+ <html>							
+	<head>
+		<title>Hello CSS</title>
+		<style>
+			h1 ~ p { color: red;}
+
+            /* 
+                Apply property to h1 sibling.
+             */
+		</style>
+	</head>
+	<body>
+	
+		<div>
+			<p> This is para </p>
+		</div>
+		
+		<h1> This is Heading </h1>
+		<p> Div Siv </p>
+		<p> Div Siv </p>
+        <p> Div Siv </p>
+        
+        <!-- 
+            All p tags are h1 siblings as they share the same parent that is body
+
+         -->
+			
+	</body>
+</html>

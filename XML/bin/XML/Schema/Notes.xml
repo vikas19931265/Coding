@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+
+Sequence
+=============
+
+In complex type if we are using sequence tag then all the elements which are schema should be present inside the
+xml and also there should not be any change in the order.
+
+
+Choice
+=======
+
+In chose either of the element should be present.
+
+-->

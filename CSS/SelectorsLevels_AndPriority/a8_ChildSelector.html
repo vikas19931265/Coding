@@ -1,0 +1,35 @@
+<!-- 
+    Child selector
+    =====================
+
+    Apply a specific property to all its direct childrens.
+
+
+ -->
+
+ <html>							
+	<head>
+		<title>Hello CSS</title>
+		<style>
+			 #maindiv > h1 { color: red;}
+
+             /* 
+                in main div to h1 that is all its direct childrens apply the color red. Please note that
+                it is incapable of applying the property to its grandchildrens
+              */
+		</style>
+	</head>
+	<body>
+	
+		<div id="maindiv">
+			<h1> main Heading </h1>
+			<p> This is main para </p>
+			<p> This is main para </p>
+			<div>
+				<h1> child Heading </h1>
+				<p> This is child para </p>
+			</div>
+		</div>
+			
+	</body>
+</html>

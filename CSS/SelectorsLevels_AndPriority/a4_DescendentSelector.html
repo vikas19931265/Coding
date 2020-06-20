@@ -1,0 +1,35 @@
+<!-- 
+    Descendent Selector
+    =====================
+
+    Here we can have many level of selection using div tag. If we want to apply a property
+    to a specific section of div tag then we can go for this.
+
+
+ -->
+
+ <html>
+	<head>
+		<title>Hello CSS</title>
+		<style>
+			 #childdiv h1{ color: red;}
+
+             /* 
+                Here in childdiv tag we want to apply the property to the p tag and make it red.
+             
+              */
+		</style>
+	</head>
+	<body>
+	
+		<div id="maindiv">
+			<p>I am para1 and child of main div</p>
+			<div id="childdiv">
+				<p>This is 1st Para and child of child div</p>
+				<h1>This is heading1 and child of child div</h1>
+			</div>
+			<h2> I am heading2 and child of main div </h2>
+			<p>I am para2 and child of main div</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- 
+Parsers
+==========
+
+** When we build software applications to read and write XML documents either as a configuration file or
+to exchange data with other software applications,
+
+** we as developers need not deal with the low level API to read that XML line by line and then
+ check for the well-formedness and validation and all that. We will simply use a XML parser to read
+  and write the XML document in an easy fashion. 
+  
+** An XML parser is a software that provides an API, Application Programmers Interface that
+ we as developers will use when we build our application.And it makes our job as a developer very 
+ easy to read and write the XML document.It can also check for the well-formedness of the XML which 
+ it does and then can also validate the XML against a schema file if it has one.
+
+** There are three types of parser APIs or parsers.
+
+ Starting with DOM which is a tree based parser,
+ SAX which is a event based parser
+ and finally the most recent, 
+ STAX which is a pull based parser.  
+
+
+ -->
+
+<?xml version="1.0" encoding="UTF-8"?>

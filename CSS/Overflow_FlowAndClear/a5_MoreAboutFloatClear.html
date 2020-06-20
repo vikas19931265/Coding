@@ -1,0 +1,92 @@
+<!-- 
+    Float
+    =========
+
+    Whenever we apply float to any of the child elements of the div tag. Then those child elements leave
+    the parent element.
+
+    Example if we have three div elements 1, 2 and 3 places one below the another.
+
+    If we apply float right property to this then elements will leave the parent container and start floating
+    to the right.
+
+    However what ever elements which were appearing below it will take the positions left by the preivous 
+    elements as result we will see a collapse.
+
+    Therefore after applying float , we need to clear the float. Whatever elements below which start moving
+    up we can apply clear left. But due to this the Dom will increase in size.
+
+    So the trick to clear float is 
+
+    #Container::after
+    {
+        content: " ";
+        display:inline;
+        clear :both
+    }
+
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #wrapper {
+        border: 1px solid pink;
+    }
+
+    #main {
+        border: solid green;
+    }
+
+    #main:after {
+        content: " ";
+        display: block;
+        clear: both;
+    }
+
+    #bottom {
+        border: solid;
+        height: 60px;
+        width: 40px;
+        background: pink;
+        /* clear:left;
+        We can do this to clear the elements which start collapsing due to float. But if
+        we do this then it will become tedius as we need to apply it to number of elements so
+        use the trick here.
+         */
+    }
+
+    .box {
+        border: 1px solid black;
+        height: 60px;
+        width: 40px;
+        background-color: red;
+        float: right;
+        direction: ltr;
+    }
+    
+</style>
+
+<body>
+    <div id="wrapper">
+        <div id="wrap">
+            <div id="main">
+                <div class="box"> 1 </div>
+                <div class="box"> 2</div>
+                <div class="box">3 </div>
+            </div>
+        </div>
+        <div id="bottom">
+            4
+        </div>
+    </div>
+</body>
+
+</html>

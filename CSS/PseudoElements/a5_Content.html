@@ -1,0 +1,58 @@
+<!-- 
+    Content
+    ==========
+
+    It is used to generated content at run time dynamically with the ::before and ::after pseudo-elements,
+     to insert generated content. 
+Ex:- 
+p::before { content: “Geekyshows Says ”;}
+
+similarly for after.
+
+
+Some text we can generate examples
+========================================
+
+normal
+none
+counter
+attr(attribute)
+string
+open-quote
+close-quote
+no-open-quote
+no-close-quote
+url(url)
+
+
+ -->
+
+
+ <html>							
+	<head>
+		<title>Hello CSS</title>
+		<style>
+			p::before{content: url(book.png);}
+
+            /* 
+                we can similarly insert a string or a quote
+             */
+		</style>
+	</head>
+	<body>
+	
+		<p>This is body Para This is body Para This is body Para
+		This is body Para This is body Para This is body Para This is body Para 
+		This is body Para This is body Para This is body ParaThis is body Para
+		</p>
+		<p>This is body Para This is body Para This is body Para
+		This is body Para This is body Para This is body Para This is body Para 
+		This is body Para This is body Para This is body ParaThis is body Para
+		</p>
+		<h1> This is heading</h1>
+		
+		
+	</body>
+</html>
+
+

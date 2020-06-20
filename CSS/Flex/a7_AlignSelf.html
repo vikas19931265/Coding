@@ -1,0 +1,73 @@
+<!-- 
+    Align self
+    =============
+
+    This property is used to specify the alignment for the selected item inside the flexible container. 
+    The align-self property overrides the flexible container's align-items property.
+    
+    We can set this property to auto (default), stretch, center, flex-start, flex-end, baseline. 
+Ex: -
+div {align-self: center;}
+
+auto - The element inherits its parent container's align-items property, or "stretch" if it has no parent container
+stretch – This is used to position the element to fit the container
+center - This is used to position the element at the center of the container	
+flex-start - This is used to position the element at the beginning of the container
+flex-end - This is used to position the element at the end of the container
+baseline - This is used to position the element at the baseline of the container
+
+
+ -->
+
+ <html>
+	<head>
+		<title>Hello CSS</title>
+		<style>
+			#container {
+						border: 2px solid black;
+						height: 300px;
+						display: flex;
+						align-items: flex-end;
+						}
+						
+			.dev { 
+					text-align: center;
+					padding: 20px;
+					margin: 10px;
+					height: 20px;
+					
+					}
+					
+			#firstdiv{
+						
+						background-color: pink;
+						}
+			
+			#secdiv{
+						background-color: blue;
+						align-self: flex-start;
+						}
+			
+			#thirddiv{
+						background-color: red;
+						}
+						
+			#fourthdiv{
+						background-color: green;
+						}
+						
+			#fifthdiv{
+						background-color: orange;
+						}
+		</style>
+	</head>
+	<body>
+			<div id="container">
+				<div id="firstdiv" class="dev">1</div>
+				<div id="secdiv" class="dev">2</div>
+				<div id="thirddiv" class="dev">3</div>
+				<div id="fourthdiv" class="dev">4</div>
+				<div id="fifthdiv" class="dev">5</div>
+			</div>
+	</body>
+</html>

@@ -26,7 +26,7 @@ Example
 
  enum Beer23
 {
-    KF,KO,RC,FO;
+    KF,KO,RC,FO,SO;
     
     Beer23()
     {

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0
+        }
+
+        #wrapper {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #header {
+            height: 100px;
+            padding: 10px;
+            background-color: #f1c233;
+        }
+
+        #logo {
+            width: 150px;
+            height: 100px;
+            background-color: #cc0000;
+        }
+
+        #navbar {
+            height: 30px;
+            background-color: #000066;
+            margin-top: 10px;
+            text-align: right;
+            padding: 10px;
+        }
+
+        #container {
+            border: 3px solid red;
+            margin-top: 10px
+        }
+
+        #left-panel {
+            width: 25%;
+            height: 600px;
+            background-color: #cc9900;
+            float: left;
+        }
+
+        #container::after {
+            content: " ";
+            clear: both;
+            display: block;
+
+        }
+
+        #right-section {
+            width: 75%;
+            height: 600px;
+            background-color: #006600;
+            float: right;
+         
+        }
+
+        #navbar>ul>li {
+            display: inline-block;
+            width: 80px;
+            font-size: 21px;
+            
+        }
+        .link {
+            text-decoration: none;
+            color:white;
+            padding:10px
+        }
+        #footer {
+            height: 100px;
+            background-color: #000066;
+            margin-top: 10px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="logo">
+
+            </div>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a class="link" href="a1_BasicLayout.html">Home</a></li>
+                <li><a class="link" href="#">About</a></li>
+                <li><a class="link" href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="container">
+            <div id="left-panel">
+
+            </div>
+            <div id="right-section">
+
+            </div>
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!-- 
+    Align Content
+    ================
+
+    This property is used to modify the behavior of the flex-wrap property. 
+    It is similar to align-items, but instead of aligning flex items, it aligns flex lines.
+    
+    There must be multiple lines of items for this property to have any effect. We can set this property to stretch (default), center, flex-start, flex-end, space-between, space-around.
+Ex: - 
+div { align-content: center; }
+
+stretch - Lines stretch to take up the remaining space
+center - Lines are packed toward the center of the flex container
+flex-start - Lines are packed toward the start of the flex container
+flex-end - Lines are packed toward the end of the flex container
+space-between - Lines are evenly distributed in the flex container
+space-around - Lines are evenly distributed in the flex container, with half-size spaces on either end
+
+
+When screen gets shorter and items start appearing in mulitple line this property can be used.
+ -->
+
+ <html>
+	<head>
+		<title>Hello CSS</title>
+		<style>
+			#container {
+						border: 2px solid black;
+						display: flex;
+						height: 300px;
+						flex-wrap: wrap;
+						align-content: center;
+						}
+						
+			.dev { 
+					text-align: center;
+					padding: 20px;
+					margin: 10px;
+					height: 30px;
+					}
+					
+			#firstdiv{
+						
+						background-color: pink;
+						}
+			
+			#secdiv{
+						background-color: blue;
+						}
+			
+			#thirddiv{
+						background-color: red;
+						}
+						
+			#fourthdiv{
+						background-color: green;
+						}
+						
+			#fifthdiv{
+						background-color: orange;
+						}
+		</style>
+	</head>
+	<body>
+			<div id="container">
+				<div id="firstdiv" class="dev">1</div>
+				<div id="secdiv" class="dev">2</div>
+				<div id="thirddiv" class="dev">3</div>
+				<div id="fourthdiv" class="dev">4</div>
+				<div id="fifthdiv" class="dev">5</div>
+			</div>
+	</body>
+</html>

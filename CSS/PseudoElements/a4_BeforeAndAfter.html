@@ -1,0 +1,44 @@
+<!-- 
+    Before and After
+    ===================
+
+    This is used to generate dynamic content before or after the element.
+
+    This is used to insert something before the content of each specified selector (each). 
+    We use content property to specify the content to insert.
+
+    Ex: - 
+p::before { content: “ Geekyshows Says”; }
+
+
+ -->
+
+
+ <html>							
+	<head>
+		<title>Hello CSS</title>
+		<style>
+			p::after { content: " By Geekyshows ";
+						color: red;
+						}
+
+                        /* 
+                            in p tag after end of line put content "by geekyshows " and put color red in it.
+                         */
+		</style>
+	</head>
+	<body>
+	
+		<p>This is body Para This is body Para This is body Para
+		This is body Para This is body Para This is body Para This is body Para 
+		This is body Para This is body Para This is body ParaThis is body Para
+		</p>
+		<p>This is body Para This is body Para This is body Para
+		This is body Para This is body Para This is body Para This is body Para 
+		This is body Para This is body Para This is body ParaThis is body Para
+		</p>
+		<h1> This is heading</h1>
+		
+		
+	</body>
+</html>

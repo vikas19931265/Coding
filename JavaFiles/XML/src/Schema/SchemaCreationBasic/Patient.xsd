@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+** In this lecture, we'll start working on our Patient schema file by using the Eclipse IDE. So launch the Eclipse
+
+** Eclipse creates the minimum elements that are required by every schema file.
+It is an XML file as you can see, a schema file although the extension is .xsd,
+it is a XML file. It starts with the XML declaration on the prolog line, followed by the
+root element.The one and only one root element called schema.
+
+** This schema element along with other elements which we'll be using later on, is defined in the xmlns
+or the W3C namespace. xmlns attribute stands for XML namespace and it is used to specify what namespace 
+these elements belong to. If we define this xmlns on the root element,automatically all the child elements 
+which we define later on or which we use later on belong to this namespace.
+
+** So all the XML processes and parsers like the one which we are using in Eclipse, know about all these elements
+from the W3C namespace.
+
+** The target namespace on the other hand, Eclipse generated this as well to help us. This target namespace 
+can be used to specify the namespace for the elements which we are defining for our application.
+
+** By default it generated something called www.example.org and it used the filename as the URI, Patient.
+
+** It's always a good practice to give it a domain name of our company because it will uniquely identify all the elements in our schema file. So lets call it
+ey.com.
+
+** So tomorrow if we have a third party application being used by the same hospital which uses our application,
+and if they have their own schema file they would have a defined a namespace which has their domain instead
+of our domain.That is the beauty of using namespaces.
+
+** If we are using the same elements, named same like patient from within different schema files,
+looking at the namespace we can differentiate from where that XML is coming from or from which namespace
+that application or that XML is being used from.
+
+** The xmlns:tns is a prefix. Instead of using this entire URL to qualify all the elements that we are going to
+refer to or create . later on, we are defining a prefix called xmlns:tns. tns usually stands for Target namespace but
+we can use xyz as well, it doesn't matter.
+
+-->
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.ey.com/Patient"
+	xmlns:tns="http://www.ey.com/Patient" elementFormDefault="qualified">
+	
+<!--  
+elementFormDefault value qualified makes enables the elements to be referred by target namespace
+if we set it unqualified we dont need tns to be used.
+-->	
+
+	<element name="Patient"  type="tns:Patient"/>
+	<complexType name="Patient">
+		<sequence>
+			<element name="name" type="string" />
+			<element name="age"  type="int"/>
+			<element name="email" type="string"/>
+			<element name="gender" type="string"/>
+			<element name="phone" type ="string"/>
+		</sequence>
+	</complexType>
+</schema>
