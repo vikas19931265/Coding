@@ -1,0 +1,294 @@
+Annotations
+----------
+Spring 2.X onwords spring supports annotations.
+
+so from spring 2.X it is possible to configure the the dependency injection using annotations.
+
+instead of using XML to define a bean wiring, you can move the bean configuration into the pojo class itself by using annotations.
+
+By default spring container doesn't perform annotation wiring. So, before using annotation-based wiring, we need to enable it in our Spring configuration file.
+
+If we want to work with annotations in spring you have add the following code in configuration file.
+
+<beans>
+<context:annotation-config/>
+</beans>
+
+Once <context:annotation-config/> is configured, you can start annotating on your code. and Spring automatically wire values into properties, methods, and constructors. 
+
+There are multiple annotations in spring.
+@Required
+@Autowired
+@Qualifier
+@PostConstruct
+@PreDestroy
+@Component
+@Controller
+@Service
+@Repository
+etc.
+
+Working with @Required
+----------------------
+Before spring3, spring has "dependency-check" attribute to check dependecy beans injected or not.
+
+if we are using dependency-check we should inject all the properties(either primitives(simple) or objects(objects)).
+
+if we want to inject only limited primivite or objects properties instead of using dependency-check use @Required.
+
+Ex:
+
+public class Employee {
+	private int id;
+	private String name;
+
+	@Required
+	public void setId(int id) {
+	this.id = id;
+	}
+
+	@Required
+	public void setName(String name) {
+	this.name = name;
+	}
+	//getters
+}
+
+xml
+---
+<beans>
+<context:annotation-config />
+<bean id="employee" class="Employee">
+<property name="id" value="100"></property>
+<property name="name" value="Ramesh"> </property>
+</bean>
+</beans>
+
+NOTE:
+Simply apply the @Required annotation will not enough for the property checking, you need to register a RequiredAnnotationBeanPostProcessor to aware of the @Required annotation in bean configuration file.
+
+The RequiredAnnotationBeanPostProcessor can be enabled in two ways.
+
+1.add following tag in the xml file
+
+<context:annotation-config />
+
+2. configure RequiredAnnotationBeanPostProcessor directly in bean configuration file.
+
+<beans>
+<bean 
+class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
+
+<!-- other beans configured here -->
+
+</beans>
+
+client
+-------
+--
+ApplicationContext context = new ClassPathXmlApplicationContext("application-context.xml");
+//get the bean and use that bean
+--
+--	
+--
+Working with @Autowired
+-----------------------
+we can use autowire using @Autowired annotation instead of configuration approach.
+
+In Spring, you can use @Autowired annotation to autowire bean on the setter method, constructor or a field. 
+
+Note
+@Autowired will performs autowiring "byType".
+
+NOTE: If spring container found more than one bean it will exception. To resovle this will go for @Qualifier.
+
+
+@Autowired on properties:
+-------------------------
+you can use @Autowired on property.
+
+Spring container automatically assign values to corresponding properties.You don't need setter methods for that property.
+
+//import stmts
+public class Customer {
+	@Autowired
+	private Person person;
+	private int type;
+	private String action;
+
+	//setters and getters for type and action.
+	//NOTE: setter not required for person
+
+@Override
+public String toString() {
+return "Customer [person=" + person + ", type=" + type + ", action="+ action + "]";
+}
+}
+
+public class Person {
+	private String name;
+        //setters and gettes
+	@Override
+	public String toString() {
+		return name;
+	}
+}
+xml
+---
+<beans>
+<!--<context:annotaion-config>-->
+
+<bean	class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
+
+<bean id="customer" class="Customer">
+<property name="action" value="buy" />
+<property name="type" value="1" />
+</bean>
+<bean id="personA" class="Person">
+<property name="name" value="Ramesh" />
+</bean>
+</beans>
+
+note:
+While working with @Autowired we have to register AutowiredAnnotationBeanPostProcessor.
+ 
+To register this processor there are 2 ways
+1.<context:annotation-config>
+2.<bean class="---.AutowiredAnnotationBeanPostProcessor">
+
+client is similar to basic applications.
+
+@Autowired on Constructor:
+--------------------------
+you can use @Autowired on constructor also and it will work even if you didn't define <constructor-arg> tag in XML configuration file.
+
+public class Customer{
+
+//properteis
+
+@Autowired
+public Customer(Person person, int type, String action) {
+this.person = person;
+this.type = type;
+this.action = action;
+}
+xml
+---
+<bean id="customer" class="Customer">
+<constructor-arg index="1" value="1"> </constructor-arg>
+<constructor-arg index="2" value="abc"> </constructor-arg>
+</bean>
+
+<bean id="personA" class="Person">
+<property name="name" value="Ramesh" />
+</bean> 
+
+@Autowired on setter method:
+---------------------------
+we can apply @Autowired on setter method.
+
+public class Customer {
+	//properties
+	@Autowired
+	public void setPerson(Person person) {
+	this.person = person;
+	}
+	//setters and getters
+}
+xml is similar autowired on property.
+
+@Autowired(required = false)
+----------------------------
+By default,dependency is required in the case of @Autowired like @Required, but you can turn off it by passing required=false to @Autowired as argument.
+
+The default value for required is true.
+
+Working with  @PostConstruct And @PreDestroy
+-----------------------------------------------------
+you can use either implements InitializingBean and DisposableBean interface or specify the init-method and destroy-method in bean configuration file for the initialization and destruction callback function. 
+
+But instead of using above approaches we can use annotatins also.
+ 
+i.e @PostConstruct and @PreDestroy 
+
+Note
+The @PostConstruct and @PreDestroy annotation are not belongs to Spring, it’s located in the J2ee javax.annotation-3.1.jar.
+
+Ex:
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+public class HelloBean {
+private String message;
+//setters and getters
+	
+@PostConstruct
+public void myInit() {
+System.out.println("myInit");
+}
+         
+@PreDestroy
+public void myDestroy() {
+System.out.println("myDestroy");
+  }
+}
+xml
+---
+similar to old application.
+
+output
+------
+default constructor
+setter called
+myInit called
+helloworld.... // ready to use
+myDestory called
+
+Working with @Configuration and @Bean
+--------------------------------------
+Instead of configuring a class as spring bean in a configuration file(xml), you can declare it in a class itself.
+
+The class in which you want to provide the configuration about other beans, that class is called configuration class and you need to annotate with @Configuration.
+
+In this class you need to provide methods which are responsible for creating objects of your bean classes, these methods has to be annotated with @Bean.
+
+Now while creating the container object, you need to use AnnotationConfigApplicationContext by passing the configuration class as input.
+Ex:
+---
+public class HelloBean {
+	private String message;
+//constructors, setters and getters.
+}
+-----------
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class HelloBeanConfig {
+    
+    @Bean(name="helloBean")
+    public HelloBean helloWorld() {
+        HelloBean bean =  new HelloBean();
+	//setter injection
+	bean.setMessage("helloworld");
+        return bean;
+    }
+}
+Client
+------
+//import statements
+--
+--
+ApplicationContext context = new AnnotationConfigApplicationContext(HelloBeanConfig.class);
+
+HelloBean bean = context.getBean("helloBean", HelloBean.class);
+System.out.println(bean.getMessage());
+}
+}
+
+NOTE: to excute @Configuration and @Bean annotations we have to add following jar in the class path.
+
+cglib-2.2.2.jar
+asm-3.2.jar
+
+

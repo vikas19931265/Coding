@@ -1,0 +1,164 @@
+Spring JEE
+----------
+
+Spring OXM (Object XML Mapping)
+-------------------------------
+
+Spring OXM stands for Spring Object XML Mappers and it is a module available in Spring to ease the mapping between java objects and XML documents. this is called marshalling and unmarshalling.
+
+The module is extensible and hence it provides integration with various popular frameworks like XmlBeans, Castor, JAXB, and XStream.
+
+Marshalling – Convert Object to XML.
+UnMarshalling – Convert XML to Object.
+
+Object <--- Spring oxm ---> XML.
+
+Note
+Spring’s oxm itself doesn’t handle the XML marshalling or UnMarshalling, it depends developer to inject their prefer XML binding frameworks i.e XmlBeans, Castor, JAXB, and XStream.
+
+Castor
+------
+opensource xml data binding framework. you can download castor from www.castor.org
+
+Intergration of Castor using spring oxm.
+
+Ex:
+
+Customer.java
+-------------
+public class Customer {
+	String name;
+	int age;
+	boolean flag;
+	String address;
+	
+	//setters and getters
+
+	@Override
+	public String toString() {
+	return "Customer [name=" + name + ", age=" + age + ", flag=" + flag
+	+ ", address=" + address + "]";
+}
+}
+
+XMLConverter.java
+-----------------
+//import statements
+public class XMLConverter {
+
+private Marshaller marshaller;
+private Unmarshaller unmarshaller;
+
+//setters for marshaller and unmarshaller
+
+public void convertFromObjectToXML(Object object, String filepath)throws IOException {
+
+FileOutputStream os = null;
+try {
+os = new FileOutputStream(filepath);
+marshaller.marshal(object, new StreamResult(os));
+} finally {
+if (os != null) {
+os.close();
+}
+}
+}
+
+public Object convertFromXMLToObject(String xmlfile) throws IOException {
+FileInputStream is = null;
+try {
+is = new FileInputStream(xmlfile);
+return unmarshaller.unmarshal(new StreamSource(is));
+} finally {
+if (is != null) {
+is.close();
+}
+}
+}
+}
+App.xml(spring config file)
+--------------------------
+<beans>
+<bean id="xmlConverter" class="XMLConverter">
+  <property name="marshaller" ref="castorMarshaller" />
+  <property name="unmarshaller" ref="castorMarshaller" />
+</bean>
+
+<bean id="castorMarshaller" class="org.springframework.oxm.castor.CastorMarshaller">
+
+<property name="mappingLocation" value="classpath:mapping.xml" />
+</bean>
+</beans>
+
+NOTE: CastorMarshaller class implements both Marshaller and UnMarshaller interfaces. so in the above configuration we are injecting casterMarshaller for both interfaces.
+
+mapping.xml
+-----------
+<mapping>
+<class name="Customer">
+<map-to xml="customer" />
+<field name="age" type="integer">
+<bind-xml name="age" node="attribute" />
+</field>
+
+<field name="flag" type="boolean">
+<bind-xml name="flag" node="element" />
+</field>
+
+<field name="name" type="string">
+<bind-xml name="name" node="element" />
+</field>
+
+<field name="address" type="string">
+<bind-xml name="address" node="element" />
+</field>
+</class>
+</mapping>
+
+client app
+----------
+App.java
+--------
+--
+--
+--
+XMLConverter converter = context.getBean("xmlConverter", XMLConverter.class);
+
+//create customer object with details
+
+converter.convertObjectToXml(--);
+
+converter.convertXmlToObject(--);
+
+output:
+xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<customer age="60">
+	<flag>true</flag>
+	<name>chiru</name>
+	<address>This is address</address>
+</customer>
+
+
+XmlBeans
+--------
+it also data binding framework from apache.
+
+integration of XmlBeans using spring oxm.
+
+we will see how to integrate XmlBeans with Spring's OXM framework. 
+
+There are multiple ways indicating how XmlBeans framework can be used to parse and process XML contents. 
+
+In this example we will define an xml schema and will see how to generate the java model classes from the xml schema.
+
+
+to generate the jar we have to use the schema compliler.
+
+cmd:> scomp catalog.xsd
+
+above command generates the xmltypes.jar which conatins the classes and interface.
+
+Exmple:
+checkout meterial.

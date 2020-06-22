@@ -1,0 +1,39 @@
+spring JMS
+----------
+JMS is the standard API for asynchronus messaging. The client sends a request to Message Oriented Middleware(MOM) or a MessageServer.
+
+The server consumes the message from the messageserver.
+
+Message exchange between applications is provided by messaging servers.
+
+Message Servers available like ActiveMQ, Jboss Messaging, MSMQ etc.
+
+JMS provides a standard API to communicate with the messaging servers from the java aplications.
+
+Java applications use JMS API to communicate with MOM.
+
+
+we can develop the JMS application using Spring and without spring.
+
+
+Write a program for JMS without spring
+
+Check out meterial.
+
+and We can develop the JMS application with spring also
+Write a program for JMS with spring. (JMSTemplate)
+Check out meterial.
+
+NOTE: to execute JMS application(Main method based appl.) JBoss server is required. In the JBoss server we have to create Topic or Queue using following xml
+
+destinations-service.xml
+-----------------------
+<mbean code="org.jboss.jms.server.destination.TopicService"
+name="jboss.messaging.destination:service=Topic,name=StockTopic" (line no 15)
+--
+--
+</mbean>
+
+above xml is available in following location.
+jboss home/server/default/deploy/messaging/destinations-service.xml
+In realword topic and queues are configured by the JMS Team or server admins.

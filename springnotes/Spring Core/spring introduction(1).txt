@@ -1,0 +1,1320 @@
+To develop any application in the realworld we have to develop the following logics.
+
+Presentationlogic:
+------------------
+The logic which is used to display the information or data to the end users is called Presentation logic. 
+
+Presentation layer is also called VIEW layer.
+
+Using HTML, JSP, Wicket, Velocity, Freemarker, Angular JS.... technologies we can develop the view layer or presentation logic.
+
+Validation logic:
+-----------------
+Checking or verifies the correctness of end user entered data is called Validation logic.
+
+Ex: check given email id having @ symbol or not.
+
+Using javascript(clientside validations) or javacode(serverside validations) we can develop the validation logic.
+
+RequestProcessing logic.
+------------------------
+Request processing logic handles all the requests and responses. means it takes the request from view layer and dispatch the same request to the model, it takes the result from the model and send the response to the view layer.
+
+Using Servlets we can develop the RequestProcessing logic or controller logic.
+
+NOTE:In any framework controller or request processing logic was predefined.
+
+Business logic.
+--------------
+Based on end user entered data we have to perform operations or calculations on server side, that server side logic is called b.logic.
+or
+The main logic of the application is called b.logic.
+
+Business logic layer is also called service layer.
+
+Using JavaBean, EJB SessionBean, Spring JEE etc., we can develop the Business logic.
+
+Persistance logic
+-----------------
+The logic which is used to connect with the persistance storage area or permenent place or database is called persistance logic.
+
+Persistance logic layer is also called DAO layer (Data Access Object).
+
+Using JDBC, hibernate, JPA(Java Persistance API), SpringDAO, Spring ORM..... we can develop the persistance logic.
+
+NOTE: Busines layer and Persistance layer are called MODEL layer.
+
+Layered Architecture
+---------------------
+
+
+Presenetation tier
+-------------------
+Servlets
+jsp's
+JSF
+Struts
+Velocity 
+Freemarker
+Spring Web MVC
+Wicket
+
+Business tier
+--------------
+EJB2 session beans
+EJB3 session beans
+MDB(Message Driven Beans)
+Spring AOP
+Spring JEE
+JMS
+Spring OXM(object/xml mapping)
+
+Persistent tier
+---------------
+JDBC
+JPA(java persistent API)
+EJB2 Entity beans
+EJB3 Entity beans
+Hibernate
+Ibatis
+Toplink
+JDO-Java Data Objects
+Spring DAO
+Spring ORM
+
+So Spring is used to develop any layer of the Application.
+
+To get dao object in service layer we will go for Spring core.
+
+To get service layer object in presentation layer we will go for Spring core.
+
+
+Def of spring:
+-------------
+Spring is an open source, light weight, loosely coupled and dependency injection based Java framework to develop any type of applicaitons (core java, remoting, web applications and enterprise applications etc).
+
+features
+--------
+--open source s/w (will get the source code).
+
+--light weight s/w 
+   -Servers are not required to execute the spring.
+   -Size of the container
+   -spring provides two light weight containers i.e BeanFactory and ApplicationContext. 
+
+-- loosely coupled s/w
+   -we can use few modules of spring or all the modules of spring to develop the application.
+   -we can integrate spring with different other frame works. like struts with spring and spring with hibernate.
+
+-- framework
+   -It is a reusable semi completed application that can be used to develop the applications.
+
+   -set of well defined classes and interfaces are called framework.
+
+-- using spring you can develop various types of application like core java, remoting, web applications, enterprise applications etc.
+
+-- It was initially written by Rod Johnson and was first released under the Apache in June 2003.
+
+--download: www.springsource.org(.zip)
+
+--version: spring 2.5 (compatable with jdk5 and above)
+           spring 3.X (compatable with jdk5 and above)
+
+-- Spring is a layer above your java and J2EE, but never spring is a replacement for the java and J2EE.
+
+-- Spring provides the flexibulity to the developers, to develop the enterprise applications using POJOs.
+
+--Spring is organized in a modular fashion. Even though the number of modules are available, you have to worry about used module only, you can ignore the rest of the modules.
+
+--Spring handles the infrastructure so you can focus on your application.
+
+--Testing of the spring based application (Unit testing)is simple.
+
+Spring's web framework is a well-designed web MVC framework, which provides a great alternative to web frameworks such as Struts.
+
+Spring modules
+--------------
+
+spring 1.x
+----------
+There are 7 modules in spring 1.x.
+
+
+Spring1.x diagram
+
+spring 2.x
+----------
+There are 6 modules in spring 2.x.
+
+spring 2.x diagram
+-------------------
+
+
+here Spring 2.x web MVC is Spring 1.x web + spring 1.x web mvc.
+
+And Spring 2.x JEE is nothing but spring 1.x Context module.
+
+ Core Module
+ -----------
+ Base module for all the modules.
+ The core module is the heart of spring framework.
+
+ It provides containers. All beans are managed by containers. i.e BeanFactory or ApplicationContext.
+ 
+ It maintains bean life cycle.
+
+DAO module
+----------
+It is used to develop the persistance logic.
+
+It provides the abstraction layer on top of jdbc.
+
+ORM module:
+-----------
+Spring provides an integration support with most of the ORM tools 
+Ex: Hibernate, top Link, JPA, Ibatis ... etc 
+
+AOP module
+----------
+AOP stands for Aspect Oriented Programming
+To solve the cross cutting concern problems we will go for AOP.
+
+Using AOP we can provide declarative enterprise services(middleware services) i.e logging, security, transaction management ... etc.
+
+Using AOP we can integrate other AOP framework.
+Ex: AspectJ.
+
+JEE module:
+-----------
+Provides abstraction layer on JMS, RMI, EJB, JAVA Mail API etc. So it support for integrating SUN enterprise services.
+
+Spring Web:
+----------
+This module is used to develop presentation tier of an Enterprise Application.
+
+Spring has an implementation for the MVC design pattern we call it as spring MVC module.
+
+Spring also provides an integration with any MVC implementations like struts,JSF ... etc
+
+spring 3.x diagram
+-------------------
+The Spring Framework provides nearly 20 modules which can be used based on application requirement. 
+
+These modules are grouped into Core Container, Data Access/Integration, Web, AOP (Aspect Oriented Programming), Instrumentation, and Test, as shown in below diagram.
+
+diagram
+-------
+
+Core Container
+The Core Container consists of the Core, Beans, Context, and Expression Language modules.
+
+Data Access/Integration
+The Data Access/Integration layer consists of the JDBC, ORM, OXM, JMS and Transaction modules.
+
+Web
+The Web layer consists of the Web, Web-Servlet, Web-Struts, and Web-Portlet modules.
+
+There are few other important modules like AOP, Aspects, Instrumentation, and Test modules.
+
+NOTE: We can use the spring framework to develop the all logics of the application. but lot of companies are using spring to develop the model layer.(persistance logic and business logic).
+
+Dependency Injection.
+--------------------
+It is a design pattern.
+
+Spring core is built based on Dependency Injection.
+
+This design pattern helps you to avoid writing unnecessary code, while creating objects in the application.
+
+To understand dependency injection, Let's look at these two words separately.
+
+Here the dependency means an association between two classes. 
+
+For example, class A is depends on class B. 
+Student class depends on Address class.
+Student Has a Address
+EmployeeDAO depends on Connection.
+
+Now, let's look at the second part, injection. this means class B will get injected(setting or passing) into class A by the Container
+
+In spring, spring contianer creates the objects and those objects are injected into our application.
+
+The following are some of the examples where dependency injection can be used in reaworld applications.
+
+--The DAO classes uses the DataSource which can be injected into DAO classes.
+
+--The Service layer uses DAO class object, which can be injected into Service classes.
+
+--The presentation or view layer(struts,jsf,wicket) uses service class object, which can be injected into presentation layer.
+
+NOTE:
+-----
+Dependency Injection also called as Inversion of Control(IOC). 
+
+Spring resources.
+-----------------
+
+To develop spring core application we have to develop following resources.
+
+1.Simple java bean class or Spring bean class or POJO.
+2.Spring Configuration file.
+3.Spring client application.
+
+1.Simple java bean class or Spring bean class.
+---------------------------------------------
+Here simple java bean class acts as spring bean class.
+
+This class may implements business methods also when it implements an interface.
+
+it contains the code to support dependency injection(Setter injection or constructor injection)
+
+Contains spring bean life cycle methods.
+
+It contains other utility and helper methods.
+
+Spring bean class also called as POJO class.
+
+Srping Bean or POJO (Plain old java object)
+-----------------------------------
+While developing any java class, that class does not extends or implements third party API is called POJO.
+
+Rules for Spring Bean class
+----------------------------
+1.it should be public and non abstract class.
+
+2.class implements java.io.Serializable.(optional)
+
+3.provide defualt constructor to support setter injection or parameterized constructor to support constructor injection. 
+
+4.declare private properties.
+
+5.generate setters and getters for each property to support setter injection.
+
+Ex:
+package com.rameshit.spring;
+
+public class HelloBean {
+
+  private String message;
+
+  public HelloBean() 
+    {
+    System.out.println("default constructor.");
+    }
+
+    public void setMessage(String message) {
+    this.message = message;
+    }
+   public String getMessage() {
+   return message;
+  }
+}
+
+2.Spring Configuration file.
+----------------------------
+Spring configuraion file is a xml file. so any name.xml acts as spring configuration file.
+
+it contains configuration of spring beans.
+
+Spring client application loads the spring configuration file.
+
+Ex:
+hello.xml
+---------
+<!-- DTD -->
+<beans>
+<bean id="helloBean" 
+ class="com.rameshit.spring.HelloBean">
+ <property name="message">
+ <value>Hello World.</value>
+ </property>
+</bean>
+</beans>
+
+<property> tag is used to configure the property name. so here "message" is property in HelloBean class.
+
+<value> tag is used to configure the value.
+
+NOTE: if the property type is either String or primitive data type(int, float, double .....) or wrapper classes (Integer Float, Long, Double ....), to configure this property value we will go for either <value> tag or "value" attribute of <property> tag.
+
+3.Spring Client application.
+---------------------------
+-Any java, j2ee, framework based applications acts as spring client application.
+
+-Activate the spring container by loading spring configuration file.
+
+-Get the spring bean class object from the spring container.
+
+-Calls the methods defined in spring bean class.
+
+Ex:
+package com.rameshit.spring;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.FileSystemResource;
+
+public class SpringClient {
+ public static void main(String[] args) {
+
+FileSystemResource resource = new FileSystemResource("/hello.xml")
+
+BeanFactory factory =  new XmlBeanFactory(resource)
+
+Object object = factory.getBean("helloBean");
+
+HelloBean bean = (HelloBean)object;
+
+System.out.println(bean.getMessage());
+}
+}
+
+Develop the Hello application using spring core.(setter injection)
+
+steps
+-----
+1.To develop spring application we have to develop following resources.
+
+1.Hello.java (Interface)
+2.HelloBean.java (Class)
+3.hello.xml (spring config file)
+4.HelloClient.java (Spring Client Appl.)
+
+2.create directory structure.
+--
+--
+
+3.develop the Hello.java(interface)
+
+package com.rameshit.spring;
+
+public interface Hello {
+    //business method
+    String sayHello();
+}
+
+4.develop the HelloBean.java, which implements Hello interface.
+
+package com.rameshit.spring;
+public class HelloBean implements Hello {
+ 
+private String message;
+//default constructor	
+public HelloBean() {
+System.out.println("default constructor");
+}
+	
+public String sayHello() {
+System.out.println("sayHello called..");
+return message;
+}
+
+public void setMessage(String message) {
+this.message = message;
+}
+}
+
+5.develop spring configuration file(hello.xml).
+
+NOTE:In spring configuration file we have to use doctype.
+
+this doctype is collected from following location.
+
+springhome\projects\org.springframework.beans\src\main\resources\org\springframework\beans\factory\xml\spring-beans.dtd
+
+or
+
+spring-beans.dtd or all the dtd or xsd available in org.springframework.beans.factory.xml package. this package is available in the org.springframework.beans.version.jar
+
+Ex:
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+<bean id="helloBean" 
+class="com.rameshit.spring.HelloBean">
+<property name="message">
+<value>HelloWorld.....</value>
+</property>
+</bean>
+</beans>
+
+6. Develop the client application.
+
+HelloClient.java
+-----------------
+package com.rameshit.spring;
+//import stmts.
+public class HelloClient {
+
+public static void main(String[] args) {
+
+// activate the container by loading hello.xml
+
+Resource resource = new FileSystemResource("src/hello.xml");
+
+BeanFactory factory = new XmlBeanFactory(resource);
+
+//get the bean object.
+HelloBean bean = (HelloBean)factory.getBean("helloBean");
+
+System.out.println(bean.sayHello());
+}
+}
+
+7.compile above source code.
+NOTE:
+-----
+before compiling above source code we have to place following jars in the  class path.
+
+1.org.springframework.core-3.0.5.RELEASE.jar
+2.org.springframework.beans-3.0.5.RELEASE.jar
+
+above two jars are available in spring home/dist folder
+
+3.commons-logging-1.1.1.jar
+this jar is not avaible in spring s/w. so we have to download explicitly from the internet.
+
+Ex: javac -d . *.java
+
+8. run application
+java com.rameshit.spring.HelloClient
+
+output:
+default constructor
+setter called....
+sayHello called...
+HelloWorld.....
+--------------------------------------
+NOTE:
+Spring container uses default constructor and setter methods to create bean object and populate bean the properties. this concept is called setter injection.
+
+If we are not placing default constructor(if class only having parameterised constructor) spring will throws the exception. i.e org.springframework.beans.factory.BeanCreationException.
+
+If we are not placing setter method for the configured property spring throws exception. i.e org.springframework.beans.NotWritablePropertyException.
+
+
+-Develop the Hello application using constructor injection.
+
+Hello.java(Interface)
+----------------------
+package com.rameshit.spring;
+public interface Hello {
+    String sayHello();
+}
+
+HelloBean.java
+----------------
+package com.rameshit.spring;
+public class HelloBean implements Hello {
+private String message;
+
+//paramerized constructor
+public HelloBean(String message) {
+this.message = message;
+System.out.println("parameter constructor");
+}
+public String sayHello() {
+  sop("sayHello.. called")
+  return message;
+}
+}
+
+hello.xml
+---------
+<beans>
+<bean id="helloBean" class="com.rameshit.spring.HelloBean">
+<constructor-arg>
+<value>HelloWorld</value>
+</constructor-arg>
+</bean>
+</beans>
+
+HelloClient.java
+-----------------
+package com.rameshit.spring;
+//import statements
+public class HelloClient {
+
+public static void main(String[] args) {
+BeanFactory factory = new XmlBeanFactory(new FileSystemResource("hello.xml"));
+
+HelloBean bean =(HelloBean) factory.getBean("helloBean");
+System.out.println(bean.sayHello());
+}
+}
+
+output:
+parameter constructor
+sayHello called....
+HelloWorld.....
+
+NOTE:
+Spring container uses parameterized constructor to create bean object and populate bean the properties. this concept is called constructor injection.
+
+while working with constructor injection we should place matching constructor in bean class, otherwise it throws Exception. i.e BeanCreationException.
+
+Dependency Injection
+--------------------
+There are two types of Dependency Injection.
+
+1.Setter Injection.
+2.Constructor Injection.
+
+Setter Injection
+----------------
+If the spring container uses default constructor and setter methods to inject the bean properties then it call as setter injection.
+
+if we configured one property by using <property> tag, then spring container performs setter injection.
+
+<beans>
+<bean id="helloBean" class="----">
+<property name="message">
+<value>HelloWorld</value>
+</property>
+</bean>
+</beans>
+
+In case of setter injection, injecting dependent objects are optional. Even you don’t provide the <property> tag while configuring bean property, the container will create the bean and intialize the bean properties to thier default values.
+
+Ex:
+<bean id="helloBean" class="com.rameshit.spring.HelloBean">
+</bean>
+
+o/p
+---
+default constructor
+null
+
+If we configured one bean class property using <proerty> tag, bean class should contain setter method for corresponding property. other wise it throws exception saying	org.springframework.beans.NotWritablePropertyException.
+
+Construtctor Injection
+----------------------
+If the spring container uses paremeterized constructor to inject the bean properties then it call as constructor injection.
+
+if we configured one property by using <constructor-arg> tag, then spring container performs constructor injection.
+
+<beans>
+<bean id="helloBean" class="----">
+<constructor-arg>
+<value>HelloWorld</value>
+</constructor-arg>
+</bean>
+</beans>
+
+In case of constructor injection injecting dependent objects are mandatory. if you are not injecting using <contructor-arg> conatiner will through exception saying  org.springframework.beans.BeanInstantiationException
+
+<bean id="helloBean" class="----">
+</bean>
+
+above configuration is invalid while working with constructor injection.
+
+If we configured one bean class property using <contructor-arg> tag, bean class should contain parameterized constuctor. other wise it throws exception saying	
+org.springframework.beans.BeanInstantiationException.
+
+NOTE:
+if we configured one property by using setter injection and constructor injection, Spring container creates the bean object using parameterized constructor, and it initialize the bean property using setter methods.
+
+Ex:
+<beans>
+<bean id="helloBean" class="com.rameshit.spring.HelloBean">
+<property name="message">
+<value>Hello India...</value>
+</property>
+<constructor-arg>
+<value>Hello World...</value>
+</constructor-arg>
+</bean>
+</beans>
+
+o/p
+---
+parameter constructor
+setter called
+Hello India...(finally it performs setter injection).
+
+Explanation of spring client application code.
+---------------------------------------
+
+BeanFactory factory = new XmlBeanFactory(new FileSystemResource("src/hello.xml"));
+
+In the above code, the BeanFactory instance is created using the XmlBeanFactory class, by loading hello.xml using FileSystemResource class.
+
+getBean(-) method can be used to get a perticular bean object by specifying its id.("helloBean").
+
+HelloBean bean = (HelloBean)factory.getBean("helloBean");
+
+In the above code getBean("helloBean") is used to get the HelloBean object.
+
+there are multiple overloaded getBean(-) methods to get the bean object.
+
+--public Object getBean(String name)
+
+Above method returns Object, but to get our bean object(HelloBean) we need to perform typecast.
+
+HelloBean helloBean=(HelloBean)object;
+
+If there is no bean definition in the configuration file it throws NoSuchBeanDefinitionException.
+
+-- <T> T getBean(String name, Class<T> requiredType)
+
+It returns directly our pojo class object. (HelloBean)
+
+HelloBean helloBean = factory.getBean("helloBean", HelloBean.class)
+
+Spring Containers
+-----------------
+The central component of a spring application is the containers.
+
+Spring container creates the spring bean objects and it manages the bean life cycle.
+
+The spring container responsibulity is for providing the dependency injection.
+
+It acts as repository for all the configured beans.
+
+There are two types of spring container.
+1.BeanFactory container
+2.ApplicationContext container
+
+1.BeanFactory container
+-----------------------
+It is an interface defined in org.springframework.beans.factory package.
+
+It is basic container of the spring.
+
+BeanFactory container creates the beans and provides dependency injection.
+
+XmlBeanFactory implements BeanFactory interface.
+
+      BeanFactory
+           |
+	   |
+     XmlBeanFactory      
+
+XmlBeanFactory is a class defined in org.springframework.beans.factory.xml package.
+
+It reads the bean definitions from an xml file and instantiates beans.
+
+XmlBeanFactory loads the configuration file using different classes that implements org.springframework.core.io.Resource interface.
+
+Resource interface is the base interface for all the classes that provide to access the spring configuration file.
+
+The following classes are implements Resource interface.
+
+org.springframework.core.io.FileSystemResource
+org.springframework.core.io.ClassPathResource etc.
+
+FileSystemResource
+------------------
+loads the Spring configuration file from the specified path.
+
+Using XmlBeanFactory with FileSystemResource ---------------------------------------
+BeanFactory factory = new XmlBeanFactory(new FileSystemResource("D:/work/spring/Spring Core/src/hello.xml"));
+
+HelloBean bean = factory.getBean("helloBean", HelloBean.class);
+
+In the above example FileSystemResource is taking complete system path(abso1ute path). So in the  future if we change location of the project then again we need to change the location of spring configuration file in the program. That's why it is not recomended to use FileSystemResource.
+
+Using XmlBeanFactory with ClassPathResource 
+----------------------------------------
+BeanFactory factory = new XmlBeanFactory(new ClassPathResource("hello.xml"));
+
+HelloBean bean = factory.getBean("helloBean", HelloBean.class);
+
+In the above example container reading the configuration file from class path, but we are not specifying the complete path. 
+
+So it is recomended to use ClassPathResource instead of FileSystemResource.
+
+BeanFactory is a lazy container, which means BeanFactory instantiates the beans when the getBean() method is called.
+
+If the configuration file contains ten beans, each bean object is created only when the user calls the getBean(-) method by specifying the id of the bean.
+
+The BeanFactory container is usually used in very simple applications(stand alone applications).
+
+NOTE:
+It is not recomended to use BeanFactory in the realworld applications.
+
+ApplicationContext
+-------------------
+It is an interface defined in org.springframework.context package.
+
+It is child interface of BeanFactory interface.
+
+ApplicationContext having all the features of BeanFactory container.
+
+ApplicationContext is not a lazy container(by default), means it is an active container.
+
+It instantiates all the configured beans when the application is launched and before calling getBean(-). means when ApplicationContext is created it creates all the configured beans.
+
+when we call getBean(-) by specifying the bean id just returns the object.
+
+The advantages of active creation of beans by ApplicationContext is the handling of exception. If an exception is thrown while creating a bean, it can be handled during the start up of the application.
+
+following classes are implements ApplicationContext interface
+
+org.springframework.context.support.FileSystemXmlApplicationContext
+org.springframework.context.support.ClassPathXmlApplicationContext
+org.springframework.web.context.support.XmlWebApplicationContext etc.
+
+Activation of ApplicationContext is nothing but creation of ApplicationContext implementation classes objects.
+
+Ex:
+ApplicationContext context = new
+ClassPathXmlApplicationContext("hello.xml");
+
+FileSystemXmlApplicationContext
+-------------------------------
+Ex:
+
+--
+--
+
+ApplicationContext context = new
+FileSystemXmlApplicationContext("D:/work/spring/Spring Core/src/hello.xml");
+
+HelloBean bean = context.getBean("helloBean", HelloBean.class);
+
+In the above example FileSystemXmlApplicationContext is taking complete system path(abso1ute path). So in the  future if we change location of the project then again we need to change the location of spring configuration file in the program. That's why it is not recomended to use FileSystemXmlApplicationContext.
+
+ClassPathXmlApplicationContext
+------------------------------
+Ex:
+--
+--
+ApplicationContext context = new
+ClassPathXmlApplicationContext("hello.xml");
+HelloBean bean = context.getBean("helloBean", HelloBean.class);
+
+In the above example container reading the configuration file from class path, but we are not specifying the complete path. So it is recomended to use ClassPathXmlApplicationContext instead of FileSystemXmlApplicationContext.
+
+XmlWebApplicationContext
+-------------------------
+This is used in spring webmvc module. This container object created by web container internally. so no need to create object by the developer.
+
+ApplicationContext based container provides all the features of BeanFactory. In addition to them it provides the following features also. 
+
+1) Event-handling support 
+2) Internationalization support
+3) Remoting 
+4) EJB Integration
+5) Scheduling
+6) JNDI lookup ... etc.
+
+NOTE: RealWorld applications uses Applicationcontext container.
+
+To work with ApplicationContext we have to use following extra jars in the class path.
+
+org.springframework.context-3.0.5.RELEASE.jar
+org.springframework.asm-3.0.5.RELEASE.jar
+org.springframework.expression-3.0.5.RELEASE.jar
+
+Write a	program to inject different types of primitive data types and objects using setter injection.
+-----------------------------------------------------------------------------------------
+
+1.Employee.java
+---------------
+package com.rameshit.employee;
+public class Employee {
+private long empId;
+private String name;
+private byte age;
+private double salary;
+private Address address;
+
+public Employee() {
+System.out.println("Employee constructor");
+}
+//write setters and getters
+//here setters mandatory getters optional.
+}
+Address.java
+------------
+package com.rameshit.employee;
+public class Address {
+private String houseno;
+private String city;
+private String state;
+private String zipcode;
+
+public Address() {
+System.out.println("Address constructor");
+}
+//write setters and getters
+//here setters mandatory getters optional.
+}
+
+employee.xml
+------------
+<beans>
+<bean id="address" class="com.rameshit.employee.Address">
+<property name="houseno" value="1-2-123"> </property>
+<property name="city" value="Hyderabd"> </property>
+<property name="state" value="AP"> </property>
+<property name="zipcode" value="500038"> </property>
+</bean>
+
+<bean id="employee" class="com.rameshit.employee.Employee">
+<property name="empId" value="1001"> </property>
+<property name="name" value="Abc"> </property>
+<property name="age" value="20"></property>
+<property name="salary" value="1000"> </property>
+<property name="address" ref="address"> </property>
+</bean>
+</beans>
+
+NOTE:
+In the above xml, address object is injected into Employee object using "ref" attribute.
+
+"ref" attribute allows another bean id value. if that id not available in same xml or other xml it throws Exception saying NoSuchBeanDefinitationException.
+
+EmployeeClient.java
+-------------------
+//import statements.
+public class EmployeeClient {
+p s v main(-) {
+
+ApplicationContext context = new ClassPathXmlApplicationContext("employee.xml");
+
+Employee employee = context.getBean("employee", Employee.class);
+		
+//display the employee data using sop.
+
+Injecting java.util package related classes. i.e List, Set, Map and Properties
+-----------------------------------------------------------------------------
+
+If the property type is java.util.List use <list> tag in xml to configure the property
+
+If the property type is java.util.Set use <set> tag in xml to configure the property
+
+If the property type is java.util.Map use <map> tag in xml to configure the property
+
+If the property type is java.util.Properties use <props> tag in xml to configure the property
+
+table
+-----
+
+property type              tag
+--------------           --------
+String  
+primitive datatype ---- <value> or value 
+wrapper class                attribute
+
+Array     ------------ <list> or<array>
+
+Bean(POJO)
+Class   --------    <ref> or ref attribute
+Interface
+
+java.util.List --------   <list>
+
+java.util.Set --------   <set>
+
+java.util.Map --------   <map>
+
+java.util.Properties -----   <props>
+
+null -------------------   <null/>
+
+write a program to inject java.util package related classes(Setter Injection).
+
+Student.java
+------------
+package com.rameshit.student;
+import java.util.*;
+
+public class Student {
+
+private int id;
+private String name;
+private List<String> courses;
+private Set<Long> mobileNos;
+private Map<String, String> feeDetails;
+private Properties properties;
+
+public Student() {
+System.out.println("Default constructor....");
+}
+//setters and getters
+
+student-setter.xml
+------------------
+<beans>
+<bean id="student" class="com.rameshit.student.Student">
+<property name="id" value="101"></property>
+<property name="name" value="Ramesh">
+</property>
+<property name="courses">
+  <list>
+	<value>Core Java</value>
+	<value>Adv. Java</value>
+	<value>STRUTS</value>
+	<value>HIBERNATE</value>
+	<value>SPRING</value>
+  </list>
+</property>
+
+<property name="mobileNos">
+  <set>
+	<value>9999999999</value>
+	<value>888888888</value>
+	<value>11111111</value>
+  </set>
+</property>
+
+<property name="feeDetails">
+<map>
+<entry key="CoreJava" value="1000"> </entry>
+
+<entry key="Adv Java" value="2000"> </entry>
+
+<entry key="Struts" value="1000"></entry>
+
+<entry key="Spring" value="1000"></entry>
+</map>
+</property>
+
+<property name="properties">
+<props>
+<prop key="key1">value1</prop>
+<prop key="key2">value2</prop>
+<prop key="key3">value3</prop>
+</props>
+</property>
+</bean>
+</beans>
+
+NOTE:
+Properties key and value both allows only strings.
+
+StudentClient
+-------------
+--
+--
+--
+--
+ApplicationContext context = new ClassPathXmlApplicationContext("student-setters.xml");
+
+Student student = context.getBean("student", Student.class);
+//get data from student and display it.
+System.out.println(student.getId());
+System.out.println(student.getName());
+System.out.println(student.getCourses());
+System.out.println(student.getMobileNos());
+System.out.println(student.getFeeDetails());
+System.out.println(student.getProperties());
+}
+}
+output
+-------
+Default constructor....
+101
+Ramesh
+[Core Java, Adv. Java, STRUTS, HIBERNATE, SPRING]
+[9999999999, 888888888, 11111111]
+{CoreJava=1000, Adv Java=2000, Struts=1000, Spring=1000}
+{key3=value3, key2=value2, key1=value1}
+
+write a program to inject java.util package related classes(Constructor Injection).
+
+Student.java
+-------------
+package com.rameshit.student;
+
+import java.util.*;
+public class Student {
+
+private int id;
+private String name;
+private List<String> courses;
+private Set<Long> mobileNos;
+private Map<String, String> feeDetails;
+private Properties properties;
+
+public Student(int id, String name, List<String> courses, Set<Long> mobileNos, Map<String, String> feeDetails, Properties properties) {
+
+System.out.println("param constructor");
+	this.id = id;
+	this.name = name;
+	this.courses = courses;
+	this.mobileNos = mobileNos;
+	this.feeDetails = feeDetails;
+	this.properties = properties;
+	}
+//setters are not required
+//getters are required to display the data.
+}
+student-constructor.xml
+------------------------
+<beans>
+<bean id="student" class="com.rameshit.student.Student">
+
+<constructor-arg>
+  <value>1001</value>
+</constructor-arg>
+<c-a>
+   <value>Ramesh</value>
+</c-a>
+<c-a>
+  <list>
+	<value>CoreJava</value>
+	<value>Adv.Java</value>
+	<value>STRUTS</value>
+	<value>HIBERNATE</value>
+	<value>SPRING</value>
+  </list>
+</constructor-arg>
+<constructor-arg>
+  <set>
+	<value>1234567890</value>
+	<value>9999999999</value>
+	<value>8888888888</value>
+  </set>
+</constructor-arg>
+<constructor-arg>
+<map>
+<entry key="corejava" value="1500"></entry>
+<entry key="Adv.Java" value="3000"></entry>
+<entry key="Struts" value="1500"></entry>
+<entry key="Hibernate" value="1500"></entry>
+</entry>
+</map>
+</constructor-arg>
+<constructor-arg>
+<props>
+<prop key="key1">value1</prop>
+<prop key="key2">value2</prop>
+<prop key="key3">value3</prop>
+</props>
+</constructor-arg>
+</bean>
+</beans>
+
+Client application is similar to previous application except configuraion file name 
+i.e student-constructor.xml
+
+Output
+-------
+similar to old application except it uses param constructor.
+
+Injecting null and empty string values
+--------------------------------------
+If you need to pass an empty string("") as a value then you can pass it as follows: 
+
+<bean id="helloBean" class="HelloBean">
+<property name="message" value=""/> </bean>
+
+The preceding example equivalent Java code is: helloBean.setMessage(""). 
+
+If you need to pass a null value then you can pass it as follows:
+
+<bean id="helloBean" class="HelloBean"> 
+<property name="message"> 
+  <null/>
+</property> 
+</bean>
+
+NOTE:
+If the property type is Array use either <array> or <list> of the bean configuration file.
+Ex:
+<beans>
+<bean id="student" class="com.rameshit.student.Student">
+<property name="cources">
+<array>
+	<value>Core Java</value>
+	<value>Adv.Java</value>
+	<value>STRUTS</value>
+</array>
+</property
+</bean>
+</beans>
+
+------------------------------------------------------
+Understanding different types of constructor injection
+------------------------------------------------------
+package com.rameshit.constructor;
+
+public class EmployeeBean {
+
+	private String name;
+	private String email;
+
+	public EmployeeBean(String name, String email) {
+		this.name = name;
+		this.email = email;
+	}
+//getters or utility methods
+}
+xml
+---
+<beans>
+<bean id="employee" class="com.rameshit.constructor.EmployeeBean">
+<constructor-arg value="Ramesh">
+</constructor-arg>
+<constructor-arg value="ramesh@gmail.com">
+</constructor-arg>
+</bean>
+</beans>
+
+If we run above application
+name : Ramesh
+email : ramesh@gmail.com
+
+above output is valid output
+
+but if we changed the order of 	<constructor-arg> tag we will get the different outputs
+Ex:
+<beans>
+<bean id="employee" -------">
+<constructor-arg value="ramesh@gmail.com">
+</constructor-arg>
+
+<constructor-arg value="Ramesh">
+</constructor-arg>
+</beacn>
+</beans>
+if we run above application 
+name: ramesh@gmail.com
+email : Ramesh
+
+above output is invalid.
+
+To overcome above problem we have to use index or type attributes of <constructor-arg>
+Ex:
+<bean id="employee" class=-------->
+<constructor-arg value="ramesh@gmail.com" index="1">
+</constructor-arg>
+<constructor-arg value="Ramesh" index="0">
+</constructor-arg>
+</bean>
+
+out put is 
+name : Ramesh
+email: ramesh@gmail.com
+
+index: it specifies the index of the argument (it takes from '0').
+
+type: it specifies the type of the argument. For object type we have to give fully qualified name.
+For primitives directly we can give the corresponding privitive key words.
+
+NOTE:
+It is recommeded to use index or type attributes while working with constructor injection.
+
+Autowire
+---------
+Spring provides the Autowiring facility to wire(inject) the dependencies automatically without configuration.
+
+Instead of manually configuring the injection, we done it automatically by using auto wiring
+
+To enable autowiring we have to use "autowire" attribute of <bean> tag.
+
+the following values are possible values to the "autowire" attribute.
+
+no
+byName
+byType
+constructor
+autodetect (removed from 3.0)
+
+no: 
+---
+This is default value, which means no autowiring applied and you should use explicit bean reference for wiring. This is what we already have seen in previous applications.
+
+byName:
+-------
+Autowiring by property name.
+
+Mainly it checks for 3 conditions, if all these are valid then it injects the values by setter approach.
+
+1. Dependency bean name
+2. Configured bean id
+3. Setter method name
+
+-- If dependency name is "address", bean configuration should be "address" and setter method should be "setAddress(Address address)" spring container perfomrs autowiring.
+
+Ex:
+Employee.java
+-------------
+//package name import stmts
+
+public class Employee{
+private Address address;
+//setter and getter
+}
+
+p class Address{
+ private String houseNo;
+ private String city;
+ private String state;
+ private String pincode;
+ //setters and getters
+}
+employee.xml
+------------
+<beans>
+<bean id="address" class="------">
+<!-- configure properteis  -->
+</bean>
+<bean id="employee" class="-----" autoWire="byName">
+</bean>
+</beans>
+
+In the above configuration we are  injecting address object into employee automatically.
+
+NOTE: Here property name(address) bean id(address) should be the same. otherwise it inject "null" value.
+
+byType:
+-------
+Autowiring by property datatype.
+
+byType mainly it checks for 3 conditions. if all these are valid then it injects the values by setter approach.
+1. Dependency bean Type
+2. Configured bean Type
+3. Setter method Argument Type
+
+<bean id="employee" class="---" autowire="byType">
+<bean id="address1" class="-------">
+
+NOTE:
+-----
+byName, byType both will uses setter injection.
+
+Constructor
+-----------
+constructor mainly it checks for 3 conditions. if all these are valid then it injects the values by constructor approach.
+
+1.Dependency bean Type
+2.Configured bean Type
+3.Constructor Argument Type 
+
+autowire by constructor uses constructor injection, so we have to place parameterized constructor in Employee class.
+
+public class Employee
+{
+Address address;
+
+public Employee(Address address){
+this.address=address;
+}
+//setters are not required.
+} 
+xml
+---
+<bean id="employee" class="----" autowire="constructor">
+
+autodetect
+----------
+it is removed from spring 3.0, if you want to see the output for autodetect change the spring xsd version to 2.5
+
+autodetect Chooses "constructor" or "byType".
+
+If the default constructor is found, "byType" gets applied. If not found it will apply 'constructor'.
+
+NOTE:
+If we placed both default constructor and paramertized constructor, autodetect uses byType(default constructor).
+
+NOTE:autowire will reduce code in the configuration file. but it is not recomended to use autowire in realworld applications. because it is very difficult to know which beans are injected.
+
+Still if you want to use autowire, along with dependency check you can use it, or @Autowired annotation.
+
+Bean scopes
+-----------

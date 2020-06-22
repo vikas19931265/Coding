@@ -1,0 +1,205 @@
+BeanPostProcessor
+-----------------
+If we have a common initialization process which has to be applied across all the beans, we will go for BeanPostProcessor.
+
+BeanPostProcessor is an interface.
+It has two methods:
+Object postProcessBeforeInitialization(Object bean, String beanName)
+Object postProcessAfterInitialization(Object bean, String beanName)
+
+BeanPostPocessor is used to provide some common logic to all beans which are configured in spring configuration file.
+
+postProcessBeforeIntialization() method is executed before the initialization method called.
+
+postProcessAfterInitialization() method is executed after the initialization method called.
+
+These methods will be called for each spring bean, which is configured in spring configuration file.
+
+steps to work with BeanPostProcessor
+
+1. Write a class which implements from  BeanPostProcessor and implements postProcessBeforeIntialization() and postProcessAfterInitialization() methods.
+
+//import stmts
+public class HelloBean implements InitializingBean{
+//properties setters and getters.
+@Override
+public void afterPropertiesSet() throws Exception {
+System.out.println("afterPropertiesSet called ");
+}
+}
+--------------------
+//import stmts
+public class CustomBeanPostProcessor implements BeanPostProcessor{
+
+@Override
+public Object postProcessAfterInitialization(Object bean, String beanName)throws BeansException {
+Sop("postProcessAfterInitialization");
+sop("beanName: " + beanName);
+return bean;
+}
+
+@Override
+public Object postProcessBeforeInitialization(Object bean, String beanName)throws BeansException {
+sop("postProcessBeforeInitialization");
+sop("beanName: " + beanName);
+return bean;
+}
+}
+
+2.Register user defined BeanPostProcessor object with spring container. i.e configure the user defined BeanPostProcessor bean in spring configuration file.
+
+<beans>
+  --
+  --
+  <bean class="CustomBeanPostProcessor"></bean>
+</beans>
+
+output
+------
+default constructor
+setter called
+postProcessBeforeInitialization
+beanName: helloBean
+afterPropertiesSet called //initialization
+postProcessAfterInitialization
+beanName: helloBean
+Hello.....
+
+lifecycle
+---------
+
+instantiation
+
+populate properties
+
+setBeanName
+
+setBeanFactory
+
+pre initialization
+
+initialization of Bean(afterpropertiesset  or myInit)
+
+post initialization
+
+Ready to use
+
+destroy (destroy() or myDestroy).
+
+BeanFactoryPostProcessor
+-------------------------
+If we want to perform post initialization after creating the BeanFactory and before creating the beans, we need to use BeanFactoryPostProcessor.
+
+Spring has provided built-in BeanFactoryPostProcessor’s to perform post processing.
+
+Ex: PropertyPlaceHolderConfigurer.
+
+PropertyPlaceHolderConfigurer is a post processor which will reads the messages from the properties file. and assign properties file value to the bean properties.
+
+write a program for PropertyPlaceHolderConfigurer
+-------------------------------------------------
+
+POJO
+----
+
+public class ConnectionUtil {
+
+private String driverClass;
+private String url;
+private String username;
+private String password;
+
+public void getConnection() {
+System.out.println(driverClass);
+System.out.println(url);
+System.out.println(username);
+System.out.println(password); 
+//write a logic to create connection 
+}
+//setters
+}
+xml
+---
+database.xml
+----------
+<beans>
+<bean id="connectionUtil" class="ConnectionUtil">
+  <property name="driverClass" value="${driver_class}"> </property>
+  <property name="url" value="${url}"> </property>
+  <property name="username" value="${username}"> </property>
+  <property name="password" value="${password}"> </property>
+</bean>
+
+<bean		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+   <property name="location">
+	<value>database.properties</value>
+   </property>
+</bean>
+</beans>
+
+
+NOTE: to configure properies file key in the spring xml we have to use following syntax.
+
+${key in the properties}
+
+NOTE: if the configured key not available in the poroperties file it throws the Exception.
+
+
+database.properteis
+-------------------
+driver_class = sun.jdbc.odbc.JdbcOdbcDriver
+url = jdbc:odbc:mydsn
+username = system
+password = manager
+
+Client application similar to old application.
+
+
+Working with multiple properteis files.
+---------------------------------------
+if we have only one properties file in the appliation we have to use "location" to load the properties file.
+
+<beans>
+<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+<property name="location">
+<value>database.properties</value>
+</property>
+</bean>
+</beans>
+
+If we have multiple properties files, to load all these properties files we have to use "locations" property.
+
+<beans>
+<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+<property name="locations">
+	<list>
+	<value>hello.properties</value>
+	<value>hello1.properties</value>
+	</list>
+</property>
+</bean>	
+</beans>
+
+Ex for multiple properties files.
+
+HelloBean.java
+--------------
+public class HelloBean {
+
+	private String message;
+	private String message1;
+	//setters and getters
+}
+xml
+---
+<beans>
+<bean id="---" class="----">
+<propery name="message" value="${hello.message}">
+<propery name="message1" value="${hello1.message}"
+<bean class="PPC">
+--
+--
+</beans>
+
+Inner Beans
+-----------

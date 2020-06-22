@@ -1,0 +1,906 @@
+
+Spring AOP
+----------
+One of the main feature of Spring Framework is the Aspect oriented programming (AOP).
+
+OOP is the most popular and widely used methodology in the industry.
+
+Most of the applications are developing today using OOP.
+
+OOP was an enhancement to structured procedural languages.
+
+AOP is not a replacement for OOP.
+
+AOP is another way of organizing your program structure.
+
+The Need of Aspect oriented programming.
+----------------------------------------
+Consider following sample application.
+
+Account.java
+------------
+public class Account {
+
+public long deposit(long depositAmount){
+long newAmout = existingAmount + depositAmount;
+return newAmout;
+}
+
+public long withdraw(long withdralAmount){
+
+if(withdralAmount < balanceAmount){
+balanceAmount = balanceAmount - withdralAmount;
+}
+return balanceAmount;
+}
+}
+
+Above Account class having two methods i.e deposit and withdraw.
+
+So Account class provides the two services i.e deposit and withdraw.
+
+but if we want to add the security for the above methods we have to change the code of the methods
+
+so every new requirement we have to change the code.
+
+public class Account {
+
+    public long deposit(long depositAmount){
+    
+    UserInfo userinfo = getContext().getUser();
+    if(userinfo.getRole().equals("BankAdmin")){
+	currentAmount = existingAmount + depositAmount;
+	   }
+            return currentAmount;
+	}
+
+public long withdraw(long withdralAmount){
+
+UserInfo user = getContext().getUser();
+ if(user.gerRole().equals("BankAdmin")){
+
+if(withdralAmount < currentAmount){
+currentAmount = currentAmount - withdralAmount;
+   }
+}
+return currentAmount;
+}
+}
+
+In the above code assume that getContext().getUser() method return UserInfo object.
+
+In the above code we are checking the user is valid user or not, before executing business logic.
+
+For the above class if we want to add new requirements i.e logging and trasaction management then we need to change the Account class code.
+
+now code looks like the following once you adding new requirements.
+
+public class Account {
+
+public long deposit(long depositAmount){
+logger.info("Begin:deposit");//logging
+logger.info("depositing money:" + depositAmount);//logging
+Transation transatcion = getTransaction();
+transaction.begin();
+try{
+   //securtiy code
+currentAmount = existingAmount + depositAmount;
+   tx.commit();
+   }catch(Exception e){
+	logger.error(e);
+	transaction.rollback();
+	   }
+  logger.info("End:deposit");
+  return currentAmount;
+	}
+
+public long withdraw(long withdralAmount){
+logger.info("Begin:withdraw");
+	//transaction code.
+	//security
+	//application logic (withdraw)
+	     }
+	logger.info("End:withdraw");
+	return currentAmount;
+	}
+}
+
+In the above code whenever new requirement is coming we are forcing to change the logic.
+
+In the realworld once we added any new requirement, we are the responsible to test and fixing the bugs.
+
+To overcome all those problems we will go for AOP.
+
+If we observe above class, that class having only two methods i.e withdraw and deposit. but these methods having application specific logic and common logic of the application(security, tx, logging).
+
+pseudo code of above class.
+---------------------------
+public class Account
+{
+  public long deposit()
+  {
+     //logging
+     //transaction management
+     //security
+     //actual deposit logic (applicaiton logic)
+     //exception handling logic
+  }
+
+    public long withdraw()
+  {
+     //logging
+     //transaction management
+     //security
+     //actual withdraw logic (applicaiton logic)
+     //exception handling logic
+  }
+}
+
+In the above pseudo code logging, transaction management, security are never part of the Account class.
+
+but this code is embeded into our methods.
+
+Logging, trasaction management, security are called middleware services. 
+
+In AOP these kind of logic are called CrossCutting concerns.
+
+The main idea of AOP is to isolate the crosscutting concerns from the application code.
+
+diagram
+-------
+
+
+
+Generally to develop the servicelayer or business layer we will use both OOP and AOP.
+
+So business layer in spring nothing but objects+ascepts.
+
+AOP implementations
+--------------------
+
+AOP is implemented by a different types of framework.
+
+AspectJ
+Spring AOP
+Jboss AOP
+
+AspectJ
+-------
+AspectJ is also popular AOP language given by eclipse. so we can download from http://www.eclipse.org/aspectj.
+
+Spring AOP:
+-----------
+The spring framework provides its own implementation of AOP. It is a seperate module in spring.
+
+Jboss AOP:
+----------
+Jboss has it own AOP implementaion, which is known as Jboss AOP.
+
+Jboss AOP can be downloded from http://jboss.org/jbossaop
+
+AOP Terminologies
+------------------
+It is very difficult to understand AOP terminology.
+
+The following terms we can use while working with any AOP.
+
+Aspect
+JoinPoint
+PointCut
+Advice
+Target
+Weaving
+proxy etc. 
+
+Aspect
+------
+An Aspect is a functionality or a feature.
+or
+Aspect is the piece of code that has to be applied across various classes of the application
+
+for example
+
+public void businessMethod(BusinessData businessData)
+{
+  //logging 
+  logger.info("businessMethod called");
+
+  //Transaction Management
+  transaction.begin();
+
+  //main business logic
+
+  transactin.commit();
+}
+
+In the above code Logging and Transaction management are Ascepts.
+
+JoinPoint
+----------
+JoinPoints defines the various execution points where an Aspect can be applied.
+
+A program has lot of joinpoints.
+
+The first step of writing an aspect oriented code is to identify the joinpoints in a system. 
+
+After identify the joinpoints, you can apply aspect to joinpoints.
+
+For Example
+
+public void businessMethod(BusinessData businessData)
+{
+  //method start - possible aspect code here like logging.
+   
+   try{
+       //business logic
+   } catch(Exception e){
+     //exception --- Aspect code here when some exception is raised.
+   }
+   finally{
+     //finally ---Aspect code here
+   }
+    //method end --- Aspect code in end of the method. 
+}
+
+In the above code start of the method, end of the method, the catch block and finally blocks are called join points.
+
+
+Possible execution points in the application for embedding aspects are called join points.
+
+NOTE: it is not necessary that an aspect should be applied to all the possible join points.
+
+PointCut
+--------
+After identifying the join points in the system, the next step is to apply the aspect in the existing code. but it is difficult to apply the aspect for each and every join point. in such case we can use pointcut.
+pointcut is simple expression that groups the join points to apply aspect.
+
+for example
+
+  aspect loggingAspect {}
+  aspect TransactionManagementAspect {}
+
+  Assume that above two declarations are aspects.
+
+  observe the following code.
+
+  public void someMethod()
+  {
+  //method start
+  try{
+  //business logic
+  }catch(---){
+  //exception handling code
+  }
+  finally{
+   //releasing resouces
+  }
+  //method end
+  }
+
+  In the above code start method, end method, exception block and finally block are called join points. so these are possible points to apply the loggingaspect and transactionmanagementaspect.
+
+  so observe the pointcut definition
+  
+  pointcut method_start_end_pointcut(){
+  // this pointcut apply the aspects(logging and trasaction) before begining and end of the method.
+  }
+
+  pointcut catch_and_finally_pointcut(){
+  // this pointcut apply the aspects(logging and trasaction) in the catch block and finally 
+  }
+
+  NOTE:
+  PointCut binds the aspect to a perticular joinpoint or set of joinpoints.
+
+Advice
+------
+Advice is the code that implements the Aspect.
+Advice also specifies when to execute the code.
+
+There are different types of advices in spring 
+Before Advice
+After Returning Advice
+Around Advice
+Throws Advice
+
+Target object:
+--------------
+It is business object that contains of actual business logic.
+
+Weaving:
+--------
+The mechanism of dynamically association of cross cutting concern(aspect) to core concern (businesslogic) is called weaving.
+
+proxy:
+-----
+An object produced through weaving is nothing but a proxy.
+
+Don’t worry if you find these concepts confusing; this will all become clear when you see some examples.
+
+Spring AOP Architecture
+-----------------------
+
+diagram
+-------
+
+The core architecture of Spring AOP is based around proxies. 
+
+So AOP works on the proxied designed pattern.
+
+According to proxy design pattern the actual object(business object) is wrapped in to another object known as proxied object, and substitute that object in the place of actual object(business object)
+
+proxy interrupt the call given by caller to original object. It will have the chance to call addtional logic(aspect logic) before executing actual business logic.
+
+Creating Advices in Spring
+--------------------------
+Advice refers to the actual implementation code for an Aspect.
+
+The following are the different types of advices availble in spring.
+
+Before Advice
+After Returing Advice
+Throws Advice
+Around Advice
+
+precedure to work with configuraion file in aop.
+
+To configure these advices we have to depends on org.springframework.aop.framework.ProxyFactoryBean bean.
+
+This bean (ProxyFactoryBean) used to create the proxied object.
+
+"interceptorNames" property takes the list of Advices to be applied to the dynamically generated proxy class.
+
+"target" property allows to configure the service object 
+ex for target:customerService.
+
+BeforeAdvice
+-------------
+BeforeAdvice will execute before the method execution.
+
+In spring BeforeAdvice is represented in the form of org.springframework.aop.MethodBeforeAdvice.
+
+Steps to work with MethodBeforeAdvice
+-------------------------------------
+once BeforeAdvice is applied to a business bean, whenever the caller call the business method in the business bean, first BeforeAdvice method will execute then business method will executes.
+
+steps
+------
+1. Develop a business interface(optional) and its implementation class.
+
+2.Develop a class that implements org.springframework.aop.MethodBeforeAdvice interface and override before(---) method. this implementation code is called crosscutting code.
+
+3.develop sping configuration file. here configure user defined beans(target object and advices) and pre defined beans(ProxyFactoryBean)
+
+4.get the object and call the business method.
+
+Example
+--------
+CustomerService.java
+--------------------
+package com.rameshit.services;
+
+public class CustomerService {
+private String name;
+private String url;
+
+//setter methods for name and url to perfom 
+//setter injection.
+
+//business method
+public void printName() {
+System.out.println("Customer name : " + this.name);
+}
+//business method
+public void printURL() {
+System.out.println("Customer website : " + this.url);  
+}
+
+public void printThrowException() {
+throw new IllegalArgumentException();
+}
+}
+
+LoggingBeforeAdvice.java
+------------------------
+package com.rameshit.services;
+import java.lang.reflect.Method;
+import org.springframework.aop.MethodBeforeAdvice;
+
+public class LoggingBeforeAdvice implements MethodBeforeAdvice {
+public void before(Method method, Object[] args, Object target)throws Throwable {
+		
+System.out.println("Before calling : " + method.getName() + " with arguments: " + args.length + " on : " + target);
+    }
+}
+
+spring-customer.xml
+------------------
+<beans>
+<bean id="customerService" class="com.rameshit.services.CustomerService">
+<property name="name" value="Ramesh" />
+<property name="url" value="http://www.rameshit.com" />
+</bean>
+
+<bean id="loggingBeforeAdvice" class="com.rameshit.services.LoggingBeforeAdvice"/>
+
+<bean id="customerServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+<property name="target" ref="customerService" />
+<property name="interceptorNames">
+<list>
+<value>loggingBeforeAdvice</value>
+</list>
+</property>
+</bean>
+</beans>
+
+App.java
+---------
+package com.rameshit.services;
+//import statements
+public class App {
+main(---){
+ApplicationContext appContext = new ClassPathXmlApplicationContext("spring-customer.xml");
+
+CustomerService customer = appContext.getBean("customerServiceProxy",
+CustomerService.class);
+System.out.println("*************************");
+customer.printName();
+System.out.println("*************************");
+customer.printURL();
+System.out.println("*************************");
+try {
+customer.printThrowException();
+} catch (Exception e) {
+}
+}
+}
+
+output
+------
+*************************
+Before calling : printName with arguments: 0 on : com.rameshit.services.CustomerService@28805
+Customer name : Ramesh
+*************************
+Before calling : printURL with arguments: 0 on : com.rameshit.services.CustomerService@28805
+Customer website : http://www.rameshit.com
+*************************
+Before calling : printThrowException with arguments: 0 on : com.rameshit.services.CustomerService@28805
+
+NOTE:
+----
+to work with aop we have to place following jars in the classpath.
+
+1.spring jars
+2
+
+
+
+
+AfterReturningAdvice
+------------------
+It will execute after the method is returned a result. 
+
+So it will be usefull if some logic has to executed before returning the control with in a method execution.
+
+In spring After Returning Advice is represented in the form of org.springframework.aop.AfterReturningAdvice.
+
+Develop a business interface(optional) and its implementation class.
+
+Develop a class that implements org.springframework.aop.AfterReturningAdvice interface and ovrride afterReturning(---) method. in this implementation code is called crosscutting code.
+get the object and call the business method.
+
+Example
+-------
+package com.rameshit.services;
+
+import java.lang.reflect.Method;
+import org.springframework.aop.AfterReturningAdvice;
+
+public class LoggingAfterReturningAdvice implements AfterReturningAdvice {
+
+public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {
+System.out.println("After calling : " + method.getName()+ " with arguments: " + args.length + " on : " + target);
+   }
+}
+
+xml file
+--------
+<beans>
+--
+--
+
+<bean id="loggingAfterReturningAdvice" class="com.rameshit.services.LoggingAfterReturningAdvice" />
+	
+<bean id="customerServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+<property name="target" ref="customerService" />
+<property name="interceptorNames">
+<list>
+<value>loggingAfterReturningAdvice</value>
+</list>
+</property>
+</bean>
+</beans>
+
+output:
+------
+*************************
+Customer name : Ramesh
+After calling : printName 
+*************************
+Customer website : http://www.rameshit.com
+After calling : printURL 
+*************************
+--
+--
+
+NOTE:
+We can configure both before advice and after returning advice for single target bean.
+--
+--
+<list>
+<value>loggingBeforeAdvice</value>
+<value>loggingAfterAdvice</value>
+</list>
+
+output
+-------
+****************
+Before calling......
+Customer Name: Ramesh
+After calling......
+****************
+Before calling......
+Customer Website: ........
+After calling......
+*************
+Before calling
+
+
+ThrowsAdvice
+--------------
+It will execute after the method throws an exception. 
+
+to work with throws advice we have to write a class which implements ThrowsAdvice inteface.
+
+Ex:
+
+package com.rameshit.services;
+import org.springframework.aop.ThrowsAdvice;
+public class ThrowsLoggingAdvice implements ThrowsAdvice  {
+public void afterThrowing(IllegalArgumentException e) throws Throwable {
+System.out.println("ThrowsLoggingAdvice : Throw exception called");
+}
+}
+output:
+***********
+Customer Name:Ramesh
+***************
+Customer website: .......
+***************
+ThrowsLoggingAdvice : Throw exception called
+
+Around Advice
+-------------
+It combines all three above advices, and execute during method execution. Create a class which implements MethodInterceptor interface. You have to call the “methodInvocation.proceed();” to proceed on the original method execution, else the original method will not execute.
+
+Ex:
+
+--
+--
+<list>
+<value>aroundAdvice</value>
+</list>
+
+
+Pointcut in AOP
+----------------
+Pointcut define where exactly the advices have to be applied in various joinpints.
+
+Spring AOP comes with three technical terms – Advices, Pointcut , Advisor.
+
+Advice – Indicate the action to take either before or after the method execution.
+Pointcut – Indicate which method should be intercept, by method name or regular expression pattern.
+
+Advisor – Group ‘Advice’ and ‘Pointcut’ into a single unit, and pass it to a proxy factory object.
+
+You can match the method via following two ways :
+
+Named match Pointcut
+Regular expression match Pointcut
+
+1.Named match Pointcut example
+
+--Intercept a printName() method via ‘pointcut’ and ‘advisor’.
+
+Create a NameMatchMethodPointcut pointcut bean, and put the method name you want to intercept in the ‘mappedName‘ property value.
+
+<bean id="customerPointcut"
+class="org.springframework.aop.support.NameMatchMethodPointcut">
+<property name="mappedName" value="printName" />
+</bean>
+
+Create a DefaultPointcutAdvisor advisor bean, and associate both advice and pointcut.
+
+<bean id="customerAdvisor"
+class="org.springframework.aop.support.DefaultPointcutAdvisor">
+<property name="pointcut" ref="customerPointcut" />
+<property name="advice" ref="loggingBeforeAdvice" />
+</bean>
+Here advisor means combination of advice and pointcut.
+
+so customerAdvisor = customerPointcut + loggingBeforeAdvice.
+
+Replace the proxy’s ‘interceptorNames’ to ‘customerAdvisor’ (it was 'loggingBeforeAdvice' previously).
+
+<bean id="customerServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+<property name="target" ref="customerService" />
+<property name="interceptorNames">
+<list>
+<value>customerAdvisor</value>
+</list>
+</property>
+</bean>
+
+Full bean configuration file
+----------------------------
+
+<beans>
+<bean id="customerService" class="com.rameshit.services.CustomerService">
+<property name="name" value="Ramesh" />
+<property name="url" value="http://www.rameshit.com" />
+</bean>
+	
+<bean id="customerPointcut" class="org.springframework.aop.support.NameMatchMethodPointcut">
+<property name="mappedName" value="printName" />
+</bean>
+
+<bean id="loggingBeforeAdvice" class="com.rameshit.services.LoggingBeforeAdvice" />
+
+<bean id="customerAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+<property name="pointcut" ref="customerPointcut" />
+<property name="advice" ref="loggingBeforeAdvice" />
+</bean>
+
+<bean id="customerServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+<property name="target" ref="customerService" />
+<property name="interceptorNames">
+   <list>
+     <value>customerAdvisor</value>
+   </list>
+</property>
+</bean>
+</beans>
+
+Note:
+----
+--if you want to add mutlile methods use following syntax
+ <property name="mappedNames">
+<list>
+<value>printName</value>
+<value>printURL</value>
+</list>
+</property> 
+
+--If we want to call printName and printURL, i.e any method which starts with "print" use following expression.
+print*
+
+If we want to call all the methods in the class simply use *.
+
+NOTE:
+----
+Spring comes with PointcutAdvisor class to save your work to declare advisor and pointcut into different beans, you can use NameMatchMethodPointcutAdvisor to combine both into a single bean.
+
+<bean id="customerAdvisor"
+class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
+<property name="mappedName" value="print*" />
+<property name="advice" ref="loggingBeforeAdvice" />
+</bean>
+
+2. Regular expression pointcut example
+
+You can also match the method’s name by using regular expression pointcut – RegexpMethodPointcutAdvisor.
+
+<bean id="customerAdvisor"
+class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+<property name="patterns">
+<list>
+<value>.*URL.*</value>
+</list>
+</property>
+<property name="advice" ref="loggingBeforeAdvice" />
+</bean>
+
+Schema based AOP support
+------------------------
+ Spring 2.0 also offers support for defining aspects using the new "aop" namespace tags.
+
+ So to use aop namespace tag we need to import the spring AOP schema.
+
+Within your Spring configurations, all aspect and advisor elements must be placed within an <aop:config> element (you can have more than one <aop:config> element in an application context configuration).
+
+An <aop:config> element can contain pointcut, advisor, and aspect elements (note these must be declared in that order).
+
+An aspect can be declared as <aop:aspect>
+
+you can declare the pointcut using following syntax.
+
+<aop:config>
+<aop:pointcut 
+expression="execution(public * *(..))"
+id="customerServicePointCut">
+</aop:pointcut>
+</aop:config>
+
+or
+<aop:aspect ref="loggingAfterAdvice">
+<aop:after-returning method="myAfter"
+	pointcut="execution(public * *(..))" />
+</aop:aspect>
+
+Before Advice - <aop:before>
+After Advice - <aop:after>
+After Returning Advice - <aop:after-returning>
+thorws Advice - <aop:after-throwing>
+Around advice - <aop:after-around>
+	
+example for <aop:before>
+
+
+Advice class
+------------
+package com.rameshit.services;
+public class LoggingBeforeAdvice {
+public void myBefore() {
+System.out.println("myBefore.... called");
+}
+}
+
+NOTE: Above class doesnt depends on any aop api(spring aop api)
+
+xml
+----
+<!-- Here we should use aop name space -->
+<beans>
+<bean id="customerService" class="com.rameshit.services.CustomerService">
+<property name="name" value="Ramesh" />
+<property name="url" value="http://www.rameshit.com" />
+</bean>
+
+<bean id="loggingBeforeAdvice" class="com.rameshit.services.LoggingBeforeAdvice" />
+
+<aop:config>
+<aop:aspect ref="loggingBeforeAdvice">
+<aop:before method="myBefore"
+pointcut="execution(public * *(..))" />
+</aop:aspect>
+</aop:config>
+</beans>
+
+Advantages
+----------
+To define advice classes no need to depends on framework api.
+
+we can reduce more configurations in spring configuration file.
+
+no need to configure proxyfactory bean explicitly.
+
+it has extra advice called AfterAdvice it is equal to finally block.
+
+
+Some examples of common pointcut expressions are given below.
+------------------------------------
+the execution of any public method:
+execution(public * *(..))
+
+the execution of any method with a name beginning with "set":
+execution(* set*(..))
+
+the execution of any method defined by the CustomerService class:
+
+execution(* com.rameshit.service.CustomerService.*(..))
+
+the execution of any method defined in the service package:
+execution(* com.rameshit.service.*.*(..))
+
+the execution of any method defined in the service package or a sub-package:
+execution(* com.rameshit.service..*.*(..))
+
+any method defined in CustomerService using within 
+within(com.rameshit.service.CustomerService)
+
+Annotation based AOP
+--------------------
+In annotation based aop we have to use @AspectJ configuration in spring configuration file.
+
+we need to enable spring support for annotation based AOP.
+
+if we are using schema, the @AspectJ support is enabled in spring configuration as follows
+<aop:aspectj-autoproxy>
+
+if we are using dtd, the @AspectJ support is enabled in spring configuration as follows
+
+<bean class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator"></bean>
+
+while working with annotaitons we have to add follwing jars in the classpath.
+
+
+Declaring an aspect
+Aspects classes are like any other normal bean and may have methods and fields just like any other class, except that they will be annotated with @Aspect as follows:
+
+package com.rameshit;
+
+import org.aspectj.lang.annotation.Aspect;
+
+@Aspect
+public class AspectModule {
+
+}
+
+Common AspectJ advice annotations :
+@Before 
+@After
+@AfterReturning
+@AfterThrowing 
+@Around 
+
+@Before example
+----------------
+steps
+----
+1.set the environment for aop annotaions in config file.
+
+<beans ------------------>
+
+<aop:aspectj-autoproxy />
+
+<!-- <bean class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator"></bean> -->
+
+2.write aspect or advice by using annotaions.
+
+package com.rameshit.services;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+
+@Aspect
+public class LoggingBeforeAdvice {
+@Before("execution(public * *(..))")
+public void myBefore() {
+System.out.println("myBefore.... called");
+}
+}
+
+3. configure LoggingBeforeAdvice in spring config file.
+
+<bean class="com.rameshit.services.LoggingBeforeAdvice">
+
+4.develop service class and client applciation.
+these classes are similar to previous applicaiton.
+
+final configuration file.
+-------------------------
+<beans--------->
+<aop:aspectj-autoproxy />
+<bean id="customerService" class="com.rameshit.services.CustomerService">
+<property name="name" value="Ramesh" />
+<property name="url" value="http://www.rameshit.com" />
+</bean>
+<bean class="com.rameshit.services.LoggingBeforeAdvice" />
+<bean class="com.rameshit.services.LoggingAfterAdvice" />
+<bean class="com.rameshit.services.ThrowsLoggingAdvice" />
+</beans>
+
+@After Example
+--------------
+package com.rameshit.services;
+
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Aspect;
+
+@Aspect
+public class LoggingAfterAdvice {
+@After("execution(public * *(..))")
+public void myAfter() {
+System.out.println("myAfter called....");
+   }
+}

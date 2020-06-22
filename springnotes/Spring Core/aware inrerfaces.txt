@@ -1,0 +1,120 @@
+Aware interfaces
+----------------
+If we want to know the BeanFactory information, ApplicationContext information and spring bean name configured in xml file we have to use Aware interfaces.
+
+There are lot of aware interfaces that are provided by the spring like BeanFactoryAware,
+BeanNameAware, ApplicationContextAware, ServletConfigAware, ServletContextAware,
+ApplicationEventPublisherAware etc.
+
+BeanFactoryAware
+----------------
+BeanFactoryAware is an interface defined in org.springframework.beans.factory package. It is used to get the Bean Factory container information in spring bean.
+
+It has one method i.e., setBeanFactory(BeanFactory beanFactory).
+This method is automatically called by the container.
+
+Ex:
+
+//import stmts
+public class HelloBean implements BeanFactoryAware {
+
+private String message;
+private BeanFactory beanFactory;
+
+public HelloBean() {
+System.out.println("default constructor");
+}
+
+public void setMessage(String message) {
+System.out.println("setter called");
+this.message = message;
+}
+
+public String getMessage() {
+sop("beanFactory: " + beanFactory)
+return message;
+}
+//interface method
+public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+this.beanFactory = beanFactory;
+}
+}
+
+Config file is similar to basic application.
+
+Client
+------
+--
+BeanFactory factory = new XmlBeanFactory(new ClassPathResource("lifecycle.xml"));
+HelloBean bean = factory.getBean("helloBean", HelloBean.class);
+System.out.println(bean.getMessage());
+		
+output
+------
+default constructor
+setter called
+setBeanFactory called
+beanFactory: org.springframework.beans.factory.xml.XmlBeanFactory@f7c31d: defining beans [helloBean]; root of factory hierarchy
+Hello India....
+
+
+ApplicationContextAware
+-----------------------
+ApplicationContextAware is an interface. It is used to get the ApplicationContext container information in spring bean.
+
+It has one method i.e., setApplicationContext(ApplicationContext applicationContext).
+This method is automatically called by the container.
+
+public class HelloBean implements ApplicationContextAware {
+//properties
+//constructor
+//setters and getters
+@Override
+public void setApplicationContext(ApplicationContext applicationContext)
+throws BeansException {
+this.applicationContext = applicationContext;
+
+System.out.println("ApplicationContext: " + applicationContext);
+}
+}
+Config file is similar to basic application.
+
+Client
+------
+--
+ApplicationContext context = new ClassPathXmlApplicationContext("lifecycle.xml");
+--
+--
+output:
+------
+default constructor
+setter called
+ApplicationContext: org.springframework.context.support.ClassPathXmlApplicationContext@133f1d7: 
+Hello.....
+
+
+BeanNameAware
+-------------
+
+BeanNameAware is an interface. It is used to get the Bean name i.e "id" name in the configuration file.
+It has one method i.e., setBeanName(String name).
+This method is automatically called by the container.
+
+Ex:
+public class HelloBean implements BeanNameAware {
+//properties setter getters
+//implement interface method.
+public void setBeanName(String name) {
+this.name = name;
+System.out.println("Bean Name: " + name);
+}
+}
+output
+-------
+default constructor
+setter called
+Bean Name: helloBean
+Hello.....
+
+BeanPostProcessor
+------------------

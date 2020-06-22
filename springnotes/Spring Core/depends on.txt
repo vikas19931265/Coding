@@ -1,0 +1,16 @@
+In spring application XML, if we need to initialize any bean before any other bean, depends-on do this job. 
+
+For Example:
+
+
+
+
+While creating bean we need to define depends-on attribute in bean. 
+In the below example I have tried to show the working of depends-on. I have taken three bean A,B and C. 
+I have implemented as 
+
+B depends on C
+
+A depends on B. 
+
+First A will be initialized, and then B and then C. Find the example below. 

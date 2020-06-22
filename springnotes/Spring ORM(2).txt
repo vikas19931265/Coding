@@ -1,0 +1,454 @@
+Spring ORM
+----------
+Spring ORM is one module in spring.
+
+Spring ORM is not a ORM tool.
+
+Spring ORM has the capabulity to integrate another ORM. i.e Hibernate, JPA, JDO, Toplink etc.
+
+Spring with Hiberante
+---------------------
+
+Hibernate:
+---------
+It is an opensource, light weitht, Object Relational mapping tool to develop DB independent persistance logic in java and j2ee application.
+
+To develop hibenate application following resources are required.
+
+Student.java----POJO or Persistant class
+hiberante.cfg.xml -- config file
+Studnet.hbm.xml -- mapping file
+HibernateClinet.java -- client Appl.
+
+Student.java
+------------
+public class Student
+{
+   private int sno; 
+   private String sname;
+   private String semail;
+   private String smobile;
+   //setters and getters
+}
+
+hibenrate.cfg.xml
+-----------------
+
+<hibernamte-configuarion>
+  <session-factory>
+    <property name="---">---</property>
+    <property name="---">---</property>
+    --
+    --
+    --
+  </session-factory>
+</hibernate-configuarion>
+
+NOTE:
+This file is mandatory while working with hiberante with out spring orm.
+
+But if we used spring with hibernate to connect the database this file(hb configuration file) is not required.
+
+Student.hbm.xml
+--------------
+<hiberante-mapping>
+  <class name="Student" table="TB_STUDENT">
+    <id name="sno" column="NO"/>
+    <property name="sname" column="NAME"/>
+    <property name="semail" column="EMAIL"/>
+    <property name="smobile" column="MOBILE"/>	        
+  </class>
+</hiberante-mapping>
+
+
+Client Application
+------------------
+public class HibernateClinet
+{
+   main(-)
+   {
+    Configuration cfg = new Configuration().configure();
+
+    SessionFactory sf = cfg.buildSessionFactory();
+
+    Session session = sf.openSession();
+
+    Transaction tx=session.beginTransaction();
+
+    Student st = new Student();
+    //setter methods on student 
+
+   session.save(st)//appl. specific logic.
+
+    tx.commit();
+    session.close();
+}
+}
+In the above code session.save(st) specific to our application.
+
+remaining lines code is common for all the DAOs.
+
+so here we are writing the code to create resources, close the resources and handling the exceptions.
+
+Instead of writing common logic(create, closing the resouces) in each DAO we can inject those resources in DAO using springORM.
+
+Write a program to connect the DB using spring ORM without HibernateTempate.
+-----------------------------------------------------------------------------
+to develop this applciation we have to develop following resources.
+
+1.applciation-context.xml
+2.StudentDAO
+3.Student.hbm.xml
+4.POJO-hiberante pojo or perstistant class
+5.client appl.
+
+application-context.xml
+-----------------------
+<beans>
+  <bean id="studentDAO" class="StudentDAO">
+     <property name="sessionFactoy" ref="sfBean"></property>
+  </bean>
+
+  <bean id="sfBean"
+     class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+     
+     <property name="dataSource" ref="dataSourceBean"></property>
+
+    <property name="mappingResources">
+	<list>
+	<value>Student.hbm.xml</value>
+	</list>
+     </property>
+
+    <property name="hibernateProperties">
+	<props>
+	<prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
+	<prop key="hibernate.show_sql">true</prop>
+	<prop key="hibernate.format_sql">true</prop>
+	<prop key="hibernate.connection.pool_size">15</prop>
+	</props>
+	</property>
+   </bean> 
+
+<bean id="dataSourceBean"
+class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"> </property>
+<property name="url" value="jdbc:oracle:thin:@localhost:1521:XE"> </property>
+<property name="username" value="system"> </property>
+<property name="password" value="manager"> </property>
+</bean>
+</beans>
+
+StudentDAO
+----------
+public class StudentDAO
+{
+   private SessionFactory sessionFactroy;
+
+   //setter for sessionFactory
+
+   public void insertStudent(Student student)
+ {
+   Session session = sessionFactory.openSession();
+   Transaction tx = session.beginTransaction();
+   session.save(student);
+   tx.commit();
+   session.close();
+ }
+
+public void updateStudent(Student student){
+Session session = sessionFactory.openSession();
+session.update(student);
+session.beginTransaction().commit();
+session.close();
+}
+//remaining CURD operations
+}
+
+Student.java (POJO or persistant)
+--------------------------------
+
+public class Student{
+ private int sno;
+ private String sname;
+ private String semail;
+ private String smobile;
+ //setters and getters
+}
+
+student.hbm.xml
+---------------
+<hibernate-mapping>
+<class name="Student" table="TB_STUDENT">
+<id name="sno" column="NO">
+</id>
+<property name="sname" column="NAME">
+<property name="semail" column="EMAIL">
+<property name="smobile" column="MOBILE">
+</class>
+</h-m>
+
+Client
+------
+--
+--
+--
+ApplciationContext context = new ClassPathXmlApplicationContext("application-context.xml");
+
+StudentDAO studentDAO = context.getBean("studentDAO",StudentDAO.class);
+
+Student student = new Student();
+student.setSno(99);
+student.setSname("mahesh");
+student.setSemail("mahesh@gmail.com");
+student.setSmobile("444444");
+studentDAO.insertStudent(student);
+}		
+------------------------------------------
+Spring with hiberante integration using Spring ORM.
+------------------------------------------
+
+In spring with hibernate we have to add both spring and hiberante jars.
+
+While working with hibernate we have to develop 2 xmls. i.e configuaration file(hibernate.cfg.xml) and mapping file(pojoclass.hbm.xml).
+
+while working with spring we have to develop the one configuration file to configure beans. application-context.xml
+
+So there will be two configuration files in spring with hibernate. spring config file and hiberante config file.
+
+But while working with spring with hiberante we won't write hibernate configuration file(hibernate.cfg.xml). here hibernate configuration properties(driver class, url, show_sql, connection pool etc) are configured in spring configuration file.
+
+we will configure all these information in LocalSessionFactoryBean.
+
+HibernateTemplate
+-----------------
+It is a class defined in org.springframework.orm.hibernate3 package.
+
+Helper class that simplifies Hibernate data access code. Automatically converts HibernateExceptions into DataAccessExceptions.
+
+HibernateTempalte removes all the unnecessary code.
+
+HibernateTemplate class uses the SessionFactory object implicitly.
+
+Write a program to connect db using spring with hibernate(HibernateTemplate).
+-------------------------------------------
+
+public class StudentDAO
+{
+ private HibernateTemplate hiberanteTemplate;
+
+  public void setHibernateTempalte( HiberanteTemplate hiberanteTemplate)
+  {
+  this.hiberanteTemplate = hiberanteTemplate;
+  }
+  
+ public void insertStudent(Studnet student){
+    
+    hiberanteTemplate.save(student);
+  }
+  //remaining operations.
+
+public Student getStudent(int sid) {
+ Student st = hibernateTemplate.get (Student.class, sid);
+ return st;
+}
+
+public List<Student> getAllStudents() {
+  List<Student> stduentsList = hibernateTemplate.loadAll(Student.class);
+  return stduentsList;
+ }
+}
+
+application-context.xml
+--------------------------
+<beans>
+<bean id="studentDAO" class="StudentDAO">
+<property name="hiberanteTemplate" ref="hiberanteTemplateBean">
+</bean>
+
+<bean id="hibernateTemplateBean" class="org.springframework.orm.hibernate3.HibernateTemplate">
+<property name="sessionFactory" ref="sfBean"> </property>
+</bean>
+
+<bean id="sfBean" class="----">
+<!-- similar to above application --> 
+</bean>
+</beans>
+
+client application similar to above application.
+--------------------------------------
+HibernateDAOSupport
+-------------------
+Instead of injecting hiberateTemplate in each DAO, spring provides the HibernateDaoSupport class. it has the HibernateTemplate property.
+
+use getHibernateTemplate() to get the HibernateTemplate object
+
+Ex:
+config.xml
+---------
+Spring configuartion file similar to above application.
+
+StudentDAO
+---------
+
+public class StudentDAO extends HibernateDaoSupport {
+
+public void insertStudent(Student student) {
+getHibernateTemplate().save(student);
+}
+
+public Student getStudent(){
+ Student st = getHibernateTemplate(). get(Student.class, 1);
+ return st;
+}
+}
+-------------------------------------------
+HibernateCallback
+-----------------
+
+It is an interface defined in org.springframework.orm.hibernate3 package.
+
+When we are not getting the specific functionality of hibernate by using HiberanteTempalte those functionalities we can achieve by using HibernateCallback.
+
+write a program to get the database using Hibernate criteria and HibernateCallback interface.
+
+write a class which implements HibernateCallback
+
+public class StudentHibernateCallback implements HibernateCallback<Object> {
+	
+public Object doInHibernate(Session session) throws HibernateException,SQLException {
+		
+Criteria criteria  =session. createCriteria(Student.class);
+		
+List<Student> list = criteria.list();
+return list;
+}
+}
+
+Use StudentHibernateCallback class in StudentDAO.
+
+--
+--
+
+public List<Student> getStudents() {
+
+List<Student> list = (List<Student>) getHibernateTemplate().execute(
+new StudentHibernateCallback());
+return list;
+}
+
+ 
+
+JPA: (Java Persistance API)
+---------------------------
+Java Persistance API is an ORM tool to connect the Database.
+
+JPA is an ORM coming from Sun microsystem.
+
+JPA is an opensource, light weight, object realational mapping tool to develop the DB independent persistance logic in java, j2ee and framework based applications.
+
+To develop the jpa application we have to following files
+
+persistance.xml
+mapping file
+pojo
+client application.
+
+While working with JPA we have to think about following classes and interfaces.
+
+Persistence 
+EntityManagerFactory
+EntityManager
+
+using createEntityManagerFactory(String persistenceUnitName) method we will get the EntityManagerFactory object. it is defined in Persistence class.
+
+using createEntityManager() method we will get the EntityManager object. it is defined in EntityManagerFactory.
+
+using EntityManager methods we can perform DB operations. i.e persist(), merge(), remove(), find()
+
+
+Develop the application using spring with JPA.
+---------------------------------------------
+1.persistance.xml(configuration file)
+------------------------------------
+--
+--
+2.Accounts.xml (mapping file)
+----------------------------
+<entity-mappings>
+<entity class="com.jpaWithSpring.Account">
+<table name="accounts"></table>
+<attributes>
+<id name="accountNumber">
+<column name="account_number"/>
+</id>
+<basic name="owner">
+<column name="owner"/>
+</basic>
+<basic name="balance">
+<column name="balance"/>
+</basic>
+</attributes>
+</entity>
+</entity-mappings>
+
+3.Account.java (POJO)
+--------------------
+public class Account 
+{
+	private int accountNumber;
+	private String owner;
+	private double balance;
+	//setters and getters
+}
+
+4.AccountsDAO
+--------------
+public class AccountsDAO extends JpaDaoSupport
+{
+
+  pubic void createAccount(Account account){
+    getJpaTemplate().persist(account);
+  }
+
+  pubic void updateAccount(Account account){
+	getJpaTemplate().merge(account);
+  }
+
+    pubic void deleteAccount(Account account){
+    getJpaTemplate().remove(account);
+  }
+  public List<Account> getAllAccounts() {
+   List<Account> accounts = getJpaTemplate().find("select acc from Account acc");
+    return accounts;
+   }
+}
+
+NOTE: JpaTemplate methods(persist, merge,remove....) internally calls EntityManager methods only.
+
+beans.xml
+---------
+<beans>
+ <bean id="accountsDaoBean" class="com.jpaWithSpring.AccountsDao">
+ <property name="jpaTemplate" ref="jpaTemplateBean"></property>
+  </bean>
+
+ <bean id="jpaTemplateBean" class="org.springframework.orm.jpa.JpaTemplate">
+ <property name="entityManagerFactory" ref="emfBean"></property>
+</bean>
+
+ <bean id="emfBean" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+<property name="dataSource" ref="dataSourceBean"></property>
+<property name="jpaVendorAdapter" ref="hbAdapterBean"></property>
+</bean>
+
+ <bean id="hbAdapterBean" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+<property name="showSql" value="true"> </property>
+<property name="generateDdl" value="true"> </property>
+<property name="databasePlatform" value="org.hibernate.dialect.Oracle10gDialect"></property></bean>
+
+<bean id="dataSourceBean" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+--
+--
+</bean>
+</beans>

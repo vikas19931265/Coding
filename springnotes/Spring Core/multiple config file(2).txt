@@ -1,0 +1,109 @@
+working with multiple spring configuration files
+-----------------------------------------------
+When the spring configuration file size is huge, it is difficult to maintain, so it is recomeded to divide the configuration into multiple files.
+
+For example in the realworld applications DAO classes configured in DAO realted xml file and service layer classes are configured in service related xml file.
+
+Generally there are 2 ways to work with multiple configuration files.
+
+l. By importing other spring file into the current configuration file.
+Ex: 
+In main xml file we import other xml files
+
+application-context.xml
+-------------------------
+<beans>
+<import resource="dao-context.xml/ >
+<import resource="services-context.xml/ >
+</beans>
+
+here dao-context.xml contains dao classes configuration
+services-context.xml contains service classes configuration.
+
+2 By passing all spring bean configuration files as a string array to the constructor of the container
+
+ Ex:
+ ApplicationContext context = new ClassPathXmlApplicationContext(new String[] { "dao-context.xml", "services-context.xml" });
+
+write a program for multiple configuration files.
+----------------------------------------
+1.LoginDAO interface
+---------------------
+public interface LoginDAO{
+   void logindaomethod();  
+}
+
+2.LoginDAOImpl class
+----------------------
+public class LoginDAOImpl implements LoginDAO
+{
+   public void logindaomethod(){
+      sop("logindaomethod");
+   }
+}
+
+3.LoginService interface
+-------------------------
+public interface LoginService {
+     loginServicemethod();
+}
+
+4.LoginServiceImpl class
+------------------------
+public class LoginServiceImpl implements LoginService{
+
+  private LoginDAO loginDAO;
+
+  public void setLoginDAO(LoginDAO loginDAO)
+  {
+     this.loginDAO = loginDAO;
+  }
+   
+   public void loginServicemethod(){
+     sop("loginServicemethod");
+     loginDAO.logindaomethod();
+   }
+}
+
+xmls
+----
+dao-context.xml
+---------------
+<beans>
+<bean id="loginDAO" class="LoginDAOImpl">
+</bean>
+</beans>
+
+services-context.xml
+-------------------
+<beans>
+<bean id="loginservice" class="LoginServiceImpl">
+  <property name="loginDAO" ref="loginDAO">
+  </property>
+</bean>
+</beans>
+
+appliation-context.xml
+----------------------
+<beans>
+<import resource="services-context.xml" />
+<import resource="dao-context.xml" />
+</beans>
+
+client
+------
+
+--
+--
+ApplicationContext context = new ClassPathXmlApplicationContext("appliation-context.xml")
+
+LoginService lservice = context.getBean("loginService", LoginService.class);
+
+lservice.loginservicemethod();
+
+output:
+loginservicemethod
+logindaomethod
+
+I18N
+----

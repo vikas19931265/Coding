@@ -1,0 +1,803 @@
+Spring MVC
+----------
+
+Spring MVC is an opensource, framework software to develop the MVC based web application.
+
+opensource means will get the source code.
+
+def for Framework
+
+set of well defined classes and interfaces are called framework.
+    (or)
+It is semi completed reusable component to develop the application.
+
+NOTE: In Srping MVC controller part was predefined. i.e DispatcherServlet
+
+     (or)
+
+It is prototype of an architecture.
+
+(or)
+
+Framework is special software, which is capable of developing the applcations using design pattern.
+
+Spring MVC is special software, which is capable of developing the applications using MVC designpattern.
+
+by using spring MVC we can develop the MVC based application.
+
+version : Spring3.x
+
+Spring MVC resources
+--------------------
+To develop spring mvc based application we have to develop the following resources.
+
+1.View
+------
+By using JSP's, velocity, freemarker, Angular JS etc we can design veiw layer in spring mvc.
+
+Ex:
+login.jsp
+---------
+<form method="post" action="loginapp/login.spring">
+UserName<input type="text" name="username"/>
+
+PassWord<input type="password" name="password"/>
+
+<input type="submit" value="LOGIN">
+</form>
+
+2.Controller (DispatcherServlet)
+-------------------------------
+org.springframework.web.servlet.DispatcherServlet is called DispatcherServlet.
+
+It acts as the controller in spring mvc.
+
+It designed as FrontController DP.
+
+FrontController:
+Any special servelt or resource available in the application, which is capable of receiving all the requests coming from the browser to controllers(action classes in struts), that servlet is called Front controller servlet.
+
+by using extenstion match(*.htm) or directory match(/htm/*) we can design Frontcontroller servlet.
+
+In SpringMVC based application, first DispatcherServlet will recieve the request.
+
+DispatcherServlet is also implements Servelt interface.(indirectly)
+
+Servlet
+  |
+GenericServlet
+  |
+HttpServlet
+  |
+HttpServletBean
+  |
+FrameworkServlet
+  |
+DispatcherServlet
+---------------------------------
+package org.springframework.web.servlet;
+
+//import statements
+
+public class DispatcherServlet extends FrameworkServlet{
+
+--
+--
+-- 
+protected void doService(--) throws Exception {
+	
+	//RP logic
+
+	doDispatch(--);
+}
+--
+--
+
+protected void doDispatch(--) throws Exception {
+	//dispatch the request
+   }
+}
+-----------------------------
+
+public abstract class FrameworkServlet extends HttpServletBean{
+--
+--
+--
+
+public final void doGet(--)----{
+
+   processRequest(--);
+    
+}
+
+protected final void processRequest(--)-- {
+ -- 
+ -- 
+ doService(--);
+}
+
+protected abstract void doService(--)--;
+}
+
+
+basic flow
+----------
+1.Brower generates the request to the spring mvc application.
+
+2. DS recieves the request and servlet container calls the service() or doget() or doPost().
+
+3.doPost() or doGet() not available in DispatcherServlet, so Servlet container calls the FrameworkServlet doget() or dopost().
+
+4.FrameworkServlet doGet() or doPost() internally calls the processRequest(--). this method defined in same class(FS)
+
+5.FrameworkServlet processRequest() calls doService(--) method. but doService(--) is an abstract method. this doService() method implemented in DispacherServlet.
+
+6.So finally DispacherServlet doService() will execute.
+
+7.doservice(--) process the request and it dispactch the request to doDispatch().
+
+8.doDispatch() will dispatch the request to the controllers or model components.
+
+NOTE:
+we never develop the DispacherServlet class while developing the spring mvc applications.
+
+3.web.xml
+--------
+It is deployement descriptor file.
+here we can configure servlets (DispatcherServlet), welcome files, intialization paramters, context parmaters, etc.
+
+<web-app>
+<servlet>
+  <servlet-name>dispatcher</servlet-name>
+ <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  <load-on-startup>1</load-on-startup>
+</servlet>
+<servlet-mapping>
+  <servlet-name>dispatcher</servlet-name>
+  <url-pattern>*.htm</url-pattern>
+</servlet-mapping>
+
+<context-param>
+<param-name>contextConfigLocation</param-name>		<param-value>/WEB-INF/dispatcher-servlet.xml</param-value>
+</context-param>
+
+</web-app>
+
+4.Models or Commands
+--------------------
+Spring Models or Commands are similar to Struts ActionForms. 
+
+Models are used to transfers the data from one layer to another layer. (from view layer to controllers(like struts action class))
+
+Spring models are POJO.
+
+Rules for writing pojo or spring models
+--------------------------------------
+-- public and non abstract
+-- implements java.io.Serializable
+-- provide default constructor.
+--declare the private properties. these property name should be matched with jsp property name.
+-- generate the setters and getters.
+
+Ex:
+//import stmts
+public class LoginModel implements Serializable {
+   
+   private String username;
+   private String password;
+
+  //setters and getters
+
+}
+
+NOTE: Spring Models or commands designed as DTO or VO design pattern.
+This Model is not related to MVC designpattern model.
+
+5.Controllers
+-------------
+Spring controllers are similar to struts Action classes.
+
+To write the spring controllers we have to use Controller, AbstractController or @Controller annotation.
+
+Rules
+-----
+1. it should be public and non abstract
+
+2. it implements Controller interface or extends AbstractController class or use @Controller annotation. 
+
+3.override handleRequest(--) or handleRequestInternal(--).
+
+Ex:
+
+package com.rameshit.controller;
+
+//import statements
+public class HelloWorldController implents Controller {
+
+@Override
+protected ModelAndView handleRequest(HttpServletRequest request,HttpServletResponse response) throws Exception {
+
+System.out.println("handleRequest Called");
+
+//businss logic
+//communication code of service layer (business layer)
+
+ModelAndView modelAndView = new ModelAndView("HelloWorldPage");
+modelAndView.addObject("msg", "hello world");
+return modelAndView;
+  }
+}
+
+In spring controllers we can place business logic or communication code of model component.
+
+If we placed B.logic in controllers classes it acts as Model in MVC.
+
+If we placed communication in controllers classes it acts as helper class for Controller(DispatcherServlet) in MVC.
+
+According to industry standards we have place communication code of Model.
+
+To transfer the data to these controller we have to use model or commands.
+
+6.Spring config file
+--------------------
+
+use the following syntax for config file name.
+
+logical name of the servlet-servlet.xml
+
+if logical name is "dispatcher" then
+  dispatcher-sevlet.xml
+ 
+if logical name "dummyservlet"
+
+   dummyservlet-servlet.xml
+
+here we can configure controllers, Handler Mapping classes, ViewResolvers etc.
+
+ex:
+dispatcher-servlet.xml
+----------------------
+<beans>
+<bean id="viewResolver"
+class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<property name="prefix">
+<value>/WEB-INF/pages/</value>
+</property>
+<property name="suffix">
+<value>.jsp</value>
+</property>
+</bean>
+	
+<bean name="/welcome.htm" class="com.rameshit.controller.HelloWorldController"></bean>
+</beans>
+
+Any request end with welcome.htm spring forwards the request to the HelloWorldController.
+
+In the above code we configured InternalResourceViewResolver as viewResolver to identify jsp as view component.
+
+Spring MVC Flow
+---------------
+
+With respect to the diagram
+
+1.Browser generates the request ends with .htm
+
+2.through the web.xml DispatcherServlet takes the request.
+
+3.DisptcherServlet looks for dispatcher-servlet.xml to know the Controller name using HandlerMapping.
+
+4.If we configured command or model to controller, spring f/w will creates command or model object(LoginModel).
+
+5.on this model(command) object spring f/w calls the setter methods to populate the end user enterd data.
+
+6.Spring f/w creates the controller object and sends the request to the controller.
+
+7. on this controller object spring f/w calls handleRequest(--). So the logic of handleRequest() will executes.
+
+8.controller(LoginController) sends the request to the Model(Business component).And the logic of Model component will executes. (B.logic + p.logic)
+
+9.By using persistance logic model component connect the DB.
+
+10.after executing model component logic result given to the Controller handleRequest().
+
+11.Controller handleRequest(--) returns ModelAndView object.
+
+12.Spring f/w reads the spring configuration file to know the View name using ViewResolver(here spring will use MAV object).
+
+13.After identify the view name spring sends the response to the appropriate jsp page, and for that jsp it send model object.
+
+14.by executing presentation logic of the jsp final response dispayed in browser.
+
+another flow
+------------
+
+
+
+Develop Hello application using spring MVC.
+
+
+To develop this application following resuources are required.
+
+1.Hello.jsp
+-----------
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<html>
+<body>
+<h1>Welcome to spring mvc hello application.</h1>
+<h2>${msg}</h2>
+</body>
+</html>
+
+2.web.xml
+---------
+checkout meterial
+
+3.HelloWorldController.java
+----------------------------
+
+package com.rameshit.controller;
+//import statements
+
+public class HelloWorldController extends AbstractController {
+
+public HelloWorldController() {
+System.out.println("HelloWorldController constructor...");
+}
+
+@Override
+protected ModelAndView handleRequestInternal(HttpServletRequest request,HttpServletResponse response) throws Exception {
+
+System.out.println("handleRequestInternal called");
+
+ModelAndView modelAndView = new ModelAndView("Hello");
+modelAndView.addObject("msg", "hello world");
+
+return modelAndView;
+}
+}
+
+spring configuration file
+------------------------
+dispatcer-servlet.xml
+---------------------
+<beans>
+<bean id="viewResolver"
+class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<property name="prefix">
+<value>/WEB-INF/pages/</value>
+</property>
+<property name="suffix">
+<value>.jsp</value>
+</property>
+</bean>
+
+<bean name="/hello.htm" class="com.rameshit.controller.HelloWorldController">
+</bean>
+</beans>
+
+request:
+http://localhost:8080/helloapp/hello.htm
+
+Develop the hello application using spring mvc annotations.
+----------------------------------------------------------
+similar to above application, except controller and config file.
+
+Controller
+---------
+package com.rameshit.mvc;
+
+//import stmts
+@Controller
+public class HelloController {
+
+@RequestMapping(value = "/hello.htm")
+public ModelAndView displayMessage() {
+System.out.println("displayMessage called..");
+ModelAndView modelAndView = new ModelAndView("hello");
+modelAndView.addObject("msg", "hello");
+return modelAndView;
+}
+}
+
+NOTE:
+No need to configure HelloController in spring configuration file.
+
+config file.
+-----------
+<beans>
+<context:annotation-config>
+</context:annotation-config>
+<context:component-scan base-package="com.rameshit.mvc"> </context:component-scan>
+
+<bean id="viewResolver"
+class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<property name="prefix">
+<value>/WEB-INF/pages/</value>
+</property>
+<property name="suffix">
+<value>.jsp</value>
+</property>
+</bean>
+</beans>
+
+HandlerMappings
+----------------
+
+It is responsible for mapping the incoming request to the appropriate controller classes
+
+There are different types of Handler Mappings
+
+BeanNameUrlHandlerMapping
+SimpleUrlHandlerMapping
+ControllerClassNameHandlerMapping etc.
+
+BeanNameUrlHandlerMapping
+-------------------------
+org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping is one of the implementation of HandlerMapping inteface.
+
+This handler mapping is very simple and powerful.
+
+It is the default handler mapping, means if we are not configuring any handler mapping in the config file spring uses BeanNameUrlHandlerMapping class to provides the mapping.
+
+Ex:
+<beans>
+<bean id="handlerMapping"
+class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping">
+</bean>
+--
+--
+</beans>
+
+Placing above code is optional while working with BeanNameUrlHandlerMapping only.
+
+Write a program for BeanNameUrlHandlerMapping
+-------------------------------------------
+similar to hello application, but we have to configure BeanNameUrlHandlerMapping in spring config file.
+
+SimpleUrlHandlerMapping
+-------------------------
+org.springframework.web.servlet.handler.SimpleUrlHandlerMapping is one of the implementation of HandlerMapping inteface.
+
+the SimpleUrlHandlerMapping is the most flexible handler mapping class, which allow developer to specify the mapping of URL pattern and controllers explicitly.
+
+The SimpleUrlHandlerMapping can be declared in two ways.
+
+1st approach
+-------------
+
+The property keys are the URL patterns while the property values are the controller IDs or names.
+<beans>
+<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+<property name="mappings">
+<props>
+   <prop key="/welcome.htm"> welcomeController</prop>
+   <prop key="/*/welcome.htm"> welcomeController</prop>
+   <prop key="/helloGuest.htm"> helloGuestController</prop>
+ </props>
+</property>
+</bean>
+
+<bean id="welcomeController" 
+class="com.rameshit.controller.WelcomeController" />
+		
+<bean id="helloGuestController" 
+class="com.rameshit.controller.HelloGuestController" />
+<!-- configuration of ViewResolvers -->
+
+</beans>
+
+urls:
+
+-------/helloapp/welcome.htm --- welcomeController
+
+------/helloapp/module1/welcome.htm --- welcomeCotroller
+
+----/helloapp/helloGuest.htm ------ HelloGuestController
+
+---/helloapp/welcome.do ---- 404 error.
+
+---/helloapp/module1/helloGuest.htm ---- 404 error.
+
+2nd approach
+------------
+The left side are the URL patterns while the right side are the controller IDs or names, separate by a equal symbol “=”.
+
+<beans>
+<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+<property name="mappings">
+<value>
+/welcome.htm=welcomeController
+/*/welcome.htm=welcomeController
+/helloGuest.htm=helloGuestController
+</value>
+</property>
+</bean>
+--
+--
+</bean>
+</beans>
+
+
+ControllerClassNameHandlerMapping
+----------------------------------
+
+ControllerClassNameHandlerMapping use convention to map requested URL to Controller (convention over configuration). It takes the Controller Class name, remove the ‘Controller’ suffix if exists and return the remaining text, lower-cased and with a leading “/”.
+
+<bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping">
+</bean>
+
+WelcomeController -> /welcome*
+HelloGuestController -> /helloguest*
+
+/welcome.htm –> WelcomeController.
+/welcomeHome.htm –> WelcomeController.
+/helloguest.htm –> HelloGuestController.
+/helloguest123.htm –> HelloGuestController.
+/helloGuest.htm, failed to map /helloguest*, the “g” case is not match.
+
+
+Develop the Login Application using spring mvc.
+
+To develop the login application we have to develop following resources.
+
+1.index.jsp
+2.login.jsp
+3.success.jsp
+4.fail.jsp
+5.web.xml
+6.LoginModel (Model or Command class)
+7.LoginController
+8.dispatcher-servlet.xml
+-----------------------
+1.index.jsp
+-----------
+It redirect the request to the application.
+It acts as the welcome file.
+
+<%
+  response.sendRedirect("login.htm");
+%>
+
+It generates the request, that ends with login.htm.
+
+login.jsp
+---------
+<!-- tag libraries -->
+<form:form method="post" action="login.htm" commandName="loginModel">
+   Username:<form:input path="userName" /><BR>
+   Password:<form:password path="password" /><BR>
+<input type="submit" value="Login" />
+</form:form>
+
+success.jsp
+--------------
+Login Success full....
+Welcome To Ramesh Technologies...
+<core:out value="${loginModel.userName}" />
+<a href="login.htm">Back</a>
+
+fail.jsp
+---------------
+login failure....
+tryagain 
+<a href="login.htm">Retry</a>
+
+web.xml
+-------
+Similar to previous application.
+
+LoginModel.java
+---------------
+package com.rameshit.mvc.login;
+
+public class LoginModel implements Serializable {
+
+	private String username;
+	private String password;
+	//setters and getters
+}
+
+LoginController.java
+--------------------
+package com.rameshit.mvc.login;
+
+//import stmts
+
+@Controller
+public class LoginController {
+
+@RequestMapping(value = "/login.htm", method = RequestMethod.GET)
+public ModelAndView showForm() {
+System.out.println("showForm called");
+ModelAndView model = new ModelAndView("login");
+model.getModelMap().put("loginModel", new LoginModel());
+return model;
+}
+
+@RequestMapping(value = "/login.htm", method = RequestMethod.POST)
+protected ModelAndView processForm(@ModelAttribute LoginModel loginModel) {
+System.out.println("processForm called");
+String viewName = null;
+ModelAndView modelAndView = new ModelAndView();
+//get the data from model or command
+String username = loginModel.getUsername();
+String password = loginModel.getPassword();
+
+System.out.println("username:" + username);
+System.out.println("password: " + password);
+
+if ("ramesh".equals(username) && "spring".equals(password)) {
+viewName = "success";
+} else {
+viewName = "fail";
+}
+
+modelAndView.getModel().put("loginModel1", loginModel);
+modelAndView.setViewName(viewName);
+  return modelAndView;
+  }
+}
+dispatcher-servlet.xml
+-----------------------
+similar to hello annotaion based application.             
+
+request: http://localhost:8080/loginapp
+
+Task:
+----
+Develop Student application to insert, update delete the records in DB using spring MVC and Spring JDBC.
+
+validations
+-----------
+
+Checking the correctness of end user entered data is called Validations.
+For ex. check given email id having @ symbol or not. 
+
+Generally there are two types of validations.
+
+1.clientside validations
+2.serversdie validations
+
+By using spring we can provide serverside validations.
+
+to provides the validation we have to use org.springframework.validation.Validator interface.
+
+NOTE:
+to display the error messages in the jsp page we have to use <form:errors> tag.
+
+
+program
+--------
+write a program for validation.
+
+Checkout the meterail
+
+LoginValidator.java
+--------------------
+//import statements
+@Component
+public class LoginValiator implements Validator
+{
+  public boolean supports(Class clazz) {
+return clazz.equals(LoginModel.class);
+}
+
+public void validate(Object model, Errors errors) {
+ValidationUtils.rejectIfEmptyOrWhitespace(errors, "userName",null, "UserName is required.");
+
+ValidationUtils.rejectIfEmptyOrWhitespace(errors, "password",null, "Password is required.");
+    }
+}
+
+Use above validator class in LoginController.
+
+@Controller
+public class LoginController {
+
+@Autowired
+private LoginValidator loginValidator;
+
+public ModelAndView showForm(){
+--
+--
+}
+
+public ModelAndView processForm(){
+---
+---
+User loginValidator here.
+---
+---
+}
+
+}
+
+develop the jsp to display the error messages.
+
+
+<form:form method="post" action="login.htm" commandName="loginModel">
+Username:<form:input path="username" />
+<form:errors path="username" cssStyle="color:red"></form:errors>
+	<BR>
+Password:<form:password path="password" />
+<form:errors path="password" cssStyle="color:red"></form:errors>
+	<BR>
+<input type="submit" value="Login" />
+</form:form>
+
+ViewResolvers
+--------------
+The Conroller class methods return different values(ModelAndView), by using these values we can idenify different view name. those are JSPs, PDF(Portable Document Format), Excel etc.
+
+Spring provides multiple view resolver classes those are configured in dispatcher-servlet.xml
+ 
+All the view resolver classes implements org.springframework.web.servlet.ViewResolver interface.
+
+org.springframework.web.servlet.view.InternalResourceViewResolver
+org.springframework.web.servlet.view.XmlViewResolver
+org.springframework.web.servlet.view.ResourceBundleViewResolver
+org.springframework.web.servlet.view.velocity.VelocityViewResolver
+org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver etc
+
+write a program for XmlViewResolver and ResourceBundleViewResolver.
+--------------------------------------------------------------------
+
+XmlViewResolver example
+------------------------
+dispatcher-servlet.xml
+
+<beans>
+<bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping" />
+<bean class="com.rameshit.common.controller.WelcomeController" />
+
+<bean class="org.springframework.web.servlet.view.XmlViewResolver">
+<property name="location">
+<value>/WEB-INF/spring-views.xml</value>
+</property>
+</bean>
+</beans>
+
+spring-views.xml
+----------------
+<beans>
+<bean id="abc"
+class="org.springframework.web.servlet.view.JstlView">
+<property name="url" value="/WEB-INF/pages/WelcomePage.jsp" />
+</bean>
+</beans>
+
+WelcomeController.java
+------------------------
+similar to previous application but it rutuns "abc" as view name.
+
+remaining files also similar to previous applicaitons.
+
+
+ResourceBundleViewResolver Ex
+-----------------------------
+<beans>
+<bean class="com.rameshit.common.controller.WelcomeController" />
+<bean class="org.springframework.web.servlet.view.ResourceBundleViewResolver">
+<property name="basename" value="spring-views" />
+</bean>
+</beans>
+
+spring-views.properties
+-----------------------
+WelcomePage.(class)=org.springframework.web.servlet.view.JstlView
+WelcomePage.url=/WEB-INF/pages/WelcomePage.jsp
+
+
+WelcomeController.java
+------------------------
+similar to previous application but it rutuns "WelcomePage" as view name. 
+i.e ModelAndView mv = new ModelAndView("WelcomePage")
+
+remaining files also similar to previous applicaitons.
+
+Task:
+Write a program to generate pdf and excel sheetes using spring mvc.
+
+
+
+                                          

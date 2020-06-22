@@ -1,0 +1,360 @@
+Bean Scopes
+-----------
+Spring framework supports five type of scopes for bean instantiation.
+singleton
+prototype
+request
+session
+globalSession
+
+to configure the scope to the <bean> tag we have to use "scope" attribute.
+Ex:
+<bean id="helloBean" class="HelloBean" scope="singleton/prototype/request....">
+
+singleton
+---------
+Specifies to container to create the configured spring bean only once in the container.
+
+It is default scope for the bean.
+
+if the scope is singleton it creates only one object. if we call multiple times getBean(-), it returns existing object. it won't create multiple objects. 
+
+package com.rameshit.scope;
+public class HelloBean {
+private String message;
+public HelloBean() {
+System.out.println("Default constructor");
+}
+public void setMessage(String message) {
+System.out.println("Setter method.");
+this.message = message;
+}
+//say hello method
+}
+
+hello.xml
+---------
+<beans>
+<bean id="helloBean" class="com.rameshit.scope.HelloBean" scope="singleton">
+<property name="message">
+<value>hello...</value>
+</property>
+</bean>
+</beans>
+
+HelloClient
+------------
+--
+--
+ApplicationContext context = new ClassPathXmlApplicationContext(
+"hello.xml");
+
+HelloBean bean1 = context.getBean("helloBean", HelloBean.class);
+System.out.println(bean1);
+
+HelloBean bean2 = context.getBean("helloBean", HelloBean.class);
+System.out.println(bean2);
+
+HelloBean bean3 = context.getBean("helloBean", HelloBean.class);
+System.out.println(bean3);
+}
+output
+------
+Default constructor
+Setter method.
+com.rameshit.scope.HelloBean@1ee4648
+com.rameshit.scope.HelloBean@1ee4648
+com.rameshit.scope.HelloBean@1ee4648
+
+If we observed the above output the spring container creates only one object for HelloBean even we called multiple times getBean("id").
+
+NOTE: default value for "scope" is singleton. So by default all spring beans are "Singletons".
+
+NOTE: If we configured one bean(HelloBean) class multiple times using different bean ids it creates multiples objects.
+
+Ex:
+<bean id="helloBean1" class="---" scope="singleton"></bean>
+<bean id="helloBean2" class="---" scope="singleton"></bean>
+<bean id="helloBean3" class="---" scope="singleton"></bean>
+
+in client
+---------
+getBean(helloBean1)
+getBean(helloBean2)
+getBean(helloBean3)
+
+Above code creates three HelloBean objects even scope is singleton.
+
+prototype:
+----------
+if the scope is prototype it creates multiple objects for each getBean(--) method called.
+
+In the above configuration file if we changed scope to "prototype" spring container creates multiple objects.
+
+<beans>
+<bean id="helloBean" class="com.rameshit.scope.HelloBean" scope="prototype">
+<property name="message">
+<value>hello...</value>
+</property>
+--
+--
+
+client application
+------------------
+
+getBean("helloBean");
+getBean("helloBean");
+getBean("helloBean");
+
+If we run above application we can see following output
+
+Default constructor
+Setter method.
+Default constructor
+Setter method.
+Default constructor
+Setter method.
+com.rameshit.scope.HelloBean@1ee4648
+com.rameshit.scope.HelloBean@20be79
+com.rameshit.scope.HelloBean@1b9240e
+
+Above two scopes are used in spring core module, remaining scopes are used in other modules(web).
+
+NOTE:ApplicationContext container performs pre instantiating only on singleton beans.
+
+Lazy load or Lazy initialization
+--------------------------------
+In ApplicationContext containter, beans are instantiated when we activated spring container. So when we call getBean(-) method just it returns already created object.
+
+By default ApplicationContext doesn't perform lazy instantiation. if we want to see the lazy instantiation, we have to use "lazy-init" attribute of <bean> tag or "default-lazy-init" attribute of <beans> tag.
+
+Example
+-------
+<bean id="helloBean" class="com.rameshit.scope.HelloBean" lazy-init="true">
+<property name="message">
+<value>hello...</value>
+</property>
+</bean>
+
+"lazy-init" attribute takes boolean value.
+the default value is "false".
+
+Bean definitation inheritance
+-----------------------------
+Inheritance is the concept of reusing the existing functionality.
+
+In spring Bean definitation inheritance, it talks about how to re use the existing bean configuration instead of configuring again. 
+
+Ex:
+If a class contains 10 properties, if you want to configure this class in the configuration file, you need to inject values for 10 properties via constructor or setter injection.
+
+If we want to create 10 beans of that class, we need to configure for all the 10 beans using setter or constructor injection. In case if most of the properties has same value then also we need to configure all the properties. This leads to duplicate configuration in the configuration file.
+
+In order to overcome this problem we will go for inheritance.
+
+Ex:
+public class Car{
+int id;
+String name;
+String engineType;
+String engineModel;
+String classType;
+
+//setters 
+
+public void showCarDetails() {
+System.out.println("Id : " + id);
+System.out.println("Name : " + name);
+System.out.println("Engine Type : " + engineType);
+System.out.println("Engine Model : " + engineModel);
+System.out.println("Class Type : " + classType);
+}
+}
+}
+inheritance.xml
+---------------
+<beans>
+<bean id="parentCar" class="com.rameshit.inheritance.Car">
+<property name="engineType" value="Diesel" />
+<property name="engineModel" value="Maruthi Engine" />
+<property name="classType" value="HatchBack" />
+</bean>
+
+<bean id="swift" class="com.rameshit.inheritance.Car" parent="parentCar">
+<property name="id" value="1" />
+<property name="name" value="Swift" />
+</bean>
+
+<bean id="ritz" class="com.rameshit.inheritance.Car" parent="parentCar">
+<property name="id" value="2" />
+<property name="name" value="Ritz" />
+</bean>
+
+<bean id="alto800" class="com.rameshit.inheritance.Car" parent="parentCar">
+<property name="id" value="3" />
+<property name="name" value="Alto800" />
+<property name="engineType" value="Petrol"></property><!--(override)-->
+</bean>
+</beans>
+
+NOTE
+If we configured one property in parent and child bean configuration, child bean property overrides parent bean property.
+
+"abstract" attribute of <bean> tag
+-----------------------------------
+it allows boolean value. the default value is false.
+if it is true, spring container doesn't creates the bean object.
+
+if we are getting abstract bean defination object, we will get the exception i.e org.springframework.beans.factory.BeanIsAbstractException
+
+<beans>
+<bean id="parentCar" class="com.rameshit.inheritance.Car" abstract="true">
+--
+--
+</bean>
+--
+</beans>
+
+dependency-check
+----------------
+
+Dependency Check
+----------------
+In case of constructor injection, all the dependent objects are mandatory to be passed via <constructor-arg> tag while defining the bean.
+
+But in case of setter injection injecting dependent objects are not mandatory.
+
+So, if we want see setter properties mandatory like constructor properties then we need to use Dependency Check.
+
+Dependency check has been removed from Spring 3.0 and is available before 3.0(2.5).
+
+From spring 3.0 it has been replaced with @Required annotation.
+
+In order to perform the mandatory check on setter properties you need to enable dependency check.
+
+So In order to enable dependency check you have to use "dependency-check" attribute of bean tag.
+
+This attribute takes any one of the four following values.
+1.none(it won't check whether dependencies injected or not) 
+2.simple(it checks all primitive dependencies injected or not)
+3.objects(it checks all the object type dependencies injected or not)
+4. all(it checks both primitives and object type dependencies injected or not)
+
+NOTE: the default value is "none".
+
+In case if we forgot to set any value either primitive or objective type it throws an exception saying
+UnsatisfiedDependencyException.
+
+Exmaple
+public class Employee
+{
+  int id;
+  String name;
+}
+--
+--
+<bean id="employee" class="Employee" dependency-check="simple">
+
+</bean>
+</beans>
+If we run above application we will get exception UnsatisfiedDependencyException.
+
+to resolve that exception we have to inject only primitives.
+
+<beans>
+<bean id="employee" class="Employee" dependency-check="simple">
+<property name="id" value="100"></property>
+<property name="name" value="Ramesh"></property>
+</bean>
+</beans>
+
+Factory methods configuration
+-----------------------------
+Any method in java class, which returns same class object or other class object is called factory method.
+
+When we configure a class as spring bean in the configuration file, Spring container will instantiate the bean by using the new keyword. 
+
+some times we can creates the object using factory methods also. for example singleton classes.
+
+Generally there are two types of factory methods.
+Static factory method.
+Non static factory method.
+
+working with static factory method
+-----------------------------------
+To configure static factory method we have to use "factory-method" attribute of <bean> tag.
+
+package com.rameshit.factoymethod;
+
+import java.util.Calendar;
+
+public class Alarm {
+	private Calendar time;
+
+	public void setTime(Calendar time) {
+		this.time = time;
+	}
+
+	public void ring() {
+	System.out.println("Ringing at : " + time.getTime());
+	}
+}
+config file
+------------
+<beans>
+<bean id="calendar" class="java.util.Calendar" factory-method="getInstance"></bean>
+
+<bean id="alarm" class="com.rameshit.factoymethod.Alarm">
+<property name="time" ref="calendar" />
+</bean>
+</beans>
+
+In the above code spring container creates the bean object(calendar) using static factory method.
+
+Non static factory method
+--------------------------
+to configure non staic factory method we have to use "factory-method" and "factory-bean" attributes of <bean> tag.
+
+Ex:
+public class FactoryBean {
+  private String message;
+  public FactoryBean() {
+System.out.println("public constructor");
+}
+
+   public FactoryBean getInstance() {
+   System.out.println("getInstance()");
+   FactoryBean newBean = new FactoryBean();
+     newBean.setMessage(message);
+     return newBean;
+     }
+    // setter and getter
+  }
+config file
+-----------
+<beans>
+<bean id="dummyBean" class="com.rameshit.factoymethod.FactoryBean">
+</bean>
+
+<bean id="factoryBean" factory-bean="dummyBean" factory-method="getInstance"
+class="com.rameshit.factoymethod.FactoryBean">
+<property name="message" value="hello....."></property>
+</bean>
+</beans>
+
+client application
+------------------
+--
+--
+ApplicationContext context = ------------
+FactoryBean bean = context.getBean("fatoryBean", --);
+sop(bean.geMessage());
+
+output:
+constructor
+getInstance() called
+constructor
+Hello
+
+Bean life cycle
+---------------
