@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="address"
+		class="com.pgm.autowire.bytype.Address">
+		<property name="houseno" value="9/11"></property>
+		<property name="city" value="chennai"></property>
+		<property name="state" value="tamil nadu"></property>
+		<property name="zipcode" value="600114"></property>
+	</bean>
+	<!-- <bean id="tempAddress"
+		class="com.pgm.autowire.bytype.Address">
+		<property name="houseno" value="9/11"></property>
+		<property name="city" value="raebarely"></property>
+		<property name="state" value="uttar pradesh"></property>
+		<property name="zipcode" value="229306"></property>
+	</bean> -->
+	<bean id="EmployeeBean" 
+		class="com.pgm.autowire.bytype.Employee" autowire="byType" >
+		<property name="empId" value="1234"></property>
+		<property name="name" value="vikas gautam"></property>
+		<property name="age" value="26"></property>
+		<property name="salary" value="30000"></property>
+		<!-- <property name="address" ref="AddressBean"></property> -->
+	</bean>
+</beans>
+
+<!--  
+1. So here we are trying to autowire by type. 
+2. Autowire first of all can only be used with object references and not with any primitives.
+
+Explain
+==========
+
+In our employee bean class which is main object contains address as reference. Now since the autowire is byType therefore
+spring will check if any address bean is configured in xml. If its configured then it will inject it.
+
+In case there are two ids configured for the same bean like temporary and permanent address then spring cannot determine
+which object to inject and hence will throw an exception.
+
+No qualifying bean of type 'com.pgm.autowire.bytype.Address' available: expected single matching bean but found 2: 
+address,tempAddress
+
+4. case also matter, the property and id name case should be same.
+
+
+-->
+
