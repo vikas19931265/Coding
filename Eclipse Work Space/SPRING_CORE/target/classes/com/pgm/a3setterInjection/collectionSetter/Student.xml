@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="StudentBean"
+		class="com.pgm.a3setterInjection.collectionSetter.Student">
+		<property name="id" value="1234"></property>
+		<property name="name" value="vikas"></property>
+		<property name="courses">
+			<list>
+				<value>java</value>
+				<value>dbms</value>
+				<value>C</value>
+			</list>
+		</property>
+		<property name="mobileNos">
+			<set>
+				<value>12245</value>
+				<value>7092198242</value>
+			</set>
+
+		</property>
+
+		<property name="feeDetails">
+			<map>
+
+				<entry key="java" value="10000"></entry>
+				<entry key="dbms" value="20000"></entry>
+				<entry key="C" value="30000"></entry>
+			</map>
+
+		</property>
+		
+		<property name="prop">
+		<props>
+			<prop key="key1">1</prop>
+			<prop key="key2">2</prop>
+			<prop key="key3">3</prop>
+		
+		</props>
+		
+		</property>
+	</bean>
+
+</beans>

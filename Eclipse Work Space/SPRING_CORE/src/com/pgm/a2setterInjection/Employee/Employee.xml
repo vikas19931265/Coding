@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="AddressBean"
+		class="com.pgm.a2setterInjection.Employee.Address">
+		<property name="houseno" value="9/11"></property>
+		<property name="city" value="chennai"></property>
+		<property name="state" value="tamil nadu"></property>
+		<property name="zipcode" value="600114"></property>
+	</bean>
+	<bean id="EmployeeBean"
+		class="com.pgm.a2setterInjection.Employee.Employee">
+		<property name="empId" value="1234"></property>
+		<property name="name" value="vikas gautam"></property>
+		<property name="age" value="26"></property>
+		<property name="salary" value="30000"></property>
+		<property name="address" ref="AddressBean"></property>
+	</bean>
+</beans>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="AddressBean" class="com.pgm.a4constructorInjection.Employee.Address">
+		<constructor-arg value="Kabilar Street" type="java.lang.String"> </constructor-arg>
+		<constructor-arg value="Tamil Nadu" type="java.lang.String"> </constructor-arg>
+		<constructor-arg value="600114" type="java.lang.String"> </constructor-arg> <!-- giving type is not important -->
+	</bean>
+	<bean id="EmployeeBean" class="com.pgm.a4constructorInjection.Employee.Employee">
+	<constructor-arg value="vikas gautam" type="java.lang.String"></constructor-arg>
+	<constructor-arg value="1234" type="java.lang.String"></constructor-arg>
+	<constructor-arg >
+		<ref bean="AddressBean"/>
+	</constructor-arg>
+	</bean>
+</beans>

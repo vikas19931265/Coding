@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd" >
+	
+	<bean id="dummybean" class="d5com.pgm.factory.nonstatic.Student">
+	
+	</bean>
+	
+	<bean id="StudentBean" class="com.pgm.b5factory.nonstatic.Student" factory-bean="dummybean" factory-method="getStudentInstance" >
+		<property name="id" value="1234"></property>
+		<property name="name" value="vikas"></property>
+	</bean>
+	
+	<!-- 
+	here  first spring will create bean of dummy bean of type student class, and then it will go to 
+	student bean tag and see that there is factory method with factory bean of dummy bean.
+	
+	so dummybean object of student type will call getInstance method.
+	
+	this is how the call will take place..
+	
+	at the end getInstance() will return an object.
+	
+	if method was static type and there was no factory bean, then no need of creating object using dummy bean,
+	spring will call it by class name as we do in normal java and return the object.
+	
+	
+	 -->
+</beans>
+	

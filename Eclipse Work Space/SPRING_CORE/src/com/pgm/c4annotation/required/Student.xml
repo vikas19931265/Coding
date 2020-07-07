@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:annotation-config />
+	<!-- This line is needed to start working with annotation. -->
+
+	<bean id="addressBean"
+		class="com.pgm.c4annotation.required.Address">
+		<property name="address" value="kabilar street"></property>
+		<property name="state" value="tamil nadu"></property>
+	</bean>
+	
+	<bean id="studentBean"
+		class="com.pgm.c4annotation.required.Student">
+		<property name="id" value="1234"></property>
+		<property name="address" ref="addressBean"></property>
+	</bean>
+
+
+</beans>
