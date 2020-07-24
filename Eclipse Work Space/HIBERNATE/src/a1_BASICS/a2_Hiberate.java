@@ -64,8 +64,7 @@ Why will we go for Hiberante?
 -Hibernate gives inbuilt suport for inheritance.
 
 -Hiberate supports associations(relations)(uni and bi directional)
-	one - to - one
-	one - to - many
+	one - to - onene - to - many
 	many - to - one
 	many - to - many
 
