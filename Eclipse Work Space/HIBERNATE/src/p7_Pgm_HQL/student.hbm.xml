@@ -11,6 +11,8 @@
 		<property name="smobile" column="MOBILE" type="string"
 			length="15"></property>
 	</class>
-
+	<query name="GET_ALL_RECORDS_STUDENT">
+			from Student
+		</query>
 
 </hibernate-mapping>
