@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="p8_Pgm_Mappings.Student" table="TB_STUDENTADDRESS">
+		<id name="id" column="NO" type="long" length="4">
+		<generator class="increment"></generator>
+		</id>
+		<property name="name" column="NAME" type="string" length="20"></property>
+		<component name="address" class="p8_Pgm_Mappings.Address">
+		<property name="street" type="string" length="20"></property>
+		<property name="city" type="string" length="20"></property>
+		<property name="state" type="string" length="20"></property>
+		<property name="zipCode" type="string" length="20"></property>
+		</component>
+	
+	</class>
+
+
+</hibernate-mapping>

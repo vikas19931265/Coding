@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="q1_Pgm_InheritanceMapping_SingleTableApp.Student" table="TB_STUDENTDETAILS">
+		<id name="id" column="NO" type="long" length="4">
+		<generator class="increment"></generator>
+		</id>
+		<discriminator column="studenttype" type="string"></discriminator>
+		<!-- 
+		This discrimniator is required to differentiate between different object types. Like which
+		one is parent object and which one is the child object.
+		
+		 -->
+		<property name="name" column="NAME" type="string" length="20"></property>
+		<component name="address" class="q1_Pgm_InheritanceMapping_SingleTableApp.Address">
+		<property name="street" type="string" length="20"></property>
+		<property name="city" type="string" length="20"></property>
+		<property name="state" type="string" length="20"></property>
+		<property name="zipCode" type="string" length="20"></property>
+		</component>
+		
+		<subclass name="q1_Pgm_InheritanceMapping_SingleTableApp.SeniorStudent" discriminator-value="senior">
+		<property name="stream" type="string"></property>
+		</subclass>
+		
+		<subclass name="q1_Pgm_InheritanceMapping_SingleTableApp.JuniorStudent" discriminator-value="junior">
+		<property name="grade" type="string"></property>
+		</subclass>
+	
+	</class>
+
+
+</hibernate-mapping>

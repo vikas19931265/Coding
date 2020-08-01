@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="q3_Pgm_Association_OneToOne.PAN" table="TB_PAN">
+		<id name="id">
+			<generator class="foreign">
+			<param name="property">employee</param>
+			</generator>
+<!-- 
+
+Here in this case we are going to take the id from the parent table that is employee table
+and put it in the child table that is pan table.
+
+We are not using any key concept here as in list.
+
+
+ -->			
+
+		</id>
+		<property name="PanNumber" column="PAN_NUMBER" type="string"></property>
+		<one-to-one name="employee" class="q3_Pgm_Association_OneToOne.Employee"></one-to-one>
+		
+		<!-- 
+		employee property of PAN class can take only one value of the PAN here in this case.
+		If i remove this then one person can taken only one PAN. But the same pan can be used by
+		more then one person.
+		
+		 -->
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="q4_Pgm_Association_OneToMany_QuesAnswer.Question" table="TB_QUESTION">
+		<id name="id" column="id" type="integer" length="10">
+			<generator class="increment"></generator>
+		</id>
+		<property name="question" column="Question" type="string"></property>
+
+		<list name="answers" cascade="all">
+			<key column="qid"></key>
+			<!--Key column is foreign key , that is id of question to be used in the answers table
+				so each answer will have a foreign id which will identify the question.
+			  -->
+			<index column="type"></index>
+			
+			<!-- This column is mandatory in list to maintain the order of elements. And this
+			is the mandator tab. If we dont care about the order then instead of the list we can
+			use the bag. -->
+			<one-to-many
+				class="q4_Pgm_Association_OneToMany_QuesAnswer.Answers" />
+				
+		<!-- One question can have many answers...so the relationship is one to many...so in this case
+		mutliple answers can have the same primary key of the question.
+		
+		We are configuring the relationships in the parent table here.
+		
+		 -->
+
+		</list>
+	</class>
+	
+ <class name="q4_Pgm_Association_OneToMany_QuesAnswer.Answers" table="TB_ANSWERS">
+ <id name ="id" column="id">
+ <generator class="increment"></generator>
+ </id>
+ 
+ <property name="answername" type="string"></property>
+ <property name="postedBy" type="string"></property>
+ 
+ </class>
+
+</hibernate-mapping>

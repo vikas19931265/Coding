@@ -14,9 +14,7 @@ import p7_Pgm_HQL.Student;
 
 public class b_NativeSQL_ScalarQuery {
 
-	/**
-	 * @param args
-	 */
+	
 	public static void main(String[] args) {
 		Configuration configuration = new Configuration();
 		configuration.configure("p8_Pgm_NativeSQL/hibernate.cfg.xml");

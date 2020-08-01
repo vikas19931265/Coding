@@ -11,8 +11,6 @@ class A2ExtractYearFromDate
         Date format= new SimpleDateFormat("dd/MM/yyyy").parse(date);
         Calendar c =Calendar.getInstance();
         c.setTime(format);
-        int year=c.get(Calendar.YEAR);
-        System.out.println(year);
     }
 }
 /*

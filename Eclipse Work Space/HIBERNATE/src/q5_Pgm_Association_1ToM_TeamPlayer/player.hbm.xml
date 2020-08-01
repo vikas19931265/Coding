@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="q5_Pgm_Association_1ToM_TeamPlayer.Players" table="TB_PLAYERS">
+
+		<id name="playerId">
+			<generator class="increment"></generator>
+		</id>
+		<property name="playerName" type="string" length="20"></property>
+	</class>
+
+
+</hibernate-mapping>
