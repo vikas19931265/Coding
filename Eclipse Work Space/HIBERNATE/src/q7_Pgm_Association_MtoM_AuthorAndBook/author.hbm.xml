@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="q7_Pgm_Association_MtoM_AuthorAndBook.Author" table="TB_Author">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+	<property name="authorName" type="string" length="20"></property>
+	<set name="books" table="BOOKSAUTHORS" cascade="all" lazy="false">
+	<key column="AUTHOR">
+	</key>
+	<many-to-many column="BOOK" class="q7_Pgm_Association_MtoM_AuthorAndBook.Book"></many-to-many>
+	
+	<!--  
+	Here in this case we are going to create an addititional table for the many to many relationship
+	This table will take typically two values acting as foreign keys.
+	
+	One is the key..So whenever any author is is added related to a book , an id will appear. And whenever
+	any book is added against it , a book id will also appear.
+	
+	
+	-->
+	
+	</set>
+
+	</class>
+
+
+</hibernate-mapping>
