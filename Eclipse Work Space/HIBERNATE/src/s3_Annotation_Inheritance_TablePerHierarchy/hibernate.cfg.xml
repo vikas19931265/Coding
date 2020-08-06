@@ -10,8 +10,11 @@
 		<property name="dialect">org.hibernate.dialect.Oracle8iDialect</property>
 		<property name="show_sql">true</property><!--  to see query in console -->
 		<property name="format_sql">true</property> <!-- query is shown formatted  -->
-		<property name="hibernate.hbm2ddl.auto">update</property>
-		<mapping resource="p6_Pgm_PkGenerator/student.hbm.xml"/><!-- give full path here if in package -->
+		<property name="hibernate.hbm2ddl.auto">create</property>
+		<mapping class="s3_Annotation_Inheritance_TablePerHierarchy.Student"></mapping>
+		<mapping class="s3_Annotation_Inheritance_TablePerHierarchy.Address"></mapping>
+		<mapping class="s3_Annotation_Inheritance_TablePerHierarchy.JuniorStudent"></mapping>
+		<mapping class="s3_Annotation_Inheritance_TablePerHierarchy.SeniorStudent"></mapping>
 	</session-factory>
 
 </hibernate-configuration>

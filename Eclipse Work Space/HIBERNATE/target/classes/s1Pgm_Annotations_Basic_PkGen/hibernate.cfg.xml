@@ -11,7 +11,7 @@
 		<property name="show_sql">true</property><!--  to see query in console -->
 		<property name="format_sql">true</property> <!-- query is shown formatted  -->
 		<property name="hibernate.hbm2ddl.auto">update</property>
-		<mapping resource="p6_Pgm_PkGenerator/student.hbm.xml"/><!-- give full path here if in package -->
+		<mapping class="s1Pgm_Annotations_Basic_PkGen.Student"></mapping>
 	</session-factory>
 
 </hibernate-configuration>

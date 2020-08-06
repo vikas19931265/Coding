@@ -3,6 +3,12 @@ package a9_ComponentMapping;
 Component Mapping
 =====================
 
+In component mapping, we will map the dependent object as a component. 
+An component is an object that is stored as an value rather than entity reference. 
+This is mainly used if the dependent object doen't have primary key. 
+
+It is used in case of composition (HAS-A relation), that is why it is termed as component.
+
 The pojo class member variable is called property.
 
 If the property mapped with single column of the table is called simple or single property mapping.
