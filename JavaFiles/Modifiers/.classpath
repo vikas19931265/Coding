@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="JavaSourceFileStructure/|classLevelModifiers/|MemberMethodsAndVariables/" kind="src" path="src"/>
+	<classpathentry kind="src" path="src/classLevelModifiers"/>
+	<classpathentry kind="src" path="src/JavaSourceFileStructure"/>
+	<classpathentry kind="src" path="src/MemberMethodsAndVariables"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

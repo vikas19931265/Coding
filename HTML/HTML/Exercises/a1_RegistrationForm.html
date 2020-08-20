@@ -5,42 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #container {
+            border:1px solid black;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            max-height: 100%;
+        }
+
+        #child {
+            border: 1px solid black;
+            padding: 50px;
+            padding-bottom: 0px;
+                        padding-top: 2px;
+        }
+
+        #course {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
-    <form>
-        <table border="0">
-            <tr>
-                <td> Name: </td>
-                <td><input type="text" name="name" placeholder="Name"></td>
-            </tr>
-            <tr>
-                <td>Password:</td>
-                <td><input type="password" name="password" placeholder="Password"></td>
-            </tr>
-            <tr>
-                <td>Gender</td>
-                <td><label for="male">Male</label>
-                    <input type="radio" name="gender" id="male">
-                    <label for="female">Female</label>
-                    <input type="radio" name="gender" id="female"> </td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td><input type="Email" name="Email" placeholder="Email"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td rowspan="2"><input type="submit" value="Submit">
-            </tr>
-            <tr>
-                <td>
-                    <pre> </pre>
-                </td>
-            </tr>
+    <div id="container">
+        <div id="child">
+            <form>
+                <h3>Add Student</h5>
+                    <table border="0" cellpadding="7" cellspacing="1">
+                        <tr>
+                            <td> Name: </td>
+                            <td><input type="text" name="name" placeholder="Name"></td>
+                        </tr>
+                       <!--  <tr>
+                            <td>Password:</td>
+                            <td><input type="password" name="password" placeholder="Password"></td>
+                        </tr> -->
+                        <tr>
+                            <td>Gender</td>
+                            <td><label for="male">Male</label>
+                                <input type="radio" name="gender" id="male">
+                                <label for="female">Female</label>
+                                <input type="radio" name="gender" id="female"> </td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number:</td>
+                            <td><input type="text" name="phonenumber"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="Email" name="Email" placeholder="Email"></td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><textarea rows="4" cols="30"></textarea></td>
+                        <tr>
+                            <td>Courses</td>
+                            <td id="course">
+                                <input type="checkbox" name="course">CORE JAVA <br>
+                                <input type="checkbox" name="course">ADVANCED JAVA <br>
+                                <input type="checkbox" name="course"> SPRING <br>
+                                <input type="checkbox" name="course"> HIBERNATE <br>
+                                <input type="checkbox" name="course"> WEBSERVICES <br>
+                                <input type="checkbox" name="course"> HTML/CSS/JS <br>
+                                <input type="checkbox" name="course"> SPRING <br>
+                                <input type="checkbox" name="course"> HIBERNATE <br>
+                                <input type="checkbox" name="course"> WEBSERVICES <br>
+                                <input type="checkbox" name="course"> HTML/CSS/JS <br>
 
-        </table>
-    </form>
+                            </td>
+                        </tr>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td rowspan="2"><input type="submit" value="Submit">
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <pre> </pre>
+                            </td>
+                        </tr>
+
+                    </table>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,12 @@
+2020-45-17 02:45:50  : This is this is a trace log
+ 2020-45-17 02:45:50  : This is this is a a debug log
+ 2020-45-17 02:45:50  : This is this is a logger message
+ 2020-45-17 02:45:50  : This is this is warning message
+ 2020-45-17 02:45:50  : This is this is error message
+ 2020-45-17 02:45:50  : This is this is a fatal message
+ this is a trace log
+this is a a debug log
+this is a logger message
+this is warning message
+this is error message
+this is a fatal message
