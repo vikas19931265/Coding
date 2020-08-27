@@ -3,14 +3,23 @@ package com.studentcrud.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Student {
+public class StudentModel {
 
 	private String name;
 	private String gender;
 	private String phonenumber;
 	private String email;
 	private String address;
-	private String course;
+	private List<CoursesModel> course;
+
+
+	public List<CoursesModel> getCourse() {
+		return course;
+	}
+
+	public void setCourse(List<CoursesModel> course) {
+		this.course = course;
+	}
 
 	public String getName() {
 		return name;
@@ -36,13 +45,6 @@ public class Student {
 		this.phonenumber = phonenumber;
 	}
 
-	public String getCourse() {
-		return course;
-	}
-
-	public void setCourse(String course) {
-		this.course = course;
-	}
 
 	public String getEmail() {
 		return email;

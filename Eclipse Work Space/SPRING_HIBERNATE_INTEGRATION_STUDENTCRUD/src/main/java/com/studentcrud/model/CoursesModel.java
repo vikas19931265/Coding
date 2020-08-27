@@ -1,17 +1,8 @@
 package com.studentcrud.model;
 
-public class Courses {
+public class CoursesModel {
 
-	private String courseId;
 	private String courseName;
-
-	public String getCourseId() {
-		return courseId;
-	}
-
-	public void setCourseId(String courseId) {
-		this.courseId = courseId;
-	}
 
 	public String getCourseName() {
 		return courseName;

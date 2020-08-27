@@ -42,7 +42,7 @@
         
         <a href="#">UPDATE STUDENT </a>
         <a href="#">DELETE STUDENT </a>
-        <a href="#">SEARCH STUDENT </a>
+        <a href="searchStudent">SEARCH STUDENT </a>
 
     </div>
 </body>

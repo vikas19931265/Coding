@@ -2,7 +2,7 @@ package a7_ConfigurationAndBean;
 /*
 
 
-@Configuration
+@Configuration(also a bean class)
 =============================
 
 This is a class level annotation used by the spring container to see the bean definations. In configuration only
