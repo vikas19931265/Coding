@@ -23,6 +23,13 @@ import com.studentcrud.service.StudentService;
 
 // This is a Controller class which is going to interact with the service class
 
+/*
+ * Here SB or dispather servlet gets access to the StudentController bean. Please note its 
+ * not the normal object but not a bean. So its not like Student student= new Student. 
+ * 
+ * 
+ */
+
 @Controller
 public class StudentController {
 

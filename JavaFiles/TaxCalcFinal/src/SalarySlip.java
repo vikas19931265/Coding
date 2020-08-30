@@ -271,9 +271,10 @@ double deductionAmount=0;
                 } else {
                     totalTaxAfterCess = 0.0;
                     monthlyTax = 0;
+                    
                 }
 
-                JOptionPane.showMessageDialog(new SalarySlip(), "total tax:" + Math.round(totalTaxAfterCess) + "\n" + "approx monthly tax:" + Math.round(monthlyTax) + "\nprofessional tax(yearly):" + profTax);
+                JOptionPane.showMessageDialog(new SalarySlip(),  "salary after deduction:>" + taxableSalaryAfterStdDeduction +"total tax:" + Math.round(totalTaxAfterCess) + "\n" + "approx monthly tax:" + Math.round(monthlyTax) + "\nprofessional tax(yearly):" + profTax);
             }
                else{
                 System.out.println("control reached");
@@ -470,7 +471,11 @@ return totalMonths1;
 //                    monthlyTax = 0;
 //                }
 
-                JOptionPane.showMessageDialog(new SalarySlip(), "total tax:" + Math.round(totalTaxAfterCess) + "\n" + "approx monthly tax:" + Math.round(monthlyTax) + "\nprofessional tax(yearly):" + profTax);
+                if(totalTax<=0.0)
+                {
+                   JOptionPane.showMessageDialog(new SalarySlip(), "total tax:>" + Math.round(totalTaxAfterCess) + "\n" + "approx monthly tax:>" + Math.round(monthlyTax) + "\nprofessional tax(yearly):>" + profTax); 
+                }
+                else JOptionPane.showMessageDialog(new SalarySlip(),  "salary after deduction:>" + taxableSalaryAfterStdDeduction + "\nsalary over limit(5l):>" + (taxableSalaryAfterStdDeduction-TaxConstants.NONTAXLIMIT) +"\ntotal tax:>" + Math.round(totalTaxAfterCess) + "\n" + "approx monthly tax:>" + Math.round(monthlyTax) + "\nprofessional tax(yearly):>" + profTax);
             } 
                 else {
                 System.out.println("control reached");
@@ -607,7 +612,7 @@ public static void taxCalculation18(double totalSal, double month, double TotalY
                   totalTax=0;
                   totalTaxAfterCess=0;
               }
-        JOptionPane.showMessageDialog(new SalarySlip(), "total tax:" + Math.round(totalTaxAfterCess) + "\n" + "approx monthly tax:" + Math.round(monthlyTax) + "\nprofessional tax(yearly):" + newProfTax);
+       else JOptionPane.showMessageDialog(new SalarySlip(), "total tax:" + Math.round(totalTaxAfterCess) + "\n" + "approx monthly tax:" + Math.round(monthlyTax) + "\nprofessional tax(yearly):" + newProfTax);
 
     }
 
@@ -673,7 +678,13 @@ public static void taxCalculation18(double totalSal, double month, double TotalY
                   totalTaxAfterCess=0;
                   monthlyTax=0;
               }
-        JOptionPane.showMessageDialog(new SalarySlip(), "total tax:" + Math.round(totalTaxAfterCess) + "\n" + "approx monthly tax:" + Math.round(monthlyTax) + "\nprofessional tax(yearly):" + newProfTax);
+        if(totalTax<=0.0)
+                {
+                   JOptionPane.showMessageDialog(new SalarySlip(), "total tax:" + Math.round(totalTaxAfterCess) + "\n" + "approx monthly tax:" + Math.round(monthlyTax) + "\nprofessional tax(yearly):" + profTax); 
+                }
+             else   JOptionPane.showMessageDialog(new SalarySlip(),  "salary after deduction:>" + taxableSalaryAfterStdDeduction + "\nsalary over limit(5l):>" + (taxableSalaryAfterStdDeduction-TaxConstants.NONTAXLIMIT) +"\ntotal tax:>" + Math.round(totalTaxAfterCess) + "\n" + "approx monthly tax:>" + Math.round(monthlyTax) + "\nprofessional tax(yearly):>" + profTax);
+        
+        JOptionPane.showMessageDialog(new SalarySlip(), "salary after deduction:>" + taxableSalaryAfterStdDeduction + "\nsalary over limit(5l):->" + (taxableSalaryAfterStdDeduction-TaxConstants.NONTAXLIMIT) +"\ntotal tax:" + Math.round(totalTaxAfterCess) + "\n" + "approx monthly tax:>" + Math.round(monthlyTax) + "\nprofessional tax(yearly):>" + newProfTax);
 
     }
 

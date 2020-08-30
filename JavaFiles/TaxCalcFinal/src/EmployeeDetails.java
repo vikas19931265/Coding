@@ -393,10 +393,17 @@ public class EmployeeDetails extends javax.swing.JFrame {
                 if (dedField.getSelectedItem().equals("No")) {
 
                     TaxCalculator.slip.setVisible(true);
-
+                    /*
+                        reset the value of deduction details if any
+                   
+                    */
                     SalarySlip.salary = salary;
                     SalarySlip.profTax = profTax;
                     SalarySlip.d = d;
+                    Deductions.otherAmount=0;
+                    Deductions.basicSal=0;
+                    Deductions.hra=0;
+                    Deductions.rent=0;
                     // SalarySlip.taxCalculatorDefaultSetting(salary,d);
 
                 }
@@ -417,6 +424,10 @@ public class EmployeeDetails extends javax.swing.JFrame {
             if (nameStatus.equals("valid") && companyStatus.equals("valid") && dateStatus.equals("valid") && metroStatus.equals("valid") && allIsWell.equals("valid")&&VP.equals("valid")) {
 
                 if (dedField.getSelectedItem().equals("No")) {
+                    Deductions.otherAmount=0;
+                    Deductions.basicSal=0;
+                    Deductions.hra=0;
+                    Deductions.rent=0;
                     if(salary-50000>500000)
                     {
                     TaxCalculator.d.setVisible(false);

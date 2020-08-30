@@ -20,6 +20,7 @@ public class StudentDAOImpl extends StudentDAOAbstract implements StudentDAO{
 	
 	@Override
 	public void addStudent(Student student) {
+		System.out.println("session value is " + getCurrentSession());
 		getCurrentSession().save(student);
 		
 	}
