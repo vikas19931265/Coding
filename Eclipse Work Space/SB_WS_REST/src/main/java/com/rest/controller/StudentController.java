@@ -28,9 +28,11 @@ public class StudentController {
 
 	
 	@GetMapping("/student/{studentId}")  // studentID value from url is inserted in below studentId function.
+	@ResponseBody
 	public Student getStudent(@PathVariable int studentId)
 	{
-			return studentService.getStudent(studentId);
+		return studentService.getStudent(studentId);
+			
 	}
 	
 	

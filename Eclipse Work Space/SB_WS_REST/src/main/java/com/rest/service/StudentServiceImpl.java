@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.DependsOn;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.rest.dao.StudentDAO;
 import com.rest.entity.Student;
@@ -16,17 +17,13 @@ public class StudentServiceImpl  implements StudentService {
 	StudentDAO studentDAO;
 	
 	@Override
+	@Transactional
 	public List<Student> getStudents() {
-
-
-		Student student1=studentDAO.displayStudents().get(0);
-		System.out.println(student1.getName());
-		System.out.println(student1.getAddress().get(0).getAddressLine1());
-		
 		return studentDAO.displayStudents();
 	}
 	
 	@Override
+	@Transactional
 	public Student getStudent(int studentId) {
 		 return studentDAO.getStudent(studentId);
 	}

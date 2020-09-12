@@ -3,12 +3,14 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 /*
 This class will read the tax slabs from slabs file and dynmically generate the tax
 */
 
-public class Slabs {
+class Slabs {
     
     public static double readSlabs(double amount) throws FileNotFoundException, IOException
     {
@@ -17,10 +19,14 @@ public class Slabs {
        {
            return 0.0;
        }
-        FileReader fr= new FileReader("./src/slabs.txt");
-        BufferedReader br = new BufferedReader(fr);
+        
+        InputStream resourceAsStream = Slabs.class.getResourceAsStream("/slabs.txt");
+        InputStreamReader reader = new InputStreamReader(resourceAsStream);
+//        FileReader fr= new FileReader("./src/slabs.txt");
+        BufferedReader br = new BufferedReader(reader);
         String line= br.readLine();
         double totalAmount=0.0;
+        
         while(line!=null)
         {
             System.out.println(line);

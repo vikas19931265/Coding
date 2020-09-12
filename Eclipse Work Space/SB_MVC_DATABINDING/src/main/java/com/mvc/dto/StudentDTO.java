@@ -1,27 +1,32 @@
 package com.mvc.dto;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.springframework.web.bind.annotation.ExceptionHandler;
+import com.mvc.validations.Age;
 
 public class StudentDTO {
 
 	private String name;
 	private String gender;
-	private String phonenumber;
 	private String email;
+	private Phone phoneNumber;
 	
-	private List<CoursesDTO> courses;
-
+	@Age //(lower=30, upper=50 , message = "age should be between {lower} and {upper}")
+	private Integer age;
 	private AddressDTO address;
 
-	public List<CoursesDTO> getCourses() {
-		return courses;
+	public Integer getAge() {
+		return age;
 	}
 
-	public void setCourses(List<CoursesDTO> courses) {
-		this.courses = courses;
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+
+	public Phone getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(Phone phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 
 	public AddressDTO getAddress() {
@@ -46,14 +51,6 @@ public class StudentDTO {
 
 	public void setGender(String gender) {
 		this.gender = gender;
-	}
-
-	public String getPhonenumber() {
-		return phonenumber;
-	}
-
-	public void setPhonenumber(String phonenumber) {
-		this.phonenumber = phonenumber;
 	}
 
 	public String getEmail() {

@@ -1,11 +1,15 @@
 package com.mvc.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.mvc.dto.AddressDTO;
+import com.mvc.dto.Phone;
 import com.mvc.dto.StudentDTO;
 
 @Controller
@@ -13,13 +17,32 @@ public class DataBindingController {
 
 	@GetMapping("/")
 	public String displayHomePage(@ModelAttribute("studentInfo") StudentDTO student) {
+		student.setEmail("gautamv725@gmail.com");
+		student.setName("Vikas Gautam");
+		Phone phone= new Phone();
+		phone.setCode("91");
+		phone.setNumber("7092198142");
+		student.setPhoneNumber(phone);
+		AddressDTO address = new AddressDTO();
+		address.setAddressLine1("Kabilar street");
+		address.setAddressLine2("Palvanthangal");
+		address.setAddressLine3("Chennai");
+		address.setCity("Chennai");
+		address.setPincode("600114");
+		address.setState("Tamil nadu");
+		student.setAddress(address);
+		student.setGender("male");
+		
+		
+		
 		return "addemployee";
 	}
 
 	
 	@PostMapping("/addemployee")
-	public String displayStudentDetails(@ModelAttribute("studentInfo") StudentDTO student, BindingResult br)
+	public String displayStudentDetails(@Valid @ModelAttribute("studentInfo") StudentDTO student, BindingResult br)
 	{
+		
 		if(br.hasErrors())
 		{
 			System.out.println(br);
@@ -29,7 +52,6 @@ public class DataBindingController {
 		System.out.println("student data binding object test");
 		System.out.println(student.getName());
 		System.out.println(student.getEmail());
-		System.out.println(student.getPhonenumber());
 		System.out.println(student.getGender());
 		System.out.println(student.getAddress().getAddressLine1()); 
 		System.out.println(student.getAddress().getAddressLine2());
@@ -37,8 +59,8 @@ public class DataBindingController {
 		System.out.println(student.getAddress().getState());
 		System.out.println(student.getAddress().getCity());
 		System.out.println(student.getAddress().getPincode());
-		System.out.println(student.getCourses());
-		
+		System.out.println(student.getPhoneNumber().getCode() + " " + student.getPhoneNumber().getNumber());
+		System.out.println("Age of the student is  " + student.getAge());
 		return null;
 	}
 	

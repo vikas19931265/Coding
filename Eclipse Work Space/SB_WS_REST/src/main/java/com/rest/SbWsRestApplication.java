@@ -16,6 +16,7 @@ import com.rest.entity.Address;
 import com.rest.entity.Student;
 
 @SpringBootApplication(exclude = HibernateJpaAutoConfiguration.class)
+@EnableTransactionManagement
 public class SbWsRestApplication {
 
 	public static void main(String[] args) {
@@ -23,7 +24,7 @@ public class SbWsRestApplication {
 		ApplicationContext context = SpringApplication.run(SbWsRestApplication.class, args);
 
 		boolean testProgram = false;
-
+		
 		if (testProgram == true) {
 			SessionManager manager = context.getBean(SessionManager.class);
 			Session session = manager.operate();
