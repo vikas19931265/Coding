@@ -28,4 +28,13 @@ public class StudentServiceImpl  implements StudentService {
 		 return studentDAO.getStudent(studentId);
 	}
 
+	@Override
+	@Transactional
+	public void createStudent(Student student) {
+		
+		studentDAO.createStudent(student);
+	
+	}
+
+
 }

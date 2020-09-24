@@ -7,7 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToMany;
 
 @Entity(name = "REST_STUDENT")
 public class Student {
@@ -19,7 +19,7 @@ public class Student {
 	public String department;
 	public String phoneNumber;
 
-	@OneToMany(cascade = CascadeType.ALL , fetch = FetchType.EAGER)
+	@ManyToMany(cascade = CascadeType.ALL , fetch = FetchType.EAGER)
 	public List<Address> address;
 
 	public String getName() {

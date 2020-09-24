@@ -10,5 +10,7 @@ public interface StudentDAO {
 	public List<Student> displayStudents();
 	
 	public Student getStudent(int studentId);
+	
+	public void createStudent(Student student);
 
 }
