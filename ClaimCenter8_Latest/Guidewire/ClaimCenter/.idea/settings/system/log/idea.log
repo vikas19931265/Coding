@@ -72,3 +72,24 @@
 2020-11-24 19:25:54,079 [2566010]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/github_settings.xml file is null 
 2020-11-24 19:26:34,621 [2606552]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/intentionSettings.xml file is null 
 2020-11-24 19:26:35,430 [2607361]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/cachedDictionary.xml file is null 
+2020-11-24 19:30:07,932 [2819863]   INFO - ij.compiler.impl.CompileDriver - COMPILATION STARTED 
+2020-11-24 19:30:08,210 [2820141]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/ant.xml file is null 
+2020-11-24 19:30:16,754 [2828685]   INFO - lij.compiler.impl.CompilerUtil - Initial VFS refresh took 8532 ms: 0 min 8sec 
+2020-11-24 19:30:35,838 [2847769]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/fileColors.xml file is null 
+2020-11-24 19:30:59,652 [2871583]   INFO - duler$ExecutionTimeCheckedTask - 50 ms execution limit failed for:com.intellij.openapi.editor.impl.EditorImpl$RepaintCursorCommand@31cfaa26,67 
+2020-11-24 19:36:12,141 [3184072]   INFO - duler$ExecutionTimeCheckedTask - 50 ms execution limit failed for:com.intellij.openapi.progress.impl.ProgressManagerImpl$1@1403838b,330 
+2020-11-24 19:36:29,774 [3201705]   INFO - ij.compiler.impl.CompileDriver - COMPILATION STARTED 
+2020-11-24 19:36:35,228 [3207159]   INFO - lij.compiler.impl.CompilerUtil - Clearing output dirs took 2616 ms: 0 min 2sec 
+2020-11-24 19:36:35,229 [3207160]   INFO - lij.compiler.impl.CompilerUtil - Refreshing output directories took 2707 ms: 0 min 2sec 
+2020-11-24 19:42:43,418 [3575349]   INFO - lij.compiler.impl.CompilerUtil - 	COMPILATION FINISHED; Errors: 0; warnings: 0 took 373618 ms: 6 min 13sec 
+2020-11-24 19:43:07,300 [3599231]   INFO -    #org.jetbrains.io.WebServer - web server stopped 
+2020-11-24 19:43:07,415 [3599346]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2020-11-24 19:43:07,699 [3599630]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2020-11-24 19:43:07,700 [3599631]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2020-11-24 19:43:07,729 [3599660]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2020-11-24 19:43:07,747 [3599678]   INFO - .history.utils.LocalHistoryLog - Purging local history... 
+2020-11-24 19:43:07,798 [3599729]   INFO - .history.utils.LocalHistoryLog - Local history storage successfully closed. 
+2020-11-24 19:43:07,967 [3599898]   WARN - api.vfs.impl.local.FileWatcher - Watcher terminated. 
+2020-11-24 19:43:08,126 [3600057]   INFO - newvfs.persistent.PersistentFS - VFS dispose started 
+2020-11-24 19:43:08,175 [3600106]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
+2020-11-24 19:43:08,223 [3600154]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
