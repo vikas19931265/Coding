@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Using a Queue to Void/Stop Checks: Example</title>
+    <link rel="StyleSheet" href="css/queues.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Rules Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-rules_advanced.html#7390285">Advanced Topics</a> : <a class="WebWorks_Breadcrumb_Link" href="queues.18.1.html#7390285">Working with Queues</a> : Using a Queue to Void/Stop Checks: Example</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="7390285">Using a Queue to Void/Stop Checks: Example</a></h3>
+      <div class="B_-_Body"><a name="7390863">The following example demonstrates using a queue to handle Void/Stop Payment activity requests. In this scenario, ClaimCenter does not allow random adjusters to void or stop checks. Instead, individual adjusters create an activity requesting a void/stop of a check. The activity enters a queue from which a member of the group of accountants takes the activity and completes it.</a></div>
+      <div class="B_-_Body"><a name="7811276">This example uses two rules that assign an activity that has been manually created by an end-user. Therefore, there is no need for claim assignment or workplan rules, as there is in </a><a href="javascript:WWHClickedPopup('rules', 'queues.18.3.html#7390307', '');" title="Using a Queue to Handle FNOL Claims: Example">“Using a Queue to Handle FNOL Claims: Example”</a>. All that is necessary are the two activity assignment rules. Note, however, that you must first create a Stop/Void queue if one does not exist.</div>
+      <div class="B_-_Body"><a name="7391464">This example has three steps</a></div>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="7391506">If necessary, create the void/stop queue. See </a><a href="javascript:WWHClickedPopup('rules', 'queues.18.4.html#7391439', '');" title="Using a Queue to Void/Stop Checks: Example">“Create the Stop/Void Queue”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="7810902">The first rule assigns an activity of type </a><span class="cv_-_computer_voice">void_or_stop_check</span> to a particular group, the Accountants group. See <a href="javascript:WWHClickedPopup('rules', 'queues.18.4.html#7390487', '');" title="Using a Queue to Void/Stop Checks: Example">“Assign the Activity to the Appropriate Group”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="7391516">The second rule adds the activity to the void/stop queue. See </a><a href="javascript:WWHClickedPopup('rules', 'queues.18.4.html#7390503', '');" title="Using a Queue to Void/Stop Checks: Example">“Add the Activity to the Queue”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="7391439">Create the Stop/Void Queue</a></h4>
+      <div class="B_-_Body"><a name="7390903">ClaimCenter associates each queue with a single group, or potentially with a group and its subgroups. Therefore, the first step is to associate the group that is responsible for voiding/stopping payments with the void/stop queue. If a void/stop queue does not exist, you must create one. In fact, if the group responsible for voiding/stopping payments has not yet been defined, you must define it first.</a></div>
+      <div class="B_-_Body"><a name="7390907">If the appropriate queue does not exist, use the ClaimCenter </a><span class="ui_-_UI_element">Administration</span> tab to create one. </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="7391578">First, select a specific group in the hierarchy.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="7391582">Then, select the </a><span class="ui_-_UI_element">Queues</span> tab for that group. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="7391591">Click </a><span class="ui_-_UI_element">Edit</span> and add the queue.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="7390909">This example uses the Accountants group to handle the voiding and stopping of checks. (The members of this group are the only ones assigned the proper role to void/stop payments.)</a></div>
+      <h4 class="H2_-_Heading_2"><a name="7390487">Assign the Activity to the Appropriate Group</a></h4>
+      <div class="B_-_Body"><a name="7390519">The Global Activity Assignment rule ASGA40 - Void/Stop Payments checks to see if the activity is of type </a><span class="cv_-_computer_voice">void_or_stop_check</span>. If it is, the rule assigns the activity to the Accounts group.</div>
+      <h6 class="HS_-_Head_Sub"><a name="7390520">Conditions</a></h6>
+      <div class="CS_-_Code_Single_Line"><a name="7390521">Activity.ActivityPattern.Code == "void_or_stop_check" </a></div>
+      <h6 class="HS_-_Head_Sub"><a name="7390522">Actions</a></h6>
+      <PRE class="CF_-_Code_First_Line"><a name="7390937">if (Activity.CurrentAssignment.assignGroup( Group( "cc:96" /* Accountants */ ) ) ) { </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390938">&nbsp;&nbsp;gw.api.util.Logger.logInfo( "In Claim No. : "+ Activity.Claim.Claimnumber + " - In Activity :" </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390956">&nbsp;&nbsp;&nbsp;&nbsp;+ Activity.ActivityPattern.Subject + " - In " +actions.getRuleSet() + " - In Rule " </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390963">&nbsp;&nbsp;&nbsp;&nbsp;+ actions.getRule() + " - Assigning to " + activity.AssignedGroup.Name )  </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390940">&nbsp;&nbsp;actions.exit() </a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="7390523">}</a></PRE>
+      <h4 class="H2_-_Heading_2"><a name="7390503">Add the Activity to the Queue</a></h4>
+      <div class="B_-_Body"><a name="7390966">The Default Group Activity Assignment rule ASDGA02 - Assign Void/Stop Activity to Queue adds the activity to the queue. This rule condition also requires that the activity be of the correct activity type. </a></div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="7390968">The rule refers to </a><span class="cv_-_computer_voice">AssignableQueues[1]</span> because this queue is presumably the first new queue added to this group. If you have multiple queues on a group, you need to choose the correct one. <br /><span class="cv_-_computer_voice"><br />AssignableQueues[0]</span> refers to the default FNOL queue that ClaimCenter creates anytime that you create a new group. See <a href="javascript:WWHClickedPopup('rules', 'queues.18.3.html#7391340', '');" title="Using a Queue to Handle FNOL Claims: Example">“Assign FNOL Review Activity to Queue”</a>.</div>
+      <h6 class="HS_-_Head_Sub"><a name="7730508">Conditions</a></h6>
+      <div class="CS_-_Code_Single_Line"><a name="7730509">Activity.ActivityPattern.Code == "void_or_stop_check" </a></div>
+      <h6 class="HS_-_Head_Sub"><a name="7730510">Actions</a></h6>
+      <PRE class="CF_-_Code_First_Line"><a name="7390984">gw.api.util.Logger.logInfo( "In Claim No. : " + Activity.Claim.Claimnumber </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390985">&nbsp;&nbsp;+ " - In " +actions.getRuleSet() + " - In Rule " +actions.getRule() </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7391088">&nbsp;&nbsp;+ " - In " + activity.AssignedGroup.AssignableQueues[1].Name + "Queue" )</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390988">&nbsp;&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="7390989">activity.CurrentAssignment.assignActivityToQueue( activity.AssignedGroup.AssignableQueues[1] )</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="7390531">actions.exit()</a></PRE>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

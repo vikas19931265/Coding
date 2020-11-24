@@ -1,0 +1,16 @@
+// background
+$tabbar-background-gradient: none !default; //color-stops(#f4fcff, #cbdee5) !default;
+$tab-base-color: #ebebeb !default;
+$tab-base-color-over: #ebebeb !default;
+$tab-base-color-active: #FFF !default;
+
+// text
+$tab-color: $gwBlackTextColor !default;
+$tab-color-active: #0067ac !default;
+$tab-font-size: 14px !default;
+
+// sizing
+$tabbar-padding: 6px 0 0 10px !default;
+$tabbar-strip-height: 1px !default;
+$tab-padding: 4px 10px 1px !default;
+$tab-margin: 0 0 0 1px !default;

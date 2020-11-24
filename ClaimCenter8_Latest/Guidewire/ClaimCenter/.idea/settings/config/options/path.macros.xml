@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="PathMacrosImpl">
+    <macro name="SDK_ROOT" value="C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter8_Latest\Guidewire\ClaimCenter" />
+    <macro name="M2_REPO" value="C:/Users/Vikas.Gautam/Desktop/GitV2/ClaimCenter8_Latest/Guidewire/ClaimCenter/repository" />
+    <macro name="MAVEN_REPOSITORY" value="C:\Users\Vikas.Gautam\.m2\repository" />
+  </component>
+</application>
+

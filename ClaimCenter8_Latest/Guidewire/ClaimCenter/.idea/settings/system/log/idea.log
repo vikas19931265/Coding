@@ -1,0 +1,74 @@
+2020-11-24 18:43:08,069 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2020-11-24 18:43:08,102 [     33]   INFO -        #com.intellij.idea.Main - IDE: Guidewire Studio (build #Studio-8.0, 31 Jan 2014 00:00) 
+2020-11-24 18:43:08,103 [     34]   INFO -        #com.intellij.idea.Main - OS: Windows 8 (6.2) 
+2020-11-24 18:43:08,103 [     34]   INFO -        #com.intellij.idea.Main - JRE: 1.7.0_25-b17 (Oracle Corporation) 
+2020-11-24 18:43:08,103 [     34]   INFO -        #com.intellij.idea.Main - JVM: 23.25-b01 (Oracle Corporation) 
+2020-11-24 18:43:08,114 [     45]   INFO -        #com.intellij.idea.Main - JVM Args: -Xbootclasspath/a:../lib/boot.jar -XX:ReservedCodeCacheSize=64m -Dstudio.sdkroot=C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter8_Latest\Guidewire\ClaimCenter -Didea.plugins.compatible.build=IC-129.713 -Dfile.encoding=UTF-8 -Dide.tooltip.dismissDelay=60000 -ea -Didea.platform.prefix=Studio -Didea.properties.file=C:/Users/Vikas.Gautam/Desktop/GitV2/ClaimCenter8_Latest/Guidewire/ClaimCenter/.idea/settings/idea.properties -Xms2000m -Xmx4000m -XX:MaxPermSize=500m -Dant.file=C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter8_Latest\Guidewire\ClaimCenter\modules\ant\build.xml -Dant.project.invoked-targets=studio -Dant.file.type=file -Dant.file.Guidewire Ant environment initialization=C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter8_Latest\Guidewire\ClaimCenter\modules\ant\init.xml -Dant.file.Guidewire product configuration environment=C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter8_Latest\Guidewire\ClaimCenter\modules\ant\build.xml -Dant.project.default-target=help -Dant.file.type.Guidewire product configuration environment=file -Dant.file.type.Guidewire Ant environment initialization=file -Dant.project.name=Guidewire product configuration environment 
+2020-11-24 18:43:08,243 [    174]   INFO -        #com.intellij.idea.Main - JNA library loaded (64-bit) in 126 ms 
+2020-11-24 18:43:08,326 [    257]   INFO -        #com.intellij.idea.Main - Snappy library loaded (1.0.4) in 83 ms 
+2020-11-24 18:43:08,343 [    274]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational 
+2020-11-24 18:43:08,384 [    315]   INFO -        #com.intellij.idea.Main - Using "FocusKiller" library to prevent focus stealing. 
+2020-11-24 18:43:11,992 [   3923]   INFO - llij.ide.plugins.PluginManager - 37 plugins initialized in 3146 ms 
+2020-11-24 18:43:11,992 [   3923]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: Ant Support (1.0), Copyright (8.1), GenerateToString (5.0), Git Integration (8.1), GitHub, IDEA CORE, Inspection Gadgets (1.0), Intention Power Pack (1.0), JUnit (1.0), JavaFX (1.0), Maven Integration, Properties Support, Subversion Integration (1.1) 
+2020-11-24 18:43:11,992 [   3923]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: GUnit (1.0-SNAPSHOT), Gosu (4.0-SNAPSHOT), Guidewire CC Studio (1.0), Guidewire Internal API Inspector (1.0.0), Guidewire Studio (1.0-SNAPSHOT), Guidewire Studio (Entity Codegen) (8.20.3) 
+2020-11-24 18:43:11,992 [   3923]   INFO - llij.ide.plugins.PluginManager - Disabled plugins: Android Designer, Android Support (10.0), Byte Code Viewer (0.1), CVS Integration (11), Commander (1.0.0), Eclipse Integration (3.0), Gradle, Groovy (9.0), I18n for Java, IntelliLang (8.0), Plugin DevKit (1.0), Task Management (1.0), TestNG-J (8.0), UI Designer, UI Designer (Core), XPathView + XSLT Support (4), XSLT-Debugger (1.4), hg4idea (10.0) 
+2020-11-24 18:43:13,664 [   5595]   INFO - ellij.vfs.persistent.FSRecords - Marking VFS as corrupted 
+2020-11-24 18:43:13,685 [   5616]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=200; buffer=10; max=3707305984 
+2020-11-24 18:43:13,919 [   5850]   INFO - api.vfs.impl.local.FileWatcher - Starting file watcher: C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter8_Latest\Guidewire\ClaimCenter\idea\bin\fsnotifier.exe 
+2020-11-24 18:43:15,177 [   7108]   INFO - api.vfs.impl.local.FileWatcher - Native file watcher is operational. 
+2020-11-24 18:43:15,642 [   7573]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/project.default.xml file is null 
+2020-11-24 18:43:16,158 [   8089]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/filetypes.xml file is null 
+2020-11-24 18:43:16,911 [   8842]   INFO - .history.utils.LocalHistoryLog - local history version mismatch (was: 0, expected: 5), rebuilding... 
+2020-11-24 18:43:16,911 [   8842]   INFO - .history.utils.LocalHistoryLog - FS has been rebuild, rebuilding local history... 
+2020-11-24 18:43:17,130 [   9061]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/ui.lnf.xml file is null 
+2020-11-24 18:43:17,149 [   9080]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/options.xml file is null 
+2020-11-24 18:43:17,242 [   9173]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/notifications.xml file is null 
+2020-11-24 18:43:17,253 [   9184]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/usage.statistics.xml file is null 
+2020-11-24 18:43:17,258 [   9189]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/statistics.application.usages.xml file is null 
+2020-11-24 18:43:17,521 [   9452]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/keymap.xml file is null 
+2020-11-24 18:43:18,409 [  10340]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/window.manager.xml file is null 
+2020-11-24 18:43:18,525 [  10456]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/ide.general.xml file is null 
+2020-11-24 18:43:30,075 [  22006]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/stubIndex.xml file is null 
+2020-11-24 18:43:30,102 [  22033]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/editor.xml file is null 
+2020-11-24 18:43:30,107 [  22038]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/macros.xml file is null 
+2020-11-24 18:43:30,115 [  22046]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/quicklists.xml file is null 
+2020-11-24 18:43:30,353 [  22284]   INFO - tellij.xml.Html5SchemaProvider - HTML5_SCHEMA_LOCATION = C:/Users/Vikas.Gautam/Desktop/GitV2/ClaimCenter8_Latest/Guidewire/ClaimCenter/idea/lib/idea.jar!/resources/html5-schema/html5.rnc 
+2020-11-24 18:43:30,353 [  22284]   INFO - tellij.xml.Html5SchemaProvider - XHTML5_SCHEMA_LOCATION = C:/Users/Vikas.Gautam/Desktop/GitV2/ClaimCenter8_Latest/Guidewire/ClaimCenter/idea/lib/idea.jar!/resources/html5-schema/xhtml5.rnc 
+2020-11-24 18:43:30,808 [  22739]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/colors.scheme.xml file is null 
+2020-11-24 18:43:30,817 [  22748]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/editor.codeinsight.xml file is null 
+2020-11-24 18:43:31,378 [  23309]   INFO - ellij.project.impl.ProjectImpl - 25 project components initialized in 996 ms 
+2020-11-24 18:43:31,379 [  23310]   INFO - le.impl.ModuleManagerComponent - 0 module(s) loaded in 0 ms 
+2020-11-24 18:43:31,436 [  23367]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/jdk.table.xml file is null 
+2020-11-24 18:43:37,258 [  29189]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/plainTextFiles.xml file is null 
+2020-11-24 18:43:37,525 [  29456]   INFO - pl.stores.ApplicationStoreImpl - 75 application components initialized in 25281 ms 
+2020-11-24 18:43:37,527 [  29458]   INFO - .intellij.idea.IdeaApplication - App initialization took 33990 ms 
+2020-11-24 18:43:38,963 [  30894]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/encodings.xml file is null 
+2020-11-24 18:43:39,115 [  31046]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/vcs.xml file is null 
+2020-11-24 18:43:39,536 [  31467]   INFO - CompilerWorkspaceConfiguration - Available processors: 8 
+2020-11-24 18:43:49,173 [  41104]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/vcs.xml file is null 
+2020-11-24 18:43:49,272 [  41203]   INFO - ellij.project.impl.ProjectImpl - 129 project components initialized in 10633 ms 
+2020-11-24 18:43:49,677 [  41608]   INFO - le.impl.ModuleManagerComponent - 1 module(s) loaded in 405 ms 
+2020-11-24 18:43:49,729 [  41660]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/customization.xml file is null 
+2020-11-24 18:43:50,890 [  42821]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/encoding.xml file is null 
+2020-11-24 18:44:25,851 [  77782]   INFO - .roots.impl.DirectoryIndexImpl - Directory index initialized in 34028 ms, indexed 9045 directories 
+2020-11-24 18:44:25,957 [  77888]   INFO - pl.PushedFilePropertiesUpdater - File properties pushed in 96 ms 
+2020-11-24 18:45:28,458 [ 140389]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/debugger.renderers.xml file is null 
+2020-11-24 18:45:28,862 [ 140793]   INFO -    #org.jetbrains.io.WebServer - We have tried to bind to 127.0.0.1 host but have got exception (Windows 8 6.2), so, try to check - are we really need to bind to 127.0.0.1 
+2020-11-24 18:45:29,071 [ 141002]   INFO -    #org.jetbrains.io.WebServer - port check: current OS must be marked as normal 
+2020-11-24 18:45:29,079 [ 141010]   INFO - jetbrains.ide.WebServerManager - web server started, port 63343 
+2020-11-24 18:45:30,420 [ 142351]   INFO - tor.impl.FileEditorManagerImpl - Project opening took 112111 ms 
+2020-11-24 18:45:33,379 [ 145310]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/codeStyleSettings.xml file is null 
+2020-11-24 18:45:33,382 [ 145313]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/projectCodeStyle.xml file is null 
+2020-11-24 18:45:33,496 [ 145427]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/code.style.schemes.xml file is null 
+2020-11-24 18:45:40,276 [ 152207]   INFO - indexing.UnindexedFilesUpdater - Indexable files iterated in 11692 ms 
+2020-11-24 18:45:40,276 [ 152207]   INFO - indexing.UnindexedFilesUpdater - Unindexed files update started: 110632 files to update 
+2020-11-24 18:45:43,335 [ 155266]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/file.template.settings.xml file is null 
+2020-11-24 18:46:07,048 [ 178979]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/feature.usage.statistics.xml file is null 
+2020-11-24 18:50:02,992 [ 414923]   INFO - duler$ExecutionTimeCheckedTask - 50 ms execution limit failed for:com.intellij.util.Alarm$Request@3971fb19null,81 
+2020-11-24 18:52:08,554 [ 540485]   INFO - indexing.UnindexedFilesUpdater - Unindexed files update done in 388278 ms 
+2020-11-24 19:25:53,602 [2565533]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/studio_settings.xml file is null 
+2020-11-24 19:25:53,611 [2565542]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/gosu_compiler_settings.xml file is null 
+2020-11-24 19:25:53,618 [2565549]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/studio_metadata_editor_settings.xml file is null 
+2020-11-24 19:25:54,079 [2566010]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/github_settings.xml file is null 
+2020-11-24 19:26:34,621 [2606552]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/intentionSettings.xml file is null 
+2020-11-24 19:26:35,430 [2607361]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/cachedDictionary.xml file is null 

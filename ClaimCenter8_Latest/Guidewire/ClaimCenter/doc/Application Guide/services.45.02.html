@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Services Overview</title>
+    <link rel="StyleSheet" href="css/services.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Application&nbsp;Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-services.html#1130394">ClaimCenter Services</a> : <a class="WebWorks_Breadcrumb_Link" href="services.45.01.html#1130394">Services</a> : Services Overview</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="1130394">Services Overview</a></h3>
+      <div class="B_-_Body"><a name="1123910">A </a><span class="e_-_emphasis">service</span> can be defined as any action that can be requested from a third-party vendor or internal provider. Some examples are requesting a rental or courtesy vehicle, inspection and repair of damaged equipment, or commissioning construction services. The services feature provides adjusters with the ability to send service requests to vendors outside ClaimCenter and follow up on their progress. ClaimCenter uses a contact management system, such as ContactManager, to access and select vendors capable of providing specific services and a vendor portal to facilitate communication with vendors.</div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="1164013">In this topic and included examples, Guidewire ContactManager is used as the default contact management system, and the Guidewire Vendor Portal is used as the default vendor communication portal. If you use non-standard components to manage contacts and vendors, please ensure they are integrated appropriately with Guidewire ClaimCenter before proceeding with adding and managing services.</a></div>
+      <div class="B_-_Body"><a name="1164474">You can create a service request in ClaimCenter in two ways – during claim creation in the New Claim wizard or at any time using the </a><span class="ui_-_UI_element">Actions</span> menu. This topic covers the creation of service requests in the <span class="ui_-_UI_element">Actions</span> menu. See <a href="javascript:WWHClickedPopup('app', 'fnol.11.3.html#4863908', '');" title="New Claim Wizard Steps">“New Claim Wizard Steps”</a> for more on adding services in the New Claim wizard.</div>
+      <div class="B_-_Body"><a name="1164014">Once a service request is created, its status can be monitored and updated in both ClaimCenter and the integrated Vendor Portal. You can add one or more quote and invoice documents to the service request and send messages to the vendor. When work is complete, you can proceed from the service request to the payment process using the built-in payment wizard. </a></div>
+      <div class="B_-_Body"><a name="1164218">You can also associate notes and activities to the service request, and ClaimCenter can be configured to notify adjusters with a generated activity when a service request fulfills a condition. For example, the adjuster is notified when a service request is declined.</a></div>
+      <div class="B_-_Body"><a name="1164513">The following sections describe the process of setting up and using the services feature in more detail.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="1156035">Setting Up Services</a></h4>
+      <div class="B_-_Body"><a name="1157025">A basic set of services is provided in XML file format with sample data. This information can be customized per business requirements and imported into ClaimCenter and ContactManager. This is the recommended approach.</a></div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="1177389">Once service data is imported, you cannot edit it or manage its synchronization with ContactManager in the application user interface. You can only make changes by editing the corresponding XML file and importing it back into the applications. Review your XML data files carefully before finalizing them for import into ClaimCenter and ContactManager.</a></div>
+      <div class="B_-_Body"><a name="1177390">The services directory is structured in a tree format and shown when you attempt to add a service to a claim. At the topmost level of the tree, the folder nodes represent service categories. Under these, you can define service subcategories or service types. The leaf nodes of the tree represent the specialized services grouped under each category.</a></div>
+      <div class="B_-_Body"><a name="1176807">In the services XML files, you can configure associated service request types— incident types—as well as the categories, subcategories, and service types of the vendor service tree.</a></div>
+      <h6 class="HS_-_Head_Sub"><a name="1176417">See also</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'configuring_services.44.2.html#1123417', '');" title="Importing Services" name="1176425">“Importing Services” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('config', 'configuring_services.44.2.html#1123417', '');" title="Importing Services">Configuration Guide</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('install', 'quickstart.5.8.html#2133136', '');" title="Installing Sample Data" name="1177055">“Installing Sample Data” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('install', 'quickstart.5.8.html#2133136', '');" title="Installing Sample Data">Installation Guide</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="1154360">Service Request Types</a></h4>
+      <div class="B_-_Body"><a name="1165116">A service request can have a different lifecycle, based on its request type. Once you select the request type, the service request goes through various predefined stages, which are indicated in the ClaimCenter user interface by status and action update messages. </a></div>
+      <div class="B_-_Body"><a name="1156002">Service requests in ClaimCenter are classified into four types:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="1154428">Quote</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="1154461">Quote and Perform Service</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="1154496">Perform Service</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="1177395">Unmanaged</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="1154511">Quote</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="1177728">Use the </a><span class="ui_-_UI_element">Quote</span> request type if you require only a quote from vendors. You would use this option, for example, to compare vendor quotes before making a final selection.</div>
+      <div class="B_-_Body"><a name="1177729">You can </a><span class="e_-_emphasis">promote</span> a quote-only service request to a quote-and-perform-service request using the <span class="ui_-_UI_element">Request</span> <span class="ui_-_UI_element">Service</span> <span class="ui_-_UI_element">from</span> <span class="ui_-_UI_element">Quote</span> menu option. See <a href="javascript:WWHClickedPopup('app', 'services.45.05.html#1161351', '');" title="Promoting Service Requests">“Promoting Service Requests”</a>.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="1159132">Quote and Perform Service</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="1159133">Use the </a><span class="ui_-_UI_element">Quote</span> <span class="ui_-_UI_element">and</span> <span class="ui_-_UI_element">Perform</span> <span class="ui_-_UI_element">Service</span> request type if you require the complete service request lifecycle – obtain quotes, request service, and make payments.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="1177487">Perform Service</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="1177488">Use the </a><span class="ui_-_UI_element">Perform</span> <span class="ui_-_UI_element">Service</span> request type if you only require a service, such as requesting a courtesy or rental car. You can then proceed to make a payment, if necessary, once the service is complete.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="1177489">Unmanaged</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="1177418">The </a><span class="ui_-_UI_element">Unmanaged</span> request type is a specialized type used only for services created from the Auto First and Final wizard. This request type is not available for other claims.</div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

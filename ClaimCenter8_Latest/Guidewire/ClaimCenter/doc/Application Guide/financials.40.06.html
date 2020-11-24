@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Payments</title>
+    <link rel="StyleSheet" href="css/financials.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Application&nbsp;Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-financials.html#4976917">ClaimCenter Financials</a> : <a class="WebWorks_Breadcrumb_Link" href="financials.40.01.html#4976917">Claim Financials</a> : Payments</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="4976917">Payments</a></h3>
+      <div class="B_-_Body"><a name="5061621">Payments encompass all monetary amounts paid to satisfy a claim. This money includes the claim’s liabilities and its associated LAE (Loss Adjustment Expenses) and other administrative expenses. Payments have the following associations:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4649745">Every payment is associated with a specific reserve line to categorize the payment amount. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="5075199">Every payment belongs to a check. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="5075206">A payment is classified as either eroding or non-eroding. An eroding payment decreases the amount of available reserves on its reserve line. If you create an eroding payment that exceeds the amount of available reserves, ClaimCenter creates a new reserve transaction to bring the reserves back up to zero. An exception is payments that you schedule to be sent on a future date.</a></div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="5098366">Payments are not the same as checks. See </a><a href="javascript:WWHClickedPopup('app', 'financials.40.07.html#5084852', '');" title="Checks">“Checks”</a>.</div>
+      <div class="B_-_Body"><a name="5061807">The remainder of this topic describes different types of payments and when each can be used. It includes: </a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('app', 'financials.40.06.html#4649753', '');" title="Payments" name="5061830">“Eroding and Non-eroding Payments”</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('app', 'financials.40.06.html#4649776', '');" title="Payments" name="5061843">“Partial, Final, and Supplemental Payment Types”</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4649753">Eroding and Non-eroding Payments </a></h4>
+      <div class="B_-_Body"><a name="4649757">ClaimCenter defines two kinds of payments:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4649758">Eroding</a></span> – A payment that decreases the available reserves on its reserve line by the payment amount.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="4649759">Non-eroding</a></span> – A payment that does not affect available reserves.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4649760">Every payment, independent of its type, can be denoted as eroding or non-eroding. The following are examples of non-eroding payments:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4649761">Supplement payments made after a claim or exposure is closed and therefore has zero reserves. There are no more reserves to erode.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4649766">If a carrier does not include its LAE estimates in its reserves, it can make LAE payments non-eroding. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4649767">If the carrier measures its liabilities by using Total Incurred instead of Open Reserves, eroding reserves are not important. Only non-eroding payments increase Total Incurred. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="5074243">Payments and Negative Reserves</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="5074244">All eroding payments reduce their associated reserves. If the </a><span class="cv_-_computer_voice">AllowPaymentsExceedReservesLimits</span> parameter in <span class="cv_-_computer_voice">config.xml</span> is set to <span class="cv_-_computer_voice">true</span>, payments can exceed the amount of available reserves.</div>
+      <div class="B_-_Body"><a name="5074245">To prevent negative reserves, ClaimCenter creates an offsetting reserve for such payments. However, these reserves are not created until the scheduled send date for the payment's check. Therefore, reserves remain negative from the time the payment is approved to the day it is sent in the case of a future-dated check. Otherwise, an offset will be created when the check is issued.</a></div>
+      <div class="B_-_Body"><a name="5074246">The offset reserve is created as soon as an eroding payment is in Awaiting Submission status. An offset reserve is not created for non-eroding payments. </a></div>
+      <h4 class="H2_-_Heading_2"><a name="4649776">Partial, Final, and Supplemental Payment Types</a></h4>
+      <div class="B_-_Body"><a name="5062782">During the check writing process, a payment type is applied to a payment. Payment types complement reserve lines in providing an additional way to classify payments. In the New Check wizard, the Payment Type drop-down list choices can be </a><span class="ui_-_UI_element">Partial</span>, <span class="ui_-_UI_element">Final</span>, and <span class="ui_-_UI_element">Supplemental</span> depending on the situation. For example, the <span class="ui_-_UI_element">Partial</span> option is available if the open claim or exposure has reserves. </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="5062034">It is not possible to add other types to the </a><span class="cv_-_computer_voice">PaymentType</span> typelist. </div>
+      <div class="B_-_Body"><a name="5061242">This topic includes: </a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('app', 'financials.40.06.html#5060849', '');" title="Payments" name="5060730">“Partial Payments”</a> </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('app', 'financials.40.06.html#5061277', '');" title="Payments" name="5060754">“Final Payments”</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('app', 'financials.40.06.html#4649781', '');" title="Payments" name="5060761">“Supplemental Payments”</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="5060849">Partial Payments</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="5061944">A partial payment transaction is a transaction that usually pays for some of, but not all, the financial obligation of the reserve line on an open claim or exposure. The available reserves remaining in the reserve line will presumably be used in some future check to complete the financial obligation. These partial payments are eroding unless you specify otherwise. If you are creating eroding partial payments and the </a><span class="cv_-_computer_voice">AllowPaymentsExceedReservesLimits</span> parameter is set to <span class="cv_-_computer_voice">false</span>, the reserve line must have the available reserves to cover those amounts. If it does not, then you must either increase the reserves to cover that amount or create a new reserve. </div>
+      <div class="B_-_Body"><a name="5061889">Partial payments are not allowed when the reserve line does not already have reserves and the </a><span class="cv_-_computer_voice">AllowPaymentsExceedReservesLimits</span> parameter is set to <span class="cv_-_computer_voice">false.</span> This setting is the default in the base configuration. Setting this parameter to <span class="cv_-_computer_voice">true</span> means that you can make a partial payment with available reserves that are less than the partial payment amount. In that case, ClaimCenter automatically adds reserves to the reserve line to prevent the available reserves from becoming negative.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="5061277">Final Payments</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="5074535">A final payment transaction is a transaction that completes the financial obligation of the reserve line. Because the financial obligation has been met, there is no need to keep money set aside in the reserve line. The purpose of final payments is to close exposures and, potentially, even close the claim. Final payments can be either eroding or non-eroding. </a></div>
+      <div class="B_-_Body"><a name="5177733">On creation, the final payment zeroes out the Open Reserves on its reserve line. ClaimCenter automatically creates an additional reserve transaction that zeroes out the reserve line. </a></div>
+      <div class="B_-_Body"><a name="5177734">A final payment performs the following actions when its check is escalated by the Financials Escalation batch process:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="5098696">If there are no reserves on the exposure and the </a><span class="cv_-_computer_voice">CloseExposureAfterFinalPayment</span> configuration parameter in the <span class="cv_-_computer_voice">config.xml</span> file is <span class="cv_-_computer_voice">true</span>, the final payment attempts to close the payment's exposure. Other reserve lines on the exposure with non-zero reserves prevent closing of the exposure. If the Close Exposure Validation rules fail while closing the exposure, a warning activity is created and the exposure is not closed. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="5074591">If all exposures on the claim are closed and there are no claim level reserves and the </a><span class="cv_-_computer_voice">CloseClaimAfterFinalPayment</span> configuration parameter is <span class="cv_-_computer_voice">true</span>, ClaimCenter attempts to close the claim. If the Close Claim validation rules fail while closing the claim, a warning activity is created and the claim is not closed. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="5144302">To automatically close claims and exposures, two financial parameters in the </a><span class="cv_-_computer_voice">config.xml</span> file must be enabled, <span class="cv_-_computer_voice">CloseClaimAfterFinalPayment</span> and <span class="cv_-_computer_voice">CloseExposureAfterFinalPayment</span>. These parameters are enabled by default in the base configuration. For more information, see <a href="javascript:WWHClickedPopup('config', 'params.05.17.html#5026789', '');" title="Financial Parameters">“Financial Parameters” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('config', 'params.05.17.html#5026789', '');" title="Financial Parameters">Configuration Guide</a></span>. </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="5074966">ClaimCenter does not ensure that a final payment is the last payment. Generally, if a final payment has not been escalated, you can make an additional partial payment. If it has been escalated, you can make a supplemental payment. </a></div>
+      <div class="B_-_Body"><a name="5063139">You can also use final payments to quickly deal with small, simple claims. They can even be made before a reserve has been specified. For example, a single First and Final payment can often settle a personal auto claim. If reserves have not been set, a final payment creates an offsetting reserve to cover it.</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4649781">Supplemental Payments</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4649782">Supplemental payments are additional payments that are made on an already closed claim or exposure. They are the only way to make a payment on a closed claim or exposure without opening the exposure or claim. They are always non-eroding. A closed claim’s or exposure’s available reserves will have already been zeroed, so there is nothing to erode. </a></div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="4972325">A supplemental payment must be submitted on the date it is created. It cannot be scheduled for future payment, for historical reasons. If you think you have a future liability, do not make a supplemental payment on a closed claim. Instead, reopen the claim, create a reserve, and make payments against it. </a></div>
+      <h6 class="HS_-_Head_Sub"><a name="5074216">Supplemental Payments Without Any Previous Payments</a></h6>
+      <div class="B_-_Body"><a name="5074217">If the </a><span class="cv_-_computer_voice">AllowNoPriorPaymentSupplement</span> configuration parameter in <span class="cv_-_computer_voice">config.xml</span> is set to <span class="cv_-_computer_voice">true</span>, then you can make supplemental payments if no prior payments existed. In this case, the reserve line drop-down list in the <span class="ui_-_UI_element">New Check</span> wizard shows the reserve lines of all closed exposures, including those with and without a prior payment. </div>
+      <h4 class="H2_-_Heading_2"><a name="5062245">Modifying Payments</a></h4>
+      <div class="B_-_Body"><a name="5062246">Depending on its Transaction Status, you can edit, delete, void, or stop a payment or a check. You can also recode and transfer a check. See </a><a href="javascript:WWHClickedPopup('app', 'financials.40.12.html#4650511', '');" title="Lifecycles of Financial Objects">“Transaction Status and Check Status”</a>.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4862099">Editing or Deleting Payments</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4649845">You can edit or delete a payment as long as it belongs solely to ClaimCenter. The check must not have been sent to be entered into an external accounting system. Editing and deleting are possible when a payment is Pending Approval, is Awaiting Submission, or has Rejected status. The claim or exposure must be open to edit or delete a payment in Rejected status. See also </a><a href="javascript:WWHClickedPopup('app', 'financials.40.13.html#4650564', '');" title="Lifecycles of Transactions">“Lifecycles of Transactions”</a>.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4649849">Recoding a Payment to Another Reserve Line</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4649850">You can move a payment to another reserve line, or change the line category of its transaction line items, after the payment is sent downstream. This process is called </a><span class="e_-_emphasis">recoding</span>. It is available on the <span class="ui_-_UI_element">Payments</span> screen of the <span class="ui_-_UI_element">Transactions</span> tab of the <span class="ui_-_UI_element">Financials</span> screen. You can consider a check to be recoded when you recode its payments, but checks are unaffected by recoding—their amount is unchanged.</div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="5131855">If a check is in Awaiting Submission status or an earlier status, you can edit the check and its payments any way you like, but you cannot recode. After the check is escalated to Requesting status and is sent downstream to the check processing system, the only way to fix a coding error is to recode the payment. For more information on check statuses, see </a><a href="javascript:WWHClickedPopup('app', 'financials.40.14.html#4650711', '');" title="Lifecycles of Checks">“Lifecycles of Checks”</a>.</div>
+      <div class="B_-_Body"><a name="5130877">Using </a><span class="ui_-_UI_element">Recode</span>, you can split an amount from one payment into multiple payments, but you cannot consolidate multiple payments on an escalated check into fewer payments. However, multiple payments on the same check can have the same reserve line, so you can always recode the right amount of money onto the proper reserve line. The amount might be split across multiple payment transactions with that same reserve line. </div>
+      <div class="B_-_Body"><a name="5130878">To recode a payment, do the following:</a></div>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="5130879">Select a claim.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="5130880">Click </a><span class="ui_-_UI_element">Financials</span> in the left-hand links.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="5130881">Click a payment amount to open the </a><span class="ui_-_UI_element">Transactions</span> screen.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="5130882">Click the </a><span class="ui_-_UI_element">Amount</span> link of a <span class="ui_-_UI_element">Payment</span> transaction. This action opens the <span class="ui_-_UI_element">Payment Details</span> screen.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="5130883">Click </a><span class="ui_-_UI_element">Recode</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="5130884">In the </a><span class="ui_-_UI_element">Recode Payment</span> screen, you can do the following:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="5130885">Change the reserve line.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="5130886">Enter a comment. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="5130887">Add additional line items and set the line category and amount for each line item.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="5131728">Click </a><span class="ui_-_UI_element">Add Payment</span> and then edit the reserve line and amounts of the payments to reflect the new reserve line and amount on each. Their amounts must add up to the original payment's amount.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="5177230">If you are using multicurrency reserving, only reserve lines in the same currency as the reserve line of the payment will be available for selection. All payments on a check must be from reserve lines with the same reserving currency.</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4649851">Transferring a Payment to Another Claim</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4649852">You cannot transfer a payment to another claim, at least not directly. You can transfer a check, and when you do so, all payments on the check are also transferred. For more information, see </a><a href="javascript:WWHClickedPopup('app', 'financials.40.07.html#4650030', '');" title="Checks">Transferring Checks from One Claim to Another</a>.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4649853">Voiding or Stopping a Payment</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4649854">After a check is submitted to an external check writing application to be issued, its payments are also submitted. While they can no longer be edited or deleted, ClaimCenter does provide both a Void and a Stop mechanism. Their details depend on your implementation. However, these actions are more common to checks. When you void or stop a check, ClaimCenter also creates offsets that void the associated payments and reserves for you.</a></div>
+      <div class="B_-_Body"><a name="4649864">ClaimCenter generates offset transactions for all voids and stops and their payments. The description field of the offset reads </a><span class="ui_-_UI_element">Offsetting transaction for voided check to Payee on Date</span>.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4649866">Negative and Zero Dollar Transactions and Checks</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4649867">There are times when you want to make zero-dollar or negative transactions. For example, you can receive an invoice containing credit or no-cost items, and then create a payment to record that it was paid. Or, if you make an overpayment to a claimant, the claimant’s next check can have a line item for that reserve line. The line item would show a negative amount to offset the overpayment. </a></div>
+      <div class="B_-_Body"><a name="4862123">In ClaimCenter, you can create:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4649871">A check with a negative amount. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="5111550">If you want to create the check manually, the configuration parameter </a><span class="cv_-_computer_voice">AllowNegativeManualChecks</span> in the <span class="cv_-_computer_voice">config.xml</span> file must be set to <span class="cv_-_computer_voice">true</span>.</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4649872">A check for $0. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4649873">A check with a negative amount as one or more of its payments. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4649874">A payment with a negative amount on one or more of its line items. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4649875">A check with $0 entries on one or more of its payments. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4649876">A payment with $0 entries on one or more of its line items. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4649877">A recovery with a negative amount, but only if the recovery does not result in negative total recoveries on the reserve line or the claim.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="5115086">A recovery with $0 entries on one or more of its line items. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="5115161">A recovery of $0.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="5115173">A reserve of $0.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="5115163">Making Payments with Rules</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="5115164">You must use the </a><span class="cv_-_computer_voice">setAsNonEroding</span> and <span class="cv_-_computer_voice">setAsEroding</span> methods on <span class="cv_-_computer_voice">Payment</span> to change whether automatic payments or other payments made by using a Gosu rule that erodes reserves. Instead of your directly setting the field itself, ClaimCenter must handle the underlying offsets to the reserves’ T-accounts. See also <a href="javascript:WWHClickedPopup('app', 'financials.40.20.html#4677416', '');" title="Transaction Business Rules">“Transaction Business Rules”</a>.</div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

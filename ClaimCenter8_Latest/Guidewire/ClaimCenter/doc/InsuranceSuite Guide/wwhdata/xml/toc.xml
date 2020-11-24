@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebWorksHelpTOC version="5.0" xmlns="urn:WebWorks-Help-TOC-Schema">
+  <i t="About ClaimCenter Documentation" l="1">
+    <i t="Conventions in This Document" l="1#2121726" />
+    <i t="Support" l="1#2121769" />
+  </i>
+  <i t="InsuranceSuite Features" l="2">
+    <i t="InsuranceSuite Feature Overview" l="3">
+      <i t="What is InsuranceSuite?" l="3#1125331" />
+      <i t="Suite Integration Features" l="3#1126182" />
+    </i>
+  </i>
+</WebWorksHelpTOC>

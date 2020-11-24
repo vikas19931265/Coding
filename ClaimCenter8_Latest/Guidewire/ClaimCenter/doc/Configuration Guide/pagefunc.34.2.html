@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Adding Print Capabilities</title>
+    <link rel="StyleSheet" href="css/pagefunc.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Configuration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-ui.html#2143515">User Interface Configuration</a> : <a class="WebWorks_Breadcrumb_Link" href="pagefunc.34.1.html#2143515">Configuring Special Page Functions</a> : Adding Print Capabilities</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="2143515">Adding Print Capabilities</a></h3>
+      <div class="B_-_Body"><a name="2143519">You can customize the print functions on the ClaimCenter interface. This section explains the print capabilities and how to use them. It covers the following topics:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'pagefunc.34.2.html#2143534', '');" title="Adding Print Capabilities" name="2143523">Overview of the Print Functionality</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'pagefunc.34.2.html#2143691', '');" title="Adding Print Capabilities" name="2143527">Types of Printing Configuration</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'pagefunc.34.2.html#2143742', '');" title="Adding Print Capabilities" name="2143531">Working with a PrintOut Page</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="2143534">Overview of the Print Functionality</a></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2143538">You can use the ClaimCenter printing functionality to print the data visible on a ClaimCenter screen. You can control both the screen’s output format and which screen objects are printed. Most commonly, pages print as PDF but ClaimCenter also supports a limited comma-separated values (CSV) format. You can send the output of a print action to a local printer or save it to disk. From ClaimCenter you can print:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2143548">the entire organization tree </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2143549">object lists such as the </a><span class="ui_-_UI_element">Activities</span> list on the <span class="ui_-_UI_element">Desktop</span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2143550">object details such as detailed information about a contact</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2143551">Guidewire also defines a special “print claim file” feature. You use this feature to print, with a single action, all of a claim’s information—or to choose which parts of the file to print. You can use this functionality as provided or configure it to suit your company’s requirements. See </a><a href="javascript:WWHClickedPopup('config', 'pagefunc.34.2.html#2143742', '');" title="Adding Print Capabilities">“Working with a PrintOut Page”</a> for details.</div>
+      <div class="B_-_Body"><a name="2143555">All client machines must have a supported version of the Acrobat Reader available to support printing.</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2143559">Configuration Parameters Related to Printing</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2143560">The following optional print parameters in </a><span class="cv_-_computer_voice">config.xml</span> control the default print setting globally. For information on configuration parameters, see <a href="javascript:WWHClickedPopup('config', 'params.05.01.html#6600343', '');" title="Application Configuration Parameters">“Application Configuration Parameters”</a>.</div>
+      <div class="T_-_Table"><a name="2143640">&nbsp;</a></div>
+      <table class="withoutHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2183892">DefaultContentDispositionMode</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2183894">Specifies the Content-Disposition setting to use if the content to be printed is returned to the browser. Must be either “attachment” (the default) or “inline”.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2183897">PrintFontFamilyName</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2183899">Sets the name of font family to use for output. The default is “sans-serif”.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2183903">PrintFontSize</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2183905">Sets the page font size. The default is 10 points.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2183908">PrintFOPUserConfigFile</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2183910">(Optional) Sets the fully qualified path to a valid FOP user configuration file. Use this to specify or override the default FOP configuration.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2183914">PrintHeaderFontSize</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2183916">Sets the header’s font size. The default is 16 points.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2183920">PrintLineHeight</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2183922">Specifies the line height. The default is 14 points.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2183926">PrintListViewFontSize</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2183928">Sets the font size for printing list views. The default is 10 points.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2183932">PrintMarginBottom</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2183934">Sets the bottom margin. The default is .5 inches.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2183938">PrintMarginLeft</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2183940">Specifies the size of left margin. The default is 1 inch.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2183944">PrintMarginRight</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2183946">Specifies the size of right margin. The default is 1 inch.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2183950">PrintMarginTop</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2183952">Specifies the size of top margin. The default is .5 inches.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2183956">PrintPageHeight</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2183958">Specifies the height of the page. The default is 8.5 inches.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2183962">PrintPageWidth</a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2183964">Specifies the width of the page. The default is 11 inches.</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="B_-_Body"><a name="2143641">You can modify any of the page formatting attributes using property values defined in the CSS2 specification. The specification resides online at </a><span class="cv_-_computer_voice"><a href="http://www.w3.org/TR/REC-CSS2" target="external_window">http://www.w3.org/TR/REC-CSS2</a></span>. </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2143644">Security Related to Printing</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2143645">There are two system permissions related to printing—</a><span class="cv_-_computer_voice">lvprint</span> and <span class="cv_-_computer_voice">claimprint</span>. The <span class="cv_-_computer_voice">lvprint</span> permission gives you the ability to print the information that appears in a list view. The <span class="cv_-_computer_voice">claimprint</span> gives you the ability to print a claim. </div>
+      <div class="T_-_Table"><a name="2143675">&nbsp;</a></div>
+      <table class="BulletListDoubleCol" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2143648">Roles with claimprint permission</a></div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2143650">Roles with lvprint permission</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="BIT_-_Bullet_Item_Table_outer" style="margin-left: 2.16pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="BIT_-_Bullet_Item_Table_inner" style="width: 7.199999999999999pt; white-space: nowrap">
+                      <span class="but_-_bullet_in_table">•	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="BIT_-_Bullet_Item_Table_inner"><a name="2143652">Adjuster</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="BIT_-_Bullet_Item_Table_outer" style="margin-left: 2.16pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="BIT_-_Bullet_Item_Table_inner" style="width: 7.199999999999999pt; white-space: nowrap">
+                      <span class="but_-_bullet_in_table">•	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="BIT_-_Bullet_Item_Table_inner"><a name="2143654">Adjuster</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="BIT_-_Bullet_Item_Table_outer" style="margin-left: 2.16pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="BIT_-_Bullet_Item_Table_inner" style="width: 7.199999999999999pt; white-space: nowrap">
+                      <span class="but_-_bullet_in_table">•	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="BIT_-_Bullet_Item_Table_inner"><a name="2143656">Claims Supervisor</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="BIT_-_Bullet_Item_Table_outer" style="margin-left: 2.16pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="BIT_-_Bullet_Item_Table_inner" style="width: 7.199999999999999pt; white-space: nowrap">
+                      <span class="but_-_bullet_in_table">•	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="BIT_-_Bullet_Item_Table_inner"><a name="2143658">Claims Supervisor</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="BIT_-_Bullet_Item_Table_outer" style="margin-left: 2.16pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="BIT_-_Bullet_Item_Table_inner" style="width: 7.199999999999999pt; white-space: nowrap">
+                      <span class="but_-_bullet_in_table">•	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="BIT_-_Bullet_Item_Table_inner"><a name="2143660">Manager</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="BIT_-_Bullet_Item_Table_outer" style="margin-left: 2.16pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="BIT_-_Bullet_Item_Table_inner" style="width: 7.199999999999999pt; white-space: nowrap">
+                      <span class="but_-_bullet_in_table">•	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="BIT_-_Bullet_Item_Table_inner"><a name="2143662">Manager</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="BIT_-_Bullet_Item_Table_outer" style="margin-left: 2.16pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="BIT_-_Bullet_Item_Table_inner" style="width: 7.199999999999999pt; white-space: nowrap">
+                      <span class="but_-_bullet_in_table">•	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="BIT_-_Bullet_Item_Table_inner"><a name="2143664">Clerical</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="BIT_-_Bullet_Item_Table_outer" style="margin-left: 2.16pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="BIT_-_Bullet_Item_Table_inner" style="width: 7.199999999999999pt; white-space: nowrap">
+                      <span class="but_-_bullet_in_table">•	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="BIT_-_Bullet_Item_Table_inner"><a name="2143666">Superuser</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="BIT_-_Bullet_Item_Table_outer" style="margin-left: 2.16pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="BIT_-_Bullet_Item_Table_inner" style="width: 7.199999999999999pt; white-space: nowrap">
+                      <span class="but_-_bullet_in_table">•	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="BIT_-_Bullet_Item_Table_inner"><a name="2143668">Superuser</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="BIT_-_Bullet_Item_Table_outer" style="margin-left: 2.16pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="BIT_-_Bullet_Item_Table_inner" style="width: 7.199999999999999pt; white-space: nowrap">
+                      <span class="but_-_bullet_in_table">•	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="BIT_-_Bullet_Item_Table_inner"><a name="2143670">Integration Admin</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="BIT_-_Bullet_Item_Table_outer" style="margin-left: 2.16pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="BIT_-_Bullet_Item_Table_inner" style="width: 7.199999999999999pt; white-space: nowrap">
+                      <span class="but_-_bullet_in_table">•	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="BIT_-_Bullet_Item_Table_inner"><a name="2143672">New Loss Processing Supervisor</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td style="padding-bottom: 0pt; padding-left: 0pt; padding-right: 5pt; padding-top: 0pt; vertical-align: top">
+            <div class="BIT_-_Bullet_Item_Table_outer" style="margin-left: 2.16pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="BIT_-_Bullet_Item_Table_inner" style="width: 7.199999999999999pt; white-space: nowrap">
+                      <span class="but_-_bullet_in_table">•	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="BIT_-_Bullet_Item_Table_inner"><a name="2143674">New Loss Processing Supervisor</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2143676">Gosu API Methods for Printing</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2143681">ClaimCenter has a Gosu API, </a><span class="cv_-_computer_voice">gw.api.wb.print</span>, that contains a number of methods. Guidewire recommends that you avoid using these APIs in your print configurations with the exception of <span class="cv_-_computer_voice">ListViewPrintOptionsPopupAction</span> and <span class="cv_-_computer_voice">PrintSettings</span>.</div>
+      <h4 class="H2_-_Heading_2"><a name="2143691">Types of Printing Configuration</a></h4>
+      <div class="B_-_Body"><a name="2143692">To add print capabilities to a PCF page you must decide which type of printing you require. You can configure the following types of printing behaviors in ClaimCenter.</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="e_-_emphasis"><a name="2143696">Location printing</a></span> that prints the current page in PDF.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="e_-_emphasis"><a name="2143697">List view printing</a></span> that prints a list in PDF or CSV format.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="e_-_emphasis"><a name="2143698">Customizable printing</a></span> that provides a list of print options.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2143699">This section discusses how to achieve the different kinds of print behaviors.</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2143701">Location Printing</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2143702">Adding the ability to print the current location in PDF is the simplest functionality to configure. You simply add a </a><span class="cv_-_computer_voice">PrintToolbarButton</span> element to a <span class="cv_-_computer_voice">Screen</span> element. For example, the following line in the <span class="cv_-_computer_voice">DashboardClaimCount</span> PCF file creates a <span class="cv_-_computer_voice">Print</span> button in the toolbar:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2143706">&lt;Page id="DashboardClaimCount"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143707">&nbsp;&nbsp;&nbsp;&nbsp;title="displaykey.Java.Dashboard.Title(displaykey.Java.Dashboard.ClaimCount.Title)"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143708">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;canVisit="perm.User.viewedbclaimcounts"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143709">&nbsp;&nbsp;&lt;LocationEntryPoint signature="DashboardClaimCount(GroupInfo :</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143710">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;web.dashboard.DashboardTreeGroupInfo)"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143711">&nbsp;&nbsp;...</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143712">&nbsp;&nbsp;&nbsp;&lt;Toolbar&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143713">&nbsp;&nbsp;&nbsp;&nbsp;</a><span class="s_-_strong">&lt;PrintToolbarButton id="print" label="displaykey.Button.Print"</span></PRE>
+      <PRE class="CM_-_Code_Middle_Line" style="font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="2143714">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;available="perm.User.printlistviews"/&gt;</a></span></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143715">&nbsp;&nbsp;&nbsp;&nbsp;&lt;ToolbarDivider/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143716">&nbsp;&nbsp;&nbsp;...</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143717">&nbsp;&nbsp;&lt;/Screen&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2143718">&lt;/Page&gt;</a></PRE>
+      <div class="B_-_Body"><a name="2143719">This causes the current location, </a><span class="cv_-_computer_voice">DashboardClaimCount</span> to print. You can also refer to another location in the print bar by providing a <span class="cv_-_computer_voice">locationRef</span>. </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2143721">List View Printing</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2143722">List view printing allows you to interactively choose the type of output delivered by the </a><span class="ui_-_UI_element">Print</span> button. This type of printing uses the <span class="cv_-_computer_voice">ToolbarButton</span> element with an <span class="cv_-_computer_voice">action</span> attribute. The <span class="cv_-_computer_voice">action</span> attribute contains a Gosu expression that calls the Gosu API <span class="cv_-_computer_voice">ListViewPrintOptionsPopupAction</span> method. The following example illustrates a list view printing method:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2143725">&lt;ToolbarButton label="displaykey.Java.ListView.Print" id="PrintButton"</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2143726">&nbsp;&nbsp;action="</a><span class="s_-_strong">web.print.ListViewPrintOptionPopupAction.printListViewWithOptions("MyListView")</span>"/&gt;</PRE>
+      <div class="B_-_Body"><a name="2143727">If you choose to print in CSV format, then you can also choose which columns to print. For example, you can use list view printing to print the </a><span class="ui_-_UI_element">Desktop Activities</span> page.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2143729">Customizable Printing</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2143730">Customizable printing allows you to create a print options page that controls exactly what ClaimCenter prints. This printing feature uses a special PCF page containing a </a><span class="cv_-_computer_voice">PrintOut</span> element that is comparable to a <span class="cv_-_computer_voice">Screen</span> element. Using a <span class="cv_-_computer_voice">PrintOut</span> page, you can:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2143731">Print an entire page or select parts of a page to print.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2143732">Print a list view or a list view and its item details.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2143733">Apply a filter to a list view before printing it.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2143737">ClaimCenter uses customizable printing to print the claim file. </a></div>
+      <div class="B_-_Body"><a name="2143738">You can only print a list view’s items in detail using customizable print. Not all list views are eligible for printing details. Only list views that are screen panels are eligible for detail printing—for example a </a><span class="cv_-_computer_voice">CardPanel</span> element or the <span class="cv_-_computer_voice">ListViewPanel</span> in Claim <span class="ui_-_UI_element">Workplan</span>. You cannot print the detail for lists embedded in detail views.</div>
+      <h4 class="H2_-_Heading_2"><a name="2143742">Working with a </a><span class="cvh_-_computer_voice_in_heading">PrintOut</span> Page</h4>
+      <div class="NI_-_Note_Important">
+        <span class="n_-_note">IMPORTANT   </span><a name="2143744">This section explains the configuration of the </a><span class="cv_-_computer_voice">ClaimPrintOut</span> PCF page. Guidewire recommends that you refrain from creating your own <span class="cv_-_computer_voice">PrintOut</span> pages. Instead, Guidewire recommends that you modify the existing <span class="cv_-_computer_voice">ClaimPrintOut</span> PCF page, limiting yourself to adding support for your subtypes and extensions.</div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2143745">A </a><span class="cv_-_computer_voice">PrintOut</span> page is always interactive. The page displays one or more groups of radio buttons and check boxes that control what ClaimCenter actually prints. To use a <span class="cv_-_computer_voice">PrintOut</span> page, you define print elements in a single PCF file. For organizational purposes, the file name usually contains the word <span class="cv_-_computer_voice">print</span> or is stored in a <span class="cv_-_computer_voice">print</span> directory. ClaimCenter contains a single <span class="cv_-_computer_voice">PrintOut</span> page, <span class="cv_-_computer_voice">ClaimPrintOut.pcf</span>.</div>
+      <div class="B_-_Body"><a name="2143746">To call this </a><span class="cv_-_computer_voice">PrintOut</span> file, you trigger an action from a menu item or button that calls the page:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2143747">&lt;MenuItem label="displaykey.Java.ClaimMenu.PrintClaim"</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2143748">&nbsp;&nbsp;&nbsp;&nbsp;action="ClaimPrintout.push(Claim)" id="ClaimMenuActions_Print"/&gt;</a></PRE>
+      <div class="B_-_Body"><a name="2143749">The page takes as the current claim as a variable and offers various options to print the claim. </a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><span class="cvh_-_computer_voice_in_heading"><a name="2143751">PrintOut</a></span> Attributes and Subelements</h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2143752">A </a><span class="cv_-_computer_voice">PrintOut</span> page has the following attributes and subelements (required elements and attributes are in bold):</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2143753">&lt;</a><span class="s_-_strong">PrintOut</span> <span class="s_-_strong">id="</span><span class="s_-_strong" style="font-style: italic">string</span>" canVisit="<span class="e_-_emphasis">expression</span>" desc="<span class="e_-_emphasis">string</span>" parent="<span class="e_-_emphasis">string</span>" <span class="s_-_strong">title="</span><span class="s_-_strong" style="font-style: italic">string</span><span class="s_-_strong" style="font-style: normal">"</span>&gt;</PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143754">&nbsp;&nbsp;&lt;Code/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143755">&nbsp;&nbsp;&lt;LocationEntryPoint canVisit="</a><span class="e_-_emphasis">expression</span>" parent="<span class="e_-_emphasis">string</span>" <span class="s_-_strong">signature="</span><span class="s_-_strong" style="font-style: italic">string</span><span class="s_-_strong" style="font-style: normal">"</span> title="string"/&gt;</PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143756">&nbsp;&nbsp;&lt;Variable initialValue="</a><span class="e_-_emphasis">expression</span>" <span class="s_-_strong">name="</span><span class="s_-_strong" style="font-style: italic">string</span><span class="s_-_strong" style="font-style: normal">"</span> recalculateOnRefresh="<span class="e_-_emphasis">boolean</span>" type="<span class="e_-_emphasis">string</span>"/&gt;</PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143757">&nbsp;&nbsp;&lt;Verbatim desc="string" hideIfEditable="boolean" hideIfReadOnly="boolean"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143758">&nbsp;&nbsp;&nbsp;&nbsp;id="string" label="string" labelStyleClass="string" visible="expression" </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143759">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;warning="boolean" /&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143760">&nbsp;&nbsp;&lt;</a><span class="s_-_strong">PrintGroup</span> choosable="<span class="e_-_emphasis">expression</span>"customizable="<span class="e_-_emphasis">boolean</span>" <span class="s_-_strong">id="</span><span class="s_-_strong" style="font-style: italic">string</span><span class="s_-_strong" style="font-style: normal">" label="</span><span class="s_-_strong" style="font-style: italic">string</span><span class="s_-_strong" style="font-style: normal">"</span>&gt;</PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143761">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</a><span class="s_-_strong">PrintSection</span> choosable="<span class="e_-_emphasis">expression</span>" <span class="s_-_strong">id="</span><span class="s_-_strong" style="font-style: italic">string</span><span class="s_-_strong" style="font-style: normal">" label="</span><span class="s_-_strong" style="font-style: italic">string</span><span class="s_-_strong" style="font-style: normal">"</span>&gt;</PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143762">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</a><span class="s_-_strong">PrintOption</span> choosable="<span class="e_-_emphasis">expression</span>" <span class="s_-_strong">id="</span><span class="s_-_strong" style="font-style: italic">string</span><span class="s_-_strong" style="font-style: normal">" label="</span><span class="s_-_strong" style="font-style: italic">string</span><span class="s_-_strong" style="font-style: normal">"</span>&gt;</PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143763">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</a><span class="s_-_strong">PrintOptionLocation</span> filter="<span class="e_-_emphasis">expression</span>" listViewRef="<span class="e_-_emphasis">string</span>" <span class="s_-_strong">locationRef="</span><span class="s_-_strong" style="font-style: italic">string</span><span class="s_-_strong" style="font-style: normal">"</span></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143764">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printable="</a><span class="e_-_emphasis">string</span>"&gt;</PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143765">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;PrintDetail </a><span class="s_-_strong">locationRef="</span><span class="s_-_strong" style="font-style: italic">string</span><span class="s_-_strong" style="font-style: normal">" </span>mode="<span class="e_-_emphasis">string</span>" <span class="s_-_strong">symbolName="</span><span class="s_-_strong" style="font-style: italic">string</span><span class="s_-_strong" style="font-style: normal">" symbolTpye="</span><span class="s_-_strong" style="font-style: italic">string</span><span class="s_-_strong" style="font-style: normal">"</span>/&gt;</PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143766">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</a><span class="s_-_strong">PrintOptionLocation</span>&gt;</PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143767">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</a><span class="s_-_strong">PrintOption</span>&gt;</PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143768">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</a><span class="s_-_strong">PrintSection</span>&gt;</PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143769">&nbsp;&nbsp;&lt;/</a><span class="s_-_strong">PrintGroup</span>&gt;</PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143770">&nbsp;&nbsp;&lt;PrintLocation </a><span class="s_-_strong">id="</span><span class="s_-_strong" style="font-style: italic">string</span>" <span class="s_-_strong">label="</span><span class="s_-_strong" style="font-style: italic">expression</span><span class="s_-_strong" style="font-style: normal">"</span> printable="<span class="e_-_emphasis">expression</span>"&gt;</PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143771">&nbsp;&nbsp;&nbsp;&nbsp;&lt;PrintLocationDetail </a><span class="s_-_strong">baseLocation="</span><span class="s_-_strong" style="font-style: italic">string</span><span class="s_-_strong" style="font-style: normal">"</span> filter="<span class="e_-_emphasis">expression</span>" <span class="s_-_strong">listViewRef="</span><span class="s_-_strong" style="font-style: italic">string</span><span class="s_-_strong" style="font-style: normal">"</span></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143772">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><span class="s_-_strong">locationRef="</span><span class="s_-_strong" style="font-style: italic">string</span>" printable="<span class="e_-_emphasis">expression</span>" <span class="s_-_strong">symbolName="</span><span class="s_-_strong" style="font-style: italic">string</span><span class="s_-_strong" style="font-style: normal">" symbolTpye="</span><span class="s_-_strong" style="font-style: italic">string</span><span class="s_-_strong" style="font-style: normal">"/&gt;</span></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143773">&nbsp;&nbsp;&nbsp;&lt;/PrintLocation /&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143774">&nbsp;&nbsp;&lt;/PrintLocation&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143775">&nbsp;&nbsp;&lt;PrintOutButton action="action" label="expression" shortcut="string"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143776">&lt;/</a><span class="s_-_strong">PrintOut</span>&gt;</PRE>
+      <div class="B_-_Body"><a name="2143778">Each </a><span class="cv_-_computer_voice">PrintOut</span> page must contain either one <span class="cv_-_computer_voice">PrintGroup</span> or one <span class="cv_-_computer_voice">PrintLocation</span>. The following <span class="cv_-_computer_voice">PrintOut</span> configuration subelements are specific to customizable printing:</div>
+      <div class="T_-_Table"><a name="2143825">&nbsp;</a></div>
+      <table class="withHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2143781">Element</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2143783">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2143785">PrintDetail</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2143787">Instructions on how to print elements if you elect to print details.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2143789">PrintGroup</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2143791">Defines a set of pages to print. This element contains one or more </a><span class="cvt_-_computer_voice_table">PrintSection</span> elements. ClaimCenter represents each <span class="cvt_-_computer_voice_table">PrintSection</span> element in the interface with a radio button. You can customize a <span class="cvt_-_computer_voice_table">PrintGroup</span>. See <a href="javascript:WWHClickedPopup('config', 'pagefunc.34.2.html#2143729', '');" title="Adding Print Capabilities">“Customizable Printing”</a> for more information on using a customizable group.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2143796">PrintLocation</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2143799">Specifies a specific location to print. This element takes one or more </a><span class="cvt_-_computer_voice_table">PrintLocationDetail</span> elements.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2143801">PrintLocationDetail</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2143803">Instructions on how to print elements if you elect to print details. ClaimCenter represents each print element in the interface with a radio button.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2143806">PrintOption</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2143808">A set of locations that are printed together. Each </a><span class="cvt_-_computer_voice_table">PrintOption</span> contains one more <span class="cvt_-_computer_voice_table">PrintOptionLocation</span> subelements.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2143811">PrintOptionLocation</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2143814">Specifies a page (</a><span class="cvt_-_computer_voice_table">location</span>) to print any time that you select a <span class="cvt_-_computer_voice_table">PrintGroup</span>. This element can contain one <span class="cvt_-_computer_voice_table">PrintDetail</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2143817">PrintOutButton</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2143819">Adds a button to a </a><span class="cv_-_computer_voice">PrintOut</span> page. This element triggers printing if you select print options, or if you cancel and close the page.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2143822">PrintSection</a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2143824">Represents a print selection on a </a><span class="cv_-_computer_voice">PrintOut</span> page. Each <span class="cvt_-_computer_voice_table">PrintSection</span> must contain one or more <span class="cvt_-_computer_voice_table">PrintOption</span> elements.</div>
+          </td>
+        </tr>
+      </table>
+      <div class="B_-_Body"><a name="2143826">With the exception of the </a><span class="cv_-_computer_voice">PrintDetail</span> element, all of the <span class="cv_-_computer_voice">PrintOut</span> subelements specify a <span class="cv_-_computer_voice">printable</span> attribute. This attribute takes a boolean expression that determines if the print option is visible. If the expression evaluates to <span class="cv_-_computer_voice">true</span>, the option appears.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2143829">Printing All the Claim’s Pages with and without Detail</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2143830">The </a><span class="ui_-_UI_element">All pages excluding details</span> option is represented in the file by a single <span class="cv_-_computer_voice">PrintGroup</span> element. A <span class="cv_-_computer_voice">PrintGroup</span> defines a set of pages to print. Each set is contained in a <span class="cv_-_computer_voice">PrintSection</span> element. The individual pages appear as <span class="cv_-_computer_voice">PrintOptionLocation</span> elements within a <span class="cv_-_computer_voice">PrintOption</span>. The following section illustrates the definition for the claim workplan pages:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2143831">&lt;PrintGroup id="AllClaimPagesWithoutDetails"</a></PRE>
+      <PRE class="CF_-_Code_First_Line"><a name="2143832">&nbsp;&nbsp;&nbsp;&nbsp;label="displaykey.Java.PrintClaimOptionsForm.Label.AllClaimPagesWithoutDetails"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143833">...</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143834">&lt;PrintSection id="WorkplanSection" label="displaykey.Java.PrintClaimOptionsForm.Label.Workplan"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143835">&nbsp;&nbsp;&nbsp;&nbsp;printable="perm.System.viewworkplan"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143836">&nbsp;&nbsp;&lt;PrintOption id="WorkplanSummaryOption"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143837">&nbsp;&nbsp;&nbsp;&nbsp;label="displaykey.Java.PrintClaimOptionsForm.Options.Workplan.Summary"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143838">&nbsp;&nbsp;&nbsp;&nbsp;&lt;PrintOptionLocation locationRef="ClaimWorkplan(Claim)"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143839">&nbsp;&nbsp;&lt;/PrintOption&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143840">&lt;/PrintSection&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143841">...</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2143842">&lt;/PrintGroup&gt;</a></PRE>
+      <div class="B_-_Body"><a name="2143843">The </a><span class="ui_-_UI_element">All Pages including details and FNOL snapshot</span> option is defined in a second <span class="cv_-_computer_voice">PrintGroup</span> that allows you to print the details of each page. This is accomplished through the addition of the optional <span class="cv_-_computer_voice">PrintDetail</span> element.</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2143845">&lt;PrintSection id="WorkplanSection" label="displaykey.Java.PrintClaimOptionsForm.Label.Workplan"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143846">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printable="perm.System.viewworkplan"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143847">&nbsp;&nbsp;&lt;PrintOption id="WorkplanDetailsOption"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143848">&nbsp;&nbsp;&nbsp;&nbsp;label="displaykey.Java.PrintClaimOptionsForm.Options.Workplan.Details"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143849">&nbsp;&nbsp;&nbsp;&nbsp;&lt;PrintOptionLocation locationRef="ClaimWorkplan(Claim)"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143850">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><span class="s_-_strong">&lt;PrintDetail symbolName="Activity" locationRef="ActivityDetailPrint(Activity)"</span></PRE>
+      <PRE class="CM_-_Code_Middle_Line" style="font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="2143851">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;symbolType="Activity"/&gt;</a></span></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143852">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/PrintOptionLocation&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143853">&nbsp;&nbsp;&lt;/PrintOption&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2143854">&lt;/PrintSection&gt;</a></PRE>
+      <div class="B_-_Body"><a name="2143855">You can only configure one list view on an individual page to print. (In other words, you can configure only one list view to print for each screen.) The </a><span class="cv_-_computer_voice">locationRef</span> attribute specifies a page that takes the specified <span class="cv_-_computer_voice">symbolName</span> and <span class="cv_-_computer_voice">symbolType</span> and processes them for printing. The page in this case is the <span class="cv_-_computer_voice">pcf/shared/printing/ActivityDetailPrint.pcf</span> page. This page takes the <span class="cv_-_computer_voice">ClaimPrintOut.pcf </span>as a parent.</div>
+      <div class="B_-_Body"><a name="2143857">The file that defines the action list view determines what you specify for the </a><span class="cv_-_computer_voice">symbolName</span> and <span class="cv_-_computer_voice">symbolType</span> attributes. In this case, that file is the <span class="cv_-_computer_voice">pcf/claim/workplan/WorkplanLV.pcf</span>. This file populates itself from an array of <span class="cv_-_computer_voice">Activity</span> elements:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2143859">&lt;ListViewPanel id="WorkplanLV"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143860">...</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143861">&nbsp;&nbsp;&lt;Require name="ActivityList" </a><span class="s_-_strong">type</span>="Activity[]"/&gt;</PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143862">...</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143863">&nbsp;&nbsp;&lt;RowIterator </a><span class="s_-_strong">elementName</span>="Activity" editable="false" </PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143864">&nbsp;&nbsp;&nbsp;&nbsp;value="ActivityList" hasCheckBoxes="true" </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143865">&nbsp;&nbsp;&nbsp;&nbsp;hideCheckBoxesIfReadOnly="false"&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2143866">...</a></PRE>
+      <div class="B_-_Body"><a name="2143867">This page requires an </a><span class="cv_-_computer_voice">Activity</span> type and elements of this type are named <span class="cv_-_computer_voice">Activity</span>. In the print out page, the <span class="cv_-_computer_voice">symbolType</span> originates from the <span class="cv_-_computer_voice">type</span> value in the list view and the <span class="cv_-_computer_voice">symbolName</span> from the <span class="cv_-_computer_voice">elementName</span> value.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2143869">Printing the Current Page with and without Detail</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2143870">To print the current page, the page on which a user initiated the print action, you use </a><span class="cv_-_computer_voice">PrintLocation</span> elements. To print the entire page without details, you simply supply a single <span class="cv_-_computer_voice">PrintLocation</span>:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2143872">&lt;PrintLocation id="CurrentClaimFilePagePrint"</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2143873">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;label="displaykey.Java.PrintClaimOptionsForm.Label.ThisPageWithoutDetails"/&gt;</a></PRE>
+      <div class="B_-_Body"><a name="2143874">To print the detail on a page, you need to account for the details on each possible page — based on the location of the print action. In the case of a claim, the action appears in the side menu and so can appear from any page in the claim. For example:</a></div>
+      <PRE class="CF_-_Code_First_Line"><a name="2143875">&lt;PrintLocation id="CurrentClaimFilePagePrintWithDetails"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143876">&nbsp;&nbsp;&nbsp;&nbsp;label="displaykey.Java.PrintClaimOptionsForm.Label.ThisPageWithDetails"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143877">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143878">&nbsp;&nbsp;&lt;PrintLocationDetail baseLocation="ClaimWorkplan" symbolName="Activity"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143879">&nbsp;&nbsp;&nbsp;&nbsp;locationRef="ActivityDetailPrint(Activity)" symbolType="Activity"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143880">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143881">&nbsp;&nbsp;&lt;PrintLocationDetail baseLocation="ClaimAssociations" </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143882">&nbsp;&nbsp;&nbsp;&nbsp;locationRef="ClaimAssociationDetail(Claim, ClaimAssociation)" </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143883">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;symbolName="ClaimAssociation" symbolType="ClaimAssociation"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143884">...</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143885">&nbsp;&nbsp;&lt;PrintLocationDetail baseLocation="ClaimMatters" symbolName="Matter"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143886">&nbsp;&nbsp;&nbsp;&nbsp;locationRef="MatterDetailPage(Claim, Matter)" symbolType="Matter"/&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2143887">&lt;/PrintLocation</a></PRE>
+      <div class="B_-_Body"><a name="2143888">The specification of the </a><span class="cv_-_computer_voice">locationRef</span>, <span class="cv_-_computer_voice">symbolName</span>, and <span class="cv_-_computer_voice">symbolType</span> all use the same principles as the <span class="cv_-_computer_voice">PrintDetail</span> element.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2143890">Configuring a Customizable </a><span class="cvh_-_computer_voice_in_heading">PrintGroup</span> </h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2143891">A customizable </a><span class="cv_-_computer_voice">PrintGroup</span> appears as regular radio buttons. If a user selects the button, ClaimCenter displays a list of checkbox and drop-down options. <span class="cv_-_computer_voice">PrintSection</span> subelements appear as check boxes. <span class="cv_-_computer_voice">PrintOption</span> subelements display as accompanying drop-down menus. For example, the following </div>
+      <PRE class="CF_-_Code_First_Line"><a name="2143892">&lt;PrintGroup id="Custom" label="displaykey.Java.Printout.Custom" </a><span class="s_-_strong">customizable="true"</span>&gt;</PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143893">...</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143894">&nbsp;&nbsp;&lt;PrintSection id="WorkplanSection" label="displaykey.Java.PrintClaimOptionsForm.Label.Workplan"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143895">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printable="perm.System.viewworkplan"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143896">&nbsp;&nbsp;&nbsp;&nbsp;&lt;PrintOption id="WorkplanSummaryOption"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143897">&nbsp;&nbsp;&nbsp;&nbsp;label="displaykey.Java.PrintClaimOptionsForm.Options.Workplan.Summary"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143898">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;PrintOptionLocation locationRef="ClaimWorkplan(Claim)"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143899">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/PrintOption&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143900">&nbsp;&nbsp;&nbsp;&nbsp;&lt;PrintOption id="WorkplanDetailsOption"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143901">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;label="displaykey.Java.PrintClaimOptionsForm.Options.Workplan.Details"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143902">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;PrintOptionLocation locationRef="ClaimWorkplan(Claim)"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143903">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;PrintDetail symbolName="Activity" locationRef="ActivityDetailPrint(Activity)"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143904">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;symbolType="Activity"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143905">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/PrintOptionLocation&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143906">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/PrintOption&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143907">&nbsp;&nbsp;&lt;/PrintSection&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143908">...</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2143909">&lt;/PrintGroup&gt;</a></PRE>
+      <div class="B_-_Body"><a name="2143910">This group gives you the option to print each section of the claim file either with details or without.</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2143913">Filtering a List View</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2143914">You can apply a filter to a list view to control what is or is not printed out. To do this, you would specify a </a><span class="cv_-_computer_voice">filter</span> attribute on either the <span class="cv_-_computer_voice">PrintOptionLocation</span> or the <span class="cv_-_computer_voice">PrintLocationDetail</span> element — which ever applies. The following example illustrates the use of a filter:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2143915">&lt;PrintSection id="HistorySection" label="displaykey.Java.PrintClaimOptionsForm.Label.History"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143916">&nbsp;&nbsp;&nbsp;&nbsp;choosable="perm.System.viewclaimhistory"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143917">&nbsp;&nbsp;&lt;PrintOption id="HistoryAllOption" label="displaykey.Java.HistoryFilter.All"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143918">&nbsp;&nbsp;&nbsp;&nbsp;&lt;PrintOptionLocation locationRef="ClaimHistory(Claim)" listViewRef="HistoryLV"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143919">&nbsp;&nbsp;&nbsp;&nbsp;filter="FilterSet.AllFilter"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143920">&nbsp;&nbsp;&lt;/PrintOption&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143921">&nbsp;&nbsp;&lt;PrintOption id="HistoryAssignmentOption" label="displaykey.Java.HistoryFilter.Assignment"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143922">&nbsp;&nbsp;&nbsp;&nbsp;&lt;PrintOptionLocation locationRef="ClaimHistory(Claim)" listViewRef="HistoryLV"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143923">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filter="FilterSet.AssignmentFilter"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143924">&nbsp;&nbsp;&lt;/PrintOption&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143925">&nbsp;&nbsp;&nbsp;&nbsp;&lt;PrintOption id="HistoryViewingOption" label="displaykey.Java.HistoryFilter.Viewing"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143926">&nbsp;&nbsp;&nbsp;&nbsp;&lt;PrintOptionLocation locationRef="ClaimHistory(Claim)" listViewRef="HistoryLV"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143927">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filter="FilterSet.ViewingFilter"/&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143928">&nbsp;&nbsp;&lt;/PrintOption&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2143929">&lt;/PrintSection&gt;</a></PRE>
+      <div class="B_-_Body"><a name="2143931">The print section has three filters all applied to the </a><span class="cv_-_computer_voice">HistoryLV.pcf</span> list view. You configure your list view to use any valid and relevant list view filter — it would not make sense to use an activity filter on an exposure list.</div>
+      <h4 class="H2_-_Heading_2"><a name="2143933">Overriding the Print Settings in a File</a></h4>
+      <div class="B_-_Body"><a name="2143934">Any of the global print settings you set globally in the </a><span class="cv_-_computer_voice">config.xml</span> file, you can override within an individual PCF file. You do this using a Gosu API (<span class="cv_-_computer_voice">gw.api.web.print.PrintSettings</span>). The following example shows how you would override the global font size in a dialog:</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2143936">&lt;Page id="ClaimExposures" title="displaykey.Web.Claim.ClaimExposures" </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143937">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;canEdit="false" canVisit="Claim.ExposureListChangeable and perm.Claim.view(Claim) </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143938">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and perm.System.viewexposures"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143939">...</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line" style="font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="2143940">&nbsp;&nbsp;&lt;Variable name="PrintTargetLV" initialValue="&amp;quot;ExposuresLV&amp;quot;"/&gt;</a></span></PRE>
+      <PRE class="CM_-_Code_Middle_Line" style="font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="2143941">&nbsp;&nbsp;&lt;Variable name="PrintSettings" type="print.PrintSettings" initialValue="createPrintSettings()"/&gt;</a></span></PRE>
+      <PRE class="CM_-_Code_Middle_Line" style="font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="2143942">&nbsp;&nbsp;&lt;Variable name="PrintClaimNumber" type="String"</a></span></PRE>
+      <PRE class="CM_-_Code_Middle_Line" style="font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="2143943">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;initialValue="displaykey.Web.PrintOut.ClaimNumber(Claim.ClaimNumber)"/&gt;</a></span></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143944">...</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143945">&nbsp;&nbsp;&nbsp;&lt;Toolbar&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143946">....</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143947">&nbsp;&nbsp;&nbsp;&nbsp;&lt;ToolbarButton label="displaykey.Java.ListView.Print" id="ClaimExposures_Print" </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143948">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;shortcut="N"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143949">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; available="perm.User.printlistviews and perm.Claim.print(Claim)"</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143950">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a><span class="s_-_strong">action="print.ListViewPrintOptionPopupAction.printListViewWithOptions(PrintTargetLV,</span></PRE>
+      <PRE class="CM_-_Code_Middle_Line" style="font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="2143951">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PrintSettings)"/&gt;</a></span></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143952">...</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143953">&nbsp;&nbsp;&lt;Code&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line" style="font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="2143954">&nbsp;&nbsp;&nbsp;function createPrintSettings() : print.PrintSettings {</a></span></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143955">&nbsp;&nbsp;&nbsp;var newPrintSettings = new print.PrintSettings();</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143956">&nbsp;&nbsp;&nbsp;var claimNumberLabel = displaykey.Web.PrintOut.ClaimNumber(Claim.ClaimNumber);</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143957">&nbsp;&nbsp;&nbsp;newPrintSettings.setHeaderLabel(claimNumberLabel);</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line" style="font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="2143958">&nbsp;&nbsp;&nbsp;newPrintSEttings.setFontSize("12px");</a></span></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143959">&nbsp;&nbsp;&nbsp;return newPrintSettings;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143960">&nbsp;&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2143961">&nbsp;&nbsp;&lt;/Code&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2143962">&lt;/Page&gt;</a></PRE>
+      <div class="B_-_Body"><a name="2143963">These print settings only apply if printing the page by itself — the </a><span class="ui_-_UI_element">Print</span> button action sets them before printing. If you are printing this page as part of a claim file, the settings do not apply.</div>
+      <h4 class="H2_-_Heading_2"><a name="2143965">Troubleshooting Print Configurations</a></h4>
+      <div class="B_-_Body"><a name="2143966">If you run into problems with the display of a printed page, for example elements overlap, you can try the following:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2143967">Adjust the print widths of the columns using the </a><span class="cv_-_computer_voice">PrintSettings</span> Gosu API. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2143968">Hide unwanted columns and print only the necessary columns. Unlike a screen, the printed page is limited by the available width. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2143969">Change the font size of the printed page using the </a><span class="cv_-_computer_voice">PrintSettings</span> Gosu API in a list view.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

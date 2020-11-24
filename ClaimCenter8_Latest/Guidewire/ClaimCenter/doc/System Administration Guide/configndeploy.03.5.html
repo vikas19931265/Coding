@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Enabling Catastrophe Search and Heat Maps</title>
+    <link rel="StyleSheet" href="css/configndeploy.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter System Administration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="configndeploy.03.1.html#1973767">Basic Configuration</a> : Enabling Catastrophe Search and Heat Maps</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="1973767">Enabling Catastrophe Search and Heat Maps</a></h3>
+      <div class="B_-_Body"><a name="1973768">Before you can see the </a><span class="ui_-_UI_element">Catastrophe Search</span> page and its catastrophe heap map, you must enable the heat map facility as follows:</div>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="1973769">Decide which geocoding service you want to use, and then configure a geocoding plugin to work with that service. If you use the Microsoft Bing Maps service, you can use the default geocoding plugin supplied with ClaimCenter. For more information on using and configuring another geocoding service, see </a><a href="javascript:WWHClickedPopup('integration', 'geocoding.19.1.html#2080020', '');" title="Geographic Data Integration">“Geographic Data Integration” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('integration', 'geocoding.19.1.html#2080020', '');" title="Geographic Data Integration">Integration Guide</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1973779">Enable the geocoding plugin as described in </a><a href="javascript:WWHClickedPopup('admin', 'configndeploy.03.6.html#1972885', '');" title="Using the Geocoding Feature">“Configuring Geocoding”</a>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1973784">License the Bing Maps Ajax Control from Microsoft. ClaimCenter uses version 6.3. Use the credential that you obtain from this license in the next step.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1973789">Edit the ClaimCenter </a><span class="cv_-_computer_voice">config.xml</span> file to change the value of the heat map parameters:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LS2A_-_List_Start_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS2A_-_List_Start_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">a.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS2A_-_List_Start_002c_Level_2_Alpha_inner"><a name="1973793">Open a command prompt to </a><span class="cv_-_computer_voice">ClaimCenter/bin</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">b.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="1973797">Launch Guidewire Studio by running the following command from </a><span class="cv_-_computer_voice">ClaimCenter/bin</span>:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP2_-_List_Para_002c_Level_2" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 2.0pt; margin-top: 2.0pt; text-transform: none; vertical-align: baseline"><span class="cv_-_computer_voice"><a name="1973801">gwcc studio</a></span></div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">c.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="1973802">Double-click to open </a><span class="ui_-_UI_element">configuration → config</span><span class="ui_-_UI_element"> </span>→ <span class="ui_-_UI_element">config.xml</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">d.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="1973804">Locate the following parameters and set them as the following example shows:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <PRE class="CF_-_Code_First_Line"><a name="1973805">&nbsp;&nbsp;&lt;param name="HeatMapServiceTemplate" value="gw.api.heatmap.BingMap"/&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="1973806">&nbsp;&nbsp;&lt;param name="HeatMapCredential" value="CREDENTIAL"/&gt;</a></PRE>
+      <div class="LP2_-_List_Para_002c_Level_2"><a name="1973807">Set </a><span class="cv_-_computer_voice">CREDENTIAL</span> to the value that you obtained when you licensed the Bing Maps Ajax Control in <a href="javascript:WWHClickedPopup('admin', 'configndeploy.03.5.html#1973784', '');" title="Enabling Catastrophe Search and Heat Maps">step 3</a>.</div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">e.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="1973811">Save your changes.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1973812">If you have PolicyCenter integrated, there is a batch process, </a><span class="cv_-_computer_voice">CatastrophePolicyLocationDownload</span>, that you must enable. The batch process retrieves policy locations for a specific geographic area of interest from the policy system. The Catastrophe Heat Map shows retrieved policies as policy locations if the policy system geocoded the addresses.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="1973813">To enable this batch process: </a></div>
+      <div class="LS2A_-_List_Start_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS2A_-_List_Start_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">a.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS2A_-_List_Start_002c_Level_2_Alpha_inner"><a name="1973817">Launch Guidewire Studio by running the following command from </a><span class="cv_-_computer_voice">ClaimCenter/bin</span>:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="CS_-_Code_Single_Line" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cv_-_computer_voice"><a name="1973821">&nbsp;&nbsp;gwcc studio</a></span></div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">b.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="1973828">Double-click to open </a><span class="ui_-_UI_element">configuration → config</span><span class="ui_-_UI_element"> </span>→ <span class="ui_-_UI_element">scheduler</span> → <span class="ui_-_UI_element">scheduler-config.xml</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI2A_-_List_Item_002c_Level_2_Alpha_outer" style="margin-left: 67pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">c.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI2A_-_List_Item_002c_Level_2_Alpha_inner"><a name="1973829">Remove any comments around the </a><span class="cv_-_computer_voice">CatastrophePolicyLocationDownload</span> <span class="cv_-_computer_voice">configuration</span> parameter. The following entry schedules the batch process to run every day at 2 a.m.:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <PRE class="CF_-_Code_First_Line"><a name="1973830">&nbsp;&nbsp;&lt;ProcessSchedule process="CatastrophePolicyLocationDownload"&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="1973831">&nbsp;&nbsp;&nbsp;&nbsp;&lt;CronSchedule hours="2"/&gt;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="1973832">&nbsp;&nbsp;&lt;/ProcessSchedule&gt;</a></PRE>
+      <div class="LP_-_List_Para"><a name="1973835">For more information on scheduling batch processes, see </a><a href="javascript:WWHClickedPopup('admin', 'batch.11.08.html#1030716', '');" title="Scheduling Batch Processes and Work Queues">“Scheduling Batch Processes and Work Queues”</a>.</div>
+      <div class="LP_-_List_Para"><a name="1973839">For more information on this batch process, see </a><a href="javascript:WWHClickedPopup('admin', 'batch.11.07.html#2025262', '');" title="List of Batch Processes and Distributable Work Queues">“Catastrophe Policy Location Download”</a>.</div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="1973847">For a development environment, restart the server using the </a><span class="cv_-_computer_voice">gwcc dev-stop</span> and <span class="cv_-_computer_voice">gwcc dev-start</span> commands. You can optionally load the catastrophe sample data supplied with ClaimCenter. This enables you to see the <span class="ui_-_UI_element">Catastrophe Search</span> page and heat maps before you have loaded your own claims and catastrophe data. See <a href="javascript:WWHClickedPopup('install', 'quickstart.5.8.html#2133136', '');" title="Installing Sample Data">“Installing Sample Data” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('install', 'quickstart.5.8.html#2133136', '');" title="Installing Sample Data">Installation Guide</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LP_-_List_Para"><a name="1973854">For a production environment, stop the server. Then, repackage and redeploy the WAR or EAR file and restart the server. See </a><a href="javascript:WWHClickedPopup('install', 'install.6.15.html#1130592', '');" title="Deploying ClaimCenter to the Application Server">“Deploying ClaimCenter to the Application Server” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('install', 'install.6.15.html#1130592', '');" title="Deploying ClaimCenter to the Application Server">Installation Guide</a></span>.</div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

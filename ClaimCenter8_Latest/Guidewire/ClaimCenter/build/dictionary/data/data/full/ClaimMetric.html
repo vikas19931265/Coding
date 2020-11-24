@@ -1,0 +1,2321 @@
+<html>
+<head>
+<title>ClaimMetric</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">ClaimMetric <span class="entityname">(cc_claimmetric) (delegates to <A HREF="Editable.html" TARGET="tableFrame">Editable</A>, <A HREF="Extractable.html" TARGET="tableFrame">Extractable</A>, <A HREF="MetricLimitTimeDelegate.html" TARGET="tableFrame">MetricLimitTimeDelegate</A>)</span></div>
+<div class="desc">
+<span id="reflink_567" class="reftext" onclick='showAndHideRefBox("refbox_567", "reflink_567")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_567" class="refbox_inner" style="display:none;">
+Metrics related to a claim
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">ClaimMetric</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Abstract<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Abstract</b><br>The entity is a supertype, but all instances of it must be one of its subtypes. That is, you cannot instantiate the supertype entity itself. An abstract entity is appropriate when the supertype serves only to collect logic or common fields, but does not make sense to exist on its own.')">?</span></sup>, Editable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Editable</b><br>The related database table contains rows that are editable by application users based on roles and permissions. An Editable table manages additional fields that represent an audit trail of an entity in the table (for example, who created it and when, who last edited it and when).')">?</span></sup>, Exportable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>, Extendable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Extendable</b><br>Can be extended with additional custom fields added to it.')">?</span></sup>, Keyed<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Keyed</b><br>Has a related database table that has a primary key. Each row in a Keyed table has an integer primary key named ID. IDs are managed internally by the application, and the system ensures that no two rows in a keyed table have the same ID. In addition to the internal key, an external primary key can be associated with each row in a table.')">?</span></sup>, Sourceable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Sourceable</b><br>Contains entities that are linked to an external source. Each row in a Sourceable entity\'s table has additional fields to identify the external system and store the ID of the Sourceable entity in the external system.')">?</span></sup>, Supertype<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Supertype</b><br>A single table that represents multiple types of entities, called subtypes. Each subtype shares application logic and a majority of their fields. Each subtype may also define fields that are particular to it.')">?</span></sup>, Versionable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Versionable</b><br>Has a version number that increases every time the entity is changed. This allows the cache to identify when entities have been updated.')">?</span></sup></span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_568" class="reftext" onclick='showAndHideRefBox("refbox_568", "reflink_568")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_568" class="refbox_inner" style="display:none;">
+<A HREF="../full/Claim.html" TARGET="tableFrame">Claim.ClaimMetrics</A>
+</div>
+</span>
+</div>
+<span class="showhidelink"><a id="showAllElements" href="#" onClick="return showAllUIDetails()">Show user interface details on all fields</a></span>
+
+<br>
+<a name=subtypes></a>
+<br/>
+<span class="filtertitle">Subtypes</span>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>
+DecimalClaimMetric</td>
+<td><A HREF="#DecimalClaimMetric" TARGET="tableFrame">DecimalClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+IntegerClaimMetric</td>
+<td><A HREF="#IntegerClaimMetric" TARGET="tableFrame">IntegerClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+&nbsp;
+&nbsp;
+AllEscalatedActivitiesClaimMetric</td>
+<td><A HREF="#AllEscalatedActivitiesClaimMetric" TARGET="tableFrame">AllEscalatedActivitiesClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+&nbsp;
+&nbsp;
+OpenEscalatedActivitiesClaimMetric</td>
+<td><A HREF="#OpenEscalatedActivitiesClaimMetric" TARGET="tableFrame">OpenEscalatedActivitiesClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+&nbsp;
+&nbsp;
+OverdueActivitiesClaimMetric</td>
+<td><A HREF="#OverdueActivitiesClaimMetric" TARGET="tableFrame">OverdueActivitiesClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+&nbsp;
+&nbsp;
+ReserveChangeCountClaimMetric</td>
+<td><A HREF="#ReserveChangeCountClaimMetric" TARGET="tableFrame">ReserveChangeCountClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+MoneyClaimMetric</td>
+<td><A HREF="#MoneyClaimMetric" TARGET="tableFrame">MoneyClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+&nbsp;
+&nbsp;
+NetTotalIncurredClaimMetric</td>
+<td><A HREF="#NetTotalIncurredClaimMetric" TARGET="tableFrame">NetTotalIncurredClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+&nbsp;
+&nbsp;
+TotalPaidClaimMetric</td>
+<td><A HREF="#TotalPaidClaimMetric" TARGET="tableFrame">TotalPaidClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+PercentClaimMetric</td>
+<td><A HREF="#PercentClaimMetric" TARGET="tableFrame">PercentClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+&nbsp;
+&nbsp;
+PercentEscalatedActivitiesClaimMetric</td>
+<td><A HREF="#PercentEscalatedActivitiesClaimMetric" TARGET="tableFrame">PercentEscalatedActivitiesClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+&nbsp;
+&nbsp;
+PercentIncurredLossCostsClaimMetric</td>
+<td><A HREF="#PercentIncurredLossCostsClaimMetric" TARGET="tableFrame">PercentIncurredLossCostsClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+&nbsp;
+&nbsp;
+PercentPaidLossCostsClaimMetric</td>
+<td><A HREF="#PercentPaidLossCostsClaimMetric" TARGET="tableFrame">PercentPaidLossCostsClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+&nbsp;
+&nbsp;
+PercentReserveChangeClaimMetric</td>
+<td><A HREF="#PercentReserveChangeClaimMetric" TARGET="tableFrame">PercentReserveChangeClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+TimeBasedClaimMetric</td>
+<td><A HREF="#TimeBasedClaimMetric" TARGET="tableFrame">TimeBasedClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+&nbsp;
+&nbsp;
+DaysInitialContactWithInsuredClaimMetric</td>
+<td><A HREF="#DaysInitialContactWithInsuredClaimMetric" TARGET="tableFrame">DaysInitialContactWithInsuredClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+&nbsp;
+&nbsp;
+DaysLastViewedByAdjusterClaimMetric</td>
+<td><A HREF="#DaysLastViewedByAdjusterClaimMetric" TARGET="tableFrame">DaysLastViewedByAdjusterClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+&nbsp;
+&nbsp;
+DaysLastViewedBySupervisorClaimMetric</td>
+<td><A HREF="#DaysLastViewedBySupervisorClaimMetric" TARGET="tableFrame">DaysLastViewedBySupervisorClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+&nbsp;
+&nbsp;
+DaysOpenClaimMetric</td>
+<td><A HREF="#DaysOpenClaimMetric" TARGET="tableFrame">DaysOpenClaimMetric</A></td>
+</tr>
+<tr>
+<td>
+&nbsp;
+&nbsp;
+TimeToFirstPaymentClaimMetric</td>
+<td><A HREF="#TimeToFirstPaymentClaimMetric" TARGET="tableFrame">TimeToFirstPaymentClaimMetric</A></td>
+</tr>
+</table>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="claimmetric_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "key")'>key</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="claimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="claimmetric_claim"></a>
+<p class="column">
+<span class="coltitle">Claim</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="Claim.html" TARGET="tableFrame">Claim</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: ClaimID)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Claim to which this metric is related.</span>
+<a name="claimmetric_claimmetriccategory"></a>
+<p class="column">
+<span class="coltitle">ClaimMetricCategory</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/ClaimMetricCategory_tl.html" TARGET="tableFrame">ClaimMetricCategory</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Category of Claim Metric.</span>
+<a name="claimmetric_createtime"></a>
+<p class="column">
+<span class="coltitle">CreateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was created</span>
+<a name="claimmetric_createtime_dynprop"></a>
+<p class="column">
+<span class="coltitle">CREATETIME_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="claimmetric_createuser"></a>
+<p class="column">
+<span class="coltitle">CreateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CreateUserID)</span>
+<br>
+<span class="desc">User who created the object</span>
+<a name="claimmetric_createuser_dynprop"></a>
+<p class="column">
+<span class="coltitle">CREATEUSER_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="claimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="claimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="claimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="claimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="claimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="claimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="claimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="claimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="claimmetric_metriclimitdenorm"></a>
+<p class="column">
+<span class="coltitle">MetricLimitDenorm</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="ClaimMetricLimit.html" TARGET="tableFrame">ClaimMetricLimit</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: MetricLimitDenormID)&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The metric limit for the metric, denormalized from the claim's inital claim metric limits array.</span>
+<a name="claimmetric_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (20)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="claimmetric_reachredtime"></a>
+<p class="column">
+<span class="coltitle">ReachRedTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Time the red limit was or will be reached</span>
+<a name="claimmetric_reachyellowtime"></a>
+<p class="column">
+<span class="coltitle">ReachYellowTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Time the yellow limit was or will be reached.</span>
+<a name="claimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="claimmetric_subtype"></a>
+<p class="column">
+<span class="coltitle">Subtype</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="#subtypes" TARGET="tableFrame">ClaimMetric</A> subtypes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Identifies a particular subtype within a supertype table; each subtype of a supertype has its own unique subtype value</span>
+<div class='screenrefbody'>
+<span id=showhideUI_0 onclick='showAndHideUIDetails("UITable_0", "showhideUI_0")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_0' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>ClaimKeyMetrics.pcf:58</td>
+<td></td>
+<td>metric.Subtype</td>
+<td>false</td>
+<td>
+</td>
+</tr>
+</table>
+</div></div>
+<a name="claimmetric_updatetime"></a>
+<p class="column">
+<span class="coltitle">UpdateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was last updated</span>
+<a name="claimmetric_updatetime_dynprop"></a>
+<p class="column">
+<span class="coltitle">UPDATETIME_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="claimmetric_updateuser"></a>
+<p class="column">
+<span class="coltitle">UpdateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: UpdateUserID)</span>
+<br>
+<span class="desc">User who last updated the object</span>
+<a name="claimmetric_updateuser_dynprop"></a>
+<p class="column">
+<span class="coltitle">UPDATEUSER_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="claimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for ClaimMetric"></a><div class="arraysbox">Unique Keys for ClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<a name="Subtypes"></a><div class="arraysbox">Subtypes</div>
+<div class='subtypebox'>
+<a name=AllEscalatedActivitiesClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">AllEscalatedActivitiesClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html#IntegerClaimMetric" TARGET="tableFrame">IntegerClaimMetric</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_569" class="reftext" onclick='showAndHideRefBox("refbox_569", "reflink_569")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_569" class="refbox_inner" style="display:none;">
+Number of Escalated Activities
+</div>
+</span>
+</div>
+</div>
+<a name="allescalatedactivitiesclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="allescalatedactivitiesclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="allescalatedactivitiesclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="allescalatedactivitiesclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="allescalatedactivitiesclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="allescalatedactivitiesclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="allescalatedactivitiesclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="allescalatedactivitiesclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="allescalatedactivitiesclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="allescalatedactivitiesclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="allescalatedactivitiesclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for AllEscalatedActivitiesClaimMetric"></a><div class="arraysbox">Unique Keys for AllEscalatedActivitiesClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=DaysInitialContactWithInsuredClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">DaysInitialContactWithInsuredClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html#TimeBasedClaimMetric" TARGET="tableFrame">TimeBasedClaimMetric</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_570" class="reftext" onclick='showAndHideRefBox("refbox_570", "reflink_570")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_570" class="refbox_inner" style="display:none;">
+Initial Contact with Insured
+</div>
+</span>
+</div>
+</div>
+<a name="daysinitialcontactwithinsuredclaimmetric_activityskipped"></a>
+<p class="column">
+<span class="exttitle">ActivitySkipped</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Did the user explicitly skip the initial contact with insured activity?</span>
+<a name="daysinitialcontactwithinsuredclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="daysinitialcontactwithinsuredclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="daysinitialcontactwithinsuredclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="daysinitialcontactwithinsuredclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="daysinitialcontactwithinsuredclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="daysinitialcontactwithinsuredclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="daysinitialcontactwithinsuredclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="daysinitialcontactwithinsuredclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="daysinitialcontactwithinsuredclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="daysinitialcontactwithinsuredclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="daysinitialcontactwithinsuredclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for DaysInitialContactWithInsuredClaimMetric"></a><div class="arraysbox">Unique Keys for DaysInitialContactWithInsuredClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=DaysLastViewedByAdjusterClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">DaysLastViewedByAdjusterClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html#TimeBasedClaimMetric" TARGET="tableFrame">TimeBasedClaimMetric</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_571" class="reftext" onclick='showAndHideRefBox("refbox_571", "reflink_571")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_571" class="refbox_inner" style="display:none;">
+Number of days since the adjuster last viewed the claim
+</div>
+</span>
+</div>
+</div>
+<a name="dayslastviewedbyadjusterclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="dayslastviewedbyadjusterclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="dayslastviewedbyadjusterclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="dayslastviewedbyadjusterclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="dayslastviewedbyadjusterclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="dayslastviewedbyadjusterclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="dayslastviewedbyadjusterclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="dayslastviewedbyadjusterclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="dayslastviewedbyadjusterclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="dayslastviewedbyadjusterclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="dayslastviewedbyadjusterclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for DaysLastViewedByAdjusterClaimMetric"></a><div class="arraysbox">Unique Keys for DaysLastViewedByAdjusterClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=DaysLastViewedBySupervisorClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">DaysLastViewedBySupervisorClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html#TimeBasedClaimMetric" TARGET="tableFrame">TimeBasedClaimMetric</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_572" class="reftext" onclick='showAndHideRefBox("refbox_572", "reflink_572")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_572" class="refbox_inner" style="display:none;">
+Number of days since the supervisor last viewed the claim
+</div>
+</span>
+</div>
+</div>
+<a name="dayslastviewedbysupervisorclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="dayslastviewedbysupervisorclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="dayslastviewedbysupervisorclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="dayslastviewedbysupervisorclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="dayslastviewedbysupervisorclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="dayslastviewedbysupervisorclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="dayslastviewedbysupervisorclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="dayslastviewedbysupervisorclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="dayslastviewedbysupervisorclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="dayslastviewedbysupervisorclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="dayslastviewedbysupervisorclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for DaysLastViewedBySupervisorClaimMetric"></a><div class="arraysbox">Unique Keys for DaysLastViewedBySupervisorClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=DaysOpenClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">DaysOpenClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html#TimeBasedClaimMetric" TARGET="tableFrame">TimeBasedClaimMetric</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_573" class="reftext" onclick='showAndHideRefBox("refbox_573", "reflink_573")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_573" class="refbox_inner" style="display:none;">
+Days Open
+</div>
+</span>
+</div>
+</div>
+<a name="daysopenclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="daysopenclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="daysopenclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="daysopenclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="daysopenclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="daysopenclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="daysopenclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="daysopenclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="daysopenclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="daysopenclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="daysopenclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for DaysOpenClaimMetric"></a><div class="arraysbox">Unique Keys for DaysOpenClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=DecimalClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">DecimalClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html" TARGET="tableFrame">ClaimMetric</A>)</span><span class='supername'> (delegates to <A HREF="DecimalMetricDelegate.html" TARGET="tableFrame">DecimalMetricDelegate</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_574" class="reftext" onclick='showAndHideRefBox("refbox_574", "reflink_574")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_574" class="refbox_inner" style="display:none;">
+Decimal based claim metric.
+</div>
+</span>
+</div>
+<div class="desc">Attributes: Abstract<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Abstract</b><br>The entity is a supertype, but all instances of it must be one of its subtypes. That is, you cannot instantiate the supertype entity itself. An abstract entity is appropriate when the supertype serves only to collect logic or common fields, but does not make sense to exist on its own.')">?</span></sup></div>
+</div>
+<a name="decimalclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="decimalclaimmetric_decimalvalue"></a>
+<p class="column">
+<span class="coltitle">DecimalValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "decimalmetric")'>decimalmetric</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Decimal field to store the value.</span>
+<a name="decimalclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="decimalclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="decimalclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="decimalclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="decimalclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="decimalclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="decimalclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="decimalclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="decimalclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="decimalclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for DecimalClaimMetric"></a><div class="arraysbox">Unique Keys for DecimalClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=IntegerClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">IntegerClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html" TARGET="tableFrame">ClaimMetric</A>)</span><span class='supername'> (delegates to <A HREF="IntegerMetricDelegate.html" TARGET="tableFrame">IntegerMetricDelegate</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_575" class="reftext" onclick='showAndHideRefBox("refbox_575", "reflink_575")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_575" class="refbox_inner" style="display:none;">
+Integer based claim metric.
+</div>
+</span>
+</div>
+<div class="desc">Attributes: Abstract<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Abstract</b><br>The entity is a supertype, but all instances of it must be one of its subtypes. That is, you cannot instantiate the supertype entity itself. An abstract entity is appropriate when the supertype serves only to collect logic or common fields, but does not make sense to exist on its own.')">?</span></sup></div>
+</div>
+<a name="integerclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="integerclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="integerclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="integerclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="integerclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="integerclaimmetric_integervalue"></a>
+<p class="column">
+<span class="coltitle">IntegerValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "integer")'>integer</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Integer field to store the value.</span>
+<a name="integerclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="integerclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="integerclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="integerclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="integerclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="integerclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for IntegerClaimMetric"></a><div class="arraysbox">Unique Keys for IntegerClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=MoneyClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">MoneyClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html" TARGET="tableFrame">ClaimMetric</A>)</span><span class='supername'> (delegates to <A HREF="MoneyMetricDelegate.html" TARGET="tableFrame">MoneyMetricDelegate</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_576" class="reftext" onclick='showAndHideRefBox("refbox_576", "reflink_576")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_576" class="refbox_inner" style="display:none;">
+Money based claim metric.
+</div>
+</span>
+</div>
+<div class="desc">Attributes: Abstract<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Abstract</b><br>The entity is a supertype, but all instances of it must be one of its subtypes. That is, you cannot instantiate the supertype entity itself. An abstract entity is appropriate when the supertype serves only to collect logic or common fields, but does not make sense to exist on its own.')">?</span></sup></div>
+</div>
+<a name="moneyclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="moneyclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="moneyclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="moneyclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="moneyclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="moneyclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="moneyclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="moneyclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="moneyclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="moneyclaimmetric_moneycurrency"></a>
+<p class="column">
+<span class="coltitle">MoneyCurrency</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.Currency</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">The currency used for this metric</span>
+<a name="moneyclaimmetric_moneyvalue"></a>
+<p class="column">
+<span class="coltitle">MoneyValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "currencyamount")'>currencyamount</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Money field to store the money value.</span>
+<a name="moneyclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="moneyclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for MoneyClaimMetric"></a><div class="arraysbox">Unique Keys for MoneyClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=NetTotalIncurredClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">NetTotalIncurredClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html#MoneyClaimMetric" TARGET="tableFrame">MoneyClaimMetric</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_577" class="reftext" onclick='showAndHideRefBox("refbox_577", "reflink_577")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_577" class="refbox_inner" style="display:none;">
+Total Incurred
+</div>
+</span>
+</div>
+</div>
+<a name="nettotalincurredclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="nettotalincurredclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="nettotalincurredclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="nettotalincurredclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="nettotalincurredclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="nettotalincurredclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="nettotalincurredclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="nettotalincurredclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="nettotalincurredclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="nettotalincurredclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="nettotalincurredclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for NetTotalIncurredClaimMetric"></a><div class="arraysbox">Unique Keys for NetTotalIncurredClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=OpenEscalatedActivitiesClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">OpenEscalatedActivitiesClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html#IntegerClaimMetric" TARGET="tableFrame">IntegerClaimMetric</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_578" class="reftext" onclick='showAndHideRefBox("refbox_578", "reflink_578")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_578" class="refbox_inner" style="display:none;">
+Number of Open Escalated Activities
+</div>
+</span>
+</div>
+</div>
+<a name="openescalatedactivitiesclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="openescalatedactivitiesclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="openescalatedactivitiesclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="openescalatedactivitiesclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="openescalatedactivitiesclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="openescalatedactivitiesclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="openescalatedactivitiesclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="openescalatedactivitiesclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="openescalatedactivitiesclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="openescalatedactivitiesclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="openescalatedactivitiesclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for OpenEscalatedActivitiesClaimMetric"></a><div class="arraysbox">Unique Keys for OpenEscalatedActivitiesClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=OverdueActivitiesClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">OverdueActivitiesClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html#IntegerClaimMetric" TARGET="tableFrame">IntegerClaimMetric</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_579" class="reftext" onclick='showAndHideRefBox("refbox_579", "reflink_579")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_579" class="refbox_inner" style="display:none;">
+Overdue Activities
+</div>
+</span>
+</div>
+</div>
+<a name="overdueactivitiesclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="overdueactivitiesclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="overdueactivitiesclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="overdueactivitiesclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="overdueactivitiesclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="overdueactivitiesclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="overdueactivitiesclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="overdueactivitiesclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="overdueactivitiesclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="overdueactivitiesclaimmetric_nextoverduetime"></a>
+<p class="column">
+<span class="exttitle">NextOverdueTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Time next activity will become overdue.</span>
+<a name="overdueactivitiesclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="overdueactivitiesclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for OverdueActivitiesClaimMetric"></a><div class="arraysbox">Unique Keys for OverdueActivitiesClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=PercentClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">PercentClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html" TARGET="tableFrame">ClaimMetric</A>)</span><span class='supername'> (delegates to <A HREF="PercentMetricDelegate.html" TARGET="tableFrame">PercentMetricDelegate</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_580" class="reftext" onclick='showAndHideRefBox("refbox_580", "reflink_580")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_580" class="refbox_inner" style="display:none;">
+Percent based claim metric.
+</div>
+</span>
+</div>
+<div class="desc">Attributes: Abstract<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Abstract</b><br>The entity is a supertype, but all instances of it must be one of its subtypes. That is, you cannot instantiate the supertype entity itself. An abstract entity is appropriate when the supertype serves only to collect logic or common fields, but does not make sense to exist on its own.')">?</span></sup></div>
+</div>
+<a name="percentclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="percentclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="percentclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="percentclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="percentclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="percentclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="percentclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="percentclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="percentclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="percentclaimmetric_percentvalue"></a>
+<p class="column">
+<span class="coltitle">PercentValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "percentagemetric")'>percentagemetric</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Percent field to store the value.</span>
+<a name="percentclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="percentclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for PercentClaimMetric"></a><div class="arraysbox">Unique Keys for PercentClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=PercentEscalatedActivitiesClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">PercentEscalatedActivitiesClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html#PercentClaimMetric" TARGET="tableFrame">PercentClaimMetric</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_581" class="reftext" onclick='showAndHideRefBox("refbox_581", "reflink_581")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_581" class="refbox_inner" style="display:none;">
+% of Escalated Activities
+</div>
+</span>
+</div>
+</div>
+<a name="percentescalatedactivitiesclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="percentescalatedactivitiesclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="percentescalatedactivitiesclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="percentescalatedactivitiesclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="percentescalatedactivitiesclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="percentescalatedactivitiesclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="percentescalatedactivitiesclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="percentescalatedactivitiesclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="percentescalatedactivitiesclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="percentescalatedactivitiesclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="percentescalatedactivitiesclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for PercentEscalatedActivitiesClaimMetric"></a><div class="arraysbox">Unique Keys for PercentEscalatedActivitiesClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=PercentIncurredLossCostsClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">PercentIncurredLossCostsClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html#PercentClaimMetric" TARGET="tableFrame">PercentClaimMetric</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_582" class="reftext" onclick='showAndHideRefBox("refbox_582", "reflink_582")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_582" class="refbox_inner" style="display:none;">
+Incurred Loss Costs as % of Net Total Incurred
+</div>
+</span>
+</div>
+</div>
+<a name="percentincurredlosscostsclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="percentincurredlosscostsclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="percentincurredlosscostsclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="percentincurredlosscostsclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="percentincurredlosscostsclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="percentincurredlosscostsclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="percentincurredlosscostsclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="percentincurredlosscostsclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="percentincurredlosscostsclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="percentincurredlosscostsclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="percentincurredlosscostsclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for PercentIncurredLossCostsClaimMetric"></a><div class="arraysbox">Unique Keys for PercentIncurredLossCostsClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=PercentPaidLossCostsClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">PercentPaidLossCostsClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html#PercentClaimMetric" TARGET="tableFrame">PercentClaimMetric</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_583" class="reftext" onclick='showAndHideRefBox("refbox_583", "reflink_583")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_583" class="refbox_inner" style="display:none;">
+Paid Loss Costs as % of Total Paid
+</div>
+</span>
+</div>
+</div>
+<a name="percentpaidlosscostsclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="percentpaidlosscostsclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="percentpaidlosscostsclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="percentpaidlosscostsclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="percentpaidlosscostsclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="percentpaidlosscostsclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="percentpaidlosscostsclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="percentpaidlosscostsclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="percentpaidlosscostsclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="percentpaidlosscostsclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="percentpaidlosscostsclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for PercentPaidLossCostsClaimMetric"></a><div class="arraysbox">Unique Keys for PercentPaidLossCostsClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=PercentReserveChangeClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">PercentReserveChangeClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html#PercentClaimMetric" TARGET="tableFrame">PercentClaimMetric</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_584" class="reftext" onclick='showAndHideRefBox("refbox_584", "reflink_584")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_584" class="refbox_inner" style="display:none;">
+% of Reserve Change from Initial Reserve
+</div>
+</span>
+</div>
+</div>
+<a name="percentreservechangeclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="percentreservechangeclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="percentreservechangeclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="percentreservechangeclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="percentreservechangeclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="percentreservechangeclaimmetric_initialreserve"></a>
+<p class="column">
+<span class="exttitle">InitialReserve</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "decimal")'>decimal</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Initial Reserve Amount of the Claim.</span>
+<a name="percentreservechangeclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="percentreservechangeclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="percentreservechangeclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="percentreservechangeclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="percentreservechangeclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="percentreservechangeclaimmetric_totalreservechange"></a>
+<p class="column">
+<span class="exttitle">TotalReserveChange</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "decimal")'>decimal</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Total Reserve Amount change</span>
+<a name="percentreservechangeclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for PercentReserveChangeClaimMetric"></a><div class="arraysbox">Unique Keys for PercentReserveChangeClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=ReserveChangeCountClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">ReserveChangeCountClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html#IntegerClaimMetric" TARGET="tableFrame">IntegerClaimMetric</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_585" class="reftext" onclick='showAndHideRefBox("refbox_585", "reflink_585")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_585" class="refbox_inner" style="display:none;">
+Number of Reserve Changes
+</div>
+</span>
+</div>
+</div>
+<a name="reservechangecountclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="reservechangecountclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="reservechangecountclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="reservechangecountclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="reservechangecountclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="reservechangecountclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="reservechangecountclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="reservechangecountclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="reservechangecountclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="reservechangecountclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="reservechangecountclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for ReserveChangeCountClaimMetric"></a><div class="arraysbox">Unique Keys for ReserveChangeCountClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=TimeBasedClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">TimeBasedClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html" TARGET="tableFrame">ClaimMetric</A>)</span><span class='supername'> (delegates to <A HREF="TimeBasedMetricDelegate.html" TARGET="tableFrame">TimeBasedMetricDelegate</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_586" class="reftext" onclick='showAndHideRefBox("refbox_586", "reflink_586")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_586" class="refbox_inner" style="display:none;">
+Time based claim metric.
+</div>
+</span>
+</div>
+<div class="desc">Attributes: Abstract<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Abstract</b><br>The entity is a supertype, but all instances of it must be one of its subtypes. That is, you cannot instantiate the supertype entity itself. An abstract entity is appropriate when the supertype serves only to collect logic or common fields, but does not make sense to exist on its own.')">?</span></sup></div>
+</div>
+<a name="timebasedclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="timebasedclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="timebasedclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="timebasedclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="timebasedclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="timebasedclaimmetric_integervalue"></a>
+<p class="column">
+<span class="coltitle">IntegerValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "integer")'>integer</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Integer field to store the value.</span>
+<a name="timebasedclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="timebasedclaimmetric_isopen"></a>
+<p class="column">
+<span class="coltitle">IsOpen</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: true)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The value of an open time based metric is now - start time, once closed it has a fixed integer value</span>
+<a name="timebasedclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="timebasedclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="timebasedclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="timebasedclaimmetric_skipped"></a>
+<p class="column">
+<span class="coltitle">Skipped</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">True if the metric is closed because the normal closing event was skipped.</span>
+<a name="timebasedclaimmetric_starttime"></a>
+<p class="column">
+<span class="coltitle">StartTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Starting time of the metric.</span>
+<a name="timebasedclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="timebasedclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for TimeBasedClaimMetric"></a><div class="arraysbox">Unique Keys for TimeBasedClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=TimeToFirstPaymentClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">TimeToFirstPaymentClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html#TimeBasedClaimMetric" TARGET="tableFrame">TimeBasedClaimMetric</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_587" class="reftext" onclick='showAndHideRefBox("refbox_587", "reflink_587")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_587" class="refbox_inner" style="display:none;">
+Time to First Loss Payment
+</div>
+</span>
+</div>
+</div>
+<a name="timetofirstpaymentclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="timetofirstpaymentclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="timetofirstpaymentclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="timetofirstpaymentclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="timetofirstpaymentclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="timetofirstpaymentclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="timetofirstpaymentclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="timetofirstpaymentclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="timetofirstpaymentclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="timetofirstpaymentclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="timetofirstpaymentclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for TimeToFirstPaymentClaimMetric"></a><div class="arraysbox">Unique Keys for TimeToFirstPaymentClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=TotalPaidClaimMetric></a>
+<div class="titlebox">
+<div class="filtertitle">TotalPaidClaimMetric <span class='supername'>(subtype of <A HREF="ClaimMetric.html#MoneyClaimMetric" TARGET="tableFrame">MoneyClaimMetric</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_588" class="reftext" onclick='showAndHideRefBox("refbox_588", "reflink_588")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_588" class="refbox_inner" style="display:none;">
+Paid
+</div>
+</span>
+</div>
+</div>
+<a name="totalpaidclaimmetric_ascendinglimitorder"></a>
+<p class="column">
+<span class="coltitle">AscendingLimitOrder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">AscendingLimitOrder</span>
+<a name="totalpaidclaimmetric_defaultunit"></a>
+<p class="column">
+<span class="coltitle">DefaultUnit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.MetricUnit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DefaultUnit</span>
+<a name="totalpaidclaimmetric_displaycolor"></a>
+<p class="column">
+<span class="coltitle">DisplayColor</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayColor</span>
+<a name="totalpaidclaimmetric_displaytargetvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayTargetValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayTargetValue</span>
+<a name="totalpaidclaimmetric_displayvalue"></a>
+<p class="column">
+<span class="coltitle">DisplayValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">DisplayValue</span>
+<a name="totalpaidclaimmetric_intrinsictype"></a>
+<p class="column">
+<span class="coltitle">IntrinsicType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">IntrinsicType</span>
+<a name="totalpaidclaimmetric_itype"></a>
+<p class="column">
+<span class="coltitle">itype</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.lang.reflect.IType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc">itype</span>
+<a name="totalpaidclaimmetric_limit"></a>
+<p class="column">
+<span class="coltitle">Limit</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitMethods</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Limit</span>
+<a name="totalpaidclaimmetric_limitvalue"></a>
+<p class="column">
+<span class="coltitle">LimitValue</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">LimitValue</span>
+<a name="totalpaidclaimmetric_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.metric.MetricLimitStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Status</span>
+<a name="totalpaidclaimmetric_value"></a>
+<p class="column">
+<span class="coltitle">Value</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Comparable<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Value</span>
+<a name="Unique Keys for TotalPaidClaimMetric"></a><div class="arraysbox">Unique Keys for TotalPaidClaimMetric</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>claimmetric1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<script language="JavaScript">
+function showAllUIDetails() {
+showUIDetails('UITable_0', 'showhideUI_0');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Hide user interface details on all fields';
+  link.onclick = hideAllUIDetails;
+  return false;
+}
+function hideAllUIDetails() {
+hideUIDetails('UITable_0', 'showhideUI_0');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Show user interface details on all fields';
+  link.onclick = showAllUIDetails;
+  return false;
+}
+</script>
+
+</body>
+</html>

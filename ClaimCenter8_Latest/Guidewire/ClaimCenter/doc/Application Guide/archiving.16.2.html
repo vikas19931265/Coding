@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>ClaimCenter Preparations for Archiving</title>
+    <link rel="StyleSheet" href="css/archiving.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Application&nbsp;Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-claims.html#4867036">Working With Claims</a> : <a class="WebWorks_Breadcrumb_Link" href="archiving.16.1.html#4867036">Archiving</a> : ClaimCenter Preparations for Archiving</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="4867036">ClaimCenter Preparations for Archiving</a></h3>
+      <div class="B_-_Body"><a name="4867538">ClaimCenter uses the archiving framework to:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4867539">Set the boundary of the entire claim so that all its relevant objects can be correctly identified and archived during the archive batch process.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4867540">Define the summary information that is written to the ClaimCenter database to enable locating this archived claim later. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="4867081">Defining the Claim Boundary</a></h4>
+      <div class="B_-_Body"><a name="4867082">The boundary of the claim for purposes of archiving is defined by its domain graph. In ClaimCenter, the domain graph is also known as the claim graph, and its root entity is the </a><span class="cv_-_computer_voice">Claim</span> object. </div>
+      <div class="B_-_Body"><a name="4867083">The claim graph starts at the entity </a><span class="cv_-_computer_voice">Claim</span> and proceeds outward to all entities that:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4868454">Implement </a><span class="cv_-_computer_voice">Extractable</span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4868455">Are directly or indirectly owned by the </a><span class="cv_-_computer_voice">Claim</span> entity through foreign key relationships</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4868456">Entities included in the claim for archiving purposes are the policy snapshot, incidents, exposures, notes, calendars, activities, matters, and the claim’s access control lists (ACLs).</a></div>
+      <div class="B_-_Body"><a name="4867087">As ClaimCenter creates a claim, it also creates a </a><span class="cv_-_computer_voice">ClaimInfo</span> entity instance, which implements the delegate <span class="cv_-_computer_voice">RootInfo</span>. The <span class="cv_-_computer_voice">ClaimInfo</span> instance remains in the active database after ClaimCenter archives the claim. </div>
+      <h6 class="HS_-_Head_Sub"><a name="4867088">See also</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'domain_graph.22.1.html#1068029', '');" title="The Domain Graph" name="4867092">“The Domain Graph” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('config', 'domain_graph.22.1.html#1068029', '');" title="The Domain Graph">Configuration Guide</a></span> for an explanation of what the domain graph is and how to use it.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('config', 'params.05.15.html#5029163', '');" title="Domain Graph Parameters" name="4867096">“Domain Graph Parameters” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('config', 'params.05.15.html#5029163', '');" title="Domain Graph Parameters">Configuration Guide</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="NW_-_Note_Warning">
+        <span class="w_-_warning">WARNING  </span><a name="4867097">Incorrect configuration of the domain graph can prevent the application server from starting.</a></div>
+      <div class="F_-_Figure"><a name="4867098">&nbsp;</a></div>
+      <h4 class="H2_-_Heading_2"><a name="4867100">Defining Claim Summary Data</a></h4>
+      <div class="B_-_Body"><a name="4867101">ClaimCenter uses claim summary data to search for and review archived claims without retrieving them. Claim summary data is written to the ClaimCenter database when the claim is archived. It is deleted from the ClaimCenter database if the claim is retrieved.</a></div>
+      <div class="B_-_Body"><a name="4867102">Claim summary data is written into </a><span class="cv_-_computer_voice">ClaimInfo</span> and entities associated with <span class="cv_-_computer_voice">ClaimInfo</span>. The entities include the root entity <span class="cv_-_computer_voice">ClaimInfo</span>, as well as <span class="cv_-_computer_voice">ContactInfo</span>, <span class="cv_-_computer_voice">LocationInfo</span>, <span class="cv_-_computer_voice">ClaimInfoAccess</span>, and <span class="cv_-_computer_voice">CoverageLineMatchDataInfo</span>.</div>
+      <div class="B_-_Body"><span class="cv_-_computer_voice"><a name="4867103">ClaimInfo</a></span> and these other associated entities serve multiple purposes:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4867104">They contain enough information to retrieve the original claim, such as the </a><span class="cv_-_computer_voice">ClaimNumber</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4867105">They enable searching for the archived claim.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4867106">They enable you to see summary information about an archived claim.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4867107">These purposes can overlap. For example, </a><span class="cv_-_computer_voice">ClaimNumber</span> in <span class="cv_-_computer_voice">ClaimInfo</span> is useful for all three purposes. The <span class="cv_-_computer_voice">PolicyNumber</span> in <span class="cv_-_computer_voice">ClaimInfo</span> is useful for searching and summary information. The <span class="cv_-_computer_voice">LocationInfo</span> entity is used only for summary information. </div>
+      <div class="B_-_Body"><a name="4867108">A </a><span class="cv_-_computer_voice">ClaimInfo</span> entity instance retains all links to bulk invoices, aggregate limits, and claim associations. This linkage permits a retrieved claim to remain connected to these multi-claim entity instances, which are outside the domain graph and therefore always in the ClaimCenter database.</div>
+      <div class="B_-_Body"><a name="4902712">When a claim is archived, the </a><span class="cv_-_computer_voice">CoverageLineMatchDataInfo</span> entity keeps track of coverage lines with transactions. This tracking is useful for preventing the creation of additional coverage lines that might match these transactions while the claim is still archived.</div>
+      <div class="B_-_Body"><a name="4902735">You can extend these Info entities. An example would be if you have added new entities and want information on them to be available when the claim is archived.</a></div>
+      <h6 class="HS_-_Head_Sub"><a name="4902739">See also</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('app', 'archiving.16.5.html#4874112', '');" title="Searching for Archived Claims" name="4904304">Info Entities and their Part in Search</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('app', 'policy.12.14.html#4971212', '');" title="Aggregate Limits" name="4903216">Archiving Claims with Aggregate Limits</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Determining the Extent of the Policy Graph</title>
+    <link rel="StyleSheet" href="css/cc-pc-integration.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Integration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-policycontacts.html#2721788">Policy and Contact Integrations</a> : <a class="WebWorks_Breadcrumb_Link" href="cc-pc-integration.38.01.html#2721788">Claim and Policy Integration</a> : Determining the Extent of the Policy Graph</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="2721788">Determining the Extent of the Policy Graph</a></h3>
+      <div class="B_-_Body"><a name="2721789">The policy refresh process knows what entities to replace because the objects in the current claim must either belong to the policy graph or not belong to the policy graph. The definition of the extent of the policy graph affects how ClaimCenter compares, relinks, and replaces the policy. </a></div>
+      <h4 class="H2_-_Heading_2"><a name="2721790">The Policy Graph within a Claim</a></h4>
+      <div class="B_-_Body"><a name="2721791">The formal definition of the policy graph is the set of all entities in the claim graph that the </a><span class="cv_-_computer_voice">IPolicySearchAdapter</span> retrieves from the external policy administration system. Assure the design of your data model graph cleanly separates the objects that belong to the policy graph from those that do not. </div>
+      <div class="B_-_Body"><a name="2721792">If an object in the claim graph is not part of the policy graph, ClaimCenter treats the object as part of the claim-specific part of the claim graph. Claim objects remain after a policy refresh, although some of their foreign keys that reference objects in the policy graph may change.</a></div>
+      <div class="B_-_Body"><a name="2721793">If an object in the claim graph is part of the policy graph, policy refresh replaces that object with a newer version, generally speaking. If an object used to exist but is absent on the new policy, for unusual cases you can optionally configure it to remain rather than deleting it. </a></div>
+      <h6 class="HS_-_Head_Sub"><a name="2721794">See also</a></h6>
+      <div class="B_-_Body"><a name="2721795">To learn how to retain policy-related objects that the policy administration system removed, see </a><a href="javascript:WWHClickedPopup('integration', 'cc-pc-integration.38.13.html#2722029', '');" title="Policy Refresh Relinking Details">“Policy Refresh Relinking Details”</a>.</div>
+      <h4 class="H2_-_Heading_2"><a name="2721799">The Policy Refresh Plugin Determines the Objects in the Policy Graph</a></h4>
+      <div class="B_-_Body"><a name="2721800">The policy refresh plugin determines the exact set of policy graph objects using one of the following strategies:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="2721801">XSD/WSDL approach</a></span> – Programmatically examining the remote service that implements the policy retrieval plugin (<span class="cv_-_computer_voice">IPolicySearchAdapter)</span> and interpreting the types returned. For example, examine the XSD types in the WSDL that defines the web service connection to the external policy administration system.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><span class="ri_-_run_in_header"><a name="2721802">Manual approach</a></span> – Writing code that traverse the claim and finds all known policy-related entity types in the graph and return the set of objects of those types. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2721803">In the base configuration, ClaimCenter provides examples of both approaches:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2721804">The XSD/WSDL approach exists in the policy refresh plugin that is specific to PolicyCenter, </a><span class="cv_-_computer_voice">PCPolicyRefreshPlugin</span>. The policy graph can be automatically determined from the implementation of the <span class="cv_-_computer_voice">IPolicySearchAdapter</span>. The <span class="cv_-_computer_voice">PCPolicyRefreshPlugin</span> class examines XSD types from the WSDL file called <span class="cv_-_computer_voice">pcintegration</span><span class="p_-_parameter">VERSION</span><span class="cv_-_computer_voice">.wsdl</span>. This code is implemented in Java and is not visible in Studio.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2721805">The manual approach exists in the </a><span class="cv_-_computer_voice">BasicPolicyRefreshPlugin</span> class, which calls out to the <span class="cv_-_computer_voice">BasicPolicyRefreshConfiguration</span> that uses code like the following:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <PRE class="CF_-_Code_First_Line"><a name="2721806">/*</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721807"> * This method extracts all Policy-only entities from the existing Policy (which is linked</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721808"> * to a Claim and other non-Policy entities). Note that this implementation uses the getEntireArray()</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721809"> * method, which returns all members of the array including retired beans. Including retired beans is</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721810"> * necessary here because of issues purging policy entities if retired beans have a foreign key to</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721811"> * one of those entities.</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721812"> */</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721813">override function getPolicyOnly(existingPolicy : Policy) : Set&lt;KeyableBean&gt; {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721814">  var policyOnly = new NonNullSet&lt;KeyableBean&gt;()</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721815">  policyOnly.add(existingPolicy)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721816">  getEntireArray(existingPolicy, "Roles", ClaimContactRole).each(\ r -&gt; {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721817">  &nbsp;&nbsp;policyOnly.add(r)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721818">  &nbsp;&nbsp;policyOnly.add(r.ClaimContact)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721819">  &nbsp;&nbsp;includeContact(policyOnly, r.ClaimContact.Contact)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721820">  })</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721821">  getEntireArray(existingPolicy, "ClassCodes", ClassCode).each(\ c -&gt; policyOnly.add(c))</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721822">  getEntireArray(existingPolicy, "StatCodes", StatCode).each(\ s -&gt; policyOnly.add(s))</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721823">  getEntireArray(existingPolicy, "Endorsements", Endorsement).each(\ e -&gt; policyOnly.add(e))</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721824">  getEntireArray(existingPolicy, "RiskUnits", RiskUnit).each(\ ru -&gt; includeRiskUnit(policyOnly, ru))</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721825">  getEntireArray(existingPolicy, "Coverages", Coverage).each(\ cov -&gt; includeCoverage(policyOnly, cov))</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721826">  getEntireArray(existingPolicy, "PolicyLocations", PolicyLocation).each(\ p -&gt;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721827">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;includeLocation(policyOnly, p))</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2721828">  return policyOnly</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2721829">}</a></PRE>
+      <div class="LP_-_List_Para"><a name="2721830">Some of the utility functions that this code calls are necessary to query the database for results that include retired objects. It is necessary to find the retired instances in order to support proper purging of old policy objects.</a></div>
+      <h6 class="HS_-_Head_Sub"><a name="2721831">See also</a></h6>
+      <div class="B_-_Body"><a href="javascript:WWHClickedPopup('gosu', 'querybuilder.10.37.html#2257733', '');" title="Including Retired Entities in Query Results" name="2721835">“Including Retired Entities in Query Results” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('gosu', 'querybuilder.10.37.html#2257733', '');" title="Including Retired Entities in Query Results">Gosu Reference Guide</a></span>. </div>
+      <h4 class="H2_-_Heading_2"><a name="2721836">Extending the Data Model for the Policy Graph</a></h4>
+      <div class="B_-_Body"><a name="2721837">If your policy refresh plugin uses the manual approach you extend the policy graph in the policy administration system and in ClaimCenter, you must perform additional configuration steps. ClaimCenter calls the policy refresh plugin for to determine the extent of the policy graph within the claim graph. You must assure your plugin gives the correct answer. </a></div>
+      <div class="B_-_Body"><a name="2721838">For example, if you base your implementation on </a><span class="cv_-_computer_voice">BasicPolicyRefreshPlugin</span>, you must modify the <span class="cv_-_computer_voice">getPolicyOnly</span> method. Modify the method so it includes any instances of your extended entity types that belong to the policy graph in the returned set. If you do not modify the method, ClaimCenter considers your new entity types part of the claim-specific part of the claim graph.</div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

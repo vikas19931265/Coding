@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Statistics, Team, and Dashboard Parameters</title>
+    <link rel="StyleSheet" href="css/params.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Configuration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-basics.html#6969656">ClaimCenter Configuration Basics</a> : <a class="WebWorks_Breadcrumb_Link" href="params.05.01.html#6969656">Application Configuration Parameters</a> : Statistics, Team, and Dashboard Parameters</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="6969656">Statistics, Team, and Dashboard Parameters</a></h3>
+      <div class="B_-_Body"><a name="6969657">Guidewire provides the following configuration parameters in the </a><span class="cv_-_computer_voice">config.xml</span> file that relate to ClaimCenter statistics, the <span class="ui_-_UI_element">Team</span> tab, and the <span class="ui_-_UI_element">Dashboard</span>.</div>
+      <div class="B_-_Body"><a name="6969660">For information on editing </a><span class="cv_-_computer_voice">config.xml</span> and setting configuration parameters, see <a href="javascript:WWHClickedPopup('config', 'params.05.02.html#1142941', '');" title="Working with Configuration Parameters">“Working with Configuration Parameters”</a>.</div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6969664">AgingStatsFirstDivision</a></span></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="6969665">Number of days to use in calculating the first claim aging bucket. This bucket includes claims between 0 and </a><span class="cv_-_computer_voice">AgingStatsFirstDivision</span> days old. This integer value must be zero (0) or greater.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969666">Default:</a></span> <span class="cv_-_computer_voice">30</span></div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6969669">AgingStatsSecondDivision</a></span></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="6969670">Number of days to use in calculating the second claim aging bucket. This bucket includes claims between </a><span class="cv_-_computer_voice">AgingStatsFirstDivision + 1</span> and <span class="cv_-_computer_voice">AgingStatsSecondDivision</span> days old. This integer value must be zero (0) or greater.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969671">Default:</a></span> <span class="cv_-_computer_voice">60</span></div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6969674">AgingStatsThirdDivision</a></span></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="6969675">Number of days to use in calculating the third claim aging bucket. This bucket includes claims between </a><span class="cv_-_computer_voice">AgingStatsSecondDivision + 1</span> and <span class="cv_-_computer_voice">AgingStatsThirdDivision</span> days old. The last bucket includes all claims older than <span class="cv_-_computer_voice">AgingStatsThirdDivision</span> days. This integer value must be zero (0) or greater.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969676">Default:</a></span> <span class="cv_-_computer_voice">120</span></div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6969679">CalculateLitigatedClaimAgingStats</a></span></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="6969680">Whether to show the number of litigated claims on the </a><span class="ui_-_UI_element">Aging</span> subtab of the <span class="ui_-_UI_element">Team</span> tab.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969681">Default:</a></span> <span class="cv_-_computer_voice">True</span></div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6969684">DashboardIncurredLimit</a></span></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="6969685">Total incurred amount above which ClaimCenter counts the claim as over-the-limit in executive dashboard calculations.</a></div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969686">Default:</a></span> <span class="cv_-_computer_voice">1000000</span></div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6969689">DashboardShowByCoverage</a></span></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="6969690">Whether the </a><span class="ui_-_UI_element">Dashboard</span> shows claim information subtotaled by coverage.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969691">Default:</a></span> <span class="cv_-_computer_voice">True</span></div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6969694">DashboardShowByLineOrLoss</a></span></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="6969695">Whether the </a><span class="ui_-_UI_element">Dashboard</span> shows claim information subtotaled by line of business or loss type.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969696">Default:</a></span> <span class="cv_-_computer_voice">True</span></div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6969699">DashboardWindowPeriod</a></span></h4>
+      <div class="B_-_Body"><a name="6969700">Number of days to use for executive dashboard calculations that depends on a specific time period.</a></div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969701">Default:</a></span> <span class="cv_-_computer_voice">30</span></div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6969704">GroupSummaryShowUserGlobalWorkloadStats</a></span></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="6969705">Whether to show individual user global workload statistics along with the standard statistics in the </a><span class="ui_-_UI_element">Team Summary</span> page.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969706">Default:</a></span> <span class="cv_-_computer_voice">True</span></div>
+      <h4 class="H2_-_Heading_2" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cvh_-_computer_voice_in_heading"><a name="6969709">UserStatisticsWindowSize</a></span></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="6969710">Time window for calculating user statistics. Set this value to the number of previous days to include in the calculation. For example, set it to 10 to calculate statistics for the last 10 days, including today. You can also set this parameter to one of the following special values:</a></div>
+      <div class="T_-_Table"><a name="6969720">&nbsp;</a></div>
+      <table class="withoutHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="6969713">&nbsp;0</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="6969715">This week, defined as the start of the current business week up to and including today.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="6969717">-1</a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="6969719">This month, defined as the start of the current month up to and including today.</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="6969721">Default:</a></span> <span class="cv_-_computer_voice">0 </span></div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

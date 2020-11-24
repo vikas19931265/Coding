@@ -1,0 +1,19 @@
+/* disabled menu link */
+.g-accordion .x-grid-row .g-disabled  {
+  color:#aaaaaa;
+  cursor:default;
+}
+/* left menu active clickable items */
+.g-accordion-item{
+  cursor: pointer;
+}
+
+/* wizard sub title in left nav: */
+.g-sub-title {
+  display:block;
+  font-weight: normal;
+  color:#959595;
+  font-size: 13px;
+  border: 0 none;
+  background: none transparent;
+}

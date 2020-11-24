@@ -1,0 +1,141 @@
+// text shadow on panel headers
+.#{$prefix}panel-header-text-container {
+  @if $panel-header-text-shadow != null {
+    @include text-shadow($panel-header-text-shadow);
+  }
+}
+
+// page panel
+@include extjs-panel-ui(
+    $ui-label: 'page',
+    $ui-header-background-color: $panel-page-header-background-color,
+    $ui-header-text-padding: $panel-page-header-text-padding,
+    $ui-header-font-size: $panel-page-header-font-size
+);
+
+// inline details
+@include extjs-panel-ui(
+  $ui-label: 'inline-details',
+  $ui-body-background-color: #FFF8d7
+);
+
+
+
+.#{$prefix}panel-body-inline-details {
+  color: #000; 
+  font-size: 12px;
+  .inline-details-title {
+    font-weight:bold; 
+    color: #004499; 
+    padding-bottom: 7px; 
+    font-size: 12px;
+  }
+}
+// Sample Bean Wizard
+.g-accordion{
+  .#{$prefix}panel-header-text-container-tree-navigation,
+  .#{$prefix}container-header-text-container-tree-navigation{
+    color: #282828;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .#{$prefix}panel-body-default,
+  .#{$prefix}container-body-default{
+    border-width: 0;
+  }
+  .g-required{
+    padding-right:5px;
+  }
+}
+
+
+
+//Center pane screen header panel, resetting padding in header elements to reset left alignment
+#centerPanel{
+  .g-screen > table:first-child > tbody > tr:nth-of-type(1) span[id ^='header-']{
+    //this selector chain will specifically select the page title and nothing else
+    font: bold 20px/25px helvetica,arial,verdana,sans-serif;
+    color: $gwBlackTextColor;
+    letter-spacing: 1px;
+    display: block;
+    padding-top:7px;
+    margin-right: 5px;
+  }
+  .g-screen > table:first-child > tbody > tr:nth-of-type(1){
+    .x-header-horizontal{
+      background-color: transparent;
+      margin-top: 0;
+      border-top: 0px;
+    }
+  }
+  .#{$prefix}panel-inline-icon {
+    vertical-align: middle;
+    margin-right:5px;
+  }
+}
+
+#westPanel-body {
+  padding: 5px 0 0 0;
+}
+
+#westPanel{
+  border-right: 1px solid silver;
+  box-shadow: 3px 0px 10px #aaa;
+}
+#southPanel{
+  border-top: 1px solid silver;
+  box-shadow: 0 -1px 2px #aaa;
+}
+
+.#{$prefix}table-layout{
+  .#{$prefix}component{
+    font-size: 13px;
+    color: $gwBlackTextColor;
+  }
+}
+
+// verbatim text style
+div[id*="\:verb"]{
+  font-weight: bold;
+  color: red;
+  margin: 0 0 0 10px;
+}
+
+
+.#{$prefix}container-default {
+  background: white;
+  color: $gwBlackTextColor;
+  font-size: 13px;
+  font-weight: normal;
+  border-width: 0px;
+  border-style: solid;
+  border-color: silver;
+}
+div[id*="Login"] table.#{$prefix}container-default{
+  border-width: 0;
+}
+.#{$prefix}container-default.g-banner{
+  background: $gwOffWhiteColor;
+}
+.#{$prefix}panel-header-tree-navigation .#{$prefix}tool-img {
+  background-color: transparent !important;
+}
+.#{$prefix}panel-header-default{
+  border-top: 3px solid silver !important;
+  border-bottom: 1px solid silver !important;
+}
+
+fieldset .#{$prefix}form-item-body{
+  padding-bottom: 10px;
+}
+
+//Wizard left-nav date picker
+td[id*='DateID_Arg-labelCell'],
+td[id*='date_Arg-labelCell'] {
+  text-align: center;
+}
+td[id*="DateID_Arg-bodyEl"],
+td[id*="date_Arg-bodyEl"]{
+  padding-right: 10px;
+}
+

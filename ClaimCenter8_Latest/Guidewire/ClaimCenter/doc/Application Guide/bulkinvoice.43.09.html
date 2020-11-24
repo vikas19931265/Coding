@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Invoice Line Item Validation</title>
+    <link rel="StyleSheet" href="css/bulkinvoice.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Application&nbsp;Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-financials.html#4887850">ClaimCenter Financials</a> : <a class="WebWorks_Breadcrumb_Link" href="bulkinvoice.43.01.html#4887850">Bulk Invoices</a> : Invoice Line Item Validation</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="4887850">Invoice Line Item Validation</a></h3>
+      <div class="B_-_Body"><a name="4887876">ClaimCenter initiates line item validation as soon as the bulk invoice has been approved, or submitted, if approval is not needed. This process proceeds asynchronously. To be validated, each approved line item:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4887877">Must pass the Ability to Pay system validation level for its exposure or claim.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4887880">Must not exceed available reserves, unless the configuration parameter </a><span class="cv_-_computer_voice">AllowPaymentsExceedReservesLimits</span> is set in the <span class="cv_-_computer_voice">config.xml </span>file.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4887881">Must have a valid Payment Type.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4887882">If any line items fail this validation, its status becomes Not Valid</a><span class="e_-_emphasis">.</span> Additionally, the bulk invoice itself is given the status Invalid Bulk Invoice Items and cannot be processed further. You must first either edit or remove the line items. Editing or removing a line item returns the bulk invoice to Draft status for reapproval and a repeat of this line item validation.</div>
+      <h4 class="H2_-_Heading_2"><a name="4887886">Placeholder Checks</a></h4>
+      <div class="B_-_Body"><a name="4887887">After a line item passes validation, ClaimCenter creates a check against the reserve line of the claim associated with the line item. These checks are never written. They are placeholders for the portion of the large bulk invoice check associated with that claim’s reserve line. The claim financial screen displays this information and provides details of that reserve line. The purpose of these checks is to indicate that a bulk invoice made a payment against that reserve line. Therefore, you cannot edit or delete these checks from the </a><span class="ui_-_UI_element">Check</span> <span class="ui_-_UI_element">Detail</span> screens.</div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="4887888">As ClaimCenter creates each placeholder check, it also:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4887889">Creates a claim contact for the check from the bulk invoice payee.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4887890">Saves the contact with the claim.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4887891">Marks the contact as linked with ContactManager.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4887892">ClaimCenter synchronizes these claim contacts with ContactManager. If the data changes for a contact in ContactManager, ClaimCenter updates the contact data as it runs the contact automatic synchronization batch process.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="4887893">Transfer and Recode</a></h4>
+      <div class="B_-_Body"><a name="4887894">It is possible to transfer a placeholder check from one claim to a different claim. This process creates a new invoice item against the new claim. It is also possible to record the payment on a placeholder check on another reserve line, which updates the invoice item’s reserve line. If you make that change after the bulk invoice has been sent to an external accounting system, ClaimCenter notifies that system.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="4887895">Repeated Line Item Validations</a></h4>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="4887896">It is possible for line item validation to occur multiple times. As a consequence, it is possible for ClaimCenter to have validated some line items already. If this is the case, one or more line items can already possess a placeholder check. If a line item possesses a placeholder check already:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4890259">ClaimCenter updates the existing check to reflect any editing changes. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4890226">ClaimCenter retires the existing check if a line item becomes invalid after having been previously validated.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="4890200">During validation, if the check has already been approved, ClaimCenter does not require that the check be re-approved.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="4887898">Orphan Line Items</a></h4>
+      <div class="B_-_Body"><a name="4887899">If the bulk invoice approver marks any line items Rejected or In Review, those line items do not participate in line item validation. You can edit these items to remove these statuses until line item validation passes all the rest of the line items and their checks are approved. The bulk invoice now receives Awaiting Submission status, and these line items must now remain in the bulk invoice with their Rejected or In Review status. Their amounts do not become part of the bulk invoice’s check.</a></div>
+      <div class="B_-_Body"><a name="4887900">For ClaimCenter to pay these amounts, you must either copy them to another bulk invoice, or write checks directly from their claims. Alternatively, you can edit the bulk invoice. However, such an edit in most cases invalidates the bulk invoice and moves it back to Draft status.</a></div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

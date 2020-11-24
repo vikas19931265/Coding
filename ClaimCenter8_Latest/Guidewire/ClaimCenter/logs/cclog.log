@@ -1,0 +1,318 @@
+                    2014-05-30 09:13:30,308 INFO Root directory is "C:\Guidewire\ClaimCenter\webapps\cc"
+                    2014-05-30 09:13:30,309 INFO Temp directory is "C:\Users\trhoades\AppData\Local\Temp\Jetty_0_0_0_0_8080_cc__cc__mwiidp"
+                    2014-05-30 09:13:30,309 INFO Logging properties found at "C:\Guidewire\ClaimCenter\modules\configuration\config\logging\logging.properties"
+                    2014-05-30 09:13:30,659 INFO GuidewireSoapApiAxisServlet.init - start
+                    2014-05-30 09:13:30,750 INFO Increasing runlevel to 'GUIDEWIRE_STARTUP'
+                    2014-05-30 09:13:30,841 INFO Setup platform dependencies ...
+                    2014-05-30 09:13:30,930 INFO Reading config file: C:\Guidewire\ClaimCenter\modules\configuration\config\config.xml
+                    2014-05-30 09:13:31,233 INFO Platform dependency setup complete.
+                    2014-05-30 09:13:31,233 INFO Setup application dependencies ...
+                    2014-05-30 09:13:31,722 INFO CustomizableSystemClock initialized, current time is now: 1401466411719, Fri May 30 09:13:31 PDT 2014
+                    2014-05-30 09:13:31,729 INFO Application dependency setup complete.
+                    2014-05-30 09:13:31,734 INFO SERVERID initialized to 'trhoades-w53'
+hoades-w53          2014-05-30 09:13:33,394 INFO Increasing runlevel to 'SHUTDOWN'
+hoades-w53          2014-05-30 09:13:33,420 INFO OSGi temporary directory is C:\Users\trhoades\AppData\Local\Temp\Jetty_0_0_0_0_8080_cc__cc__mwiidp\osgi_cc_rBsAgHQmW_5TImml8hkiAJv5i8Cp7r1GPi7trNHlMAfx9hV8AAAAAA__
+hoades-w53          2014-05-30 09:13:34,225 INFO Service manager started
+hoades-w53          2014-05-30 09:13:34,227 INFO Reading config file: C:\Guidewire\ClaimCenter\modules\configuration\config\config.xml
+hoades-w53          2014-05-30 09:13:34,242 INFO Memory usage: 179.505 MB used (both active and stale objects), 315.555 MB free, 495.062 MB total, 1979.750 MB max. --  Please read 'Memory usage logging' in the System Administration Guide for information on how to interpret these numbers.
+hoades-w53          2014-05-30 09:13:45,544 INFO ***** ClaimCenter 8.0.1.207 (Platform 8.21.0.207) starting *****
+hoades-w53          2014-05-30 09:13:47,557 INFO Increasing runlevel to 'NODAEMONS'
+hoades-w53          2014-05-30 09:13:47,558 INFO Reading database config file: C:\Guidewire\ClaimCenter\modules\configuration\config\database-config.xml
+hoades-w53          2014-05-30 09:13:47,578 INFO ENV not specified
+hoades-w53          2014-05-30 09:13:47,614 INFO Starting parse security config...
+hoades-w53          2014-05-30 09:13:47,644 INFO SecurityManager finished parsing C:\Guidewire\ClaimCenter\modules\configuration\config\security\security-config.xml
+hoades-w53          2014-05-30 09:13:47,666 INFO Finished security config.
+hoades-w53          2014-05-30 09:13:47,712 INFO Starting database ClaimCenterDatabase on env null
+hoades-w53          2014-05-30 09:13:47,723 WARN Spatial data types and queries do not work correctly on H2.
+hoades-w53          2014-05-30 09:13:47,809 INFO JDBC Driver: org.h2.Driver, major version: 1, minor version: 2
+hoades-w53          2014-05-30 09:13:51,476 INFO Validating main database connections have all required properties
+hoades-w53          2014-05-30 09:13:51,482 INFO This database version is SUPPORTED. Earliest supported database version is (1.2.147).  Actual database version is (1.2.147)
+hoades-w53          2014-05-30 09:13:53,381 INFO Checking if existing database version is current...
+hoades-w53          2014-05-30 09:13:53,396 INFO Datamodel version (5, 75, 10, 186) is up to date.
+hoades-w53          2014-05-30 09:13:53,436 INFO Database started
+hoades-w53          2014-05-30 09:13:53,462 INFO GlobalRandomSource#INITIAL_SEED = 1401466433461
+hoades-w53          2014-05-30 09:13:56,989 INFO Parsing C:\Guidewire\ClaimCenter\modules\configuration\config\messaging\messaging-config.xml
+hoades-w53          2014-05-30 09:13:57,747 INFO Zone config defined for countries [AU, CA, DE, FR, GB, JP, US]
+hoades-w53          2014-05-30 09:13:57,760 WARN The following country codes are configured zones but have not been loaded: [GB]
+hoades-w53          2014-05-30 09:13:57,775 INFO Address config defined for country code US
+hoades-w53          2014-05-30 09:13:57,780 INFO Address config defined for country code CA
+hoades-w53          2014-05-30 09:13:57,785 INFO Address config defined for country code AU
+hoades-w53          2014-05-30 09:13:57,790 INFO Address config defined for country code FR
+hoades-w53          2014-05-30 09:13:57,794 INFO Address config defined for country code DE
+hoades-w53          2014-05-30 09:13:57,799 INFO Address config defined for country code JP
+hoades-w53          2014-05-30 09:13:57,806 INFO Address config defined for country code GB
+hoades-w53          2014-05-30 09:13:57,936 INFO BatchProcessManager starting...
+hoades-w53          2014-05-30 09:13:57,938 INFO BatchProcessManager started
+hoades-w53          2014-05-30 09:13:57,939 INFO DistributedWorkerConfig parsing of C:\Guidewire\ClaimCenter\modules\configuration\config\workqueue\work-queue.xml
+hoades-w53          2014-05-30 09:13:57,946 INFO ENV not specified
+hoades-w53          2014-05-30 09:13:59,214 INFO Embedded server configured for automatic provisioning in /Guidewire/ClaimCenter/opt/gwsolr for appCode cc
+hoades-w53          2014-05-30 09:13:59,218 INFO Attempting to locate cc-gwsolr.zip from directory C:\Guidewire\ClaimCenter
+hoades-w53          2014-05-30 09:13:59,218 INFO Using file at location C:\Guidewire\ClaimCenter\solr\cc-gwsolr.zip as cc-gwsolr.zip file.
+hoades-w53          2014-05-30 09:13:59,218 INFO Installing and provisioning embedded Solr in folder C:\Guidewire\ClaimCenter\opt\gwsolr
+hoades-w53          2014-05-30 09:14:00,662 INFO Registering embedded server for document type cc_claimcontact_active -> C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr
+hoades-w53          2014-05-30 09:14:00,662 INFO Creating embedded Solr class loader for C:\Guidewire\ClaimCenter\opt\gwsolr\cc\cc-gwsolr\WEB-INF\lib
+hoades-w53          2014-05-30 09:14:00,684 INFO New CoreContainer 1893435430
+hoades-w53          2014-05-30 09:14:00,694 INFO Loading CoreContainer using Solr Home: 'C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr'
+hoades-w53          2014-05-30 09:14:00,702 INFO new SolrResourceLoader for directory: 'C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\'
+hoades-w53          2014-05-30 09:14:00,810 INFO Setting socketTimeout to: 0
+hoades-w53          2014-05-30 09:14:00,810 INFO Setting urlScheme to: http://
+hoades-w53          2014-05-30 09:14:00,810 INFO Setting connTimeout to: 0
+hoades-w53          2014-05-30 09:14:00,810 INFO Setting maxConnectionsPerHost to: 20
+hoades-w53          2014-05-30 09:14:00,810 INFO Setting corePoolSize to: 0
+hoades-w53          2014-05-30 09:14:00,810 INFO Setting maximumPoolSize to: 2147483647
+hoades-w53          2014-05-30 09:14:00,810 INFO Setting maxThreadIdleTime to: 5
+hoades-w53          2014-05-30 09:14:00,810 INFO Setting sizeOfQueue to: -1
+hoades-w53          2014-05-30 09:14:00,810 INFO Setting fairnessPolicy to: false
+hoades-w53          2014-05-30 09:14:00,817 INFO Creating new http client, config:maxConnectionsPerHost=20&maxConnections=10000&socketTimeout=0&connTimeout=0&retry=false
+hoades-w53          2014-05-30 09:14:00,913 WARN Log watching is not yet implemented for log4j
+hoades-w53          2014-05-30 09:14:00,920 INFO loading shared library: C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\lib
+hoades-w53          2014-05-30 09:14:00,935 INFO Creating SolrCore 'cc_claimcontact_active' using instanceDir: C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_active
+hoades-w53          2014-05-30 09:14:00,935 INFO new SolrResourceLoader for directory: 'C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_active\'
+hoades-w53          2014-05-30 09:14:00,935 INFO Creating SolrCore 'cc_claimcontact_archive' using instanceDir: C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_archive
+hoades-w53          2014-05-30 09:14:00,935 INFO new SolrResourceLoader for directory: 'C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_archive\'
+hoades-w53          2014-05-30 09:14:00,971 INFO Adding specified lib dirs to ClassLoader
+hoades-w53          2014-05-30 09:14:00,973 INFO Adding specified lib dirs to ClassLoader
+hoades-w53          2014-05-30 09:14:01,070 INFO Using Lucene MatchVersion: LUCENE_40
+hoades-w53          2014-05-30 09:14:01,070 INFO Using Lucene MatchVersion: LUCENE_40
+hoades-w53          2014-05-30 09:14:01,765 INFO Loaded SolrConfig: solrconfig.xml
+hoades-w53          2014-05-30 09:14:01,765 INFO Loaded SolrConfig: solrconfig.xml
+hoades-w53          2014-05-30 09:14:01,769 INFO Reading Solr Schema
+hoades-w53          2014-05-30 09:14:01,769 INFO Reading Solr Schema
+hoades-w53          2014-05-30 09:14:01,790 INFO Schema name=claimcontact
+hoades-w53          2014-05-30 09:14:01,790 INFO Schema name=claimcontact
+hoades-w53          2014-05-30 09:14:02,027 INFO default search field in schema is fullName
+hoades-w53          2014-05-30 09:14:02,027 INFO default search field in schema is fullName
+hoades-w53          2014-05-30 09:14:02,028 INFO query parser default operator is OR
+hoades-w53          2014-05-30 09:14:02,028 INFO query parser default operator is OR
+hoades-w53          2014-05-30 09:14:02,029 INFO unique key field: urn
+hoades-w53          2014-05-30 09:14:02,029 INFO unique key field: urn
+hoades-w53          2014-05-30 09:14:02,095 INFO Reloading exchange rates from file currency.xml
+hoades-w53          2014-05-30 09:14:02,095 INFO Reloading exchange rates from file currency.xml
+hoades-w53          2014-05-30 09:14:02,101 INFO Reloading exchange rates from file currency.xml
+hoades-w53          2014-05-30 09:14:02,101 INFO Reloading exchange rates from file currency.xml
+hoades-w53          2014-05-30 09:14:02,355 INFO [cc_claimcontact_active] Opening new SolrCore at C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_active\, dataDir=C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_active\data\
+hoades-w53          2014-05-30 09:14:02,355 INFO [cc_claimcontact_archive] Opening new SolrCore at C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_archive\, dataDir=C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_archive\data\
+hoades-w53          2014-05-30 09:14:02,356 INFO JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@4242cb9f
+hoades-w53          2014-05-30 09:14:02,356 INFO JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@4242cb9f
+hoades-w53          2014-05-30 09:14:02,390 INFO [cc_claimcontact_active] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+hoades-w53          2014-05-30 09:14:02,390 INFO [cc_claimcontact_archive] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+hoades-w53          2014-05-30 09:14:02,390 INFO [cc_claimcontact_active] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+hoades-w53          2014-05-30 09:14:02,390 INFO [cc_claimcontact_archive] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+hoades-w53          2014-05-30 09:14:02,392 INFO solr.NRTCachingDirectoryFactory
+hoades-w53          2014-05-30 09:14:02,392 INFO solr.NRTCachingDirectoryFactory
+hoades-w53          2014-05-30 09:14:02,413 INFO return new directory for C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_archive\data forceNew:false
+hoades-w53          2014-05-30 09:14:02,413 INFO return new directory for C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_active\data forceNew:false
+hoades-w53          2014-05-30 09:14:02,414 INFO Releasing directory:C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_active\data
+hoades-w53          2014-05-30 09:14:02,414 INFO Releasing directory:C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_archive\data
+hoades-w53          2014-05-30 09:14:02,414 INFO New index directory detected: old=null new=C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_active\data\index/
+hoades-w53          2014-05-30 09:14:02,414 INFO New index directory detected: old=null new=C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_archive\data\index/
+hoades-w53          2014-05-30 09:14:02,414 INFO return new directory for C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_active\data\index forceNew:false
+hoades-w53          2014-05-30 09:14:02,414 INFO return new directory for C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_archive\data\index forceNew:false
+hoades-w53          2014-05-30 09:14:02,421 INFO Releasing directory:C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_archive\data\index
+hoades-w53          2014-05-30 09:14:02,423 INFO Releasing directory:C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_active\data\index
+hoades-w53          2014-05-30 09:14:02,428 INFO created json: solr.JSONResponseWriter
+hoades-w53          2014-05-30 09:14:02,428 INFO adding lazy queryResponseWriter: solr.VelocityResponseWriter
+hoades-w53          2014-05-30 09:14:02,429 INFO created velocity: solr.VelocityResponseWriter
+hoades-w53          2014-05-30 09:14:02,430 INFO created json: solr.JSONResponseWriter
+hoades-w53          2014-05-30 09:14:02,430 INFO adding lazy queryResponseWriter: solr.VelocityResponseWriter
+hoades-w53          2014-05-30 09:14:02,430 INFO created velocity: solr.VelocityResponseWriter
+hoades-w53          2014-05-30 09:14:02,435 INFO created xslt: solr.XSLTResponseWriter
+hoades-w53          2014-05-30 09:14:02,435 INFO created xslt: solr.XSLTResponseWriter
+hoades-w53          2014-05-30 09:14:02,436 INFO xsltCacheLifetimeSeconds=5
+hoades-w53          2014-05-30 09:14:02,436 INFO xsltCacheLifetimeSeconds=5
+hoades-w53          2014-05-30 09:14:02,597 INFO created /select: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,597 INFO created /select: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,598 INFO created /query: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,598 INFO created /query: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,601 INFO created /get: solr.RealTimeGetHandler
+hoades-w53          2014-05-30 09:14:02,601 INFO created /get: solr.RealTimeGetHandler
+hoades-w53          2014-05-30 09:14:02,601 INFO created /browse: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,601 INFO created /browse: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,606 INFO created /update: solr.UpdateRequestHandler
+hoades-w53          2014-05-30 09:14:02,606 INFO created /update: solr.UpdateRequestHandler
+hoades-w53          2014-05-30 09:14:02,609 INFO created /update/json: solr.JsonUpdateRequestHandler
+hoades-w53          2014-05-30 09:14:02,609 INFO created /update/json: solr.JsonUpdateRequestHandler
+hoades-w53          2014-05-30 09:14:02,611 INFO created /update/csv: solr.CSVRequestHandler
+hoades-w53          2014-05-30 09:14:02,612 INFO adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+hoades-w53          2014-05-30 09:14:02,611 INFO created /update/csv: solr.CSVRequestHandler
+hoades-w53          2014-05-30 09:14:02,612 INFO adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+hoades-w53          2014-05-30 09:14:02,613 INFO created /update/extract: solr.extraction.ExtractingRequestHandler
+hoades-w53          2014-05-30 09:14:02,613 INFO created /update/extract: solr.extraction.ExtractingRequestHandler
+hoades-w53          2014-05-30 09:14:02,613 INFO adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+hoades-w53          2014-05-30 09:14:02,613 INFO adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+hoades-w53          2014-05-30 09:14:02,613 INFO created /analysis/field: solr.FieldAnalysisRequestHandler
+hoades-w53          2014-05-30 09:14:02,613 INFO adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+hoades-w53          2014-05-30 09:14:02,613 INFO created /analysis/field: solr.FieldAnalysisRequestHandler
+hoades-w53          2014-05-30 09:14:02,613 INFO adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+hoades-w53          2014-05-30 09:14:02,613 INFO created /analysis/document: solr.DocumentAnalysisRequestHandler
+hoades-w53          2014-05-30 09:14:02,613 INFO created /analysis/document: solr.DocumentAnalysisRequestHandler
+hoades-w53          2014-05-30 09:14:02,616 INFO created /admin/: solr.admin.AdminHandlers
+hoades-w53          2014-05-30 09:14:02,616 INFO created /admin/: solr.admin.AdminHandlers
+hoades-w53          2014-05-30 09:14:02,619 INFO created /admin/ping: solr.PingRequestHandler
+hoades-w53          2014-05-30 09:14:02,619 INFO created /admin/ping: solr.PingRequestHandler
+hoades-w53          2014-05-30 09:14:02,622 INFO created /debug/dump: solr.DumpRequestHandler
+hoades-w53          2014-05-30 09:14:02,622 INFO created /debug/dump: solr.DumpRequestHandler
+hoades-w53          2014-05-30 09:14:02,633 INFO created /replication: solr.ReplicationHandler
+hoades-w53          2014-05-30 09:14:02,633 INFO created /replication: solr.ReplicationHandler
+hoades-w53          2014-05-30 09:14:02,633 INFO adding lazy requestHandler: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,633 INFO adding lazy requestHandler: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,634 INFO created /spell: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,634 INFO adding lazy requestHandler: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,634 INFO created /spell: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,634 INFO adding lazy requestHandler: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,634 INFO created /tvrh: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,634 INFO adding lazy requestHandler: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,634 INFO created /tvrh: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,694 INFO adding lazy requestHandler: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,694 INFO created /terms: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,694 INFO created /terms: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,694 INFO adding lazy requestHandler: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,694 INFO adding lazy requestHandler: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,694 INFO created /elevate: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,694 INFO created /elevate: solr.SearchHandler
+hoades-w53          2014-05-30 09:14:02,699 INFO created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+hoades-w53          2014-05-30 09:14:02,699 INFO created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+hoades-w53          2014-05-30 09:14:02,704 INFO xsltCacheLifetimeSeconds=60
+hoades-w53          2014-05-30 09:14:02,704 INFO xsltCacheLifetimeSeconds=60
+hoades-w53          2014-05-30 09:14:02,709 INFO xsltCacheLifetimeSeconds=60
+hoades-w53          2014-05-30 09:14:02,709 INFO xsltCacheLifetimeSeconds=60
+hoades-w53          2014-05-30 09:14:02,710 INFO xsltCacheLifetimeSeconds=60
+hoades-w53          2014-05-30 09:14:02,710 INFO xsltCacheLifetimeSeconds=60
+hoades-w53          2014-05-30 09:14:02,713 INFO Releasing directory:C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_archive\data
+hoades-w53          2014-05-30 09:14:02,713 INFO Releasing directory:C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_active\data
+hoades-w53          2014-05-30 09:14:02,733 INFO Opening Searcher@6e56d65b main
+hoades-w53          2014-05-30 09:14:02,759 INFO Hard AutoCommit: if uncommited for 2000ms; if 10000 uncommited docs 
+hoades-w53          2014-05-30 09:14:02,760 INFO Soft AutoCommit: disabled
+hoades-w53          2014-05-30 09:14:02,760 INFO Initializing spell checkers
+hoades-w53          2014-05-30 09:14:02,771 INFO init: {name=default,field=name,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+hoades-w53          2014-05-30 09:14:02,786 INFO No queryConverter defined, using default converter
+hoades-w53          2014-05-30 09:14:02,788 INFO Loading QueryElevation from: C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_archive\conf\elevate.xml
+hoades-w53          2014-05-30 09:14:02,825 INFO Commits will be reserved for  10000
+hoades-w53          2014-05-30 09:14:02,833 INFO Opening Searcher@155297ad main
+hoades-w53          2014-05-30 09:14:02,833 INFO QuerySenderListener sending requests to Searcher@6e56d65b main{StandardDirectoryReader(segments_1:1)}
+hoades-w53          2014-05-30 09:14:02,836 INFO Releasing directory:C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_archive\data
+hoades-w53          2014-05-30 09:14:02,836 INFO Releasing directory:C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_archive\data\index
+hoades-w53          2014-05-30 09:14:03,498 INFO Hard AutoCommit: if uncommited for 2000ms; if 10000 uncommited docs 
+hoades-w53          2014-05-30 09:14:03,498 INFO Soft AutoCommit: disabled
+hoades-w53          2014-05-30 09:14:03,498 INFO Initializing spell checkers
+hoades-w53          2014-05-30 09:14:03,500 INFO init: {name=default,field=name,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+hoades-w53          2014-05-30 09:14:03,501 INFO No queryConverter defined, using default converter
+hoades-w53          2014-05-30 09:14:03,502 INFO Loading QueryElevation from: C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_active\conf\elevate.xml
+hoades-w53          2014-05-30 09:14:03,508 INFO Commits will be reserved for  10000
+hoades-w53          2014-05-30 09:14:03,508 INFO QuerySenderListener sending requests to Searcher@155297ad main{StandardDirectoryReader(segments_q:71 _b(4.1):C283/1 _g(4.1):C1 _k(4.1):C1)}
+hoades-w53          2014-05-30 09:14:03,512 INFO Releasing directory:C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_active\data
+hoades-w53          2014-05-30 09:14:03,514 INFO Releasing directory:C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr\claimcontact_active\data\index
+hoades-w53          2014-05-30 09:14:03,520 INFO [cc_claimcontact_archive] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=686 
+hoades-w53          2014-05-30 09:14:03,521 INFO QuerySenderListener done.
+hoades-w53          2014-05-30 09:14:03,521 INFO Loading spell index for spellchecker: default
+hoades-w53          2014-05-30 09:14:03,521 INFO Loading spell index for spellchecker: wordbreak
+hoades-w53          2014-05-30 09:14:03,522 INFO [cc_claimcontact_active] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=13 
+hoades-w53          2014-05-30 09:14:03,522 INFO QuerySenderListener done.
+hoades-w53          2014-05-30 09:14:03,523 INFO Loading spell index for spellchecker: default
+hoades-w53          2014-05-30 09:14:03,523 INFO Loading spell index for spellchecker: wordbreak
+hoades-w53          2014-05-30 09:14:03,523 INFO [cc_claimcontact_archive] Registered new searcher Searcher@6e56d65b main{StandardDirectoryReader(segments_1:1)}
+hoades-w53          2014-05-30 09:14:03,524 INFO [cc_claimcontact_active] Registered new searcher Searcher@155297ad main{StandardDirectoryReader(segments_q:71 _b(4.1):C283/1 _g(4.1):C1 _k(4.1):C1)}
+hoades-w53          2014-05-30 09:14:03,527 INFO registering core: cc_claimcontact_archive
+hoades-w53          2014-05-30 09:14:03,527 INFO registering core: cc_claimcontact_active
+hoades-w53          2014-05-30 09:14:03,528 INFO Created embedded Solr container org.apache.solr.core.CoreContainer@70db8826 for C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr
+hoades-w53          2014-05-30 09:14:03,539 INFO Created embedded solr server for cc_claimcontact_active on C:\Guidewire\ClaimCenter\opt\gwsolr\cc\solr
+hoades-w53          2014-05-30 09:14:03,539 INFO Mapped cc_claimcontact_active to server com.guidewire.solr.server.EmbeddedSolrServer@46d32a6b
+hoades-w53          2014-05-30 09:14:03,541 INFO Parsing C:\Guidewire\ClaimCenter\modules\configuration\config\integration\inbound-integration-config.xml
+hoades-w53          2014-05-30 09:14:04,259 INFO Document Management resources path /jnlp/gw/documentassistant/pl-documentassistant-applet__V8.1.6.jar URL jar:file:/C:/Guidewire/ClaimCenter/webapps/cc/jnlp/gw/documentassistant/pl-documentassistant-applet__V8.1.6.jar!/documentassistant/
+hoades-w53          2014-05-30 09:14:04,272 INFO Document Management resources path /jnlp/gw/documentassistant/pl-documentassistant-resources__V8.1.6.jar URL jar:file:/C:/Guidewire/ClaimCenter/webapps/cc/jnlp/gw/documentassistant/pl-documentassistant-resources__V8.1.6.jar!/documentassistant/
+hoades-w53          2014-05-30 09:14:09,234 INFO Increasing runlevel to 'DAEMONS'
+hoades-w53          2014-05-30 09:14:09,240 INFO Starting workflow stats writer with interval 60 minutes.
+hoades-w53          2014-05-30 09:14:09,242 INFO Starting DistributedWorkerManager ...
+hoades-w53          2014-05-30 09:14:09,285 INFO DistributedWorkerManager thread pool configuration: minPoolSize=0, maxPoolSize=50, keepAliveTimeout=60 (seconds)
+hoades-w53          2014-05-30 09:14:09,285 INFO DWM: Starting executor (1 workers at maximum) for work queue: ActivityEsc
+hoades-w53          2014-05-30 09:14:09,329 INFO DWM: Starting executor (1 workers at maximum) for work queue: Workflow
+hoades-w53          2014-05-30 09:14:09,334 INFO DWM: Starting executor (1 workers at maximum) for work queue: Geocode
+hoades-w53          2014-05-30 09:14:09,339 INFO DWM: Starting executor (1 workers at maximum) for work queue: Archive
+hoades-w53          2014-05-30 09:14:09,344 INFO DWM: Starting executor (1 workers at maximum) for work queue: ContactAutoSync
+hoades-w53          2014-05-30 09:14:09,348 INFO DWM: Starting executor (1 workers at maximum) for work queue: ReviewSync
+hoades-w53          2014-05-30 09:14:09,353 INFO DWM: Starting executor (1 workers at maximum) for work queue: RecalculateMetrics
+hoades-w53          2014-05-30 09:14:09,358 INFO DWM: Starting executor (1 workers at maximum) for work queue: ClaimException
+hoades-w53          2014-05-30 09:14:09,363 INFO DWM: Starting executor (1 workers at maximum) for work queue: IdleClaim
+hoades-w53          2014-05-30 09:14:09,368 INFO DWM: Starting executor (1 workers at maximum) for work queue: IdleClosedClaim
+hoades-w53          2014-05-30 09:14:09,372 INFO DWM: Starting executor (1 workers at maximum) for work queue: GroupException
+hoades-w53          2014-05-30 09:14:09,376 INFO DWM: Starting executor (1 workers at maximum) for work queue: UserException
+hoades-w53          2014-05-30 09:14:09,381 INFO DWM: Starting executor (2 workers at maximum) for work queue: BulkInvoiceSubmission
+hoades-w53          2014-05-30 09:14:09,385 INFO DWM: Starting executor (1 workers at maximum) for work queue: EncryptionUpgrade
+hoades-w53          2014-05-30 09:14:09,390 INFO DWM: Starting executor (1 workers at maximum) for work queue: ContactRetire
+hoades-w53          2014-05-30 09:14:09,394 INFO DWM: Starting executor (2 workers at maximum) for work queue: AggLimitCalc
+hoades-w53          2014-05-30 09:14:09,400 INFO DWM: Starting executor (1 workers at maximum) for work queue: UserWorkloadUpdate
+hoades-w53          2014-05-30 09:14:09,404 INFO DWM: Starting executor (1 workers at maximum) for work queue: ServiceRequestMetricEscalation
+hoades-w53          2014-05-30 09:14:09,409 INFO DWM: Starting executor (1 workers at maximum) for work queue: DBConsistencyCheck
+hoades-w53          2014-05-30 09:14:09,414 INFO DWM: Starting executor (1 workers at maximum) for work queue: DBStats
+hoades-w53          2014-05-30 09:14:09,418 INFO DWM: Starting executor (16 workers at maximum) for work queue: PhoneNumberNormalizer
+hoades-w53          2014-05-30 09:14:09,423 INFO Finished DistributedWorkerManager.
+hoades-w53          2014-05-30 09:14:09,423 INFO Starting scheduler ...
+hoades-w53          2014-05-30 09:14:09,582 INFO Parsing schedule file C:\Guidewire\ClaimCenter\modules\configuration\config\scheduler\scheduler-config.xml
+hoades-w53          2014-05-30 09:14:09,604 INFO Schedule for Retired Policy Graph Disconnector started with schedule [0 45 4 ? * SUN].
+hoades-w53          2014-05-30 09:14:09,605 INFO Schedule for Activity Escalation started with schedule [0 0,30 * * * ?].
+hoades-w53          2014-05-30 09:14:09,605 INFO Schedule for Purge Cluster Members started with schedule [0 0 2 1 * ?].
+hoades-w53          2014-05-30 09:14:09,606 INFO Schedule for Dashboard Statistics started with schedule [0 0 1 * * ?].
+hoades-w53          2014-05-30 09:14:09,607 INFO Schedule for Purge Profiler Data started with schedule [0 0 2 * * ?].
+hoades-w53          2014-05-30 09:14:09,608 INFO Schedule for Group Exception started with schedule [0 0 4 * * ?].
+hoades-w53          2014-05-30 09:14:09,609 INFO Schedule for WorkQueueInstrumentationPurge started with schedule [0 30 2 2 * ?].
+hoades-w53          2014-05-30 09:14:09,610 INFO Schedule for Catastrophe Claim Finder started with schedule [0 30 4 * * ?].
+hoades-w53          2014-05-30 09:14:09,611 INFO Schedule for Contact Retire started with schedule [0 0 1 * * ?].
+hoades-w53          2014-05-30 09:14:09,611 INFO Schedule for ContactAutoSync started with schedule [0 0 5,17 * * ?].
+hoades-w53          2014-05-30 09:14:09,612 INFO Schedule for Recalculate Claim Metrics started with schedule [0 30 3 * * ?].
+hoades-w53          2014-05-30 09:14:09,613 INFO Schedule for Purge Failed Work Items started with schedule [0 0 1 1 * ?].
+hoades-w53          2014-05-30 09:14:09,614 INFO Schedule for Encryption Upgrade started with schedule [0 0 1 * * ?].
+hoades-w53          2014-05-30 09:14:09,615 INFO Schedule for Workflow started with schedule [0 5,15,25,35,45,55 * * * ?].
+hoades-w53          2014-05-30 09:14:09,615 INFO Schedule for Statistics started with schedule [0 3 * * * ?].
+hoades-w53          2014-05-30 09:14:09,617 INFO Schedule for Purge Message History started with schedule [0 30 4 ? * SUN].
+hoades-w53          2014-05-30 09:14:09,618 INFO Schedule for Database Consistency Check started with schedule [0 0 16 ? /6 1#1].
+hoades-w53          2014-05-30 09:14:09,619 INFO Schedule for Claim Exception started with schedule [0 0 2 * * ?].
+hoades-w53          2014-05-30 09:14:09,620 INFO Schedule for Purge Workflow started with schedule [0 30 1 1 * ?].
+hoades-w53          2014-05-30 09:14:09,621 INFO Schedule for Bulk Invoice Workflow Monitor started with schedule [0 0,30 * * * ?].
+hoades-w53          2014-05-30 09:14:09,621 INFO Schedule for Bulk Invoice Escalation started with schedule [0 35 6,18 * * ?].
+hoades-w53          2014-05-30 09:14:09,622 INFO Schedule for Service Metric Escalation started with schedule [0 10,40 * * * ?].
+hoades-w53          2014-05-30 09:14:09,623 INFO Schedule for TAccounts Escalation started with schedule [0 1 0 * * ?].
+hoades-w53          2014-05-30 09:14:09,625 INFO Schedule for WorkItemSetPurge started with schedule [0 30 1 2 * ?].
+hoades-w53          2014-05-30 09:14:09,626 INFO Schedule for Idle Claim Exception started with schedule [0 0 12 ? * SUN].
+hoades-w53          2014-05-30 09:14:09,627 INFO Schedule for Financials Escalation started with schedule [0 5 6,18 * * ?].
+hoades-w53          2014-05-30 09:14:09,628 INFO Schedule for User Exception started with schedule [0 0 3 * * ?].
+hoades-w53          2014-05-30 09:14:09,629 INFO Schedule for Purge Workflow Logs started with schedule [0 30 2 1 * ?].
+hoades-w53          2014-05-30 09:14:09,630 INFO Schedule for ProcessHistoryPurge started with schedule [0 30 1 3 * ?].
+hoades-w53          2014-05-30 09:14:09,630 INFO Started scheduler
+hoades-w53          2014-05-30 09:14:09,634 INFO Configuring integration thread pools
+hoades-w53          2014-05-30 09:14:09,639 INFO Configured com.guidewire.execution.ThreadPool-1401466449634-0
+hoades-w53          2014-05-30 09:14:09,649 INFO runtime type Unmanaged (10)
+hoades-w53          2014-05-30 09:14:09,664 INFO init gw_default forkjoin [6e78bbc3-e815-11e3-b6b6-c5cf747966b1] (1)
+hoades-w53          2014-05-30 09:14:09,665 INFO Configuring inbound file integrations
+hoades-w53          2014-05-30 09:14:09,665 INFO Configuring inbound JMS integrations
+hoades-w53          2014-05-30 09:14:09,665 INFO Configuring inbound custom integrations
+hoades-w53          2014-05-30 09:14:09,665 INFO Starting QPlexor...
+hoades-w53          2014-05-30 09:14:10,274 INFO ***** CCSolrMessageTransportPlugin is initialized. *****
+hoades-w53          2014-05-30 09:14:11,528 INFO DST-starting with maxRetries=5, retryMinutes=1
+hoades-w53          2014-05-30 09:14:12,647 INFO The ConsoleMessageTransport for destination 0 is initialized.
+hoades-w53          2014-05-30 09:14:12,654 INFO Starting message destination 324: Document Store (1 sender threads).
+hoades-w53          2014-05-30 09:14:12,656 INFO MW-startThreadPool-324 poolSize=1
+hoades-w53          2014-05-30 09:14:12,658 INFO Starting message destination 70: Solr Claim Contact Message Transport (1 sender threads).
+hoades-w53          2014-05-30 09:14:12,658 INFO MW-startThreadPool-70 poolSize=1
+hoades-w53          2014-05-30 09:14:12,659 INFO MessageTransport Destination 80 RESUME
+hoades-w53          2014-05-30 09:14:12,659 INFO Starting message destination 80: Contact Auto Sync Failure (1 sender threads).
+hoades-w53          2014-05-30 09:14:12,659 INFO MW-startThreadPool-80 poolSize=1
+hoades-w53          2014-05-30 09:14:12,659 INFO Starting message destination 65: Email (1 sender threads).
+hoades-w53          2014-05-30 09:14:12,660 INFO MW-startThreadPool-65 poolSize=1
+hoades-w53          2014-05-30 09:14:12,660 INFO Starting message destination 99: Contact Message Transport (1 sender threads).
+hoades-w53          2014-05-30 09:14:12,660 INFO MW-startThreadPool-99 poolSize=1
+hoades-w53          2014-05-30 09:14:12,661 INFO Starting message destination 67: Metro (1 sender threads).
+hoades-w53          2014-05-30 09:14:12,661 INFO MW-startThreadPool-67 poolSize=1
+hoades-w53          2014-05-30 09:14:12,662 INFO QPlexor started
+hoades-w53          2014-05-30 09:14:12,887 INFO Increasing runlevel to 'MULTIUSER'
+                    2014-05-30 09:14:13,148 INFO GuidewireSoapApiAxisServlet.init - initialized
+hoades-w53          2014-05-30 09:14:13,148 WARN 
+hoades-w53          2014-05-30 09:14:13,148 WARN !!! The server is in "development" mode. This mode should never be used for a production server.
+hoades-w53          2014-05-30 09:14:13,148 WARN 
+hoades-w53          2014-05-30 09:14:13,148 WARN 
+hoades-w53          2014-05-30 09:14:13,148 WARN !!! The server is using the Dynamic Code Evolution JVM.  This JVM is not recommended for a production server.
+hoades-w53          2014-05-30 09:14:13,148 WARN 
+hoades-w53          2014-05-30 09:14:13,148 INFO ***** ClaimCenter ready *****
+hoades-w53          2014-05-30 09:14:13,153 INFO com.guidewire.cc.system.integration.messaging.iso.ISOReceive initializing
+hoades-w53          2014-05-30 09:14:13,166 INFO Started SelectChannelConnector@0.0.0.0:8080
+hoades-w53          2014-05-30 09:28:34,242 INFO Memory usage: 341.999 MB used (both active and stale objects), 376.273 MB free, 718.273 MB total, 1979.750 MB max. --  Please read 'Memory usage logging' in the System Administration Guide for information on how to interpret these numbers.
+hoades-w53          2014-05-30 09:43:34,274 INFO Memory usage: 486.201 MB used (both active and stale objects), 232.071 MB free, 718.273 MB total, 1979.750 MB max. --  Please read 'Memory usage logging' in the System Administration Guide for information on how to interpret these numbers.

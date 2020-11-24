@@ -1,0 +1,26 @@
+.x-grid3-body {
+  .x-grid3-radio-col-td {
+    .x-grid-cell-inner {
+	  padding: 1px 0 0 0!important;
+    }
+  }
+}
+
+.x-grid3-radio-col {
+  width: 15px;
+  height: 15px;
+  background: transparent theme-background-image('form/radio', 'png') no-repeat 0 0;
+  margin: 0 auto;
+}
+.x-grid3-radio-col-on {
+  width: 15px;
+  height: 16px;
+  background: transparent theme-background-image('form/radio', 'png') no-repeat 0 -15px;
+  margin: 0 auto;
+}
+
+.x-grid-cell .x-form-radio {
+  margin: 0;
+  padding: 0;
+  border: none;
+}

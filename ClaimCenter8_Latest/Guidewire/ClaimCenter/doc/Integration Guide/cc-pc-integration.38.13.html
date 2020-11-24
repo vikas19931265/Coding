@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Policy Refresh Relinking Details</title>
+    <link rel="StyleSheet" href="css/cc-pc-integration.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Integration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-policycontacts.html#2722029">Policy and Contact Integrations</a> : <a class="WebWorks_Breadcrumb_Link" href="cc-pc-integration.38.01.html#2722029">Claim and Policy Integration</a> : Policy Refresh Relinking Details</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="2722029">Policy Refresh Relinking Details</a></h3>
+      <div class="B_-_Body"><a name="2722030">Relinking is the process of repairing broken foreign keys from a claim entity to a policy entity or from a policy entity to a claim entity. It is important that ClaimCenter repairs any links that potentially are broken whenever replacing the old policy graph with a new policy graph. </a></div>
+      <div class="B_-_Body"><a name="2722031">For example, if an </a><span class="cv_-_computer_voice">Incident</span> on a <span class="cv_-_computer_voice">Claim </span>refers to a <span class="cv_-_computer_voice">RiskUnit</span> on the <span class="cv_-_computer_voice">Policy</span>, then the claim incident foreign key to the policy risk unit potentially must be repaired. The default behavior is as follows:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722032">If the old and new risk units differ, ClaimCenter sets the foreign key on the incident to the new risk unit on the refreshed policy</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722033">If the old risk unit does not exist on the refreshed policy, ClaimCenter sets the foreign key on the incident to null.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2722034">ClaimCenter encapsulates critical parts of relinking through objects called </a><span class="e_-_emphasis">relink handlers</span>. Relink handlers define the behavior when foreign keys between claim objects and policy objects break during policy refresh. The default behavior depends on the direction of the broken link, as the following table describes.</div>
+      <div class="T_-_Table"><a name="2722052">&nbsp;</a></div>
+      <table class="withHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2722037">Direction&nbsp;of&nbsp;link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2722039">Relink&nbsp;handler&nbsp;behavior</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722041">Claim to policy</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722043">If there is a match, move target of link to new policy object </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722045">&nbsp;</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722047">If no match exists and the foreign key property in the data model is set to </a><span class="cvt_-_computer_voice_table">nullok="true"</span>, set the foreign key to <span class="cvt_-_computer_voice_table">null</span>. Otherwise, throw an exception.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722049">Policy to claim</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722051">If there is a match, move source of link to new policy-specific object. Otherwise, do nothing because soon ClaimCenter will delete the old policy object. </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="B_-_Body"><a name="2722053">You can customize this behavior by changing an existing custom relink handler or by adding a new one that implements the interface </a><span class="cv_-_computer_voice">gw.api.policy.refresh.relink.RelinkHandler</span>. The <span class="cv_-_computer_voice">RelinkHandler</span> interface defines relinking behavior for all foreign key fields on that entity type. </div>
+      <div class="B_-_Body"><a name="2722054">As a convenience, there is another interface called </a><span class="cv_-_computer_voice">gw.api.policy.refresh.relink.LinkHandler</span> that defines more granular per-link (for each foreign key field) behavior. To use this more granular behavior, define the <span class="cv_-_computer_voice">RelinkHandler</span> implementations that extend <span class="cv_-_computer_voice">PerLinkHandler</span>. Next, use the <span class="cv_-_computer_voice">register</span> method to define the relink behavior on each <span class="cv_-_computer_voice">LinkHandler</span> that you want to define.</div>
+      <div class="B_-_Body"><a name="2722059">The default behavior for relinking is typically satisfactory for most entity types and does not require new relinking handler classes. However, you might need to customize relink handlers if you want to handle a broken link in a special way. For example, suppose a link is to an object that no longer exists in the new policy. In the default case, that would cause an error. In special cases, you might want to define some more complex compensation behavior. Contact Customer Support if you think you need to modify behavior of links broken during policy refresh.</a></div>
+      <div class="B_-_Body"><a name="2722060">Configure any new relink handlers in the </a><span class="cv_-_computer_voice">PolicyRefreshConfiguration</span> property getter called <span class="cv_-_computer_voice">CustomRelinkerTypes</span>. See the <span class="cv_-_computer_voice">PolicyRefreshConfigurationBase</span> class for the default mapping.</div>
+      <div class="B_-_Body"><a name="2722061">Some examples of built-in custom relink handling include:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722062">Relinking </a><span class="cv_-_computer_voice">ContactTag</span> objects to a new policy contact.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722063">Unlinking the </a><span class="cv_-_computer_voice">Deductible</span> entity from financial transactions when removing the corresponding <span class="cv_-_computer_voice">Coverage</span> object. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2722064">Relink handlers must be defined for the specific entity type that owns the link. This means that you cannot specify relink handlers as shared code in the supertype for all its subtypes. This is notable because in contrast, entity matchers for new subtypes can share implementation in their supertype.</a></div>
+      <h6 class="HS_-_Head_Sub"><a name="2722065">Example Relink Handler Class for Contact Tag Objects</a></h6>
+      <div class="B_-_Body"><a name="2722066">In the base configuration, ClaimCenter provides the following example of a custom relink handler class. The lass </a><span class="cv_-_computer_voice">ContactTagRelinkHandler</span> class relinks <span class="cv_-_computer_voice">ContactTag</span> objects to the new policy <span class="cv_-_computer_voice">Contact</span>.</div>
+      <PRE class="CF_-_Code_First_Line"><a name="2722067">class ContactTagRelinkHandler extends PerLinkHandler&lt;ContactTag&gt; {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722068">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722069">&nbsp;&nbsp;construct() { register(ContactTag, "Contact", new TagLinkHandler()) }</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722070">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722071">&nbsp;&nbsp;/*</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722072">&nbsp;&nbsp;&nbsp;* LinkHandler for ContactTag--(Contact)--&gt;Contact</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722073">&nbsp;&nbsp;&nbsp;*/</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722074">&nbsp;&nbsp;private class TagLinkHandler extends BaseLinkHandler&lt;ContactTag&gt; {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722075">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722076">&nbsp;&nbsp;&nbsp;&nbsp;/*</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722077">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Handle the case where the Contact is in the removed set.</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722078">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722079">&nbsp;&nbsp;&nbsp;&nbsp;override function handleRemovedLinkTarget(relinkItem:RelinkItem&lt;ContactTag&gt;, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722080">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relinkCtx:RelinkContext, target:KeyableBean) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722081">&nbsp;&nbsp;&nbsp;&nbsp;// Ignore if not matched.</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722082">&nbsp;&nbsp;&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722083">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722084">    </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722085">&nbsp;&nbsp;&nbsp;&nbsp;/*</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722086">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Handle the case where the new Contact already has the ContactTag being relinked.</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722087">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722088">&nbsp;&nbsp;&nbsp;&nbsp;override function handleClaimToPolicyLink(relinkItem:RelinkItem&lt;ContactTag&gt;,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722089">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relinkContext:RelinkContext) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722090">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var target = relinkItem.Value as Contact </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722091">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722092">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(relinkContext.PolicyComparison.hasMatch(target)) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722093">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var newBean = relinkContext.PolicyComparison.findMatch(target).Compare</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722094">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722095">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(not hasContactTag(relinkItem.Owner, newBean)) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722096">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relinkItem.setValue(newBean)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722097">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722098">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722099">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722100">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722101">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722102">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Do nothing if no match.</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722103">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;handleRemovedLinkTarget(relinkItem, relinkContext, target)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722104">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722105">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722106">&nbsp;&nbsp;&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722107">    </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722108">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722109">&nbsp;&nbsp;&nbsp;&nbsp;private function hasContactTag(tag:ContactTag, contact:Contact) : boolean {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722110">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;return contact.Tags.firstWhere(\ t -&gt; t.Type==tag.Type) != null</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722111">&nbsp;&nbsp;&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722112">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="2722113">&nbsp;&nbsp;}</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="2722114">}</a></PRE>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2722115">Relink Filters</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722116">ClaimCenter uses </a><span class="e_-_emphasis">relink filters</span> to define special logic that is outside the default policy refresh behavior. Relink filters are only for logic that needs to execute before or after relinking. ClaimCenter executes relink filters before the relinking step (in a <span class="cv_-_computer_voice">preProcess</span> method) and after the relinking step (in a <span class="cv_-_computer_voice">postProcess</span> method). Relink filters implement the interface <span class="cv_-_computer_voice">gw.api.policy.refresh.relink.RelinkFilter</span>. </div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722117">Examples of default relink filters are described in the following table.</a></div>
+      <div class="T_-_Table"><a name="2722135">&nbsp;</a></div>
+      <table class="withHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2722120">Relink filter class</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="2722122">Purpose</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2722124">ContactPreservingFilter</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722126">Moves any removed Contacts and moves them to roles with the added prefix </a><span class="cvt_-_computer_voice_table">former_</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2722128">ClaimLinkPreservingFilter</a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722130">Preserves any policy objects if they are removed and referenced from claim entities</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="2722132">CopyInternalFieldsFilter</a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="2722134">Copies internal fields from policy entities that are matched to their corresponding replacements in the new policy </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="B_-_Body"><a name="2722136">Refer to Studio for the implementation of these classes and for more information about:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722137">Using preserving filters to prevent ClaimCenter from deleting objects</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722138">The relink context object</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h6 class="HS_-_Head_Sub"><a name="2722143">Best Practices for Writing Relink Filters</a></h6>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="2722144">Guidewire recommends the following for writing relink filters:</a></div>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="2722145">Relink filters are only for logic that needs to execute before or after relinking. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="NI_-_Note_Important">
+        <span class="n_-_note">IMPORTANT   </span><a name="2722146">Relink filters must be written carefully to preserve links correctly. If you think you need a relink filter, contact Guidewire Customer Support for guidance.</a></div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2722151">Use the </a><span class="cv_-_computer_voice">ClaimLinkPreservingFilter</span> to preserve entities instead of trying to preserve entities directly from the <span class="cv_-_computer_voice">gw.api.policy.refresh.relink.RelinkContext.addExcludedFromRemoval</span> in a <span class="cv_-_computer_voice">RelinkHandler</span> class. Attempting to preserve entities from the handler can lead to subtle order dependencies in how ClaimCenter performs relinking.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2722152">Limit preservation behavior to entities that have no outgoing foreign keys (such as </a><span class="cv_-_computer_voice">Address</span>) and use preservation sparingly.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2722153">If you need to handle only a few foreign keys differently, refer to earlier in the topic about the link handler called </a><span class="cv_-_computer_voice">PerLinkHandler</span>. In that case, do not use a relink filter. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="2722154">As with all relinking code, be mindful of how the relinking can potentially interact with other ClaimCenter processes such as Preupdate rules or bundle callbacks. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="2722155">Example Policy Refresh Matching and Relinking - With Relink Set Information</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2722156">Let us consider the earlier example of relinking and removal. The following diagram shows the state of the claim-policy graphs both before and after policy refresh.</a></div>
+      <div class="F_-_Figure"><a name="2722160"><img class="Default" src="images/cc-pc-integration.38.13.1.png" style="display: inline; float: none; left: 0.0; top: 0.0" alt="" /></a></div>
+      <div class="B_-_Body"><a name="2722161">Notice the following differences between the old and new policy:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722162">The new policy no longer has the </a><span class="cv_-_computer_voice">StatCode</span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722163">The new policy has a new entity, an </a><span class="cv_-_computer_voice">Endorsement</span> </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722164">The claim graph’s </a><span class="cv_-_computer_voice">Exposure</span> with ID=10 now points to the new <span class="cv_-_computer_voice">Coverage</span> </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722165">The claim graph’s </a><span class="cv_-_computer_voice">Claim</span> with ID=1 now points to the new <span class="cv_-_computer_voice">Policy</span> </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2722166">After getting the new policy graph, ClaimCenter traverses the new policy. Next, ClaimCenter invokes matcher classes on entities of the same type and in the same graph position in the two graphs.</a></div>
+      <div class="B_-_Body"><a name="2722167">For this example:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722168">The following entities are logically the same and the matcher classes add these to the matched set: </a><span class="cv_-_computer_voice">Policy</span>, <span class="cv_-_computer_voice">RiskUnit</span>, <span class="cv_-_computer_voice">Coverage</span>, <span class="cv_-_computer_voice">ClaimContactRole</span>, <span class="cv_-_computer_voice">ClaimContact</span>, <span class="cv_-_computer_voice">Person</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722169">The </a><span class="cv_-_computer_voice">StatCode</span> object is absent in the new policy and thus becomes part of the set of removed objects.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="2722170">The </a><span class="cv_-_computer_voice">Endorsement</span> from the new policy object is absent in the old policy and thus becomes part of the set of added objects.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="2722171">After the policy comparison, ClaimCenter must find all links between the group of policy objects and the group of non-policy claim objects. In this simplified example, the links are Claim → Policy and Exposure → Coverage. These are the foreign key references that ClaimCenter must relink as part of completing policy refresh. </a></div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="2722178">In a real-world example, there might also be links from policy objects to claim objects.</a></div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

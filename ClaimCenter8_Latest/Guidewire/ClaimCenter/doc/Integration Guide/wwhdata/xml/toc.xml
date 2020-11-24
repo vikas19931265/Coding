@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebWorksHelpTOC version="5.0" xmlns="urn:WebWorks-Help-TOC-Schema">
+  <i t="About ClaimCenter Documentation" l="1">
+    <i t="Conventions in This Document" l="1#2121726" />
+    <i t="Support" l="1#2121769" />
+  </i>
+  <i t="Overview of Integration" l="2#1012431">
+    <i t="Integration Overview" l="3">
+      <i t="Overview of Integration Methods" l="4" />
+      <i t="Important Information about ClaimCenter Web Services" l="5">
+        <i t="Web Service Documentation for Each Type of Web Services" l="5#2158321" />
+      </i>
+      <i t="Preparing for Integration Development" l="6" />
+      <i t="Integration Documentation Overview" l="7">
+        <i t="API Reference Javadoc Documentation" l="7#1391775" />
+        <i t="Gosu Generated Documentation" l="7#2109113" />
+        <i t="Using Javadoc-formatted Documentation" l="7#2026686" />
+        <i t="Data Dictionary Documentation" l="7#2109175" />
+      </i>
+      <i t="Regenerating Integration Libraries" l="8" />
+      <i t="What are Required Files for Integration Programmers?" l="9">
+        <i t="New Entity Syntax Depends on Context" l="9#2158856" />
+      </i>
+      <i t="Public IDs and Integration Code" l="10">
+        <i t="Creating Your Own Public IDs" l="10#2157649" />
+      </i>
+    </i>
+  </i>
+  <i t="Web Services" l="11#1012431">
+    <i t="Web Services Introduction" l="12">
+      <i t="What are Web Services?" l="13">
+        <i t="Publish or Consume Web Services from Gosu" l="13#3560858" />
+        <i t="Web Service Types: WS-I versus RPCE" l="13#3560310" />
+        <i t="Finding the Best Web Service Documentation for Your Needs" l="13#3561620" />
+      </i>
+      <i t="What Happens During a Web Service Call?" l="14" />
+      <i t="Reference of All Built-in Web Services" l="15" />
+    </i>
+    <i t="Publishing Web Services (WS-I)" l="16">
+      <i t="WS-I Web Service Publishing Overview" l="17">
+        <i t="Designing Your Web Services" l="17#3437751" />
+        <i t="Differences Between Publishing RPCE and WS-I Web Services" l="17#3551487" />
+        <i t="Committing Entity Data to the Database Using a Bundle" l="17#3701214" />
+        <i t="Serializable Gosu Classes Must Be Final and Have @WsiExportable Annotation" l="17#3701729" />
+        <i t="WS-I Web Service Publishing Quick Reference" l="18" />
+        <i t="WS-I Web Service Publishing Annotation Reference" l="18#3697953" />
+      </i>
+      <i t="Publishing WS-I Web Services" l="19">
+        <i t="Declaring the Namespace for a WS-I Web Service" l="19#3563451" />
+        <i t="Specifying Minimum Run Level for a WS-I Web Service" l="19#3550258" />
+        <i t="Specifying Required Permissions for a WS-I Web Service" l="19#3550268" />
+        <i t="Overriding a Web Service Method Name or Visibility" l="19#3581442" />
+        <i t="WS-I Web Service Invocation Context" l="19#3597493" />
+      </i>
+      <i t="Testing WS-I Web Services with wsi.local" l="20">
+        <i t="Writing Unit Tests for Your Web Service" l="20#3563171" />
+      </i>
+      <i t="Generating WS-I WSDL" l="21">
+        <i t="Getting WS-I WSDL from a Running Server" l="21#3550338" />
+        <i t="Generating WS-I WSDL On Disk" l="21#3578168" />
+        <i t="Special Annotation to Generate WSDL On Disk" l="21#3631622" />
+        <i t="Command Line tool to Generate WSDL On Disk" l="21#3629939" />
+        <i t="Generating SOAP APIs for Use with Unit Tests From Gosu" l="21#3578807" />
+      </i>
+      <i t="Adding Advanced Security Layers to a WS-I Web Service" l="22">
+        <i t="Data Stream Transformations" l="22#3748909" />
+        <i t="WS-I Web Services Authentication Plugin" l="22#3699369" />
+      </i>
+      <i t="Checking for Duplicate External Transaction IDs" l="23" />
+      <i t="Request or Response XML Structural Transformations" l="24" />
+      <i t="Reference Additional Schemas in Your Published WSDL" l="25" />
+      <i t="Validate Requests Using Additional Schemas as Parse Options" l="26" />
+      <i t="Invocation Handlers for Implementing Preexisting WSDL" l="27">
+        <i t="Adding an Invocation Handler for Preexisting WSDL" l="27#3630482" />
+        <i t="Example of an Invocation Handler for Preexisting WSDL" l="27#3630696" />
+        <i t="Invocation Handler Profiling, Run Levels, Permissions, and Transaction IDs" l="27#3750848" />
+      </i>
+      <i t="Locale Support" l="28" />
+      <i t="Setting Response Serialization Options, Including Encodings" l="29" />
+      <i t="Exposing Typelists and Enumerations As String Values" l="30" />
+      <i t="Transforming a Generated Schema" l="31" />
+      <i t="Login WS-I Authentication Confirmation" l="32" />
+      <i t="Stateful WS-I Session Affinity Using Cookies" l="33" />
+      <i t="Calling a ClaimCenter WS-I Web Service from Java" l="34">
+        <i t="Calling Web Services using Java 1.6 and wsimport" l="34#3698746" />
+        <i t="Adding HTTP Basic Authentication in Java" l="35" />
+        <i t="Adding SOAP Header Authentication in Java" l="36" />
+      </i>
+    </i>
+    <i t="Calling WS-I Web Services from Gosu" l="37">
+      <i t="Consuming WS-I Web Service Overview" l="37#2001852">
+        <i t="Loading WS-I WSDL Locally Using Studio Web Service Collections" l="37#2065950" />
+        <i t="Loading WS-I WSDL Directly into the File System" l="37#2064509" />
+        <i t="How Does Gosu Process WSDL?" l="37#2013784" />
+        <i t="Learning Gosu XML APIs" l="37#2047933" />
+        <i t="What Gosu Creates from Your WSDL" l="37#2095432" />
+        <i t="A Real Example: Weather" l="37#2047856" />
+        <i t="Request XML Complexity Affects Appearance of Method Arguments" l="37#2069072" />
+      </i>
+      <i t="Adding WS-I Configuration Options" l="38">
+        <i t="HTTP Authentication" l="38#2064831" />
+        <i t="Guidewire Authentication" l="38#2066090" />
+        <i t="Suite Configuration File Overrides URLs to Guidewire Applications" l="38#2056905" />
+        <i t="Setting Guidewire Transaction IDs" l="38#2093412" />
+        <i t="Setting a Timeout" l="38#2093406" />
+        <i t="Custom SOAP Headers" l="38#2052743" />
+        <i t="Server Override URL" l="38#2056586" />
+        <i t="Setting XML Serialization Options" l="38#2091456" />
+        <i t="Setting Locale in a Guidewire Application" l="38#2066122" />
+        <i t="Implementing Advanced Web Service Security with WSS4J" l="38#2052910" />
+      </i>
+      <i t="One-Way Methods" l="39" />
+      <i t="Asynchronous Methods" l="40" />
+      <i t="MTOM Attachments with Gosu as Web Service Client" l="41" />
+    </i>
+    <i t="Publishing Web Services (RPCE)" l="42">
+      <i t="RPCE Web Service Overview" l="43">
+        <i t="Differences Between Publishing RPCE and WS-I Web Services" l="43#3544953" />
+        <i t="Designing RPC Encoded (RPCE) Web Services" l="43#3547646" />
+        <i t="Which Objects and Properties Work With RPCE Web Services?" l="43#3559350" />
+        <i t="Web Service Types Must Have Unique Names" l="43#3545283" />
+        <i t="SOAP Entity Terminology Notes" l="43#3545298" />
+      </i>
+      <i t="Publishing a RPCE Web Service" l="44">
+        <i t="Optional Web Service Publishing Options" l="44#3389077" />
+        <i t="Declaring Exceptions" l="44#3470392" />
+      </i>
+      <i t="Writing Web Services that Use Entities" l="45">
+        <i t="Querying for Entity Data in Your Web Service" l="45#3390746" />
+        <i t="Committing Entity Data in Your Web Service" l="45#3621968" />
+      </i>
+      <i t="Testing Your RPCE Web Service With soap.local Namespace" l="46">
+        <i t="Extended Web Service Testing" l="46#3405216" />
+      </i>
+      <i t="Calling Your Published RPCE Web Service from Java" l="47">
+        <i t="More Java Web Service API Client Examples" l="47#3317790" />
+        <i t="Setting Timeout with Java API Locator" l="47#3450568" />
+      </i>
+      <i t="Calling Your RPCE Web Service from Microsoft .NET WSE 3.0" l="48" />
+      <i t="Calling Your RPCE Web Service from Microsoft .NET WSE 2.0" l="49" />
+      <i t="Calling Published RPCE Web Services From Other Languages" l="50">
+        <i t="Calling SOAP in Conversational Mode from Other Languages" l="50#3437272" />
+        <i t="Calling SOAP in Non-conversational Mode from Other Languages" l="50#3437320" />
+        <i t="How SOAP Headers Appear in the SOAP Envelope" l="50#3437418" />
+      </i>
+      <i t="Typecodes and Web Services in RPCE Web Services" l="51" />
+      <i t="Public IDs and RPCE Web Services" l="52">
+        <i t="Using Public IDs With API Functions" l="52#1401993" />
+        <i t="As a SOAP Client, Refer to an Entity By Reference with a Public ID" l="52#1402026" />
+        <i t="Identification Exceptions, Particularly During Entity Add" l="52#3450048" />
+      </i>
+      <i t="Endpoint URLs and Generated WSDL in RPCE Web Services" l="53">
+        <i t="Dynamic WSDL and SOAP API Library WSDL" l="53#1402127" />
+        <i t="Apache Axis Customization" l="53#3339597" />
+      </i>
+      <i t="Web Services Using ClaimCenter Clusters" l="54">
+        <i t="Optimizing for Load Balancing" l="54#3543165" />
+        <i t="Built-in Web Services With Special Cluster Behaviors" l="54#3543100" />
+      </i>
+      <i t="SOAP Faults (Exceptions) in RPCE Web Services" l="55">
+        <i t="Programming Context and Package Hierarchy for SOAP Exceptions" l="55#3589480" />
+        <i t="Remote and Client-side SOAP Exceptions" l="55#3472702" />
+        <i t="Web Service Client SOAP Exception Troubleshooting" l="55#1447306" />
+      </i>
+      <i t="Writing Command Line Tools that Call RPCE Web Services" l="56">
+        <i t="Base Java Class for Command Line Tools that Call RPCE Web Services" l="56#3602041" />
+        <i t="Example Command Line Tool that Calls RPCE Web Services" l="56#3432027" />
+      </i>
+    </i>
+    <i t="Calling RPCE Web Services from Gosu" l="57">
+      <i t="Calling External RPCE Web Services" l="58">
+        <i t="Dynamic SOAP Authentication Handlers" l="59" />
+      </i>
+      <i t="Calling RPCE Web Service from Gosu: ICD-9 Example" l="60" />
+    </i>
+    <i t="General Web Services" l="61">
+      <i t="Mapping Typecodes to External System Codes" l="62">
+        <i t="Using Web Services to Translate Typecodes" l="62#3387279" />
+        <i t="Using Gosu or Java to Translate Typecodes" l="62#3399393" />
+      </i>
+      <i t="Importing Administrative Data" l="63">
+        <i t="CSV Import and Conversion" l="63#3400119" />
+        <i t="Advanced Import or Export" l="63#3400174" />
+      </i>
+      <i t="Maintenance Web Services" l="64">
+        <i t="Starting or Querying Batch Processes Using Web Services" l="64#2719145" />
+        <i t="Starting or Stopping Startable Plugins" l="64#3428855" />
+        <i t="Manipulating Work Queues Using Web Services" l="64#3429410" />
+        <i t="Marking Claims for Archive" l="64#3420803" />
+        <i t="Marking Claims for Purging Using Web Services" l="64#3420810" />
+      </i>
+      <i t="System Tools Web Services" l="65">
+        <i t="Getting and Setting the Run Level" l="65#3387484" />
+        <i t="Getting Server and Schema Versions" l="65#3265756" />
+      </i>
+      <i t="Workflow Web Services" l="66" />
+      <i t="Profiling Web Services" l="67" />
+    </i>
+    <i t="Claim-related Web Services" l="68">
+      <i t="Claim Web Service APIs and Data Transfer Objects" l="69" />
+      <i t="Adding First Notice of Loss from External Systems" l="70" />
+      <i t="Getting a Claim from External Systems" l="71" />
+      <i t="Importing a Claim from XML from External Systems" l="72" />
+      <i t="Migrating a Claim from External Systems" l="73" />
+      <i t="Getting Information from Claims/Exposures from External Systems" l="74" />
+      <i t="Claim Bulk Validate from External Systems" l="75" />
+      <i t="Previewing Assignments from External Systems" l="76" />
+      <i t="Closing and Reopening a Claim from External Systems" l="77" />
+      <i t="Policy Refresh from External Systems" l="77#3443125" />
+      <i t="Add User Permissions on a Claim from External Systems" l="78" />
+      <i t="Archiving and Restoring Claims from External Systems" l="79" />
+      <i t="Managing Activities from External Systems" l="80" />
+      <i t="Adding a Contact from External Systems" l="81" />
+      <i t="Adding a Document from External Systems" l="82" />
+      <i t="Adding an Exposure from External Systems" l="83" />
+      <i t="Getting an Exposure from External Systems" l="84" />
+      <i t="Closing and Reopening an Exposure from External Systems" l="85" />
+      <i t="Adding to Claim History from External Systems" l="86" />
+      <i t="Creating a Note from External Systems" l="87" />
+    </i>
+    <i t="Servlets" l="88">
+      <i t="Implementing Servlets" l="88#2421993">
+        <i t="Critical Security Issues with Servlets" l="88#2398423" />
+        <i t="Creating a Simple Servlet Entrypoint" l="88#2398530" />
+        <i t="Example Servlet with Basic HTTP Authentication" l="88#2398583" />
+      </i>
+    </i>
+  </i>
+  <i t="Plugins" l="89#1012431">
+    <i t="Plugin Overview" l="90">
+      <i t="Overview of ClaimCenter Plugins" l="91">
+        <i t="Implementing Plugin Interfaces" l="91#2832392" />
+        <i t="Built-in Plugin Implementation Classes" l="91#2836381" />
+        <i t="Registering a Plugin Implementation Class" l="91#2475371" />
+        <i t="Deploying Java Files (Including Java Code Called From Gosu Plugins)" l="91#2844152" />
+        <i t="Additional Information By Plugin Type" l="91#2853010" />
+      </i>
+      <i t="Error Handling in Plugins" l="92" />
+      <i t="Temporarily Disabling a Plugin" l="93" />
+      <i t="Example Gosu Plugin" l="94" />
+      <i t="Special Notes For Java Plugins" l="95">
+        <i t="Which Libraries to Compile Java Code Against" l="95#2561134" />
+        <i t="Where To Put Java Class and Library Files Needed By Java Plugins" l="95#2805238" />
+        <i t="Useful Java Plugin APIs" l="95#2557913" />
+      </i>
+      <i t="Getting Plugin Parameters from the Plugins Registry Editor" l="96" />
+      <i t="Writing Plugin Templates For Plugins That Take Template Data" l="97" />
+      <i t="Plugin Registry APIs" l="98" />
+      <i t="Plugin Thread Safety" l="99">
+        <i t="Avoid Singletons Due to Thread-Safety Issues" l="99#2424787" />
+        <i t="Design Plugin Implementations to Support Server Clusters" l="99#2629924" />
+      </i>
+      <i t="Reading System Properties in Plugins" l="100" />
+      <i t="Do Not Call Local Web Services From Plugins" l="101" />
+      <i t="Creating Unique Numbers in a Sequence" l="102" />
+      <i t="Restarting and Testing Tips for Plugin Developers" l="103" />
+      <i t="Summary of All ClaimCenter Plugins" l="104" />
+    </i>
+    <i t="Authentication Integration" l="105">
+      <i t="Overview of User Authentication Interfaces" l="106" />
+      <i t="User Authentication Source Creator Plugin" l="107" />
+      <i t="User Authentication Service Plugin" l="108">
+        <i t="Example Authentication Service Authentication" l="108#1454359" />
+      </i>
+      <i t="Deploying User Authentication Plugins" l="109" />
+      <i t="Database Authentication Plugins" l="110" />
+      <i t="ABAuthenticationPlugin for ContactManager Authentication" l="111" />
+    </i>
+    <i t="Document Management" l="112">
+      <i t="Document Management Overview" l="113">
+        <i t="Document Storage Overview" l="113#2297393" />
+        <i t="Document Production Overview" l="113#2284082" />
+        <i t="Document Retrieval Mode Overview" l="113#2336760" />
+      </i>
+      <i t="Choices for Storing Document Content and Metadata" l="114">
+        <i t="Deciding Where to Store Document Content and Metadata" l="114#2287104" />
+        <i t="Choosing Internal or External Metadata Permanently Affects Some Objects" l="114#2336042" />
+      </i>
+      <i t="Document Storage Plugin Architecture" l="115" />
+      <i t="Implementing a Document Content Source for External DMS" l="116">
+        <i t="Adding Documents and Metadata" l="116#1882176" />
+        <i t="Retrieving Documents" l="116#1881450" />
+        <i t="Checking for Document Existence" l="116#2151190" />
+        <i t="Removing Documents" l="116#1881470" />
+        <i t="Updating Documents and Metadata" l="116#1881479" />
+      </i>
+      <i t="Storing Document Metadata In an External DMS" l="117" />
+      <i t="The Built-in Document Storage Plugins" l="118">
+        <i t="Built-in Document Storage Directory and File Name Patterns" l="118#2098237" />
+        <i t="Remember to Store Public IDs in the External System" l="118#2151658" />
+      </i>
+      <i t="Asynchronous Document Storage" l="119">
+        <i t="Configuring Asynchronous Document Storage" l="119#2123375" />
+      </i>
+      <i t="APIs to Attach Documents to Business Objects" l="120">
+        <i t="Gosu APIs to Attach Documents to Business Objects" l="120#2288712" />
+        <i t="Web Service APIs to Attach Documents to Business Objects" l="120#2288723" />
+      </i>
+      <i t="Retrieval and Rendering of PDF or Other Input Stream Data" l="121" />
+    </i>
+    <i t="Document Production" l="122">
+      <i t="Document Production Overview" l="123">
+        <i t="User Interface Flow for Document Production" l="123#1884944" />
+        <i t="Document Production Plugins" l="123#2145153" />
+        <i t="Configuring Document Production and MIME Types" l="123#2181125" />
+      </i>
+      <i t="Document Template Descriptors" l="124">
+        <i t="XML Format of Built-in IDocumentTemplateSerializer" l="124#1848283" />
+        <i t="Template Source Reference Implementation" l="124#1883515" />
+        <i t="Built-in Document Production Plugins" l="124#1883694" />
+      </i>
+      <i t="Generating Documents from Gosu" l="125">
+        <i t="Important Notes About Cached Document UIDs" l="125#2083659" />
+      </i>
+      <i t="Template Web Service APIs" l="126" />
+    </i>
+    <i t="Geographic Data Integration" l="127">
+      <i t="Geocoding Plugin Integration" l="128">
+        <i t="How ClaimCenter Uses Geocode Data" l="128#2117797" />
+        <i t="What the Geocoding Plugin Does" l="128#2142070" />
+        <i t="Synchronous and Asynchronous Calls to the Geocoding Plugin" l="128#2105438" />
+        <i t="Using a Proxy Server with the Geocoding Plugin" l="128#2129248" />
+        <i t="The Built-in Bing Maps Geocoding Plugin" l="128#2058342" />
+        <i t="Batch Geocoding Only Some Addresses" l="128#2115456" />
+      </i>
+      <i t="Steps to Deploy a Geocoding Plugin" l="129">
+        <i t="Step 1: Implement the Plugin Interface in Gosu" l="129#1927392" />
+        <i t="Step 2: Register the Plugin Implementation in Studio" l="129#2132712" />
+        <i t="Step 3: Enable the User Interface for Desired Geocoding Features" l="129#2117883" />
+      </i>
+      <i t="Writing a Geocoding Plugin" l="130">
+        <i t="Using the Abstract Geocode Java Class" l="130#2100849" />
+        <i t="High-Level Steps to Writing a Geocoding Plugin Implementation" l="130#2100887" />
+        <i t="Geocoding an Address" l="131" />
+        <i t="Getting Driving Directions" l="132" />
+        <i t="Getting a Map for an Address" l="133" />
+        <i t="Getting an Address from Coordinates (Reverse Geocoding)" l="134" />
+      </i>
+      <i t="Geocoding Status Codes" l="135" />
+    </i>
+    <i t="Reinsurance Integration" l="136">
+      <i t="Reinsurance Overview" l="137" />
+      <i t="Reinsurance Plugin" l="138">
+        <i t="Implementations of the Reinsurance Plugin" l="138#3302340" />
+        <i t="Enabling the Reinsurance Plugin" l="138#3302232" />
+      </i>
+    </i>
+    <i t="Encryption Integration" l="139">
+      <i t="Encryption Integration Overview" l="140">
+        <i t="Setting Encrypted Properties" l="140#2380624" />
+        <i t="Querying Encrypted Properties" l="140#2384904" />
+        <i t="Duplicate Check Search Template and Encryption" l="140#2428135" />
+        <i t="Writing Your Encryption Plugin" l="140#2359408" />
+        <i t="Installing Your Encryption Plugin" l="140#2390102" />
+        <i t="Adding or Removing Encrypted Properties" l="140#2387610" />
+      </i>
+      <i t="Changing Your Encryption Algorithm Later" l="141">
+        <i t="Changing Your Encryption Algorithm" l="141#2418196" />
+      </i>
+      <i t="Encryption Changes with Snapshots" l="142" />
+      <i t="Encryption Features for Staging Tables" l="143" />
+    </i>
+    <i t="Management Integration" l="144">
+      <i t="Management Integration Overview" l="145" />
+      <i t="The Abstract Management Plugin Interface" l="146" />
+      <i t="Integrating With the Included JMX Management Plugin" l="147" />
+    </i>
+    <i t="Other Plugin Interfaces" l="148">
+      <i t="Claim Number Generator Plugin" l="149" />
+      <i t="Approval Plugin" l="150" />
+      <i t="Automatic Address Completion and Fill-in Plugin" l="151" />
+      <i t="Phone Number Normalizer Plugin" l="152" />
+      <i t="Testing Clock Plugin (Only For Non-Production Servers)" l="153">
+        <i t="Using the Testing Clock Plugin" l="153#2403069" />
+        <i t="Testing Clock Plugin in ClaimCenter Clusters" l="153#2403050" />
+      </i>
+      <i t="Work Item Priority Plugin" l="154" />
+      <i t="Official IDs Mapped to Tax IDs Plugin" l="155" />
+      <i t="Preupdate Handler Plugin" l="156" />
+      <i t="Defining Base URLs for Fully-Qualified Domain Names" l="157" />
+      <i t="Exception and Escalation Plugins" l="158" />
+    </i>
+    <i t="Startable Plugins" l="159">
+      <i t="What are Startable Plugins?" l="160">
+        <i t="Writing a Startable Plugin" l="160#2422353" />
+        <i t="Configuring Startable Plugins to Run on All Servers" l="160#2422484" />
+        <i t="Important Notes for Java and Startable Plugins" l="160#2422605" />
+        <i t="Persistence and Startable Plugins" l="160#2422643" />
+        <i t="Starting and Stopping Startable Plugins" l="160#2422647" />
+      </i>
+    </i>
+    <i t="Multi-threaded Inbound Integration" l="161">
+      <i t="Multi-threaded Inbound Integration Overview" l="162" />
+      <i t="Inbound Integration Configuration XML File" l="163">
+        <i t="Thread Pool Configuration" l="163#2269843" />
+        <i t="Configuring a List of Inbound Integrations" l="163#2276560" />
+      </i>
+      <i t="Inbound File Integration" l="164">
+        <i t="Example File Integration" l="164#2284704" />
+      </i>
+      <i t="Inbound JMS Integration" l="165" />
+      <i t="Custom Inbound Integrations" l="166">
+        <i t="Writing a Work Agent Implementation" l="166#2245005" />
+        <i t="Installing a New Custom Inbound Integration" l="166#2260381" />
+      </i>
+      <i t="Understanding the Polling Interval and Throttle Interval" l="167" />
+    </i>
+  </i>
+  <i t="Messaging" l="168#1012431">
+    <i t="Messaging and Events" l="169">
+      <i t="Messaging Overview" l="170">
+        <i t="Event" l="170#4197660" />
+        <i t="Message" l="170#4207393" />
+        <i t="Message History" l="170#4307997" />
+        <i t="Messaging Destinations" l="170#4207944" />
+        <i t="Root Object" l="170#4207420" />
+        <i t="Primary Entity and Primary Object" l="170#4207620" />
+        <i t="Acknowledgement (ACK and NAK)" l="170#4197681" />
+        <i t="Safe Ordering" l="170#4307737" />
+        <i t="Transport Neutrality" l="170#4307758" />
+        <i t="Messaging Flow Overview" l="170#3012350" />
+        <i t="Messaging Flow Details" l="170#3036501" />
+        <i t="Important Entity Data Restrictions in Messaging Rules and Messaging Plugins" l="170#4367010" />
+        <i t="Database Transactions When Creating Messages" l="170#4236951" />
+        <i t="Messaging in ClaimCenter Clusters" l="170#4151357" />
+        <i t="Messaging Plugins Must Not Call SOAP APIs on the Same Server" l="170#3812734" />
+      </i>
+      <i t="Message Destination Overview" l="171">
+        <i t="Handling Acknowledgements" l="171#3006549" />
+        <i t="Messaging Database Transactions During Sending" l="171#3961747" />
+        <i t="Built-In Destinations" l="171#3683579" />
+      </i>
+      <i t="Filtering Events" l="172">
+        <i t="Validity and Rule-Based Event Filtering" l="172#4295872" />
+      </i>
+      <i t="List of Messaging Events in ClaimCenter" l="173">
+        <i t="Triggering Custom Event Names" l="173#4280184" />
+        <i t="Events for Contact Changes" l="173#4317543" />
+        <i t="Events for Special subobjects" l="173#4317609" />
+        <i t="Ordering Events" l="173#4317649" />
+        <i t="No Events from Import Tool" l="173#2212465" />
+      </i>
+      <i t="Generating New Messages in Event Fired Rules" l="174">
+        <i t="Saving Intermediate Values Across Rule Set Executions" l="174#3946802" />
+        <i t="Creating a Payload Using Gosu Templates" l="174#3946843" />
+        <i t="Setting a Message Root Object or Primary Object" l="174#4348048" />
+        <i t="Creating XML Payloads Using Guidewire XML (GX) Models" l="174#4348018" />
+        <i t="Using Java Code to Generate Messages" l="174#3946990" />
+        <i t="Saving Attributes of the Message" l="174#3946997" />
+        <i t="Handling Policy Changes on a Claim" l="174#4317780" />
+        <i t="Maximum Message Size" l="174#3947045" />
+      </i>
+      <i t="Message Ordering and Multi-Threaded Sending" l="175">
+        <i t="Ordering Non-safe-ordered Messages" l="175#4256778" />
+        <i t="If Multiple Events Fire, Which Message Sends First?" l="175#4260997" />
+        <i t="Message Ordering and Performance Tuning Details" l="175#4261012" />
+      </i>
+      <i t="Late Binding Data in Your Payload" l="176" />
+      <i t="Reporting Acknowledgements and Errors" l="177">
+        <i t="Message Sending Error Behaviors" l="177#4263294" />
+        <i t="Submitting Acks, Errors, and Duplicates from Messaging Plugins" l="177#4263397" />
+      </i>
+      <i t="Tracking a Specific Entity With a Message" l="178" />
+      <i t="Implementing Messaging Plugins" l="179">
+        <i t="Getting Message Transport Parameters from the Plugin Registry" l="179#3715751" />
+        <i t="Implementing a Message Request Plugin" l="179#3110432" />
+        <i t="Implementing a Message Transport Plugin" l="179#3715746" />
+        <i t="Implementing a Message Reply Plugin" l="179#3110489" />
+        <i t="Error Handling in Messaging Plugins" l="179#3138748" />
+        <i t="Handling Messaging Destination Suspend, Resume, Shutdown" l="179#3110658" />
+      </i>
+      <i t="Resynchronizing Messages for a Primary Object" l="180">
+        <i t="Resync and ClaimCenter Financials" l="180#4318003" />
+        <i t="How Resync Affects Pre-Update and Validation" l="180#4287344" />
+        <i t="Resync in ContactManager" l="180#4290024" />
+      </i>
+      <i t="Message Payload Mapping Utility for Java Plugins" l="181" />
+      <i t="Monitoring Messages and Handling Errors" l="182">
+        <i t="Error Handling Concepts" l="182#1443977" />
+        <i t="The Administration User Interface" l="182#4025330" />
+        <i t="Web Services for Handling Messaging Errors" l="182#1444065" />
+      </i>
+      <i t="Messaging Tools Web Service" l="183" />
+      <i t="Batch Mode Integration" l="184" />
+      <i t="Included Messaging Transports" l="185">
+        <i t="The Built-in Email Transport" l="185#3712712" />
+        <i t="Enabling the Built-in Console Transport" l="185#3161102" />
+      </i>
+    </i>
+  </i>
+  <i t="Financials" l="186#1012431">
+    <i t="Financials Integration" l="187">
+      <i t="Financial Transaction Status and Status Transitions" l="188">
+        <i t="How Do Status Transitions Happen?" l="188#3079348" />
+        <i t="Message Acknowledgement-based Status Transitions" l="188#3079483" />
+        <i t="In Event Fired Rules, Treat Status Transition as Final" l="188#3079478" />
+        <i t="Types of Transactions That Track Status" l="188#3107200" />
+        <i t="Debugging Financials Messaging" l="188#3140163" />
+      </i>
+      <i t="Claim Financials Web Services (ClaimFinancialsAPI)" l="189">
+        <i t="Claim Financials Web Service Data Transfer Objects (DTOs)" l="189#3300708" />
+        <i t="Check Status SOAP APIs" l="189#3348576" />
+        <i t="Check Void, Stop, Reissue, Deny SOAP APIs" l="189#3352471" />
+        <i t="Add and Import Claim Financials SOAP APIs" l="189#3348071" />
+        <i t="Multicurrency Foreign Exchange Adjustment SOAP APIs" l="189#3300779" />
+      </i>
+      <i t="Check Integration" l="190">
+        <i t="Check Status Transitions" l="190#3247357" />
+        <i t="Update Check Status" l="190#3300953" />
+        <i t="Voiding, Stopping, Denying, and Reissuing Checks" l="190#3300989" />
+        <i t="Check Scheduled Send Date Only Modifiable in Special Situations" l="191" />
+      </i>
+      <i t="Payment Transaction Integration" l="192">
+        <i t="Integration Events For Payment Recoding" l="192#3067812" />
+        <i t="Integration Payment Events for Check Transfer" l="192#3105786" />
+        <i t="Payment Integration Domain Methods (For Event Fired Rules)" l="192#3108958" />
+      </i>
+      <i t="Recovery Reserve Transaction Integration" l="193" />
+      <i t="Recovery Transaction Integration" l="194" />
+      <i t="Reserve Transaction Integration" l="195" />
+      <i t="Bulk Invoice Integration" l="196">
+        <i t="Bulk Invoice Validation" l="196#3114839" />
+        <i t="Bulk Invoice Web Service APIs" l="196#3122452" />
+        <i t="Bulk Invoice Processing Performance" l="196#3263650" />
+        <i t="Bulk Invoice (Top Level Entity) Status Transitions" l="196#3116504" />
+        <i t="Bulk Invoice Item Status Transitions" l="196#3262046" />
+        <i t="Bulk Invoice Batch Processes" l="196#3261787" />
+      </i>
+      <i t="Deduction Plugins" l="197">
+        <i t="Deduction Calculations for Checks" l="197#3265123" />
+        <i t="Handling Other Deductions" l="197#3264920" />
+      </i>
+      <i t="Initial Reserve Initialization for Exposures" l="198" />
+      <i t="Exchange Rate Integration" l="199">
+        <i t="Sample Exchange Rate Plugin Implementation" l="199#3239257" />
+        <i t="Invoking the Exchange Rate Plugin" l="199#3237518" />
+      </i>
+    </i>
+  </i>
+  <i t="Importing Claims Data" l="200#1012431">
+    <i t="Importing from Database Staging Tables" l="201">
+      <i t="Introduction to Database Staging Table Import" l="202">
+        <i t="Staging Tables" l="202#1568842" />
+        <i t="Zone Data" l="202#1932702" />
+        <i t="Your Conversion Tool" l="202#2123116" />
+        <i t="Integrity Checks" l="202#1833457" />
+        <i t="Logical Units of Work, LUW, and LUWIDs" l="202#2123132" />
+        <i t="Load Error Tables" l="202#1635002" />
+        <i t="Exclusion Table" l="202#2123179" />
+        <i t="Load History Tables" l="202#1568928" />
+        <i t="Load Commands and Loadable Entities" l="202#1608329" />
+      </i>
+      <i t="Overview of a Typical Database Import" l="203" />
+      <i t="Database Import Performance and Statistics" l="204" />
+      <i t="Table Import Tools" l="205">
+        <i t="Other Import-Related Tools" l="205#1797045" />
+      </i>
+      <i t="Populating the Staging Tables" l="206">
+        <i t="Important Properties and Concepts for Database Import" l="206#2123589" />
+        <i t="Indexes in Staging Tables" l="206#2123736" />
+        <i t="Special Requirements for Some ClaimCenter Entities" l="206#2129091" />
+      </i>
+      <i t="Data Integrity Checks" l="207" />
+      <i t="Table Import Tips and Troubleshooting" l="208" />
+      <i t="Staging Table Import of Encrypted Properties" l="209" />
+    </i>
+    <i t="FNOL Mapper" l="210">
+      <i t="FNOL Mapper Overview" l="211">
+        <i t="Import ACORD XML Data with the FNOL Mapper" l="211#2037035" />
+        <i t="Import Custom XML Data with the FNOL Mapper" l="211#2037237" />
+      </i>
+      <i t="FNOL Mapper Detailed Flow" l="212" />
+      <i t="Structure of FNOL Mapper Classes" l="213">
+        <i t="Configuration Files and Typecode Mapping" l="213#2001704" />
+        <i t="ACORD Utility Class with Constant Definitions" l="213#1999222" />
+        <i t="Contact Manager" l="213#1999240" />
+        <i t="ACORD XSD Type Enhancements" l="213#1997926" />
+        <i t="FNOL Mapper and Built-in ACORD Class Diagram" l="213#1999846" />
+      </i>
+      <i t="Example FNOL Mapper Customizations" l="214">
+        <i t="Add Mapping for New Exposure Type" l="214#2000628" />
+        <i t="Add Additional Properties to an Exposure" l="214#2000748" />
+        <i t="Create an Entirely New Mapper For Non-ACORD Data" l="214#2000871" />
+      </i>
+    </i>
+  </i>
+  <i t="ISO and Metropolitan" l="215#1012431">
+    <i t="Insurance Services Office (ISO) Integration" l="216">
+      <i t="ISO Integration Overview" l="217">
+        <i t="Claim-based Messaging, Legacy Support for Exposures" l="217#1783150" />
+        <i t="Match Reports" l="217#1783370" />
+        <i t="Implementation Overview" l="217#1448080" />
+        <i t="Reference Material for ISO Integration Work" l="217#1751801" />
+        <i t="What To Know About ISO Mapping" l="217#1766770" />
+        <i t="Implementation Technical Overview of ClaimSearch Web Service" l="217#1761153" />
+        <i t="Enabling ISO Integration" l="217#1762744" />
+      </i>
+      <i t="ISO Implementation Checklist" l="218" />
+      <i t="ISO Network Architecture" l="219">
+        <i t="Basic ISO Message Types" l="219#1511891" />
+        <i t="ISO Network Layout and URLs" l="219#1511809" />
+        <i t="ISO and ClaimCenter Clusters" l="219#1764870" />
+      </i>
+      <i t="ISO Activity and Decision Timeline" l="220">
+        <i t="ISO Activity and Decision Diagrams" l="220#1512252" />
+      </i>
+      <i t="ISO Authentication and Security" l="221" />
+      <i t="ISO Proxy Server Setup" l="222" />
+      <i t="ISO Validation Level" l="223" />
+      <i t="ISO Messaging Destination" l="224" />
+      <i t="ISO Receive Servlet and the ISO Reply Plugin" l="225" />
+      <i t="ISO Properties on Entities" l="226" />
+      <i t="ISO User Interface" l="227" />
+      <i t="ISO Properties File" l="228" />
+      <i t="ISO Type Code and Coverage Mapping" l="229" />
+      <i t="ISO Payload XML Customization" l="230">
+        <i t="ISO Payload Generation Properties Reference" l="230#1787215" />
+      </i>
+      <i t="ISO Match Reports" l="231" />
+      <i t="ISO Exposure Type Changes" l="232" />
+      <i t="ISO Date Search Range and Resubmitting Exposures" l="233" />
+      <i t="ISO Integration Troubleshooting" l="234">
+        <i t="ISO-Specific Error Codes" l="234#1769695" />
+        <i t="Testing Automatic Updates" l="234#1751388" />
+      </i>
+      <i t="ISO Formats and Feeds" l="235">
+        <i t="Migrating Old Claims Systems to ClaimCenter" l="235#1768517" />
+      </i>
+    </i>
+    <i t="Metropolitan Reporting Bureau Integration" l="236">
+      <i t="Overview of ClaimCenter-Metropolitan Integration" l="237">
+        <i t="ClaimCenter Metropolitan Integration Architecture" l="237#1927533" />
+      </i>
+      <i t="Metropolitan Configuration" l="238">
+        <i t="Enabling Metropolitan Configuration" l="238#1926703" />
+        <i t="Metropolitan Properties File" l="238#1926652" />
+        <i t="ClaimCenter Display Keys for Metropolitan Reports" l="238#2023136" />
+        <i t="Configuring Activity Patterns" l="238#1928333" />
+        <i t="Configuring the Messaging Plugin Retries" l="238#1928850" />
+      </i>
+      <i t="Metropolitan Report Templates and Report Types" l="239">
+        <i t="Metro Report Types and Loss Types" l="239#1928009" />
+        <i t="Editing Gosu Template Files" l="239#2103086" />
+        <i t="Mapping Report Types to Gosu Template Files" l="239#1927998" />
+        <i t="Specific Report Template Notes" l="239#1927034" />
+        <i t="Adding New Report Types" l="239#1928731" />
+      </i>
+      <i t="Metropolitan Entities, Typelists, Properties, and Statuses" l="240">
+        <i t="MetroReport Entity" l="240#2081798" />
+        <i t="MetroReportType Typelist" l="240#2101650" />
+        <i t="MetroAgencyType Typelist" l="240#1926086" />
+        <i t="Document Entity" l="240#2081821" />
+        <i t="Metropolitan Report Status and How It Changes" l="240#1926099" />
+        <i t="Customizing Metropolitan Timeouts" l="240#2101001" />
+      </i>
+      <i t="Metropolitan Error Handling" l="241" />
+    </i>
+  </i>
+  <i t="Policy and Contact Integrations" l="242#1012431">
+    <i t="Contact Integration" l="243">
+      <i t="Integrating with a Contact Management System" l="244">
+        <i t="Asynchronous Messaging with the Contact Management System" l="244#2190289" />
+        <i t="ClaimCenter Synchronizing and Mapping" l="244#2202005" />
+        <i t="Contact Retrieval" l="244#2191442" />
+        <i t="Contact Searching" l="244#2191492" />
+        <i t="Finding Duplicates" l="244#2094918" />
+        <i t="Adding Contacts to the External System" l="244#2111468" />
+        <i t="Updating Contacts in the External System" l="244#2192316" />
+      </i>
+      <i t="Configuring Contact Links" l="245" />
+      <i t="Contact Web Service APIs" l="246">
+        <i t="Delete a Contact" l="246#2099526" />
+        <i t="Update Contacts" l="246#2084923" />
+        <i t="Merge Contacts" l="246#2084957" />
+        <i t="Handling Rejection and Approval of Pending Changes" l="246#2193128" />
+      </i>
+    </i>
+    <i t="Claim and Policy Integration" l="247">
+      <i t="Policy System Notifications" l="248">
+        <i t="General Purpose Notification System" l="248#2720736" />
+        <i t="Large Loss Notification Implementation Details" l="248#2720753" />
+        <i t="Enabling Large Loss Notification" l="248#2720834" />
+        <i t="Using a Policy Administration System Other than PolicyCenter" l="248#2720849" />
+        <i t="Adding Other Notification Types" l="248#2720877" />
+      </i>
+      <i t="Policy Search Plugin" l="249">
+        <i t="Modifying New Claim Wizard to Reload Policy" l="249#2721114" />
+      </i>
+      <i t="Claim Search Web Service For Policy System Integration" l="250" />
+      <i t="PolicyCenter Product Model Import into ClaimCenter" l="251">
+        <i t="Configuring the ClaimCenter Typelist Generator" l="251#2122070" />
+        <i t="Running the ClaimCenter Typelist Generator" l="251#2124488" />
+        <i t="Using Generated Typelists in ClaimCenter" l="251#2137454" />
+        <i t="Typelist Localization" l="251#2136891" />
+      </i>
+      <i t="Catastrophe Policy Location Download" l="252">
+        <i t="Catastrophe Policy Location Overview" l="252#2721316" />
+        <i t="Catastrophe Areas of Interest Data Model" l="252#2721328" />
+        <i t="Catastrophe Policy Location Download Processing" l="252#2721374" />
+      </i>
+      <i t="Policy Location Search Plugin" l="253" />
+      <i t="Policy Refresh Overview" l="254">
+        <i t="Preserving Relationships Between Claims and Policies with Policy Refresh" l="254#2721442" />
+        <i t="Matching Overview" l="254#2721476" />
+        <i t="Differences Between Policy Refresh and Policy Select" l="254#2721488" />
+        <i t="How Policy Refresh Handles Special Situations" l="254#2721494" />
+      </i>
+      <i t="Policy Refresh Plugins and Configuration Classes" l="255" />
+      <i t="Policy Refresh Steps and Associated Implementation" l="256" />
+      <i t="Determining the Extent of the Policy Graph" l="257">
+        <i t="The Policy Graph within a Claim" l="257#2721790" />
+        <i t="The Policy Refresh Plugin Determines the Objects in the Policy Graph" l="257#2721799" />
+        <i t="Extending the Data Model for the Policy Graph" l="257#2721836" />
+      </i>
+      <i t="Policy Refresh Entity Matcher Details" l="258">
+        <i t="Matching Related Objects" l="258#2721851" />
+        <i t="Registering Matcher Classes" l="258#2721861" />
+        <i t="Best Practices for Entity Matcher Classes" l="258#2721883" />
+        <i t="Entity Matcher Classes in the Base Configuration" l="258#2721894" />
+        <i t="Example of Changing Matching Criteria" l="258#2721942" />
+      </i>
+      <i t="Policy Refresh Relinking Details" l="259" />
+      <i t="Policy Refresh Policy Comparison Display" l="260">
+        <i t="Difference Objects" l="260#2722190" />
+        <i t="Difference Display Objects" l="261" />
+        <i t="Configuring Visibility in the Comparison Tree" l="261#2722402" />
+        <i t="Construction of the Policy Comparison Tree" l="261#2722419" />
+        <i t="Configuring Labels and Display Order" l="261#2722476" />
+        <i t="Changing Icons for Added, Removed, Unchanged, and Changed" l="261#2722544" />
+      </i>
+      <i t="Policy Refresh Configuration Examples" l="262">
+        <i t="Adding a New Claim-specific Entity to Policy Refresh" l="263" />
+        <i t="Adding a New Policy-specific Entity to Policy Refresh" l="264" />
+        <i t="Modifying Your Policy System for Changes to Entities in the Policy Graph" l="265" />
+        <i t="Additional Tasks to Configure Policy Refresh for New Policy-Specific Entities" l="266" />
+      </i>
+    </i>
+  </i>
+  <i t="Other Integration Topics" l="267#1012431">
+    <i t="Archiving Integration" l="268">
+      <i t="Overview of Archiving Integration" l="269">
+        <i t="Archiving Integration and Archiving Eligibility Flow" l="269#2064804" />
+        <i t="Archive Source Plugin" l="269#2083107" />
+        <i t="Contact Info Objects and Other Archiving Objects That Persist" l="269#2139595" />
+      </i>
+      <i t="Archiving Storage Integration Detailed Flow" l="270">
+        <i t="Archive Source Plugin Storage Methods" l="270#2038964" />
+      </i>
+      <i t="Archive Retrieval Integration Detailed Flow" l="271">
+        <i t="Archive Source Plugin Retrieve Methods" l="271#2057627" />
+      </i>
+      <i t="Archive Source Plugin Utility Methods" l="272" />
+      <i t="Upgrading the Data Model of Retrieved Data" l="273" />
+    </i>
+    <i t="Custom Batch Processes" l="274">
+      <i t="Creating a Custom Batch Process" l="274#2186296">
+        <i t="Batch Process Implementation Using the Batch Process Base Class" l="274#2185948" />
+        <i t="Batch Process History" l="274#2188414" />
+      </i>
+      <i t="Custom Batch Processes and MaintenanceToolsAPI" l="275" />
+    </i>
+    <i t="Free-text Search Integration" l="276">
+      <i t="Free-text Search Plugins Overview" l="276#2403434">
+        <i t="Connecting the Free-text Plugins with the Guidewire Solr Extension" l="276#2407635" />
+        <i t="Enabling and Disabling the Free-text Plugins" l="276#2407578" />
+        <i t="Running the Free-text Plugins in Debug Mode" l="276#2420606" />
+      </i>
+      <i t="Free-text Load and Index Plugin and Message Transport" l="277">
+        <i t="Message Destination for Free-text Search" l="277#2430337" />
+        <i t="Plugin Parameters" l="277#2409367" />
+      </i>
+      <i t="Free-text Search Plugin" l="278" />
+    </i>
+    <i t="Data Extraction Integration" l="279">
+      <i t="Why Gosu Templates are Useful for Data Extraction" l="280" />
+      <i t="Data Extraction Using Web Services" l="281">
+        <i t="Error Handling in Templates" l="281#2167307" />
+        <i t="Getting Parameters from URLs" l="281#2167320" />
+        <i t="Built in Templates" l="281#2167332" />
+        <i t="Using Loops in Templates" l="281#2197258" />
+        <i t="Structured Export Formats" l="281#2161995" />
+        <i t="Handling Data Model Extensions in Gosu" l="281#2160816" />
+        <i t="Gosu Template APIs Common for Integration" l="281#2161713" />
+      </i>
+    </i>
+    <i t="Logging" l="282">
+      <i t="Logging Overview For Integration Developers" l="283">
+        <i t="Logging Elements" l="283#1996490" />
+        <i t="Logging Types: Category-based and Class-based" l="283#1855221" />
+      </i>
+      <i t="Logging Properties File" l="284" />
+      <i t="Logging APIs for Java Integration Developers" l="285">
+        <i t="Category-based Logging" l="285#1855339" />
+        <i t="Setting Up a Logger Factory (SOAP Client Code)" l="285#1886960" />
+        <i t="Logger Classes" l="285#1880474" />
+        <i t="Class-based Logging (Not Generally Recommended)" l="285#1855398" />
+        <i t="Dynamically Changing Logging Levels" l="285#2004270" />
+      </i>
+    </i>
+    <i t="Proxy Servers" l="286">
+      <i t="Proxy Server Overview" l="287">
+        <i t="Resources for Understanding and Implementing SSL" l="287#2014344" />
+        <i t="Web Services and Proxy Servers" l="287#2145149" />
+      </i>
+      <i t="Configuring a Proxy Server with Apache HTTP Server" l="288">
+        <i t="Apache Basic Installation Checklist" l="288#2014580" />
+      </i>
+      <i t="Certificates, Private Keys, and Passphrase Scripts" l="289" />
+      <i t="Proxy Server Integration Types for ClaimCenter" l="290" />
+      <i t="Proxy Building Blocks" l="291">
+        <i t="Downstream Proxy With No Encryption" l="291#2015095" />
+        <i t="Downstream Proxy With Encryption" l="291#2020597" />
+        <i t="Upstream (Reverse) Proxy with Encryption for Service Connections" l="291#2013535" />
+        <i t="Upstream (Reverse) Proxy with Encryption for User Connections" l="291#2013438" />
+      </i>
+    </i>
+    <i t="Java and OSGi Support" l="292">
+      <i t="Overview of Java and OSGi Support" l="293">
+        <i t="Learning More About Entity Java APIs" l="293#2216935" />
+        <i t="Accessing Gosu Types from Java" l="293#2219248" />
+        <i t="Implementing Plugin Interfaces in Java and Optionally OSGi" l="293#2217017" />
+        <i t="Inspections to Flag Unsupported Internal Java APIs" l="293#2202093" />
+      </i>
+      <i t="Accessing Entity and Typecode Data in Java" l="294">
+        <i t="Regenerating Java API Libraries" l="295" />
+        <i t="Entity Packages and Customer Extensions from Java" l="296" />
+        <i t="Typecode Classes from Java" l="297" />
+        <i t="Comparing Entity Instances and Typecodes" l="298" />
+        <i t="Entity Bundles and Transactions from Java" l="299" />
+        <i t="Creating New Entity Instances from Java" l="300" />
+        <i t="Getting and Setting Entity Properties from Java" l="301" />
+        <i t="Calling Entity Object Methods from Java" l="302" />
+        <i t="Querying for Entity Data in Java" l="303" />
+      </i>
+      <i t="Accessing Gosu Classes from Java Using Reflection" l="304" />
+      <i t="Gosu Enhancement Properties and Methods in Java" l="305" />
+      <i t="Class Loading and Delegation for non-OSGi Java" l="306">
+        <i t="Java Class Loading Rules" l="306#2207950" />
+        <i t="Java Class Delegate Loading" l="306#2136398" />
+      </i>
+      <i t="Deploying Non-OSGi Java Classes and JARs" l="307" />
+      <i t="OSGi Plugin Deployment with IntelliJ IDEA with OSGi Editor" l="308">
+        <i t="Generate Java API Libraries" l="308#2255838" />
+        <i t="Launch IntelliJ IDEA with OSGi Editor" l="308#2255847" />
+        <i t="Create an OSGi-compliant Class that Implements a Plugin Interface" l="308#2234758" />
+        <i t="Compiling and Installing Your OSGi Plugin as an OSGi Bundle" l="308#2260357" />
+        <i t="Using Third-Party Libraries in Your OSGi Plugin" l="308#2260349" />
+      </i>
+      <i t="Advanced OSGi Dependency and Settings Configuration" l="309" />
+      <i t="Updating Your OSGi Plugin Project after Product Location Changes" l="310" />
+    </i>
+  </i>
+</WebWorksHelpTOC>

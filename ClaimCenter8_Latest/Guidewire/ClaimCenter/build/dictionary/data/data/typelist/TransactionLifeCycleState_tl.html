@@ -1,0 +1,366 @@
+<html>
+<head>
+<title>TransactionLifeCycleState</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox"
+<div><span class="pagetitle">TransactionLifeCycleState</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="entityname">(cctl_transactionlifecyclestate)</span>
+</div>
+<div class="desc">Internal status of a TAccountTransaction, as opposed to the business status of a transaction represented by the values in the TransactionStatus typelist</div>
+</div>
+<table cellpadding="3" cellspacing="0" border="0" height="20" width="100%">
+<tr>
+<td nowrap="true" class="attrbox" height="20">
+<span class="attrtitle">Attributes: 
+Final
+</span>
+</td>
+</tr>
+</table>
+<br/>
+<a id='TOC'></a>
+<a name="Typecodes"></a><div class="arraysbox">Typecodes</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+<td>Description</td>
+<td>Priority</td>
+<td>Internal</td>
+<td>Retired</td>
+</tr>
+<tr valign="top">
+<td><a href=#awaitingsubmission>awaitingsubmission</a></td>
+<td>Awaiting submission</td>
+<td>Transaction is waiting to be submitted to the downstream system</td>
+<td align=center>3</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#committed>committed</a></td>
+<td>Committed</td>
+<td>Transaction has been committed and is no longer editable</td>
+<td align=center>4</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#denied>denied</a></td>
+<td>Denied</td>
+<td>Transaction has been denied</td>
+<td align=center>0</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#draft>draft</a></td>
+<td>Draft</td>
+<td>Transactions in this state have not yet been completed and submitted for approval</td>
+<td align=center>0</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#futuredated>futuredated</a></td>
+<td>Future dated</td>
+<td>Valid only for future dated payments</td>
+<td align=center>2</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#new>new</a></td>
+<td>New</td>
+<td>Transactions in this state are brand new, often with no lineitems yet, and not yet in DRAFT state</td>
+<td align=center>0</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#pendingapproval>pendingapproval</a></td>
+<td>Pending approval</td>
+<td>Transaction is moving through the approval process</td>
+<td align=center>2</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#rejected>rejected</a></td>
+<td>Rejected</td>
+<td>Transaction has been rejected</td>
+<td align=center>0</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#retired>retired</a></td>
+<td>Retired</td>
+<td>Transaction has been retired</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<div class='subtypebox'>
+<a name=awaitingsubmission></a>
+<div class="titlebox">
+<div class="filtertitle">awaitingsubmission <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8297" class="reftext" onclick='showAndHideRefBox("refbox_8297", "reflink_8297")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8297" class="refbox_inner" style="display:none;">
+Transaction is waiting to be submitted to the downstream system
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Transaction_tl.html#Payment" TARGET="tableFrame">Transaction.Payment</A></li>
+<li>
+<A HREF="Transaction_tl.html#Reserve" TARGET="tableFrame">Transaction.Reserve</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#awaitingsubmission" TARGET="tableFrame">TransactionStatus.awaitingsubmission</A></li>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=committed></a>
+<div class="titlebox">
+<div class="filtertitle">committed <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8298" class="reftext" onclick='showAndHideRefBox("refbox_8298", "reflink_8298")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8298" class="refbox_inner" style="display:none;">
+Transaction has been committed and is no longer editable
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RITransaction_tl.html#RICededReserve" TARGET="tableFrame">RITransaction.RICededReserve</A></li>
+<li>
+<A HREF="RITransaction_tl.html#RIRecoverable" TARGET="tableFrame">RITransaction.RIRecoverable</A></li>
+<li>
+<A HREF="Transaction_tl.html#Payment" TARGET="tableFrame">Transaction.Payment</A></li>
+<li>
+<A HREF="Transaction_tl.html#Recovery" TARGET="tableFrame">Transaction.Recovery</A></li>
+<li>
+<A HREF="Transaction_tl.html#RecoveryReserve" TARGET="tableFrame">Transaction.RecoveryReserve</A></li>
+<li>
+<A HREF="Transaction_tl.html#Reserve" TARGET="tableFrame">Transaction.Reserve</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#pendingrecode" TARGET="tableFrame">TransactionStatus.pendingrecode</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#pendingstop" TARGET="tableFrame">TransactionStatus.pendingstop</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#pendingtransfer" TARGET="tableFrame">TransactionStatus.pendingtransfer</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#pendingvoid" TARGET="tableFrame">TransactionStatus.pendingvoid</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#recoded" TARGET="tableFrame">TransactionStatus.recoded</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#stopped" TARGET="tableFrame">TransactionStatus.stopped</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#submitted" TARGET="tableFrame">TransactionStatus.submitted</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#submitting" TARGET="tableFrame">TransactionStatus.submitting</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#transferred" TARGET="tableFrame">TransactionStatus.transferred</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#voided" TARGET="tableFrame">TransactionStatus.voided</A></li>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=denied></a>
+<div class="titlebox">
+<div class="filtertitle">denied <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8299" class="reftext" onclick='showAndHideRefBox("refbox_8299", "reflink_8299")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8299" class="refbox_inner" style="display:none;">
+Transaction has been denied
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Transaction_tl.html#Payment" TARGET="tableFrame">Transaction.Payment</A></li>
+<li>
+<A HREF="Transaction_tl.html#Recovery" TARGET="tableFrame">Transaction.Recovery</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#denied" TARGET="tableFrame">TransactionStatus.denied</A></li>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=draft></a>
+<div class="titlebox">
+<div class="filtertitle">draft <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8300" class="reftext" onclick='showAndHideRefBox("refbox_8300", "reflink_8300")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8300" class="refbox_inner" style="display:none;">
+Transactions in this state have not yet been completed and submitted for approval
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RITransaction_tl.html#RICededReserve" TARGET="tableFrame">RITransaction.RICededReserve</A></li>
+<li>
+<A HREF="RITransaction_tl.html#RIRecoverable" TARGET="tableFrame">RITransaction.RIRecoverable</A></li>
+<li>
+<A HREF="Transaction_tl.html#Payment" TARGET="tableFrame">Transaction.Payment</A></li>
+<li>
+<A HREF="Transaction_tl.html#Recovery" TARGET="tableFrame">Transaction.Recovery</A></li>
+<li>
+<A HREF="Transaction_tl.html#RecoveryReserve" TARGET="tableFrame">Transaction.RecoveryReserve</A></li>
+<li>
+<A HREF="Transaction_tl.html#Reserve" TARGET="tableFrame">Transaction.Reserve</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#draft" TARGET="tableFrame">TransactionStatus.draft</A></li>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=futuredated></a>
+<div class="titlebox">
+<div class="filtertitle">futuredated <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8301" class="reftext" onclick='showAndHideRefBox("refbox_8301", "reflink_8301")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8301" class="refbox_inner" style="display:none;">
+Valid only for future dated payments
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Transaction_tl.html#Payment" TARGET="tableFrame">Transaction.Payment</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#awaitingsubmission" TARGET="tableFrame">TransactionStatus.awaitingsubmission</A></li>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=new></a>
+<div class="titlebox">
+<div class="filtertitle">new <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8302" class="reftext" onclick='showAndHideRefBox("refbox_8302", "reflink_8302")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8302" class="refbox_inner" style="display:none;">
+Transactions in this state are brand new, often with no lineitems yet, and not yet in DRAFT state
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RITransaction_tl.html#RICededReserve" TARGET="tableFrame">RITransaction.RICededReserve</A></li>
+<li>
+<A HREF="RITransaction_tl.html#RIRecoverable" TARGET="tableFrame">RITransaction.RIRecoverable</A></li>
+<li>
+<A HREF="Transaction_tl.html#Payment" TARGET="tableFrame">Transaction.Payment</A></li>
+<li>
+<A HREF="Transaction_tl.html#Recovery" TARGET="tableFrame">Transaction.Recovery</A></li>
+<li>
+<A HREF="Transaction_tl.html#RecoveryReserve" TARGET="tableFrame">Transaction.RecoveryReserve</A></li>
+<li>
+<A HREF="Transaction_tl.html#Reserve" TARGET="tableFrame">Transaction.Reserve</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#draft" TARGET="tableFrame">TransactionStatus.draft</A></li>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=pendingapproval></a>
+<div class="titlebox">
+<div class="filtertitle">pendingapproval <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8303" class="reftext" onclick='showAndHideRefBox("refbox_8303", "reflink_8303")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8303" class="refbox_inner" style="display:none;">
+Transaction is moving through the approval process
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Transaction_tl.html#Payment" TARGET="tableFrame">Transaction.Payment</A></li>
+<li>
+<A HREF="Transaction_tl.html#Recovery" TARGET="tableFrame">Transaction.Recovery</A></li>
+<li>
+<A HREF="Transaction_tl.html#RecoveryReserve" TARGET="tableFrame">Transaction.RecoveryReserve</A></li>
+<li>
+<A HREF="Transaction_tl.html#Reserve" TARGET="tableFrame">Transaction.Reserve</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#pendingapproval" TARGET="tableFrame">TransactionStatus.pendingapproval</A></li>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=rejected></a>
+<div class="titlebox">
+<div class="filtertitle">rejected <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8304" class="reftext" onclick='showAndHideRefBox("refbox_8304", "reflink_8304")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8304" class="refbox_inner" style="display:none;">
+Transaction has been rejected
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Transaction_tl.html#Payment" TARGET="tableFrame">Transaction.Payment</A></li>
+<li>
+<A HREF="Transaction_tl.html#Recovery" TARGET="tableFrame">Transaction.Recovery</A></li>
+<li>
+<A HREF="Transaction_tl.html#RecoveryReserve" TARGET="tableFrame">Transaction.RecoveryReserve</A></li>
+<li>
+<A HREF="Transaction_tl.html#Reserve" TARGET="tableFrame">Transaction.Reserve</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#rejected" TARGET="tableFrame">TransactionStatus.rejected</A></li>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=retired></a>
+<div class="titlebox">
+<div class="filtertitle">retired <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8305" class="reftext" onclick='showAndHideRefBox("refbox_8305", "reflink_8305")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8305" class="refbox_inner" style="display:none;">
+Transaction has been retired
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Transaction_tl.html#Payment" TARGET="tableFrame">Transaction.Payment</A></li>
+<li>
+<A HREF="Transaction_tl.html#Recovery" TARGET="tableFrame">Transaction.Recovery</A></li>
+<li>
+<A HREF="Transaction_tl.html#RecoveryReserve" TARGET="tableFrame">Transaction.RecoveryReserve</A></li>
+<li>
+<A HREF="Transaction_tl.html#Reserve" TARGET="tableFrame">Transaction.Reserve</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#awaitingsubmission" TARGET="tableFrame">TransactionStatus.awaitingsubmission</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#draft" TARGET="tableFrame">TransactionStatus.draft</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#pendingapproval" TARGET="tableFrame">TransactionStatus.pendingapproval</A></li>
+<li>
+<A HREF="TransactionStatus_tl.html#rejected" TARGET="tableFrame">TransactionStatus.rejected</A></li>
+</ul>
+</div>
+</body>
+</html>

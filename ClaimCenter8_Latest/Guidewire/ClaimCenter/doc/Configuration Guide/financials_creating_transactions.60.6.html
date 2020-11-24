@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Creating Recovery Reserve Transactions</title>
+    <link rel="StyleSheet" href="css/financials_creating_transactions.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Configuration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-ClaimCenter_financials.html#4981851">Guidewire ClaimCenter Financials</a> : <a class="WebWorks_Breadcrumb_Link" href="financials_creating_transactions.60.1.html#4981851">Creating ClaimCenter Financial Transactions</a> : Creating Recovery Reserve Transactions</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="4981851">Creating Recovery Reserve Transactions</a></h3>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="4983784">You read (retrieve) the values for Open Recovery Reserve</a><span class="cv_-_computer_voice">s</span> by using the following static method, which returns a <span class="cv_-_computer_voice">FinancialsCalculator</span> object:</div>
+      <div class="CS_-_Code_Single_Line" style="font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="cv_-_computer_voice"><a name="4984802">gw.api.financials.FinancialsCalculations.getOpenRecoveryReserves</a></span></div>
+      <div class="B_-_Body"><a name="4984809">The Open Recovery Reserves calculation, Total Recovery Reserves minus Total Recoveries, is analogous to payments' decreasing open reserves. After a recovery is received, it decreases the open recovery reserve associated with that reserve line. For more information, see </a><a href="javascript:WWHClickedPopup('app', 'financials.40.04.html#4977998', '');" title="Reserves">“Reserve Overview” in the </a><span class="bt_-_book_title"><a href="javascript:WWHClickedPopup('app', 'financials.40.04.html#4977998', '');" title="Reserves">Application Guide</a></span>.</div>
+      <h4 class="H2_-_Heading_2"><a name="4984803">Setting Recovery Reserve Values</a></h4>
+      <div class="B_-_Body"><a name="4984804">To set the level of Open Recovery Reserves, you can use one of the methods described in the topics that follow.</a></div>
+      <div class="B_-_Body"><a name="4983956">You can also create a recovery reserves set and recovery reserves transactions directly. For details, see </a><a href="javascript:WWHClickedPopup('config', 'financials_creating_transactions.60.6.html#4983973', '');" title="Creating Recovery Reserve Transactions">“Recovery Reserve Method on Reserve Line Objects”</a>.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap; font-size: 11.5pt; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner" style="font-size: 11.5pt; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cvh_-_computer_voice_in_heading"><a name="4983914">setOpenRecoveryReserves</a></span></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="4984635">To set recovery reserve values, you must call </a><span class="cv_-_computer_voice">setOpenRecoveryReserves</span> directly on one of the following:</div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="4984636">Claim</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="4984637">Exposure</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4983916">The following code shows the method parameters:</a></div>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4984652">setOpenRecoveryReserves(&nbsp;costType, costCategory, recoveryCategory, </a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="4983917">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newRecoveryReserveAmount, submittingUser )</a></PRE>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="4983918">The method sets the open recovery reserves for an exposure or claim to the given amount. It does so by creating a new recovery reserve transaction that increases or decreases the current open recovery reserves. The method takes the following parameters:</a></div>
+      <div class="T_-_Table"><a name="4983944">&nbsp;</a></div>
+      <table class="withHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="4983921">Parameter</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="4983923">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="4983925">costType </a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4983927">The cost type for the reserve. This value cannot be </a><span class="cvt_-_computer_voice_table">null</span>, but it can be unspecified.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="4983929">costCategory </a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4983931">The cost category for the reserve. This value cannot be </a><span class="cvt_-_computer_voice_table">null</span>, but it can be unspecified.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="4983933">recoveryCategory </a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4983935">The recovery category for the recovery reserve. This value can be </a><span class="cvt_-_computer_voice_table">null</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="4983937">newRecoveryReserveAmount </a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4983939">The amount to which to set the open recovery reserves. The amount must be non-null and zero or greater, and cannot be negative.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="4983941">submittingUser </a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4983943">User submitting this recovery reserve.</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4983973">Recovery Reserve Method on Reserve Line Objects</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4984224">ClaimCenter also provides a mirror to the method described previously for use with the </a><span class="cv_-_computer_voice">ReserveLine</span> object. For example: </div>
+      <div class="CS_-_Code_Single_Line"><a name="4984225">reserveLine.setOpenRecoveryReserves( “Salvage”, "1000", User.util.CurrentUser )</a></div>
+      <div class="B_-_Body"><a name="4984226">This method sets the open recovery reserves for this reserve line to the given amount by creating a recovery reserve that increases or decreases the current open recovery reserves. It returns the new recovery reserve, or </a><span class="cv_-_computer_voice">null</span> if the recovery reserve is not created. </div>
+      <div class="B_-_Body"><a name="4983998">The method takes the following parameters:</a></div>
+      <div class="T_-_Table"><a name="4984012">&nbsp;</a></div>
+      <table class="withHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="4984001">Parameter</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="4984003">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="4984139">recoveryCategory </a></span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4984141">The recovery category for the recovery reserve. This value can be </a><span class="cvt_-_computer_voice_table">null</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4984005">newRecoveryReserveAmount</a><span class="cvt_-_computer_voice_table"> </span></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4984007">The amount to which to set the open recovery reserves. The amount must be non-null and zero or greater, and cannot be negative</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="cvt_-_computer_voice_table"><a name="4984009">submittingUser </a></span></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4984011">User submitting this recovery reserve.</a></div>
+          </td>
+        </tr>
+      </table>
+      <h4 class="H2_-_Heading_2"><a name="4981853">Creating Recovery Reserve Transactions Directly</a></h4>
+      <div class="B_-_Body"><a name="4983722">ClaimCenter provides an API that you can use to create recovery reserve transactions directly. This API is more flexible than those listed previously in this topic. The methods include the following:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="4981857">Claim.newRecoveryReserveSet()</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="4981858">RecoveryReserveSet.newRecoveryReserve( exposure, costType, costCategory )</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="4981859">RecoveryReserve.addNewLineItem( amount, comments, lineCategory )</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt; margin-bottom: 2.0pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cv_-_computer_voice"><a name="4981860">RecoveryReserveSet.prepareForCommit()</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><a name="4981861">For example:</a></div>
+      <PRE class="CF_-_Code_First_Line"><a name="4981862">var claim : Claim</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981863">var exposure : Exposure</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981864">var costType : CostType</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981865">var costCategory : CostCategory</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981866">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981867">var recoveryReserveSet = claim.newRecoveryReserveSet()</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981868">var recoveryReserve = recoveryReserveSet.newRecoveryReserve(exposure, costType, costCategory)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981869">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981870">// Modify the new RecoveryReserve transaction as you want – for example:</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981871">recoveryReserve.Currency = Currency.TC_EUR</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981872">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981873">// Set the amount to 100 EUR.</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981874">// A RecoveryReserve transaction must have only one TransactionLineItem, </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981875">// and its LineCategory must be null.</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981876">recoveryReserve.addNewLineItem( gw.api.financials.CurrencyAmount.getStrict( </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981877">&nbsp;&nbsp;&nbsp;&nbsp;100, Currency.TC_EUR) , null, null)</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981878">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981879">// Add more RecoveryReserve transactions if required</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4981880">&nbsp;</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="4981881">recoveryReserveSet.prepareForCommit()</a></PRE>
+      <div class="B_-_Body"><a name="4981882">The </a><span class="cv_-_computer_voice">newRecoveryReserve</span> method returns the new transaction entity so that you can modify it. At minimum, you must call the <span class="cv_-_computer_voice">addNewLineItem</span> method to add a <span class="cv_-_computer_voice">TransactionLineItem</span> with the <span class="cv_-_computer_voice">Amount</span> of the transaction. You can also create a multicurrency Recovery<span class="cv_-_computer_voice">Reserve</span> transaction by modifying the <span class="cv_-_computer_voice">Currency</span> field on the transaction.</div>
+      <div class="B_-_Body"><a name="4981883">After you finish creating transactions, call the </a><span class="cv_-_computer_voice">RecoveryReserveSet.prepareForCommit</span> method to submit the reserve set for approval and to update the financial calculations. After calling the <span class="cv_-_computer_voice">prepareForCommit</span> method, it is not possible to modify the transaction amount, currency, exchange rates, or other key fields on the transaction.</div>
+      <div class="B_-_Body"><a name="4949535">&nbsp;</a></div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

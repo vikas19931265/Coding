@@ -1,0 +1,446 @@
+<html>
+<head>
+<title>RuleSetType</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox"
+<div><span class="pagetitle">RuleSetType</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="entityname">(cctl_rulesettype)</span>
+</div>
+<div class="desc">Types of rule sets</div>
+</div>
+<table cellpadding="3" cellspacing="0" border="0" height="20" width="100%">
+<tr>
+<td nowrap="true" class="attrbox" height="20">
+<span class="attrtitle">Attributes: 
+
+</span>
+</td>
+</tr>
+</table>
+<br/>
+<a id='TOC'></a>
+<a name="Typecodes"></a><div class="arraysbox">Typecodes</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+<td>Description</td>
+<td>Priority</td>
+<td>Internal</td>
+<td>Retired</td>
+</tr>
+<tr valign="top">
+<td><a href=#A>A</a></td>
+<td>Assignment</td>
+<td>Assignment rules</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#AP>AP</a></td>
+<td>Approval Routing</td>
+<td>Used to find the user who must approve an approval batch</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#AR>AR</a></td>
+<td>Archive</td>
+<td>Archiving rules</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#BAR>BAR</a></td>
+<td>BulkInvoice Approval</td>
+<td>Rules for approving a BulkInvoice</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#C>C</a></td>
+<td>Closed</td>
+<td>Actions to be taken after closing a claim or exposure</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#E>E</a></td>
+<td>Exception</td>
+<td>Exception rules</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#EM>EM</a></td>
+<td>Event Message</td>
+<td>Rules for generating integration event messages</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#IR>IR</a></td>
+<td>Initial Reserve</td>
+<td>Rules for generating an initial reserve for a new exposure</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#L>L</a></td>
+<td>Loaded</td>
+<td>Rules executed on a imported claim</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#PO>PO</a></td>
+<td>Post-setup</td>
+<td>Rules executed on a new claim after it has been set up</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#PR>PR</a></td>
+<td>Pre-setup</td>
+<td>Rules executed on a new claim before it has been set up</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#PU>PU</a></td>
+<td>Pre-update</td>
+<td>Rules execute after validating, but before updating an editable entity</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#RO>RO</a></td>
+<td>Reopened</td>
+<td>Actions to be taken after reopening a claim or exposure</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#S>S</a></td>
+<td>Segmentation</td>
+<td>Segmentation rules</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#TAR>TAR</a></td>
+<td>Transaction Approval</td>
+<td>Used to determine whether or not a transaction needs approval</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#V>V</a></td>
+<td>Validation</td>
+<td>Validation rules</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#WP>WP</a></td>
+<td>Workplan</td>
+<td>Workplan rules</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<div class='subtypebox'>
+<a name=A></a>
+<div class="titlebox">
+<div class="filtertitle">A <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7361" class="reftext" onclick='showAndHideRefBox("refbox_7361", "reflink_7361")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7361" class="refbox_inner" style="display:none;">
+Assignment rules
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=AP></a>
+<div class="titlebox">
+<div class="filtertitle">AP <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7362" class="reftext" onclick='showAndHideRefBox("refbox_7362", "reflink_7362")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7362" class="refbox_inner" style="display:none;">
+Used to find the user who must approve an approval batch
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=AR></a>
+<div class="titlebox">
+<div class="filtertitle">AR <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7363" class="reftext" onclick='showAndHideRefBox("refbox_7363", "reflink_7363")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7363" class="refbox_inner" style="display:none;">
+Archiving rules
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=BAR></a>
+<div class="titlebox">
+<div class="filtertitle">BAR <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7364" class="reftext" onclick='showAndHideRefBox("refbox_7364", "reflink_7364")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7364" class="refbox_inner" style="display:none;">
+Rules for approving a BulkInvoice
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=C></a>
+<div class="titlebox">
+<div class="filtertitle">C <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7365" class="reftext" onclick='showAndHideRefBox("refbox_7365", "reflink_7365")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7365" class="refbox_inner" style="display:none;">
+Actions to be taken after closing a claim or exposure
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=E></a>
+<div class="titlebox">
+<div class="filtertitle">E <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7366" class="reftext" onclick='showAndHideRefBox("refbox_7366", "reflink_7366")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7366" class="refbox_inner" style="display:none;">
+Exception rules
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=EM></a>
+<div class="titlebox">
+<div class="filtertitle">EM <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7367" class="reftext" onclick='showAndHideRefBox("refbox_7367", "reflink_7367")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7367" class="refbox_inner" style="display:none;">
+Rules for generating integration event messages
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=IR></a>
+<div class="titlebox">
+<div class="filtertitle">IR <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7368" class="reftext" onclick='showAndHideRefBox("refbox_7368", "reflink_7368")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7368" class="refbox_inner" style="display:none;">
+Rules for generating an initial reserve for a new exposure
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=L></a>
+<div class="titlebox">
+<div class="filtertitle">L <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7369" class="reftext" onclick='showAndHideRefBox("refbox_7369", "reflink_7369")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7369" class="refbox_inner" style="display:none;">
+Rules executed on a imported claim
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=PO></a>
+<div class="titlebox">
+<div class="filtertitle">PO <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7370" class="reftext" onclick='showAndHideRefBox("refbox_7370", "reflink_7370")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7370" class="refbox_inner" style="display:none;">
+Rules executed on a new claim after it has been set up
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=PR></a>
+<div class="titlebox">
+<div class="filtertitle">PR <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7371" class="reftext" onclick='showAndHideRefBox("refbox_7371", "reflink_7371")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7371" class="refbox_inner" style="display:none;">
+Rules executed on a new claim before it has been set up
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=PU></a>
+<div class="titlebox">
+<div class="filtertitle">PU <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7372" class="reftext" onclick='showAndHideRefBox("refbox_7372", "reflink_7372")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7372" class="refbox_inner" style="display:none;">
+Rules execute after validating, but before updating an editable entity
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=RO></a>
+<div class="titlebox">
+<div class="filtertitle">RO <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7373" class="reftext" onclick='showAndHideRefBox("refbox_7373", "reflink_7373")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7373" class="refbox_inner" style="display:none;">
+Actions to be taken after reopening a claim or exposure
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=S></a>
+<div class="titlebox">
+<div class="filtertitle">S <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7374" class="reftext" onclick='showAndHideRefBox("refbox_7374", "reflink_7374")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7374" class="refbox_inner" style="display:none;">
+Segmentation rules
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=TAR></a>
+<div class="titlebox">
+<div class="filtertitle">TAR <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7375" class="reftext" onclick='showAndHideRefBox("refbox_7375", "reflink_7375")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7375" class="refbox_inner" style="display:none;">
+Used to determine whether or not a transaction needs approval
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=V></a>
+<div class="titlebox">
+<div class="filtertitle">V <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7376" class="reftext" onclick='showAndHideRefBox("refbox_7376", "reflink_7376")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7376" class="refbox_inner" style="display:none;">
+Validation rules
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=WP></a>
+<div class="titlebox">
+<div class="filtertitle">WP <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7377" class="reftext" onclick='showAndHideRefBox("refbox_7377", "reflink_7377")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7377" class="refbox_inner" style="display:none;">
+Workplan rules
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+</body>
+</html>

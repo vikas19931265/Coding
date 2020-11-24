@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Guidewire ClaimCenter 7.0.5 Release&nbsp;Notes</title>
+    <link rel="StyleSheet" href="css/ReleaseNotes-CC705.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter New and Changed Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="part-relnotes.html#3738091">Release Notes Archive</a> : Guidewire ClaimCenter 7.0.5 Release&nbsp;Notes</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h2 class="CT_-_Chapter_Title"><a name="3738091">Guidewire ClaimCenter 7.0.5 Release&nbsp;Notes</a></h2>
+      <div class="zFront_Matter_Title"><a name="3738092">Release 7.0.5</a></div>
+      <h3 class="H1NB_-_Heading_1_No_Break"><a name="3738063">Overview</a></h3>
+      <div class="B_-_Body"><a name="1566229">These release notes contain the following:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('whatsnew', 'ReleaseNotes-CC705.html#1569125', '');" title="Guidewire ClaimCenter 7.0.5 Release Notes" name="1559422">Release Information</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('whatsnew', 'ReleaseNotes-CC705.html#3592497', '');" title="Guidewire ClaimCenter 7.0.5 Release Notes" name="2831263">Installing This Release</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('whatsnew', 'ReleaseNotes-CC705.html#4592049', '');" title="Guidewire ClaimCenter 7.0.5 Release Notes" name="3480329">Support</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('whatsnew', 'ReleaseNotes-CC705.html#3636353', '');" title="Guidewire ClaimCenter 7.0.5 Release Notes" name="3480344">Issues and Major Changes</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('whatsnew', 'ReleaseNotes-CC705.html#3506409', '');" title="Guidewire ClaimCenter 7.0.5 Release Notes" name="3444071">Improvements and General Issues</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('whatsnew', 'ReleaseNotes-CC705.html#4148886', '');" title="Guidewire ClaimCenter 7.0.5 Release Notes" name="1556682">Known Issues and Limitations</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h3 class="H1NB_-_Heading_1_No_Break"><a name="1569125">Release Information</a></h3>
+      <div class="B_-_Body"><a name="3320700">These release notes apply only to this release of Guidewire ClaimCenter.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="3391015">Version Number</a></h4>
+      <div class="B_-_Body"><a name="3592494">This release of Guidewire ClaimCenter is 7.0.5.</a></div>
+      <h3 class="H1NB_-_Heading_1_No_Break"><a name="3592497">Installing This Release</a></h3>
+      <div class="B_-_Body"><a name="3295102">Refer to the following:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="3295103">The </a><span class="bt_-_book_title">ClaimCenter Installation Guide </span>for general installation information</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="3295106">Prior ClaimCenter release notes for any versions that you have skipped</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="T_-_Table"><a name="2999606">&nbsp;</a></div>
+      <h3 class="H1NB_-_Heading_1_No_Break"><a name="4592049">Support</a></h3>
+      <div class="BKN_-_Body_002c_Keep_Next"><a name="4592050">For assistance with this software release, contact Guidewire Customer Support:</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4592052">At the Guidewire Resource Portal – </a><span class="cv_-_computer_voice"><a href="http://guidewire.custhelp.com" target="external_window">http://guidewire.custhelp.com</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4592054">By email – </a><span class="cv_-_computer_voice"><a href="mailto:support@guidewire.com" target="external_window">support@guidewire.com</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4592055">By phone – +1-650-356-4955</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h3 class="H1NB_-_Heading_1_No_Break"><a name="3636353">Issues and Major Changes</a></h3>
+      <div class="B_-_Body"><a name="3433961">This section contains issues and major changes that might affect your installation.</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('whatsnew', 'ReleaseNotes-CC705.html#3676055', '');" title="Guidewire ClaimCenter 7.0.5 Release Notes" name="3644937">Base PCF File Changes</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('whatsnew', 'ReleaseNotes-CC705.html#3636492', '');" title="Guidewire ClaimCenter 7.0.5 Release Notes" name="3644952">Rules Changes</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('whatsnew', 'ReleaseNotes-CC705.html#3711287', '');" title="Guidewire ClaimCenter 7.0.5 Release Notes" name="3676053">Changes in This Release Provided in Upgrade Diff Report</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="3676055">Base PCF File Changes</a></h4>
+      <div class="B_-_Body"><a name="3676056">All links below require that the </a><span class="cv_-_computer_voice">ReleaseNotes_files</span> directory be on your local disk in the same directory as this release notes file.</div>
+      <h6 class="HS_-_Head_Sub"><a name="3636486">ClaimCenter release 7.0.4 to 7.0.5</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="3636488">To view a report of the changes in the base PCF files in the </a><span class="cv_-_computer_voice">modules/cc</span> directory, <span class="e_-_emphasis"><a href="ReleaseNotes_files/pcf_cc_704-705_diffs.html" target="external_window">click here</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="3636490">To view a report of the changes in the base PCF files in the </a><span class="cv_-_computer_voice">modules/pl</span> directory, <span class="e_-_emphasis"><a href="ReleaseNotes_files/pcf_pl_704-705_diffs.html" target="external_window">click here</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="3636492">Rules Changes</a></h4>
+      <h6 class="HS_-_Head_Sub"><a name="3711283">ClaimCenter release 7.0.4 to 7.0.5</a></h6>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a name="4067570">There are no changes to the base rules in the </a><span class="cv_-_computer_voice">modules/cc</span> directory.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="H2_-_Heading_2"><a name="3711287">Changes in This Release Provided in Upgrade Diff Report</a></h4>
+      <div class="B_-_Body"><a name="3519738">Guidewire provides a report detailing certain differences between the current release and your prior release. This report describes changes in display keys, entities, typelists, and the Gosu API. To obtain your custom Upgrade Diff Report, visit the Guidewire Resource Portal.</a></div>
+      <h3 class="H1NB_-_Heading_1_No_Break"><a name="3506409">Improvements and General Issues</a></h3>
+      <div class="B_-_Body"><a name="4148897">Following are the primary improvements and issues corrected in this release.</a></div>
+      <div class="T_-_Table"><a name="4149103">&nbsp;</a></div>
+      <table class="withHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="4148900">ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="4148902">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top" colspan="2">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="4414282">Archiving</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414286">CLM-23810</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414288">In previous releases, when retrieving an archived claim, field validators prevented the restoration of archived entity graphs if an archived field contained data that violated field validation for its data type. With this release, ClaimCenter turns off field validation during the restoration of entity graphs from the archiving data store. </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top" colspan="2">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="4414340">Claim Metrics</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414344">CLM-23738</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414376">There was a problem with adding new claim metrics to existing claims. This problem has been fixed, and the process now works as described in the newly updated topic “Adding a New Claim Metric” in the </a><span class="bt_-_book_title">ClaimCenter Configuration Guide</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom" colspan="2">
+            <div class="TH_-_Table_Heading"><span class="s_-_strong"><a name="4415394">Command line tools</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415398">PL-20378</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415400">With this release, the </a><span class="cvt_-_computer_voice_table">verify-types</span> command-line tool does not stop verification if a failure, such as a programming error, occurs while verifying a specific type. The tool reports all errors, warnings and failures. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top" colspan="2">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="4414233">Contacts, Roles</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414237">CLM-23828</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414239">Previously, the ClaimCenter user interface allowed you to try to create a related contact for a user, such as a claims adjuster. This action is invalid and would cause an exception to be thrown. The ability to perform this action has been removed from the user interface.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom" colspan="2">
+            <div class="TH_-_Table_Heading"><span class="s_-_strong"><a name="4415376">Database support</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415380">PL-21842</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415382">With this release, the </a><span class="cvt_-_computer_voice_table">system_tools</span> command has additional options for submitting batch jobs that report database performance. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415384">PL-23523</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415386">For Oracle, you can configure new LOB columns to use SecureFile LOBs or compressed SecureFile LOBs instead of the default BasicFile LOBs. You can configure the LOB type for the entire ClaimCenter database or for specific tables only. For more information, see “Configuring Oracle LOB Types” in the </a><span class="e_-_emphasis">ClaimCenter Installation Guide</span>. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top" colspan="2">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="4415043">Database upgrade</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415047">CLM-24436<br />(PL-23686)</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415071">Generating table statistics during upgrade is now optional for Oracle databases. This change does not affect statistics generation on the Microsoft SQL Server and H2 development databases.</a></div>
+            <div class="TT_-_Table_Text"><a name="4415072">You set this new option in the </a><span class="cvt_-_computer_voice_table">config.xml</span> file. In the <span class="cvt_-_computer_voice_table">&lt;database&gt;</span> block, there is an <span class="cvt_-_computer_voice_table">&lt;upgrade&gt;</span> block that contains configuration information for the overall database upgrade. There is a new attribute in the <span class="cvt_-_computer_voice_table">&lt;upgrade&gt;</span> block, <span class="cvt_-_computer_voice_table">updatestatistics</span> with default value <span class="cvt_-_computer_voice_table">true</span>. If you set this attribute to <span class="cvt_-_computer_voice_table">false</span>, statistics will not be updated for that database during upgrade.</div>
+            <div class="TT_-_Table_Text"><a name="4415074">If you do not update statistics during upgrade, you are then responsible for updating statistics by using the command-line batch process. Most of the time, the incremental statistics update is sufficient. For example:</a></div>
+            <div class="LPT_-_List_Para_Table_outer" style="margin-left: 0pt; margin-bottom: 0.0pt; margin-top: 0.0pt; vertical-align: baseline">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="LPT_-_List_Para_Table_inner" style="width: 9.36pt; white-space: nowrap; color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">	</div>
+                  </td>
+                  <td width="100%">
+                    <div class="LPT_-_List_Para_Table_inner" style="color: #000000; font-family: &quot;Lucida Sans Typewriter&quot;; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="cvt_-_computer_voice_table"><a name="4415075">maintenance_tools -password password -startprocess incrementaldbstats</a></span></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="TT_-_Table_Text"><a name="4415076">If statistics are not updated during the upgrade, you see a warning that recommends that you run the database statistics batch process in incremental mode. Additionally, the UpgradeInfo page shows that statistics were not updated as part of the upgrade. This page also reports the runs of the statistics batch process, and incremental runs are shown.</a></div>
+            <div class="TT_-_Table_Text"><a name="4415077">The UpgradeInfo page does not identify the following case: You ran another upgrade with </a><span class="cvh_-_computer_voice_in_heading">updatestatistics=true</span> since running a previous update with <span class="cvt_-_computer_voice_table">updatestatistics=false</span>, but you did not update statistics first.</div>
+            <div class="TT_-_Table_Text"><a name="4415078">When you click the Download button on the UpgradeInfo page, you get a more detailed UpgradeInfo report.</a></div>
+            <div class="BIT_-_Bullet_Item_Table_outer" style="margin-left: 2.16pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="BIT_-_Bullet_Item_Table_inner" style="width: 7.199999999999999pt; white-space: nowrap">
+                      <span class="but_-_bullet_in_table">•	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="BIT_-_Bullet_Item_Table_inner"><a name="4415079">The UpgradeInfo report shows the value of the </a><span class="cvt_-_computer_voice_table">updatestatistics</span> attribute at the time of upgrade.</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="BIT_-_Bullet_Item_Table_outer" style="margin-left: 2.16pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="BIT_-_Bullet_Item_Table_inner" style="width: 7.199999999999999pt; white-space: nowrap">
+                      <span class="but_-_bullet_in_table">•	</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="BIT_-_Bullet_Item_Table_inner"><a name="4415080">Additionally, the UpgradeInfo report shows the update statistics SQL statements that were skipped as part of the upgrade. Normally, you do not need to consult this list because running the database statistics batch process in full mode will cover these statements.</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="LPT_-_List_Para_Table_outer" style="margin-left: 0pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="LPT_-_List_Para_Table_inner" style="width: 9.36pt; white-space: nowrap">	</div>
+                  </td>
+                  <td width="100%">
+                    <div class="LPT_-_List_Para_Table_inner"><span class="s_-_strong"><a name="4415049">Note:</a></span> The incremental mode might not capture all cases that would have been run during an upgrade with <span class="cvt_-_computer_voice_table">updatestatistics=true</span>. </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415402">PL-23504</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415404">With this release, a database upgrade in a development environment records checkpoints of upgrade triggers that complete successfully. You can restart a failed database upgrade, and it resumes with the upgrade trigger that failed. The restart feature helps you test your upgrade with realistically large data sets. You avoid time spent to restore the database and time spent to run upgrade triggers that work successfully.</a></div>
+            <div class="TT_-_Table_Text"><a name="4415405">To restart a test database upgrade from a checkpoint reached in an earlier upgrade, you need to roll back manually any database changes that occurred during the upgrade trigger that failed. In addition, verify that you resolved the problem that caused the trigger to fail before restarting. A test run of your upgrade is successful only when it runs from start to finish without a restart. Never use the restart feature of database upgrade in a production environment. </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top" colspan="2">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="4442942">Entities/Metadata</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4442946">CLM-24336<br />(PL-24640)</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4442948">Resolved an issue with the Gosu type system that led to an infinite loop and a stack overflow exception when constructing an entity type. The issue occurs in earlier releases if an entity uses </a><span class="cvt_-_computer_voice_table">&lt;implementsInterface&gt;</span> and that interface has a method that returns an array of the same entity. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top" colspan="2">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="4414091">Gosu</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414106">CLM-24237<br />(PL-24177)</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414108">Resolved an issue that caused the </a><span class="cvt_-_computer_voice_table">exists</span> method to throw an exception when the where clause included a Guidewire boxed <span class="cvt_-_computer_voice_table">Boolean</span> instead of the Java primitive type <span class="cvt_-_computer_voice_table">boolean</span>. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414992">CLM-24217<br />(PL-24095), CLM-24273<br />(PL-24478)</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414097">Fixed an issue in which casting errors were thrown when Gosu code called a Java method that expected a specific entity, such as </a><span class="cvt_-_computer_voice_table">Document</span>, as a parameter. The system would throw an error similar to the following:</div>
+            <div class="LPT_-_List_Para_Table_outer" style="margin-left: 0pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="LPT_-_List_Para_Table_inner" style="width: 9.36pt; white-space: nowrap">	</div>
+                  </td>
+                  <td width="100%">
+                    <div class="LPT_-_List_Para_Table_inner"><span class="cvt_-_computer_voice_table"><a name="4414098">gw.lang.parser.EvaluationException:</a></span> <span class="cvt_-_computer_voice_table">com.guidewire.commons.metadata.proxy._generated.impl.Document</span> cannot be cast to <span class="cvt_-_computer_voice_table">com.guidewire.pc.external.entity.Document</span></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="TT_-_Table_Text"><a name="4414099">This error was caused by the way in which Guidewire Java code was making a reflective method call to Gosu and then handling external entity types. Those reflective method calls no longer require casting of the external entity types.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top" colspan="2">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="4414663">Financials – Checks, Payments, Deductibles </a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414667">CLM-24208</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414669">Fixed a rare issue in which an </a><span class="cvt_-_computer_voice_table">IndexOutOfBoundsException</span> exception could occur at the end of the Check wizard, inside the <span class="cvt_-_computer_voice_table">TransactionSet.submitForApproval</span> method. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top" colspan="2">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="4414811">Financials – Misc</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414815">CLM-24628</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414817">The Javadoc for the following data builders has been updated to more clearly indicate that the </a><span class="cvt_-_computer_voice_table">withStatus</span> method must be used to properly setup T-accounts when creating test financial transactions: <span class="cvt_-_computer_voice_table">PaymentBuilder</span>, <span class="cvt_-_computer_voice_table">ReserveBuilder</span>, <span class="cvt_-_computer_voice_table">RecoveryBuilder</span>, and <span class="cvt_-_computer_voice_table">RecoveryReserveBuilder</span>. KB article 2121 provides more information and examples on the proper usage of these data builders. </div>
+            <div class="LPT_-_List_Para_Table_outer" style="margin-left: 0pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="LPT_-_List_Para_Table_inner" style="width: 9.36pt; white-space: nowrap">	</div>
+                  </td>
+                  <td width="100%">
+                    <div class="LPT_-_List_Para_Table_inner"><span class="s_-_strong"><a name="4414872">Note:</a></span> Data builders are supported only for creating test data and must not be used in production code. </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415631">CLM-24630</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415633">The following data builders related to financial transaction T-accounts have been deprecated: </a><span class="cvt_-_computer_voice_table">TAccountBuilder</span>, <span class="cvt_-_computer_voice_table">TAccountTransactionBuilder</span>, and <span class="cvt_-_computer_voice_table">TAccountLineItemBuilder</span>. </div>
+            <div class="TT_-_Table_Text"><a name="4415634">Instead of using these deprecated data builders, use the </a><span class="cvt_-_computer_voice_table">withStatus</span> method on the data builders <span class="cvt_-_computer_voice_table">PaymentBuilder</span>, <span class="cvt_-_computer_voice_table">ReserveBuilder</span>, <span class="cvt_-_computer_voice_table">RecoveryBuilder</span>, and <span class="cvt_-_computer_voice_table">RecoveryReserveBuilder</span> to create test financial transactions. </div>
+            <div class="LPT_-_List_Para_Table_outer" style="margin-left: 0pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="LPT_-_List_Para_Table_inner" style="width: 9.36pt; white-space: nowrap">	</div>
+                  </td>
+                  <td width="100%">
+                    <div class="LPT_-_List_Para_Table_inner"><span class="s_-_strong"><a name="4415635">Note:</a></span> Data builders are supported only for creating test data and must not be used in production code. </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="TT_-_Table_Text"><a name="4415636">There is more information in the Javadoc for these data builders and in KB article 2121. </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top" colspan="2">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="4414726">Financials – ReserveLines, TAccounts, Financials Calculations </a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414730">CLM-21868</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414732">When using </a><span class="cvt_-_computer_voice_table">FinancialsCalculator</span>, calling <span class="cvt_-_computer_voice_table">withReserveLine</span> at the same time as <span class="cvt_-_computer_voice_table">withClaim</span>, <span class="cvt_-_computer_voice_table">withExposure</span>, or <span class="cvt_-_computer_voice_table">useClaimLevelReserves</span> can return an unexpected amount. A warning is now logged saying that this amount might not be correct, and that such usage of <span class="cvt_-_computer_voice_table">FinancialsCalculator</span> might be unsupported in the future. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top" colspan="2">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="4414888">Integration</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414892">CLM-24335<br />(PL-23132)</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414894">There was a problem with starting a listening thread on JMS when the application server was the latest version of WebSphere. This problem has been fixed for WebSphere 7 and WebLogic 10.3.5 and later. Now you can use a listening thread with a startable plugin on these versions of WebSphere and WebLogic. </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top" colspan="2">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="4414188">Integration, ISO</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414192">CLM-23606</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414194">On November 30, 2012, ISO ClaimSearch implemented a change for XML format customers that applies only to ClaimSearch Medicare Section 111 participants. To support this change, ClaimCenter incorporated ISO stylesheet changes from ISO Stylesheet Version: 5.4.2 Release Date: 11-20-2012. </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top" colspan="2">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="4414582">Integration, Performance</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414586">CLM-23709</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414609">Previously, the default number of sender threads for ISO messages was one thread in the base configuration. Performance with this single thread was found to be very slow. Therefore, the default number of sender threads for ISO messages has been increased to five. You are encouraged to do your own testing to see what number of threads work best in your environment.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top" colspan="2">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="4148904">Localization</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4148908">CLM-24290<br />(PL-24462)</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4255489">In previous releases, ClaimCenter incorrectly handled Imperial dates that equate to Gregorian Dates in the year 1950, as well as other ranges of old dates. The issue occurred because American military bases used daylight saving time in Japan beginning in 1948, which differed from timekeeping used by the general public. With this release, ClaimCenter handles old Imperial dates correctly. </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom" colspan="2">
+            <div class="TH_-_Table_Heading"><span class="s_-_strong"><a name="4415421">Management plugin</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415425">PL-16543</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415427">With this release, the counters </a><span class="cvt_-_computer_voice_table">NumActiveDBConnections</span> and <span class="cvt_-_computer_voice_table">NumIdleDBConnectionsmanagement</span> are integers instead of strings, so management tools that connect by using JMX can plot them now on graphs. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top" colspan="2">
+            <div class="TT_-_Table_Text" style="color: #000000; font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; text-transform: none; vertical-align: baseline"><span class="s_-_strong"><a name="4414184">Performance</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414180">CLM-24281</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4414182">The ClaimCenter </a><span class="cvt_-_computer_voice_table">Message.eix</span> file contains indexes to speed up the messaging subsystem when it searches for messages with a particular type of primary object, such as <span class="cvt_-_computer_voice_table">Claim</span> or <span class="cvt_-_computer_voice_table">Contact</span>. Performance testing found that the existing indexes could be improved. Therefore, improved indexes have been added to <span class="cvt_-_computer_voice_table">Message.eix</span>, resulting in faster query plans and message processing. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom" colspan="2">
+            <div class="TH_-_Table_Heading"><span class="s_-_strong"><a name="4415461">Persistence</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415449">PL-23941</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415451">For workflow-related distributed work queues, the logging level of the message “</a><span class="cvt_-_computer_voice_table">WDW processing workitem: ...</span>” changed from <span class="cvt_-_computer_voice_table">INFO</span> to <span class="cvt_-_computer_voice_table">DEBUG</span> to reduce noise in the log files. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom" colspan="2">
+            <div class="TH_-_Table_Heading"><span class="s_-_strong"><a name="4415445">Web - UI/Runtime</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415441">PL-23848</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415443">PCF input elements now render currency amounts so the </a><span class="cvt_-_computer_voice_table">scale</span> and <span class="cvt_-_computer_voice_table">appscale</span> parameters are honored. For example, if <span class="cvt_-_computer_voice_table">appscale == 0</span> and the amount is the integer <span class="cvt_-_computer_voice_table">1</span>, the input element renders the amount as “1”. If <span class="cvt_-_computer_voice_table">appscale == 2</span> and the amount is the integer <span class="cvt_-_computer_voice_table">1</span>, the input element renders the amount as “1.00”. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #F2F7FC; border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom" colspan="2">
+            <div class="TH_-_Table_Heading"><span class="s_-_strong"><a name="4415437">Web services – WS-I</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415433">PL-23514</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415435">This release introduces a new method, </a><span class="cvt_-_computer_voice_table">preExecute</span>, for use in the invocation handlers that you write for WS-I web services. In earlier releases, if you wrote an invocation handler, you unavoidably bypassed some important WS-I features. For example, the application: 1) did not enable profiling for method calls; 2) did not check run level annotations, even at the class level; 3) did not check web service permission annotations, even at the class level; (4) did not check for duplicate external transaction IDs if those SOAP headers are present. Now, you can call the <span class="cvt_-_computer_voice_table">preExecute</span> method in your invocation handler, and the application takes the preceding actions, as needed. See the <span class="e_-_emphasis">Integration Guide</span> for more information about invocation handlers and how to use the <span class="cvt_-_computer_voice_table">preExecute</span> method. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415429">PL-23721</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4415431">To detect duplicate operations from external systems, add the new annotation </a><span class="cvt_-_computer_voice_table">@WsiCheckDuplicateExternalTransaction</span> to your WS-I web service implementation class. See the <span class="e_-_emphasis">Integration Guide</span> for details for using the annotation and the SOAP header for the transaction ID. </div>
+          </td>
+        </tr>
+      </table>
+      <div class="T_-_Table"><a name="4149104">&nbsp;</a></div>
+      <h3 class="H1NB_-_Heading_1_No_Break"><a name="4148886">Known Issues and Limitations</a></h3>
+      <div class="B_-_Body"><a name="2956492">This section describes known issues with this release of Guidewire ClaimCenter.</a></div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('whatsnew', 'ReleaseNotes-CC705.html#3432364', '');" title="Guidewire ClaimCenter 7.0.5 Release Notes" name="3331741">ClaimCenter Known Issues</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BI_-_Bullet_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="BI_-_Bullet_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="bu_-_bullet">•	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="BI_-_Bullet_Item_inner"><a href="javascript:WWHClickedPopup('whatsnew', 'ReleaseNotes-CC705.html#3823477', '');" title="Guidewire ClaimCenter 7.0.5 Release Notes" name="3681862">Studio/Platform Issues</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="3463348">For maintenance releases, Guidewire often defers fixing configuration issues if they require merging files during the upgrade. Workarounds to some of these issues are listed in the following sections. The goal of this policy is to make upgrades as straightforward as possible.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="3432364">ClaimCenter Known Issues</a></h4>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="3517470">New Claim wizard not saving selected vehicle in some cases (CLM-13973)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3517471">Issue</a></span> – The second step of the New Claim wizard is not saving your vehicle selection when you leave the screen and then come back. For example, you choose a vehicle and then click the <span class="ui_-_UI_element">Policy Details</span> link, and when you click <span class="ui_-_UI_element">Basic Info</span> on the left to return to this screen, the vehicle is no longer selected.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3517472">Workaround</a></span> – Reselect the vehicle when you return to the wizard screen. </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="3514489">Upgrade from ClaimCenter 6 to ClaimCenter 7 does not work for SQL Server if MigrateToLargeIDsAndDatetime2 is set to true (CLM-17739)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3514572">Issue</a></span> – During upgrade with SQL Server as the database, the <span class="cv_-_computer_voice">cc_tmpagglimitrpt</span> table fails to be upgraded if it is not empty and <span class="cv_-_computer_voice">MigrateToLargeIDsAndDatetime2</span> is <span class="cv_-_computer_voice">true</span>. </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3514573">Workaround</a></span> – If there is data in the table <span class="cv_-_computer_voice">cc_tmpagglimitrpt</span>, truncate the table before beginning the upgrade by running the following SQL command:</div>
+      <div class="CS_-_Code_Single_Line"><a name="3601538">DELETE FROM cc_tmpagglimitrpt</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="3676553">ABContactPlugin now requires ContactManager 7.0.1 or later (CLM-17990)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3517491">Issue</a></span> – The class <span class="cv_-_computer_voice">gw.plugin.addressbook.ab700.PluginRetrieveOperation</span>, which is used by <span class="cv_-_computer_voice">ABContactPlugin</span>, has a method that requires the <span class="cv_-_computer_voice">ABContactAPI</span> web service in ContactManager 7.0.1 or later. This method, <span class="cv_-_computer_voice">retrieveReplacementContact</span>, will cause errors if your ClaimCenter application continues to be integrated with ContactManager 7.0.0. Guidewire recommends that you upgrade to ContactManager 7.0.1 or later. If you cannot upgrade ContactManager, you must apply the workaround for this issue.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3823475">Workaround</a></span> – Copy <span class="cv_-_computer_voice">ClaimCenter/modules/cc/gsrc/gw/plugin/addressbook/ab700/PluginRetrieveOperation.gs</span> to <span class="cv_-_computer_voice">ClaimCenter/modules/configuration/gsrc/gw/plugin/addressbook/ab700/PluginRetrieveOperation.gs</span>. Edit the copied file and remove the annotation <span class="cv_-_computer_voice">@ReadOnly</span>, the <span class="cv_-_computer_voice">retrieveReplacementContact</span> method, and all calls to the <span class="cv_-_computer_voice">retrieveReplacementContact</span> method. Then save the file.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4147855">Printing a page containing a </a><span class="cvh_-_computer_voice_in_heading">CheckBoxGroupInput</span> widget can cause an error (CLM-21520)</h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="4147857">Issue</a></span> – Printing a page that has a <span class="cv_-_computer_voice">CheckBoxGroupInput</span> widget in it can cause an error if you print the current claim page. The error occurs if you navigate to <span class="ui_-_UI_element">Actions</span> → <span class="ui_-_UI_element">Print Claim</span> and select one of the <span class="ui_-_UI_element">Current claim page</span> options to print the page. </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="4147858">Workaround</a></span> – Navigate to <span class="ui_-_UI_element">Actions</span> → <span class="ui_-_UI_element">Print Claim</span>, select <span class="ui_-_UI_element">Custom</span>, select <span class="ui_-_UI_element">Loss Details</span>, and click <span class="ui_-_UI_element">Print</span> to print the claim's Loss Details page only. </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4469459">Creating an unverified policy with a location risk in the new claim wizard causes errors preventing snapshot generation and printing (CLM-24729)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="4469460">Issue</a></span> – Viewing the policy on a claim snapshot can display a PCF compilation error similar to the following:</div>
+      <div class="LP_-_List_Para"><span class="ui_-_UI_element"><a name="4469461">ClaimSnapshotPolicyScreen.700.pcf:61: Invalid ‘def’ expression: The type “snapshot.v700.LocationBasedRU” cannot be converted to “snapshot.v700.PolicyLocation”</a></span>. </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="4469462">Workaround</a></span> – In <span class="cv_-_computer_voice">ClaimSnapshotPolicyScreen.700.pcf</span>, the <span class="cv_-_computer_voice">ClaimSnapshotPolicyLocations700Screen</span> card has a <span class="cv_-_computer_voice">ListDetailPanel</span> that declares a variable named <span class="cv_-_computer_voice">LocationBasedRU</span> of type <span class="cv_-_computer_voice">snapshot.v700.LocationBasedRU</span>. Change the type of this variable to <span class="cv_-_computer_voice">snapshot.v700.PolicyLocation</span>. </div>
+      <h4 class="H2_-_Heading_2"><a name="3823477">Studio/Platform Issues</a></h4>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="3823478">Issues with Internet Explorer 9</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3675631">Issue</a></span> – If you are using the Internet Explorer 9 browser, it is possible to see issues such as screen flickering or an incorrect tab order for fields. According to public reports, Internet Explorer 9 exhibits these and other issues with a variety of web sites and web applications.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3675632">Workaround</a></span> – Because this is the behavior of the Internet Explorer 9 rendering engine, Guidewire cannot address these issues. However, there are reports of an Internet Explorer 9 workaround that reduces these issues. In Internet Explorer 9, you can try to change the use of software or hardware rendering by toggling the <span class="ui_-_UI_element">Accelerated Graphics</span> option on the <span class="ui_-_UI_element">Advanced</span> tab of the <span class="ui_-_UI_element">Internet Options</span> dialog.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="3684854">Studio Rules do not use logical capitalization for root object's name (PL-10740)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3684855">Issue</a></span> – Rule set root objects are named with first letter lower-cased, which can look strange for variables like <span class="cv_-_computer_voice">aBContact</span>.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3684856">Workaround</a></span> – Use the variable name as provided by Guidewire Studio.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="3684870">User interface cannot handle starting multiple instances of a batch process (PL-12372)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3684871">Issue</a></span> – The user interface cannot handle starting multiple instances of a batch process.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3684872">Workaround</a></span> – To execute multiple instances of a batch process, start them from the command line. Also, to allow multiple instances to be run simultaneously, you must ensure that the <span class="cv_-_computer_voice">BatchProcess.isExclusive</span> method returns <span class="cv_-_computer_voice">false</span>.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="3684886">Type system refresh after PCF page title change does not update corresponding menu label (PL-13057)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3684887">Issue</a></span> – The type system refresh after a PCF page title change does not update the corresponding menu label.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3684888">Workaround</a></span> – After updating a page title, restart the server to refresh menu labels and avoid null pointer exceptions due to stale references.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="3675650">Length limitation on entity localization table names (PL-13360)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3675651">Issue</a></span> – Entity localization table names have a shorter, 16-character limit than other entity tables. If the localization table name exceeds the 16-character limit, the error message indicates incorrectly that 18 characters are allowed. </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3675652">Workaround</a></span> – Ensure that the localization <span class="cv_-_computer_voice">tableName</span> property specified in the entity extension file is less than 16 characters.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="3684902">US-Locations.txt file with the US geodata from Great Data has special characters that cause validation problems with United States Postal Service (USPS) data (PL-13384)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3684903">Issue</a></span> – The <span class="cv_-_computer_voice">US-Locations.txt</span> file contains information that does not conform to United States Postal Service (USPS) standards for bulk mailings.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3684904">Workaround</a></span> – The provided <span class="cv_-_computer_voice">US-Locations.txt</span> file is intended only for use in geocoding to identify addresses for a location. You can edit the <span class="cv_-_computer_voice">US-Locations.txt</span> file to conform to your particular address standards, and then import that version of the file instead.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="3675677">GX model generated XSD cannot be parsed by JAXB (PL-13598)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3675678">Issue</a></span> – XSD generated by the GX model cannot be parsed by JAXB.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3675679">Workaround</a></span> – Add JAXB annotation elements to the XSD to specify the necessary metadata, such as class names, to enable JAXB to generate the Java class files. Contact Guidewire Support for a sample XSD file that is annotated this way.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="3675680">Cannot make a field from a delegate into a localized column (PL-13761)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3675681">Issue</a></span> – You cannot make a field from a delegate into a localized column.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3937507">Workaround</a></span> – Move the column to be localized off the delegate and onto each of the implementing entities. Then, to make the column appear as though it exists on the delegate, define an enhancement property on the delegate that delegates to the appropriate column, depending on the implementing entity.</div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="3937508">Problem with regen-java-api command and JAR files (PL-16351)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3684918">Issue</a></span> – If you run the <span class="cv_-_computer_voice">ClaimCenter/bin/gwpc regen-java-api</span> command, ClaimCenter creates a <span class="cv_-_computer_voice">ClaimCenter/java-api/lib</span> directory and puts JAR files for Java development in this directory. However, ClaimCenter does not always perform this task correctly, resulting in some of the generated JAR files not being copied to this directory. </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3684919">Workaround</a></span> – For missing library files, copy or import into your Java development environment the missing library files from the following directory:</div>
+      <div class="CS_-_Code_Single_Line"><a name="3684920">ClaimCenter/admin/lib</a></div>
+      <div class="B_-_Body"><a name="3684921">Copy them into the following directory:</a></div>
+      <div class="CS_-_Code_Single_Line"><a name="3684922">ClaimCenter/java-api/lib</a></div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="3675683">Renaming method or property throws ParseResultsException (PL-16633)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3675684">Issue</a></span> – If you rename a property or a method or you change a method signature, and a workflow references that property or method in a Gosu field, ClaimCenter throws <span class="cv_-_computer_voice">ParseResultsException</span>. This behavior is intended.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="3675685">Workaround</a></span> – Restart the workflow engine. To do so:</div>
+      <div class="LS_-_List_Start_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LS_-_List_Start_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LS_-_List_Start_inner"><a name="3675686">Log in to ClaimCenter using an administrative account.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="3675690">Access </a><span class="ui_-_UI_element">Internal Tools</span> → <span class="ui_-_UI_element">Reload</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="LI_-_List_Item_outer" style="margin-left: 57pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="LI_-_List_Item_inner" style="width: 15pt; white-space: nowrap">
+                <span class="ri_-_run_in_header">	3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="LI_-_List_Item_inner"><a name="3684424">Click </a><span class="ui_-_UI_element">Reload Workflow Engine</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4415500">In some languages, web browsers render column headers of list views improperly (PL-18027)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="4415502">Issue</a></span> – In some languages, web browsers render some column headers of list views improperly if their column widths are specified too narrowly in their PCF definitions. For example, sometimes a numeric column is specified with a variable width of 1%. This narrow setting forces the browser to render the column too narrowly for the text of the translated column heading.</div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="4415503">Workaround</a></span> – Edit the PCF file that defines the column and clear the value from the width property. Without a specified value for the column width, browsers render the column widely enough to display the full text of the translated column heading. </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4415519">Database upgrade does not handle nullable to non-nullable columns with a default value for subtypes (PL-23104)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="4415521">Issue</a></span> – For entity definitions, the automatic database upgrade converts nullable columns to non-nullable with a default value successfully. However, this column type conversion is not possible for columns in subtype definitions. ClaimCenter implements non-nullable columns on subtype in the database as nullable because that column must have null values for rows that represents instances of other subtypes. </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="4415522">Workaround</a></span> – Write a version trigger to populate the column with the default value for existing rows for the subtype. After you upgrade, ClaimCenter enforces the column value to be non-nullable with the default value for new rows of the subtype. </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4415523">New transport plugin definitions do not show in the list of valid transport plugins (PL-23317)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="4415525">Issue</a></span> – Newly implemented transport plugin definitions do not show in the list of valid transport plugins displayed by clicking the light-bulb icon next to the Transport Plugin field in the messaging destination editor. </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="4415526">Workaround</a></span> – Restart Studio. </div>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4415527">Find in Resources fails for resources under Data Model Extensions or Web Resources (PL-23320)</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="4415529">Issue</a></span> – In Studio, the <span class="ui_-_UI_element">Find in Resources</span> option does not work for resources that are in Data Model Extensions or Web Resources. </div>
+      <div class="B_-_Body"><span class="ri_-_run_in_header"><a name="4415530">Workaround</a></span> – To see the full resource path, hover over the resource name in the tab of the resource editor. Then, navigate in the resource pane on the left to find the resource in the resource hierarchy. </div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<typelistextension
+  xmlns="http://guidewire.com/typelists"
+  desc="The type of error for messages that are in error"
+  name="ErrorCategory">
+  <typecode
+    code="no_connection"
+    desc="Cannot connect to external system"
+    name="Cannot connect to external system"/>
+  <typecode
+    code="database_contention"
+    desc="Contention with external system database"
+    name="Contention with external system database"/>
+  <typecode
+    code="user_authentication"
+    desc="User account doesn't get authenticated"
+    name="User account doesn't get authenticated"/>
+</typelistextension>

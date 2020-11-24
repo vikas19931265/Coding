@@ -1,0 +1,11 @@
+.x-column-header-last {
+  border-right: 1px solid silver;
+}
+
+.#{$prefix}column-header-sort-ASC,
+.#{$prefix}column-header-sort-DESC {
+  .#{$prefix}column-header-text {
+    font-weight: bold;
+    color: $gwBaseColorBlue;
+  }
+}

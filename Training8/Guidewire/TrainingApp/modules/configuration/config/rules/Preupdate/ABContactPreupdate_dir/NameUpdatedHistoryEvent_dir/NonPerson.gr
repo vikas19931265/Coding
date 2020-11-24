@@ -1,0 +1,27 @@
+package rules.Preupdate.ABContactPreupdate_dir.NameUpdatedHistoryEvent_dir
+
+@gw.rules.RuleName("Non-Person")
+internal class NonPerson {
+  static function doCondition(aBContact : entity.ABContact) : boolean {
+/*start00rule*/
+return !(aBContact typeis ABPerson)
+and (aBContact.ChangedFields.contains("Name")
+or aBContact.ChangedFields.contains("NameKanji"))
+/*end00rule*/
+  }
+
+  static function doAction(aBContact : entity.ABContact, actions : gw.rules.Action) {
+
+/*start00rule*/
+var history = aBContact.addHistory(CustomHistoryType.TC_NAMEUPDATED, displaykey.Rules.Preupdate.ABContact.NameUpdated)
+var fieldsToTrack = new java.util.HashMap<String, String>()
+              {"Name" -> "Web.ContactDetail.Name.OrganizationName",
+               "NameKanji" -> "Web.ContactDetail.Name.OrganizationNameKanji"}
+history.createTrackedChanges(aBContact, fieldsToTrack)
+
+if (aBContact.CreateStatus == ContactCreationApprovalStatus.TC_PENDING_APPROVAL and aBContact.ExternalUpdateUser != null)
+  history.User = null
+/*end00rule*/
+
+  }
+}

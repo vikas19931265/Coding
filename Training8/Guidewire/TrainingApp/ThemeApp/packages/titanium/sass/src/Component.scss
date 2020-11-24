@@ -1,0 +1,35 @@
+// Custom Guidewire views
+// TODO: these rules are best suited on the application theme level, but 
+// currently the resources folder on each application is messy. Once we
+// refactor app resource folders, removing old Ocean and etc, we can adjust
+// to the Ext structure and move these rules over there
+// ------------------------------------------
+
+// Login Page
+// -----------------------
+.#{$prefix}container-login-page{
+  background-image: theme-background-image('app/login_background'), theme-background-image('app/guidewire-app-login');
+  background-position: center 64px, center 72px;
+  padding-top: 152px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 475px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+// error msg
+#Login\:LoginScreen\:0 {
+  border-width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 132px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #C00;
+  left: 0;
+  right: 0;
+}
+

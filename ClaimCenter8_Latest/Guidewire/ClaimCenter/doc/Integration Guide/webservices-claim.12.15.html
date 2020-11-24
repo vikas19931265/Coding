@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Adding a Document from External Systems</title>
+    <link rel="StyleSheet" href="css/webservices-claim.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Integration Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-webservices.html#3446248">Web Services</a> : <a class="WebWorks_Breadcrumb_Link" href="webservices-claim.12.01.html#3446248">Claim-related Web Services</a> : Adding a Document from External Systems</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="3446248">Adding a Document from External Systems</a></h3>
+      <div class="B_-_Body"><a name="3446253">To add a document to the ClaimCenter database from an external system, call the </a><span class="cv_-_computer_voice">createDocument</span> method.</div>
+      <div class="N_-_Note">
+        <span class="n_-_note">Note: </span><a name="3446256">This method uses data transfer objects (DTOs) to represent data from entity types. See </a><a href="javascript:WWHClickedPopup('integration', 'webservices-claim.12.02.html#3387497', '');" title="Claim Web Service APIs and Data Transfer Objects">“Claim Web Service APIs and Data Transfer Objects”</a>.</div>
+      <div class="B_-_Body"><a name="3446293">The method takes a data transfer object for a document (</a><span class="cv_-_computer_voice">DocumentDTO</span>) and returns the public ID of the newly-created <span class="cv_-_computer_voice">Document</span> entity instance.</div>
+      <div class="B_-_Body"><a name="3453959">The </a><span class="cv_-_computer_voice">createDocument</span> method strictly requires that <span class="cv_-_computer_voice">DocumentDTO.ClaimID</span> refers to a valid claim. Any other requirements are imposed (and enforced) by the data model configuration files. Refer to the data dictionary for the list of related fields. </div>
+      <div class="B_-_Body"><a name="3454132">A document is always related to a </a><span class="cv_-_computer_voice">Claim</span> object, and can be optionally related to at most one subobject on that same claim: a <span class="cv_-_computer_voice">ClaimContact</span>, <span class="cv_-_computer_voice">Exposure</span>, or <span class="cv_-_computer_voice">Matter</span> object. The properties on <span class="cv_-_computer_voice">DocumentDTO</span> reference these objects as <span class="cv_-_computer_voice">ClaimContactID</span>, <span class="cv_-_computer_voice">ExposureID</span>, and <span class="cv_-_computer_voice">MatterID</span>. </div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

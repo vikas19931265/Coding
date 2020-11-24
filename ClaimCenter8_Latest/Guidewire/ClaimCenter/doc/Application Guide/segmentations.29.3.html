@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Segmentation Rules</title>
+    <link rel="StyleSheet" href="css/segmentations.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <!-- THE FOLLOWING IS A GUIDEWIRE STYLE DEFINITION FOR THE LINK TO THIS FEATURE -->
+    <link rel="StyleSheet" href="css/css-guidewire-extra.css" type="text/css" media="all" />
+    <!-- THE FOLLOWING IS A GUIDEWIRE GSCRIPT FUNCTION FOR THE LINK TO THIS FEATURE -->
+    <script type="text/javascript">
+function guidewire_selectall()
+{
+var text_val=eval("document.linktothisurlform.urlfield");
+text_val.focus();
+text_val.select();
+}
+</script>
+  </head>
+  <body onLoad="WWHUpdate();" onUnload="WWHUnload();" onKeyDown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onKeyPress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onKeyUp="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <!-- THE FOLLOWING IS A GUIDEWIRE DIV FOR THE 'LINK TO THIS' FEATURE -->
+    <div id="linkToThisPage" class="popup" style="display: none;">
+      <div class="popupTitle">Link Directly to This Page 
+           <a href="#" onclick="var thePopup = getElementById('linkToThisPage');thePopup.style.display='none';return false;"><img class="popupClosebox" src="wwhelp/wwhimpl/common/images/close.gif" /></a></div>
+      <div style="padding:6px;">
+        <div class="popupText" id="linkToThisPageBookmark">An error has occurred if you see this messsage.</div>
+        <form name="linktothisurlform" method="post" action="" style="width:275px;margin:0px">
+          <input type="text" class="popupURLText" id="linkToThisPageURL" name="urlfield" rows="1" cols="55" onClick="guidewire_selectall();" onFocus="guidewire_selectall();"></input>
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <span>ClaimCenter Application&nbsp;Guide</span> : 
+    <span class="WebWorks_Breadcrumbs" style="text-align: left;"><a class="WebWorks_Breadcrumb_Link" href="p-components.html#4373777">Additional Features of ClaimCenter</a> : <a class="WebWorks_Breadcrumb_Link" href="segmentations.29.1.html#4373777">Claim Segmentation</a> : Segmentation Rules</span></div>
+    <hr align="left" />
+    <blockquote>
+      <h3 class="H1_-_Heading_1"><a name="4373777">Segmentation Rules</a></h3>
+      <div class="B_-_Body"><a name="4381031">ClaimCenter uses segmentation rules to set the segment and strategy properties of claims and exposures. These properties categorize the claim and exposures. Other rules can then take category-specific actions on them. After you select automated assignment for a new claim or exposure, ClaimCenter runs segmentation rules prior to running assignment rules. Typically, values set for the segmentation and strategy for a claim or exposure are later used to assign the claim or exposure.</a></div>
+      <div class="B_-_Body"><a name="4787788">Arriving at a decision on the segment of an exposure requires examining the fields on the exposure. For example, for an injury there could be fields like severity, body part injured, nature of injury, and first-party as opposed to third-party claimant. Other possible fields on the claim can be: cause of loss, loss location, or type of insured. </a></div>
+      <div class="B_-_Body"><a name="4381003">It is easier to make decisions about the segmentation of the claim as a whole after each exposure has been categorized. For example, an auto claim can be categorized as complex if there are any third-party injury exposures. For this reason, the exposure segmentation rule set runs before the claim segmentation rule set.</a></div>
+      <h4 class="H2_-_Heading_2"><a name="4381005">Segmentation Rule Example</a></h4>
+      <div class="B_-_Body"><a name="4381050">The following code is in the claim segmentation rule </a><span class="ui_-_UI_element">CSG011 - Auto</span>, which segments auto losses:</div>
+      <h6 class="HS_-_Head_Sub"><a name="4786888">Rule Conditions:</a></h6>
+      <PRE class="CF_-_Code_First_Line"><a name="4786910">true</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4786929">/* This example claim segmentation rule is not as efficient as the one found in CSG02100 - Property,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4786930">   but it is more easily understood. If efficiency of claim segmentation is of primary concern, you</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4786931">   should consider using the model from the other rule instead.</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="4786919">*/ </a></PRE>
+      <h6 class="HS_-_Head_Sub"><a name="4381006">Rule Actions:</a></h6>
+      <PRE class="CF_-_Code_First_Line"><a name="4786999">uses gw.api.util.Logger</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787000">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787001">/* Find an exposure with the most important segmentation. If not found, repeat for</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787002">   the rest of the segmentations in reverse order of importance. As soon as an </a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787003">   exposure is found in any of these searches, segment the claim in the manner of</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787004">   the exposure and then leave the claim segmentation rules. If no exposure is found,</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787005">   leave this rule and drop into the default rule.</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787006">*/</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787007">var highestExposure = claim.Exposures.firstWhere(\ e -&gt; e.Segment == "auto_high")</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787008">&nbsp;</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787009">if (highestExposure == null) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787010">    highestExposure = claim.Exposures.firstWhere(\ e -&gt; e.Segment == "auto_mid")</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787011">}</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787012">if (highestExposure == null) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787013">    highestExposure = claim.Exposures.firstWhere(\ e -&gt; e.Segment == "auto_low")</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787014">}</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787015">if (highestExposure != null) {</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787016">  claim.Segment = highestExposure.Segment</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787017">  Logger.logDebug(displaykey.Rules.Segmentation.Claim(actions.ShortRuleName))</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787018">  Logger.logDebug(displaykey.Rules.Segmentation.Claim.SegmentedTo(claim.Segment))</a></PRE>
+      <PRE class="CM_-_Code_Middle_Line"><a name="4787019">  actions.exit()</a></PRE>
+      <PRE class="CL_-_Code_Last_Line"><a name="4787020">}</a></PRE>
+      <div class="H3_-_Heading_3_outer" style="margin-left: 36pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+          <tr style="vertical-align: baseline">
+            <td>
+              <h5 class="H3_-_Heading_3_inner" style="width: 18pt; white-space: nowrap"></h5>
+            </td>
+            <td width="100%">
+              <h5 class="H3_-_Heading_3_inner"><a name="4381236">Segmentation Values Example</a></h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="T_-_Table"><a name="4374352">&nbsp;</a></div>
+      <table class="withHeading" style="text-align: left" border="0" cellpadding="10" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="4374321">ClaimSegment typelist could contain these segment values for an auto claim or exposure </a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: bottom">
+            <div class="TH_-_Table_Heading"><a name="4374323">ClaimStrategy typelist could also contain these strategy values for an auto claim or exposure </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4374325">auto - glass, auto - low complexity, auto - mid complexity, auto - high complexity</a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #000000; border-top-style: solid; border-top-width: 0.5pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4374327">Auto - Fast Track</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4374329">single car, pedestrian, two-car, multi-car </a></div>
+          </td>
+          <td style="border-bottom-color: #c0d1d1; border-bottom-style: solid; border-bottom-width: 0.15pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4374331">normal</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4374333">injury - low complexity, injury - mid complexity, injury - high complexity</a></div>
+          </td>
+          <td style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 0.5pt; border-top-color: #c0d1d1; border-top-style: solid; border-top-width: 0.15pt; padding-bottom: 4pt; padding-left: 2pt; padding-right: 8pt; padding-top: 0pt; vertical-align: top">
+            <div class="TT_-_Table_Text"><a name="4374335">Auto - Investigate</a></div>
+          </td>
+        </tr>
+      </table>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>

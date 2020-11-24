@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>TAccountDelegate</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">TAccountDelegate <span class="entityname">(Virtual)</span></div>
+<div class="desc">
+<span id="reflink_47" class="reftext" onclick='showAndHideRefBox("refbox_47", "reflink_47")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_47" class="refbox_inner" style="display:none;">
+The delegate for TAccount and RITAccount.
+    TAccounts are used in ClaimCenter to provide a rolled-up view of all financials transactions
+    entered into the system.  Each Reserve Line (unique combination of Claim, Exposure, Cost Type and Cost Category) has
+    22 distinct TAccounts that together represent every possible life cycle state for each of the four transaction subtypes
+    (Payment, Reserve, Recovery and Recovery Reserve).  The Taccounts occur in pairs; a debit account (example: ReservesXX,
+    which holds the amount of a reserve) and a matching credit account (example: Cash Out). Every life cycle state transition
+    for a transaction (e.g., from pending-approval to awaiting-submission) affects one debit and one credit T-account equally
+    (example: a payment debits ReservesXX and credits Cash Out).  ClaimCenter provides useful calculated values by combining
+    the balances of various TAccounts as appropriate.
+  
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">TAccountDelegate</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Final<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Final</b><br>The entity cannot be subtyped.')">?</span></sup></span>
+</div>
+</div>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+</body>
+</html>

@@ -1,0 +1,549 @@
+<html>
+<head>
+<title>HistoryType</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox"
+<div><span class="pagetitle">HistoryType</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="entityname">(cctl_historytype)</span>
+</div>
+<div class="desc">The type of claim/exposure history</div>
+</div>
+<table cellpadding="3" cellspacing="0" border="0" height="20" width="100%">
+<tr>
+<td nowrap="true" class="attrbox" height="20">
+<span class="attrtitle">Attributes: 
+
+</span>
+</td>
+</tr>
+</table>
+<br/>
+<div class="refbox biglist odd">
+<span id="reflink_5655" class="reftext" onclick='showAndHideRefBox("refbox_5655", "reflink_5655")'><img src="../../res/blackup.gif" border="0"><b>Referenced by: </b></span>
+<div id="refbox_5655" class="refbox_inner" style="display:none;">
+<A HREF="../full/History.html" TARGET="tableFrame">History.Type</A>
+</div>
+</span>
+</div>
+<a id='TOC'></a>
+<a name="Typecodes"></a><div class="arraysbox">Typecodes</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+<td>Description</td>
+<td>Priority</td>
+<td>Internal</td>
+<td>Retired</td>
+</tr>
+<tr valign="top">
+<td><a href=#approval>approval</a></td>
+<td>Approval or Rejection</td>
+<td>A referral was approved/rejected</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#archived>archived</a></td>
+<td>Archived</td>
+<td>Claim was archived</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#assignment>assignment</a></td>
+<td>Assigned</td>
+<td>Claim or exposure was assigned</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#catastrophe>catastrophe</a></td>
+<td>Catastrophe warning</td>
+<td>Catastrophe warning</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#checkdeleted>checkdeleted</a></td>
+<td>Check deleted</td>
+<td>A check was deleted</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#checkstopped>checkstopped</a></td>
+<td>Check stopped</td>
+<td>A check was stopped</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#checktransferred>checktransferred</a></td>
+<td>Check transferred</td>
+<td>A check was transferred to another claim</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#checkvoided>checkvoided</a></td>
+<td>Check voided</td>
+<td>A check was voided</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#closed>closed</a></td>
+<td>Closed</td>
+<td>Claim or exposure was closed</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#custom>custom</a></td>
+<td>Custom</td>
+<td>A custom history event happened; see CustomType for details</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#delayed>delayed</a></td>
+<td>Activity due date changed</td>
+<td>Due date on an activity was changed</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#escalationmvd>escalationmvd</a></td>
+<td>Activity escalation date moved</td>
+<td>The escalation date on an activity was changed</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#flagged>flagged</a></td>
+<td>Flagged</td>
+<td>Claim flagged indicator status was changed</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#import>import</a></td>
+<td>Imported</td>
+<td>Claim or exposure was imported</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#litigated>litigated</a></td>
+<td>Litigated</td>
+<td>Claim was litigated</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#opened>opened</a></td>
+<td>Opened</td>
+<td>A new claim or exposure was opened</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#policyedited>policyedited</a></td>
+<td>Policy edited</td>
+<td>The policy was edited, and thus marked unverified</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#policyselected>policyselected</a></td>
+<td>Policy selected or refreshed</td>
+<td>A different policy was selected for the claim, or the existing policy was refreshed</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#reopened>reopened</a></td>
+<td>Reopened</td>
+<td>Claim or exposure was reopened</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#restored>restored</a></td>
+<td>Retrieved</td>
+<td>Archived claim was retrieved</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#viewing>viewing</a></td>
+<td>Viewed</td>
+<td>Claim or exposure was viewed by a user</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<div class='subtypebox'>
+<a name=approval></a>
+<div class="titlebox">
+<div class="filtertitle">approval <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5656" class="reftext" onclick='showAndHideRefBox("refbox_5656", "reflink_5656")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5656" class="refbox_inner" style="display:none;">
+A referral was approved/rejected
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=archived></a>
+<div class="titlebox">
+<div class="filtertitle">archived <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5657" class="reftext" onclick='showAndHideRefBox("refbox_5657", "reflink_5657")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5657" class="refbox_inner" style="display:none;">
+Claim was archived
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=assignment></a>
+<div class="titlebox">
+<div class="filtertitle">assignment <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5658" class="reftext" onclick='showAndHideRefBox("refbox_5658", "reflink_5658")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5658" class="refbox_inner" style="display:none;">
+Claim or exposure was assigned
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=catastrophe></a>
+<div class="titlebox">
+<div class="filtertitle">catastrophe <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5659" class="reftext" onclick='showAndHideRefBox("refbox_5659", "reflink_5659")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5659" class="refbox_inner" style="display:none;">
+Catastrophe warning
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=checkdeleted></a>
+<div class="titlebox">
+<div class="filtertitle">checkdeleted <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5660" class="reftext" onclick='showAndHideRefBox("refbox_5660", "reflink_5660")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5660" class="refbox_inner" style="display:none;">
+A check was deleted
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=checkstopped></a>
+<div class="titlebox">
+<div class="filtertitle">checkstopped <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5661" class="reftext" onclick='showAndHideRefBox("refbox_5661", "reflink_5661")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5661" class="refbox_inner" style="display:none;">
+A check was stopped
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=checktransferred></a>
+<div class="titlebox">
+<div class="filtertitle">checktransferred <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5662" class="reftext" onclick='showAndHideRefBox("refbox_5662", "reflink_5662")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5662" class="refbox_inner" style="display:none;">
+A check was transferred to another claim
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=checkvoided></a>
+<div class="titlebox">
+<div class="filtertitle">checkvoided <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5663" class="reftext" onclick='showAndHideRefBox("refbox_5663", "reflink_5663")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5663" class="refbox_inner" style="display:none;">
+A check was voided
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=closed></a>
+<div class="titlebox">
+<div class="filtertitle">closed <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5664" class="reftext" onclick='showAndHideRefBox("refbox_5664", "reflink_5664")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5664" class="refbox_inner" style="display:none;">
+Claim or exposure was closed
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=custom></a>
+<div class="titlebox">
+<div class="filtertitle">custom <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5665" class="reftext" onclick='showAndHideRefBox("refbox_5665", "reflink_5665")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5665" class="refbox_inner" style="display:none;">
+A custom history event happened; see CustomType for details
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=delayed></a>
+<div class="titlebox">
+<div class="filtertitle">delayed <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5666" class="reftext" onclick='showAndHideRefBox("refbox_5666", "reflink_5666")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5666" class="refbox_inner" style="display:none;">
+Due date on an activity was changed
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=escalationmvd></a>
+<div class="titlebox">
+<div class="filtertitle">escalationmvd <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5667" class="reftext" onclick='showAndHideRefBox("refbox_5667", "reflink_5667")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5667" class="refbox_inner" style="display:none;">
+The escalation date on an activity was changed
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=flagged></a>
+<div class="titlebox">
+<div class="filtertitle">flagged <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5668" class="reftext" onclick='showAndHideRefBox("refbox_5668", "reflink_5668")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5668" class="refbox_inner" style="display:none;">
+Claim flagged indicator status was changed
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=import></a>
+<div class="titlebox">
+<div class="filtertitle">import <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5669" class="reftext" onclick='showAndHideRefBox("refbox_5669", "reflink_5669")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5669" class="refbox_inner" style="display:none;">
+Claim or exposure was imported
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=litigated></a>
+<div class="titlebox">
+<div class="filtertitle">litigated <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5670" class="reftext" onclick='showAndHideRefBox("refbox_5670", "reflink_5670")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5670" class="refbox_inner" style="display:none;">
+Claim was litigated
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=opened></a>
+<div class="titlebox">
+<div class="filtertitle">opened <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5671" class="reftext" onclick='showAndHideRefBox("refbox_5671", "reflink_5671")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5671" class="refbox_inner" style="display:none;">
+A new claim or exposure was opened
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=policyedited></a>
+<div class="titlebox">
+<div class="filtertitle">policyedited <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5672" class="reftext" onclick='showAndHideRefBox("refbox_5672", "reflink_5672")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5672" class="refbox_inner" style="display:none;">
+The policy was edited, and thus marked unverified
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=policyselected></a>
+<div class="titlebox">
+<div class="filtertitle">policyselected <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5673" class="reftext" onclick='showAndHideRefBox("refbox_5673", "reflink_5673")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5673" class="refbox_inner" style="display:none;">
+A different policy was selected for the claim, or the existing policy was refreshed
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=reopened></a>
+<div class="titlebox">
+<div class="filtertitle">reopened <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5674" class="reftext" onclick='showAndHideRefBox("refbox_5674", "reflink_5674")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5674" class="refbox_inner" style="display:none;">
+Claim or exposure was reopened
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=restored></a>
+<div class="titlebox">
+<div class="filtertitle">restored <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5675" class="reftext" onclick='showAndHideRefBox("refbox_5675", "reflink_5675")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5675" class="refbox_inner" style="display:none;">
+Archived claim was retrieved
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+<div class='subtypebox'>
+<a name=viewing></a>
+<div class="titlebox">
+<div class="filtertitle">viewing <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5676" class="reftext" onclick='showAndHideRefBox("refbox_5676", "reflink_5676")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5676" class="refbox_inner" style="display:none;">
+Claim or exposure was viewed by a user
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+</div>
+</body>
+</html>
