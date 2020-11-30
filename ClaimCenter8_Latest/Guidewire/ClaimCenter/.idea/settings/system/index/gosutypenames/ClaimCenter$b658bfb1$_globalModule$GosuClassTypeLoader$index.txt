@@ -49,8 +49,8 @@ libraries.Activityassignment
 rules.Workplan.ClaimWorkplan_dir.CLW00100NotFirstandFinal_dir.CLW05000Propertyclaims
 gw.claim.metric.activity.DaysLastViewedByAdjusterClaimMetricMethodsImpl
 gw.api.name.PolicySearchContactNameDelegate
-rules.Assignment.GlobalExposureAssignmentRules_dir.GEA03000Default
 rules.Preupdate.ContactPreupdate_dir.COP03000Adddefaulttags
+rules.Assignment.GlobalExposureAssignmentRules_dir.GEA03000Default
 gw.api.address.AddnlTripAccommodationAddressOwner
 rules.Segmentation.ExposureSegmentationRules_dir.ESG03000WC_dir.ESG03100Medical
 rules.EventMessage.EventFired_dir.EFR08000Contacts_dir.EFR08100Linked
@@ -67,6 +67,7 @@ gw.plugin.cognos.CognosPlugin
 gw.processes.CatastrophePolicyLocationDownload
 gw.api.vendormanagement.metric.TimeBasedServiceRequestMetricMethodsImpl
 gw.plugin.integration.mapping.FieldMapperBase
+gw.lang.enhancements.CoreIterableEnhancement
 util.lvwrapper.ClaimContactContactLVWrapper
 rules.Validation.MatterReopenedValidationRules
 gw.plugin.addressbook.ab700.ContactFindDuplicatesResultMapper
@@ -75,6 +76,7 @@ rules.Validation.ExposureValidationRules_dir.EXV01000Incidentnotnull
 rules.Assignment.GlobalMatterAssignmentRules
 rules.Validation.RIAgreementValidationRules_dir.RIAV01000RequiredFields_dir.RIAV01030AgreementGroup
 gw.entity.GWWorkStatusEnhancement
+rules.Assignment.GlobalExposureAssignmentRules_dir.GEA02500ComprehensiveCoverageExp
 gw.api.claim.LossDetailsHomeownersHelper
 gw.claim.metric.general.DaysInitialContactWithInsuredClaimMetricMethodsImpl
 rules.Loaded.ClaimLoaded_dir.CLR01000Filterpreviouslysetupclaims
@@ -92,8 +94,8 @@ rules.Preupdate.ClaimPreupdate
 gw.database.dmv.db2TablesPage
 rules.Validation.ServiceRequestValidationRules
 gw.plugin.integration.mapping.TypelistNotFoundException
-rules.Preupdate.TransactionSetPreupdate_dir.TPU04000Reinsurance_dir.TPU04100LargeLossIdentification
 gw.plugin.note.impl.LocalNoteTemplateSource
+rules.Preupdate.TransactionSetPreupdate_dir.TPU04000Reinsurance_dir.TPU04100LargeLossIdentification
 gw.command.CreateRIData
 rules.Validation.TransactionSetValidationRules_dir.TXV10000Check
 gw.specialhandling.FinancialAutomatedNotificationHandlerMethodsImpl
@@ -209,6 +211,7 @@ rules.Postsetup.ExposurePostsetup
 gw.api.contact.MessageRetireBeanImpl
 gw.pcf.AddressBookContactHelper
 rules.Workplan.ClaimWorkplan_dir.CLW07000Workerscompclaims_dir.CLW07200Contactclaimant
+rules.GEA04000Comprehensive
 gw.api.databuilder.ExchangeRateBuilderEnhancement
 gw.api.filters.MessageDestinationFilter
 rules.Preupdate.ClaimPreupdate_dir.CPU01000CreateDocumentSynchronously
@@ -379,8 +382,8 @@ rules.Segmentation.ExposureSegmentationRules_dir.ESG02000Property_dir.ESG02400Pr
 util.CoverageValidation
 gw.plugin.policy.refresh.matcher.ContactContactMatcher
 gw.webservice.contactapi.ab800.ABClientAPIAddressBookUIDContainer
-rules.Assignment.GlobalActivityAssignmentRules_dir.GAA05000HomeownersPolicyType_dir.GAA05100Damageditemslist
 rules.Postsetup.TransactionSetPostsetup
+rules.Assignment.GlobalActivityAssignmentRules_dir.GAA05000HomeownersPolicyType_dir.GAA05100Damageditemslist
 gw.exposure.metric.financials.TotalPaidExposureMetricMethodsImpl
 rules.EventMessage.EventFired_dir.EFR01000ISO_dir.EFR01400Policy_dir.EFR01410PolicyChanged
 gw.assignment.workload.classifications.ExposureWorkloadClassificationMethodsImpl
@@ -541,10 +544,10 @@ gw.assignment.workload.util.WorkloadClassificationToolbarFilters
 gw.plugin.policy.refresh.matcher.BuildingMatcher
 gw.api.filters.WorkQueueFilterSet
 rules.Preupdate.TransactionSetPreupdate_dir.TPU02000CreateActivityAfterRecoveryDenial
+rules.Assignment.GlobalExposureAssignmentRules_dir.GEA02000Nonautoclaims
 rules.ApprovalRouting.ApprovalRules
 gw.api.iso.ISOValidationConstants
 rules.Preupdate.ClaimPreupdate_dir.CPU09000RelatedtoCatastrophe
-rules.Assignment.GlobalExposureAssignmentRules_dir.GEA02000Nonautoclaims
 gw.plugin.contact.ab800.ContactSearchMapper
 rules.Preupdate.TransactionSetPreupdate
 gw.plugin.pcintegration.pc800.mapping.ContactArrayFieldMapper
@@ -646,6 +649,7 @@ rules.Preupdate.ClaimPreupdate_dir.CPU10800CreateSubroSummary
 gw.assignment.workload.rules.ClaimWorkloadPreupdateRuleActions
 gw.financials.CoverageLimitRulesUtil
 rules.Preupdate.ClaimPreupdate_dir.CPU16000Travel_dir.CPU16100TripIncident_dir.CPU16120TripAccommodation
+rules.da
 gw.vendormanagement.ServiceRequestOperationCallbackHelper
 gw.plugin.pcintegration.location.PolicyLocationSearchCriteriaImpl
 rules.EventMessage.EventFired_dir.EFR02000Metro_dir.EFR02100MetroReport_dir.EFR02110SendOrderMessage
@@ -680,6 +684,7 @@ gw.plugin.policy.refresh.matcher.ContactMatcher
 rules.Validation.ClaimValidationRules_dir.CLV11000SubrogationStatusAndLiability
 gw.processes.PurgeFailedWorkItems
 rules.Closed.MatterClosed
+rules.DGE03000Comprehensive
 gw.api.database.GWQuerySelectColumnsEnhancement
 rules.Validation.ExposureValidationRules_dir.EXV05000ISOValidation_dir.EXV05700VehicleExposure_dir.EXV05740Boat_dir.EXV05741HINPresent
 rules.Assignment.GlobalClaimAssignmentRules_dir.GCA00010Claims_dir.GCAA00010Auto
@@ -724,6 +729,7 @@ gw.api.claim.metric.TimeBasedClaimMetricMethodsImpl
 gw.plugin.addressbook.ABNotAvailablePlugin
 rules.Assignment.GlobalExposureAssignmentRules
 gw.xml.ws.annotation.WsiRequestXmlTransform
+rules.Validation.ExposureValidationRules_dir.EXV05000ISOValidation_dir.EXV05700VehicleExposure_dir.EXV05720NormalVehicle_dir.EXV05722VehicleIdentificationNumber
 rules.Preupdate.ClaimPreupdate_dir.CPU13000CatastropheHistory
 gw.database.DBInfoDownloadServlet
 rules.EventMessage.EventFired_dir.EFR02000Metro_dir.EFR02100MetroReport
@@ -763,9 +769,9 @@ gw.api.profiler.ProfilerConfigTypeKeyFilter
 rules.Preupdate.ClaimPreupdate_dir.CPU16000Travel_dir.CPU16100TripIncident
 rules.Assignment.GlobalMatterAssignmentRules_dir.GMA01000Default
 gw.plugin.policy.refresh.matcher.PersonMatcher
-rules.Validation.ClaimValidationRules_dir.CLV09000ISOValidation_dir.CLV09900Insured_dir.CLV09930Address
-gw.command.ClaimMetricLimit
 gw.claim.metric.financials.NetTotalIncurredClaimMetricMethodsImpl
+gw.command.ClaimMetricLimit
+rules.Validation.ClaimValidationRules_dir.CLV09000ISOValidation_dir.CLV09900Insured_dir.CLV09930Address
 gw.contactmapper.ab800.CCNameMapper
 rules.TransactionApproval.TransactionApprovalRules_dir.TAP03000SampleCustomCalculation
 gw.solr.mapper.query.DefaultTagHandler
@@ -1053,6 +1059,7 @@ rules.Archive.DefaultGroupClaimArchivingRules_dir.ARC06000UnsyncedReviewRule
 rules.InitialReserve.InitialReserve_dir.IRR02000Travel
 rules.EventMessage.EventFired_dir.SolrDestFilter_dir.Claim_dir.ClaimPurged
 gw.contactmapper.ab800.CCMappingProperties
+rules.GEA02500ComprehensiveCoverageExp
 gw.entity.GWBaggageIncidentEnhancement
 rules.Validation.ClaimValidationRules_dir.CLV09000ISOValidation_dir.CLV09500PolicyType
 gw.entity.GWRITransactionSetEnhancement
@@ -1269,6 +1276,7 @@ gw.api.profiler.FindGroupedQueriesByQueryTimeAnalyzer
 gw.webservice.cc.cc800.vendormanagement.ServiceRequestSearchCriteria
 gw.api.financials.FinancialsCalculationsForEditedTransaction
 gw.api.cache2.CacheInfoPageHelper
+rules.Assignment.DefaultGroupExposureAssignmentRules_dir.DGE03000Comprehensive
 gw.api.assignment.examples.AttributeAssignmentBySeniority
 gw.webservice.cc.cc800.pcintegration.pcentities.PCClaim
 gw.api.financials.QuickCreateCheckWizardInfo

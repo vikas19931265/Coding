@@ -127,6 +127,7 @@ gw.database.dmv.db2TablesPage
 gw.plugin.integration.mapping.TypelistNotFoundException
 gw.entity.GWMatterEnhancement
 gw.plugin.note.impl.LocalNoteTemplateSource
+gw.lang.enhancements.CoreIterableEnhancement<java.lang.Comparable<java.lang.Object>>
 gw.command.CreateRIData
 gw.lang.enhancements.CoreIterableOfShortsEnhancement
 gw.specialhandling.FinancialAutomatedNotificationHandlerMethodsImpl
@@ -145,6 +146,7 @@ gw.api.validation.LuhnAlgorithm
 gw.api.addressbook.ContactManager
 gw.plugin.policy.refresh.relink.handler.ClaimContactRoleRelinkHandler
 gw.api.heatmap.CatastrophePolicyLocationDataSet
+gw.lang.enhancements.CoreIterableEnhancement<gw.rules.ExecutionSession>
 gw.xml.ws.annotation.WsiParseOptions
 gw.plugin.vendormanagement.ServiceRequestMetricLimitFinderImpl
 gw.claim.indicator.LargeLossClaimIndicatorMethodsImpl
@@ -225,6 +227,7 @@ gw.api.iso.ISOInjuryLossSection
 gw.plugin.policy.reinsurance.impl.ReinsuranceDemoPlugin
 gw.plugin.policy.impl.PolicySearchDemoDataStore
 gw.api.name.NameOwnerBase
+gw.lang.enhancements.CoreIterableEnhancement<entity.Group>
 gw.plugin.contact.ab800.TemporaryIDContactVisitor
 gw.api.address.MobilePropertyIncidentAddressOwner
 gw.webservice.contactapi.ContactAPIUtil
@@ -301,6 +304,7 @@ gw.xml.ws.annotation.WsiWebService
 gw.specialhandling.FinancialAutomatedActivityHandlerMethodsImpl
 gw.command.Import
 gw.database.dmv.db2pkgcacheTable
+gw.lang.enhancements.CoreIterableEnhancement<Q>
 gw.claim.indicator.SIUClaimIndicatorMethodsImpl
 gw.solr.mapper.query.AbstractEncoder
 gw.sampledata.SampleAuthorityLimits
@@ -316,6 +320,7 @@ gw.util.Geocode
 gw.plugin.policy.refresh.diffdisplay.KeyableBeanDiffDisplay
 gw.lang.enhancements.CoreArrayOfDoublesEnhancement
 gw.entity.GWExposureAddressOwnerEnhancement
+gw.lang.enhancements.CoreIterableEnhancement<R>
 gw.webservice.cc.cc801.dto.PolicyDTO
 gw.plugin.policy.refresh.matcher.EndorsementMatcher
 gw.entity.GWInjuryIncidentEnhancement
@@ -370,14 +375,15 @@ gw.api.assignment.workload.user.GroupUserWorkloadMethodsBaseImpl
 gw.webservice.cc.cc801.claim.ClaimAPI
 gw.lang.enhancements.CoreIterablePFloatSumEnhancement
 libraries.Claimassignment
+gw.lang.enhancements.CoreIterableEnhancement<T>
 gw.lang.enhancements.CoreArrayOfPFloatsEnhancement
 gw.pcf.specialhandling.EmailTemplateUtil
 util.lvwrapper.ClaimInAssociationLVWrapper
 gw.api.address.SearchAddressOwnerBase
 gw.plugin.email.impl.EmailMessageTransportPlugin
-gw.api.address.AutofillableField
-gw.api.databuilder.MobilePropertyIncidentBuilderBaseEnhancement
 gw.plugin.document.impl.AsyncDocumentContentSource
+gw.api.databuilder.MobilePropertyIncidentBuilderBaseEnhancement
+gw.api.address.AutofillableField
 gw.lang.enhancements.CoreThrowableEnhancement
 gw.entity.GWDecimalMetricDelegateEnhancement
 gw.entity.GWNoteEnhancement
@@ -714,6 +720,7 @@ gw.solr.request.ResultHolderImpl
 gw.internal.xml.ws.WebservicesClientConnector
 gw.api.iso.ISOMobileEquipmentLossSectionBase
 gw.database.dmv.db2ReasonsPage
+gw.lang.enhancements.CoreIterableEnhancement<java.lang.String>
 gw.api.iso.ISOReplyBase
 gw.webservice.contactapi.abcontactapihelpers.core.XmlSetter
 gw.api.domain.GWContactEnhancement
@@ -739,6 +746,7 @@ gw.plugin.policy.base.PolicySearchPluginBase
 gw.plugin.pcintegration.pc702.mapping.ContactArrayFieldMapper
 gw.plugin.policy.refresh.ui.GWPolicyRefreshMessageContextEnhancement
 gw.api.claim.metric.PercentClaimMetricMethodsImpl
+gw.lang.enhancements.CoreIterableEnhancement<typekey.Currency>
 gw.plugin.policy.refresh.diffdisplay.ClassCodeDiffDisplay
 gw.api.database.GWISimpleQueryBuilderEnhancement
 gw.solr.request.ISolrQueryElement
@@ -758,11 +766,11 @@ gw.plugin.policy.reinsurance.impl.RIDataGenerator
 util.lvwrapper.CoverageLineLimitLVWrapper
 gw.vendormanagement.metric.ServiceTimelinessServiceRequestMetricMethodsImpl
 gw.api.financials.CheckTransferMethodsImpl
-gw.plugin.preupdate.GWPreUpdateContextEnhancement
 gw.plugin.contact.ab800.ContactPluginHelper
+gw.plugin.preupdate.GWPreUpdateContextEnhancement
 gw.api.databuilder.PlaceBuilderBase
-gw.api.name.AddressSearchNameOwner
 gw.document.GWDocumentUtilBaseEnhancement
+gw.api.name.AddressSearchNameOwner
 gw.entity.GWClaimServiceRequestEnhancement
 gw.xml.ws.annotation.WsiExportable
 gw.plugin.integration.utils.ErrorGeneratorImpl
@@ -1117,6 +1125,7 @@ gw.webservice.dataExtraction.IDataExtractionAPI
 gw.command.NewServiceRequest
 util.financials.CheckFunctions
 gw.plugin.policy.refresh.pc800.PCPolicyRefreshConfiguration
+gw.lang.enhancements.CoreIterableEnhancement<java.lang.Object>
 gw.assignment.AssignmentPopupUtil
 gw.webservice.contactapi.mapping.FieldMappingImpl
 gw.contactmapper.ab800.SyncedProperties
@@ -1398,6 +1407,7 @@ gw.api.address.GWAddressEnhancement
 gw.api.financials.ReserveLineInputSetStrategyForPaymentTransfer
 gw.webservice.ITypelistToolsAPI
 gw.api.claim.IncidentUIHelper
+gw.lang.enhancements.CoreIterableEnhancement.block_0_
 gw.processes.WorkQueueInstrumentationPurge
 gw.document.DocTreeNode
 gw.entity.GWIncidentEnhancement

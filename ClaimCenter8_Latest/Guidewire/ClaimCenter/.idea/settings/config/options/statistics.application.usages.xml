@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application>
   <component name="StatisticsApplicationUsages">
-    <group name="language-level">
-      <project id="ClaimCenter" values="JDK_1_7" />
-    </group>
     <group name="run-configuration-type">
       <project id="ClaimCenter" values="Application" />
+    </group>
+    <group name="language-level">
+      <project id="ClaimCenter" values="JDK_1_7" />
     </group>
     <group name="module type">
       <project id="ClaimCenter" values="JAVA_MODULE" />
     </group>
     <group name="file-type">
-      <project id="ClaimCenter" values="Properties,PCF,SQL files,PLAIN_TEXT,HTML,GosuCode,XML,Entity Name,Typelist TTI,UNKNOWN,Images,Native,Entity,WSC,Typelist TIX,IDEA_MODULE,ARCHIVE,Plugin,RPCE,Typelist TTX" />
+      <project id="ClaimCenter" values="Properties,Native,WSC,Typelist TTX,PCF,RPCE,UNKNOWN,HTML,Plugin,PLAIN_TEXT,GosuCode,Typelist TTI,SQL files,Images,IDEA_MODULE,Entity Name,ARCHIVE,Typelist TIX,XML,Entity" />
     </group>
   </component>
   <component name="UsageTrigger">
     <counts>
-      <entry feature="execute.Application.Debug" count="1" />
+      <entry feature="execute.Application.Debug" count="27" />
     </counts>
   </component>
 </application>

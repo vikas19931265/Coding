@@ -10,6 +10,5 @@ Spring MVC allows us to use multiple @PathVariable annotations in the same metho
 A path variable is a critical part of creating rest resources.
 
 
-d
 
 */

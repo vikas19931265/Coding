@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <versions>
+  <component name="" version="1606719237592" />
+  <component name="CodeStyleSchemeSettings" version="1606719237606" />
   <component name="CodeStyleSchemes" version="1606223781773" />
-  <component name="DimensionService" version="1606226216852" />
-  <component name="EditorColorsManagerImpl" version="1606226190208" />
-  <component name="FeatureUsageStatistics" version="1606226216853" />
-  <component name="KeymapManager" version="1606226216855" />
-  <component name="LafManager" version="1606226190212" />
-  <component name="NotificationConfiguration" version="1606227175453" />
-  <component name="PathMacrosImpl" version="1606223781806" />
-  <component name="PropertiesComponent" version="1606227175460" />
-  <component name="RecentProjectsManager" version="1606227187116" />
-  <component name="Registry" version="1606223781827" />
-  <component name="StatisticsApplicationUsages" version="1606227154216" />
-  <component name="UpdatesConfigurable" version="1606223781834" />
-  <component name="WindowManager" version="1606227125879" />
+  <component name="DaemonCodeAnalyzerSettings" version="1606719237606" />
+  <component name="DebuggerSettings" version="1606722896209" />
+  <component name="DimensionService" version="1606730487160" />
+  <component name="EditorColorsManagerImpl" version="1606719237606" />
+  <component name="EditorSettings" version="1606719237606" />
+  <component name="Encoding" version="1606719237606" />
+  <component name="ExportableFileTemplateSettings" version="1606719237606" />
+  <component name="ExportableTemplateSettings" version="1606722791679" />
+  <component name="FeatureUsageStatistics" version="1606730144967" />
+  <component name="FileBasedIndex" version="1606719237606" />
+  <component name="FileTypeManager" version="1606719237606" />
+  <component name="FindSettings" version="1606719237606" />
+  <component name="GeneralSettings" version="1606719237606" />
+  <component name="GlobalAntConfiguration" version="1606719237606" />
+  <component name="GosuCompilerSettings" version="1606722896213" />
+  <component name="HttpConfigurable" version="1606719237606" />
+  <component name="KeymapManager" version="1606719237606" />
+  <component name="LafManager" version="1606719237606" />
+  <component name="NodeRendererSettings" version="1606719237606" />
+  <component name="NotificationConfiguration" version="1606730196930" />
+  <component name="PathMacrosImpl" version="1606719237606" />
+  <component name="ProjectJdkTable" version="1606719237606" />
+  <component name="ProjectManager" version="1606719237606" />
+  <component name="PropertiesComponent" version="1606719237606" />
+  <component name="RecentProjectsManager" version="1606719237606" />
+  <component name="Registry" version="1606719237606" />
+  <component name="RunnerLayoutSettings" version="1606730487177" />
+  <component name="StatisticsApplicationUsages" version="1606719237622" />
+  <component name="StudioSettings" version="1606719237622" />
+  <component name="TemplateSettings" version="1606722791682" />
+  <component name="TodoConfiguration" version="1606719237622" />
+  <component name="UISettings" version="1606719237622" />
+  <component name="UpdatesConfigurable" version="1606719237622" />
+  <component name="UsageTrigger" version="1606730196933" />
+  <component name="UsagesStatistic" version="1606719237622" />
+  <component name="ViewsSettings" version="1606723036609" />
+  <component name="WindowManager" version="1606733999586" />
+  <component name="com.intellij.ide.fileTemplates.impl.FileTemplateManagerImpl" version="1606719237642" />
+  <component name="com.intellij.javaee.ExternalResourceManagerImpl" version="1606719237642" />
 </versions>
 

@@ -8,9 +8,9 @@ org.apache.commons.fileupload.FileUploadBase.FileUploadIOException
 com.guidewire.cc.domain.exposure.gen.AddnlTripAccommodationStubI
 org.apache.commons.pool.impl.GenericKeyedObjectPool.ObjectTimestampPair
 sun.print.PSPrinterJob.GState
-java.util.ResourceBundle.CacheKey
 org.jfree.chart.plot.PlotUtilities
 javax.lang.model.element.AnnotationValueVisitor
+java.util.ResourceBundle.CacheKey
 org.apache.bcel.generic.LAND
 gw.util.concurrent.Cache.ConcurrentLinkedHashMap.SimpleEntry
 org.apache.poi.hpsf.Array
@@ -30,6 +30,7 @@ sun.tools.tree.ForStatement
 com.guidewire.pl.system.workqueue.DistributedWorkerConfig
 org.openqa.selenium.Keyboard
 gw.internal.schema.gw.xsd.w3c.xmlschema.MaxLength
+java.lang.Iterable<java.lang.Double>
 com.guidewire.cc.domain.policy.gen.RiskUnitInternalStubI
 com.guidewire.pl.web.menus.SubMenuLinksRenderer
 com.sun.deploy.security.BasicPermissionCollection
@@ -188,8 +189,8 @@ com.google.common.collect.ArrayTable.RowMapEntrySet
 org.faceless.pdf2.AnnotationRichMedia.d_
 com.sun.tools.javac.file.CacheFSInfo
 org.relaxng.datatype.helpers.DatatypeLibraryLoader.Service.Loader
-com.sun.xml.internal.bind.v2.runtime.output.UTF8XmlOutput
 org.easymock.internal.matchers.Matches
+com.sun.xml.internal.bind.v2.runtime.output.UTF8XmlOutput
 com.sun.tools.internal.ws.wscompile.FilerCodeWriter
 org.faceless.pdf2.AnnotationRichMedia.e_
 gw.lang.parser.coercers.ShortHighPriorityCoercer
@@ -764,8 +765,8 @@ oracle.jdbc.driver.TSLTZBinder
 org.apache.fop.pdf.ObjectStream
 org.openqa.selenium.internal.selenesedriver.ClearElement
 org.faceless.pdf2.viewer2.Importer
-com.sun.security.sasl.CramMD5Server
 sun.util.calendar.ImmutableGregorianDate
+com.sun.security.sasl.CramMD5Server
 com.ibm.icu.text.Bidi
 com.sun.org.apache.xml.internal.serializer.EmptySerializer
 com.guidewire.pl.perfdownload.platform.collector.internal.awr.OracleCatalogTableReaderBase
@@ -1532,8 +1533,8 @@ com.guidewire.cc.web.financials.bulkpay.BulkPayHelperCache.CachedBulkPayValues
 oracle.jdbc.driver.T4C7Ocommoncall
 com.sun.tools.corba.se.idl.constExpr.Expression
 org.apache.fop.afp.modca.PresentationTextObject
-org.apache.xml.security.keys.keyresolver.implementations.RetrievalMethodResolver
 com.sun.org.apache.xml.internal.security.encryption.ReferenceList
+org.apache.xml.security.keys.keyresolver.implementations.RetrievalMethodResolver
 com.google.gdata.data.media.MediaFeed
 org.xml.sax.SAXParseException
 com.sun.imageio.plugins.common.ReaderUtil
@@ -12283,9 +12284,9 @@ com.guidewire.pl.perfdownload.platform.analyzer.internal.dmv.TableOperationalIOS
 com.guidewire.pl.web.schema.v3.WizardStepIteratorNode
 com.guidewire.pl.system.server.config.database.DBMSSettingsXMLNodeBase
 net.sf.cotta.FileSystem
+org.faceless.pdf2.viewer2.AnnotationComponentFactory.d_
 com.guidewire.cc.domain.metric.gen.MetricLimitTimeDelegateInternalStubI
 org.apache.poi.xslf.usermodel.XSLFTableStyles
-org.faceless.pdf2.viewer2.AnnotationComponentFactory.d_
 org.apache.axis.transport.http.CommonsHTTPSender
 java.util.concurrent.Executors.DelegatedScheduledExecutorService
 com.guidewire.commons.metadata.internal.loader2.MetadataNameUtil
@@ -12652,6 +12653,7 @@ com.guidewire.pl.web.schema.v2.ToolbarFilterOptionGroupNode
 org.apache.tools.ant.util.DOMUtils
 org.osgi.service.metatype.MetaTypeInformation
 gw.internal.ext.org.apache.commons.collections.functors.IdentityPredicate
+java.lang.Iterable<java.math.BigInteger>
 com.sun.xml.internal.rngom.nc.NameClass
 org.apache.xpath.axes.FilterExprIterator.filterExprOwner
 gw.api.profiler.DbmsReportZipProvider
@@ -13045,6 +13047,7 @@ org.apache.xmlbeans.impl.xb.xsdschema.GroupRef
 org.apache.poi.ss.formula.IEvaluationListener
 com.guidewire.pl.domain.assignment.RoundRobinFingerprintUserSelector
 org.apache.solr.client.solrj.SolrServerException
+java.lang.Iterable<java.lang.Comparable<java.lang.Object>>
 com.sun.tools.corba.se.idl.constExpr.Xor
 com.sun.nio.zipfs.ZipCoder
 gw.api.metric.PolicyTypeMetricLimitsCache
@@ -16441,6 +16444,7 @@ com.guidewire.cc.domain.exposure.impl.TripIncidentInternal
 gw.internal.schema.gw.xsd.database.db2monroutines.anonymous.elements.Db2ActivityDetails_PackageVersionId
 org.apache.axis.encoding.ser.SimpleListDeserializerFactory
 gw.internal.ext.org.mortbay.io.Buffer.CaseInsensitve
+java.lang.Iterable<java.math.BigDecimal>
 sun.security.rsa.RSASignature
 org.openxmlformats.schemas.drawingml.x2006.main.CTPictureLocking.Factory
 com.guidewire.pl.system.exception.ServerInMaintenanceModeException
@@ -17306,6 +17310,7 @@ sun.security.rsa.RSAPrivateCrtKeyImpl
 org.jfree.chart.block.CenterArrangement
 gw.xml.xsd.typewrapper.IntegerTypeWrapper
 com.sun.corba.se.spi.ior.EncapsulationFactoryBase
+java.lang.Iterable<entity.KeyableBean>
 com.sun.jndi.toolkit.dir.HierarchicalName
 gw.internal.ext.org.apache.xerces.impl.xs.AttributePSVImpl
 javax.swing.plaf.metal.MetalComboBoxUI.MetalComboBoxLayoutManager
@@ -22936,6 +22941,7 @@ org.apache.bcel.util.ClassPath.Zip
 com.thoughtworks.selenium.HttpCommandProcessor
 com.guidewire.pl.web.schema.v3.ChartPanelNode
 java.awt.Desktop
+java.lang.Iterable<entity.Group>
 com.guidewire.cc.domain.claim.gen.OfficialStub
 com.microsoft.sqlserver.jdbc.TypeInfo.Builder
 javax.security.cert.X509Certificate
@@ -28187,6 +28193,7 @@ com.guidewire.pl.domain.community.dbchecks.UserBaseDBCheckBuilder
 java.util.jar.Manifest
 com.ibm.icu.impl.data.HolidayBundle_it
 com.sun.jdi.VMCannotBeModifiedException
+java.lang.Iterable<gw.pl.persistence.core.effdate.EffDatedVersionList>
 org.apache.poi.ss.util.RegionUtil
 com.guidewire.pl.metadata.datatype2.impl.PatternCodeDataTypeDef
 com.sun.org.apache.xpath.internal.functions.FuncLast
@@ -28522,6 +28529,7 @@ com.google.common.collect.Multimaps.TransformedEntriesMultimap.TransformedEntrie
 com.guidewire.pl.system.database.oracleinstrumentation.IntervalBasedOracleInstanceImpl
 com.ibm.db2.jcc.DB2CataloguedDatabase
 com.guidewire.pl.system.database.entitywriter.MultipleColumnUpdatePreparedStatementHandler
+java.lang.Iterable<java.lang.Iterable<java.lang.Object>>
 com.sun.jndi.ldap.ServiceLocator.SrvRecord
 com.guidewire.pl.web.detailview.inputs.ContactInputWidgetConfig
 sun.org.mozilla.javascript.internal.Token.CommentType
@@ -29116,6 +29124,7 @@ com.guidewire.cc.domain.contact.impl.ContactAddressCoreExtImpl
 org.apache.fop.fo.pagination.PageSequence
 com.google.gdata.data.media.mediarss.AbstractMediaResource
 gw.internal.ext.org.apache.xml.serialize.XML11Serializer
+java.lang.Iterable<gw.api.financials.CurrencyAmount>
 org.apache.axis.encoding.ser.Base64DeserializerFactory
 org.apache.fop.render.PrintRendererConfigurator
 gw.xml.xsd.typewrapper.NormalizedStringTypeWrapper
@@ -32867,6 +32876,7 @@ org.apache.xmlgraphics.image.loader.util.Penalty
 com.guidewire.pl.system.database.impl.ListQueryProcessor.LocalQueryResults
 sun.java2d.opengl.OGLUtilities
 com.sun.xml.internal.org.jvnet.mimepull.MIMEEvent.Headers
+java.lang.Iterable<gw.lang.reflect.gs.IGosuClass>
 com.sun.xml.internal.stream.writers.XMLStreamWriterImpl.ElementState
 javax.swing.text.LayoutQueue
 java.rmi.ConnectException
@@ -38062,6 +38072,7 @@ org.apache.batik.util.RunnableQueue.IdleRunnable
 com.sun.org.apache.xpath.internal.functions.FuncStringLength
 com.google.common.io.LittleEndianDataOutputStream
 org.openxmlformats.schemas.drawingml.x2006.main.impl.CTStretchInfoPropertiesImpl
+java.lang.Iterable<java.lang.Integer>
 com.guidewire.cc.domain.relatedto.RelatedToBeanImpl
 org.antlr.runtime.tree.DOTTreeGenerator
 com.sun.tools.javac.processing.JavacRoundEnvironment.AnnotationSetScanner
@@ -40094,6 +40105,7 @@ com.sun.tools.internal.ws.wsdl.document.jaxws.Exception
 com.guidewire.pl.web.schema.v4.CellNode
 gw.internal.ext.org.apache.xerces.impl.XMLEntityManager.ExternalEntity
 org.apache.zookeeper.proto.SetDataResponse
+java.lang.Iterable<java.lang.Long>
 sun.util.resources.LocaleNames_en_SG
 org.jfree.data.jdbc.JDBCPieDataset
 javax.wsdl.extensions.soap.SOAPBinding
@@ -43563,6 +43575,7 @@ org.apache.bcel.generic.PopInstruction
 gw.internal.schema.gw.xsd.database.db2newpkgcache.anonymous.elements.DB2NEWPKGCACHE_POOL_WRITE_TIME
 org.apache.axis.encoding.TypeMapper
 org.jfree.ui.about.ContributorsPanel
+java.lang.Iterable<gw.pl.currency.MonetaryAmount>
 org.apache.commons.codec.net.QuotedPrintableCodec
 org.apache.struts.action.SecureRequestProcessor
 java.util.regex.Pattern.SingleS
@@ -48712,6 +48725,7 @@ org.mortbay.jetty.servlet.DefaultServlet.NIOResourceCache
 com.guidewire.pl.system.database.datamodel.upgrade.StatisticsUpgradeSupport
 net.sf.cotta.TEntryFilter
 sun.nio.cs.ext.JIS_X_0212.Decoder
+java.lang.Iterable<entity.Note>
 gw.pl.contact.entity.ContactContact
 gw.internal.gosu.parser.java.classinfo.JavaSourceUtil
 org.apache.batik.dom.svg.SVGStyleSheetProcessingInstruction
@@ -49136,18 +49150,18 @@ com.sun.tools.internal.ws.processor.model.jaxb.Util
 com.guidewire.cc.system.integration.messaging.iso.ISOCoverageCodeMapper
 com.guidewire.cc.domain.financials.taccount.gen.TAccountInternalStubI
 org.custommonkey.xmlunit.XpathNodeTracker.Int
-org.apache.http.impl.client.EntityEnclosingRequestWrapper
 gw.internal.schema.gw.xsd.database.db2monroutines.anonymous.elements.ActivityLevelMetrics_FcmMessageRecvVolume
+org.apache.http.impl.client.EntityEnclosingRequestWrapper
 gw.api.database.TableStatistics
-org.osgi.service.device.Device
 org.jgroups.protocols.TP.DefaultBundler.BundlingTimer
+org.osgi.service.device.Device
 org.quartz.core.ExecutingJobsManager
 org.apache.commons.math.ode.SwitchingFunctionsHandler
 com.sun.security.sasl.Provider
-com.guidewire.cc.domain.policy.gen.PolicySummaryVehicleStub
 java.awt.PopupMenu.AccessibleAWTPopupMenu
-com.sun.org.apache.xml.internal.security.utils.XPathFuncHereAPI
+com.guidewire.cc.domain.policy.gen.PolicySummaryVehicleStub
 sun.awt.image.PixelConverter.Ushort565Rgb
+com.sun.org.apache.xml.internal.security.utils.XPathFuncHereAPI
 org.apache.fop.layoutmgr.KnuthBox
 com.guidewire.cc.domain.claim.archiving.gen.ClaimInfoStubI
 com.ibm.icu.util.CalendarServiceShim
@@ -54340,6 +54354,7 @@ java.io.ByteArrayInputStream
 sun.plugin2.main.client.WDonatePrivilege
 com.guidewire.commons.config.LocalizedMultiFileKeyBuilder
 com.google.common.base.FinalizableReferenceQueue.FinalizerLoader
+java.lang.Iterable<java.lang.Number>
 java.nio.file.FileSystems
 sun.security.util.SignatureFileVerifier
 org.apache.axis.security.SecurityProvider
@@ -65359,6 +65374,7 @@ sun.util.calendar.JulianCalendar
 org.openqa.selenium.remote.server.handler.GetElementText
 com.guidewire.pl.system.database.datamodel.NonLoadableWithDefaultStagingColumn
 javax.swing.text.html.EditableView
+java.lang.Iterable<gw.rules.ExecutionSession>
 org.apache.batik.css.engine.sac.AbstractAttributeCondition
 org.junit.experimental.results.ResultMatchers
 com.sun.istack.internal.Pool.Impl
@@ -66511,6 +66527,7 @@ java.beans.javax_swing_tree_DefaultMutableTreeNode_PersistenceDelegate
 org.apache.tools.ant.types.RegularExpression
 gw.internal.gosu.parser.FileSystemGosuClassRepository.FileSystemSourceFileHandle
 sun.print.resources.serviceui_ja
+java.lang.Iterable<T>
 gw.api.policy.refresh.PolicyRefreshAlgorithm
 oracle.net.jndi.JndiAttrs
 org.mortbay.io.Portable
@@ -68505,6 +68522,7 @@ org.apache.fop.fo.CharIterator
 org.apache.commons.jxpath.Variables
 com.google.common.collect.Table
 org.apache.fop.render.XMLHandlerRegistry
+java.lang.Iterable<Q>
 sun.java2d.loops.SetFillRectANY
 com.sun.javaws.jnl.InformationDesc
 com.guidewire.pl.domain.archiving.impl.UpgradeDatamodelInfoInternal
@@ -68525,6 +68543,7 @@ com.guidewire.pl.system.database.perfdownload.OldStyleStatisticsCollectorUtil
 gw.internal.ext.org.mortbay.util.DateCache
 com.guidewire.pl.domain.community.gen.AttributeUserStub
 com.sun.org.apache.xerces.internal.impl.dtd.DTDGrammar.QNameHashtable
+java.lang.Iterable<R>
 com.guidewire.pl.system.server.config.manager.ConfigurationHashUtil
 org.apache.geronimo.javamail.transport.smtp.SMTPAddressSucceededException
 sun.swing.text.CompoundPrintable
@@ -68588,6 +68607,7 @@ org.faceless.pdf2.PDFStyle
 com.guidewire.pl.system.database.upgrade.UpgradeProfilerConstants
 com.guidewire.pl.system.integration.plugins.PluginContainer
 com.sun.xml.internal.ws.api.policy.PolicyResolver
+java.lang.Iterable<N>
 org.h2.store.Data
 com.sun.swing.internal.plaf.basic.resources.basic_ja
 com.guidewire.pl.system.database.awr.OracleAWRSupport
@@ -68722,6 +68742,7 @@ com.sun.corba.se.impl.naming.cosnaming.InternalBindingKey
 com.guidewire.pl.system.database.connection.ObjectPoolConfig
 org.apache.fop.complexscripts.fonts.GlyphPositioningTable.MarkToBaseSubtableFormat1
 com.guidewire.pl.system.database.impl.FunctionBasedSelectColumn
+java.lang.Iterable<E>
 com.sun.xml.internal.ws.api.pipe.ContentType
 sun.net.httpserver.StreamClosedException
 com.guidewire.pl.system.database.jdbcwrappers.PreparedStatementDebugHandler
@@ -72179,6 +72200,7 @@ com.google.common.collect.Lists.RandomAccessReverseList
 com.sun.org.apache.xerces.internal.xs.datatypes.ByteList
 javax.swing.LegacyGlueFocusTraversalPolicy
 aQute.lib.osgi.EmbeddedResource
+java.lang.Iterable<typekey.Currency>
 org.apache.batik.css.engine.value.css2.SrcManager
 com.ibm.db2.jcc.am.pb
 org.apache.http.client.HttpResponseException
@@ -72946,6 +72968,7 @@ com.ibm.db2.jcc.am.yp
 com.ibm.db2.jcc.am.yo
 com.guidewire.pl.domain.calendar.impl.BusinessWeekImpl
 com.ibm.db2.jcc.am.yn
+java.lang.Iterable<java.lang.Object>
 com.ibm.db2.jcc.am.ym
 com.ibm.db2.jcc.am.yl
 com.ibm.db2.jcc.am.yj
@@ -73293,6 +73316,7 @@ org.openxmlformats.schemas.drawingml.x2006.main.STBlipCompression.Enum
 gw.plugin.policy.refresh.PolicyRefreshPluginBase.DeferredRelinkCallback
 org.apache.velocity.io.VelocityWriter
 org.apache.http.auth.Credentials
+java.lang.Iterable<java.lang.Float>
 sun.net.www.http.HttpClient
 org.apache.tools.zip.UnixStat
 com.sun.javaws.ui.CacheObject.TLabel
@@ -73764,6 +73788,7 @@ gw.api.calendar.CalendarSource
 org.apache.axis.configuration.XMLStringProvider
 com.sun.xml.internal.rngom.parse.Context
 javax.sql.rowset.spi.TransactionalWriter
+java.lang.Iterable<gw.lang.reflect.IType>
 org.faceless.pdf2.bitmap.q
 org.faceless.pdf2.bitmap.p
 org.faceless.pdf2.bitmap.o
@@ -75200,6 +75225,7 @@ com.guidewire.testharness.assertion.QueryBuilderAssertionHelper
 org.apache.poi.ss.formula.ptg.MemAreaPtg
 org.apache.fop.area.inline.BasicLinkArea
 javax.swing.plaf.nimbus.TableHeaderRendererSortedState
+java.lang.Iterable<java.lang.Short>
 com.sun.tools.jdi.EventRequestManagerImpl.BreakpointRequestImpl
 ch.qos.cal10n.verifier.Cal10nError
 org.apache.fop.util.text.LocatorFormatter
@@ -75720,6 +75746,7 @@ com.sun.xml.internal.fastinfoset.algorithm.BuiltInEncodingAlgorithm.WordListener
 gw.internal.schema.gw.xsd.w3c.xmlschema.anonymous.attributes.Schema_TargetNamespace
 com.sun.org.apache.xml.internal.serializer.SerializationHandler
 javax.print.attribute.standard.Sides
+java.lang.Iterable<java.lang.String>
 sun.awt.image.BufImgSurfaceManager
 org.apache.poi.hssf.record.aggregates.RowRecordsAggregate
 com.guidewire.cc.domain.iso.gen.ISOReportableInternalStubI

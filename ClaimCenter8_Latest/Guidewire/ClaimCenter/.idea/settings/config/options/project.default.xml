@@ -130,7 +130,7 @@
           <method />
         </configuration>
         <configuration default="true" type="JUnit" factoryName="JUnit">
-          <extension name="SmokeTestRunConfigurationExtension">null,null,null</extension>
+          <extension name="SmokeTestRunConfigurationExtension">false,false,false</extension>
           <module name="" />
           <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
           <option name="ALTERNATIVE_JRE_PATH" />

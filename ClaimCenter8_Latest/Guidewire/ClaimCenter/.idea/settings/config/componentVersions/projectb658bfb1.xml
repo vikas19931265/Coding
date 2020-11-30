@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <versions>
-  <component name="CompilerConfiguration" version="1606223780395" />
-  <component name="CompilerWorkspaceConfiguration" version="1606223780398" />
-  <component name="MavenImportPreferences" version="1606223780474" />
-  <component name="ProjectFrameBounds" version="1606226452149" />
-  <component name="ProjectModuleManager" version="1606223780492" />
-  <component name="ProjectRootManager" version="1606223780495" />
-  <component name="ProjectView" version="1606226452206" />
-  <component name="PropertiesComponent" version="1606227135157" />
-  <component name="RunManager" version="1606223780527" />
-  <component name="ToolWindowManager" version="1606226983128" />
+  <component name="ChangeListManager" version="1606730580889" />
+  <component name="ChangesViewManager" version="1606719237411" />
+  <component name="CompilerConfiguration" version="1606719237414" />
+  <component name="CompilerWorkspaceConfiguration" version="1606719237414" />
+  <component name="CreatePatchCommitExecutor" version="1606719237415" />
+  <component name="DaemonCodeAnalyzer" version="1606719237415" />
+  <component name="DebuggerManager" version="1606730116323" />
+  <component name="Encoding" version="1606719237417" />
+  <component name="EntryPointsManager" version="1606719237417" />
+  <component name="ExecutionTargetManager" version="1606719237417" />
+  <component name="FavoritesManager" version="1606719237417" />
+  <component name="FileEditorManager" version="1606733430604" />
+  <component name="FindManager" version="1606719237418" />
+  <component name="IdeDocumentHistory" version="1606719237419" />
+  <component name="MavenImportPreferences" version="1606719237468" />
+  <component name="ProjectFrameBounds" version="1606719237468" />
+  <component name="ProjectLevelVcsManager" version="1606719237468" />
+  <component name="ProjectModuleManager" version="1606719237468" />
+  <component name="ProjectReloadState" version="1606719237468" />
+  <component name="ProjectRootManager" version="1606719237468" />
+  <component name="ProjectView" version="1606733430605" />
+  <component name="PropertiesComponent" version="1606719237484" />
+  <component name="RunManager" version="1606719237484" />
+  <component name="ShelveChangesManager" version="1606719237484" />
+  <component name="SvnConfiguration" version="1606463718356" />
+  <component name="ToolWindowManager" version="1606733435312" />
+  <component name="VcsContentAnnotationSettings" version="1606719237484" />
+  <component name="VcsDirectoryMappings" version="1606719237484" />
+  <component name="VcsManagerConfiguration" version="1606719237484" />
+  <component name="XDebuggerManager" version="1606719237484" />
+  <component name="antWorkspaceConfiguration" version="1606722896078" />
+  <component name="editorHistoryManager" version="1606733430606" />
 </versions>
 

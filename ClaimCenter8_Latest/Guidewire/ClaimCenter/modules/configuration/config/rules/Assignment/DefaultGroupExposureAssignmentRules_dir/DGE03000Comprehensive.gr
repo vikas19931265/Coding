@@ -1,0 +1,20 @@
+package rules.Assignment.DefaultGroupExposureAssignmentRules_dir
+
+@gw.rules.RuleName("DGE03000- Comprehensive")
+internal class DGE03000Comprehensive {
+  static function doCondition(exposure : entity.Exposure) : boolean {
+/*start00rule*/
+return (exposure.CoverageSubType==typekey.CoverageSubtype.TC_PACOMPREHENSIVECOV)
+/*end00rule*/
+}
+
+  static function doAction(exposure : entity.Exposure, actions : gw.rules.Action) {
+/*start00rule*/
+  var groups= gw.api.database.Query.make(entity.Group).select()
+var gp=groups.where( \group ->group.getDisplayName().equalsIgnoreCase("Auto Handler") ).get(0)
+if (exposure.CurrentAssignment.assignUserByRoundRobin(false, gp)) {
+   actions.exit()
+}
+/*end00rule*/
+  }
+}

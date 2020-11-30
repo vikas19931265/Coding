@@ -92,9 +92,9 @@ xsd.base.typekey.SortByRange_Element
 xsd.base.typekey.GroupType_Element
 xsd.base.typekey.NoteType_Element
 xsd.base.typekey.CollisionPoint_Element
-xsd.base.typekey.ActivityClass_Element
 xsd.base.typekey.WorkItemSetState_Element
 xsd.base.typekey.InstructionCategory_Element
+xsd.base.typekey.ActivityClass_Element
 xsd.base.typekey.SalvageStatus_Element
 xsd.base.typekey.WCBenefitFactorCategory_Element
 xsd.base.typekey.CoverageBasis_Element
