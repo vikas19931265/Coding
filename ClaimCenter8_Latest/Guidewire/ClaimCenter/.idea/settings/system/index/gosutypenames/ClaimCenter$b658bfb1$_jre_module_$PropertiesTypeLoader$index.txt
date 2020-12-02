@@ -1,7 +1,0 @@
-com.guidewire.pl.system.rule.rule
-gw.api.addressbook.AddressBookMessages
-com.guidewire.commons.jetty.jetty.log4j
-gw.lang.SystemProperties
-com.guidewire.pl.system.scheduler.quartz
-log4j
-gw.plugin.integration.utils.AddressBookMessages
