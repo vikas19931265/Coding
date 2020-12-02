@@ -1,0 +1,64 @@
+2020-12-02 18:04:10,192 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2020-12-02 18:04:10,314 [    122]   INFO -        #com.intellij.idea.Main - IDE: Guidewire Studio (build #Studio-3.0, 02 Dec 2020 18:04) 
+2020-12-02 18:04:10,314 [    122]   INFO -        #com.intellij.idea.Main - OS: Windows 10 (10.0, amd64) 
+2020-12-02 18:04:10,314 [    122]   INFO -        #com.intellij.idea.Main - JRE: 11.0.2+9-b235 (JetBrains s.r.o) 
+2020-12-02 18:04:10,314 [    122]   INFO -        #com.intellij.idea.Main - JVM: 11.0.2+9-b235 (OpenJDK 64-Bit Server VM) 
+2020-12-02 18:04:10,315 [    123]   INFO -        #com.intellij.idea.Main - JVM Args: -Xbootclasspath/a:../lib/boot.jar -XX:ReservedCodeCacheSize=240m -ea -Didea.properties.file=C:/Users/Vikas.Gautam/Desktop/GitV2/ClaimCenter1003/.idea/settings/idea.properties -Dstudio.sdkroot=C:/Users/Vikas.Gautam/Desktop/GitV2/ClaimCenter1003 -Didea.plugins.compatible.build=191.6707.61 -Dstudio.minimum.preferred.idea.version=191.6707 -Dfile.encoding=UTF-8 -Dide.tooltip.dismissDelay=60000 -Dapple.laf.useScreenMenuBar=true -Dapple.awt.application.name=Guidewire Studio -Didea.platform.prefix=Studio -Djunit4.search.4.tests.all.in.scope=false -Djdk.util.zip.ensureTrailingSlash=false -Xmx4g 
+2020-12-02 18:04:10,315 [    123]   INFO -        #com.intellij.idea.Main - charsets: JNU=Cp1252 file=UTF-8 
+2020-12-02 18:04:10,443 [    251]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 127 ms 
+2020-12-02 18:04:10,512 [    320]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational 
+2020-12-02 18:04:11,119 [    927]   INFO -     #com.intellij.util.ui.JBUI - User scale factor: 1.0 
+2020-12-02 18:04:11,196 [   1004]   INFO -     #com.intellij.util.ui.JBUI - System scale factor: 1.5 (JRE-managed HiDPI) 
+2020-12-02 18:04:13,415 [   3223]   INFO - .intellij.idea.IdeaApplication - CPU cores: 8; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@2702cf2d[Running, parallelism = 7, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@50cbea6c 
+2020-12-02 18:04:14,626 [   4434]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor duplicates-groovy.xml 
+2020-12-02 18:04:14,634 [   4442]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor duplicates-detection-groovy.xml 
+2020-12-02 18:04:15,478 [   5286]   INFO - llij.ide.plugins.PluginManager - load plugin descriptors took 1479 ms 
+2020-12-02 18:04:15,597 [   5405]   INFO - llij.ide.plugins.PluginManager - Plugin 'Bytecode Viewer' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,620 [   5428]   INFO - llij.ide.plugins.PluginManager - Plugin 'Subversion' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,624 [   5432]   INFO - llij.ide.plugins.PluginManager - Plugin 'XPathView + XSLT Support' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,627 [   5435]   INFO - llij.ide.plugins.PluginManager - Plugin 'XSLT-Debugger' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,632 [   5440]   INFO - llij.ide.plugins.PluginManager - Plugin 'Copyright' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,637 [   5445]   INFO - llij.ide.plugins.PluginManager - Plugin 'Ant Support' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,640 [   5448]   INFO - llij.ide.plugins.PluginManager - Plugin 'TestNG-J' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,644 [   5452]   INFO - llij.ide.plugins.PluginManager - Plugin 'Task Management' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,650 [   5458]   INFO - llij.ide.plugins.PluginManager - Plugin 'UI Designer' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,654 [   5462]   INFO - llij.ide.plugins.PluginManager - Plugin 'Mercurial Integration' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,656 [   5464]   INFO - llij.ide.plugins.PluginManager - Plugin 'EditorConfig' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,660 [   5468]   INFO - llij.ide.plugins.PluginManager - Plugin 'IntelliLang' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,663 [   5471]   INFO - llij.ide.plugins.PluginManager - Plugin 'Eclipse Integration' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,666 [   5474]   INFO - llij.ide.plugins.PluginManager - Plugin 'Maven Integration' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,673 [   5481]   INFO - llij.ide.plugins.PluginManager - Plugin 'Gradle' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,681 [   5489]   INFO - llij.ide.plugins.PluginManager - Plugin 'Plugin DevKit' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,685 [   5493]   INFO - llij.ide.plugins.PluginManager - Plugin 'Kotlin' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,712 [   5520]   INFO - llij.ide.plugins.PluginManager - Plugin 'Android Support' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,746 [   5554]   INFO - llij.ide.plugins.PluginManager - Plugin 'JavaFX' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,751 [   5559]   INFO - llij.ide.plugins.PluginManager - Plugin 'Settings Repository' can't be loaded because: Plugin is disabled 
+2020-12-02 18:04:15,981 [   5789]   INFO - llij.ide.plugins.PluginManager - 39 plugins initialized in 1982 ms 
+2020-12-02 18:04:15,981 [   5789]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: Coverage (191.6707.61), Git Integration (191.6707.61), GitHub (191.6707.61), Groovy (191.6707.61), I18n for Java (191.6707.61), IDEA CORE (191.6707.61), IntelliJ Configuration Script (191.6707.61), JUnit (191.6707.61), Java Stream Debugger (191.6707.61), Properties Support (191.6707.61), Smali Support (191.6707.61), Terminal (191.6707.61), YAML (191.6707.61) 
+2020-12-02 18:04:15,982 [   5790]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: Cucumber for Java (191.6014.8), Gherkin (191.5849.16), Guidewire Gosu (3.0.4-rc-SNAPSHOT), Guidewire Inspections (3.0.4-rc-SNAPSHOT), Guidewire Studio (3.0.4-rc-SNAPSHOT), Swagger (1.0.25) 
+2020-12-02 18:04:15,982 [   5790]   INFO - llij.ide.plugins.PluginManager - Disabled plugins: Android Support (10.3.3), Ant Support (191.6707.61), Bytecode Viewer (191.6707.61), Copyright (191.6707.61), Eclipse Integration (191.6707.61), EditorConfig (191.6707.61), Gradle (191.6707.61), IntelliLang (191.6707.61), JavaFX (191.6707.61), Kotlin (1.3.21-release-IJ2019.1-3), Maven Integration (191.6707.61), Mercurial Integration (191.6707.61), Plugin DevKit (191.6707.61), Settings Repository (191.6707.61), Subversion (191.6707.61), Task Management (191.6707.61), TestNG-J (191.6707.61), UI Designer (191.6707.61), XPathView + XSLT Support (191.6707.61), XSLT-Debugger (191.6707.61) 
+2020-12-02 18:04:17,438 [   7246]   INFO - ellij.vfs.persistent.FSRecords - Marking VFS as corrupted: 'C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter1003\.idea\settings\system\caches\names.dat' does not exist 
+2020-12-02 18:04:17,444 [   7252]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=4076 
+2020-12-02 18:04:17,602 [   7410]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter1003\studio\sdk\bin\fsnotifier64.exe 
+2020-12-02 18:04:19,352 [   9160]   INFO - .history.utils.LocalHistoryLog - local history version mismatch (was: 0, expected: 6), rebuilding... 
+2020-12-02 18:04:19,352 [   9160]   INFO - .history.utils.LocalHistoryLog - FS has been rebuild, rebuilding local history... 
+2020-12-02 18:04:19,556 [   9364]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2020-12-02 18:04:20,769 [  10577]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2020-12-02 18:04:20,805 [  10613]   WARN - com.intellij.util.xmlb.Binding - no accessors for interface com.intellij.openapi.extensions.PluginDescriptor 
+2020-12-02 18:04:20,864 [  10672]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63343 
+2020-12-02 18:04:21,021 [  10829]   INFO - gs.impl.UpdateCheckerComponent - channel: release 
+2020-12-02 18:04:22,663 [  12471]   INFO - il.indexing.FileBasedIndexImpl - Index exts enumerated:1447, number of extensions:45 
+2020-12-02 18:04:22,683 [  12491]   INFO - il.indexing.FileBasedIndexImpl - Index scheduled:20 
+2020-12-02 18:04:23,290 [  13098]   INFO - il.indexing.FileBasedIndexImpl - Index FilenameIndex will be built. 
+2020-12-02 18:04:23,634 [  13442]   INFO - il.indexing.FileBasedIndexImpl - Index filetypes will be built. 
+2020-12-02 18:04:23,711 [  13519]   INFO - il.indexing.FileBasedIndexImpl - Index java.auto.module.name will be built. 
+2020-12-02 18:04:23,760 [  13568]   INFO - tellij.psi.stubs.StubIndexImpl - All stub exts enumerated:1065, number of extensions:34 
+2020-12-02 18:04:23,765 [  13573]   INFO - tellij.psi.stubs.StubIndexImpl - stub exts update scheduled:4 
+2020-12-02 18:04:23,783 [  13591]   INFO - il.indexing.FileBasedIndexImpl - Index GroovyDslFileIndex will be built. 
+2020-12-02 18:04:24,119 [  13927]   INFO - il.indexing.FileBasedIndexImpl - Index FrameworkDetectionIndex will be built. 
+2020-12-02 18:04:24,194 [  14002]   INFO - il.indexing.FileBasedIndexImpl - Index TodoIndex will be built. 
+2020-12-02 18:04:24,606 [  14414]   INFO - il.indexing.FileBasedIndexImpl - Index IdIndex will be built. 
+2020-12-02 18:04:24,692 [  14500]   INFO - il.indexing.FileBasedIndexImpl - Index Stubs will be built. 
+2020-12-02 18:04:25,113 [  14921]   INFO - ellij.project.impl.ProjectImpl - 18 project components initialized in 1025 ms 
+2020-12-02 18:04:25,180 [  14988]   INFO - j.ide.ui.OptionsTopHitProvider - 4927 ms spent to cache options in application 
+2020-12-02 18:04:25,180 [  14988]   INFO - .openapi.application.Preloader - com.intellij.ide.ui.OptionsTopHitProvider$Activity took 4926 ms 

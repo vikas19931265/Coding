@@ -1,0 +1,31 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/Desktop/GitV2/ClaimCenter1003" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/Desktop/GitV2/ClaimCenter1003" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/Desktop/GitV2/ClaimCenter1003" />
+    <option name="pid" value="" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Desktop/GitV2/ClaimCenter1003">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="Studio-3.0" />
+              <option name="productionCode" value="Studio" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1606912480152" />
+              <option name="buildTimestamp" value="1606912460355" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>

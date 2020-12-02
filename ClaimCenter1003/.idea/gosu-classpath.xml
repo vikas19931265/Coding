@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GosuCompilerClasspath">
+    <classpath>
+      
+      <entry>C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter1003\repository\org\gosu-lang\gosu\gosu-core\1.14.16\gosu-core-1.14.16.jar</entry>
+      
+      <entry>C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter1003\repository\org\gosu-lang\gosu\gosu-core-api\1.14.16\gosu-core-api-1.14.16.jar</entry>
+      
+      <entry>C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter1003\repository\org\gosu-lang\gosu\managed\gw-asm-all\7.8\gw-asm-all-7.8.jar</entry>
+      
+      <entry>C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter1003\repository\org\gosu-lang\gosu\managed\gw-jcommander\1.72\gw-jcommander-1.72.jar</entry>
+      
+      <entry>C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter1003\repository\systems\manifold\manifold\2019.1.12\manifold-2019.1.12.jar</entry>
+      
+      <entry>C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter1003\repository\systems\manifold\manifold-util\2019.1.12\manifold-util-2019.1.12.jar</entry>
+      
+      <entry>C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter1003\repository\org\antlr\antlr4-runtime\4.7.2\antlr4-runtime-4.7.2.jar</entry>
+      
+      
+      <entry>C:\Program Files\Java\jdk1.8.0_181\lib\tools.jar</entry>
+      
+    </classpath>
+  </component>
+</project>
+

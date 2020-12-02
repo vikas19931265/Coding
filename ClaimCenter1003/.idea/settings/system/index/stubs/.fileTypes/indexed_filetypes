@@ -1,0 +1,11 @@
+1606912477332
+CLASS￿binary stub builder:com.intellij.psi.impl.compiled.ClassFileStubBuilder,22￿1606912477331
+GosuTemplate￿stub:gw.gosu.ij.gst.GstElementType$1,0￿1606912477330
+Gosu￿stub:gw.gosu.ij.GosuFileElementType,2￿1606912477329
+JAVA￿stub:com.intellij.psi.impl.source.JavaFileElementType,42￿1606912477328
+Groovy￿stub:org.jetbrains.plugins.groovy.lang.psi.stubs.elements.GrStubFileElementType,49￿1606912477327
+Properties￿stub:com.intellij.lang.properties.parsing.PropertiesElementTypes$1,0￿1606912477326
+XML￿binary stub builder:com.intellij.util.xml.stubs.builder.DomStubBuilder,21￿1606912477325
+GosuProgram￿stub:gw.gosu.ij.GosuProgramFileElementType,2￿1606912477324
+HTML￿stub:com.intellij.psi.xml.XmlElementType$1,1￿1606912477323
+DGM File Type￿stub:com.intellij.lang.properties.parsing.PropertiesElementTypes$1,0￿1606912477322
