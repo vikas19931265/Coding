@@ -2,7 +2,7 @@
 <webservice-collection xmlns="http://guidewire.com/config/webservicecollection">
   <resources>
     <resource>
-      <url>http://localhost:9990/ab/ws/external/CurrencyAPI?WSDL</url>
+      <url>http://localhost:8890/ab/ws/externalapp/webservice/CurrencyAPI?WSDL</url>
     </resource>
   </resources>
 </webservice-collection>

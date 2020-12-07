@@ -12,12 +12,19 @@
       name="anABContact"
       type="ABContact"/>
     <Screen>
-      <DetailViewPanel>
-        <InputColumn>
-          <Label
-            label="displaykey.Training.LabComplete"/>
-        </InputColumn>
-      </DetailViewPanel>
+      <PanelRef
+        def="InteractionsLV(anABContact)"
+        visible="true">
+        <Toolbar
+          visible="true">
+          <EditButtons/>
+          <IteratorButtons
+            addVisible="true"
+            id="testing"
+            iterator="InteractionsLV.InteractionsLV"
+            removeVisible="true"/>
+        </Toolbar>
+      </PanelRef>
     </Screen>
   </Page>
 </PCF>

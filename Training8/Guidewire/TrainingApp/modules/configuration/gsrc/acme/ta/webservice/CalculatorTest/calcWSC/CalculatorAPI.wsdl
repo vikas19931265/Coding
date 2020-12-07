@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<wsdl:definitions targetNamespace="http://example.com/externalapp/webservice/CalculatorAPI" name="CalculatorAPI" xmlns:gwsoap="http://guidewire.com/ws/soapheaders" xmlns:gwwsdl="http://guidewire.com/pl/wsdl" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://example.com/externalapp/webservice/CalculatorAPI" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema targetNamespace="http://example.com/externalapp/webservice/CalculatorAPI" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://guidewire.com/ws/soapheaders" schemaLocation="soapheaders.xsd"/>
+      <xs:element name="calculate">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="number1" type="xs:float"/>
+            <xs:element name="number2" type="xs:float"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="calculateResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:float"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WsiAuthenticationException">
+        <xs:complexType/>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:portType name="CalculatorAPIPortType">
+    <wsdl:operation name="calculate">
+      <wsdl:input name="calculate" message="tns:calculate"/>
+      <wsdl:output name="calculateResponse" message="tns:calculateResponse"/>
+      <wsdl:fault name="WsiAuthenticationException" message="tns:WsiAuthenticationException"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CalculatorAPISoap12Binding" type="tns:CalculatorAPIPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="calculate">
+      <soap12:operation soapActionRequired="false" style="document"/>
+      <wsdl:input name="calculate">
+        <soap12:body use="literal"/>
+        <soap12:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap12:header message="tns:gw-language-only" part="gw-language-only" use="literal"/>
+        <soap12:header message="tns:gw-locale-only" part="gw-locale-only" use="literal"/>
+        <soap12:header message="tns:gw-traceability-id" part="gw-traceability-id" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="calculateResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap12:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CalculatorAPISoap11Binding" type="tns:CalculatorAPIPortType">
+    <soap11:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="calculate">
+      <soap11:operation style="document"/>
+      <wsdl:input name="calculate">
+        <soap11:body use="literal"/>
+        <soap11:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap11:header message="tns:gw-language-only" part="gw-language-only" use="literal"/>
+        <soap11:header message="tns:gw-locale-only" part="gw-locale-only" use="literal"/>
+        <soap11:header message="tns:gw-traceability-id" part="gw-traceability-id" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="calculateResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap11:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CalculatorAPI">
+    <wsdl:port name="CalculatorAPISoap12Port" binding="tns:CalculatorAPISoap12Binding">
+      <soap12:address location="http://localhost:8890/ab/ws/externalapp/webservice/CalculatorAPI"/>
+      <gwwsdl:address location="${ab}/ws/externalapp/webservice/CalculatorAPI"/>
+    </wsdl:port>
+    <wsdl:port name="CalculatorAPISoap11Port" binding="tns:CalculatorAPISoap11Binding">
+      <soap11:address location="http://localhost:8890/ab/ws/externalapp/webservice/CalculatorAPI/soap11"/>
+      <gwwsdl:address location="${ab}/ws/externalapp/webservice/CalculatorAPI/soap11"/>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:message name="calculate">
+    <wsdl:part name="parameters" element="tns:calculate"/>
+  </wsdl:message>
+  <wsdl:message name="calculateResponse">
+    <wsdl:part name="parameters" element="tns:calculateResponse"/>
+  </wsdl:message>
+  <wsdl:message name="WsiAuthenticationException">
+    <wsdl:part name="WsiAuthenticationException" element="tns:WsiAuthenticationException"/>
+  </wsdl:message>
+  <wsdl:message name="gw-authentication">
+    <wsdl:part name="gw-authentication" element="gwsoap:authentication"/>
+  </wsdl:message>
+  <wsdl:message name="gw-locale-only">
+    <wsdl:part name="gw-locale-only" element="gwsoap:gw_locale"/>
+  </wsdl:message>
+  <wsdl:message name="gw-language-only">
+    <wsdl:part name="gw-language-only" element="gwsoap:gw_language"/>
+  </wsdl:message>
+  <wsdl:message name="gw-transaction-id">
+    <wsdl:part name="gw-transaction-id" element="gwsoap:transaction_id"/>
+  </wsdl:message>
+  <wsdl:message name="gw-traceability-id">
+    <wsdl:part name="gw-traceability-id" element="gwsoap:traceability_id"/>
+  </wsdl:message>
+</wsdl:definitions>

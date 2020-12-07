@@ -2,8 +2,6 @@
 <plugin
   interface="IExchangeRateSetPlugin"
   name="IExchangeRateSetPlugin">
-  <plugin-java
-    disabled="true"
-    javaclass=""
-    plugindir=""/>
+  <plugin-gosu
+    gosuclass="acme.ta.plugin.exchangerate.AcmeIExchangeRateSetPlugin"/>
 </plugin>

@@ -3,6 +3,7 @@ package acme.ta.batch
 uses gw.plugin.processing.IProcessesPlugin
 uses gw.processes.BatchProcess
 uses acme.ta.batch.legalreport.FlagOverdueLegalReportsBatch
+uses acme.ta.batch.doctorspeciality.FlagDoctorWithoutSpecialityBatch
 
 class ProcessesPlugin implements IProcessesPlugin {
   construct() {
@@ -12,6 +13,10 @@ class ProcessesPlugin implements IProcessesPlugin {
       case BatchProcessType.TC_FLAGOVERDUELEGALREPORTS:
           var myBatchProcess =  new FlagOverdueLegalReportsBatch()
           return myBatchProcess
+      case BatchProcessType.TC_FLAGDOCTORWITHOUTSPECIALITY:
+          var myBatchProcess =  new FlagDoctorWithoutSpecialityBatch()
+          return myBatchProcess
+
       default:
         return null
     }

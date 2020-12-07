@@ -105,4 +105,18 @@
     desc="Unknown value for BatchProcessType"
     name="Unknown"
     retired="true"/>
+  <typecode
+    code="FlagDoctorWithoutSpeciality"
+    desc="Flag Doctor Without Speciality"
+    name="Flag Doctor Without Speciality">
+    <category
+      code="Schedulable"
+      typelist="BatchProcessTypeUsage"/>
+    <category
+      code="APIRunnable"
+      typelist="BatchProcessTypeUsage"/>
+    <category
+      code="UIRunnable"
+      typelist="BatchProcessTypeUsage"/>
+  </typecode>
 </typelistextension>

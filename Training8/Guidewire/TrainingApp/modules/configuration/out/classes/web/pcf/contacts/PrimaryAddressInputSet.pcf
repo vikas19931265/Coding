@@ -10,6 +10,6 @@
     <Label
       label="displaykey.Web.PrimaryAddressDV"/>
     <InputSetRef
-      def="AddressOwnerInputSet(contact.AddressOwner, true)"/>
+      def="AddressOwnerInputSet(contact.AddressOwner, true,contact)"/>
   </InputSet>
 </PCF>

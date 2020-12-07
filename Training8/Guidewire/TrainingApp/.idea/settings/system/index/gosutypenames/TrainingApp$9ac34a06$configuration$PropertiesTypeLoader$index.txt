@@ -1,0 +1,11 @@
+config.phone.nanpa
+config.plugin.ExternalMappings
+config.solr.log4j
+config.extensions.extensions
+config.locale.ja_JP.typelist
+config.metadata.metadata
+config.locale.en_US.typelist
+gw.lang.SystemProperties
+config.metadata.platform_metadata
+config.solr.dataimport
+config.logging.logging

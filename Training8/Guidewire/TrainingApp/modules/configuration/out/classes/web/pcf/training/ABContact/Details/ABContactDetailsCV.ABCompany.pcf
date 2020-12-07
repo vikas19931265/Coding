@@ -36,7 +36,7 @@
             id="PrimaryAddress"
             label="displaykey.Training.PrimaryAddress"/>
           <InputSetRef
-            def="AddressOwnerInputSet(anABContact.AddressOwner, true)"
+            def="AddressOwnerInputSet(anABContact.AddressOwner, true , anABContact)"
             id="BasicAddressInputSet"/>
         </InputColumn>
       </DetailViewPanel>
@@ -133,13 +133,8 @@
     <Card
       id="AnalysisCard"
       title="displaykey.Training.Analysis">
-      <DetailViewPanel>
-        <InputColumn>
-          <Label
-            id="LabComplete"
-            label="displaykey.Training.LabComplete"/>
-        </InputColumn>
-      </DetailViewPanel>
+      <PanelRef
+        def="ABContactAnalysisDV(anABContact)"/>
     </Card>
     <Code><![CDATA[uses gw.api.util.DisplayableException
 

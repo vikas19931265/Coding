@@ -71,20 +71,24 @@
           label="displaykey.Web.ContactDetail.PreferredCurrency"
           value="(contact as ABPerson).PreferredCurrency"
           visible="gw.api.util.CurrencyUtil.isMultiCurrencyMode()"/>
+      </InputSet>
+      <InputSet
+        visible="isPersonOnly(contact)">
+        <PrivacyInput
+          editable="true"
+          encryptionExpression="(contact as ABPerson).maskTaxId(VALUE)"
+          id="TaxID"
+          label="displaykey.Web.ContactDetail.AdditionalInfo.TaxID"
+          required="contact typeis ABPersonVendor"
+          value="(contact as ABPerson).TaxID"/>
+      </InputSet>
+      <InputSet
+        visible="isPersonOnly(contact)">
         <TypeKeyInput
           editable="true"
           id="TaxFilingStatus"
           label="displaykey.Web.ContactDetail.AdditionalInfo.TaxFilingStatus"
           value="(contact as ABPerson).TaxFilingStatus"/>
-        <InputSet
-        visible="isPersonOnly(contact) or isAdjudicator(contact) or isPolicyPerson(contact)">
-         <Input
-          editable="true"
-          id="TaxID"
-          label="displaykey.Web.ContactDetail.AdditionalInfo.TaxID"
-          required="!(isAdjudicator(contact))"
-          value="(contact as ABPerson).TaxID"/>
-        </InputSet>
         <DateInput
           editable="true"
           id="DateOfBirth"
@@ -168,7 +172,8 @@
       }
 
       function isPersonOnly(aContact : ABContact) : boolean {
-      return aContact.Subtype=="ABPerson";
+      
+        return true
       }
 
       function isPolicyPerson(aContact : ABContact) : boolean {

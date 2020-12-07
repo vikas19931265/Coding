@@ -4,6 +4,8 @@
   name="BCBillingSystemTransport">
   <plugin-gosu
     gosuclass="gw.plugin.integration.InitializableClientSystemTransport">
-      <param name="PluginName" value="BillingSystemPlugin"/>
+    <param
+      name="PluginName"
+      value="BillingSystemPlugin"/>
   </plugin-gosu>
 </plugin>

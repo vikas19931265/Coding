@@ -34,7 +34,7 @@
         id="PrimaryAddressLabel"
         label="displaykey.Training.PrimaryAddress"/>
       <InputSetRef
-        def="AddressOwnerInputSet(new gw.api.address.SecondaryAddressOwner(anABContact.PrimaryAddress), true)"/>
+        def="AddressOwnerInputSet(new gw.api.address.SecondaryAddressOwner(anABContact.PrimaryAddress), true,anABContact)"/>
     </InputColumn>
     <InputColumn>
       <ListViewInput

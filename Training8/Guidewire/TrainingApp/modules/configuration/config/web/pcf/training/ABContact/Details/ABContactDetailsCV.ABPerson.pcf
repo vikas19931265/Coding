@@ -54,6 +54,8 @@
           <InputSetRef
             def="BasicAddressInputSet(anABContact.PrimaryAddress)"
             id="BasicAddressInputSet"/>
+          <InputSetRef
+            def="EmailAddressInputSet(anABContact)"/>
         </InputColumn>
       </DetailViewPanel>
     </Card>
@@ -124,13 +126,8 @@
     <Card
       id="AnalysisCard"
       title="displaykey.Training.Analysis">
-      <DetailViewPanel>
-        <InputColumn>
-          <Label
-            id="LabComplete"
-            label="displaykey.Training.LabComplete"/>
-        </InputColumn>
-      </DetailViewPanel>
+      <PanelRef
+        def="ABContactAnalysisDV(anABContact)"/>
     </Card>
     <Code><![CDATA[uses gw.api.util.DisplayableException
 

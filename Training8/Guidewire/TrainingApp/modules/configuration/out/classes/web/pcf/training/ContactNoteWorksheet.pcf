@@ -42,7 +42,7 @@
             editable="true"
             id="Confidential"
             label="displaykey.Training.Confidential"
-            value="aContactNote.Confidential"/>
+            value="aContactNote.IsConfidential"/>
           <Input
             editable="true"
             id="Subject"

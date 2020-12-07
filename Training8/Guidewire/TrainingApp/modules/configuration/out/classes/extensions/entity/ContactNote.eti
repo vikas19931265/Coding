@@ -1,12 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?><entity entity="ContactNote" table="contactnote" type="retireable" desc="Contact notes" exportable="true" xmlns="http://guidewire.com/datamodel">
-<!-- This is an entity needed specifically for the TrainingApp "base application" -->   
-   <column name="Subject" type="varchar" desc="Subject" nullok="true">
-			<columnParam name="size" value="30"/>
-	</column>
-	<column name="Body" type="varchar" desc="Body" nullok="true" >
-			<columnParam name="size" value="250"/>
-	</column>
-    <column name="Confidential" type="bit" desc="Confidential" nullok="true" />
-	<typekey name="ContactNoteType" typelist="ContactNoteType" desc="Contact note type" nullok="true" />
-	<foreignkey name="ABContact" columnName="ABContactID" fkentity="ABContact" desc="Associated contact" nullok="true"/>
-  </entity>
+<?xml version="1.0"?>
+<entity
+  xmlns="http://guidewire.com/datamodel"
+  desc="Contact notes"
+  entity="ContactNote"
+  exportable="true"
+  table="contactnote"
+  type="retireable">
+  <!-- This is an entity needed specifically for the TrainingApp "base application" -->
+  <column
+    desc="Subject"
+    name="Subject"
+    nullok="true"
+    type="varchar">
+    <columnParam
+      name="size"
+      value="30"/>
+  </column>
+  <column
+    desc="Body"
+    name="Body"
+    nullok="true"
+    type="varchar">
+    <columnParam
+      name="size"
+      value="250"/>
+  </column>
+  <column
+    desc="IsConfidential"
+    name="IsConfidential"
+    nullok="true"
+    type="bit"/>
+  <typekey
+    desc="Contact note type"
+    name="ContactNoteType"
+    nullok="true"
+    typelist="ContactNoteType"/>
+  <foreignkey
+    columnName="ABContactID"
+    desc="Associated contact"
+    fkentity="ABContact"
+    name="ABContact"
+    nullok="true"/>
+</entity>

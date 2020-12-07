@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<versions>
+  <component name="" version="1607340744125" />
+  <component name="CodeStyleSchemeSettings" version="1607336533154" />
+  <component name="CodeStyleSchemes" version="1606747250747" />
+  <component name="DaemonCodeAnalyzerSettings" version="1607336533166" />
+  <component name="DebuggerSettings" version="1607339965495" />
+  <component name="DimensionService" version="1607340798628" />
+  <component name="EditorColorsManagerImpl" version="1607336533167" />
+  <component name="EditorSettings" version="1607336533168" />
+  <component name="Encoding" version="1607336533168" />
+  <component name="ErrorReportConfigurable" version="1607333831704" />
+  <component name="ExportableFileTemplateSettings" version="1607336533169" />
+  <component name="ExportableTemplateSettings" version="1607337439581" />
+  <component name="FeatureUsageStatistics" version="1607340798629" />
+  <component name="FileBasedIndex" version="1607336533170" />
+  <component name="FileTypeManager" version="1607336533178" />
+  <component name="FindSettings" version="1607336563789" />
+  <component name="GeneralSettings" version="1607336533179" />
+  <component name="Git.Application.Settings" version="1607336533179" />
+  <component name="GithubSettings" version="1607336563790" />
+  <component name="GlobalAntConfiguration" version="1607336533179" />
+  <component name="GosuCompilerSettings" version="1607336563790" />
+  <component name="HttpConfigurable" version="1607336533180" />
+  <component name="KeymapManager" version="1607340744126" />
+  <component name="LafManager" version="1607336533180" />
+  <component name="LanguageInjectionConfiguration" version="1607336533181" />
+  <component name="NodeRendererSettings" version="1607336533181" />
+  <component name="NotificationConfiguration" version="1607340798631" />
+  <component name="PathMacrosImpl" version="1607336533181" />
+  <component name="PluginManagerConfigurable" version="1607333831710" />
+  <component name="ProjectJdkTable" version="1607336533183" />
+  <component name="ProjectManager" version="1607336533189" />
+  <component name="PropertiesComponent" version="1607336533189" />
+  <component name="RecentProjectsManager" version="1607336533189" />
+  <component name="Registry" version="1607336533191" />
+  <component name="RunnerLayoutSettings" version="1607340798635" />
+  <component name="StatisticsApplicationUsages" version="1607336533191" />
+  <component name="StudioSettings" version="1607338838768" />
+  <component name="TemplateSettings" version="1607337439589" />
+  <component name="TodoConfiguration" version="1607336533192" />
+  <component name="UpdatesConfigurable" version="1607336533194" />
+  <component name="UsageTrigger" version="1607340798636" />
+  <component name="UsagesStatistic" version="1607336533197" />
+  <component name="WindowManager" version="1607341807639" />
+  <component name="XDebuggerSettings" version="1607339965501" />
+  <component name="XPathView.XPathViewPlugin" version="1607336533198" />
+  <component name="XSLT-Support.Configuration" version="1607336533198" />
+  <component name="com.intellij.ide.fileTemplates.impl.FileTemplateManagerImpl" version="1607336533216" />
+  <component name="com.intellij.javaee.ExternalResourceManagerImpl" version="1607336533216" />
+</versions>
+

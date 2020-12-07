@@ -12,6 +12,9 @@
       type="boolean"/>
     <Expose
       widget="globalAddressContainer"/>
+    <Require
+      name="anABContact"
+      type="entity.ABContact"/>
     <InputSetRef
       def="GlobalAddressInputSet(addressOwner)"
       id="globalAddressContainer"
@@ -39,5 +42,7 @@
       required="addressOwner.RequiredFields.contains(gw.api.address.ABAddressOwnerFieldId.VALIDUNTIL)"
       value="addressOwner.Address.ValidUntil"
       visible="!addressOwner.HiddenFields.contains(gw.api.address.ABAddressOwnerFieldId.VALIDUNTIL)"/>
+    <InputSetRef
+      def="EmailAddressInputSet(anABContact)"/>
   </InputSet>
 </PCF>

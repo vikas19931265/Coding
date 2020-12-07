@@ -1,0 +1,2 @@
+wsi.remote.microsoft.bingmaps.geocodeservice.util
+wsi.remote.microsoft.bingmaps.routeservice.util

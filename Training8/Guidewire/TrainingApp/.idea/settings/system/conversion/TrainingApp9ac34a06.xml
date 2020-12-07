@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversion>
+  <applied-converters>
+    <converter id="android-module-to-java-module" />
+    <converter id="android-sdk-library" />
+    <converter id="groovy-modules-to-facets" />
+    <converter id="groovy-script-run-configurations" />
+  </applied-converters>
+  <project-files>
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\compiler.xml" timestamp="1606747250642" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\copyright\profiles_settings.xml" timestamp="1606747250666" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\encodings.xml" timestamp="1380827826135" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\misc.xml" timestamp="1606747273511" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\modules.xml" timestamp="1379976440000" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\runConfigurations\Server.xml" timestamp="1607333577192" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\scopes\scope_settings.xml" timestamp="1606747250616" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\codestyles\Guidewire.xml" timestamp="1606747250920" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\componentVersions\moduleconfiguration10c3ec8d.xml" timestamp="1607334049386" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\componentVersions\project9ac34a06.xml" timestamp="1607335777833" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\inspection\Default.xml" timestamp="1606747250897" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\IntelliLang.xml" timestamp="1607334049587" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\appComponentVersions.xml" timestamp="1607335777622" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\code.style.schemes.xml" timestamp="1606747251357" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\colors.scheme.xml" timestamp="1606747251246" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\debugger.renderers.xml" timestamp="1606747251406" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\editor.codeinsight.xml" timestamp="1606747251287" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\editor.xml" timestamp="1606747251577" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\encoding.xml" timestamp="1606747251100" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\feature.usage.statistics.xml" timestamp="1607335777556" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\file.template.settings.xml" timestamp="1606747251078" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\filetypes.xml" timestamp="1606801931466" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\github_settings.xml" timestamp="1606801265651" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\gosu_compiler_settings.xml" timestamp="1606747251548" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\ide.general.xml" timestamp="1607334049725" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\images.support.xml" timestamp="1606801931492" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\jdk.table.xml" timestamp="1607334049529" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\keymap.xml" timestamp="1607332391916" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\notifications.xml" timestamp="1607334384527" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\options.xml" timestamp="1607335777568" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\other.xml" timestamp="1607336442304" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\path.macros.xml" timestamp="1607336442320" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\plugin_ui.xml" timestamp="1607333111115" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\project.default.xml" timestamp="1607334049560" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\runner.layout.xml" timestamp="1607333577592" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\statistics.application.usages.xml" timestamp="1607335777542" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\stubIndex.xml" timestamp="1607334049622" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\studio_metadata_editor_settings.xml" timestamp="1606747251493" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\studio_settings.xml" timestamp="1607099207841" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\template.settings.xml" timestamp="1606800992026" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\usage.statistics.xml" timestamp="1606747251269" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\vcs.xml" timestamp="1606747250972" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\config\options\window.manager.xml" timestamp="1607334384543" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\system\conversion\TrainingApp9ac34a06.xml" timestamp="1607335783131" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\uiDesigner.xml" timestamp="1607334049272" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\vcs.xml" timestamp="1606747250685" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\workspace.xml" timestamp="1607335777819" />
+    <file path="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\modules\configuration\configuration.iml" timestamp="1381782278691" />
+  </project-files>
+</conversion>
+

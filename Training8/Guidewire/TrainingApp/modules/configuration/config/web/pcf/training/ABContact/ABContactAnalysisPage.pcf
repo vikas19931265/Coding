@@ -12,12 +12,11 @@
       name="anABContact"
       type="ABContact"/>
     <Screen>
-      <DetailViewPanel>
-        <InputColumn>
-          <Label
-            label="displaykey.Training.LabComplete"/>
-        </InputColumn>
-      </DetailViewPanel>
+      <Toolbar>
+        <EditButtons/>
+      </Toolbar>
+      <PanelRef
+        def="ABContactAnalysisDV(anABContact)"/>
     </Screen>
   </Page>
 </PCF>

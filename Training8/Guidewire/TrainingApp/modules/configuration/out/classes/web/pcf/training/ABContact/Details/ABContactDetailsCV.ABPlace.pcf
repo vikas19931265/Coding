@@ -38,7 +38,7 @@
             id="PrimaryAddress"
             label="displaykey.Training.PrimaryAddress"/>
           <InputSetRef
-            def="AddressOwnerInputSet(anABContact.AddressOwner, true)"
+            def="AddressOwnerInputSet(anABContact.AddressOwner, true, anABContact)"
             id="BasicAddressInputSet"/>
         </InputColumn>
       </DetailViewPanel>
