@@ -248,6 +248,7 @@ pcf.WorkflowStats
 pcf.ReportsConfigWarningPage
 pcf.FailedAssignmentsLV
 pcf.RunCommandPopup
+pcf.ABCalculatorEnhancement
 pcf.ContactSearchResultsLV
 pcf.AssignmentSearchInputSet
 pcf.ABPersonAdditionalInfoRowSet_ABDoctor
@@ -380,8 +381,8 @@ pcf.UserPreferencesInputSet
 pcf.TagsInputSet
 pcf.ClusterInfo
 pcf.NewGroup
-pcf.IntegrationMessageGeneratorPage
 pcf.SecurityZones
+pcf.IntegrationMessageGeneratorPage
 pcf.BlankMenuActions
 pcf.ABContacts
 pcf.DatabaseStatisticsEntryPoint

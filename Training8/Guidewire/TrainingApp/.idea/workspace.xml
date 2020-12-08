@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52b0378d-ae94-46de-8e42-ac61a92daec2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/calculator/Calculator.gs" />
       <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter1003\.idea\settings\system\compile-server\claimcenter_bbbbf494\backward-refs\back.cast.inputs.values" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter1003\.idea\settings\system\compile-server\claimcenter_bbbbf494\backward-refs\back.cast.inputs.values.at" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter1003\.idea\settings\system\compile-server\claimcenter_bbbbf494\backward-refs\back.cast.inputs.values.s" afterPath="" />
@@ -6488,6 +6489,15 @@
       <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter1003\modules\configuration\plugins\Gosu\idea-gclasses\rules\Validation\TransactionSetValidationRules_dir\TXV20000UnallocatedDeductibleRules_dir\TXV20200Warnifdeductibleisunallocatedforvoidorstopchecks$block_2_.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter1003\modules\configuration\plugins\Gosu\idea-gclasses\rules\Validation\TransactionSetValidationRules_dir\TXV20000UnallocatedDeductibleRules_dir\TXV20200Warnifdeductibleisunallocatedforvoidorstopchecks$block_3_.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter1003\modules\configuration\plugins\Gosu\idea-gclasses\rules\Validation\TransactionSetValidationRules_dir\TXV20000UnallocatedDeductibleRules_dir\TXV20200Warnifdeductibleisunallocatedforvoidorstopchecks$block_4_.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\system\log\threadDumps-20201203-143537-Studio-1.0\20201203-152439-5\threadDump-20201203-152439.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\system\log\threadDumps-20201203-143537-Studio-1.0\20201203-152709-5\threadDump-20201203-152709.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\system\log\threadDumps-20201203-143537-Studio-1.0\20201203-152809-5\threadDump-20201203-152809.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\system\log\threadDumps-20201203-143537-Studio-1.0\20201203-152839-5\threadDump-20201203-152839.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\system\log\threadDumps-20201203-143537-Studio-1.0\20201203-162030-5\threadDump-20201203-162030.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\system\log\threadDumps-20201203-143537-Studio-1.0\20201203-163938-5\threadDump-20201203-163938.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\system\log\threadDumps-20201203-143537-Studio-1.0\20201203-165514-5\threadDump-20201203-165514.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\system\tmp\jna\jna2913823923782382730.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\.idea\settings\system\tmp\jna\jna2913823923782382730.dll.x" afterPath="" />
       <change type="MOVED" beforePath="C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter8_Latest\Guidewire\ClaimCenter\modules\configuration\out\classes\rules\Validation\ExposureValidationRules_dir\EXV05000ISOValidation_dir\EXV05700VehicleExposure_dir\EXV05720NormalVehicle_dir\EXV05722VIdNum.class" afterPath="$PROJECT_DIR$/../../../ClaimCenter8_Latest/Guidewire/ClaimCenter/modules/configuration/out/classes/rules/Validation/ExposureValidationRules_dir/EXV05000ISOValidation_dir/EXV05700VehicleExposure_dir/EXV05720NormalVehicle_dir/EXV05722VidNum.class" />
       <change type="MOVED" beforePath="C:\Users\Vikas.Gautam\Desktop\GitV2\ClaimCenter8_Latest\Guidewire\ClaimCenter\modules\configuration\out\classes\rules\Validation\ExposureValidationRules_dir\EXV05000ISOValidation_dir\EXV05700VehicleExposure_dir\EXV05720NormalVehicle_dir\EXV05722VIdNum.gr" afterPath="$PROJECT_DIR$/../../../ClaimCenter8_Latest/Guidewire/ClaimCenter/modules/configuration/out/classes/rules/Validation/ExposureValidationRules_dir/EXV05000ISOValidation_dir/EXV05700VehicleExposure_dir/EXV05720NormalVehicle_dir/EXV05722VidNum.gr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/vcs-users/97e7b78b.2" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/vcs-users/97e7b78b.2" />
@@ -6508,6 +6518,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/vcs-log/index/97e7b78b.dabe8bb8.users-ids.17.0" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/vcs-log/index/97e7b78b.dabe8bb8.users-ids.17.0" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/vcs-log/index/97e7b78b.dabe8bb8.users.17.0.storage" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/vcs-log/index/97e7b78b.dabe8bb8.users.17.0.storage" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/vcs-log/index/97e7b78b.dabe8bb8.users.idx.17.0" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/vcs-log/index/97e7b78b.dabe8bb8.users.idx.17.0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex.project.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex.project.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex.storage.keystream.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex.storage.keystream.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex.storage.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex.storage.len" />
@@ -6516,31 +6527,67 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex.storage.values" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex.storage.values" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex.storage" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex.storage" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex.storage_i" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex.storage_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex_i" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex_inputs.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex_inputs.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex_inputs.values.s" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex_inputs.values.s" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex_inputs.values" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex_inputs.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex_inputs.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex_inputs.values" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex_inputs" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex_inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex_inputs" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex_inputs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex_inputs_i" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex_inputs_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex_inputs_i" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex_inputs_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.method.name/Gosu.method.name.keystream.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.method.name/Gosu.method.name.keystream.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.method.name/Gosu.method.name.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.method.name/Gosu.method.name.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.method.name/Gosu.method.name" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.method.name/Gosu.method.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.method.name/Gosu.method.name_i" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.method.name/Gosu.method.name_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/idindex/IdIndex.storage.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/idindex/IdIndex.storage.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/idindex/IdIndex.storage.values.s" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/idindex/IdIndex.storage.values.s" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/idindex/IdIndex.storage.values" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/idindex/IdIndex.storage.values" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/idindex/IdIndex.storage" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/idindex/IdIndex.storage" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/idindex/IdIndex.storage_i" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/idindex/IdIndex.storage_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex" afterPath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex_i" afterPath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex_inputs.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex_inputs.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex_inputs.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex_inputs.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex_inputs" afterPath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex_inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex_inputs_i" afterPath="$PROJECT_DIR$/.idea/settings/system/index/idindex/IdIndex_inputs_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index" afterPath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index_i" afterPath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index_inputs.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index_inputs.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index_inputs" afterPath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index_inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index_inputs_i" afterPath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index_inputs_i" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/Stubs.storage.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/Stubs.storage.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/Stubs.storage.values.s" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/Stubs.storage.values.s" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/Stubs.storage.values" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/Stubs.storage.values" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/Stubs.storage" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/Stubs.storage" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/Stubs.storage_i" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/Stubs.storage_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs_i" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs_i" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/Stubs_inputs.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/Stubs_inputs.values.at" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs_inputs.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs_inputs.values" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/Stubs_inputs" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/Stubs_inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs_inputs" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs_inputs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/Stubs_inputs_i" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/Stubs_inputs_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs_inputs_i" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs_inputs_i" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/swaggerfileindex/SwaggerFileIndex.ver" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/swaggerfileindex/SwaggerFileIndex.ver" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/trigram.index/Trigram.Index.storage.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/trigram.index/Trigram.Index.storage.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/trigram.index/Trigram.Index.storage.values.s" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/trigram.index/Trigram.Index.storage.values.s" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/trigram.index/Trigram.Index.storage.values" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/trigram.index/Trigram.Index.storage.values" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/trigram.index/Trigram.Index.storage" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/trigram.index/Trigram.Index.storage" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/trigram.index/Trigram.Index.storage_i" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/trigram.index/Trigram.Index.storage_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/xmlnamespaces/XmlNamespaces.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/xmlnamespaces/XmlNamespaces.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/xmlnamespaces/XmlNamespaces" afterPath="$PROJECT_DIR$/.idea/settings/system/index/xmlnamespaces/XmlNamespaces" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/attrib.dat.storageData" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/attrib.dat.storageData" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/attrib.dat.storageData" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/attrib.dat.storageData" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/attrib.dat.storageRecordIndex" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/attrib.dat.storageRecordIndex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/attrib.dat.storageRecordIndex" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/attrib.dat.storageRecordIndex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/backward-refs/back.cast.inputs" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/backward-refs/back.cast.inputs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/backward-refs/back.cast.storage" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/backward-refs/back.cast.storage" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/backward-refs/back.class.def.inputs" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/backward-refs/back.class.def.inputs" />
@@ -6553,12 +6600,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/backward-refs/back.refs.storage" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/backward-refs/back.refs.storage" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/LocalHistory/changes.storageData" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/LocalHistory/changes.storageData" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/LocalHistory/changes.storageData" afterPath="$PROJECT_DIR$/.idea/settings/system/LocalHistory/changes.storageData" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/LocalHistory/changes.storageRecordIndex" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/LocalHistory/changes.storageRecordIndex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/LocalHistory/changes.storageRecordIndex" afterPath="$PROJECT_DIR$/.idea/settings/system/LocalHistory/changes.storageRecordIndex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/classToClass.tab" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/classToClass.tab" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/classToSource.tab" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/classToSource.tab" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/classToSubclasses.tab" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/classToSubclasses.tab" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/content.dat.storageData" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/content.dat.storageData" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/content.dat.storageData" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/content.dat.storageData" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/content.dat.storageRecordIndex" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/content.dat.storageRecordIndex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/content.dat.storageRecordIndex" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/content.dat.storageRecordIndex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/contentHashes.dat.keystream.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/contentHashes.dat.keystream.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/contentHashes.dat.keystream" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/contentHashes.dat.keystream" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/contentHashes.dat" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/contentHashes.dat" />
@@ -6593,11 +6644,18 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes.storage.values.s" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes.storage.values.s" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes.storage.values" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes.storage.values" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes.storage" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes.storage" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes_inputs.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes_inputs.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes_inputs.values.s" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes_inputs.values.s" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes_inputs.values" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes_inputs.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes_inputs.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes_inputs.values" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes_inputs" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes_inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes_inputs" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes_inputs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes_inputs_i" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes_inputs_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes_inputs_i" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filetypes/filetypes_inputs_i" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/fs_state.dat" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/fs_state.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/compiler/trainingapp.9ac34a06/.caches/gosu-dependencies.dat" afterPath="$PROJECT_DIR$/.idea/settings/system/compiler/trainingapp.9ac34a06/.caches/gosu-dependencies.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.annotations/gosu.annotations.storage.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.annotations/gosu.annotations.storage.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.annotations/gosu.annotations.storage" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.annotations/gosu.annotations.storage" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.class.extlist/gosu.class.extlist.storage.keystream.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.class.extlist/gosu.class.extlist.storage.keystream.len" />
@@ -6614,8 +6672,15 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.storage.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.storage.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.storage" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.storage" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.storage_i" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.storage_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname_i" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.field.name/gosu.field.name.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.field.name/gosu.field.name.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.field.name/gosu.field.name.storage.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.field.name/gosu.field.name.storage.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.field.name/gosu.field.name.storage" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.field.name/gosu.field.name.storage" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.field.name/gosu.field.name.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.field.name/gosu.field.name.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.field.name/gosu.field.name" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.field.name/gosu.field.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.field.name/gosu.field.name_i" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.field.name/gosu.field.name_i" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.method.name/gosu.method.name.storage.keystream.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.method.name/gosu.method.name.storage.keystream.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.method.name/gosu.method.name.storage.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.method.name/gosu.method.name.storage.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.method.name/gosu.method.name.storage.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.method.name/gosu.method.name.storage.values.at" />
@@ -6638,17 +6703,33 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn.storage.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn.storage.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn.storage" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn.storage" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn.storage_i" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn.storage_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn_i" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname.keystream.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname.keystream.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname.storage.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname.storage.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname.storage" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname.storage" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname.values" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname_i" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname_i" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/backward-refs/name.tab" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/backward-refs/name.tab" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat.keystream.len" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat.keystream.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/names.dat.keystream" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/names.dat.keystream" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat.keystream" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat.keystream" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/names.dat" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/names.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/names.dat_i" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/names.dat_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat_i" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/compiler/output_roots.dat.values" afterPath="$PROJECT_DIR$/.idea/settings/system/compiler/output_roots.dat.values" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/compiler/output_roots.dat" afterPath="$PROJECT_DIR$/.idea/settings/system/compiler/output_roots.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/paths.dat" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/paths.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/properties.index/properties.index.storage.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/properties.index/properties.index.storage.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/properties.index/properties.index.storage" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/properties.index/properties.index.storage" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/records.dat.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/records.dat.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/records.dat.len" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/records.dat.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/records.dat" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/records.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/records.dat" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/records.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.gradle/daemon/5.1.1/registry.bin.lock" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.gradle/daemon/5.1.1/registry.bin.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/gradle/cache/daemon/5.1.1/registry.bin.lock" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/gradle/cache/daemon/5.1.1/registry.bin.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/shortNames.tab" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/shortNames.tab" />
@@ -6659,6 +6740,35 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/targets/groovy-check-resources/targets.dat" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/targets/groovy-check-resources/targets.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/targets/resources-production/targets.dat" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/targets/resources-production/targets.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/targets/resources-test/targets.dat" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/targets/resources-test/targets.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.0" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.104" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.104" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.127" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.127" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.181" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.181" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.196" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.196" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.205" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.205" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.208" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.208" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.24" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.24" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.266" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.266" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.307" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.307" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.322" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.322" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.338" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.338" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.346" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.346" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.384" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.384" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.452" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.452" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.457" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.457" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.45" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.45" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.488" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.488" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.540" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.540" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.569" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.569" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.616" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.616" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.620" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.620" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.703" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.703" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.751" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.751" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.882" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.882" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.886" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.886" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.890" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.890" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.940" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.940" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/stat/unit.966" afterPath="$PROJECT_DIR$/.idea/settings/system/stat/unit.966" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/.persistent/idindex/values.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/.persistent/idindex/values.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/.persistent/trigram.index/values.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/.persistent/trigram.index/values.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/.persistent/idindex/values.values.s" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/.persistent/idindex/values.values.s" />
@@ -6675,41 +6785,34 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.gitignore" afterPath="$PROJECT_DIR$/../../../.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/vcs-log/index/97e7b78b.dabe8bb8.paths-ids.17.0.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/vcs-log/index/97e7b78b.dabe8bb8.paths-ids.17.0.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/extensions/entity/ABContact.etx" afterPath="$PROJECT_DIR$/modules/configuration/config/extensions/entity/ABContact.etx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactAnalysisPage.pcf" afterPath="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactAnalysisPage.pcf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/Details/ABContactDetailsCV.ABCompany.pcf" afterPath="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/Details/ABContactDetailsCV.ABCompany.pcf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/Details/ABContactDetailsCV.ABPerson.pcf" afterPath="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/Details/ABContactDetailsCV.ABPerson.pcf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/Details/ABContactDetailsCV.ABPlace.pcf" afterPath="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/Details/ABContactDetailsCV.ABPlace.pcf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactInteractionsPage.pcf" afterPath="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactInteractionsPage.pcf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactSummaryDV.pcf" afterPath="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactSummaryDV.pcf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/extensions/entity/ABDoctor.eti" afterPath="$PROJECT_DIR$/modules/configuration/config/extensions/entity/ABDoctor.eti" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/plugin/exchangerate/AcmeIExchangeRateSetPlugin.gs" afterPath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/plugin/exchangerate/AcmeIExchangeRateSetPlugin.gs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/web/pcf/address/AddressOwnerInputSet.pcf" afterPath="$PROJECT_DIR$/modules/configuration/config/web/pcf/address/AddressOwnerInputSet.pcf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/web/pcf/traininglabs/ABContactAnalysisDV.pcf" afterPath="$PROJECT_DIR$/modules/configuration/config/web/pcf/traininglabs/ABContactAnalysisDV.pcf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/gsrc/libraries/ABContactEnhancement.gsx" afterPath="$PROJECT_DIR$/modules/configuration/gsrc/libraries/ABContactEnhancement.gsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactLG.pcf" afterPath="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactLG.pcf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/modules/configuration/build/idea/classes/plugin/registry/AuthenticationServicePlugin.gwp" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/modules/configuration/build/idea/classes/plugin/registry/AuthenticationServicePlugin.gwp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/modules/configuration/build/idea/classes/plugin/registry/AuthenticationSourceCreatorPlugin.gwp" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/modules/configuration/build/idea/classes/plugin/registry/AuthenticationSourceCreatorPlugin.gwp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/plugin/registry/AuthenticationSourceCreatorPlugin.gwp" afterPath="$PROJECT_DIR$/modules/configuration/config/plugin/registry/AuthenticationSourceCreatorPlugin.gwp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/plugin/registry/BCBillingSystemTransport.gwp" afterPath="$PROJECT_DIR$/modules/configuration/config/plugin/registry/BCBillingSystemTransport.gwp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/extensions/typelist/BatchProcessType.ttx" afterPath="$PROJECT_DIR$/modules/configuration/config/extensions/typelist/BatchProcessType.ttx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/webservices/ChemicalSymbol.rws" afterPath="$PROJECT_DIR$/modules/configuration/config/webservices/ChemicalSymbol.rws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/conversion/ClaimCenter100397e7b78b.xml" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/conversion/ClaimCenter100397e7b78b.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/extensions/typelist/ContactTier.tti" afterPath="$PROJECT_DIR$/modules/configuration/config/extensions/typelist/ContactTier.tti" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/webservice/currency/ExchangeRateWSC/CurrencyAPI.wsdl" afterPath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/webservice/currency/ExchangeRateWSC/CurrencyAPI.wsdl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/webservice/currency/ExchangeRateWSC.wsc" afterPath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/webservice/currency/ExchangeRateWSC.wsc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/tmp/DatagramServerClients.ser" afterPath="$PROJECT_DIR$/.idea/settings/system/tmp/DatagramServerClients.ser" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex.keystream.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex.keystream.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex.keystream" afterPath="$PROJECT_DIR$/.idea/settings/system/index/filenameindex/FilenameIndex.keystream" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex.project" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex.project" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex.storage.keystream" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex.storage.keystream" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex_inputs.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex_inputs.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex_inputs_i.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filenameindex/FilenameIndex_inputs_i.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/plugin/registry/GeocodePlugin.gwp" afterPath="$PROJECT_DIR$/modules/configuration/config/plugin/registry/GeocodePlugin.gwp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/plugin/registry/IExchangeRateSetPlugin.gwp" afterPath="$PROJECT_DIR$/modules/configuration/config/plugin/registry/IExchangeRateSetPlugin.gwp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/GUIDEWIRE_STUDY/src/InsuranceBasics/InsuranceBasics.java" afterPath="$PROJECT_DIR$/modules/configuration/GUIDEWIRE_STUDY/src/InsuranceBasics/InsuranceBasics.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/messaging/legalreport/LegalReportWSC/LegalReportAPI.wsdl" afterPath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/messaging/legalreport/LegalReportWSC/LegalReportAPI.wsdl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/messaging/legalreport/LegalReportWSC.wsc" afterPath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/messaging/legalreport/LegalReportWSC.wsc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/web/pcf/contacts/PrimaryAddressInputSet.pcf" afterPath="$PROJECT_DIR$/modules/configuration/config/web/pcf/contacts/PrimaryAddressInputSet.pcf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/batch/ProcessesPlugin.gs" afterPath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/batch/ProcessesPlugin.gs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/webservice/stocks/StockQuoteWSC/StockAPI.wsdl" afterPath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/webservice/stocks/StockQuoteWSC/StockAPI.wsdl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/webservice/stocks/StockQuoteWSC.wsc" afterPath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/webservice/stocks/StockQuoteWSC.wsc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.method.name/Gosu.method.name.keystream" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.method.name/Gosu.method.name.keystream" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.method.name/Gosu.method.name.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.method.name/Gosu.method.name.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index.keystream.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index.keystream.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index.keystream" afterPath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index.keystream" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index_inputs.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/pcf file index/PCF file Index_inputs.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs_inputs.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/Stubs_inputs.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/swaggerfileindex/SwaggerFileIndex_inputs.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/swaggerfileindex/SwaggerFileIndex_inputs.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/swaggerfileindex/SwaggerFileIndex_inputs_i" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/swaggerfileindex/SwaggerFileIndex_inputs_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/GUIDEWIRE_STUDY/src/Integration/Pluggins/a4StepsToWriteGWPlugin.java" afterPath="$PROJECT_DIR$/modules/configuration/GUIDEWIRE_STUDY/src/Integration/Pluggins/a4StepsToWriteGWPlugin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/gosutypenames/TrainingApp$9ac34a06$_globalModule$PCF2TypeLoader$index.txt" afterPath="$PROJECT_DIR$/.idea/settings/system/index/gosutypenames/TrainingApp$9ac34a06$_globalModule$PCF2TypeLoader$index.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/gosutypenames/TrainingApp$9ac34a06$_jre_module_$DefaultTypeLoader$index.txt" afterPath="$PROJECT_DIR$/.idea/settings/system/index/gosutypenames/TrainingApp$9ac34a06$_jre_module_$DefaultTypeLoader$index.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/gosutypenames/TrainingApp$9ac34a06$_jre_module_$GosuClassTypeLoader$index.txt" afterPath="$PROJECT_DIR$/.idea/settings/system/index/gosutypenames/TrainingApp$9ac34a06$_jre_module_$GosuClassTypeLoader$index.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/gosutypenames/TrainingApp$9ac34a06$configuration$GosuClassTypeLoader$index.txt" afterPath="$PROJECT_DIR$/.idea/settings/system/index/gosutypenames/TrainingApp$9ac34a06$configuration$GosuClassTypeLoader$index.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/conversion/TrainingApp9ac34a06.xml" afterPath="$PROJECT_DIR$/.idea/settings/system/conversion/TrainingApp9ac34a06.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/appComponentVersions.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/appComponentVersions.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/studio/plugins/availables.xml.etag" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/studio/plugins/availables.xml.etag" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/studio/plugins/availables.xml" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/studio/plugins/availables.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/backward-refs/back.cast.storage.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/backward-refs/back.cast.storage.len" />
@@ -6724,50 +6827,70 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/targets/java-production/configuration_733374f6/src-out/data.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/targets/java-production/configuration_733374f6/src-out/data.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/timestamps/data.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/timestamps/data.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/out-target/data.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/out-target/data.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/database-config.xml" afterPath="$PROJECT_DIR$/modules/configuration/config/database-config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/config/options/dimensions.xml" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/config/options/dimensions.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/feature.usage.statistics.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/feature.usage.statistics.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes_inputs.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes_inputs.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes_inputs_i.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/filetypes/filetypes_inputs_i.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.class.extlist/gosu.class.extlist.storage.keystream" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.class.extlist/gosu.class.extlist.storage.keystream" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.keystream.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.keystream.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.keystream" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.keystream" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.project" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.project" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.storage.keystream" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.class.shortname/gosu.class.shortname.storage.keystream" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.field.name/gosu.field.name.keystream.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.field.name/gosu.field.name.keystream.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.field.name/gosu.field.name.keystream" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/gosu.field.name/gosu.field.name.keystream" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.method.name/gosu.method.name.storage.keystream" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/stubs/gosu.method.name/gosu.method.name.storage.keystream" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/guidewire.pcf.file.index/guidewire.pcf.file.index.storage.keystream.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/guidewire.pcf.file.index/guidewire.pcf.file.index.storage.keystream.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/guidewire.pcf.file.index/guidewire.pcf.file.index.storage.keystream" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/guidewire.pcf.file.index/guidewire.pcf.file.index.storage.keystream" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/ide.general.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/ide.general.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/log/idea.log" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/log/idea.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/log/idea.log" afterPath="$PROJECT_DIR$/.idea/settings/system/log/idea.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/idea.properties" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/idea.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/idea.properties" afterPath="$PROJECT_DIR$/.idea/settings/idea.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn.len" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.fqn/java.class.fqn.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname.keystream" afterPath="$PROJECT_DIR$/.idea/settings/system/index/stubs/java.class.shortname/java.class.shortname.keystream" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/config/options/jdk.table.xml" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/config/options/jdk.table.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/jdk.table.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/jdk.table.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/componentVersions/moduleconfiguration10c3ec8d.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/componentVersions/moduleconfiguration10c3ec8d.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/backward-refs/name.tab.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/backward-refs/name.tab.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/names.dat.keystream.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/names.dat.keystream.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/names.dat_i.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/caches/names.dat_i.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat_i.len" afterPath="$PROJECT_DIR$/.idea/settings/system/caches/names.dat_i.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/notifications.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/notifications.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/options.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/options.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter8_Latest/Guidewire/ClaimCenter/modules/configuration/out/classes/rules/Validation/ExposureValidationRules_dir/EXV05000ISOValidation_dir/EXV05700VehicleExposure_dir/EXV05720NormalVehicle_dir/order.txt" afterPath="$PROJECT_DIR$/../../../ClaimCenter8_Latest/Guidewire/ClaimCenter/modules/configuration/out/classes/rules/Validation/ExposureValidationRules_dir/EXV05000ISOValidation_dir/EXV05700VehicleExposure_dir/EXV05720NormalVehicle_dir/order.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/config/options/other.xml" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/config/options/other.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/other.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/other.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/system/compiler/trainingapp.9ac34a06/.caches/paths_to_delete.dat" afterPath="$PROJECT_DIR$/.idea/settings/system/compiler/trainingapp.9ac34a06/.caches/paths_to_delete.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/port" afterPath="$PROJECT_DIR$/.idea/settings/config/port" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/project.default.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/project.default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/componentVersions/project9ac34a06.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/componentVersions/project9ac34a06.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/config/options/recentProjects.xml" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/config/options/recentProjects.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.gradle/daemon/5.1.1/registry.bin" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.gradle/daemon/5.1.1/registry.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/runner.layout.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/runner.layout.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/modules/configuration/build/idea/classes/servlet/servlets.xml" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/modules/configuration/build/idea/classes/servlet/servlets.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/messaging/legalreport/LegalReportWSC/soapheaders.xsd" afterPath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/messaging/legalreport/LegalReportWSC/soapheaders.xsd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/webservice/currency/ExchangeRateWSC/soapheaders.xsd" afterPath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/webservice/currency/ExchangeRateWSC/soapheaders.xsd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/webservice/stocks/StockQuoteWSC/soapheaders.xsd" afterPath="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/webservice/stocks/StockQuoteWSC/soapheaders.xsd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/sourceToClass.tab.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/sourceToClass.tab.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/statistics.application.usages.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/statistics.application.usages.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/strings.tab.keystream.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/strings.tab.keystream.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/strings.tab.keystream" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/strings.tab.keystream" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/strings.tab.len" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/strings.tab.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/strings.tab_i" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/mappings/strings.tab_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/configuration/config/suite/suite-config.xml" afterPath="$PROJECT_DIR$/modules/configuration/config/suite/suite-config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/settings/config/options/studio_settings.xml" afterPath="$PROJECT_DIR$/.idea/settings/config/options/studio_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/config/options/usage.statistics.xml" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/config/options/usage.statistics.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/ustamp" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/compile-server/claimcenter_bbbbf494/ustamp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/.persistent/todoindex/values.values.at" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/settings/system/index/.persistent/todoindex/values.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../ClaimCenter1003/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TrainingApp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607336522260" ignored="false" />
+    <file path="/Dummy.txt" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607404836874" ignored="false" />
     <file path="/Gosu Scratchpad.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1606996736042" ignored="false" />
     <file path="/Plugin.java" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1606802788971" ignored="false" />
     <file path="/a2TypeOfPlugin.java" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1606802069911" ignored="false" />
     <file path="/a3PluginInterfaces.java" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1606802663415" ignored="false" />
     <file path="/a4StepsToWriteGWPlugin.java" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1606977901852" ignored="false" />
-    <file path="/a.dummy" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340713297" ignored="false" />
+    <file path="/a.dummy" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353171514" ignored="false" />
     <file path="/a5PluginParameters.java" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1606978112440" ignored="false" />
     <file path="/ExchangeRate.gs" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1606985448357" ignored="false" />
     <file path="/pcf.IntegrationPredefinedPluginDemoPage_INJECTED__PCF_Page_Screen_PanelRef_Toolbar_ToolbarButton_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1606998159675" ignored="false" />
@@ -6821,7 +6944,7 @@
     <file path="/ProcessesPlugin.gs" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607089848042" ignored="false" />
     <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_Page_startInEditMode_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607092430228" ignored="false" />
     <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_Page_Code_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607092430228" ignored="false" />
-    <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_DetailViewPanel_Code_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607092554985" ignored="false" />
+    <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_DetailViewPanel_Code_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607354024119" ignored="false" />
     <file path="/pcf.ABContacts_INJECTED__PCF_LocationGroup_canVisit_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607092229331" ignored="false" />
     <file path="/pcf.ABContacts_INJECTED__PCF_LocationGroup_title_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607092229332" ignored="false" />
     <file path="/pcf.ABContacts_INJECTED__PCF_LocationGroup_menuActions_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607092229332" ignored="false" />
@@ -6834,14 +6957,14 @@
     <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_DetailViewPanel_Input_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607092554969" ignored="false" />
     <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_DetailViewPanel_Input_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607092554968" ignored="false" />
     <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_DetailViewPanel_Input_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607092554966" ignored="false" />
-    <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_DetailViewPanel_InputColumn_Input_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607092655064" ignored="false" />
-    <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_DetailViewPanel_InputColumn_Input_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607092655064" ignored="false" />
-    <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_DetailViewPanel_InputColumn_Input_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607092655066" ignored="false" />
-    <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_DetailViewPanel_InputColumn_TypeKeyInput_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607092687252" ignored="false" />
-    <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_DetailViewPanel_InputColumn_TypeKeyInput_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607092687254" ignored="false" />
-    <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_DetailViewPanel_InputColumn_TypeKeyInput_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607092687254" ignored="false" />
+    <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_DetailViewPanel_InputColumn_Input_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353819254" ignored="false" />
+    <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_DetailViewPanel_InputColumn_Input_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353819254" ignored="false" />
+    <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_DetailViewPanel_InputColumn_Input_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353819254" ignored="false" />
+    <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_DetailViewPanel_InputColumn_TypeKeyInput_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607351175953" ignored="false" />
+    <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_DetailViewPanel_InputColumn_TypeKeyInput_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607351175952" ignored="false" />
+    <file path="/pcf.ABContactAnalysisDV_INJECTED__PCF_DetailViewPanel_InputColumn_TypeKeyInput_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607351175953" ignored="false" />
     <file path="/pcf.ABContactAnalysisPage_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_Label_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607092743702" ignored="false" />
-    <file path="/pcf.ABContactAnalysisPage_INJECTED__PCF_Page_Screen_PanelRef_def_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607093453552" ignored="false" />
+    <file path="/pcf.ABContactAnalysisPage_INJECTED__PCF_Page_Screen_PanelRef_def_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607354195836" ignored="false" />
     <file path="/pcf.ABContactAnalysisPage_INJECTED__PCF_Page_title_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607093526880" ignored="false" />
     <file path="/pcf.ABContactAnalysisPage_INJECTED__PCF_Page_Code_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607093526880" ignored="false" />
     <file path="/pcf.ABContactAnalysisPage_INJECTED__PCF_Page_startInEditMode_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607093526879" ignored="false" />
@@ -6874,15 +6997,15 @@
     <file path="/pcf.ABContactDetailsCV_ABPlace_INJECTED__PCF_CardViewPanel_Card_DetailViewPanel_InputColumn_InputSetRef_def_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607098433314" ignored="false" />
     <file path="/pcf.InteractionsLV_INJECTED__PCF_ListViewPanel_RowIterator_Row_DateCell_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340002339" ignored="false" />
     <file path="/pcf.InteractionsLV_INJECTED__PCF_ListViewPanel_RowIterator_Row_DateCell_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340002340" ignored="false" />
-    <file path="/pcf.InteractionsLV_INJECTED__PCF_ListViewPanel_RowIterator_Row_TypeKeyCell_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340813837" ignored="false" />
-    <file path="/pcf.InteractionsLV_INJECTED__PCF_ListViewPanel_RowIterator_Row_TypeKeyCell_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340813836" ignored="false" />
+    <file path="/pcf.InteractionsLV_INJECTED__PCF_ListViewPanel_RowIterator_Row_TypeKeyCell_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607350998615" ignored="false" />
+    <file path="/pcf.InteractionsLV_INJECTED__PCF_ListViewPanel_RowIterator_Row_TypeKeyCell_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607350998619" ignored="false" />
     <file path="/pcf.InteractionsLV_INJECTED__PCF_ListViewPanel_RowIterator_Row_Cell_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340489084" ignored="false" />
     <file path="/pcf.InteractionsLV_INJECTED__PCF_ListViewPanel_RowIterator_Row_Cell_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340489084" ignored="false" />
     <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_Screen_PanelRef_def_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340650190" ignored="false" />
-    <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_startInEditMode_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607339954530" ignored="false" />
-    <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_title_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607339954530" ignored="false" />
-    <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_canEdit_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607339954530" ignored="false" />
-    <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_Code_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607339954530" ignored="false" />
+    <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_startInEditMode_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353313582" ignored="false" />
+    <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_title_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353313583" ignored="false" />
+    <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_canEdit_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353313582" ignored="false" />
+    <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_Code_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353313581" ignored="false" />
     <file path="$PROJECT_DIR$/modules/configuration/out/classes/web/pcf/training/ABContact/Details/ABContactDetailsCV.ABPlace.pcf" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607097058504" ignored="false" />
     <file path="$PROJECT_DIR$/modules/configuration/out/classes/web/pcf/training/ABContact/ABContactInteractionsPage.pcf" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607097058505" ignored="false" />
     <file path="$PROJECT_DIR$/modules/configuration/out/classes/web/pcf/training/ABContact/ABContactSummaryDV.pcf" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607097058506" ignored="false" />
@@ -6899,7 +7022,7 @@
     <file path="/pcf.InteractionssLV_INJECTED__PCF_ListViewPanel_RowIterator_Variable_type_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607097867931" ignored="false" />
     <file path="/pcf.InteractionssLV_INJECTED__PCF_ListViewPanel_Code_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607329410322" ignored="false" />
     <file path="/pcf.InteractionsLV_INJECTED__PCF_ListViewPanel_RowIterator_Variable_type_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607331223846" ignored="false" />
-    <file path="/pcf.InteractionsLV_INJECTED__PCF_ListViewPanel_RowIterator_Row_TypeKeyCell_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340813834" ignored="false" />
+    <file path="/pcf.InteractionsLV_INJECTED__PCF_ListViewPanel_RowIterator_Row_TypeKeyCell_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607350998616" ignored="false" />
     <file path="/pcf.InteractionsLV_INJECTED__PCF_ListViewPanel_RowIterator_Row_Cell_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340489085" ignored="false" />
     <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_Screen_PanelRef_Toolbar_EditButtons_showUpdateConfirmMessage_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340917953" ignored="false" />
     <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_Screen_PanelRef_Toolbar_IteratorButtons_showRemoveConfirmMessage_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340917942" ignored="false" />
@@ -6920,13 +7043,145 @@
     <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_Screen_Toolbar_EditButtons_showUpdateConfirmMessage_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340451877" ignored="false" />
     <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_Screen_PanelRef_Toolbar_IteratorButtons_addVisible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340917940" ignored="false" />
     <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_Screen_PanelRef_Toolbar_IteratorButtons_removeVisible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340917941" ignored="false" />
-    <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_Screen_PanelRef_Toolbar_visible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340917957" ignored="false" />
+    <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_Screen_PanelRef_Toolbar_visible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607351903974" ignored="false" />
     <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_Screen_PanelRef_visible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340650191" ignored="false" />
     <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_Screen_PanelRef_ListDetailPanel_PanelRef_Toolbar_IteratorButtons_addVisible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340451906" ignored="false" />
     <file path="/pcf.ABContactInteractionsPage_INJECTED__PCF_Page_Screen_PanelRef_ListDetailPanel_PanelRef_Toolbar_IteratorButtons_removeVisible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340451907" ignored="false" />
     <file path="/pcf.InteractionsLV_INJECTED__PCF_ListViewPanel_RowIterator_toAdd_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340619782" ignored="false" />
     <file path="/pcf.InteractionsLV_INJECTED__PCF_ListViewPanel_RowIterator_toCreateAndAdd_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340650177" ignored="false" />
     <file path="/pcf.InteractionsLV_INJECTED__PCF_ListViewPanel_RowIterator_toRemove_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607340650183" ignored="false" />
+    <file path="/pcf.ABContactDetailsPage_INJECTED__PCF_Page_startInEditMode_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353313598" ignored="false" />
+    <file path="/pcf.ABContactDetailsPage_INJECTED__PCF_Page_title_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353313600" ignored="false" />
+    <file path="/pcf.ABContactDetailsPage_INJECTED__PCF_Page_Code_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353313605" ignored="false" />
+    <file path="/pcf.ABContactDetailsPage_INJECTED__PCF_Page_canEdit_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353313600" ignored="false" />
+    <file path="/pcf.ABContactDetailsPage_INJECTED__PCF_Page_alwaysInEditMode_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353313599" ignored="false" />
+    <file path="/pcf.ABContactLG_INJECTED__PCF_LocationGroup_LocationRef_location_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607405376203" ignored="false" />
+    <file path="/pcf.ABContactLG_INJECTED__PCF_LocationGroup_LocationRef_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607405376202" ignored="false" />
+    <file path="/pcf.ABContactHistoryPage_INJECTED__PCF_Page_startInEditMode_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607354956085" ignored="false" />
+    <file path="/pcf.ABContactHistoryPage_INJECTED__PCF_Page_title_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607354956084" ignored="false" />
+    <file path="/pcf.ABContactHistoryPage_INJECTED__PCF_Page_canEdit_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607354956083" ignored="false" />
+    <file path="/pcf.ABContactHistoryPage_INJECTED__PCF_Page_Code_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607354956089" ignored="false" />
+    <file path="/pcf.ABContactHistoryPage_INJECTED__PCF_Page_canVisit_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607354956084" ignored="false" />
+    <file path="/pcf.ABContactHistoryPage_INJECTED__PCF_Page_Screen_PanelRef_def_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607354195858" ignored="false" />
+    <file path="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/LegalCase/ABCalculatorEnhancement.pcf" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607351818718" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_canEdit_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409838843" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Code_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409838847" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_title_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409838844" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_startInEditMode_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409838842" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Variable_type_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607406574741" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_PanelRef_Toolbar_EditButtons_showUpdateConfirmMessage_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607351903993" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_PanelRef_def_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607351903997" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_PanelRef_visible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607351903996" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_PanelRef_Toolbar_IteratorButtons_showRemoveConfirmMessage_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607351903983" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_PanelRef_Toolbar_IteratorButtons_showAddConfirmMessage_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607351903983" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_PanelRef_Toolbar_IteratorButtons_removeVisible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607351903984" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_PanelRef_Toolbar_IteratorButtons_addVisible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607351903984" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_InputSet_TextInput_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409535235" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_TextInput_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407224994" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_InputSet_TextInput_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409535233" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_TextInput_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407224993" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_InputSet_TextInput_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409535234" ignored="false" />
+    <file path="/ABContactEnhancement.gsx" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607355824917" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_TextInput_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407224996" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_ListViewPanel_Row_ButtonCell_hideIfDisabled_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607352978133" ignored="false" />
+    <file path="/pcf.ABContactAddressesPage_INJECTED__PCF_Page_Screen_PanelRef_def_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353282884" ignored="false" />
+    <file path="/pcf.ABContactAddressesLDV_INJECTED__PCF_ListDetailPanel_PanelRef_Toolbar_ToolbarButton_action_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353707945" ignored="false" />
+    <file path="/pcf.ABContactAddressesLDV_INJECTED__PCF_ListDetailPanel_PanelRef_Toolbar_ToolbarButton_showConfirmMessage_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353707945" ignored="false" />
+    <file path="/pcf.ABContactAddressesLDV_INJECTED__PCF_ListDetailPanel_PanelRef_Toolbar_ToolbarButton_available_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353707945" ignored="false" />
+    <file path="/pcf.ABContactAddressesLDV_INJECTED__PCF_ListDetailPanel_PanelRef_Toolbar_ToolbarButton_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353707945" ignored="false" />
+    <file path="/pcf.ABContactAddressesLDV_INJECTED__PCF_ListDetailPanel_PanelRef_Toolbar_IteratorButtons_showAddConfirmMessage_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353011760" ignored="false" />
+    <file path="/pcf.ABContactAddressesLDV_INJECTED__PCF_ListDetailPanel_PanelRef_Toolbar_IteratorButtons_showRemoveConfirmMessage_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353011761" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_PanelRef_Toolbar_ToolbarButton_showConfirmMessage_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353051849" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_ButtonInput_hideIfDisabled_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407033673" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_ButtonInput_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353147669" ignored="false" />
+    <file path="/pcf.ABContactDetailsPersonDV_INJECTED__PCF_DetailViewPanel_InputColumn_InputSet_ButtonInput_action_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353313594" ignored="false" />
+    <file path="/pcf.ABContactDetailsPersonDV_INJECTED__PCF_DetailViewPanel_InputColumn_InputSet_ButtonInput_available_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353313593" ignored="false" />
+    <file path="/pcf.ABContactDetailsPersonDV_INJECTED__PCF_DetailViewPanel_InputColumn_InputSet_ButtonInput_hideIfDisabled_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353313596" ignored="false" />
+    <file path="/pcf.ABContactDetailsPersonDV_INJECTED__PCF_DetailViewPanel_InputColumn_InputSet_ButtonInput_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353313595" ignored="false" />
+    <file path="/pcf.ABContactDetailsPersonDV_INJECTED__PCF_DetailViewPanel_Code_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353216586" ignored="false" />
+    <file path="/pcf.ABContactDetailsPersonDV_INJECTED__PCF_DetailViewPanel_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353216588" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_ButtonInput_action_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407033672" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_ButtonInput_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407033672" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_ButtonInput_available_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607353373958" ignored="false" />
+    <file path="/pcf.ABContactSummaryPage_INJECTED__PCF_Page_canEdit_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607354340911" ignored="false" />
+    <file path="/pcf.ABContactSummaryPage_INJECTED__PCF_Page_title_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607354340912" ignored="false" />
+    <file path="/pcf.ABContactSummaryPage_INJECTED__PCF_Page_Code_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607354341145" ignored="false" />
+    <file path="/pcf.ABContactSummaryPage_INJECTED__PCF_Page_startInEditMode_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607354340914" ignored="false" />
+    <file path="/pcf.ABContactSummaryPage_INJECTED__PCF_Page_afterCommit_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607354340913" ignored="false" />
+    <file path="/pcf.ABContactSummaryPage_INJECTED__PCF_Page_Screen_PanelRef_def_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607355312448" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_Variable_initialValue_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407326190" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_Variable_type_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407326195" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_InputSet_TextInput_visible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409363686" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_TextInput_visible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407224998" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607416566847" ignored="false" />
+    <file path="/ContactUtil.gs" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607405913463" ignored="false" />
+    <file path="/Calculator.gs" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607406756662" ignored="false" />
+    <file path="/pcf.ABContactSearch_INJECTED__PCF_Page_ScreenRef_def_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407454984" ignored="false" />
+    <file path="/pcf.ABContactSearchScreen_INJECTED__PCF_Screen_SearchPanel_PanelRef_def_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407326238" ignored="false" />
+    <file path="/pcf.ContactSearchDV_INJECTED__PCF_DetailViewPanel_InputColumn_RangeInput_required_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407033636" ignored="false" />
+    <file path="/pcf.ContactSearchDV_INJECTED__PCF_DetailViewPanel_InputColumn_RangeInput_valueRange_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407033637" ignored="false" />
+    <file path="/pcf.ContactSearchDV_INJECTED__PCF_DetailViewPanel_InputColumn_RangeInput_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407033638" ignored="false" />
+    <file path="/pcf.ContactSearchDV_INJECTED__PCF_DetailViewPanel_InputColumn_RangeInput_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407033638" ignored="false" />
+    <file path="/pcf.ContactSearchDV_INJECTED__PCF_DetailViewPanel_InputColumn_RangeInput_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407033639" ignored="false" />
+    <file path="/pcf.ContactSearchDV_INJECTED__PCF_DetailViewPanel_InputColumn_RangeInput_PostOnChange_onChange_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407033642" ignored="false" />
+    <file path="/pcf.ContactSearchDV_INJECTED__PCF_DetailViewPanel_Code_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407033644" ignored="false" />
+    <file path="/pcf.ContactSearchDV_INJECTED__PCF_DetailViewPanel_InputColumn_InputSetRef_def_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407326229" ignored="false" />
+    <file path="/pcf.ContactSearchDV_INJECTED__PCF_DetailViewPanel_InputColumn_InputSetRef_mode_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407326229" ignored="false" />
+    <file path="/pcf.ContactSearchDV_INJECTED__PCF_DetailViewPanel_InputColumn_InputSetRef_visible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407326230" ignored="false" />
+    <file path="/pcf.GlobalPersonNameInputSet_Japan_INJECTED__PCF_InputSet_Code_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407472086" ignored="false" />
+    <file path="/pcf.GlobalPersonNameInputSet_Japan_INJECTED__PCF_InputSet_Input_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407637143" ignored="false" />
+    <file path="/pcf.GlobalPersonNameInputSet_Japan_INJECTED__PCF_InputSet_Input_visible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407637145" ignored="false" />
+    <file path="/pcf.GlobalPersonNameInputSet_Japan_INJECTED__PCF_InputSet_Input_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407637146" ignored="false" />
+    <file path="/pcf.GlobalPersonNameInputSet_Japan_INJECTED__PCF_InputSet_Input_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407637144" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_InputSet_TextInput_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407224939" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_InputSet_TextInput_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407224941" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_InputSet_TextInput_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407224941" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_InputSet_TextInput_visible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407224938" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_TextInput_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407293509" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_TextInput_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407293517" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_TextInput_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407293508" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_TextInput_visible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407225017" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_ButtonInput_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407259088" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_ButtonInput_action_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407259089" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_ButtonInput_hideIfDisabled_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407259090" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_ButtonInput_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407259070" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_ButtonInput_hideIfDisabled_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407259071" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_ButtonInput_action_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407259072" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_InputSet_ButtonInput_action_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409769945" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_InputSet_ButtonInput_hideIfDisabled_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409769937" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_InputSet_ButtonInput_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409769938" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_startInEditMode_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407406233" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_canEdit_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407406229" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_Code_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407406231" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_title_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407406234" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_Screen_DetailViewPanel_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407326209" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_Screen_DetailViewPanel_Variable_type_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407293545" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancements_INJECTED__PCF_Page_Screen_DetailViewPanel_Variable_initialValue_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407293547" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409838791" ignored="false" />
+    <file path="/pcf.ContactBasicsDV_ABPerson_INJECTED__PCF_DetailViewPanel_InputColumn_InputSetRef_mode_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407612851" ignored="false" />
+    <file path="/pcf.ContactBasicsDV_ABPerson_INJECTED__PCF_DetailViewPanel_InputColumn_InputSetRef_def_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407612852" ignored="false" />
+    <file path="/pcf.ContactBasicsDV_ABPerson_INJECTED__PCF_DetailViewPanel_InputColumn_Label_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407411571" ignored="false" />
+    <file path="/pcf.GlobalPersonNameInputSet_Japan_INJECTED__PCF_InputSet_TextInput_available_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407624863" ignored="false" />
+    <file path="/pcf.GlobalPersonNameInputSet_Japan_INJECTED__PCF_InputSet_TextInput_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407624859" ignored="false" />
+    <file path="/pcf.GlobalPersonNameInputSet_Japan_INJECTED__PCF_InputSet_TextInput_required_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407624857" ignored="false" />
+    <file path="/pcf.GlobalPersonNameInputSet_Japan_INJECTED__PCF_InputSet_TextInput_visible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407624865" ignored="false" />
+    <file path="/pcf.GlobalPersonNameInputSet_Japan_INJECTED__PCF_InputSet_TextInput_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407624861" ignored="false" />
+    <file path="/pcf.GlobalPersonNameInputSet_Japan_INJECTED__PCF_InputSet_TextInput_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407624867" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_InputSet_Input_value_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407817730" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_InputSet_Input_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407817732" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_InputSet_Input_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407817731" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_InputSet_Input_visible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607407817728" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_DetailViewPanel_InputColumn_InputSet_editable_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409561344" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_Toolbar_EditButtons_showUpdateConfirmMessage_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607416566855" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_Toolbar_EditButtons_editVisible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409701603" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_Toolbar_EditButtons_updateVisible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607416566854" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_Toolbar_EditButtons_cancelVisible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607416566853" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_Toolbar_ToolbarButton_showConfirmMessage_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409879766" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_Toolbar_ToolbarButton_label_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409879769" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_Toolbar_ToolbarButton_available_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409879771" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_Toolbar_ToolbarButton_visible_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409879768" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_Toolbar_EditButtons_editLabel_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607416566856" ignored="false" />
+    <file path="/pcf.ABCalculatorEnhancement_INJECTED__PCF_Page_Screen_Toolbar_EditButtons_pickValue_editor.gsp" changelist="52b0378d-ae94-46de-8e42-ac61a92daec2" time="1607409988736" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -6981,6 +7236,53 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/modules/configuration/gsrc/libraries/ABContactEnhancement.gsx" line="117" class="libraries.ABContactEnhancement" package="libraries">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/modules/configuration/gsrc/libraries/ABContactEnhancement.gsx" line="122" class="libraries.ABContactEnhancement" package="libraries">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/modules/configuration/gsrc/libraries/ABContactEnhancement.gsx" line="132" class="libraries.ABContactEnhancement" package="libraries">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -6990,45 +7292,77 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="a5PluginParameters.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/configuration/GUIDEWIRE_STUDY/src/Integration/Pluggins/a5PluginParameters.java">
+      <file leaf-file-name="ABCalculatorEnhancement.pcf" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABCalculatorEnhancement.pcf">
+          <provider selected="true" editor-type-id="PCFEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ABContactSearch.pcf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/search/ABContactSearch.pcf">
+          <provider selected="true" editor-type-id="PCFEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ABContactSearchScreen.pcf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/search/ABContactSearchScreen.pcf">
+          <provider selected="true" editor-type-id="PCFEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactSearchDV.pcf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/search/ContactSearchDV.pcf">
+          <provider selected="true" editor-type-id="PCFEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GlobalPersonNameInputSet.Japan.pcf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/name/GlobalPersonNameInputSet.Japan.pcf">
+          <provider selected="true" editor-type-id="PCFEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactBasicsDV.ABPerson.pcf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/contacts/basics/ContactBasicsDV.ABPerson.pcf">
+          <provider selected="true" editor-type-id="PCFEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactUtil.gs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/util/ContactUtil.gs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="45" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.0">
+            <state line="4" column="18" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ABContactDetailsCV.ABCompany.pcf" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/Details/ABContactDetailsCV.ABCompany.pcf">
-          <provider selected="true" editor-type-id="PCFEditor">
-            <state />
+      <file leaf-file-name="Calculator.gs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/calculator/Calculator.gs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="106" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ABContactInteractionsPage.pcf" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactInteractionsPage.pcf">
-          <provider selected="true" editor-type-id="PCFEditor">
-            <state />
+      <file leaf-file-name="ABContactAPIUtil.gs" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/repository/com/guidewire/ab/ab/1.0-SNAPSHOT/ab-1.0-SNAPSHOT.jar!/gw/webservice/ab/ab700/abcontactapi/ABContactAPIUtil.gs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="46" selection-start="2575" selection-end="2575" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Interaction_Ext.eti" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/configuration/config/extensions/entity/Interaction_Ext.eti">
-          <provider selected="true" editor-type-id="MetadataEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChannelType_Ext.tti" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/configuration/config/extensions/typelist/ChannelType_Ext.tti">
-          <provider selected="true" editor-type-id="MetadataEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InteractionsLV.pcf" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/traininglabs/InteractionsLV.pcf">
+      <file leaf-file-name="ABContactLG.pcf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactLG.pcf">
           <provider selected="true" editor-type-id="PCFEditor">
             <state />
           </provider>
@@ -7053,14 +7387,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/modules/configuration/config/database-config.xml" />
-        <option value="$PROJECT_DIR$/modules/configuration/config/web/pcf/contacts/PrimaryAddressInputSet.pcf" />
-        <option value="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/batch/FlagDoctorWithoutSpeciality.gs" />
-        <option value="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/batch/doctorspeciality/FlagDoctorWithoutSpeciality.gs" />
-        <option value="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/batch/ProcessesPlugin.gs" />
-        <option value="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/batch/doctorspeciality/FlagDoctorWithoutSpecialityBatch.gs" />
-        <option value="$PROJECT_DIR$/modules/configuration/config/web/pcf/traininglabs/ABContactAnalysisDV.pcf" />
-        <option value="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/Details/ABContactDetailsCV.ABCompany.pcf" />
         <option value="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactAnalysisPage.pcf" />
         <option value="$PROJECT_DIR$/modules/configuration/config/web/pcf/traininglabs/EmailAddressInputSet.pcf" />
         <option value="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactSummaryDV.pcf" />
@@ -7069,6 +7395,14 @@
         <option value="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/Details/ABContactDetailsCV.ABPlace.pcf" />
         <option value="$PROJECT_DIR$/modules/configuration/config/web/pcf/traininglabs/InteractionsLV.pcf" />
         <option value="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactInteractionsPage.pcf" />
+        <option value="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/LegalCase/ABCalculatorEnhancement.pcf" />
+        <option value="$PROJECT_DIR$/modules/configuration/config/web/pcf/traininglabs/ABContactAnalysisDV.pcf" />
+        <option value="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactLG.pcf" />
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/libraries/ABContactEnhancement.gsx" />
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/util/ContactUtil.gs" />
+        <option value="$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/calculator/Calculator.gs" />
+        <option value="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABCalculatorEnhancements.pcf" />
+        <option value="$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABCalculatorEnhancement.pcf" />
       </list>
     </option>
   </component>
@@ -7078,6 +7412,9 @@
         <option name="localRepository" value="@M2_REPO@" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-11" />
@@ -7099,7 +7436,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Production" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="Scope" currentSubView="All" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -7111,158 +7448,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Production">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="configuration">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="configuration">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="config">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="configuration">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="config">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="configuration">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="config">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="pcf">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="configuration">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="config">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="pcf">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="traininglabs">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="configuration">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="config">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="extensions">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="configuration">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="config">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="extensions">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="entity">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests" />
-        <subPane subId="Changed Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -7509,19 +7694,429 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
+        <subPane subId="Production">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="pcf">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="pcf">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="traininglabs">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="pcf">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="training">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="pcf">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="training">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ABContact">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="extensions">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="extensions">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="entity">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Changed Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="All">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="gsrc">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="gsrc">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="acme/ta">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="gsrc">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="acme/ta">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="calculator">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="pcf">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="pcf">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="training">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="pcf">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="training">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ABContact">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="pcf">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="name">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="176" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="213" />
-    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.0" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="213" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="176" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="213" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1226" />
@@ -7536,22 +8131,25 @@
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="acme.ta.batch.doctorspeciality" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\modules\configuration\config\web\pcf\training" />
+      <recent name="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\modules\configuration\config\web\pcf\training\ABContact" />
+      <recent name="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\modules\configuration\config\web\pcf\training\ABContact\LegalCase" />
       <recent name="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\modules\configuration\GUIDEWIRE_STUDY\src\Integration\Pluggins" />
       <recent name="C:\Users\Vikas.Gautam\Desktop\GitV2\Training8\Guidewire\TrainingApp\modules\configuration" />
     </key>
@@ -7649,19 +8247,19 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297619" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40952381" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40833333" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30357143" sideWeight="0.81431645" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30357143" sideWeight="0.18568353" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21547619" sideWeight="0.81431645" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27857143" sideWeight="0.27125943" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36275566" sideWeight="0.41428572" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29285714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27857143" sideWeight="0.7287406" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.54151624" sideWeight="0.7287406" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992464" sideWeight="0.7214286" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2454252" sideWeight="0.6964286" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2454252" sideWeight="0.45848376" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297619" sideWeight="0.49354145" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -7734,56 +8332,90 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactAnalysisPage.pcf" />
-    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/address/GlobalAddressInputSet.BigToSmall.pcf" />
-    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/Details/ABContactDetailsCV.ABPerson.pcf" />
-    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/traininglabs/ABContactAnalysisDV.pcf" />
-    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/address/AddressOwnerInputSet.pcf" />
-    <entry file="file://$PROJECT_DIR$/modules/configuration/config/extensions/entity/User.etx" />
-    <entry file="file://$PROJECT_DIR$/modules/configuration/config/extensions/entity/ABContact.etx" />
-    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/Details/ABContactDetailsCV.ABPlace.pcf" />
-    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/traininglabs/EmailAddressInputSet.pcf" />
-    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactSummaryDV.pcf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="391" selection-end="391" vertical-scroll-proportion="0.42023346" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/configuration/GUIDEWIRE_STUDY/src/Integration/Pluggins/a5PluginParameters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="45" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/configuration/config/extensions/typelist/ChannelType_Ext.tti">
-      <provider selected="true" editor-type-id="MetadataEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/Details/ABContactDetailsCV.ABCompany.pcf">
-      <provider editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="331" selection-end="331" vertical-scroll-proportion="0.42023346">
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/traininglabs/ABContactAnalysisDV.pcf">
       <provider selected="true" editor-type-id="PCFEditor">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/configuration/config/extensions/entity/Interaction_Ext.eti">
-      <provider selected="true" editor-type-id="MetadataEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/traininglabs/InteractionsLV.pcf">
+    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactAnalysisPage.pcf">
       <provider selected="true" editor-type-id="PCFEditor">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactInteractionsPage.pcf">
-      <provider editor-type-id="text-editor">
-        <state line="14" column="49" selection-start="441" selection-end="441" vertical-scroll-proportion="0.7186312" />
+    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactHistoryPage.pcf">
+      <provider selected="true" editor-type-id="PCFEditor">
+        <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactSummaryPage.pcf">
+      <provider selected="true" editor-type-id="PCFEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/gsrc/libraries/ABContactEnhancement.gsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="15" selection-start="4246" selection-end="4246" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactLGMenuActions.pcf">
+      <provider selected="true" editor-type-id="PCFEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABContactLG.pcf">
+      <provider selected="true" editor-type-id="PCFEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/repository/com/guidewire/ab/ab/1.0-SNAPSHOT/ab-1.0-SNAPSHOT.jar!/gw/webservice/ab/ab700/abcontactapi/ABContactAPIUtil.gs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="46" selection-start="2575" selection-end="2575" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/util/ContactUtil.gs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="18" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/search/ContactSearchDV.pcf">
+      <provider selected="true" editor-type-id="PCFEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/search/ABContactSearchScreen.pcf">
+      <provider selected="true" editor-type-id="PCFEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/search/ABContactSearch.pcf">
+      <provider selected="true" editor-type-id="PCFEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/contacts/basics/ContactBasicsDV.ABPerson.pcf">
+      <provider selected="true" editor-type-id="PCFEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/name/GlobalPersonNameInputSet.Japan.pcf">
+      <provider selected="true" editor-type-id="PCFEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/gsrc/acme/ta/calculator/Calculator.gs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="106" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/configuration/config/web/pcf/training/ABContact/ABCalculatorEnhancement.pcf">
       <provider selected="true" editor-type-id="PCFEditor">
         <state />
       </provider>

@@ -35,5 +35,8 @@
     <LocationRef
       label="displaykey.Training.History"
       location="ABContactHistoryPage(anABContact)"/>
+    <LocationRef
+      label="&quot;Calculator&quot;"
+      location="ABCalculatorEnhancement(anABContact)"/>
   </LocationGroup>
 </PCF>

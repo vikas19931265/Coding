@@ -179,4 +179,8 @@
   <array
     arrayentity="Interaction_Ext"
     name="Interaction_Ext"/>
+  <column
+    name="StrategicPartner"
+    nullok="true"
+    type="bit"/>
 </extension>

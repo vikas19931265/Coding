@@ -91,7 +91,7 @@
     <option name="FILE_MASK" />
     <option name="RECENT_FIND_STRINGS">
       <value>
-        <list size="10">
+        <list size="12">
           <item index="0" class="java.lang.String" itemvalue="SSO" />
           <item index="1" class="java.lang.String" itemvalue="createExchangeRateSet" />
           <item index="2" class="java.lang.String" itemvalue="9990" />
@@ -102,6 +102,8 @@
           <item index="7" class="java.lang.String" itemvalue="http://localhost:8890" />
           <item index="8" class="java.lang.String" itemvalue="anABContact.Interactions_Ext" />
           <item index="9" class="java.lang.String" itemvalue="onEnter" />
+          <item index="10" class="java.lang.String" itemvalue="Strategic partner" />
+          <item index="11" class="java.lang.String" itemvalue="Request Case Report" />
         </list>
       </value>
     </option>
@@ -253,15 +255,15 @@
     </recent_templates>
   </component>
   <component name="com.intellij.javaee.ExternalResourceManagerImpl">
-    <ignored-resource url="http://relaxng.org/ns/compatibility/annotations/1.0" />
     <ignored-resource url="urn:idea:xslt-plugin#extensions" />
-    <ignored-resource url="http://www.w3.org/1998/Math/MathML" />
+    <ignored-resource url="http://relaxng.org/ns/compatibility/annotations/1.0" />
     <ignored-resource url="http://exslt.org/dates-and-times" />
+    <ignored-resource url="http://www.w3.org/1998/Math/MathML" />
     <ignored-resource url="http://exslt.org/math" />
     <ignored-resource url="http://exslt.org/dynamic" />
     <ignored-resource url="http://exslt.org/common" />
-    <ignored-resource url="http://exslt.org/sets" />
     <ignored-resource url="http://exslt.org/strings" />
+    <ignored-resource url="http://exslt.org/sets" />
     <ignored-resource url="http://www.w3.org/2000/svg" />
   </component>
 </application>

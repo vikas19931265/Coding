@@ -380,9 +380,9 @@ gw.webservice.ab.ab800.abcontactapi.ABContactAPIFindDuplicatesResult
 gw.contactmapper.ab700.ContactIntegrationXMLMapper.block_8_
 rules.EventMessage.EventFired_dir.ABEF1000VendorRecommendation
 gw.database.dmv.db2BufferPoolPage
-acme.ta.messaging.legalreport.LegalReportAPI
 rules.Preupdate.ABContactPreupdate_dir.ABPU2000SubtypeABPerson
 gw.api.address.AddressOwnerBase
+acme.ta.messaging.legalreport.LegalReportAPI
 acme.ta.batch.doctorspeciality.FlagDoctorWithoutSpecialityBatch.block_0_.block_0_.block_0_
 gw.api.phone.BusinessPhoneOwner
 trainingapp.demo.gosu.ColorSequenceable

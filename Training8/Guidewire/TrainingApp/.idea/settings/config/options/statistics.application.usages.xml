@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application>
   <component name="StatisticsApplicationUsages">
-    <group name="language-level">
-      <project id="TrainingApp" values="JDK_1_7" />
-    </group>
     <group name="run-configuration-type">
       <project id="TrainingApp" values="Application" />
     </group>
-    <group name="module type">
-      <project id="TrainingApp" values="JAVA_MODULE" />
+    <group name="language-level">
+      <project id="TrainingApp" values="JDK_1_7" />
     </group>
     <group name="vcs">
       <project id="TrainingApp" values="Git" />
     </group>
+    <group name="module type">
+      <project id="TrainingApp" values="JAVA_MODULE" />
+    </group>
     <group name="file-type">
-      <project id="TrainingApp" values="Typelist TTI,Entity Name,Entity,HTML,Images,IDEA_MODULE,ARCHIVE,XML,Typelist TIX,UNKNOWN,PCF,Properties,Plugin,GX,Typelist TTX,PLAIN_TEXT,RPCE,JAVA,GosuCode,WSC,SQL files" />
+      <project id="TrainingApp" values="WSC,Properties,UNKNOWN,Typelist TTX,JAVA,Entity,RPCE,ARCHIVE,Typelist TTI,Typelist TIX,GX,HTML,PCF,GosuCode,PLAIN_TEXT,SQL files,Entity Name,XML,Images,IDEA_MODULE,Plugin" />
     </group>
   </component>
   <component name="UsageTrigger">
     <counts>
       <entry feature="CreateFile.CreateFileAction" count="5" />
-      <entry feature="execute.Application.Debug" count="28" />
+      <entry feature="execute.Application.Debug" count="35" />
       <entry feature="execute.Application.Run" count="1" />
     </counts>
   </component>

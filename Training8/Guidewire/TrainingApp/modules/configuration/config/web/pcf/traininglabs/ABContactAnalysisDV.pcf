@@ -17,7 +17,7 @@
         editable="true"
         id="strategicPartner"
         label="&quot;Strategic Partner&quot;"
-        value="anABContact.CustomerRating_Ext"/>
+        value="anABContact.StrategicPartner"/>
       <Input
         editable="true"
         id="customerRating"
@@ -28,6 +28,11 @@
         id="lastCourtesyContact"
         label="&quot;Last Courtesy Contact&quot;"
         value="anABContact.LastCourtesyContact_Ext"/>
+      <!-- <Input
+        editable="true"
+        id="lastCourtesyContact"
+        label="&quot;Next Courtesy Contact&quot;"
+        value="anABContact.LastCourtesyContact_Ext"/> -->
       <Input
         editable="true"
         id="numberOfFraudInvestigations"

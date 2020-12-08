@@ -6,27 +6,30 @@
     <location key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog.0.0.1920.1080" x="686" y="236" />
     <location key="replaceTextDialog.0.0.1920.1080" x="730" y="194" />
     <location key="WELCOME_SCREEN.0.0.1920.1080" x="959" y="291" />
+    <location key="com.intellij.openapi.editor.actions.MultiplePasteAction$1.0.0.1920.1080" x="787" y="70" />
     <location key="IdeErrosDialog.0.0.1920.1080" x="359" y="289" />
     <location key="RollbackChangesDialog.0.0.1920.1080" x="610" y="230" />
     <location key="#com.intellij.ide.util.TreeClassChooserDialog.0.0.1920.1080" x="687" y="281" />
+    <location key="#com.intellij.debugger.ui.EvaluationDialog2.0.0.1920.1080" x="503" y="324" />
     <location key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate.0.0.1920.1080" x="634" y="371" />
     <location key="findTextDialog.0.0.1920.1080" x="735" y="227" />
-    <location key="DiffWindow.0.0.1920.1080" x="89" y="89" />
     <location key="new_plugin_dialog.0.0.1920.1080" x="803" y="415" />
+    <location key="DiffWindow.0.0.1920.1080" x="89" y="89" />
     <location key="#Usage_Statistics.0.0.1920.1080" x="584" y="307" />
     <location key="#com.intellij.fileTypes.FileTypeChooser.0.0.1920.1080" x="611" y="282" />
     <location key="com.intellij.history.integration.ui.views.FileHistoryDialog.0.0.1920.1080" x="-11" y="-11" />
-    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1512" height="222" />
     <size key="javadoc.popup.0.0.1920.1080" width="502" height="135" />
-    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1512" height="222" />
-    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1512" height="222" />
-    <size key="GridCell.Tab.1.center.0.0.1920.1080" width="1512" height="222" />
-    <size key="GridCell.Tab.1.bottom.0.0.1920.1080" width="1512" height="222" />
-    <size key="GridCell.Tab.1.left.0.0.1920.1080" width="1512" height="222" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1858" height="148" />
+    <size key="GridCell.Tab.1.center.0.0.1920.1080" width="1858" height="148" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1858" height="148" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1858" height="148" />
+    <size key="GridCell.Tab.1.bottom.0.0.1920.1080" width="1858" height="148" />
+    <size key="GridCell.Tab.1.left.0.0.1920.1080" width="1858" height="148" />
+    <size key="#com.intellij.debugger.ui.EvaluationDialog2.0.0.1920.1080" width="913" height="518" />
     <size key="DiffWindow.0.0.1920.1080" width="1742" height="842" />
-    <size key="GridCell.Tab.1.right.0.0.1920.1080" width="1512" height="222" />
+    <size key="GridCell.Tab.1.right.0.0.1920.1080" width="1858" height="148" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1858" height="148" />
     <size key="com.intellij.history.integration.ui.views.FileHistoryDialog.0.0.1920.1080" width="1942" height="1042" />
-    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1512" height="222" />
     <extendedState key="com.intellij.history.integration.ui.views.FileHistoryDialog" state="6" />
     <extendedState key="com.intellij.history.integration.ui.views.FileHistoryDialog.0" state="300" />
     <extendedState key="com.intellij.history.integration.ui.views.FileHistoryDialog.1" state="500" />
@@ -42,6 +45,7 @@
     <property name="com.intellij.diagnostic.IdeErrorsDialogactiveTab" value="1" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="file.colors.enable.non.project" value="Yellow" />
+    <property name="com.intellij.openapi.editor.actions.MultiplePasteAction$1.splitter" value="0.3" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="LayoutCode.processChangedText" value="false" />

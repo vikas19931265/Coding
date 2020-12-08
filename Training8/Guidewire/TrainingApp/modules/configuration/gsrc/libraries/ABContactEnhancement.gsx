@@ -1,5 +1,7 @@
 package libraries
 
+uses gw.xsd.w3c.soap11_encoding.Double
+
 enhancement ABContactEnhancement : entity.ABContact {
   
 /* Returns true if contact has at least one open FlagEntry
@@ -110,6 +112,33 @@ function addDefaultTagToNewContact() : void {
   defaultTag.Type = "claimparty"
   this.addToTags(defaultTag)
   } // end of function    
-    
-} // end ABContactEnhancement enhancement   
+
+  property set number1(num1: java.lang.Double)
+  {
+    this.number1=num1
+  }
+
+  property get number1() : java.lang.Double
+  {
+    return 0
+  }
+
+  property set number2(num2: java.lang.Double)
+  {
+    this.number2=num2
+  }
+
+  property get number2(): java.lang.Double
+  {
+    return 0
+  }
+
+  property get result(): java.lang.Double
+  {
+     return this.result
+  }
+
+} // end ABContactEnhancement enhancement
+
+
 
