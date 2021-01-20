@@ -1,2 +1,0 @@
-aWhatIsPolymorphismAndMethodOverriding.C
-aWhatIsPolymorphismAndMethodOverriding.P

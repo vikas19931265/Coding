@@ -1,4 +1,0 @@
-AbstractAndInterfacesPgm.Parent
-AbstractAndInterfacesPgm.Student
-AbstractAndInterfacesPgm.Child
-AbstractAndInterfacesPgm.Main

@@ -1,3 +1,0 @@
-LargestPrimeFactor
-LargestPrime
-Largest

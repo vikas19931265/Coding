@@ -1,2 +1,0 @@
-DaemonThread.DaemonThreadDemo
-DaemonThread.MyThreads

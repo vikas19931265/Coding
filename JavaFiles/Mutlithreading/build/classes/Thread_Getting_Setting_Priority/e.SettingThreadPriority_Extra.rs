@@ -1,2 +1,0 @@
-Thread_Getting_Setting_Priority.MyThread2
-Thread_Getting_Setting_Priority.ThreadPriorityDemo

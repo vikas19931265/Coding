@@ -1,5 +1,0 @@
-BGenericClass.GenericTest
-BGenericClass.Shape
-BGenericClass.Circle
-BGenericClass.Driversss
-BGenericClass.Rectangle

@@ -1,2 +1,0 @@
-LambdaExpressions.Test
-LambdaExpressions.Implementation

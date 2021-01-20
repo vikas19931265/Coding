@@ -1,2 +1,0 @@
-WaysOfCreatingObject.Student
-WaysOfCreatingObject.Employee

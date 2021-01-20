@@ -1,2 +1,0 @@
-InterruptingThread.ThreadDemoInterruption
-InterruptingThread.MyThread4

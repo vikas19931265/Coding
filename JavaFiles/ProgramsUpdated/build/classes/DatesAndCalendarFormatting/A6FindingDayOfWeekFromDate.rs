@@ -1,2 +1,0 @@
-DatesAndCalendarFormatting.Solution
-DatesAndCalendarFormatting.Result

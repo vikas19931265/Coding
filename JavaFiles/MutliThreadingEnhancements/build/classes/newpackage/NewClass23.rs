@@ -1,2 +1,0 @@
-newpackage.MyCallable
-newpackage.CallableFutureDemo

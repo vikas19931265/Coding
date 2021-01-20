@@ -1,2 +1,0 @@
-Honda4
-Bike

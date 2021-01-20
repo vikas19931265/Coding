@@ -1,3 +1,0 @@
-newpackage.Display
-newpackage.MyThread1
-newpackage.SynchronizedDemo

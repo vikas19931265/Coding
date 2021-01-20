@@ -1,3 +1,0 @@
-session12.WeakHashMapDemo1
-session12.Temp
-session12.WeakHashMapDemo

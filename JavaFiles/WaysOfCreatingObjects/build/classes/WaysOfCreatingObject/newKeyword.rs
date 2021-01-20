@@ -1,1 +1,0 @@
-WaysOfCreatingObject.Student2

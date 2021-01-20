@@ -1,4 +1,0 @@
-Bank
-PNB
-TestBank
-SBI

@@ -1,2 +1,0 @@
-StringBuilder.methodChaining
-Programs.methodChaining

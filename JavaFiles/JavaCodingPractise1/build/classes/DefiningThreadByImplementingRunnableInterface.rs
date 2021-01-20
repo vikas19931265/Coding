@@ -1,2 +1,0 @@
-New.Driver11
-New.ThreadByImplementingRunnableInterface

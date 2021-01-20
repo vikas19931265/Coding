@@ -1,2 +1,0 @@
-bPolymorphismMethodOverloading.Test3
-bPolymorphismMethodOverloading.AutomaticPromotionOverloading_CASE3

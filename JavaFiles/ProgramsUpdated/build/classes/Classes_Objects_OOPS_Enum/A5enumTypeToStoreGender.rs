@@ -1,3 +1,0 @@
-Classes_Objects_OOPS_Enum.Driver11
-Classes_Objects_OOPS_Enum.Studentss
-Classes_Objects_OOPS_Enum.Gender

@@ -1,2 +1,0 @@
-AGenerics.Driver
-AGenerics.Student

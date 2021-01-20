@@ -1,2 +1,0 @@
-aWhatIsPolymorphismAndMethodOverriding.Parents
-aWhatIsPolymorphismAndMethodOverriding.Childs

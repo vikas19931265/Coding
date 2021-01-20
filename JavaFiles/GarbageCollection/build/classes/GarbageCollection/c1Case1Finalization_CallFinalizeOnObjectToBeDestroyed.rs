@@ -1,2 +1,0 @@
-GarbageCollection.Test
-Test

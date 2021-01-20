@@ -1,2 +1,0 @@
-ThreadLocal.ThreadLocalDemo1A$1
-ThreadLocal.ThreadLocalDemo1A

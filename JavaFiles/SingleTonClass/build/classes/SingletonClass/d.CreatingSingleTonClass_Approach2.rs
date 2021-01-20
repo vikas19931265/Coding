@@ -1,2 +1,0 @@
-SingletonClass.TestDriver
-SingletonClass.Test2

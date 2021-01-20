@@ -1,2 +1,0 @@
-CGenericMethod.Driver
-CGenericMethod.Demo

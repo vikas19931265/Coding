@@ -1,2 +1,0 @@
-SerializedDemo
-Dog

@@ -1,3 +1,0 @@
-Str
-StringT
-StringToken

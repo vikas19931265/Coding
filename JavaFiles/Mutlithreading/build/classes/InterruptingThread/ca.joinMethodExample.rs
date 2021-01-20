@@ -1,4 +1,0 @@
-InterruptingThread.Driver12
-JoinTest
-InterruptingThread.JoinTest
-Driver12

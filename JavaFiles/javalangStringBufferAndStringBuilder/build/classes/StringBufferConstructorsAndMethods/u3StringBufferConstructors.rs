@@ -1,2 +1,0 @@
-StringBufferConstructorsAndMethods.Demotest
-StringBuffer2.Demotest

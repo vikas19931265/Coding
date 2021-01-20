@@ -1,3 +1,0 @@
-Showable
-Printable
-TestInterface3

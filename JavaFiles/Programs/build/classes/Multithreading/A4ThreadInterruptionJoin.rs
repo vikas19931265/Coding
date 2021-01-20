@@ -1,3 +1,0 @@
-Multithreading.MyThread
-Multithreading.MyThread4
-Multithreading.My

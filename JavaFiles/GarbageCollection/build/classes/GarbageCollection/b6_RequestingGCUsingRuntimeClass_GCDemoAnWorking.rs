@@ -1,2 +1,0 @@
-RunTimeDemo
-GarbageCollection.RunTimeDemo

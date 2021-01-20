@@ -1,2 +1,0 @@
-Constructors.Child
-Constructors.Person

@@ -1,1 +1,0 @@
-StaticBlock.Sample

@@ -1,2 +1,0 @@
-GarbageCollection.FinalizeDemo
-FinalizeDemo

@@ -1,1 +1,0 @@
-RegularExpressions.MoveCharsToEndOfString

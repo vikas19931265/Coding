@@ -1,2 +1,0 @@
-InterruptingThread.MyThread
-InterruptingThread.ThreadYieldDemo

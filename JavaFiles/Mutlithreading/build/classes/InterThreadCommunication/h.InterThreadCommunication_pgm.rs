@@ -1,2 +1,0 @@
-InterThreadCommunication.Driver
-InterThreadCommunication.Demo

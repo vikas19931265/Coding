@@ -1,2 +1,0 @@
-ConcurrentCollectionIntro.MyThread
-concurrentcollections.MyThread

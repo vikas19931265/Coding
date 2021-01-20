@@ -1,2 +1,0 @@
-InterThreadCommunication.ThreadA
-InterThreadCommunication.ThreadB

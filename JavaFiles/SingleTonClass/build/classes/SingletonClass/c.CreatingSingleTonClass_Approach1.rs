@@ -1,2 +1,0 @@
-SingletonClass.Driver
-SingletonClass.SingleTon

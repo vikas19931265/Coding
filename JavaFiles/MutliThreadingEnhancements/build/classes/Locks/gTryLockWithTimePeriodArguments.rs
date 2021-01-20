@@ -1,2 +1,0 @@
-Locks.MyThread13
-Locks.ReentrantLockDemo4

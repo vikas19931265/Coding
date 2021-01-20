@@ -1,3 +1,0 @@
-SynchronizedBlock.Display
-SynchronizedBlock.MyThread
-SynchronizedBlock.SynchronizedDemo

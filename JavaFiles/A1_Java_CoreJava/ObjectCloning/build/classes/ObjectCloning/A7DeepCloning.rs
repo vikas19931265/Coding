@@ -1,3 +1,0 @@
-ObjectCloning.Cats
-ObjectCloning.DeepCloning
-ObjectCloning.Dogs

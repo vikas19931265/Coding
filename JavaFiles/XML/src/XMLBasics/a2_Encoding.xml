@@ -1,7 +1,0 @@
-<!--  
-	By default the encoding in xml is UTF-8 supporting certain charaters. If we dont write
-	any encoding then its still utf 8 only. We can also go for other encoding techniques like
-	utf-16
--->
-
-<?xml version="1.0" encoding="UTF-8"?>

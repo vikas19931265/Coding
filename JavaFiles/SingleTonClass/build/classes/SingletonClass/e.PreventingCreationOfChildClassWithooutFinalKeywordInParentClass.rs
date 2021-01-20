@@ -1,2 +1,0 @@
-SingletonClass.Child4
-SingletonClass.Test4

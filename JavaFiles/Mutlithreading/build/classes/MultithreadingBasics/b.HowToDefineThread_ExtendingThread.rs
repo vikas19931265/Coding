@@ -1,2 +1,0 @@
-MultithreadingBasics.MyThread
-MultithreadingBasics.ThreadDemo

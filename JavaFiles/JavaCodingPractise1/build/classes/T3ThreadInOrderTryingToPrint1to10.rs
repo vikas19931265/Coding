@@ -1,2 +1,0 @@
-New.Threading
-New.DriverPgming

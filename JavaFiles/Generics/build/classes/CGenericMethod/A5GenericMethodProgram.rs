@@ -1,2 +1,0 @@
-CGenericMethod.GenericMethods
-CGenericMethod.Student

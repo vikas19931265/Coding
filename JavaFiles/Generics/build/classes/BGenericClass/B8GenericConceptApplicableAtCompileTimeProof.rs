@@ -1,2 +1,0 @@
-BGenericClass.Test97
-BGenericClass.Testing

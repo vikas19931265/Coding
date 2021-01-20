@@ -1,2 +1,0 @@
-ThreadGroup.ThreadGroupDemo2
-newpackage.ThreadGroupDemo2

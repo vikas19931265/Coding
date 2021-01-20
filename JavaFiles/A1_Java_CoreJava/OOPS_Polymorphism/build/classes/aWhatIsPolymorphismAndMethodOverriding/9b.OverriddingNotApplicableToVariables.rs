@@ -1,3 +1,0 @@
-aWhatIsPolymorphismAndMethodOverriding.Par
-aWhatIsPolymorphismAndMethodOverriding.Testing
-aWhatIsPolymorphismAndMethodOverriding.Chi

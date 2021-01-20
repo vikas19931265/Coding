@@ -1,2 +1,0 @@
-concurrentcollections.Test
-ConcurrentCollectionIntro.Test

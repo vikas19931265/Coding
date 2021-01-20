@@ -1,2 +1,0 @@
-interfaces.Child
-interfaces.P

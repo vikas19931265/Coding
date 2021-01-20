@@ -1,2 +1,0 @@
-BGenericClass.GenericClass
-BGenericClass.DriverClass

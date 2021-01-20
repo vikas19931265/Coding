@@ -1,2 +1,0 @@
-bStaticVariables.Student
-bStaticVariables.StaticKeyword

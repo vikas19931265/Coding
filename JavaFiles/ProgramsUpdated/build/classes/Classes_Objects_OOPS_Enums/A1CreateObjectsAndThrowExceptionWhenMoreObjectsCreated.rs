@@ -1,2 +1,0 @@
-Classes_Objects_OOPS_Enums.StudException
-Classes_Objects_OOPS_Enums.Student
