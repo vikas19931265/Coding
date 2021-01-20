@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<typelist
-  xmlns="http://guidewire.com/typelists"
-  desc="A code to indicate the premises where the accident occurred."
-  name="AccidentPremises"/>

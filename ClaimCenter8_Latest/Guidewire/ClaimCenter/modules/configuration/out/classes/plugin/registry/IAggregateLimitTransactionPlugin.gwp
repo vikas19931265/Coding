@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<plugin
-  interface="IAggregateLimitTransactionPlugin"
-  name="IAggregateLimitTransactionPlugin">
-  <plugin-java
-    javaclass="gw.plugin.financials.impl.AggregateLimitTransactionPluginImpl"
-    plugindir=""/>
-</plugin>

@@ -1,3 +1,0 @@
-<div aria-describedby="${describedBy}" class="gw-value-readonly-wrapper" style="${height}">
-  ${currentValue}
-</div>

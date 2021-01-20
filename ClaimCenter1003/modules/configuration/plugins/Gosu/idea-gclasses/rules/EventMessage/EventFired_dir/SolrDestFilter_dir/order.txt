@@ -1,4 +1,0 @@
-Claim
-ClaimContact
-ClaimContactRole
-ClaimInfo

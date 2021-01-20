@@ -1,4 +1,0 @@
-CCL01000Notifyexternalsystems
-CCL02000SuspendAutoSyncforRelatedContacts
-CCL03000Sampleruletosetpurgedate
-CCL04000Setarchiveeligibilitydate

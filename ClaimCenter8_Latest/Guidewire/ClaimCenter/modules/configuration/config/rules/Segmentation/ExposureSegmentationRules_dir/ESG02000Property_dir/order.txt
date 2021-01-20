@@ -1,4 +1,0 @@
-ESG02100PropertyLow
-ESG02200PropertyMedium
-ESG02300PropertyHigh
-ESG02400PropertyDefault

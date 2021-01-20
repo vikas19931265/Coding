@@ -1,3 +1,0 @@
-<a class="gw-link" href="mailto:${emailValue}">
-  ${emailValue}
-</a>

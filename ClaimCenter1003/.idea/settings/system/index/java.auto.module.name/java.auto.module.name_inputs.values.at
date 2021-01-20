@@ -1,27 +1,0 @@
-/Header Record For PersistentHashMapValueStoragecc.gunitbizrules.gunitpl.gunitccpl.appserver.webspherepl.appserver.jbosscc.pl.bizrulescc.pl.heatmapcc.pl.personaldatacc.pl.propertiescc.pl.inbound.filecc.pl.outbound.filecc.cmd.common
-cc.pl.solrcc.pl
-contactbeangraphutilbizrules
-heatmappersonaldatainbound.fileoutbound.file
-propertiesperfutilpl	cc.plugin	pluginperfdownload.analyzer.testperfdownload.analyzerperfdownload.collector.testperfdownload.collectorutillog4j2.deps	ojdbc8
-mssql.jdbc
-postgresqlgosu.core.api.precompiledh2gosu.ant.toolsgosu.docgosu.processgosu.servlet	gosu.core
-modulesgosu.core.api	automatonxegersolrjcl.over.slf4jlog4j.over.slf4j
-solr.solrjlogging.over.log4j2log4j.slf4j.impl org.apache.logging.log4j.coregw.jcommandermanifold	ant.junit
-ant.junit4antant.launcher	gw.cactus	aspectjrtfest.assertorg.easymock	fest.utilgdata.appsforyourdomaingdata.appsforyourdomain.meta
-gdata.basegdata.clientgdata.client.meta
-gdata.core
-gdata.docsgdata.docs.metagdata.mediagdata.spreadsheetqdoxgdata.spreadsheet.metagw.xml.testframeworkgosu.classredefinerorg.mockitocucumber.junitcucumber.java8cucumber.guice	pcfschemacom.google.guicejsouporg.tukaani.xzgw.webservices.clientgw.gql.iv.filtersgw.gx	gw.xmlentity.metadata.api	pcfxmlsimplexml.schemaentity.codegen.common	pli18nlogging.api	zookeeper	slf4j.ext	slf4j.api	quartzmanifold.util
-ext.configorg.jsonjunit(%gw.integration.inbound.plugin.jms.apiorg.eclipse.osgimaven.artifactgw.integration.runtime.apijavax.jms.apigw.integration.cm.apigw.integration.jndi.api*'gw.integration.inbound.plugin.files.apigw.integration.inbound.apigw.integration.execution.apijava.uuid.generator	sdoapi	poi.ooxmlxml.resolverwoodstox.core.aslnettyentity.codegen.annotationsorg.jetbrains.annotationsprotobuf.javagw.commons.cliaspose.cells
-okhttp3htmltemplateaspose.wordsorg.antlr.antlr4.runtimeorg.objenesisorg.codehaus.groovycucumber.javacucumber.corejavax.injectaopalliancecom.google.commonaws.java.sdk
-xml.api
-pcf.api	simplexmlcommons.fileuploadfopbatik.transcoderbatik.extensionbatik.bridgebatik.script
-batik.animbatik.svg.dom	batik.gvtbatik.parserbatik.svggenbatik.awt.util	batik.dom	batik.cssxmlgraphics.commonsorg.apache.commons.ioorg.apache.commons.lang3'$org.apache.httpcomponents.httpclientorg.apache.commons.codecpoihamcrest.coreplexus.utilspoi.ooxml.schemas	curvesapiorg.codehaus.stax252org.eclipse.jetty.websocket.javax.websocket.server%"org.eclipse.jetty.websocket.server&#org.eclipse.jetty.websocket.servlet org.eclipse.jetty.annotationsorg.eclipse.jetty.plusorg.eclipse.jetty.webapporg.eclipse.jetty.servletorg.eclipse.jetty.securityorg.eclipse.jetty.serverjavax.servlet.apisqlinform.progw.commons.collectionsgw.jettyjlinebfopdf.cmap	bfopdfbfopdf.qrcodebfopdf.stampvelocity.toolscommons.validatorcommons.jxpathcommons.beanutilscommons.digestercommons.clicommons.collectionsvelocityorg.apache.commons.compresscommons.dbcp2commons.discoverycommons.langcommons.pool2cottarhinoavalon.framework.apicommons.mathavalon.framework.impl"com.github.spotbugs.annotationserror.prone.annotationscom.ibm.icuoro	jsr305org.joda.timeorg.eclipse.jetty.start!com.fasterxml.jackson.databind(%com.fasterxml.jackson.dataformat.yamlcom.fasterxml.jackson.core# com.fasterxml.jackson.annotation	java.mail
-serializer
-cal10n.apixalanjson.simplegw.libphonenumber,)com.springsource.org.custommonkey.xmlunitjava.dataloaderperf.analyzerorg.reactivestreamsokiogw.xml.parsercodegen.apicucumber.htmlcucumber.jvm.deps
-gherkinfailureaccessj2objc.annotationslistenablefutureanimal.sniffer.annotationschecker.qualcommons.loggingaudience.annotationscommons.math3%"org.apache.httpcomponents.httpmime%"org.apache.httpcomponents.httpcore	noggitxmlbeans	batik.ext
-fontboxcommons.collections4org.eclipse.jetty.jndi.+org.eclipse.jetty.websocket.javax.websocket%"org.eclipse.jetty.websocket.clientorg.eclipse.jetty.xml%"org.eclipse.jetty.websocket.commonorg.eclipse.jetty.clientorg.eclipse.jetty.httporg.eclipse.jetty.io	snakeyamlorg.eclipse.jetty.util	sslextjavax.websocket.api	batik.xmljava.annotation
-batik.utilxml.apis.extjavax.websocket.client.apibatik.constants
-batik.i18n"org.eclipse.jetty.websocket.apicc.toolspl.toolsfailsafetoolscharsets	deployaccess.bridgecldrdatadnsns
-jaccessjfxrt
-localedata
-nashornsunecsunjce.provider	sunmscapi	sunpkcs11zipfs	javawsjcejfr	jfxswtjssemanagement.agent	plugin	resourcesrt

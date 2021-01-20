@@ -1,3 +1,0 @@
-CLW05100Propertyinspection
-CLW05200Newusers
-CLW05300VerifyCoverage

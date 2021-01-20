@@ -1,3 +1,0 @@
-<plugin name="IMatterValidationPlugin">
-  <plugin-java javaclass="com.guidewire.cc.system.validation.RulesBasedMatterValidationPlugin"/>
-</plugin>

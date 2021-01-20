@@ -1,3 +1,0 @@
-<div class="gw-ActionValueWidget" id="${renderId}_button" data-gw-click="${action}">
-  ${currentValue}
-</div>

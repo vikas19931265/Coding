@@ -1,3 +1,0 @@
-RIAV01000RequiredFields
-RIAV02000UniqueAgreementName
-RIAV03000ProportionalAgreementPercentageTotal

@@ -1,2 +1,0 @@
-CPR01000WCDefaultExposures
-CPR05000DEMOCreatedefaultautoexposures

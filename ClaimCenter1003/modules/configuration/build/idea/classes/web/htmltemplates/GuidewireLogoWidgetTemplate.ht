@@ -1,3 +1,0 @@
-<div id="${id}" class="${id}" role="presentation">
-    <div id="gw-customer--logo" aria-hidden="true"></div>
-</div>

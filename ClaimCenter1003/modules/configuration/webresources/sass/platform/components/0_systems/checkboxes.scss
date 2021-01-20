@@ -1,8 +1,0 @@
-.gw-InputGroupCheckboxValueWidget,
-.gw-ValueWidget,
-.gw-editableCheckbox,
-.gw-CellWidget.gw-impl-cell--CB {
-  input[type="checkbox"] {
-    @include gw-convertCheckbox();
-  }
-}
