@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <h2> Durga Software Solutions </h2>
+        <h3> Student Course Registration</h3>
+
+        <form method="POST" action="./reg">
+
+            <table>
+
+                <tr>
+
+                    <td> Student Name</td>
+
+                    <td>
+
+                        <input type ="text" name ="StudentName"> 
+
+                    </td>
+
+
+                </tr>        
+
+                <tr>
+
+                    <td> Student Qualification</td>
+                    <td>
+
+                        <input type ="checkbox" name="StudentQualification" value="BSC"> BSC
+                        <input type ="checkbox" name="StudentQualification" value="BTech"> BTech
+                        <input type ="checkbox" name="StudentQualification" value="MTech"> MTech
+                        <input type ="checkbox" name="StudentQualification" value="MCA"> MCA
+                        <input type ="checkbox" name="StudentQualification" value="PHD"> PHD
+
+                    </td>   
+
+                </tr>
+
+                <tr>
+
+                    <td> Student Gender</td>
+
+                    <td>
+
+                        <input type ="radio" name="StudentGender" value="Male"> Male
+                        <input type="radio" name="StudentGender"  value="Female">Female
+
+                    </td>   
+
+                </tr>
+
+                <tr>
+
+                    <td> Student Technologies</td>
+
+                    <td>
+
+                        <select name="StudentTechnologies" size ="5"  multiple="multiple"> 
+                            <option value="C"> C </option>
+                            <option value="C++"> C++ </option>
+                            <option value="Java"> Java </option>
+                            <option value="Oracle"> Oracle </option>
+
+                        </select> 
+                    </td>    
+
+                </tr>
+
+                <tr>
+
+                    <td> Durga Branches </td>
+                    <td>
+                        <select name="DurgaBranches" size="1">
+
+                            <option value="Amarpreet"> Amarpreet</option>
+                            <option value="Madavpur"> Madhavpur</option>
+                            <option value="Chennai"> Chennnai</option>
+                            <option value="Banglore"> Banglore</option>
+
+                        </select>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td> Student Address</td>
+                    <td>
+                        <textarea rows="10" cols="20" name="StudentAddress"></textarea> 
+
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <input type="submit" value="Register">
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </form>     
+
+    </body>
+</html>
+
+
+
+
