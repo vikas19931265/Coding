@@ -1,2 +1,0 @@
-SRSVR01000LineItemRequired
-SRSVR02000Nonnegativetotalstatementamount

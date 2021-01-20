@@ -1,2 +1,0 @@
-SRVR01000ServiceRequestHistory
-SRVR02000ServiceRequestInvoiceCurrencies

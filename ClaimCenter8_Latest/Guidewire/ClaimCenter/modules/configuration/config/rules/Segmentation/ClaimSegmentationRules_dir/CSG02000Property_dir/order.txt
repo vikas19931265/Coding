@@ -1,2 +1,0 @@
-CSG02100Property
-CSG02200PropertyDefault

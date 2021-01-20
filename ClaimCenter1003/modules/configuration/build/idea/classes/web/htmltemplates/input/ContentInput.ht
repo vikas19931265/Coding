@@ -1,3 +1,0 @@
-<div class="gw-vw--value ${contentInputHAlign}" role="list">
-  ${:children}
-</div>

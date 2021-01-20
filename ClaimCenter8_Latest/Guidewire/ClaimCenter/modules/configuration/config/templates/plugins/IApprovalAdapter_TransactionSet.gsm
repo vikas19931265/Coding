@@ -1,2 +1,0 @@
-## This is a sample property file a TransactionSet Approval template
-ApprovalStatus=<%=TransactionSet.ApprovalStatus != null ? TransactionSet.ApprovalStatus.Code : ""%>

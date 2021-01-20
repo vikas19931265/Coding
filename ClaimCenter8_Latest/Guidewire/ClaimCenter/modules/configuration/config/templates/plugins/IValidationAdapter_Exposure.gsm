@@ -1,3 +1,0 @@
-## This is a sample property file like format for a Validation template
-ClaimNumber=<%=Exposure.Claim.ClaimNumber%>
-ClaimOrder=<%=Exposure.ClaimOrder%>

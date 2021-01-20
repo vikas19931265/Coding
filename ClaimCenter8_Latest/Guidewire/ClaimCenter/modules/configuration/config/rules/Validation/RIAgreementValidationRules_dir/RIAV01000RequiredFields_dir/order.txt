@@ -1,4 +1,0 @@
-RIAV01005General
-RIAV01010NonProportional
-RIAV01020Proportional
-RIAV01030AgreementGroup

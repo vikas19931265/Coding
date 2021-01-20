@@ -1,2 +1,0 @@
-TXV20100Warnifdeductibleisunallocatedforsubmitchecks
-TXV20200Warnifdeductibleisunallocatedforvoidorstopchecks

@@ -1,3 +1,0 @@
-ARR01000WesternRegionalAutoSupervisors
-ARR02000Trytoassigntogroupsupervisor
-ARR03000Defaultrule

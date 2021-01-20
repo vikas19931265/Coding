@@ -1,3 +1,0 @@
-TXV19100CompensabilityDenied
-TXV19200CompensabilityDisputed
-TXV19300CompensabilityPendingorUndetermined

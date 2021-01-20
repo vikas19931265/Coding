@@ -1,1 +1,0 @@
-<meta :for="attr" :in="attrs" ${attr}>

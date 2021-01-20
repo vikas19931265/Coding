@@ -1,4 +1,0 @@
-GEA01000AutoClaims
-GEA02000Nonautoclaims
-GEA02500ComprehensiveCoverageExp
-GEA03000Default

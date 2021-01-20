@@ -1,3 +1,0 @@
-<plugin name="IExposureLifecyclePlugin">
-  <plugin-java javaclass="com.guidewire.cc.plugin.lifecycle.internal.RulesBasedExposureLifecyclePlugin"/>
-</plugin>
