@@ -36,6 +36,7 @@ ClaimCenter8_Latest/Guidewire/ClaimCenter/modules/configuration/out/
 *.ear
 *.nar
 hs_err_pid*
+*.properties
 
 ##############################
 ## Maven
