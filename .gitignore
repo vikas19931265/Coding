@@ -20,3 +20,9 @@ Training8/Guidewire/TrainingApp/modules/configuration/out/.idea
 
 /ClaimCenter1003/.idea
 ClaimCenter8_Latest/Guidewire/ClaimCenter/modules/configuration/out/
+/ClaimCenter1003
+/ClaimCenter8_Latest
+/CC10
+*.class
+/Training8/Guidewire/TrainingApp/modules/configuration/out
+/Training8/Guidewire/TrainingApp/.idea
