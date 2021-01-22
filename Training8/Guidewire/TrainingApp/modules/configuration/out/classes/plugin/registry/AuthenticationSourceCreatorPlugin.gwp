@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<plugin
-  name="AuthenticationSourceCreatorPlugin">
-  <plugin-osgi
-    plugindir="authenticationsourcecreator"
-    servicepid="com.guidewire.pl.web.internal.DefaultAuthenticationSourceCreatorPlugin"
-    temporaryBundle="false"/>
-</plugin>

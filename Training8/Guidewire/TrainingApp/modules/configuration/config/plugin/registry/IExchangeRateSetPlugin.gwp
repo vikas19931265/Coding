@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<plugin
-  interface="IExchangeRateSetPlugin"
-  name="IExchangeRateSetPlugin">
-  <plugin-gosu
-    gosuclass="acme.ta.plugin.exchangerate.AcmeIExchangeRateSetPlugin"/>
-</plugin>
