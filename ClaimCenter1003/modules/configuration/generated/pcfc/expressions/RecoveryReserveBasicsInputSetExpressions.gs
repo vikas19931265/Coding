@@ -1,0 +1,111 @@
+package pcfc.expressions
+
+uses pcf.*
+uses entity.*
+uses typekey.*
+uses gw.api.locale.DisplayKey
+@javax.annotation.Generated("config/web/pcf/claim/financials/transactions/RecoveryReserveBasicsInputSet.pcf", "", "com.guidewire.pcfgen.PCFClassGenerator")
+class RecoveryReserveBasicsInputSetExpressions {
+  @javax.annotation.Generated("config/web/pcf/claim/financials/transactions/RecoveryReserveBasicsInputSet.pcf", "", "com.guidewire.pcfgen.PCFClassGenerator")
+  public static class RecoveryReserveBasicsInputSetExpressionsImpl extends gw.api.web.ScopeBaseClass {
+    public construct(widget :  Object) {
+      super(widget, 0)
+    }
+    
+    protected construct(widget :  Object, scopeDepth :  int) {
+      super(widget, scopeDepth)
+    }
+    
+    // 'def' attribute on InputSetRef at RecoveryReserveBasicsInputSet.pcf: line 59, column 25
+    function def_onEnter_30 (def :  pcf.TransactionExchangeRateInputSet) : void {
+      def.onEnter(recoveryReserve)
+    }
+    
+    // 'def' attribute on InputSetRef at RecoveryReserveBasicsInputSet.pcf: line 59, column 25
+    function def_refreshVariables_31 (def :  pcf.TransactionExchangeRateInputSet) : void {
+      def.refreshVariables(recoveryReserve)
+    }
+    
+    // 'label' attribute on TypeKeyInput (id=ReservingCurrency_Input) at RecoveryReserveBasicsInputSet.pcf: line 36, column 70
+    function label_12 () : java.lang.Object {
+      return DisplayKey.get("NVV.Financials.SubView.RecoveryReserveBasics.Transaction.ReservingCurrency")
+    }
+    
+    // 'value' attribute on CurrencyInput (id=OpenRecoveryReserves_Input) at RecoveryReserveBasicsInputSet.pcf: line 50, column 142
+    function valueRoot_25 () : java.lang.Object {
+      return gw.api.financials.FinancialsCalculations.getOpenRecoveryReserves().withRecoveryCoding(recoveryReserve.Coding)
+    }
+    
+    // 'value' attribute on TypeKeyInput (id=Coverage_Input) at RecoveryReserveBasicsInputSet.pcf: line 20, column 41
+    function valueRoot_3 () : java.lang.Object {
+      return recoveryReserve.Exposure
+    }
+    
+    // 'value' attribute on TypeKeyInput (id=CostType_Input) at RecoveryReserveBasicsInputSet.pcf: line 25, column 37
+    function valueRoot_6 () : java.lang.Object {
+      return recoveryReserve
+    }
+    
+    // 'value' attribute on TextInput (id=Exposure_Input) at RecoveryReserveBasicsInputSet.pcf: line 15, column 165
+    function value_0 () : java.lang.String {
+      return recoveryReserve.Exposure.DisplayName == null ? DisplayKey.get("Web.Financials.Exposure.ClaimLevel") : recoveryReserve.Exposure.DisplayName
+    }
+    
+    // 'value' attribute on TypeKeyInput (id=ReservingCurrency_Input) at RecoveryReserveBasicsInputSet.pcf: line 36, column 70
+    function value_13 () : typekey.Currency {
+      return recoveryReserve.ReservingCurrency
+    }
+    
+    // 'value' attribute on TypeKeyInput (id=RecoveryCategory_Input) at RecoveryReserveBasicsInputSet.pcf: line 41, column 45
+    function value_18 () : typekey.RecoveryCategory {
+      return recoveryReserve.RecoveryCategory
+    }
+    
+    // 'value' attribute on TypeKeyInput (id=Coverage_Input) at RecoveryReserveBasicsInputSet.pcf: line 20, column 41
+    function value_2 () : typekey.CoverageType {
+      return recoveryReserve.Exposure.PrimaryCoverage
+    }
+    
+    // 'value' attribute on TextInput (id=Comments_Input) at RecoveryReserveBasicsInputSet.pcf: line 45, column 41
+    function value_21 () : java.lang.String {
+      return recoveryReserve.Comments
+    }
+    
+    // 'value' attribute on CurrencyInput (id=OpenRecoveryReserves_Input) at RecoveryReserveBasicsInputSet.pcf: line 50, column 142
+    function value_24 () : gw.api.financials.CurrencyAmount {
+      return gw.api.financials.FinancialsCalculations.getOpenRecoveryReserves().withRecoveryCoding(recoveryReserve.Coding).ReservingAmount
+    }
+    
+    // 'value' attribute on CurrencyInput (id=Amount_Input) at RecoveryReserveBasicsInputSet.pcf: line 56, column 51
+    function value_27 () : gw.api.financials.IPairedMoney {
+      return recoveryReserve.TransactionAmountReservingAmountPair
+    }
+    
+    // 'value' attribute on TypeKeyInput (id=CostType_Input) at RecoveryReserveBasicsInputSet.pcf: line 25, column 37
+    function value_5 () : typekey.CostType {
+      return recoveryReserve.CostType
+    }
+    
+    // 'value' attribute on TypeKeyInput (id=CostCategory_Input) at RecoveryReserveBasicsInputSet.pcf: line 30, column 41
+    function value_8 () : typekey.CostCategory {
+      return recoveryReserve.CostCategory
+    }
+    
+    // 'visible' attribute on TypeKeyInput (id=ReservingCurrency_Input) at RecoveryReserveBasicsInputSet.pcf: line 36, column 70
+    function visible_11 () : java.lang.Boolean {
+      return gw.util.CCConfigUtil.AllowExplicitReservingCurrency
+    }
+    
+    property get recoveryReserve () : RecoveryReserve {
+      return getRequireValue("recoveryReserve", 0) as RecoveryReserve
+    }
+    
+    property set recoveryReserve ($arg :  RecoveryReserve) {
+      setRequireValue("recoveryReserve", 0, $arg)
+    }
+    
+    
+  }
+  
+  
+}

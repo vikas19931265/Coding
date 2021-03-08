@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<extension
+  xmlns="http://guidewire.com/datamodel"
+  entityName="Exposure">
+  <array
+    arrayentity="ServiceRequest"
+    desc="Service requests associated with this exposure."
+    name="ServiceRequests"/>
+</extension>

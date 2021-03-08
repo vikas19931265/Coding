@@ -1,0 +1,36 @@
+package pcfc.expressions
+
+uses pcf.*
+uses entity.*
+uses typekey.*
+uses gw.api.locale.DisplayKey
+@javax.annotation.Generated("config/web/pcf/entrypoints/CreateNewClaim.pcf", "", "com.guidewire.pcfgen.PCFClassGenerator")
+class CreateNewClaimEntryPointExpressions {
+  @javax.annotation.Generated("config/web/pcf/entrypoints/CreateNewClaim.pcf", "", "com.guidewire.pcfgen.PCFClassGenerator")
+  public static class CreateNewClaimExpressionsImpl extends gw.api.web.ScopeBaseClass {
+    public construct(widget :  Object) {
+      super(widget, 0)
+    }
+    
+    protected construct(widget :  Object, scopeDepth :  int) {
+      super(widget, scopeDepth)
+    }
+    
+    // 'location' attribute on EntryPoint (id=CreateNewClaim) at CreateNewClaim.pcf: line 7, column 52
+    function location_0 () : pcf.api.Destination {
+      return pcf.CreateNewClaimForward.createDestination(policyNumber)
+    }
+    
+    property get policyNumber () : String {
+      return getVariableValue("policyNumber", 0) as String
+    }
+    
+    property set policyNumber ($arg :  String) {
+      setVariableValue("policyNumber", 0, $arg)
+    }
+    
+    
+  }
+  
+  
+}
