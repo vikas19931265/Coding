@@ -13,6 +13,8 @@ class A2ExtractYearFromDate
         c.setTime(format);
         int year=c.get(Calendar.YEAR);
         System.out.println(year);
+        System.out.println(c.get(Calendar.DAY_OF_MONTH));
+        System.out.println(c.get(Calendar.MONTH));
     }
 }
 /*
