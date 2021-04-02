@@ -25,6 +25,8 @@ public class DOMParser {
 	   Document document= documentBuilder.parse(ClassLoader.getSystemResourceAsStream("xml/DriversLicense.xml"));
 	   
 	   NodeList list=document.getElementsByTagName("Number");
+           
+           
 	   Node numberItem=list.item(0);
 	   DriversLicense license= new DriversLicense();
 	   license.setNumber(Long.parseLong(numberItem.getTextContent()));
@@ -50,7 +52,7 @@ public class DOMParser {
 	   
 	   // accessing the address
 	   	
-	   	NodeList addressItems = document.getElementsByTagName("Address");
+	    NodeList addressItems = document.getElementsByTagName("Address");
 	    Node address = addressItems.item(0);
 	    NodeList addressChilds = address.getChildNodes();
 	    Address addr = new Address();
@@ -87,5 +89,4 @@ public class DOMParser {
 	   System.out.println(license.getAddress().getStreet());
 	   
 	}
-
 }
